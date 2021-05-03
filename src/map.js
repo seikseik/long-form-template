@@ -57,7 +57,7 @@ if (!mapboxgl.supported()) {
     alert('Il tuo browser non supporta Mapbox GL');
 } else { var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/matteosacchi/ckk1l8smv2l2b17pczvjp6gxq',
+    style: 'mapbox://styles/matteosacchi/cko8kixfc22u218p35ozzk0nr',
     center: [13.408197, 42.461843],
     zoom: 5.57
 });
