@@ -1,0 +1,1 @@
+body{margin:0;padding:0}.hero{height:800px;width:100vw;background:#d3d3d3}.map-container{display:flex}.map-container .map-text{width:50%}.map-container .map-text section{height:100vh;padding:30px;display:flex;align-items:center}.map-container #map{width:50vw;position:sticky;top:0;height:100vh}
