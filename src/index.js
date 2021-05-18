@@ -1,2 +1,3 @@
 import "./main.scss";
-import "./map";
+import "./js/map";
+import "./js/animation";

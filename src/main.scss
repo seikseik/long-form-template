@@ -1,19 +1,222 @@
-body{
-  margin:0px;
-  padding: 0px;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-.hero{
-  height: 800px;
-  width:100vw;
-  background: lightgrey;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+div, section{
+  box-sizing: border-box;
 }
 
+// VARIABLES
+$padding: 3vw;
+$width: 80vw;
+
+$spacing: 8px;
+
+$size_caption: 30px;
+$size_title_big: 88px;
+$size_title_medium: 48px;
+$size_title_small: 24px;
+$size_body_big: 20px;
+$size_body_medium: 16px;
+$size_body_small: 14px;
+$size_button: 11px;
+$size_letter: 72px;
+
+@mixin TerminaBold{
+  font-family:"termina";
+  font-weight:900;
+}
+@mixin TerminaMedium{
+  font-family:"termina";
+  font-weight:700;
+}
+@mixin body{
+  font-family:"neue-haas-grotesk-text";
+  font-weight:400;
+}
+
+$blu: #004FED;
+$black: #131313;
+$azure: #A6D9DB;
+
+body{
+  @include body;
+}
+
+.page-width{
+  padding: 0 $padding;
+}
+.center-text{
+  max-width:$width;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+// HERO + ANIMATION
+#page-container {
+  position:relative;
+  top:0;
+  left:0;
+  right:0;
+}
+#next{
+  position: absolute;
+  height: 100%;
+  width:100%;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.video-hero{
+  width:100vw;
+  height: 100vh;
+  .video-container{
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    position: absolute;
+    video{
+      width:100%;
+      min-height: 100vh;
+      object-fit: cover;
+    }
+  }
+  .hero{
+    height: 100%;
+    width:100%;
+    position: relative;
+    color:white;
+    .hero-container{
+      height: 100%;
+    }
+    .row{
+      display: flex;
+      height: 100%;
+      .col-quarter{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+// QUOTE
+
+.quote{
+  color:white;
+  background: $blu;
+  height: auto;
+  .row{
+    height: 100%;
+    padding-top:$spacing*8;
+    padding-bottom:$spacing*14;
+    margin:0 auto;
+    .col-one-third{
+      display: flex;
+      justify-content: center;
+    }
+    .quote-copy{
+      text-transform: uppercase;
+    }
+    .col-two-third{
+      padding-left: $spacing*3;
+      border-left:1px solid white;
+      h2{
+        @include TerminaBold;
+        font-size: $size_caption;
+        text-transform: uppercase;
+        line-height: 32px;
+        margin-bottom: $spacing*2;
+        padding-right: 5vw;
+      }
+    }
+  }
+}
+
+// MAP
 .map-container{
   display:flex;
   .map-text{
-    width:50%;
+    width:50vw;
     section{
-      height: 100vh;
+      height: 50vw;
+      width:100%;
       padding:30px;
       display: flex;
       align-items:center;
@@ -21,10 +224,9 @@ body{
   }
 
   #map{
-    height: 100vh;
+    height: 50vw;
     width:50vw;
     position: sticky;
     top:0px;
-    height: 100vh;
   }
 }
