@@ -105,6 +105,10 @@ body{
 	line-height: $line_height;
 }
 
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
 .page-width{
   padding: 0 $padding;
 }
@@ -272,7 +276,6 @@ animation: bounce 2s infinite;
 
 .col-8{
 	h2{
-		line-height: 40px;
 		overflow: hidden;
 		padding-right: $spacing*2;
 	}
@@ -506,7 +509,6 @@ hr{
 		@include TerminaBold;
 		font-size: $size_title_medium;
 		padding: $spacing*2 0;
-		line-height: 1;
 		margin-left: $spacing*2;
 	}
 }

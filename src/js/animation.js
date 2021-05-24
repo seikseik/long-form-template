@@ -40,15 +40,11 @@ function slideDown(e) {
 
 // animate text on scroll
 
-
 const quotes = document.querySelectorAll(".animation-text");
-const timing = [0.6, 0.4, 0.3];
-const stagger = [0.02, 0.01, 0.01]
+const timing = [0.6, 0.4, 0.5, 0.4, 0.4];
+const stagger = [0.02, 0.01, 0.02, 0.02, 0.02];
 function setupSplits() {
   quotes.forEach((quote, i) => {
-    // Reset if needed
-
-
 
     if(quote.anim) {
       quote.anim.progress(1).kill();
@@ -60,15 +56,14 @@ function setupSplits() {
       wordsClass: "split-line"
     });
 
-    // Set up the anim
     quote.anim = gsap.from(quote.split.chars, {
       scrollTrigger: {
         trigger: quote,
-        start: "top 70%",
+        start: "top 75%",
       },
       duration: timing[i],
       ease: "circ.out",
-      y: 90,
+      y: 80,
       stagger: stagger[i]
     });
   });
@@ -76,3 +71,18 @@ function setupSplits() {
 
 ScrollTrigger.addEventListener("refresh", setupSplits);
 setupSplits();
+
+
+// fade in
+
+const fade = gsap.utils.toArray("[fade]");
+
+fade.forEach((el, i) => {
+  const anim = gsap.fromTo(el, {autoAlpha: 0, y: 30}, {duration: 1, autoAlpha: 1, y: 0});
+  ScrollTrigger.create({
+    trigger: el,
+    animation: anim,
+    toggleActions: 'play none none none',
+    once: true,
+  });
+});
