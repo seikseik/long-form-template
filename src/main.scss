@@ -23,9 +23,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -45,13 +43,23 @@ div, section{
   box-sizing: border-box;
 }
 
+*{
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+
 // VARIABLES
+$line_height: 1.25;
 $padding: 3vw;
 $width: 80vw;
+$text-width:900px;
 
 $spacing: 8px;
 
 $size_caption: 30px;
+$size_quote:36px;
 $size_title_big: 88px;
 $size_title_medium: 48px;
 $size_title_small: 24px;
@@ -74,12 +82,22 @@ $size_letter: 72px;
   font-weight:400;
 }
 
+@mixin outline {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: transparent;
+ -webkit-text-stroke-color: white;
+}
+em{
+    @include outline;
+}
+
 $blu: #004FED;
 $black: #131313;
 $azure: #A6D9DB;
 
 body{
   @include body;
+	line-height: $line_height;
 }
 
 .page-width{
@@ -164,9 +182,41 @@ body{
     .hero-container{
       height: 100%;
     }
+    h1{
+      @include TerminaBold;
+      font-size: $size_title_big;
+      margin-bottom: $spacing*3;
+      line-height: 80px;
+    }
+    .hero-copy{
+      margin-top: $spacing*5;
+    }
+
+    .col-3{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding:$spacing*5;
+    }
+    .col-9{
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      padding: $spacing*5;
+      border-left: 1px solid;
+    }
+    .hero-subtitle{
+      font-size:$size_body_big;
+      font-weight: 500;
+      max-width: 80%;
+      line-height: normal;
+    }
     .row{
       display: flex;
       height: 100%;
+      padding:$spacing*5;
+      padding-left: 0px;
       .col-quarter{
         display: flex;
         flex-direction: column;
@@ -187,14 +237,14 @@ body{
     padding-top:$spacing*8;
     padding-bottom:$spacing*14;
     margin:0 auto;
-    .col-one-third{
+    .col-4{
       display: flex;
       justify-content: center;
     }
     .quote-copy{
       text-transform: uppercase;
     }
-    .col-two-third{
+    .col-8{
       padding-left: $spacing*3;
       border-left:1px solid white;
       h2{
@@ -208,6 +258,196 @@ body{
     }
   }
 }
+
+
+// TEXT SECTION
+
+.black{
+	background: black;
+	p{color:white;}
+	h4{
+		color:$blu;
+	}
+	.section-header{
+		border-top-color: white;
+	}
+}
+
+.azure{
+	background: $azure;
+}
+
+.dropcap {
+	@include TerminaMedium;
+	font-size: 40px;
+	float:left;
+	width: 80px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-section{
+	padding: $spacing*10 $spacing*5;
+}
+.text-container{
+	max-width:$text-width;
+	// width:$text-width;
+	margin: 0 auto;
+	margin-bottom: $spacing*9;
+	p{
+		margin-bottom:$spacing*3;
+		font-size: $size_body_big;
+		line-height: $line_height;
+		font-weight: normal;
+		&:last-child{
+			margin-bottom: 0px;
+		}
+	}
+}
+.info-container{
+	margin-top: $spacing*8;
+	margin: 0 auto;
+	.section-header{
+		max-width:$text-width;
+		// width:$text-width;
+		margin: 0 auto;
+		border-top:1px solid;
+		margin-bottom: $spacing*5;
+		p{
+			font-size: $size_body_big;
+		}
+		h4{
+			text-transform: uppercase;
+			@include TerminaMedium;
+			font-size: $size_body_big;
+			padding-top:$spacing*2;
+			padding-bottom:$spacing*2;
+		}
+	}
+
+	.hide-end{
+		position: relative;
+		&:after{
+			content:"";
+			position: absolute;
+			right:0px;
+			height: 10px;
+			width:100px;
+			background: $azure;
+			top:-5px;
+		}
+	}
+
+	.info{
+		display: flex;
+		width:$text-width;
+		margin: auto;
+	}
+	#info1{
+		height: 400px;
+		position: relative;
+		img{
+			position: absolute;
+			width:1200px;
+			left:-150px;
+		}
+	}
+}
+#info3{
+	display: flex;
+	flex-direction: column;
+	img:last-child{
+		margin-top:$spacing*10;
+	}
+}
+#info4{
+	position: relative;
+	height: 400px;
+	img{
+		position: absolute;
+    width: 1200px;
+    left: -150px;
+    top: -150%;
+	}
+}
+
+.black-quote{
+	display: flex;
+	color:white;
+	padding: 0 $spacing*5;
+	h2{
+		@include TerminaBold;
+		font-size: $size_quote;
+		text-transform: uppercase;
+	}
+	.quote-paragraph{
+		padding-left: $spacing*2;
+		border-left:1px solid white;
+		line-height: $line_height;
+	}
+}
+
+.video-section{
+	margin-top: $spacing*7;
+	.video-large{
+		height: 600px;
+		padding-right: $spacing*3;
+		border-right: 1px solid white;
+		background: whitesmoke;
+	}
+	.video-small{
+		height: 300px;
+		padding-left: $spacing*3;
+		background: whitesmoke;
+	}
+}
+
+hr{
+	border: 0;
+	height: 1px;
+	background:black;
+	margin-top: $spacing*8;
+	margin-bottom: $spacing*10;
+}
+.section-header--full{
+	max-width: 1000px;
+	margin: 0 auto;
+	border-bottom:1px solid;
+	display: flex;
+	margin-bottom: $spacing*7;
+	span{
+		width: 70px;
+		@include TerminaBold;
+		font-size: $size_title_medium;
+		height: 70px;
+		margin-right: $spacing*2;
+		color:white;
+		background: black;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		position: relative;
+		&:after{
+			content:" ";
+			height: 70px;
+			background: black;
+			width: 1px;
+			right:-16px;
+			position: absolute;
+			top:0;
+		}
+	}
+	h1{
+		@include TerminaBold;
+		font-size: $size_title_medium;
+		padding: $spacing*2 0;
+		line-height: 1;
+		margin-left: $spacing*2;
+	}
+}
+
 
 // MAP
 .map-container{
@@ -229,4 +469,63 @@ body{
     position: sticky;
     top:0px;
   }
+}
+
+// footer
+footer{
+	max-width: 1200px;
+	background: black;
+	color:white;
+	border-radius: 35px;
+	height: 190px;
+	margin: $spacing*12 auto;
+	.footer-container{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+		position: relative;
+		padding:$spacing*4;
+		.footer-info{
+			@include TerminaMedium;
+			display: flex;
+			justify-content: center;
+			width: 70%;
+			margin: 0 auto;
+			.col-footer{
+				flex: 1;
+				text-align: center;
+				img{
+					display: block;
+					margin: 0 auto;
+					margin-top: $spacing;
+				}
+				&:first-child{
+					text-align: left;
+				}
+				&:last-child{
+					text-align: right;
+				}
+			}
+		}
+		.footer-copy{
+			width:100%;
+			text-align: center;
+			width: 70%;
+			margin: 0 auto;
+		}
+	}
+}
+.arrow-top{
+	position: absolute;
+	height: 70px;
+	width:70px;
+	border-radius: 100%;
+	background: $blu;
+	color:white;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	top:60px;
+	left: -35px;
 }
