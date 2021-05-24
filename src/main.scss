@@ -314,6 +314,7 @@ animation: bounce 2s infinite;
         line-height: 32px;
         margin-bottom: $spacing*2;
         padding-right: 5vw;
+				line-height: 1;
       }
     }
   }
@@ -445,6 +446,7 @@ animation: bounce 2s infinite;
 		@include TerminaBold;
 		font-size: $size_quote;
 		text-transform: uppercase;
+		line-height: 1;
 	}
 	.quote-paragraph{
 		padding-left: $spacing*2;
@@ -468,13 +470,18 @@ animation: bounce 2s infinite;
 	}
 }
 
-hr{
-	border: 0;
+
+
+.hr{
+	background: black;
+	width:100%;
 	height: 1px;
-	background:black;
-	margin-top: $spacing*8;
-	margin-bottom: $spacing*10;
-	max-width: 90vw;
+	display: block;
+	&.divider{
+		margin-top: $spacing*8;
+		margin-bottom: $spacing*10;
+		max-width: 90vw;
+	}
 }
 .section-header--full{
 	width: $info-width;
@@ -508,7 +515,7 @@ hr{
 	h1{
 		@include TerminaBold;
 		font-size: $size_title_medium;
-		padding: $spacing*2 0;
+		padding-top: $spacing;
 		margin-left: $spacing*2;
 	}
 }

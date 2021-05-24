@@ -86,3 +86,16 @@ fade.forEach((el, i) => {
     once: true,
   });
 });
+
+const hr = gsap.utils.toArray(".hr");
+
+hr.forEach((el, i) => {
+  gsap.set(el, {transformOrigin:"left"})
+  const anim = gsap.fromTo(el, {scaleX: 0}, {duration: 1, scaleX: 1});
+  ScrollTrigger.create({
+    trigger: el,
+    animation: anim,
+    toggleActions: 'play none none none',
+    once: true,
+  });
+});
