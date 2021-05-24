@@ -32,6 +32,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "clean-webpack-plugin": "^2.0.0"
+    "clean-webpack-plugin": "^2.0.0",
+    "gsap": "npm:@gsap/shockingly@^3.6.1"
   }
 }

@@ -1,3 +1,9 @@
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
+gsap.registerPlugin(ScrollTrigger);
+
 
 let chapters = {
   'par1': {
@@ -32,7 +38,6 @@ let chapters = {
 // var e = activeChapterName + "h";
 var activeChapterName ="par1";
 
-gsap.registerPlugin(ScrollTrigger);
 
 function logRed(section) {
   setActiveChapter(section)
