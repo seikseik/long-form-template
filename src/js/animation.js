@@ -8,8 +8,15 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, DrawSVGPlugin, SplitText);
 
 
 
-let page = document.getElementById('page-container');
+// scroll top
+let topArrow = document.querySelector(".arrow-top");
+topArrow.addEventListener("click", function(){
+  gsap.to(window, {duration: 2, scrollTo: 0});
+});
 
+// page animation hero
+let page = document.getElementById('page-container');
+let pageContainer = document.querySelector(".page-container");
 let transition = 'top .8s cubic-bezier(0.77, 0, 0.175, 1)';
 page.style.transition = transition;
 page.onclick = slideDown;
@@ -19,6 +26,7 @@ function slideDown(e) {
   if (e.target.id != 'next') {
     return;
   }
+  pageContainer.style.display = "block";
 
   page.onclick = '';
   self = e.target.parentNode;
@@ -33,7 +41,6 @@ function slideDown(e) {
     window.scrollTo(0, offset.height+scroll);
     page.style.transition = transition;
     page.onclick = slideDown;
-
   }, 700);
 }
 
@@ -98,7 +105,7 @@ setupSplits();
 const fade = gsap.utils.toArray("[fade]");
 
 fade.forEach((el, i) => {
-  const anim = gsap.fromTo(el, {autoAlpha: 0, y: 20}, {duration: 1, autoAlpha: 1, y: 0});
+  const anim = gsap.fromTo(el, {autoAlpha: 0, y: 15}, {duration: 1, autoAlpha: 1, y: 0});
   ScrollTrigger.create({
     trigger: el,
     animation: anim,
@@ -113,10 +120,11 @@ const hr = gsap.utils.toArray(".hr");
 
 hr.forEach((el, i) => {
   gsap.set(el, {transformOrigin:"left"})
-  const anim = gsap.fromTo(el, {scaleX: 0}, {duration: 1.3, scaleX: 1});
+  const anim = gsap.fromTo(el, {scaleX: 0}, {duration: .75, scaleX: 1});
   ScrollTrigger.create({
     trigger: el,
     animation: anim,
+    ease: "circ.out",
     toggleActions: 'play none none none',
     once: true,
   });
