@@ -43,16 +43,16 @@ function logRed(section) {
   setActiveChapter(section)
 }
 
-gsap.utils.toArray(".capitolo").forEach(section => {
-  ScrollTrigger.create({
-    trigger: section,
-    start: "top 50vh",
-    end: "bottom bottom-=100px",
-    markers: {startColor: "white", endColor: "white"},
-    scrub: true,
-    onToggle: () => logRed(section.id)
-  });
-});
+// gsap.utils.toArray(".capitolo").forEach(section => {
+//   ScrollTrigger.create({
+//     trigger: section,
+//     start: "top 50vh",
+//     end: "bottom bottom-=100px",
+//     markers: {startColor: "white", endColor: "white"},
+//     scrub: true,
+//     onToggle: () => logRed(section.id)
+//   });
+// });
 
 
 
@@ -68,25 +68,25 @@ if (!mapboxgl.supported()) {
 });
 }
 
-map.on('load', function() {});
-
-var side = document.getElementById("scroll_text");
-side.onscroll = function() {
-  var chapterNames = Object.keys(chapters);
-  for (var i = 0; i < chapterNames.length; i++) {
-      var chapterName = chapterNames[i];
-      if (isElementOnScreen(chapterName)) {
-          setActiveChapter(chapterName);
-          break;
-      }
-  }
-};
-
-
-function setActiveChapter(chapterName) {
-  if (chapterName === activeChapterName) return;
-    map.flyTo(chapters[chapterName]);
-    document.getElementById(chapterName).setAttribute('class', 'active');
-    document.getElementById(activeChapterName).setAttribute('class', '');
-      activeChapterName = chapterName;
-  };
+// map.on('load', function() {});
+//
+// var side = document.getElementById("scroll_text");
+// side.onscroll = function() {
+//   var chapterNames = Object.keys(chapters);
+//   for (var i = 0; i < chapterNames.length; i++) {
+//       var chapterName = chapterNames[i];
+//       if (isElementOnScreen(chapterName)) {
+//           setActiveChapter(chapterName);
+//           break;
+//       }
+//   }
+// };
+//
+//
+// function setActiveChapter(chapterName) {
+//   if (chapterName === activeChapterName) return;
+//     map.flyTo(chapters[chapterName]);
+//     document.getElementById(chapterName).setAttribute('class', 'active');
+//     document.getElementById(activeChapterName).setAttribute('class', '');
+//       activeChapterName = chapterName;
+//   };

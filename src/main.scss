@@ -53,7 +53,6 @@ div, section{
 // VARIABLES
 $spacing: 8px;
 
-
 $line_height: 1.25;
 $padding: 3vw;
 $width: 80vw;
@@ -103,6 +102,7 @@ $azure: #A6D9DB;
 body{
   @include body;
 	line-height: $line_height;
+	color:$black;
 }
 
 html.sr .load-hidden {
@@ -193,9 +193,9 @@ html.sr .load-hidden {
     }
     h1{
       @include TerminaBold;
-      font-size: $size_title_big;
+      font-size: 6vw;
       margin-bottom: $spacing*3;
-      line-height: 80px;
+      line-height: .85;
     }
     .hero-copy{
       margin-top: $spacing*5;
@@ -267,7 +267,7 @@ animation: bounce 2s infinite;
 
 // text animation
 
-.animation-text{
+.animation-text, .animation-text-hero{
 	overflow:hidden;
 }
 .split-line {
@@ -288,10 +288,12 @@ animation: bounce 2s infinite;
   background: $blu;
   height: auto;
 	border-top:1px solid white;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
   .row{
     height: 100%;
     padding-top:$spacing*8;
-    padding-bottom:$spacing*14;
+    padding-bottom:$spacing*10;
     margin:0 auto;
     .col-4{
       display: flex;
@@ -351,6 +353,10 @@ animation: bounce 2s infinite;
 
 .text-section{
 	padding: $spacing*10 $spacing*5;
+	padding-bottom:0;
+}
+.first-section{
+
 }
 .text-container{
 	width:$text-width;
@@ -397,7 +403,7 @@ animation: bounce 2s infinite;
 			right:0px;
 			height: 10px;
 			width:100px;
-			background: $azure;
+			background:white;
 			top:-5px;
 		}
 	}
@@ -419,6 +425,12 @@ animation: bounce 2s infinite;
 		}
 	}
 }
+
+#info2{
+	width:100%;
+	margin-top: $spacing*4;
+	margin-bottom:$spacing*9;
+}
 #info3{
 	display: flex;
 	flex-direction: column;
@@ -437,6 +449,15 @@ animation: bounce 2s infinite;
     top: -40vw;
 	}
 }
+
+
+.section-video-interview{
+	background: $blu;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	padding: $spacing*5 $spacing*5 $spacing*10 $spacing*5;
+}
+
 
 .black-quote{
 	display: flex;
@@ -473,14 +494,16 @@ animation: bounce 2s infinite;
 
 
 .hr{
-	background: black;
+	background: $black;
 	width:100%;
 	height: 1px;
 	display: block;
 	&.divider{
 		margin-top: $spacing*8;
 		margin-bottom: $spacing*10;
-		max-width: 90vw;
+		max-width: 88vw;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 .section-header--full{
@@ -497,7 +520,7 @@ animation: bounce 2s infinite;
 		height: 70px;
 		margin-right: $spacing*2;
 		color:white;
-		background: black;
+		background: $black;
 		display: flex;
 		justify-content: center;
 		align-items:center;
@@ -505,7 +528,7 @@ animation: bounce 2s infinite;
 		&:after{
 			content:" ";
 			height: 70px;
-			background: black;
+			background: $black;
 			width: 1px;
 			right:-16px;
 			position: absolute;
@@ -524,23 +547,58 @@ animation: bounce 2s infinite;
 // MAP
 .map-container{
   display:flex;
-  .map-text{
-    width:50vw;
-    section{
-      height: 50vw;
-      width:100%;
-      padding:30px;
-      display: flex;
-      align-items:center;
-    }
-  }
-
+	flex-direction: column;
+	background: $blu;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
   #map{
-    height: 50vw;
-    width:50vw;
-    position: sticky;
-    top:0px;
+    height: calc(100vh - 190px);
+    width:100vw;
+    position: relative;
+		pointer-events: none;
+		.mapboxgl-ctrl-attrib{
+			display: none !important;
+		}
   }
+	.map-legend{
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		padding: $spacing*3 7vw $spacing*6 7vw;
+		color:white;
+		h4{
+			@include TerminaMedium;
+			text-transform: uppercase;
+			margin-bottom: $spacing;
+		}
+		li{
+			padding:$spacing 0;
+			font-size: $size_body_small;
+			font-weight: 500;
+		}
+		.col-large{
+			flex:2;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin-right: $spacing*5;
+			padding-left: $spacing*2;
+			border-left: 1px solid white;
+		}
+		.col-small{
+			flex:1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin-right: $spacing*2;
+			&:last-child{
+				margin:0px;
+			}
+			svg{
+				margin-right: $spacing;
+			}
+		}
+	}
 }
 
 // footer
@@ -548,7 +606,7 @@ footer{
 	width: $info-width;
 	max-width: $max-info-width;
 
-	background: black;
+	background: $blu;
 	color:white;
 	border-radius: 35px;
 	height: 190px;
@@ -595,7 +653,7 @@ footer{
 	height: 70px;
 	width:70px;
 	border-radius: 100%;
-	background: $blu;
+	background: $black;
 	color:white;
 	display: flex;
 	justify-content: center;

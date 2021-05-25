@@ -37,12 +37,32 @@ function slideDown(e) {
   }, 700);
 }
 
+// animation hero text
+const heroTitle = document.querySelector(".animation-text-hero");
+
+var tl = gsap.timeline(),
+    mySplitText = new SplitText(heroTitle, {type:"words,chars", wordsClass: "split-line"
+  }),
+    chars = mySplitText.chars; //an array of all the divs that wrap each character
+
+gsap.set(heroTitle, {perspective: 400});
+
+tl.from(chars,
+  {  duration: 0.6,
+    ease: "circ.out",
+    y: 80,
+    stagger: 0.02
+  },
+   "+=0");
+
+
+
 
 // animate text on scroll
 
 const quotes = document.querySelectorAll(".animation-text");
-const timing = [0.6, 0.4, 0.5, 0.4, 0.4];
-const stagger = [0.02, 0.01, 0.02, 0.02, 0.02];
+const timing = [ 0.3, 0.4, 0.4, 0.4];
+const stagger = [ 0.01, 0.02, 0.02, 0.02];
 function setupSplits() {
   quotes.forEach((quote, i) => {
 
@@ -78,7 +98,7 @@ setupSplits();
 const fade = gsap.utils.toArray("[fade]");
 
 fade.forEach((el, i) => {
-  const anim = gsap.fromTo(el, {autoAlpha: 0, y: 30}, {duration: 1, autoAlpha: 1, y: 0});
+  const anim = gsap.fromTo(el, {autoAlpha: 0, y: 20}, {duration: 1, autoAlpha: 1, y: 0});
   ScrollTrigger.create({
     trigger: el,
     animation: anim,
@@ -87,11 +107,13 @@ fade.forEach((el, i) => {
   });
 });
 
+
+// hr line animation
 const hr = gsap.utils.toArray(".hr");
 
 hr.forEach((el, i) => {
   gsap.set(el, {transformOrigin:"left"})
-  const anim = gsap.fromTo(el, {scaleX: 0}, {duration: 1, scaleX: 1});
+  const anim = gsap.fromTo(el, {scaleX: 0}, {duration: 1.3, scaleX: 1});
   ScrollTrigger.create({
     trigger: el,
     animation: anim,
