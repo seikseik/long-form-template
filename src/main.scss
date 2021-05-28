@@ -169,12 +169,10 @@ html.sr .load-hidden {
   cursor: pointer;
 }
 
-.page-container{
-	display: none;
-}
 .video-hero{
   width:100vw;
   height: 100vh;
+	min-width: fit-content;
   .video-container{
     height: 100%;
     width:100%;

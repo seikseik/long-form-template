@@ -26,7 +26,6 @@ function slideDown(e) {
   if (e.target.id != 'next') {
     return;
   }
-  pageContainer.style.display = "block";
 
   page.onclick = '';
   self = e.target.parentNode;
@@ -50,8 +49,7 @@ const heroTitle = document.querySelector(".animation-text-hero");
 var tl = gsap.timeline(),
     mySplitText = new SplitText(heroTitle, {type:"words,chars", wordsClass: "split-line"
   }),
-    chars = mySplitText.chars; //an array of all the divs that wrap each character
-
+    chars = mySplitText.chars;
 gsap.set(heroTitle, {perspective: 400});
 
 tl.from(chars,
