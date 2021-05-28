@@ -435,13 +435,13 @@ animation: bounce 2s infinite;
 	display: flex;
 	flex-direction: column;
 	img:last-child{
-		margin-top:$spacing*10;
+		margin-top:$spacing*3;
 	}
 }
 #info4{
 	position: relative;
 	height: 25vw;
-	img{
+	img, svg{
 		position: absolute;
     width: $info-width;
 		max-width: $max-info-width;
@@ -479,15 +479,34 @@ animation: bounce 2s infinite;
 .video-section{
 	margin-top: $spacing*7;
 	.video-large{
-		height: 600px;
 		padding-right: $spacing*3;
 		border-right: 1px solid white;
-		background: whitesmoke;
+		padding-bottom: 41.15%;
+		position: relative;
+		iframe {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: calc(100% - 16px);
+		  height: 100%;
+		  border: 0;
+		  outline: none;
+		}
 	}
 	.video-small{
-		height: 300px;
+		.video-small-vid{
+			position: absolute;
+			top: -10%;
+			left: 16px;
+			width: calc(100% - 16px);
+			height: 100%;
+		}
+		position: relative;
+		padding-bottom: 27.25%;
+		padding-top: 0px;
+		height: 0;
+		overflow: hidden;
 		padding-left: $spacing*3;
-		background: whitesmoke;
 	}
 }
 
@@ -551,6 +570,7 @@ animation: bounce 2s infinite;
 	background: $blu;
 	border-bottom-left-radius: 30px;
 	border-bottom-right-radius: 30px;
+	position: relative;
   #map{
     height: calc(100vh - 190px);
     width:100vw;
@@ -604,6 +624,27 @@ animation: bounce 2s infinite;
 			}
 		}
 	}
+	.button-container{
+		position: absolute;
+		top: $spacing*4;
+		right:5vw;
+		button{
+			@include TerminaBold;
+			border-radius: 50px;
+			border:1px solid black;
+			font-size: 12px;
+			width:100px;
+			padding:$spacing $spacing*2;
+			cursor: pointer;
+			&:first-child{
+				margin-right: $spacing*2;
+			}
+			&.active{
+				background: $blu;
+				color:white;
+			}
+		}
+	}
 }
 
 // footer
@@ -615,7 +656,7 @@ footer{
 	color:white;
 	border-radius: 35px;
 	height: 190px;
-	margin: $spacing*12 auto;
+	margin: $spacing*7 auto;
 	.footer-container{
 		display: flex;
 		flex-direction: column;
@@ -666,4 +707,18 @@ footer{
 	top:60px;
 	left: -35px;
 	cursor: pointer;
+}
+
+
+// mobile
+// provvisorio
+@media only screen and (min-width: 1300px) {
+	#info4{
+		height: 400px;
+	}
+	#info4 svg {
+    left: -85px;
+    position: absolute;
+    top: -495px;
+	}
 }

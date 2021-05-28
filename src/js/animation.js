@@ -103,7 +103,7 @@ setupSplits();
 const fade = gsap.utils.toArray("[fade]");
 
 fade.forEach((el, i) => {
-  const anim = gsap.fromTo(el, {autoAlpha: 0, y: 15}, {duration: 1, autoAlpha: 1, y: 0});
+  const anim = gsap.fromTo(el, {autoAlpha: 0}, {duration: 1, autoAlpha: 1});
   ScrollTrigger.create({
     trigger: el,
     animation: anim,
@@ -111,6 +111,36 @@ fade.forEach((el, i) => {
     once: true,
   });
 });
+
+
+
+
+// ANIM INFO 2
+const right = gsap.utils.toArray(".rect-animation");
+const anim_info_2 = gsap.fromTo(".rect-animation", {scaleX: 0}, {duration: 0.8, scaleX: 1});
+let trigger_info_2 = document.getElementById("info2_chart")
+  ScrollTrigger.create({
+    trigger: trigger_info_2,
+    animation: anim_info_2,
+    toggleActions: 'play none none none',
+    once: true,
+    ease: "Expo.easeOut",
+  });
+
+
+
+  // ANIM INFO 4
+  const right_4 = gsap.utils.toArray(".info4_anim");
+  const anim_info_4 = gsap.fromTo(".info4_anim", {scaleX: 0}, {duration: 1, scaleX: 1});
+  let trigger_info_4 = document.querySelector(".info4_anim")
+    ScrollTrigger.create({
+      trigger: trigger_info_4,
+      animation: anim_info_4,
+      toggleActions: 'play none none none',
+      once: true,
+      ease: "Expo.easeOut",
+    });
+
 
 
 // hr line animation

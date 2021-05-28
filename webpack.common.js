@@ -22,16 +22,48 @@ module.exports = {
         test: /\.html$/,
         use: ["html-loader"]
       },
+      // {
+      //   test: /\.(mov|mp4)$/,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //       options: {
+      //         name: '[name].[ext]'
+      //       }
+      //     }
+      //   ]
+      // },
+      // {
+      //   test: /\.(svg|png|jpg|gif|mp4)$/,
+      //   use: {
+      //     loader: "file-loader",
+      //     options: {
+      //       name: "[name].[hash].[ext]",
+      //       outputPath: "assets/"
+      //     }
+      //   }
+      // }
       {
-        test: /\.(svg|png|jpg|gif)$/,
-        use: {
-          loader: "file-loader",
+      test: /\.(mov|mp4)$/,
+      use: [
+        {
+          loader: 'file-loader',
           options: {
-            name: "[name].[hash].[ext]",
-            outputPath: "imgs"
+            name: '[name].[ext]'
           }
         }
-      }
+      ]
+    },
+    {
+      test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
+      use: {
+        loader: 'url-loader',
+        options: {
+          limit:false,
+          outputPath: "assets/",
+        }
+      },
+    }
     ]
   }
 };
