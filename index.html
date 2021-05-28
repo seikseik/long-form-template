@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mappa</title>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="https://use.typekit.net/dkf7lyh.css">
 
-  <link href="main.4dd5f383b8f7f4a054b7.css" rel="stylesheet"></head>
+  <link href="main.f2abeccac023088329ed.css" rel="stylesheet"></head>
 
   <body>
 
@@ -21,7 +21,7 @@
         <div class="video-container">
           <span class="video-overlay"></span>
           <video playsinline autoplay muted loop poster="" id="bgvid">
-            <source src="https://mirrormirror.cdn.prismic.io/mirrormirror/46e15645-3eba-4951-a60a-56c5ac91e8f9_LOOP2TUPREF22.mp4" type="video/mp4">
+            <source src="./cover.mp4" type="video/mp4">
           </video>
         </div>
         <div class="hero">
@@ -31,14 +31,14 @@
               <div class="col-3">
                 <div class="social-links">
                   <ul>
-                    <li><img src="imgs/social-facebook.ec54716d1106aa90350f2198313248ea.svg" alt="">
+                    <li><img src="assets/ec54716d1106aa90350f2198313248ea.svg" alt="">
                     </li>
                     <li><svg id="slash" width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.64454 19.1L13.7745 0.619999H11.8005L0.670535 19.1H2.64454Z" fill="white" />
                       </svg>
 
                     </li>
-                    <li><img src="imgs/social-twitter.cf1388370844a81dd350a08522e48701.svg" alt=""></li>
+                    <li><img src="assets/cf1388370844a81dd350a08522e48701.svg" alt=""></li>
 
                   </ul>
                 </div>
@@ -52,7 +52,7 @@
               </div>
               <div class="col-9">
                 <div class="hero-logo">
-                  <img src="imgs/logo_repubblica.4a947670bf21668fa792d3408489fe87.svg" alt="">
+                  <img src="assets/4a947670bf21668fa792d3408489fe87.svg" alt="">
                 </div>
                 <div class="hero-text">
                   <h1 class="animation-text-hero">
@@ -119,11 +119,12 @@
 
           <div class="info-container">
             <div fade class="section-header">
-              <h4>IL RIMBALZO DEI DISTRETTI INDUSTRIALI</h4>
+              <div class="hr title-divider"></div>
+              <h4>La resistenza del mercato digitale</h4>
               <p>L’evoluzione del fatturato, in %, delle imprese distrettuali suddivise per settore.</p>
             </div>
             <div fade id="info1" class="info">
-              <img src="imgs/info1.4149dcd08bd0f2d04b2fd59e989bbd3e.svg" alt="">
+              <img src="assets/29161bc47900df4228d35303b9dedc56.svg" alt="">
             </div>
           </div>
 
@@ -145,11 +146,254 @@
 
           <div class="info-container">
             <div fade class="section-header">
+              <div class="hr title-divider"></div>
               <h4>L'avanzata degli investimenti tecnologici</h4>
               <p>Risposte alla domanda «Pensando al vostro settore, tra 6/12 mesi, cosa vedete profilarsi?».</p>
             </div>
-            <div fade class="info">
-              <img id="info2" src="imgs/info2.d68940f8c406a72681b0c8184b13ba00.svg" alt="">
+            <div class="info">
+              <svg id="info2_chart" width="808" height="1022" viewBox="0 0 808 1022" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Group 318">
+                  <text id="Fonte: Ipson &#226;&#128;&#147; Osservatorio imprese" transform="translate(204 4)" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="12" letter-spacing="0em">
+                    <tspan x="0" y="11.398">Fonte: Ipson &#x2013; Osservatorio imprese</tspan>
+                  </text>
+                  <g id="Group 126">
+                    <text id="2021" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="19" y="14.131">2021</tspan>
+                    </text>
+                    <text id="2020" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="86" y="14.131">2020</tspan>
+                    </text>
+                    <text id="n.d." fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="156" y="14.131">n.d.</tspan>
+                    </text>
+                    <circle id="Ellipse 96" cx="6" cy="9" r="5" fill="#004FED"/>
+                    <circle id="Ellipse 97" cx="73" cy="9" r="5" fill="#131313"/>
+                    <circle id="Ellipse 98" cx="143" cy="9" r="4.25" stroke="black" stroke-width="1.5"/>
+                  </g>
+                  <g id="Group 292">
+                    <path class="rect-animation" id="Rectangle 157" d="M2 44L799 44C803.971 44 808 48.0294 808 53C808 57.9706 803.971 62 799 62L2 62L2 44Z" fill="#131313"/>
+                    <path class="rect-animation"  id="Rectangle 158" d="M2 26L660 26C664.971 26 669 30.0294 669 35C669 39.9706 664.971 44 660 44L2 44L2 26Z" fill="#004FED"/>
+                    <text id="Controllo sui costi" fill="white" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="680.016" y="58.131">Controllo sui costi</tspan>
+                    </text>
+                    <text id="48%" fill="#004FED" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="677.238" y="40.131">48%</tspan>
+                    </text>
+                    <text id="58%" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="716" y="40.131">58%</tspan>
+                    </text>
+                  </g>
+                  <g id="Group 311">
+                    <g id="Group 293">
+                      <path class="rect-animation"  id="Rectangle 157_2" d="M2 104L270 104C274.971 104 279 108.029 279 113C279 117.971 274.971 122 270 122L2 122L2 104Z" fill="#131313"/>
+                      <path class="rect-animation"  id="Rectangle 158_2" d="M2 86L562 86C566.971 86 571 90.0294 571 95C571 99.9706 566.971 104 562 104L2 104L2 86Z" fill="#004FED"/>
+                      <text id="Investimenti in tecnologia" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                        <tspan x="630.961" y="117.131">Investimenti in tecnologia</tspan>
+                      </text>
+                      <text id="41%" fill="#004FED" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                        <tspan x="579.752" y="100.131">41%</tspan>
+                      </text>
+                      <text id="20%" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                        <tspan x="286.156" y="118.131">20%</tspan>
+                      </text>
+                      <rect id="Rectangle 162" y="121" width="808" height="1" fill="#131313"/>
+                    </g>
+                  </g>
+                  <g id="Group 312">
+                    <g id="Group 309">
+                      <path class="rect-animation"  id="Rectangle 158_3" d="M2 146L493 146C497.971 146 502 150.029 502 155C502 159.971 497.971 164 493 164L2 164L2 146Z" fill="#004FED"/>
+                      <text id="36%" fill="#004FED" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                        <tspan x="507.484" y="169.131">36%</tspan>
+                      </text>
+                      <path class="rect-animation"  id="Rectangle 157_3" d="M2 164L493 164C497.971 164 502 168.029 502 173C502 177.971 497.971 182 493 182L2 182L2 164Z" fill="#131313"/>
+                      <text id="Opportunit&#195;&#160;" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                        <tspan x="719" y="177.131">Opportunit&#xe0;</tspan>
+                      </text>
+                      <rect id="Rectangle 163" y="181" width="808" height="1" fill="#131313"/>
+                    </g>
+                  </g>
+                  <g id="Group 310">
+                    <text id="26%" fill="#004FED" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="370" y="220.131">26%</tspan>
+                    </text>
+                    <text id="38%" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="537" y="238.131">38%</tspan>
+                    </text>
+                    <path class="rect-animation"  id="Rectangle 158_4" d="M2 206L353 206C357.971 206 362 210.029 362 215C362 219.971 357.971 224 353 224L2 224L2 206Z" fill="#004FED"/>
+                    <path class="rect-animation"  id="Rectangle 157_4" d="M2 224L520 224C524.971 224 529 228.029 529 233C529 237.971 524.971 242 520 242L2 242L2 224Z" fill="#131313"/>
+                    <text id="Crisi diffusa" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="721" y="237.131">Crisi diffusa</tspan>
+                    </text>
+                    <rect id="Rectangle 164" y="241" width="808" height="1" fill="#131313"/>
+                  </g>
+                  <g id="Group 296">
+                    <text id="25%" fill="#004FED" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="356" y="280.131">25%</tspan>
+                    </text>
+                    <text id="26%_2" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="370" y="298.131">26%</tspan>
+                    </text>
+                    <path class="rect-animation"  id="Rectangle 157_5" d="M2 284L353 284C357.971 284 362 288.029 362 293C362 297.971 357.971 302 353 302L2 302L2 284Z" fill="#131313"/>
+                    <path class="rect-animation"  id="Rectangle 158_5" d="M2 266L339 266C343.971 266 348 270.029 348 275C348 279.971 343.971 284 339 284L2 284L2 266Z" fill="#004FED"/>
+                    <text id="Cambiamento mezzi di comunicazione" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="545.553" y="297.131">Cambiamento mezzi di comunicazione</tspan>
+                    </text>
+                    <rect id="Rectangle 165" y="301" width="808" height="1" fill="#131313"/>
+                  </g>
+                  <g id="Group 297">
+                    <text id="22%" fill="#004FED" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="315" y="349.131">22%</tspan>
+                    </text>
+                    <path class="rect-animation"  id="Rectangle 157_6" d="M2 344L297 344C301.971 344 306 348.029 306 353C306 357.971 301.971 362 297 362L2 362L2 344Z" fill="#131313"/>
+                    <path class="rect-animation"  id="Rectangle 158_6" d="M2 326L297 326C301.971 326 306 330.029 306 335C306 339.971 301.971 344 297 344L2 344L2 326Z" fill="#004FED"/>
+                    <text id="Innovazioni di prodotto / servizio" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="583.574" y="357.131">Innovazioni di prodotto / servizio</tspan>
+                    </text>
+                    <rect id="Rectangle 166" y="361" width="808" height="1" fill="#131313"/>
+                  </g>
+                  <g id="Group 298">
+                    <text id="19%" fill="#004FED" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="273" y="409.131">19%</tspan>
+                    </text>
+                    <path class="rect-animation"  id="Rectangle 157_7" d="M1.5 404.5L256 404.5C260.694 404.5 264.5 408.306 264.5 413C264.5 417.694 260.694 421.5 256 421.5L1.5 421.5L1.5 404.5Z" stroke="black"/>
+                    <path class="rect-animation"  id="Rectangle 158_7" d="M2 386L256 386C260.971 386 265 390.029 265 395C265 399.971 260.971 404 256 404L2 404L2 386Z" fill="#004FED"/>
+                    <text id="Miglioramento imprese maggiori" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="586.049" y="417.131">Miglioramento imprese maggiori</tspan>
+                    </text>
+                    <rect id="Rectangle 167" y="421" width="808" height="1" fill="#131313"/>
+                  </g>
+                  <g id="Group 299">
+                    <text id="18%" fill="#004FED" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="259" y="460.131">18%</tspan>
+                    </text>
+                    <text id="26%_3" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="370" y="478.131">26%</tspan>
+                    </text>
+                    <text id="Momento di stasi" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="686.51" y="477.131">Momento di stasi</tspan>
+                    </text>
+                    <path class="rect-animation"  id="Rectangle 157_8" d="M2 464L353 464C357.971 464 362 468.029 362 473C362 477.971 357.971 482 353 482L2 482L2 464Z" fill="#131313"/>
+                    <path class="rect-animation"  id="Rectangle 158_8" d="M2 446L242 446C246.971 446 251 450.029 251 455C251 459.971 246.971 464 242 464L2 464L2 446Z" fill="#004FED"/>
+                    <rect id="Rectangle 168" y="481" width="808" height="1" fill="#131313"/>
+                  </g>
+                  <g id="Group 300">
+                    <text id="18%_2" fill="#004FED" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="259" y="520.131">18%</tspan>
+                    </text>
+                    <text id="23%" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="328.922" y="537.131">23%</tspan>
+                    </text>
+                    <path class="rect-animation"  id="Rectangle 157_9" d="M2 524L311 524C315.971 524 320 528.029 320 533C320 537.971 315.971 542 311 542L2 542L2 524Z" fill="#131313"/>
+                    <text id="Cambio modelli distributivi" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="624.494" y="537.131">Cambio modelli distributivi</tspan>
+                    </text>
+                    <path class="rect-animation"  id="Rectangle 158_9" d="M2 506L242 506C246.971 506 251 510.029 251 515C251 519.971 246.971 524 242 524L2 524L2 506Z" fill="#004FED"/>
+                    <rect id="Rectangle 169" y="541" width="808" height="1" fill="#131313"/>
+                  </g>
+                  <g id="Group 301">
+                    <text id="16%" fill="#004FED" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="231" y="580.131">16%</tspan>
+                    </text>
+                    <text id="13%" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="189" y="598.131">13%</tspan>
+                    </text>
+                    <path class="rect-animation"  id="Rectangle 157_10" d="M2 584L172 584C176.971 584 181 588.029 181 593C181 597.971 176.971 602 172 602L2 602L2 584Z" fill="#131313"/>
+                    <path class="rect-animation"  id="Rectangle 158_10" d="M2 566L214 566C218.971 566 223 570.029 223 575C223 579.971 218.971 584 214 584L2 584L2 566Z" fill="#004FED"/>
+                    <text id="Partnership tra player" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="656.145" y="597.131">Partnership tra player</tspan>
+                    </text>
+                    <rect id="Rectangle 170" y="601" width="808" height="1" fill="#131313"/>
+                  </g>
+                  <g id="Group 302">
+                    <text id="13%_2" fill="#004FED" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="189" y="640.131">13%</tspan>
+                    </text>
+                    <text id="9%" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="133" y="658.131">9%</tspan>
+                    </text>
+                    <path class="rect-animation" id="Rectangle 157_11" d="M2 644L116 644C120.971 644 125 648.029 125 653C125 657.971 120.971 662 116 662L2 662L2 644Z" fill="#131313"/>
+                    <path class="rect-animation"  id="Rectangle 158_11" d="M2 626L172 626C176.971 626 181 630.029 181 635C181 639.971 176.971 644 172 644L2 644L2 626Z" fill="#004FED"/>
+                    <text id="Investimenti in comunicazione" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="600.459" y="657.131">Investimenti in comunicazione</tspan>
+                    </text>
+                    <rect id="Rectangle 171" y="661" width="808" height="1" fill="#131313"/>
+                  </g>
+                  <g id="Group 303">
+                    <text id="11%" fill="#004FED" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="164.514" y="700.131">11%</tspan>
+                    </text>
+                    <text id="7%" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="106" y="718.131">7%</tspan>
+                    </text>
+                    <path class="rect-animation"  id="Rectangle 157_12" d="M2 704L89 704C93.9706 704 98 708.029 98 713C98 717.971 93.9706 722 89 722L2 722L2 704Z" fill="#131313"/>
+                    <path class="rect-animation"  id="Rectangle 158_12" d="M2 686L144 686C148.971 686 153 690.029 153 695C153 699.971 148.971 704 144 704L2 704L2 686Z" fill="#004FED"/>
+                    <text id="Ingresso di nuovi player" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="643.402" y="717.131">Ingresso di nuovi player</tspan>
+                    </text>
+                    <rect id="Rectangle 172" y="721" width="808" height="1" fill="#131313"/>
+                  </g>
+                  <g id="Group 304">
+                    <text id="9%_2" fill="#004FED" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="133" y="769.131">9%</tspan>
+                    </text>
+                    <path class="rect-animation"  id="Rectangle 157_13" d="M1.5 764.5L116 764.5C120.694 764.5 124.5 768.306 124.5 773C124.5 777.694 120.694 781.5 116 781.5L1.5 781.5L1.5 764.5Z" stroke="black"/>
+                    <path class="rect-animation"  id="Rectangle 158_13" d="M2 746L116 746C120.971 746 125 750.029 125 755C125 759.971 120.971 764 116 764L2 764L2 746Z" fill="#004FED"/>
+                    <text id="Un recupero dell&#226;&#128;&#153;economia europea" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="564.939" y="777.131">Un recupero dell&#x2019;economia europea</tspan>
+                    </text>
+                    <rect id="Rectangle 173" y="781" width="808" height="1" fill="#131313"/>
+                  </g>
+                  <g id="Group 305">
+                    <text id="8%" fill="#004FED" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="119" y="820.131">8%</tspan>
+                    </text>
+                    <text id="12%" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="175" y="838.131">12%</tspan>
+                    </text>
+                    <path class="rect-animation"  id="Rectangle 157_14" d="M2 824L158 824C162.971 824 167 828.029 167 833C167 837.971 162.971 842 158 842L2 842L2 824Z" fill="#131313"/>
+                    <path class="rect-animation"  id="Rectangle 158_14" d="M2 806L102 806C106.971 806 111 810.029 111 815C111 819.971 106.971 824 102 824L2 824L2 806Z" fill="#004FED"/>
+                    <text id="Taglio dei prezzi" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="693.332" y="837.131">Taglio dei prezzi</tspan>
+                    </text>
+                    <rect id="Rectangle 174" y="841" width="808" height="1" fill="#131313"/>
+                  </g>
+                  <g id="Group 306">
+                    <text id="8%_2" fill="#004FED" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="119" y="889.131">8%</tspan>
+                    </text>
+                    <path class="rect-animation"  id="Rectangle 157_15" d="M2 884L102 884C106.971 884 111 888.029 111 893C111 897.971 106.971 902 102 902L2 902L2 884Z" fill="#131313"/>
+                    <path class="rect-animation"  id="Rectangle 158_15" d="M2 866L102 866C106.971 866 111 870.029 111 875C111 879.971 106.971 884 102 884L2 884L2 866Z" fill="#004FED"/>
+                    <text id="Aumento della regolamentazione" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="581.496" y="897.131">Aumento della regolamentazione</tspan>
+                    </text>
+                    <rect id="Rectangle 175" y="901" width="808" height="1" fill="#131313"/>
+                  </g>
+                  <g id="Group 307">
+                    <text id="7%_2" fill="#004FED" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="107.986" y="940.131">7%</tspan>
+                    </text>
+                    <path class="rect-animation"  id="Rectangle 158_16" d="M2 926L89 926C93.9706 926 98 930.029 98 935C98 939.971 93.9706 944 89 944L2 944L2 926Z" fill="#004FED"/>
+                    <path class="rect-animation"  id="Rectangle 158_17" d="M1.5 961.5L89 961.5C93.6944 961.5 97.5 957.694 97.5 953C97.5 948.306 93.6944 944.5 89 944.5L1.5 944.5L1.5 961.5Z" stroke="black"/>
+                    <text id="Vantaggi per le imprese pi&#195;&#185; piccole" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="564.385" y="957.131">Vantaggi per le imprese pi&#xf9; piccole</tspan>
+                    </text>
+                    <rect id="Rectangle 176" y="961" width="804" height="1" fill="#131313"/>
+                  </g>
+                  <g id="Group 308">
+                    <text id="2%" fill="#004FED" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="36.3848" y="1009.13">2%</tspan>
+                    </text>
+                    <path class="rect-animation"  id="Rectangle 157_16" d="M2 1004H19C23.9706 1004 28 1008.03 28 1013C28 1017.97 23.9706 1022 19 1022H2L2 1004Z" fill="#131313"/>
+                    <path class="rect-animation"  id="Rectangle 158_18" d="M2 986H19C23.9706 986 28 990.029 28 995C28 999.971 23.9706 1004 19 1004H2L2 986Z" fill="#004FED"/>
+                    <text id="Niente di tutto questo" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                      <tspan x="655.898" y="1017.13">Niente di tutto questo</tspan>
+                    </text>
+                    <rect id="Rectangle 177" y="1021" width="808" height="1" fill="#131313"/>
+                  </g>
+                  <rect class="rect-animation"  id="Rectangle 178" width="2" height="996" transform="matrix(-1 0 0 1 2 26)" fill="#131313"/>
+                </g>
+              </svg>
+
             </div>
           </div>
 
@@ -179,11 +423,15 @@
             </div>
           </div>
           <div fade class="video-section row">
-            <div class="video-large col-10">
+            <div class="video-large col-9">
+              <iframe class="video-embed" src="https://video.repubblica.it/embed/economia-e-finanza/rigoni-dai-distretti-alle-citta-la-rivoluzione-digitale-sara-totale/387016/387741?responsive=true&generation=onclick&bgc=ffffff&adref=" width="" height="">
 
+              </iframe>
             </div>
-            <div class="video-small col-2">
-
+            <div class="video-small col-3">
+              <video class="video-small-vid" playsinline autoplay muted loop poster="" >
+                <source src="./video-interview-small.mp4" type="video/mp4">
+              </video>
             </div>
           </div>
         </div>
@@ -193,6 +441,11 @@
         <!--mappa -->
         <div class="map-container">
           <div id='map'></div>
+          <div class="button-container">
+            <button type="button" class="active" name="button" id="nord">NORD</button>
+            <button type="button" name="button" id="sud">SUD</button>
+          </div>
+
           <div class="map-legend">
             <div class="row">
               <div class="col-large">
@@ -282,12 +535,13 @@
 
           <div class="info-container">
             <div fade class="section-header">
+              <div class="hr title-divider"></div>
               <h4>IL RIMBALZO DEI DISTRETTI INDUSTRIALI</h4>
               <p>L’evoluzione del fatturato, in %, delle imprese distrettuali suddivise per settore.</p>
             </div>
             <div fade id="info3" class="info">
-              <img src="imgs/info3.fe4b2e232cc7d73cb0da1d93a25ec3ce.svg" alt="">
-              <img src="imgs/info4.3676f2e45b002cddf15ad9ff79ee8d2f.svg" alt="">
+              <img src="assets/fe4b2e232cc7d73cb0da1d93a25ec3ce.svg" alt="">
+              <img src="assets/3676f2e45b002cddf15ad9ff79ee8d2f.svg" alt="">
             </div>
           </div>
 
@@ -315,10 +569,156 @@
 
           <div class="info-container">
             <div fade class="section-header hide-end">
+              <div class="hr title-divider"></div>
               <h4>Il valore delle competenze specialistiche</h4>
             </div>
             <div id="info4" class="info">
-              <img fade src="imgs/info5.7500c38c1caa4490788b5ba047ee513c.svg" alt="">
+              <!-- <img fade src="./assets/info5.svg" alt=""> -->
+              <svg width="1016" height="773" viewBox="0 0 1016 773" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Group 326">
+                  <g id="Group 320">
+                    <g id="Group 267">
+                      <text id="Laurea" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="16" font-weight="500" letter-spacing="0em">
+                        <tspan x="0" y="584.864">Laurea</tspan>
+                      </text>
+                      <text id="ITS" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="16" font-weight="500" letter-spacing="0em">
+                        <tspan x="0" y="625.864">ITS</tspan>
+                      </text>
+                      <text id="Diploma" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="16" font-weight="500" letter-spacing="0em">
+                        <tspan x="0" y="666.864">Diploma</tspan>
+                      </text>
+                      <text id="Diploma profes." fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="16" font-weight="500" letter-spacing="0em">
+                        <tspan x="0" y="707.864">Diploma profes.</tspan>
+                      </text>
+                      <text id="Nessun titolo" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="16" font-weight="500" letter-spacing="0em">
+                        <tspan x="0" y="748.864">Nessun titolo</tspan>
+                      </text>
+                    </g>
+                    <g id="Group 180">
+                      <path class="info4_anim" id="Rectangle 55" d="M136 561H240C243.314 561 246 563.686 246 567V595C246 598.314 243.314 601 240 601H136V561Z" fill="#004FED"/>
+                      <path class="info4_anim" id="Rectangle 56" d="M136 602H154C157.314 602 160 604.686 160 608V636C160 639.314 157.314 642 154 642H136V602Z" fill="#004FED"/>
+                      <path class="info4_anim" id="Rectangle 57" d="M136 643H406C409.314 643 412 645.686 412 649V677C412 680.314 409.314 683 406 683H136V643Z" fill="#004FED"/>
+                      <path class="info4_anim" id="Rectangle 58" d="M136 684H430C433.314 684 436 686.686 436 690V718C436 721.314 433.314 724 430 724H136V684Z" fill="#004FED"/>
+                      <path class="info4_anim" id="Rectangle 59" d="M136 725H216C219.314 725 222 727.686 222 731V759C222 762.314 219.314 765 216 765H136V725Z" fill="#004FED"/>
+                      <g id="Group 266">
+                        <text class="info4_text" id="14%" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="16" font-weight="500" letter-spacing="0em">
+                          <tspan x="254" y="585.864">14%</tspan>
+                        </text>
+                        <text class="info4_text" id="3%" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="16" font-weight="500" letter-spacing="0em">
+                          <tspan x="168" y="626.864">3%</tspan>
+                        </text>
+                        <text class="info4_text" id="35%" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="16" font-weight="500" letter-spacing="0em">
+                          <tspan x="420" y="667.864">35%</tspan>
+                        </text>
+                        <text class="info4_text" id="11%" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="16" font-weight="500" letter-spacing="0em">
+                          <tspan x="230" y="749.864">11%</tspan>
+                        </text>
+                        <text class="info4_text" id="38%" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="16" font-weight="500" letter-spacing="0em">
+                          <tspan x="444" y="708.864">38%</tspan>
+                        </text>
+                      </g>
+                    </g>
+                    <g id="Group 268">
+                      <rect id="Rectangle 60" width="496" height="1" transform="matrix(1 0 0 -1 0 561)" fill="#131313"/>
+                      <rect id="Rectangle 61" width="496" height="1" transform="matrix(1 0 0 -1 0 602)" fill="#131313"/>
+                      <rect id="Rectangle 62" width="496" height="1" transform="matrix(1 0 0 -1 0 643)" fill="#131313"/>
+                      <rect id="Rectangle 63" width="496" height="1" transform="matrix(1 0 0 -1 0 684)" fill="#131313"/>
+                      <rect id="Rectangle 64" width="496" height="1" transform="matrix(1 0 0 -1 0 725)" fill="#131313"/>
+                      <rect id="Rectangle 65" width="496" height="1" transform="matrix(1 0 0 -1 0 766)" fill="#131313"/>
+                    </g>
+                    <text
+                      id="Posti di lavoro programmati nel 2020 &#226;&#128;&#168;dalle imprese per livello di istruzione."
+                      fill="#131313"
+                      xml:space="preserve"
+                      style="white-space: pre"
+                      font-family="Neue Haas Grotesk Text Pro"
+                      font-size="16"
+                      font-weight="500"
+                      letter-spacing="0em">
+                      <tspan x="0" y="516.864">Posti di lavoro programmati nel 2020 &#x2028;</tspan>
+                      <tspan x="0" y="538.864">dalle imprese per livello di istruzione.</tspan>
+                    </text>
+                  </g>
+                  <g id="Group 321">
+                    <text id="Fonte: Intesa Sanpaolo" transform="translate(520 759)" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="12" letter-spacing="0em">
+                      <tspan x="0" y="11.398">Fonte: Intesa Sanpaolo</tspan>
+                    </text>
+                    <text
+                      id="Fabbisogni di professioni nel periodo 2020&#226;&#128;&#147;2024 con competenze digitali&#226;&#128;&#168;(valori assoluti in migliaia)."
+                      fill="#131313"
+                      xml:space="preserve"
+                      style="white-space: pre"
+                      font-family="Neue Haas Grotesk Text Pro"
+                      font-size="16"
+                      font-weight="500"
+                      letter-spacing="0em">
+                      <tspan x="520" y="516.864">Fabbisogni di professioni nel periodo
+                      </tspan>
+                      <tspan x="520" y="538.864">2020&#x2013;2024 con competenze digitali&#x2028;</tspan>
+                      <tspan x="520" y="560.864">(valori assoluti in migliaia).</tspan>
+                    </text>
+                    <g id="Group 272">
+                      <rect id="Rectangle 124" width="360" height="1" transform="matrix(1 0 0 -1 656 766)" fill="#131313"/>
+                      <g id="Group 190">
+                        <g id="Group 187">
+                          <path id="Rectangle 51" d="M844 418C844 415.791 845.791 414 848 414H896C898.209 414 900 415.791 900 418V432C900 434.209 898.209 436 896 436H848C845.791 436 844 434.209 844 432V418Z" fill="#131313"/>
+                          <path id="Polygon 1" d="M872 441L867 436L877 436L872 441Z" fill="#131313"/>
+                          <text id="632" fill="white" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                            <tspan x="859.423" y="430.131">632</tspan>
+                          </text>
+                        </g>
+                        <g id="Group 182">
+                          <rect id="Rectangle 149" x="832" y="765" width="230.5" height="79.9997" transform="rotate(-90 832 765)" fill="#004FED"/>
+                          <rect id="Rectangle 150" x="832.5" y="534" width="68.5" height="78.9997" transform="rotate(-90 832.5 534)" fill="white" stroke="#131313"/>
+                          <path id="Rectangle 151" d="M832 465L832 461C832 454.373 837.373 449 844 449L900 449C906.627 449 912 454.373 912 461L912 465L832 465Z" fill="#131313"/>
+                        </g>
+                        <text id="E-skill mix" transform="translate(886 757) rotate(-90)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="16" font-weight="500" letter-spacing="0em">
+                          <tspan x="0" y="15.864">E-skill mix</tspan>
+                        </text>
+                      </g>
+                      <g id="Group 271">
+                        <g id="Group 269">
+                          <rect id="Rectangle 146" x="936" y="765" width="467" height="80" transform="rotate(-90 936 765)" fill="#004FED"/>
+                          <rect id="Rectangle 149_2" x="936.5" y="297.5" width="203.5" height="79" transform="rotate(-90 936.5 297.5)" fill="white" stroke="#131313"/>
+                          <path id="Rectangle 150_2" d="M936 93.5L936 51C936 42.1634 943.163 35 952 35L1000 35C1008.84 35 1016 42.1634 1016 51L1016 93.5L936 93.5Z" fill="#131313"/>
+                        </g>
+                        <text id="Competenze digitali di base" transform="translate(990 757) rotate(-90)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="16" font-weight="500" letter-spacing="0em">
+                          <tspan x="0.03125" y="15.864">Competenze digitali di base</tspan>
+                        </text>
+                        <g id="Group 270">
+                          <path id="Rectangle 51_2" d="M948 4C948 1.79086 949.791 0 952 0H1000C1002.21 0 1004 1.79086 1004 4V18C1004 20.2091 1002.21 22 1000 22H952C949.791 22 948 20.2091 948 18V4Z" fill="#131313"/>
+                          <path id="Polygon 1_2" d="M976 27L971 22L981 22L976 27Z" fill="#131313"/>
+                          <text id="1460" fill="white" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="14" font-weight="500" letter-spacing="0em">
+                            <tspan x="959.368" y="16.131">1460</tspan>
+                          </text>
+                        </g>
+                      </g>
+                    </g>
+                    <g id="Group 166">
+                      <text id="Professioni tecniche" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="16" font-weight="500" letter-spacing="0em">
+                        <tspan x="540" y="606.864">Professioni tecniche</tspan>
+                      </text>
+                      <circle id="Ellipse 129" cx="526" cy="601" r="6" fill="#004FED"/>
+                    </g>
+                    <g id="Group 167">
+                      <circle id="Ellipse 96" cx="526" cy="661" r="6" fill="#131313"/>
+                      <text id="Artigiani e operai" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="16" font-weight="500" letter-spacing="0em">
+                        <tspan x="540" y="666.864">Artigiani e operai</tspan>
+                      </text>
+                    </g>
+                    <g id="Group 165">
+                      <circle id="Ellipse 123" cx="526" cy="631" r="5.5" fill="white" stroke="#131313"/>
+                      <text id="Professioni impiegatizie" fill="#131313" xml:space="preserve" style="white-space: pre" font-family="Neue Haas Grotesk Text Pro" font-size="16" font-weight="500" letter-spacing="0em">
+                        <tspan x="540" y="636.864">Professioni impiegatizie</tspan>
+                      </text>
+                    </g>
+                    <path
+                      id="Arrow 4"
+                      d="M798.75 664.016C798.761 663.601 798.434 663.257 798.02 663.246L791.273 663.064C790.859 663.053 790.514 663.379 790.503 663.793C790.492 664.207 790.818 664.552 791.232 664.563L797.23 664.725L797.069 670.723C797.057 671.137 797.384 671.481 797.798 671.493C798.212 671.504 798.557 671.177 798.568 670.763L798.75 664.016ZM682.542 664.59C696.945 675.71 718.734 682.495 740.478 683.124C762.218 683.752 784.07 678.228 798.516 664.54L797.484 663.451C783.43 676.767 762.032 682.246 740.522 681.624C719.016 681.003 697.555 674.286 683.458 663.402L682.542 664.59Z"
+                      fill="#131313"/>
+                  </g>
+                </g>
+              </svg>
             </div>
           </div>
 
@@ -337,7 +737,7 @@
                 </div>
                 <div class="col-footer">
                   In collaborazione con
-                  <img src="imgs/logo-tim.fb84d272dc6740fa68712ff17149922e.svg" alt="">
+                  <img src="assets/fb84d272dc6740fa68712ff17149922e.svg" alt="">
                 </div>
                 <div class="col-footer">
                   Grafica e sviluppo: <br> Bea x Gedi
@@ -358,6 +758,6 @@
 
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
 
-  <script type="text/javascript" src="main.796e45ebffea9296864d.bundle.js"></script></body>
+  <script type="text/javascript" src="main.d36a54c379683d89bad1.bundle.js"></script></body>
 
 </html>
