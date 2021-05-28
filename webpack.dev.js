@@ -3,6 +3,7 @@ const common = require("./webpack.common");
 const merge = require("webpack-merge");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 
+
 module.exports = merge(common, {
   mode: "development",
   output: {
@@ -20,7 +21,15 @@ module.exports = merge(common, {
         test: /\.scss$/,
         use: [
           "style-loader", //3. Inject styles into DOM
-          "css-loader", //2. Turns css into commonjs
+          {
+            loader: "css-loader",
+            options: {
+              importLoaders: 2,
+            },
+          },
+          {
+            loader: "postcss-loader",
+          },
           "sass-loader" //1. Turns sass into css
         ]
       }
