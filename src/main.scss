@@ -49,11 +49,19 @@ div, section{
 
 }
 
+// animated elements
+
+[fade]{
+	will-change: opacity;
+}
+.animation-text-hero, .animation-text, .rect-animation, .info4_anim{
+	will-change: transform;
+}
 
 // VARIABLES
 $spacing: 8px;
 
-$line_height: 1.25;
+$line_height: 1.45;
 $padding: 3vw;
 $width: 80vw;
 $text-width:60vw;
@@ -346,7 +354,7 @@ animation: bounce 2s infinite;
 	font-size: 40px;
 	float:left;
 	width: 80px;
-	height: 60px;
+	height: 80px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -384,7 +392,8 @@ animation: bounce 2s infinite;
 		margin: 0 auto;
 		margin-bottom: $spacing*5;
 		p{
-			font-size: $size_body_big;
+			font-size: 18px;
+			font-weight: 500;
 		}
 		h4{
 			text-transform: uppercase;
@@ -449,7 +458,24 @@ animation: bounce 2s infinite;
     top: -40vw;
 	}
 }
+#info2_chart{
+	margin-bottom: $spacing*9;
+}
 
+.svg-container {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%;
+	vertical-align: middle;
+	overflow: hidden;
+		.svg-content {
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
 
 .section-video-interview{
 	background: $blu;
@@ -720,5 +746,13 @@ footer{
     left: -85px;
     position: absolute;
     top: -495px;
+	}
+}
+@media only screen and (min-width: 1450px) {
+	.info-container #info1 {
+    height: 25vw;
+	}
+	.info-container #info1 img{
+		left:-200px;
 	}
 }
