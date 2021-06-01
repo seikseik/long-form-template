@@ -217,6 +217,7 @@ html.sr .load-hidden {
 			font-size: $size_body_small;
     }
 		.social-links{
+			z-index: 999;
 			ul{
 				display: flex;
 			}
@@ -741,7 +742,7 @@ footer{
 	display: flex;
 	justify-content: center;
 	align-items:center;
-	top:60px;
+	top: calc(50% - 35px);
 	left: -35px;
 	cursor: pointer;
 }
