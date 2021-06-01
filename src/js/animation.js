@@ -142,6 +142,17 @@ let trigger_info_2 = document.getElementById("info2_chart")
     });
 
 
+    const right_4_mobile = gsap.utils.toArray(".info4_mobile");
+    const anim_info_4_mobile = gsap.fromTo(".info4_mobile", {scaleY: 0, transformOrigin:"bottom"}, {duration: 1, scaleY: 1});
+    let trigger_info_4_mobile = document.querySelector(".info4_mobile")
+      ScrollTrigger.create({
+        trigger: trigger_info_4_mobile,
+        animation: anim_info_4_mobile,
+        toggleActions: 'play none none none',
+        once: true,
+        ease: "Expo.easeOut",
+      });
+
 
 // hr line animation
 const hr = gsap.utils.toArray(".hr");
