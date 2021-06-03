@@ -22,7 +22,6 @@ page.style.transition = transition;
 page.onclick = slideDown;
 
 function slideDown(e) {
-  console.log(e.target.className)
   if (e.target.id != 'next') {
     return;
   }
