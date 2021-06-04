@@ -1,36 +1,51 @@
+<?php
+    include_once('./includes/config.php');
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
   <head>
-    <meta charset="UTF-8" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Primary Meta Tags -->
-    <title>La reinvenzione digitale dei distretti</title>
-    <meta name="title" content="La reinvenzione digitale dei distretti">
-    <meta name="description" content="Stato dell'arte economico dei distretti, contributo dell'innovazione digitale e tecnologie abilitanti, l'impegno di Tim in tema business.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $pageTitle; ?></title>
+    <meta name="description" content="<?php echo $pageDescription; ?>"/>
+    <link rel="canonical" href="<?php echo $pageUrl; ?>">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lab.repubblica.it/2021/economia/la-reinvenzione-digitale-dei-distretti">
-    <meta property="og:title" content="La reinvenzione digitale dei distretti">
-    <meta property="og:description" content="Stato dell'arte economico dei distretti, contributo dell'innovazione digitale e tecnologie abilitanti, l'impegno di Tim in tema business.">
-    <meta property="og:image" content="meta.jpg">
+    <!-- CONFIGURAZIONE STATS -->
+    <script  type="text/javascript">
+        var pageHref='<?php echo $pageUrl; ?>';
+        var pageType='dettaglio_content';
+    </script>
+    <esi:include src='http://www.repstatic.it/cless/common/stable/js/script/tlh/traffic_light_handler.html' />
+    <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script>
+    <!-- CONFIGURAZIONE STATS -->
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://lab.repubblica.it/2021/economia/la-reinvenzione-digitale-dei-distretti">
-    <meta property="twitter:title" content="La reinvenzione digitale dei distretti">
-    <meta property="twitter:description" content="Stato dell'arte economico dei distretti, contributo dell'innovazione digitale e tecnologie abilitanti, l'impegno di Tim in tema business.">
-    <meta property="twitter:image" content="meta.jpg">
+    <!-- facebook -->
+    <meta property="fb:app_id" content="182234715127717" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="<?php echo $pageTitle; ?>">
+    <meta property="og:description" content="<?php echo $pageDescription; ?>">
+    <meta property="og:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg.jpg'); ?>">
+    <meta property="og:url" content="<?php echo $pageUrl; ?>">
+    <meta property="article:published_time" content="2020-02-14T09:00">
+    <!-- facebook -->
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="<?php echo $pageTitle; ?>" >
+    <meta name="twitter:description" content="<?php echo $pageDescription; ?>">
+    <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg.jpg'); ?>" >
+    <meta name="twitter:url" content="<?php echo $pageUrl; ?>">
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="https://use.typekit.net/dkf7lyh.css">
 
-  <link href="main.fa75fc25394a027cb97e.css" rel="stylesheet"></head>
+  <link href="main.5328c8df52db4fa168bb.css" rel="stylesheet"></head>
 
   <body>
 
@@ -52,14 +67,14 @@
                 <div class="social-links">
                   <ul>
                     <li>
-                      <a href="https://www.facebook.com/sharer/sharer.php?u=https://lab.repubblica.it/2021/economia/la-reinvenzione-digitale-dei-distretti"><img src="assets/ec54716d1106aa90350f2198313248ea.svg" alt=""></a>
+                      <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>" target="_blank"><img src="assets/ec54716d1106aa90350f2198313248ea.svg" alt=""></a>
                     </li>
                     <li><svg id="slash" width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.64454 19.1L13.7745 0.619999H11.8005L0.670535 19.1H2.64454Z" fill="white" />
                       </svg>
 
                     </li>
-                    <li><a href="https://twitter.com/intent/tweet?url=https://lab.repubblica.it/2021/economia/la-reinvenzione-digitale-dei-distretti&text="><img src="assets/cf1388370844a81dd350a08522e48701.svg" alt=""></a></li>
+                    <li><a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>" target="_blank"><img src="assets/cf1388370844a81dd350a08522e48701.svg" alt=""></a></li>
 
                   </ul>
                 </div>
@@ -1215,12 +1230,13 @@
 
           </footer>
 
-
         </div>
       </main>
 
     </div>
 
+    <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
+    <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
   <script type="text/javascript" src="main.f215c354fb01ff0595a7.bundle.js"></script></body>
 
 </html>
