@@ -22,27 +22,6 @@ module.exports = {
         test: /\.html$/,
         use: ["html-loader"]
       },
-      // {
-      //   test: /\.(mov|mp4)$/,
-      //   use: [
-      //     {
-      //       loader: 'file-loader',
-      //       options: {
-      //         name: '[name].[ext]'
-      //       }
-      //     }
-      //   ]
-      // },
-      // {
-      //   test: /\.(svg|png|jpg|gif|mp4)$/,
-      //   use: {
-      //     loader: "file-loader",
-      //     options: {
-      //       name: "[name].[hash].[ext]",
-      //       outputPath: "assets/"
-      //     }
-      //   }
-      // }
       {
       test: /\.(mov|mp4)$/,
       use: [
@@ -64,6 +43,6 @@ module.exports = {
         }
       },
     }
-    ]
+   ]
   }
 };

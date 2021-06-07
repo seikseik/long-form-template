@@ -668,6 +668,7 @@ animation: bounce 2s infinite;
 			@include TerminaBold;
 			border-radius: 50px;
 			border:1px solid black;
+			background: white;
 			font-size: 12px;
 			width:100px;
 			padding:$spacing $spacing*2;
@@ -827,6 +828,7 @@ footer{
 			h1{
 				font-size: 8vw;
 				margin-bottom: $spacing*2;
+				line-height: 1.05;
 			}
 			.hero-logo{
 				img{
@@ -867,6 +869,9 @@ footer{
 			.col-8{
 					padding:0px;
 					border-left:none;
+					h2{
+						font-size: 25px;
+					}
 				.hr{
 					background: white;
 					max-width: 80%;
@@ -913,7 +918,7 @@ footer{
 		.black-quote{
 			padding: 0px;
 			h2{
-				font-size: 30px;
+				font-size: 25px;
 			}
 			.quote-title{
 				padding-bottom: $spacing*3;

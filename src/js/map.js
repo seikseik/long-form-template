@@ -50,19 +50,22 @@ function initializeMap(){
   let sub = document.querySelector("#sub");
 
   nord.addEventListener("click", function(){
-    map.flyTo(chapters["nord"]);
-    sud.classList.remove("active");
-    nord.classList.toggle("active");
+    if(nord.classList.contains("active") == false){
+      sud.classList.remove("active");
+      nord.classList.toggle("active");
+      map.flyTo(chapters["nord"]);
+    }
   })
   sud.addEventListener("click", function(){
+    if(sud.classList.contains("active") == false){
     map.flyTo(chapters["sud"]);
     nord.classList.remove("active");
     sud.classList.toggle("active");
+  }
   })
 
   function setActiveChapter(chapterName) {
     if (chapterName === activeChapterName) return;
-
       document.getElementById(chapterName).setAttribute('class', 'active');
       document.getElementById(activeChapterName).setAttribute('class', '');
     };
