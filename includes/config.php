@@ -4,6 +4,6 @@
     $pageTitle = "La reinvenzione digitale dei distretti";
     $pageDescription = "Stato dell'arte economico dei distretti, contributo dell'innovazione digitale e tecnologie abilitanti, l'impegno di Tim in tema business.";
 
-    $twitterString = "#digitaltransformation" . $pageUrl . ;
+    $twitterString = "#digitaltransformation" . $pageUrl;
     $whatsappString = $pageTitle. " " . $pageUrl;
 ?>
