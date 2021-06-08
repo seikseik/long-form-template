@@ -4,8 +4,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { SplitText } from "gsap/SplitText";
 
-gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, DrawSVGPlugin, SplitText);
 
+window.addEventListener("load", function(){
+  document.getElementById("bgvid").play();
+});
+
+
+gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, DrawSVGPlugin, SplitText);
 
 
 // scroll top
@@ -42,128 +47,139 @@ function slideDown(e) {
   }, 700);
 }
 
-// animation hero text
-const heroTitle = document.querySelector(".animation-text-hero");
 
-var tl = gsap.timeline(),
-    mySplitText = new SplitText(heroTitle, {type:"words,chars", wordsClass: "split-line"
-  }),
-    chars = mySplitText.chars;
-gsap.set(heroTitle, {perspective: 400});
+  // animation hero text
+  const heroTitle = document.querySelector(".animation-text-hero");
 
-tl.from(chars,
-  {  duration: 0.6,
-    ease: "circ.out",
-    y: 80,
-    stagger: 0.02
-  },
-   "+=0");
+  var tl = gsap.timeline(),
+      mySplitText = new SplitText(heroTitle, {type:"words,chars", wordsClass: "split-line"
+    }),
+      chars = mySplitText.chars;
+  gsap.set(heroTitle, {perspective: 400});
 
-
-
-
-// animate text on scroll
-
-const quotes = document.querySelectorAll(".animation-text");
-const timing = [ 0.3, 0.4, 0.4, 0.4];
-const stagger = [ 0.01, 0.02, 0.02, 0.02];
-function setupSplits() {
-  quotes.forEach((quote, i) => {
-
-    if(quote.anim) {
-      quote.anim.progress(1).kill();
-      quote.split.revert();
-    }
-
-    quote.split = new SplitText(quote, {
-      type:"words,chars",
-      wordsClass: "split-line"
-    });
-
-    quote.anim = gsap.from(quote.split.chars, {
-      scrollTrigger: {
-        trigger: quote,
-        start: "top 75%",
-      },
-      duration: timing[i],
+  tl.from(chars,
+    {  duration: 0.6,
       ease: "circ.out",
       y: 80,
-      stagger: stagger[i]
+      stagger: 0.02
+    },
+     "+=0");
+
+
+
+  // animate text on scroll
+
+  const quotes = document.querySelectorAll(".animation-text");
+  const timing = [ 0.3, 0.4, 0.4, 0.4];
+  const stagger = [ 0.01, 0.02, 0.02, 0.02];
+  function setupSplits() {
+    quotes.forEach((quote, i) => {
+
+      if(quote.anim) {
+        quote.anim.progress(1).kill();
+        quote.split.revert();
+      }
+
+      quote.split = new SplitText(quote, {
+        type:"words,chars",
+        wordsClass: "split-line"
+      });
+
+      quote.anim = gsap.from(quote.split.chars, {
+        scrollTrigger: {
+          trigger: quote,
+          start: "top 75%",
+        },
+        duration: timing[i],
+        ease: "circ.out",
+        y: 80,
+        stagger: stagger[i]
+      });
+    });
+  }
+
+  ScrollTrigger.addEventListener("refresh", setupSplits);
+  setupSplits();
+
+
+  // fade in
+
+  const fade = gsap.utils.toArray("[fade]");
+
+  fade.forEach((el, i) => {
+    const anim = gsap.fromTo(el, {autoAlpha: 0}, {duration: 1, autoAlpha: 1});
+    ScrollTrigger.create({
+      trigger: el,
+      animation: anim,
+      toggleActions: 'play none none none',
+      once: true,
     });
   });
-}
-
-ScrollTrigger.addEventListener("refresh", setupSplits);
-setupSplits();
-
-
-// fade in
-
-const fade = gsap.utils.toArray("[fade]");
-
-fade.forEach((el, i) => {
-  const anim = gsap.fromTo(el, {autoAlpha: 0}, {duration: 1, autoAlpha: 1});
-  ScrollTrigger.create({
-    trigger: el,
-    animation: anim,
-    toggleActions: 'play none none none',
-    once: true,
-  });
-});
 
 
 
 
-// ANIM INFO 2
-const right = gsap.utils.toArray(".rect-animation");
-const anim_info_2 = gsap.fromTo(".rect-animation", {scaleX: 0}, {duration: 0.8, scaleX: 1});
-let trigger_info_2 = document.getElementById("info2_chart")
-  ScrollTrigger.create({
-    trigger: trigger_info_2,
-    animation: anim_info_2,
-    toggleActions: 'play none none none',
-    once: true,
-    ease: "Expo.easeOut",
-  });
-
-
-
-  // ANIM INFO 4
-  const right_4 = gsap.utils.toArray(".info4_anim");
-  const anim_info_4 = gsap.fromTo(".info4_anim", {scaleX: 0}, {duration: 1, scaleX: 1});
-  let trigger_info_4 = document.querySelector(".info4_anim")
+  // ANIM INFO 2
+  const right = gsap.utils.toArray(".rect-animation");
+  const anim_info_2 = gsap.fromTo(".rect-animation", {scaleX: 0}, {duration: 0.8, scaleX: 1});
+  let trigger_info_2 = document.getElementById("info2_chart")
     ScrollTrigger.create({
-      trigger: trigger_info_4,
-      animation: anim_info_4,
+      trigger: trigger_info_2,
+      animation: anim_info_2,
       toggleActions: 'play none none none',
       once: true,
       ease: "Expo.easeOut",
     });
 
-
-    const right_4_mobile = gsap.utils.toArray(".info4_mobile");
-    const anim_info_4_mobile = gsap.fromTo(".info4_mobile", {scaleY: 0, transformOrigin:"bottom"}, {duration: 1, scaleY: 1});
-    let trigger_info_4_mobile = document.querySelector(".info4_mobile")
+    const right_mobile = gsap.utils.toArray(".rect-animation");
+    const anim_info_2_mobile = gsap.fromTo(".rect-animation", {scaleX: 0}, {duration: 0.8, scaleX: 1});
+    let trigger_info_2_mobile = document.getElementById("info2_chart_mobile")
       ScrollTrigger.create({
-        trigger: trigger_info_4_mobile,
-        animation: anim_info_4_mobile,
+        trigger: trigger_info_2_mobile,
+        animation: anim_info_2_mobile,
         toggleActions: 'play none none none',
         once: true,
         ease: "Expo.easeOut",
       });
 
 
-// hr line animation
-const hr = gsap.utils.toArray(".hr");
 
-hr.forEach((el, i) => {
-  gsap.set(el, {transformOrigin:"left"})
-  const anim = gsap.fromTo(el, {scaleX: 0}, {duration: .75, scaleX: 1});
-  ScrollTrigger.create({
-    trigger: el,
-    animation: anim,
-    ease: "circ.out",
-    toggleActions: 'play none none none',
-    once: true,
+    // ANIM INFO 4
+    const right_4 = gsap.utils.toArray(".info4_anim");
+    const anim_info_4 = gsap.fromTo(".info4_anim", {scaleX: 0}, {duration: 1, scaleX: 1});
+    let trigger_info_4 = document.querySelector(".info4_anim")
+      ScrollTrigger.create({
+        trigger: trigger_info_4,
+        animation: anim_info_4,
+        toggleActions: 'play none none none',
+        once: true,
+        ease: "Expo.easeOut",
+      });
+
+
+      const right_4_mobile = gsap.utils.toArray(".info4_mobile");
+      const anim_info_4_mobile = gsap.fromTo(".info4_mobile", {scaleY: 0, transformOrigin:"bottom"}, {duration: 1, scaleY: 1});
+      let trigger_info_4_mobile = document.querySelector(".info4_mobile")
+        ScrollTrigger.create({
+          trigger: trigger_info_4_mobile,
+          animation: anim_info_4_mobile,
+          toggleActions: 'play none none none',
+          once: true,
+          ease: "Expo.easeOut",
+        });
+
+
+  // hr line animation
+  const hr = gsap.utils.toArray(".hr");
+
+  hr.forEach((el, i) => {
+    gsap.set(el, {transformOrigin:"left"})
+    const anim = gsap.fromTo(el, {scaleX: 0}, {duration: .75, scaleX: 1});
+    ScrollTrigger.create({
+      trigger: el,
+      animation: anim,
+      ease: "circ.out",
+      toggleActions: 'play none none none',
+      once: true,
+    });
   });
-});

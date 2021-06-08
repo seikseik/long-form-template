@@ -40,6 +40,7 @@
     <meta name="twitter:description" content="<?php echo $pageDescription; ?>">
     <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg.jpg'); ?>" >
     <meta name="twitter:url" content="<?php echo $pageUrl; ?>">
+    <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
@@ -88,15 +89,13 @@
               </div>
               <div class="col-9 col-s-12">
                 <div class="hero-logo">
-                  <img src="./assets/logo_repubblica.svg" alt="">
+                  <a href=" https://www.repubblica.it/"><img src="./assets/logo_repubblica.svg" alt=""></a>
                 </div>
                 <div class="hero-text">
                   <h1 class="animation-text-hero">
-                    <em>LA </em> REINVENZIONE  <br>
-                    DIGITALE
-                    <em>DEI</em> DISTRETTI</h1>
+                    <em>LA</em> REINVENZIONE DIGITALE <em>DEI</em> DISTRETTI</h1>
                   <div class="hero-subtitle">
-                    Stato dell'arte economico dei distretti, contributo dell'innovazione digitale e tecnologie abilitanti, l'impegno di Tim in tema business.
+                    Stato dell'arte economico dei distretti, contributo dell'innovazione digitale e tecnologie abilitanti, l'impegno di Tim in tema business
                   </div>
                   <div class="hero-copy">
                     di ANDREA FROLLÀ
@@ -158,7 +157,7 @@
             <div fade class="section-header">
               <div class="hr title-divider"></div>
               <h4>La resistenza del mercato digitale</h4>
-              <p>L’evoluzione del fatturato, in %, delle imprese distrettuali suddivise per settore.</p>
+              <p>L’evoluzione del fatturato, in %, delle imprese distrettuali suddivise per settore</p>
             </div>
             <div fade id="info1" class="info desktop">
               <img src="./assets/info1_v2.svg" alt="">
@@ -188,7 +187,7 @@
             <div fade class="section-header">
               <div class="hr title-divider"></div>
               <h4>L'avanzata degli investimenti tecnologici</h4>
-              <p>Risposte alla domanda «Pensando al vostro settore, tra 6/12 mesi, cosa vedete profilarsi?».</p>
+              <p>Risposte alla domanda «Pensando al vostro settore, tra 6/12 mesi, cosa vedete profilarsi?»</p>
             </div>
             <div id="info2_container"  class="info svg container">
 
@@ -436,7 +435,7 @@
               </svg>
 
 
-              <svg fade id="info2_chart" class="mobile" width="333" height="754" viewBox="0 0 333 754" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg id="info2_chart_mobile" class="mobile" width="333" height="754" viewBox="0 0 333 754" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="Group 407">
                   <path
                     id="Fonte: Ipson &#226;&#128;&#147; Osservatorio imprese"
@@ -757,7 +756,7 @@
             </div>
             <div fade class="quote-paragraph col-4">
               La rivoluzione digitale era già in atto ma nell’ultimo anno è stata registrata una forte accelerazione trainata dalla pandemia. Se fino a qualche anno fa questa era solo un'opzione, spiega Federico Rigoni, chief revenue officer di Tim,
-              ora la grande sfida della digitalizzazione tra distretti industriali, città intelligenti e cittadini connessi è una strada obbligata.
+              ora la grande sfida della digitalizzazione tra distretti industriali, città intelligenti e cittadini connessi è una strada obbligata
             </div>
           </div>
           <div fade class="video-section row">
@@ -767,12 +766,10 @@
               </iframe>
             </div>
             <div class="video-small col-3">
-              <video id="sm" class="video-small-vid" autoplay loop muted playsinline>
+              <!-- <video width='100%' height='100%' id="sm" class="video-small-vid"muted playsinline autoplay loop >
                 <source src="./video-interview-small.mp4" type="video/mp4">
-              </video>
-              <script>
-                  document.getElementById('sm').play();
-              </script>
+              </video> -->
+              <img id="video-small" src="./assets/video-loop.gif" alt="">
             </div>
           </div>
         </div>
@@ -784,7 +781,7 @@
         <div class="map-title mobile">
           <div class="col-large">
             <h4>L'Italia dei distretti</h4>
-            <p>Dalle industrie cartotecniche di Lucca alla gioielleria di Recanati: la mappa dei territori delle eccellenze Made in Italy.</p>
+            <p>Dalle industrie cartotecniche di Lucca alla gioielleria di Recanati: la mappa dei territori delle eccellenze Made in Italy</p>
           </div>
         </div>
 
@@ -799,12 +796,12 @@
             <div class="row">
               <div class="col-large desktop">
                 <h4>L'Italia dei distretti</h4>
-                <p>Dalle industrie cartotecniche di Lucca alla gioielleria di Recanati: la mappa dei territori delle eccellenze Made in Italy.</p>
+                <p>Dalle industrie cartotecniche di Lucca alla gioielleria di Recanati: la mappa dei territori delle eccellenze Made in Italy</p>
               </div>
               <div class="col-small">
                 <ul>
                   <li><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="4" cy="4" r="3.5" stroke="black" />
+                    <circle cx="4" cy="4" r="4" fill="#42FF00"/>
                     </svg>
                     Industrie alimentari</li>
                   <li><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -886,7 +883,7 @@
             <div fade class="section-header">
               <div class="hr title-divider"></div>
               <h4>La resistenza del mercato digitale</h4>
-              <p>Il mercato digitale in Italia dal 2018 al 2020 (valori in Mln di €).</p>
+              <p>Il mercato digitale in Italia dal 2018 al 2020 (valori in Mln di €)</p>
             </div>
             <div fade id="info3" class="info desktop">
               <img src="./assets/info3_v2.svg" alt="">
@@ -1227,7 +1224,8 @@
                 </div>
               </div>
               <div class="footer-copy">
-                <a target="_blank" href="http://www.gedispa.it/it/nc.html">GEDI Gruppo Editoriale S.p.A.</a> – P.Iva 00906801006 – Cookie Policy – Privacy
+                <!-- <a target="_blank" href="http://www.gedispa.it/it/nc.html">GEDI Gruppo Editoriale S.p.A.</a> – P.Iva 00906801006 – Cookie Policy – Privacy -->
+                <esi:include src="https://lab.gedidigital.it/utils/includes/footer/stampa_nazionale.html" />
               </div>
             </div>
 

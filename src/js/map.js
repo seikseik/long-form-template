@@ -1,10 +1,13 @@
-let nord_center;
-let sud_center;
-let zoom_nord;
-let zoom_sud;
+
 
 
 function initializeMap(){
+
+  let nord_center;
+  let sud_center;
+  let zoom_nord;
+  let zoom_sud;
+
   if(window.innerWidth < 1000){
     nord_center = [10.869, 44.151];
     sud_center = [13.526, 41.528];
@@ -45,30 +48,28 @@ function initializeMap(){
       zoom: zoom_nord
   });
   }
+  map.scrollZoom.disable();
+  map.addControl(new mapboxgl.NavigationControl(), 'bottom-right');
 
   let nord = document.querySelector("#nord");
   let sub = document.querySelector("#sub");
 
   nord.addEventListener("click", function(){
     if(nord.classList.contains("active") == false){
-      sud.classList.remove("active");
       nord.classList.toggle("active");
-      map.flyTo(chapters["nord"]);
     }
+      sud.classList.remove("active");
+      map.flyTo(chapters["nord"]);
+
   })
   sud.addEventListener("click", function(){
     if(sud.classList.contains("active") == false){
-    map.flyTo(chapters["sud"]);
-    nord.classList.remove("active");
-    sud.classList.toggle("active");
-  }
-  })
+      sud.classList.toggle("active");
+    }
+      nord.classList.remove("active");
+      map.flyTo(chapters["sud"]);
 
-  function setActiveChapter(chapterName) {
-    if (chapterName === activeChapterName) return;
-      document.getElementById(chapterName).setAttribute('class', 'active');
-      document.getElementById(activeChapterName).setAttribute('class', '');
-    };
+  })
 
 };
 
@@ -77,7 +78,7 @@ function resizedw(){
   if(window.innerWidth < 1100){
   initializeMap();
   }else{
-    initializeMap();
+  initializeMap();
   }
 }
 

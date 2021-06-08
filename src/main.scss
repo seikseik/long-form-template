@@ -190,9 +190,14 @@ html.sr .load-hidden {
 }
 .video-hero{
   width:100vw;
-  height: 100vh;
+  min-height: 100vh;
+	height: 100vh;
 	min-width: fit-content;
 	position: relative;
+
+	.hero-logo{
+		z-index: 99;
+	}
   .video-container{
     height: 100%;
     width:100%;
@@ -211,6 +216,13 @@ html.sr .load-hidden {
     color:white;
     .hero-container{
       height: 100%;
+			overflow: hidden;
+			.row{
+				height: 100%;
+				.col-3, .col-9{
+					height: 100%;
+				}
+			}
     }
     h1{
       @include TerminaBold;
@@ -285,6 +297,14 @@ animation: bounce 2s infinite;
 	}
 }
 
+// policy
+.iubenda-cs-container{
+	em{
+		-webkit-text-stroke-width: unset;
+    -webkit-text-fill-color: unset;
+    -webkit-text-stroke-color: black;
+	}
+}
 
 
 // text animation
@@ -469,7 +489,7 @@ animation: bounce 2s infinite;
     top: -38vw;
 	}
 }
-#info2_chart{
+#info2_chart, #info2_chart_mobile{
 	margin-bottom: $spacing*9;
 }
 
@@ -529,6 +549,9 @@ animation: bounce 2s infinite;
 		}
 	}
 	.video-small{
+		#video-small{
+			width:100%;
+		}
 		.video-small-vid{
 			position: absolute;
 			top: -10%;
@@ -602,6 +625,10 @@ animation: bounce 2s infinite;
 
 
 // MAP
+.mapboxgl-ctrl-bottom-right{
+	bottom:$spacing*3 !important;
+	right: $spacing*3 !important;
+}
 .map-container{
   display:flex;
 	flex-direction: column;
@@ -611,7 +638,7 @@ animation: bounce 2s infinite;
     height: calc(100vh - 190px);
     width:100vw;
     position: relative;
-		pointer-events: none;
+		// pointer-events: none;
 		.mapboxgl-ctrl-attrib{
 			display: none !important;
 		}
@@ -797,13 +824,17 @@ footer{
 	.desktop-small{
 		display: none !important;
 	}
-	#info2_chart{
+	#info2_chart, #info2_chart_mobile{
 		margin: auto;
 		margin-bottom: $spacing*6;
 	}
 }
 
 @media only screen and (max-width: 768px) {
+	.mapboxgl-ctrl-bottom-right{
+		display: none;
+	}
+
 	.mobile{
 		display: flex!important;
 	}
@@ -811,9 +842,13 @@ footer{
 		display: none !important;
 	}
 
+	.animation-text{
+		line-height: 1.2 !important;
+	}
+
 	// infografiche
 
-	#info1_mobile, #info3_mobile, #info4_mobile, #info2_container #info2_chart{
+	#info1_mobile, #info3_mobile, #info4_mobile, #info2_container #info2_chart, #info2_chart_mobile{
 		margin:0 auto;
 		margin-bottom: $spacing*7;
 		img{
@@ -936,13 +971,15 @@ footer{
 				 padding-bottom: 56.15%;
 				iframe{
 					width:100%;
-
 				}
 			}
 			.video-small{
 				margin-top: $spacing*3;
-				padding-bottom: 56.15%;
+				padding-bottom: 0%;
 				padding-left: 0px;
+				height: auto;
+				width:66.66vw;
+				overflow: scroll;
 				.video-small-vid{
 					top:0px;
 					left:0px;
@@ -1042,6 +1079,7 @@ footer{
 		}
 		.footer-container{
 			padding:$spacing*4 $spacing*3;
+			height: fit-content;
 			.footer-info{
 				flex-wrap: wrap;
 				justify-content: space-between;
