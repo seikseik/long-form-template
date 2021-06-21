@@ -190,11 +190,32 @@ $heroHeight: 95vh;
 	width: 100%;
 	height: $heroHeight;
 	position: fixed;
-	z-index: -1;
+	z-index: -4;
 }
 
-#hero, .layer {
-	min-height: $heroHeight;
+
+.logo{
+	width:100%;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	position: absolute;
+	top:15px;
+	.logo-container{
+		max-width: 200px;
+		background: $grey;
+		padding:6px;
+		border-radius: $radius;
+		display:flex;
+		justify-content: center;
+		align-items:center;
+		img{
+			width:75%;
+			height: 0 auto;
+			text-align: center;
+		}
+	}
 }
 
 
@@ -241,6 +262,7 @@ $heroHeight: 95vh;
 	margin-bottom: $spacing*3;
 	height: 100%;
 	align-items: flex-end;
+	z-index: 10;
 	.hero-container{
 		background: $grey;
 		border-radius: $radius;
@@ -274,7 +296,10 @@ $heroHeight: 95vh;
 		margin-top: $spacing*5;
 		@include body;
 		font-weight: 500;
-		font-size: $size_body_small;
+		strong{
+			font-weight: bold
+		}
+		font-size: $size_body_big;
 		text-align: right;
 	}
 	.social-links{
@@ -301,6 +326,9 @@ $heroHeight: 95vh;
 				}
 				a{
 					display: flex;
+					img{
+						padding: 10px;
+					}
 				}
 			}
 		}
