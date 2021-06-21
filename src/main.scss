@@ -167,12 +167,38 @@ body{
 }
 
 
+.page-container{
+	background: white;
+}
 
 
 // INIZIO INIZIO INIZIO INIZIO INIZIO INIZIO
 
 
-// VIDEO + HERO
+// prova parallasse
+
+$bronze: #130d0a;
+$white: #fff;
+$heroHeight: 95vh;
+
+#hero {
+	height: $heroHeight;
+	overflow: hidden;
+	position: relative;
+}
+.layer {
+	width: 100%;
+	height: $heroHeight;
+	position: fixed;
+	z-index: -1;
+}
+
+#hero, .layer {
+	min-height: $heroHeight;
+}
+
+
+// // VIDEO + HERO
 .video-hero{
   width:100vw;
   min-height: 100vh;
@@ -186,23 +212,23 @@ body{
 	.hero-logo{
 		z-index: 99;
 	}
-  .video-container{
-    height: 100%;
-    width:100%;
-    z-index: -1;
-    position: absolute;
-		display: flex;
-		align-items: flex-start;
-    video{
-      width:90%;
-      height: calc(100vh - 150px);
-      object-fit: cover;
-			border-radius:$radius;
-			margin:0 auto;
-			margin-top: $spacing*5;
-			margin-bottom: $spacing*5;
-    }
-  }
+}
+.video-container{
+	height: 100%;
+	width:100%;
+	z-index: -1;
+	position: absolute;
+	display: flex;
+	align-items: flex-start;
+	video{
+		width:90%;
+		height: calc(100vh - 150px);
+		object-fit: cover;
+		border-radius:$radius;
+		margin:0 auto;
+		margin-top: $spacing*5;
+		margin-bottom: $spacing*5;
+	}
 }
 .hero{
 	height: fit-content;
@@ -213,12 +239,14 @@ body{
 	display: flex;
 	justify-content: center;
 	margin-bottom: $spacing*3;
+	height: 100%;
+	align-items: flex-end;
 	.hero-container{
 		background: $grey;
 		border-radius: $radius;
-		height: 100%;
 		width:80%;
 		position: relative;
+
 		.row{
 			height: 100%;
 			width:80%;
@@ -304,6 +332,8 @@ body{
   height: auto;
 	width:100%;
 	display: flex;
+	margin-top: $spacing*6;
+	margin-bottom: $spacing*2;
 	&.quote-right{
 		justify-content: flex-end;
 		.quote-container{

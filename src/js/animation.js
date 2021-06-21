@@ -153,3 +153,20 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+
+const tl2 = gsap.timeline({
+	scrollTrigger: {
+		trigger: "#hero",
+		start: "top top",
+		end: "bottom top",
+		scrub: true
+	}
+});
+
+gsap.utils.toArray(".parallax").forEach(layer => {
+	const depth = layer.dataset.depth;
+	const movement = -(layer.offsetHeight * depth)
+	tl2.to(layer, {y: movement, ease: "none"}, 0)
+});
