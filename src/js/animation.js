@@ -19,34 +19,6 @@ topArrow.addEventListener("click", function(){
   gsap.to(window, {duration: 2, scrollTo: 0});
 });
 
-// page animation hero
-let page = document.getElementById('page-container');
-let pageContainer = document.querySelector(".page-container");
-let transition = 'top .8s cubic-bezier(0.77, 0, 0.175, 1)';
-page.style.transition = transition;
-page.onclick = slideDown;
-
-function slideDown(e) {
-  if (e.target.id != 'next') {
-    return;
-  }
-
-  page.onclick = '';
-  self = e.target.parentNode;
-  var offset = self.getBoundingClientRect();
-  var scroll = self.offsetTop;
-
-  page.style.top = (-offset.height-offset.top) + 'px';
-
-  setTimeout(function () {
-    page.style.transition = 'none';
-    page.style.top = '';
-    window.scrollTo(0, offset.height+scroll);
-    page.style.transition = transition;
-    page.onclick = slideDown;
-  }, 700);
-}
-
 
   // animation hero text
   const heroTitle = document.querySelector(".animation-text-hero");
@@ -105,7 +77,6 @@ function slideDown(e) {
   // fade in
 
   const fade = gsap.utils.toArray("[fade]");
-
   fade.forEach((el, i) => {
     const anim = gsap.fromTo(el, {autoAlpha: 0}, {duration: 1, autoAlpha: 1});
     ScrollTrigger.create({
@@ -117,69 +88,68 @@ function slideDown(e) {
   });
 
 
+// FEDE INFO 1
+
+const fadeInfo = gsap.utils.toArray("[info-fade]");
+let trigger_info = document.querySelector(".infografica-full")
+fadeInfo.forEach((el, i) => {
+  const anim = gsap.fromTo(el, {autoAlpha: 0}, {duration: 1, autoAlpha: 1,});
+  ScrollTrigger.create({
+    trigger: trigger_info,
+    animation: anim,
+    toggleActions: 'play none none none',
+    once: true,
+  });
+});
 
 
-  // ANIM INFO 2
+// FADE NUMBERS
+const fadeNum = gsap.utils.toArray("[num-fade]");
+fadeNum.forEach((el, i) => {
+  const anim = gsap.fromTo(el, {autoAlpha: 0}, {duration: .5, autoAlpha: 1, stagger: 1,});
+  ScrollTrigger.create({
+    trigger: el,
+    animation: anim,
+    toggleActions: 'play none none none',
+    once: true,
+  });
+});
+
+
+  // // ANIM INFO
   const right = gsap.utils.toArray(".rect-animation");
-  const anim_info_2 = gsap.fromTo(".rect-animation", {scaleX: 0}, {duration: 0.8, scaleX: 1});
-  let trigger_info_2 = document.getElementById("info2_chart")
+  const anim_info_2 = gsap.fromTo(".rect-animation", {scaleX: 0}, {duration: 0.8, scaleX: 1, stagger: 0.03,});
+  let trigger_info_2 = document.querySelector(".infografica-full-white-container")
     ScrollTrigger.create({
       trigger: trigger_info_2,
       animation: anim_info_2,
       toggleActions: 'play none none none',
       once: true,
-      ease: "Expo.easeOut",
+      ease: "Expo.easeInOut",
     });
 
-    const right_mobile = gsap.utils.toArray(".rect-animation");
-    const anim_info_2_mobile = gsap.fromTo(".rect-animation", {scaleX: 0}, {duration: 0.8, scaleX: 1});
-    let trigger_info_2_mobile = document.getElementById("info2_chart_mobile")
-      ScrollTrigger.create({
-        trigger: trigger_info_2_mobile,
-        animation: anim_info_2_mobile,
-        toggleActions: 'play none none none',
-        once: true,
-        ease: "Expo.easeOut",
-      });
 
 
 
-    // ANIM INFO 4
-    const right_4 = gsap.utils.toArray(".info4_anim");
-    const anim_info_4 = gsap.fromTo(".info4_anim", {scaleX: 0}, {duration: 1, scaleX: 1});
-    let trigger_info_4 = document.querySelector(".info4_anim")
-      ScrollTrigger.create({
-        trigger: trigger_info_4,
-        animation: anim_info_4,
-        toggleActions: 'play none none none',
-        once: true,
-        ease: "Expo.easeOut",
-      });
+  // modal
 
+  // Get the modal
+var modal = document.getElementById("myModal");
 
-      const right_4_mobile = gsap.utils.toArray(".info4_mobile");
-      const anim_info_4_mobile = gsap.fromTo(".info4_mobile", {scaleY: 0, transformOrigin:"bottom"}, {duration: 1, scaleY: 1});
-      let trigger_info_4_mobile = document.querySelector(".info4_mobile")
-        ScrollTrigger.create({
-          trigger: trigger_info_4_mobile,
-          animation: anim_info_4_mobile,
-          toggleActions: 'play none none none',
-          once: true,
-          ease: "Expo.easeOut",
-        });
+var btn = document.getElementById("myBtn");
 
+var span = document.getElementsByClassName("close")[0];
 
-  // hr line animation
-  const hr = gsap.utils.toArray(".hr");
+btn.onclick = function() {
+  modal.style.display = "block";
+}
 
-  hr.forEach((el, i) => {
-    gsap.set(el, {transformOrigin:"left"})
-    const anim = gsap.fromTo(el, {scaleX: 0}, {duration: .75, scaleX: 1});
-    ScrollTrigger.create({
-      trigger: el,
-      animation: anim,
-      ease: "circ.out",
-      toggleActions: 'play none none none',
-      once: true,
-    });
-  });
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
