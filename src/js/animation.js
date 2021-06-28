@@ -194,7 +194,7 @@ function loadComplete() {
       className: ''
     })
     .to('#preloader', 1, {
-      xPercent: 100,
+      xPercent: 105,
       ease: "Expo.easeInOut",
     })
     .set('#preloader', {

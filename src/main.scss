@@ -1279,9 +1279,9 @@ padding: $spacing*2 0;
 }
 .modal{
 	.modal-content{
-		margin:$spacing*3;
+		margin:$spacing*2;
 		margin-top:$spacing*4;
-		width:calc(100% - #{$spacing*6});
+		width:calc(100% - #{$spacing*4});
 		height: 100vh;
 		padding:$spacing*4 $spacing*3;
 		.text-container{
