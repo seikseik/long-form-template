@@ -185,7 +185,6 @@ function loadComplete() {
       autoAlpha: 0,
     })
     .to('.txt-perc', 0.7, {
-      opacity:1,
       textContent: 100,
       ease: "Power1.easeIn",
       snap: { textContent: 1 },
