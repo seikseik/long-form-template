@@ -867,6 +867,9 @@ footer{
 				flex: 1;
 				text-align: center;
 				font-size: $size_body_big;
+				span{
+					display: block;
+				}
 				img{
 					display: block;
 					margin: 0 auto;
@@ -874,9 +877,15 @@ footer{
 				}
 				&:first-child{
 					text-align: left;
+					span{
+						text-align: left;
+					}
 				}
 				&:last-child{
 					text-align: right;
+					span{
+						text-align:right;
+					}
 				}
 			}
 		}
