@@ -9,7 +9,6 @@ window.addEventListener("load", function(){
   document.getElementById("bgvid").play();
 });
 
-
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, DrawSVGPlugin, SplitText);
 
 
@@ -170,3 +169,39 @@ gsap.utils.toArray(".parallax").forEach(layer => {
 	const movement = -(layer.offsetHeight * depth)
 	tl2.to(layer, {y: movement, ease: "none"}, 0)
 });
+
+
+
+let loadingProgress;
+const video = document.getElementById("bgvid")
+video.addEventListener('loadeddata', (event) => {
+  loadComplete()
+});
+
+
+
+function loadComplete() {
+  var preloaderOutTl = new gsap.timeline();
+  preloaderOutTl
+    .to('.progress', 0.3, {
+      autoAlpha: 0,
+    })
+    .to('.txt-perc', 0.7, {
+      opacity:1,
+      textContent: 100,
+      ease: "Power1.easeIn",
+      snap: { textContent: 1 },
+      stagger: 1,
+    })
+    .set('body', {
+      className: ''
+    })
+    .to('#preloader', 1, {
+      xPercent: 100,
+      ease: "Expo.easeInOut",
+    })
+    .set('#preloader', {
+      className: '+=is-hidden'
+    })
+  return preloaderOutTl;
+}

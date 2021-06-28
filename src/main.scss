@@ -174,6 +174,38 @@ body{
 
 // INIZIO INIZIO INIZIO INIZIO INIZIO INIZIO
 
+// preloader
+
+#preloader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background-color: $blu;
+  color: #ffffff; }
+  #preloader .txt {
+    position: absolute;
+		display: flex;
+    bottom: $padding;
+    left: $padding;
+    color:white;
+		font-size: 15vw;
+		line-height: 1;
+  }
+  #preloader .txt-perc {
+    opacity: 1;
+    line-height: 1;
+   }
+
+  #preloader.is-hidden {
+    visibility: hidden;
+		display: none;
+    opacity: 0; }
+
+.is-loading {
+  overflow-y: hidden; }
+
+
 
 // prova parallasse
 
