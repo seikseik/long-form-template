@@ -90,7 +90,7 @@ topArrow.addEventListener("click", function(){
 
   const fadeLeft = gsap.utils.toArray("[fade-left]");
   fadeLeft.forEach((el, i) => {
-    const anim = gsap.fromTo(el, {x: -30}, {duration: 1, x:0});
+    const anim = gsap.fromTo(el, {x: -25}, {duration: 0.75, x:0});
     ScrollTrigger.create({
       trigger: el,
       animation: anim,
@@ -101,7 +101,7 @@ topArrow.addEventListener("click", function(){
 
   const fadeRight = gsap.utils.toArray("[fade-right]");
   fadeRight.forEach((el, i) => {
-    const anim = gsap.fromTo(el, {x: 30}, {duration: 1, x:0});
+    const anim = gsap.fromTo(el, {x: 25}, {duration: 0.75, x:0});
     ScrollTrigger.create({
       trigger: el,
       animation: anim,
@@ -110,7 +110,20 @@ topArrow.addEventListener("click", function(){
     });
   });
 
-  // Fade right
+  // hr line animation
+  const hr = gsap.utils.toArray(".hr");
+
+  hr.forEach((el, i) => {
+    gsap.set(el, {transformOrigin:"left"})
+    const anim = gsap.fromTo(el, {scaleX: 0}, {duration: .5, scaleX: 1});
+    ScrollTrigger.create({
+      trigger: el,
+      animation: anim,
+      ease: "circ.out",
+      toggleActions: 'play none none none',
+      once: true,
+    });
+  });
 
 // FEDE INFO 1
 const fadeInfo = gsap.utils.toArray("[info-fade]");
