@@ -174,7 +174,7 @@ gsap.utils.toArray(".parallax").forEach(layer => {
  //  preloader
 let loadingProgress;
 const video = document.getElementById("bgvid")
-video.addEventListener('loadeddata', (event) => {
+video.addEventListener('playing', (event) => {
   loadComplete()
 });
 
