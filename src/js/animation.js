@@ -86,9 +86,33 @@ topArrow.addEventListener("click", function(){
     });
   });
 
+  // Fade left
+
+  const fadeLeft = gsap.utils.toArray("[fade-left]");
+  fadeLeft.forEach((el, i) => {
+    const anim = gsap.fromTo(el, {x: -30}, {duration: 1, x:0});
+    ScrollTrigger.create({
+      trigger: el,
+      animation: anim,
+      toggleActions: 'play none none none',
+      once: true,
+    });
+  });
+
+  const fadeRight = gsap.utils.toArray("[fade-right]");
+  fadeRight.forEach((el, i) => {
+    const anim = gsap.fromTo(el, {x: 30}, {duration: 1, x:0});
+    ScrollTrigger.create({
+      trigger: el,
+      animation: anim,
+      toggleActions: 'play none none none',
+      once: true,
+    });
+  });
+
+  // Fade right
 
 // FEDE INFO 1
-
 const fadeInfo = gsap.utils.toArray("[info-fade]");
 let trigger_info = document.querySelector(".infografica-full")
 fadeInfo.forEach((el, i) => {
