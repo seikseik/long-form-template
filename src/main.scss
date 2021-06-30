@@ -606,9 +606,13 @@ $heroHeight: 95vh;
 	padding-top:0px !important;
 	.header-modal{
 		display: flex;
+		flex-direction: column;
 		padding-top:$spacing*2;
 		border-top: 2px solid black;
 		margin-bottom: $spacing*4;
+		.header-modal-title{
+			display: flex;
+		}
 		h5{
 			max-width: 80%;
 			font-size: $size_body_big;
@@ -621,6 +625,11 @@ $heroHeight: 95vh;
 		}
 		em{
 			color:$blu;
+		}
+		.sub{
+			margin-top: $spacing;
+			margin-left: 50px;
+			text-transform: none;
 		}
 	}
 }
@@ -1298,6 +1307,7 @@ padding: $spacing*2 0;
 			max-width: 100%;
 		}
 	}
+
 }
 .modal{
 	.modal-content{
