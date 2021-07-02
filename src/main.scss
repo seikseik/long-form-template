@@ -183,39 +183,6 @@ body{
 
 // INIZIO INIZIO INIZIO INIZIO INIZIO INIZIO
 
-// preloader
-
-#preloader {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  z-index: 99999;
-  background-color: $blu;
-  color: #ffffff; }
-  #preloader .txt {
-    position: absolute;
-		display: flex;
-    bottom: $padding;
-    left: $padding;
-    color:white;
-		font-size: 15vw;
-		p, span{line-height: 1;}
-
-  }
-  #preloader .txt-perc {
-    opacity: 1;
-    line-height: 1;
-   }
-
-  #preloader.is-hidden {
-    visibility: hidden;
-		display: none;
-    opacity: 0; }
-
-.is-loading {
-  overflow-y: hidden; }
-
-
 
 // prova parallasse
 
@@ -244,6 +211,7 @@ $heroHeight: 95vh;
 	align-items:center;
 	position: absolute;
 	top:15px;
+	z-index: 99;
 	.logo-container{
 		max-width: 200px;
 		background: $grey;
@@ -252,6 +220,11 @@ $heroHeight: 95vh;
 		display:flex;
 		justify-content: center;
 		align-items:center;
+		a{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 		img{
 			width:75%;
 			height: 0 auto;
@@ -423,7 +396,7 @@ $heroHeight: 95vh;
 				font-size:$size_quote;
 				@include KanedaBold;
 				text-transform: uppercase;
-				line-height: .9;
+				line-height: 1;
 			}
 		}
 	}
@@ -878,7 +851,7 @@ footer{
 			font-weight: bold;
 			display: flex;
 			justify-content: center;
-			width: 60vw;
+			width: 80%;
 			margin: 0 auto;
 			margin-bottom: $spacing*3;
 			.col-footer{
@@ -937,6 +910,9 @@ footer{
 @media (min-width: 1440px){
 	.infografica-full-white .infografica-full-white-container{
 		max-width: 1300px;
+	}
+	.quote .quote-container .quote-inner #quote{
+		font-size: 70px;
 	}
 	.infografica-full .infografica-container{
 		max-width: 1300px;

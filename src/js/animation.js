@@ -206,36 +206,3 @@ gsap.utils.toArray(".parallax").forEach(layer => {
 	const movement = -(layer.offsetHeight * depth)
 	tl2.to(layer, {y: movement, ease: "none"}, 0)
 });
-
-
- //  preloader
-let loadingProgress;
-const video = document.getElementById("bgvid")
-video.addEventListener('playing', (event) => {
-  loadComplete()
-});
-
-function loadComplete() {
-  var preloaderOutTl = new gsap.timeline();
-  preloaderOutTl
-    .to('.progress', 0.3, {
-      autoAlpha: 0,
-    })
-    .to('.txt-perc', 0.7, {
-      textContent: 100,
-      ease: "Power1.easeIn",
-      snap: { textContent: 1 },
-      stagger: 1,
-    })
-    .set('body', {
-      className: ''
-    })
-    .to('#preloader', 1, {
-      xPercent: 105,
-      ease: "Expo.easeInOut",
-    })
-    .set('#preloader', {
-      className: '+=is-hidden'
-    })
-  return preloaderOutTl;
-}
