@@ -74,6 +74,28 @@ $size-small: 16px;
 $blu: #3B7AF3;
 $black: #131313;
 
+@mixin circle{
+	width:40px;
+	height: 40px;
+	background: $blu;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.inner-circle{
+		background: white;
+		width:4px;
+		height: 4px;
+		border-radius: 50px;
+	}
+}
+
+hr{
+	background: $blu;
+	height: 2px;
+	margin: 0 $spacing*6;
+}
+
 body{
 	line-height: $line_height;
 	color:$black;
@@ -177,15 +199,45 @@ body{
 .text-section{
 	padding: $spacing*10 $spacing*5;
 	padding-bottom:0;
+	z-index: 2;
+	pointer-events: none;
+	position: relative;
 	&.intro-section{
 		.text-container{
 			background: $blu;
 			border-radius: 16px;
-			padding: $spacing*8;
+			padding: $spacing*4;
 			color:white;
+			position: relative;
 			p{
 				font-family: $ap-reg;
 				font-size: $size-quote;
+				border:2px solid white;
+				padding: $spacing*4;
+				text-align: center;
+				position: relative;
+			}
+			.circle{
+				&:first-child{
+					@include circle;
+					top:-20px;
+					left: -20px;
+				}
+				&:nth-child(2){
+					@include circle;
+					top:-20px;
+					right: -20px;
+				}
+				&:nth-child(3){
+					@include circle;
+					bottom:-20px;
+					left: -20px;
+				}
+				&:nth-child(4){
+					@include circle;
+					bottom:-20px;
+					right: -20px;
+				}
 			}
 		}
 	}
@@ -212,8 +264,8 @@ body{
 	display: flex;
 	align-items: center;
 	margin-bottom: $spacing*4;
-	align-items: center;
 	font-family: $ap-bold;
+	justify-content: center;
 	span{
 		width: 70px;
 		font-weight: bold;
@@ -295,11 +347,27 @@ body{
 }
 
 
+// illustrations
+.background-illu{
+	position: absolute;
+	width:100%;
+	height: auto;
+	z-index: 1;
+}
+
+// gallery
+
+.image-gallery{
+	height: 100vh;
+}
+
 // footer
 footer{
 	background: $blu;
 	color:white;
 	a{color:white;}
+	font-family: $ap-bold;
+
 	.footer-container{
 		display: flex;
 		flex-direction: column;
@@ -308,14 +376,11 @@ footer{
 		height: 100%;
 		position: relative;
 		padding:$spacing*4;
-		max-width: 900px;
-		width: 60vw;
 		margin: 0 auto;
 		.footer-info{
 			font-weight: bold;
 			display: flex;
 			justify-content: center;
-			width: 80%;
 			margin: 0 auto;
 			margin-bottom: $spacing*3;
 			.col-footer{
@@ -346,24 +411,26 @@ footer{
 		.footer-copy{
 			width:100%;
 			text-align: center;
-			width: 70%;
 			margin: 0 auto;
-			font-weight: 500;
+			font-size: $size-small;
+			span{
+				font-size: $size-body;
+			}
 		}
 	}
 }
 .arrow-top{
 	position: absolute;
-	height: 70px;
-	width:70px;
+	height: 60px;
+	width:60px;
 	border-radius: 100%;
 	background: $blu;
 	color:white;
 	display: flex;
 	justify-content: center;
 	align-items:center;
-	top: calc(50% - 35px);
-	left: -35px;
+	top: -30px;
+	border:3px solid white;
 	cursor: pointer;
 }
 
@@ -443,10 +510,12 @@ footer{
 		margin:0px;
 		margin-bottom: $spacing*5;
 		margin-top: $spacing;
+		margin-left: auto;
+		margin-right: auto;
 		align-items: center;
+		justify-content: center;
 		border-radius: 15px;
 		span{
-
 			border-radius: 5px;
 			height: 60px;
 			width:60px;
@@ -457,7 +526,6 @@ footer{
 			}
 		}
 		h1{
-
 			line-height: 1.1;
 			height: auto;
 			padding-top: 0px;
@@ -469,7 +537,6 @@ footer{
 		padding:$spacing;
 		margin-bottom: $spacing*3;
 		h1{
-
 			line-height: 1;
 		}
 		span{
