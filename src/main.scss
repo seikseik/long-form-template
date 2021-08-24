@@ -317,22 +317,28 @@ body{
 			.image-hero{
 				position: absolute;
 				&:first-child{
-					width:60%;
+					width:40%;
 					top:20%;
 					left: 10%;
+					z-index: 2;
 				}
 				&:nth-child(2){
 					width:40%;
 					top:50%;
 					left: 20%;
+					z-index: 2;
 				}
 				&:nth-child(3){
-					width:80%;
-					top:70%;
-					left: 30%;
+					width:45%;
+					top:22%;
+					left: 35%;
+					z-index: 1;
 				}
 				&:nth-child(4){
-
+					width:55%;
+					top:65%;
+					left: 23%;
+					z-index: 1;
 				}
 			}
 		}
@@ -346,19 +352,25 @@ body{
 					width:60%;
 					top:20%;
 					right: 10%;
+					z-index: 2;
 				}
 				&:nth-child(2){
 					width:40%;
 					top:50%;
 					right: 20%;
+					z-index: 2;
 				}
 				&:nth-child(3){
-					width:80%;
-					top:70%;
-					right: 30%;
+					width:40%;
+					top:50%;
+					right: 40%;
+					z-index: 1;
 				}
 				&:nth-child(4){
-
+					width:45%;
+					top:10%;
+					right: 10%;
+					z-index: 1;
 				}
 			}
 		}
@@ -422,7 +434,7 @@ body{
 .image-gallery-container{
 	display: flex;
   flex-flow: column wrap;
-  height:100vh;
+  max-height:100vh;
   align-items: center;
 	overflow-x: scroll;
 	overflow-y: hidden;
@@ -487,6 +499,7 @@ footer{
 	a{color:white;}
 	font-family: $ap-bold;
 	margin-top: $spacing*12;
+	position: relative;
 	.footer-container{
 		display: flex;
 		flex-direction: column;
@@ -494,14 +507,15 @@ footer{
 		align-items: center;
 		height: 100%;
 		position: relative;
-		padding:$spacing*4;
+		padding:$spacing*10 $spacing*4;
 		margin: 0 auto;
 		.footer-info{
 			font-weight: bold;
 			display: flex;
 			justify-content: center;
 			margin: 0 auto;
-			margin-bottom: $spacing*3;
+			margin-bottom: $spacing*5;
+			width: 70vw;
 			.col-footer{
 				flex: 1;
 				text-align: center;
@@ -531,9 +545,12 @@ footer{
 			width:100%;
 			text-align: center;
 			margin: 0 auto;
+			max-width: 80vw;
 			font-size: $size-small;
-			span{
+			z-index: 2;
+			div{
 				font-size: $size-body;
+				padding-bottom: $spacing*2;
 			}
 		}
 	}
@@ -552,7 +569,30 @@ footer{
 	border:3px solid white;
 	cursor: pointer;
 }
-
+#footer1{
+	position: absolute;
+	bottom:0;
+	left: 0px;
+	z-index: 1;
+}
+#footer2{
+	position: absolute;
+	bottom:0;
+	left: 200px;
+	z-index: 1;
+}
+#footer3{
+	position: absolute;
+	bottom:0;
+	right: 280px;
+	z-index: 1;
+}
+#footer4{
+	position: absolute;
+	bottom:0;
+	right: 0px;
+	z-index: 1;
+}
 
 // WIDE DESKTOP
 
