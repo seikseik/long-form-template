@@ -1,18 +1,8 @@
-import { gsap } from "gsap";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Draggable } from "gsap/Draggable";
-import { CSSRulePlugin } from "gsap/CSSRulePlugin";
-import { InertiaPlugin } from "gsap/InertiaPlugin";
-import { SplitText } from "gsap/SplitText";
-
-gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, SplitText, Draggable);
-
 const Concorso = [
   {
     "N° opera": 15349,
     "Titolo Opera": "Forme e colori in arte",
-    "FILE": "15349_R7A4013.jpg",
+    "FILE": "15349_R7A4013.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Abruzzo",
@@ -22,7 +12,7 @@ const Concorso = [
   {
     "N° opera": 16594,
     "Titolo Opera": "Come Kandinsky",
-    "FILE": "16594_R7A2893.jpg",
+    "FILE": "16594_R7A2893.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Basilicata",
@@ -32,7 +22,7 @@ const Concorso = [
   {
     "N° opera": 17468,
     "Titolo Opera": "La Rinascita: Arte, Musica, Emozioni",
-    "FILE": "17468_R7A5328.jpg",
+    "FILE": "17468_R7A5328.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Calabria",
@@ -42,7 +32,7 @@ const Concorso = [
   {
     "N° opera": 18249,
     "Titolo Opera": "100 Colori",
-    "FILE": "18249_R7A5257.jpg",
+    "FILE": "18249_R7A5257.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Campania",
@@ -52,7 +42,7 @@ const Concorso = [
   {
     "N° opera": 16536,
     "Titolo Opera": "Nel giardino di Monet",
-    "FILE": "16536_R7A2681.jpg",
+    "FILE": "16536_R7A2681.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Emilia-Romagna",
@@ -62,7 +52,7 @@ const Concorso = [
   {
     "N° opera": 18000,
     "Titolo Opera": "Facciamo arte, faccia- mo arte, facci-amo-arte",
-    "FILE": "18000_R7A5126.jpg",
+    "FILE": "18000_R7A5126.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Friuli-Venezia Giulia",
@@ -72,7 +62,7 @@ const Concorso = [
   {
     "N° opera": 17387,
     "Titolo Opera": "L'albero della vita, l'albero della speranza",
-    "FILE": "17387_R7A3309.jpg",
+    "FILE": "17387_R7A3309.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Lazio",
@@ -82,7 +72,7 @@ const Concorso = [
   {
     "N° opera": 17137,
     "Titolo Opera": "Arcimboldiamo in mezzo all'arte",
-    "FILE": "17137_R7A3330.jpg",
+    "FILE": "17137_R7A3330.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Liguria",
@@ -92,7 +82,7 @@ const Concorso = [
   {
     "N° opera": 17471,
     "Titolo Opera": "Una magica scintilla",
-    "FILE": "17471_R7A3389.jpg",
+    "FILE": "17471_R7A3389.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Lombardia",
@@ -102,7 +92,7 @@ const Concorso = [
   {
     "N° opera": 17484,
     "Titolo Opera": "L'abbraccio (opera ispirata alla Maternità di klimt)",
-    "FILE": "17484_R7A4977.jpg",
+    "FILE": "17484_R7A4977.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Marche",
@@ -112,7 +102,7 @@ const Concorso = [
   {
     "N° opera": 16873,
     "Titolo Opera": "Le stelle e gli occhi di Mirò",
-    "FILE": "16873_R7A2649.jpg",
+    "FILE": "16873_R7A2649.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Molise",
@@ -122,7 +112,7 @@ const Concorso = [
   {
     "N° opera": 17702,
     "Titolo Opera": "Marie-Thérèse Walter",
-    "FILE": "17702_R7A5203.jpg",
+    "FILE": "17702_R7A5203.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Piemonte",
@@ -132,7 +122,7 @@ const Concorso = [
   {
     "N° opera": 17852,
     "Titolo Opera": "Tanta Luce",
-    "FILE": "17852_R7A4007.jpg",
+    "FILE": "17852_R7A4007.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Puglia",
@@ -142,7 +132,7 @@ const Concorso = [
   {
     "N° opera": 17865,
     "Titolo Opera": "L'uomo delle stelle",
-    "FILE": "17865_R7A5261.jpg",
+    "FILE": "17865_R7A5261.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Sardegna",
@@ -152,7 +142,7 @@ const Concorso = [
   {
     "N° opera": 18008,
     "Titolo Opera": "Un mondo d'arte",
-    "FILE": "18008_R7A3961.jpg",
+    "FILE": "18008_R7A3961.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Sicilia",
@@ -162,7 +152,7 @@ const Concorso = [
   {
     "N° opera": 16554,
     "Titolo Opera": "Dal legno al disegno",
-    "FILE": "16554_R7A2452.jpg",
+    "FILE": "16554_R7A2452.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Toscana",
@@ -172,7 +162,7 @@ const Concorso = [
   {
     "N° opera": 16399,
     "Titolo Opera": "Il cielo con gli occhi di Matisse",
-    "FILE": "16399_R7A2816.jpg",
+    "FILE": "16399_R7A2816.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Umbria",
@@ -182,7 +172,7 @@ const Concorso = [
   {
     "N° opera": 16472,
     "Titolo Opera": "Vivere qui è...",
-    "FILE": "16472_R7A2623.jpg",
+    "FILE": "16472_R7A2623.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Valle d'Aosta",
@@ -192,7 +182,7 @@ const Concorso = [
   {
     "N° opera": 18202,
     "Titolo Opera": "Torneremo ad abbracciarci",
-    "FILE": "18202_R7A4944.jpg",
+    "FILE": "18202_R7A4944.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Veneto",
@@ -202,7 +192,7 @@ const Concorso = [
   {
     "N° opera": 17227,
     "Titolo Opera": "Bomba D'Arte",
-    "FILE": "17227_R7A2655.jpg",
+    "FILE": "17227_R7A2655.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Lombardia",
@@ -212,7 +202,7 @@ const Concorso = [
   {
     "N° opera": 17965,
     "Titolo Opera": "Da-lì ... a Qui!",
-    "FILE": "17965_R7A5292.jpg",
+    "FILE": "17965_R7A5292.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Piemonte",
@@ -222,7 +212,7 @@ const Concorso = [
   {
     "N° opera": 16303,
     "Titolo Opera": "The weather project- Olofen Eliasson",
-    "FILE": "16303_R7A3343.jpg",
+    "FILE": "16303_R7A3343.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Campania",
@@ -232,7 +222,7 @@ const Concorso = [
   {
     "N° opera": 17527,
     "Titolo Opera": "Ammiro Mirò",
-    "FILE": "17527_R7A3443.jpg",
+    "FILE": "17527_R7A3443.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Piemonte",
@@ -242,7 +232,7 @@ const Concorso = [
   {
     "N° opera": 16172,
     "Titolo Opera": "Passeggiando sulla luna",
-    "FILE": "16172_R7A2679.jpg",
+    "FILE": "16172_R7A2679.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Marche",
@@ -252,7 +242,7 @@ const Concorso = [
   {
     "N° opera": 16261,
     "Titolo Opera": "Un palloncino tra le stelle",
-    "FILE": "16261_R7A2567.jpg",
+    "FILE": "16261_R7A2567.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Toscana",
@@ -262,7 +252,7 @@ const Concorso = [
   {
     "N° opera": 15937,
     "Titolo Opera": "I sogni della luna",
-    "FILE": "15937_R7A2553.jpg",
+    "FILE": "15937_R7A2553.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Friuli-Venezia Giulia",
@@ -272,7 +262,7 @@ const Concorso = [
   {
     "N° opera": 16376,
     "Titolo Opera": "Il compleanno del pescegatto",
-    "FILE": "16376_R7A2535.jpg",
+    "FILE": "16376_R7A2535.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Liguria",
@@ -282,7 +272,7 @@ const Concorso = [
   {
     "N° opera": 17123,
     "Titolo Opera": "Caretakers of future (Custodi del futuro).",
-    "FILE": "17123_R7A3329.jpg",
+    "FILE": "17123_R7A3329.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Campania",
@@ -292,7 +282,7 @@ const Concorso = [
   {
     "N° opera": 17195,
     "Titolo Opera": "Notte scintillante",
-    "FILE": "17195_R7A3423.jpg",
+    "FILE": "17195_R7A3423.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Lombardia",
@@ -302,7 +292,7 @@ const Concorso = [
   {
     "N° opera": 17934,
     "Titolo Opera": "L'allegria in bolle",
-    "FILE": "17934_R7A4025.jpg",
+    "FILE": "17934_R7A4025.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Abruzzo",
@@ -312,7 +302,7 @@ const Concorso = [
   {
     "N° opera": 18186,
     "Titolo Opera": "Vivere a colori\": il puzzle ispirato alle forme e ai colori di Auguste Herbin per dipingere giocando",
-    "FILE": "18186_R7A5050.jpg",
+    "FILE": "18186_R7A5050.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Calabria",
@@ -322,7 +312,7 @@ const Concorso = [
   {
     "N° opera": 17625,
     "Titolo Opera": "Il sole salva il mondo sal Corona Virus",
-    "FILE": "17625_R7A5169.jpg",
+    "FILE": "17625_R7A5169.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Basilicata",
@@ -332,7 +322,7 @@ const Concorso = [
   {
     "N° opera": 17475,
     "Titolo Opera": "“…Servono radici per avere grandi idee…”",
-    "FILE": "17475_R7A5218.jpg",
+    "FILE": "17475_R7A5218.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Friuli-Venezia Giulia",
@@ -342,7 +332,7 @@ const Concorso = [
   {
     "N° opera": 18255,
     "Titolo Opera": "Turbinio di emozioni contrastanti",
-    "FILE": "18255_R7A5540.jpg",
+    "FILE": "18255_R7A5540.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Sicilia",
@@ -352,7 +342,7 @@ const Concorso = [
   {
     "N° opera": 18174,
     "Titolo Opera": "La libertà",
-    "FILE": "18174_R7A5526.jpg",
+    "FILE": "18174_R7A5526.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Abruzzo",
@@ -362,7 +352,7 @@ const Concorso = [
   {
     "N° opera": 17759,
     "Titolo Opera": "Se io fossi...",
-    "FILE": "17759_R7A5191.jpg",
+    "FILE": "17759_R7A5191.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Basilicata",
@@ -372,7 +362,7 @@ const Concorso = [
   {
     "N° opera": 17968,
     "Titolo Opera": "Lo sguardo infinito",
-    "FILE": "17968_R7A4958.jpg",
+    "FILE": "17968_R7A4958.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Calabria",
@@ -382,7 +372,7 @@ const Concorso = [
   {
     "N° opera": 17944,
     "Titolo Opera": "Un alfabeto...ad arte",
-    "FILE": "17944_R7A5013.jpg",
+    "FILE": "17944_R7A5013.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Campania",
@@ -392,7 +382,7 @@ const Concorso = [
   {
     "N° opera": 18087,
     "Titolo Opera": "L'Arte e il \"brutto\" degli ultimi 100 anni.",
-    "FILE": "18087_R7A5279.jpg",
+    "FILE": "18087_R7A5279.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Emilia-Romagna",
@@ -402,7 +392,7 @@ const Concorso = [
   {
     "N° opera": 17125,
     "Titolo Opera": "La classe",
-    "FILE": "17125_R7A3475.jpg",
+    "FILE": "17125_R7A3475.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Friuli-Venezia Giulia",
@@ -412,7 +402,7 @@ const Concorso = [
   {
     "N° opera": 15558,
     "Titolo Opera": "Lavoro di squadra",
-    "FILE": "15558_R7A2670.jpg",
+    "FILE": "15558_R7A2670.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Lazio",
@@ -422,7 +412,7 @@ const Concorso = [
   {
     "N° opera": 17108,
     "Titolo Opera": "Genova tra verde e azzurro",
-    "FILE": "17108_R7A2638.jpg",
+    "FILE": "17108_R7A2638.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Liguria",
@@ -432,7 +422,7 @@ const Concorso = [
   {
     "N° opera": 17202,
     "Titolo Opera": "Cento anni in pop",
-    "FILE": "17202_R7A2658.jpg",
+    "FILE": "17202_R7A2658.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Lombardia",
@@ -442,7 +432,7 @@ const Concorso = [
   {
     "N° opera": 18072,
     "Titolo Opera": "Viaggio tra l'arte",
-    "FILE": "18072_R7A5099.jpg",
+    "FILE": "18072_R7A5099.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Marche",
@@ -452,7 +442,7 @@ const Concorso = [
   {
     "N° opera": 18059,
     "Titolo Opera": "Noi ...",
-    "FILE": "18059_R7A5020.jpg",
+    "FILE": "18059_R7A5020.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Molise",
@@ -462,7 +452,7 @@ const Concorso = [
   {
     "N° opera": 18162,
     "Titolo Opera": "Colline e un sogno",
-    "FILE": "18162_R7A5026.jpg",
+    "FILE": "18162_R7A5026.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Piemonte",
@@ -472,7 +462,7 @@ const Concorso = [
   {
     "N° opera": 16438,
     "Titolo Opera": "Connessioni",
-    "FILE": "16438_R7A5142.jpg",
+    "FILE": "16438_R7A5142.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Puglia",
@@ -482,7 +472,7 @@ const Concorso = [
   {
     "N° opera": 16490,
     "Titolo Opera": "100 anni ancora",
-    "FILE": "16490_R7A5253.jpg",
+    "FILE": "16490_R7A5253.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Sardegna",
@@ -492,7 +482,7 @@ const Concorso = [
   {
     "N° opera": 16096,
     "Titolo Opera": "Pinocchiando come Baj",
-    "FILE": "16096_R7A2687.jpg",
+    "FILE": "16096_R7A2687.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Sicilia",
@@ -502,7 +492,7 @@ const Concorso = [
   {
     "N° opera": 18143,
     "Titolo Opera": "Quando tutto Fila...nascono capolavori",
-    "FILE": "18143_R7A5207.jpg",
+    "FILE": "18143_R7A5207.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Toscana",
@@ -512,7 +502,7 @@ const Concorso = [
   {
     "N° opera": 17496,
     "Titolo Opera": "Birthday Pencils Cake",
-    "FILE": "17496_R7A4960.jpg",
+    "FILE": "17496_R7A4960.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Trentino-Alto Adige",
@@ -522,7 +512,7 @@ const Concorso = [
   {
     "N° opera": 17813,
     "Titolo Opera": "La pop art libera il colore",
-    "FILE": "17813_R7A5185.jpg",
+    "FILE": "17813_R7A5185.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Umbria",
@@ -532,7 +522,7 @@ const Concorso = [
   {
     "N° opera": 16840,
     "Titolo Opera": "Il Cervino...una pARTE di noi",
-    "FILE": "16840_R7A3384.jpg",
+    "FILE": "16840_R7A3384.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Valle d'Aosta",
@@ -542,7 +532,7 @@ const Concorso = [
   {
     "N° opera": 18111,
     "Titolo Opera": "Caleido Klimt",
-    "FILE": "18111_R7A5006.jpg",
+    "FILE": "18111_R7A5006.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "REGIONALE",
     "REGIONE": "Veneto",
@@ -552,7 +542,7 @@ const Concorso = [
   {
     "N° opera": 18053,
     "Titolo Opera": "La Covida",
-    "FILE": "18053_R7A3294.jpg",
+    "FILE": "18053_R7A3294.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Lazio",
@@ -562,7 +552,7 @@ const Concorso = [
   {
     "N° opera": 16398,
     "Titolo Opera": "On de rock",
-    "FILE": "16398_R7A2713.jpg",
+    "FILE": "16398_R7A2713.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Puglia",
@@ -572,7 +562,7 @@ const Concorso = [
   {
     "N° opera": 17668,
     "Titolo Opera": "Contatto",
-    "FILE": "17668_R7A3487.jpg",
+    "FILE": "17668_R7A3487.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Lombardia",
@@ -582,7 +572,7 @@ const Concorso = [
   {
     "N° opera": 17876,
     "Titolo Opera": "L'importanza dell'amicizia",
-    "FILE": "17876_R7A5181.jpg",
+    "FILE": "17876_R7A5181.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Emilia-Romagna",
@@ -592,7 +582,7 @@ const Concorso = [
   {
     "N° opera": 17855,
     "Titolo Opera": "Artisti dalla A alla Z",
-    "FILE": "17855_R7A5320.jpg",
+    "FILE": "17855_R7A5320.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Liguria",
@@ -602,7 +592,7 @@ const Concorso = [
   {
     "N° opera": 17391,
     "Titolo Opera": "Un velo di modernità",
-    "FILE": "17391_R7A3406.jpg",
+    "FILE": "17391_R7A3406.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Basilicata",
@@ -612,7 +602,7 @@ const Concorso = [
   {
     "N° opera": 17682,
     "Titolo Opera": "Figli d'arte\" crescono...aspettando che torni a splendere il sole.",
-    "FILE": "17682_R7A3924.jpg",
+    "FILE": "17682_R7A3924.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Marche",
@@ -622,7 +612,7 @@ const Concorso = [
   {
     "N° opera": 15693,
     "Titolo Opera": "Mirò and Co.",
-    "FILE": "15693_R7A2503.jpg",
+    "FILE": "15693_R7A2503.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Lazio",
@@ -632,7 +622,7 @@ const Concorso = [
   {
     "N° opera": 15343,
     "Titolo Opera": "Pixeldalí",
-    "FILE": "15343_R7A2546.jpg",
+    "FILE": "15343_R7A2546.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Toscana",
@@ -642,7 +632,7 @@ const Concorso = [
   {
     "N° opera": 17063,
     "Titolo Opera": "Pensieri",
-    "FILE": "17063_R7A2616.jpg",
+    "FILE": "17063_R7A2616.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Abruzzo",
@@ -652,7 +642,7 @@ const Concorso = [
   {
     "N° opera": 17181,
     "Titolo Opera": "Donna… vola più in alto che puoi!",
-    "FILE": "17181_R7A2667.jpg",
+    "FILE": "17181_R7A2667.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Puglia",
@@ -662,7 +652,7 @@ const Concorso = [
   {
     "N° opera": 17168,
     "Titolo Opera": "Nel tramonto...",
-    "FILE": "17168_R7A3449.jpg",
+    "FILE": "17168_R7A3449.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Piemonte",
@@ -672,7 +662,7 @@ const Concorso = [
   {
     "N° opera": 17590,
     "Titolo Opera": "Nell'arte ci sono anch'io ...1 , 10, 100 di noi",
-    "FILE": "17590_R7A4017.jpg",
+    "FILE": "17590_R7A4017.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Piemonte",
@@ -682,7 +672,7 @@ const Concorso = [
   {
     "N° opera": 18089,
     "Titolo Opera": "Cento di queste matite!",
-    "FILE": "18089_R7A5109.jpg",
+    "FILE": "18089_R7A5109.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Veneto",
@@ -692,7 +682,7 @@ const Concorso = [
   {
     "N° opera": 17549,
     "Titolo Opera": "Giochi nel borgo",
-    "FILE": "17549_R7A5533.jpg",
+    "FILE": "17549_R7A5533.JPG",
     "CONCORSO": "Premio Giotto",
     "CLASSIFICA": "NAZIONALE",
     "REGIONE": "Toscana",
@@ -700,7 +690,7 @@ const Concorso = [
     "TITOLO": "Giochi nel borgo"
   },
   {
-    "N° opera": "17797_R7A3722.jpg",
+    "N° opera": "17797_R7A3722.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "REGIONALE",
     "CONCORSO": "Abruzzo",
@@ -710,7 +700,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17773_R7A3824.jpg",
+    "N° opera": "17773_R7A3824.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "REGIONALE",
     "CONCORSO": "Basilicata",
@@ -720,7 +710,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17706_R7A5432.jpg",
+    "N° opera": "17706_R7A5432.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "REGIONALE",
     "CONCORSO": "Calabria",
@@ -730,7 +720,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17780_R7A5486.jpg",
+    "N° opera": "17780_R7A5486.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "REGIONALE",
     "CONCORSO": "Campania",
@@ -740,7 +730,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17645_R7A3828.jpg",
+    "N° opera": "17645_R7A3828.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "REGIONALE",
     "CONCORSO": "Emilia-Romagna",
@@ -750,7 +740,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17726_R7A3694.jpg",
+    "N° opera": "17726_R7A3694.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "REGIONALE",
     "CONCORSO": "Friuli-Venezia Giulia",
@@ -760,7 +750,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17206_R7A2992.jpg",
+    "N° opera": "17206_R7A2992.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "REGIONALE",
     "CONCORSO": "Lazio",
@@ -770,7 +760,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17536_R7A3045.jpg",
+    "N° opera": "17536_R7A3045.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "REGIONALE",
     "CONCORSO": "Liguria",
@@ -780,7 +770,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17692_R7A3752.jpg",
+    "N° opera": "17692_R7A3752.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "REGIONALE",
     "CONCORSO": "Lombardia",
@@ -790,7 +780,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17571_R7A3791.jpg",
+    "N° opera": "17571_R7A3791.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "REGIONALE",
     "CONCORSO": "Marche",
@@ -800,7 +790,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17737_R7A5441.jpg",
+    "N° opera": "17737_R7A5441.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "REGIONALE",
     "CONCORSO": "Piemonte",
@@ -810,7 +800,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17574_R7A3685.jpg",
+    "N° opera": "17574_R7A3685.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "REGIONALE",
     "CONCORSO": "Puglia",
@@ -820,7 +810,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17806_R7A5474.jpg",
+    "N° opera": "17806_R7A5474.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "REGIONALE",
     "CONCORSO": "Sicilia",
@@ -830,7 +820,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17402_R7A2976.jpg",
+    "N° opera": "17402_R7A2976.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "REGIONALE",
     "CONCORSO": "Toscana",
@@ -840,7 +830,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17738_R7A5455.jpg",
+    "N° opera": "17738_R7A5455.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "REGIONALE",
     "CONCORSO": "Trentino-Alto Adige",
@@ -850,7 +840,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17329_R7A3808.jpg",
+    "N° opera": "17329_R7A3808.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "REGIONALE",
     "CONCORSO": "Umbria",
@@ -860,7 +850,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17702_R7A3732.jpg",
+    "N° opera": "17702_R7A3732.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "REGIONALE",
     "CONCORSO": "Valle d'Aosta",
@@ -870,7 +860,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17735_R7A5436.jpg",
+    "N° opera": "17735_R7A5436.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "REGIONALE",
     "CONCORSO": "Veneto",
@@ -880,7 +870,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17354_R7A3041.jpg",
+    "N° opera": "17354_R7A3041.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "NAZIONALE",
     "CONCORSO": "Lazio",
@@ -890,7 +880,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17703_R7A3734.jpg",
+    "N° opera": "17703_R7A3734.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "NAZIONALE",
     "CONCORSO": "Valle d'Aosta",
@@ -910,7 +900,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17266_R7A3050.jpg",
+    "N° opera": "17266_R7A3050.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "NAZIONALE",
     "CONCORSO": "Campania",
@@ -920,7 +910,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17241_R7A3750.jpg",
+    "N° opera": "17241_R7A3750.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "NAZIONALE",
     "CONCORSO": "Lombardia",
@@ -930,7 +920,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17285_R7A3529.jpg",
+    "N° opera": "17285_R7A3529.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "NAZIONALE",
     "CONCORSO": "Campania",
@@ -940,7 +930,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17686_R7A3739.jpg",
+    "N° opera": "17686_R7A3739.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "NAZIONALE",
     "CONCORSO": "Emilia-Romagna",
@@ -950,7 +940,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17714_R7A3692.jpg",
+    "N° opera": "17714_R7A3692.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "NAZIONALE",
     "CONCORSO": "Trentino-Alto Adige",
@@ -960,7 +950,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17782_R7A5489.jpg",
+    "N° opera": "17782_R7A5489.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "NAZIONALE",
     "CONCORSO": "Piemonte",
@@ -970,7 +960,7 @@ const Concorso = [
     "TITOLO": ""
   },
   {
-    "N° opera": "17615_R7A5417.jpg",
+    "N° opera": "17615_R7A5417.JPG",
     "Titolo Opera": "Premio LYRA",
     "FILE": "NAZIONALE",
     "CONCORSO": "Puglia",
@@ -980,154 +970,3 @@ const Concorso = [
     "TITOLO": ""
   }
 ]
-
-// draggable
-
-Draggable.create(".drag");
-// aggiungi bound
-// mouseover sugli elementi drag
-
-
-
-// scroll top
-let topArrow = document.querySelector(".arrow-top");
-topArrow.addEventListener("click", function(){
-  gsap.to(window, {duration: 2, scrollTo: 0});
-});
-
-  // animation hero text
-  const heroTitle = document.querySelector(".animation-text-hero");
-
-  var tl = gsap.timeline(),
-      mySplitText = new SplitText(heroTitle, {type:"words,chars", wordsClass: "split-line"
-    }),
-      chars = mySplitText.chars;
-  gsap.set(heroTitle, {perspective: 400});
-
-  tl.from(chars,
-    {  duration: 0.6,
-      ease: "circ.out",
-      y: 80,
-      stagger: 0.02
-    },
-     "+=0");
-
-
-  // animate text on scroll
-
-  const quotes = document.querySelectorAll(".animation-text");
-  const timing = [ 0.3, 0.4, 0.4, 0.4];
-  const stagger = [ 0.01, 0.02, 0.02, 0.02];
-  function setupSplits() {
-    quotes.forEach((quote, i) => {
-
-      if(quote.anim) {
-        quote.anim.progress(1).kill();
-        quote.split.revert();
-      }
-
-      quote.split = new SplitText(quote, {
-        type:"words,chars",
-        wordsClass: "split-line"
-      });
-
-      quote.anim = gsap.from(quote.split.chars, {
-        scrollTrigger: {
-          trigger: quote,
-          start: "top 75%",
-        },
-        duration: timing[i],
-        ease: "circ.out",
-        y: 80,
-        stagger: stagger[i]
-      });
-    });
-  }
-
-  ScrollTrigger.addEventListener("refresh", setupSplits);
-  setupSplits();
-
-
-  // fade in
-
-  const fade = gsap.utils.toArray("[fade]");
-  fade.forEach((el, i) => {
-    const anim = gsap.fromTo(el, {autoAlpha: 0}, {duration: 1, autoAlpha: 1});
-    ScrollTrigger.create({
-      trigger: el,
-      animation: anim,
-      toggleActions: 'play none none none',
-      once: true,
-    });
-  });
-
-
-  // hr line animation
-  const hr = gsap.utils.toArray(".hr");
-
-  hr.forEach((el, i) => {
-    gsap.set(el, {transformOrigin:"left"})
-    const anim = gsap.fromTo(el, {scaleX: 0}, {duration: .5, scaleX: 1});
-    ScrollTrigger.create({
-      trigger: el,
-      animation: anim,
-      ease: "circ.out",
-      toggleActions: 'play none none none',
-      once: true,
-    });
-  });
-
-
-  // image gallery
-
-const myJSON = JSON.stringify(Concorso);
-var obj = JSON.parse( myJSON );
-
-var tmp = '';
-$.each( obj, function( key, value ) {
-  tmp += '<div class="single-image">';
-  tmp += '  <img class="image" src="../foto/' + value.FILE + '"/>';
-  tmp += '    <div class="image-details">';
-  tmp += '      <div> <span> CONCORSO </span> ' + value.CONCORSO + '</div>';
-  tmp += '      <div><span> CLASSIFICA </span> ' + value.CLASSIFICA + '</div>';
-  tmp += '      <div><span> REGIONE </span> ' + value.REGIONE + '</div>';
-  tmp += '      <div><span> SCUOLA </span> ' + value.SCUOLA + '</div>';
-  tmp += '      <div><span> TITOLO </span> ' + value.TITOLO + '</div>';
-  tmp += '    </div>';
-  tmp += ' </div>';
-});
-
-$('.image-gallery-container').prepend(tmp);
-
-
-// gallery slide
-
-const slider = document.querySelector('.image-gallery-container');
-let isDown = false;
-let startX;
-let scrollLeft;
-
-slider.addEventListener('mousedown', (e) => {
-  isDown = true;
-  slider.classList.add('active');
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-  slider.style.cursor ="grabbing";
-
-});
-slider.addEventListener('mouseleave', () => {
-  isDown = false;
-  slider.classList.remove('active');
-});
-slider.addEventListener('mouseup', () => {
-  isDown = false;
-  slider.classList.remove('active');
-  slider.style.cursor ="grab";
-});
-slider.addEventListener('mousemove', (e) => {
-  if(!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 2; //scroll-fast
-  slider.scrollLeft = scrollLeft - walk;
-});

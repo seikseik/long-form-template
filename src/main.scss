@@ -90,12 +90,6 @@ $black: #131313;
 	}
 }
 
-hr{
-	background: $blu;
-	height: 2px;
-	margin: 0 $spacing*6;
-}
-
 body{
 	line-height: $line_height;
 	color:$black;
@@ -170,14 +164,14 @@ body{
 
 .page-container{
 	background: white;
+	margin-bottom: $spacing*12;
 }
 
 .hr{
-	background: white;
-	width:100%;
+	background: $blu;
 	height: 2px;
 	display: block;
-	margin-bottom: $spacing*2;
+	margin: 0 $spacing*6;
 }
 
 .dropcap {
@@ -197,7 +191,7 @@ body{
 
 
 .text-section{
-	padding: $spacing*10 $spacing*5;
+	padding: $spacing*12 $spacing*5;
 	padding-bottom:0;
 	z-index: 2;
 	pointer-events: none;
@@ -297,6 +291,11 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
+	.logo{
+		position: absolute;
+		top:$spacing*4;
+	}
 	.hero-images{
 		position: absolute;
 		width:100%;
@@ -357,8 +356,56 @@ body{
 
 // gallery
 
-.image-gallery{
-	height: 100vh;
+.image-gallery-container{
+	display: flex;
+  flex-flow: column wrap;
+  height:100vh;
+  align-items: center;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	cursor: grab;
+	.single-image{
+		width: 40vw;
+		height: fit-content;
+		position: relative;
+		margin-left: $spacing*6;
+		margin-top: $spacing*6;
+		img{
+			width:100%;
+			height: auto;
+		}
+		&:hover{
+			.image-details{
+				opacity: 1;
+			}
+		}
+		.image-details{
+			position: absolute;
+			color:white;
+			padding: $spacing*2;
+			top:0;
+			height: 100%;
+			width: 100%;
+			left: 0;
+			opacity: 0;
+			transition: .2s ease;
+			background: rgba(0, 0, 0, 0.85);
+			display: flex;
+			flex-direction: column;
+			div{
+				display: flex;
+				font-family: $ap-bold;
+				margin-bottom: $spacing;
+				flex-direction: column;
+				font-size: $size-small;
+				span{
+					font-family: 'IBM Plex Mono', monospace;
+					margin-bottom: $spacing/2;
+					font-size: 14px;
+				}
+			}
+		}
+	}
 }
 
 // footer
@@ -367,7 +414,7 @@ footer{
 	color:white;
 	a{color:white;}
 	font-family: $ap-bold;
-
+	margin-top: $spacing*12;
 	.footer-container{
 		display: flex;
 		flex-direction: column;

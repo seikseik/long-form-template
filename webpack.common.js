@@ -34,12 +34,13 @@ module.exports = {
       ]
     },
     {
-      test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
+      test: /\.(ico|jpg|jpeg|JPG|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
       use: {
         loader: 'url-loader',
         options: {
           limit:false,
           outputPath: "assets/",
+          name: '[name].[ext]'
         }
       },
     }
