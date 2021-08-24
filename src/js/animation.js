@@ -191,7 +191,7 @@ const Concorso = [
   },
   {
     "Titolo Opera": "Noi l'arte la impariamo al volo",
-    "FILE": "17279_R7A2987",
+    "FILE": "17279_R7A2987.JPG",
     "CONCORSO": "Premio LYRA",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Lazio",
@@ -901,7 +901,6 @@ illu.forEach((item, i) => {
   $(item).mouseleave(function(e){
     gsap.to(this, 0.2, {scale: 1});
   });
-
   $(item).mouseenter(function(e){
     gsap.to(this, 0.2, {transformOrigin: '50 50', scale: 1.15});
   });
@@ -1003,10 +1002,16 @@ topArrow.addEventListener("click", function(){
 
   // image gallery
 
+  function getRandomInt(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
 const myJSON = JSON.stringify(Concorso);
 var obj = JSON.parse( myJSON );
-
 var tmp = '';
+
 $.each( obj, function( key, value ) {
   tmp += '<div class="single-image">';
   tmp += '  <img class="image" src="../foto/' + value.FILE + '"/>';
@@ -1022,6 +1027,37 @@ $.each( obj, function( key, value ) {
 
 $('.image-gallery-container').prepend(tmp);
 
+// hero random image
+
+let len = obj.length;
+let randomImages = [];
+
+for(let i = 0; i < 4; i++){
+  let a = getRandomInt(0, len);
+  let file = obj[a].FILE;
+  if(i < 2){
+    $('.hero-image-left').prepend('<img class="image-hero" src="../foto/' + file + '"/>');
+  }else{
+    $('.hero-image-right').prepend('<img class="image-hero" src="../foto/' + file + '"/>');
+  }
+}
+  Draggable.create(".image-hero", {
+    bounds: ".hero",
+    edgeResistance: 0.6,
+    type: "x,y",
+    inertia: true,
+    autoScroll: true,
+  });
+  let img = document.querySelectorAll(".image-hero");
+  img.forEach((item, i) => {
+    $(item).mouseleave(function(e){
+      gsap.to(this, 0.2, {scale: 1});
+    });
+    $(item).mouseenter(function(e){
+      gsap.to(this, 0.2, {transformOrigin: '50 50', scale: 1.05});
+    });
+
+  });
 
 // gallery slide
 
