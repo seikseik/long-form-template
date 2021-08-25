@@ -44,6 +44,7 @@
     "clean-webpack-plugin": "^2.0.0",
     "cssnano": "^5.0.4",
     "gsap": "npm:@gsap/shockingly@^3.6.1",
+    "lozad": "^1.16.0",
     "postcss-viewport-height-correction": "^1.1.1"
   }
 }

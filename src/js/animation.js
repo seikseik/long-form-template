@@ -2,9 +2,9 @@ import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Draggable } from "gsap/Draggable";
-
 import { InertiaPlugin } from "gsap/InertiaPlugin";
 import { SplitText } from "gsap/SplitText";
+import lozad from 'lozad'
 
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, SplitText, Draggable, InertiaPlugin);
 
@@ -883,6 +883,9 @@ const Concorso = [
     "TITOLO": "Giochi nel borgo"
   }
 ]
+
+
+
 
 // draggable
 
