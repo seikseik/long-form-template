@@ -1032,35 +1032,42 @@ $('.image-gallery-container').prepend(tmp);
 
 // hero random image
 
-let len = obj.length;
-let randomImages = [];
+$( document ).ready(function() {
+  let len = obj.length;
+  let randomImages = [];
 
-for(let i = 0; i < 4; i++){
-  let a = getRandomInt(0, len);
-  let file = obj[a].FILE;
-  if(i < 2){
-    $('.hero-image-left').prepend('<img class="image-hero" src="./foto_concorso/' + file + '"/>');
-  }else{
-    $('.hero-image-right').prepend('<img class="image-hero" src="./foto_concorso/' + file + '"/>');
+  for(let i = 0; i < 4; i++){
+    let a = getRandomInt(0, len);
+    let file = obj[a].FILE;
+    if(i < 2){
+      $('.hero-image-left').prepend('<img class="image-hero" src="./foto_concorso/' + file + '"/>');
+    }else{
+      $('.hero-image-right').prepend('<img class="image-hero" src="./foto_concorso/' + file + '"/>');
+    }
   }
-}
-  Draggable.create(".image-hero", {
-    bounds: ".hero",
-    edgeResistance: 0.6,
-    type: "x,y",
-    inertia: true,
-    autoScroll: true,
-  });
-  let img = document.querySelectorAll(".image-hero");
-  img.forEach((item, i) => {
-    $(item).mouseleave(function(e){
-      gsap.to(this, 0.2, {scale: 1});
-    });
-    $(item).mouseenter(function(e){
-      gsap.to(this, 0.2, {transformOrigin: '50 50', scale: 1.05});
+
+
+    Draggable.create(".image-hero", {
+      bounds: ".hero",
+      edgeResistance: 0.6,
+      type: "x,y",
+      inertia: true,
+      autoScroll: true,
     });
 
-  });
+
+    let img = document.querySelectorAll(".image-hero");
+    img.forEach((item, i) => {
+      $(item).mouseleave(function(e){
+        gsap.to(this, 0.2, {scale: 1});
+      });
+      $(item).mouseenter(function(e){
+        gsap.to(this, 0.2, {transformOrigin: '50 50', scale: 1.05});
+      });
+
+    });
+});
+
 
 // gallery slide
 

@@ -294,6 +294,10 @@ body{
 	align-items: center;
 	justify-content: center;
 	position: relative;
+	a{
+		display: flex;
+		justify-content: center;
+	}
 	.logo{
 		position: absolute;
 		top:$spacing*4;
@@ -307,6 +311,7 @@ body{
 		display: flex;
 		justify-content: space-between;
 		z-index: 1;
+		overflow: hidden;
 		img{
 			width:100%;
 			height:auto;
@@ -736,6 +741,11 @@ footer{
 				padding: $spacing*2 0;
 			}
 		}
+	}
+
+	.background-illu{
+		top:100vh;
+		pointer-events: none;
 	}
 
 	.image-gallery{
