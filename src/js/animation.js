@@ -1017,7 +1017,7 @@ var tmp = '';
 
 $.each( obj, function( key, value ) {
   tmp += '<div class="single-image">';
-  tmp += '  <img class="image" src="../foto/' + value.FILE + '"/>';
+  tmp += '  <img class="image" src="./foto/' + value.FILE + '"/>';
   tmp += '    <div class="image-details">';
   tmp += '      <div> <span> CONCORSO </span> ' + value.CONCORSO + '</div>';
   tmp += '      <div><span> CLASSIFICA </span> ' + value.CLASSIFICA + '</div>';
@@ -1039,9 +1039,9 @@ for(let i = 0; i < 4; i++){
   let a = getRandomInt(0, len);
   let file = obj[a].FILE;
   if(i < 2){
-    $('.hero-image-left').prepend('<img class="image-hero" src="../foto/' + file + '"/>');
+    $('.hero-image-left').prepend('<img class="image-hero" src="./foto/' + file + '"/>');
   }else{
-    $('.hero-image-right').prepend('<img class="image-hero" src="../foto/' + file + '"/>');
+    $('.hero-image-right').prepend('<img class="image-hero" src="./foto/' + file + '"/>');
   }
 }
   Draggable.create(".image-hero", {
