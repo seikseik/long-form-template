@@ -5,6 +5,7 @@ import { Draggable } from "gsap/Draggable";
 import { InertiaPlugin } from "gsap/InertiaPlugin";
 import { SplitText } from "gsap/SplitText";
 import lozad from 'lozad'
+import Masonry from "masonry-layout"
 
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, SplitText, Draggable, InertiaPlugin);
 
@@ -884,12 +885,7 @@ const Concorso = [
   }
 ]
 
-
-
-
 // draggable
-
-// Draggable.create(".drag");
 
 Draggable.create(".drag", {
   bounds: ".page-container",
@@ -913,7 +909,6 @@ illu.forEach((item, i) => {
 
 
 
-
 // scroll top
 let topArrow = document.querySelector(".arrow-top");
 topArrow.addEventListener("click", function(){
@@ -928,14 +923,14 @@ topArrow.addEventListener("click", function(){
     }),
       chars = mySplitText.chars;
   gsap.set(heroTitle, {perspective: 400});
-
-  tl.from(chars,
-    {  duration: 0.6,
-      ease: "circ.out",
-      y: 80,
-      stagger: 0.02
-    },
-     "+=0");
+tl.from(chars, {duration: 1.2, opacity:0, scale:0, y:80, rotationX:180, transformOrigin:"0% 50% -50",  ease:"back", stagger: 0.01}, "+=0");
+  // tl.from(chars,
+  //   {  duration: 0.6,
+  //     ease: "circ.out",
+  //     y: -80,
+  //     stagger: 0.02
+  //   },
+  //    "+=0");
 
 
   // animate text on scroll
@@ -1064,8 +1059,8 @@ $( document ).ready(function() {
       $(item).mouseenter(function(e){
         gsap.to(this, 0.2, {transformOrigin: '50 50', scale: 1.05});
       });
-
     });
+
 });
 
 

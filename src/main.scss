@@ -66,7 +66,7 @@ $text-width:70vw;
 $info-width:75vw;
 $offset: calc((#{$info-width} - #{$text-width})/2);
 
-$mainTitle: 5.5vw;
+$mainTitle: 64px;
 $size-body: 20px;
 $size-quote: 24px;
 $size-small: 16px;
@@ -323,25 +323,25 @@ body{
 			.image-hero{
 				position: absolute;
 				&:first-child{
-					width:40%;
+					width:30%;
 					top:20%;
 					left: 10%;
 					z-index: 2;
 				}
 				&:nth-child(2){
-					width:40%;
+					width:30%;
 					top:50%;
 					left: 20%;
 					z-index: 2;
 				}
 				&:nth-child(3){
-					width:45%;
+					width:35%;
 					top:22%;
 					left: 35%;
 					z-index: 1;
 				}
 				&:nth-child(4){
-					width:55%;
+					width:35%;
 					top:65%;
 					left: 23%;
 					z-index: 1;
@@ -355,25 +355,25 @@ body{
 			.image-hero{
 				position: absolute;
 				&:first-child{
-					width:60%;
+					width:30%;
 					top:20%;
 					right: 10%;
 					z-index: 2;
 				}
 				&:nth-child(2){
-					width:40%;
+					width:30%;
 					top:50%;
 					right: 20%;
 					z-index: 2;
 				}
 				&:nth-child(3){
-					width:40%;
+					width:35%;
 					top:50%;
 					right: 40%;
 					z-index: 1;
 				}
 				&:nth-child(4){
-					width:45%;
+					width:35%;
 					top:10%;
 					right: 10%;
 					z-index: 1;
