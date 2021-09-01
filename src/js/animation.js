@@ -1156,6 +1156,7 @@ $( document ).ready(function() {
   }
 
 
+  if(window.innerWidth > 768){
     Draggable.create(".image-hero", {
       bounds: ".hero",
       edgeResistance: 0.6,
@@ -1163,6 +1164,8 @@ $( document ).ready(function() {
       inertia: true,
       autoScroll: true,
     });
+  }
+
 
 
     let img = document.querySelectorAll(".image-hero");
@@ -1174,8 +1177,6 @@ $( document ).ready(function() {
         gsap.to(this, 0.2, {transformOrigin: '50 50', scale: 1.05});
       });
     });
-
-
 
 });
 
