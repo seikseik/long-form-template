@@ -17,6 +17,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Abruzzo",
     "SCUOLA": "I.C. Pescara 8",
+    "CLASSE": "Classi 3B, 3F",
     "TITOLO": "Surrealismo ECO"
   },
   {
@@ -26,6 +27,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Basilicata",
     "SCUOLA": "Scuola secondaria di I grado",
+    "CLASSE": "Classe 3C",
     "TITOLO": "Sospesi"
   },
   {
@@ -35,6 +37,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Calabria",
     "SCUOLA": "I.C. Garibaldi-Buccarelli",
+    "CLASSE": "Classe 3D",
     "TITOLO": "L'Arte aleggia nel tempo"
   },
   {
@@ -44,6 +47,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Campania",
     "SCUOLA": "Scuola Secondaria di 1° Grado Statale \"Angelo Mozzillo",
+    "CLASSE": "Classe 3E",
     "TITOLO": "Emozioni a colori"
   },
   {
@@ -53,6 +57,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Emilia-Romagna",
     "SCUOLA": "Secondaria di I grado “A. VALLISNERI”",
+    "CLASSE": "Classi 3A, 3C",
     "TITOLO": "Speranza"
   },
   {
@@ -62,6 +67,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Friuli-Venezia Giulia",
     "SCUOLA": "Scuola Secondaria di I Grado G. Isaia Ascoli",
+    "CLASSE": "Classe 1C",
     "TITOLO": "Family Power"
   },
   {
@@ -71,6 +77,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Lazio",
     "SCUOLA": "I.C. Pio Fedi",
+    "CLASSE": "Classe 3A",
     "TITOLO": "La bellezza salva le cose"
   },
   {
@@ -80,6 +87,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Liguria",
     "SCUOLA": "Scuola Secondaria di I grado Contubernio D’albertis",
+    "CLASSE": "Classe terza",
     "TITOLO": "I colori dell'anima"
   },
   {
@@ -89,6 +97,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Lombardia",
     "SCUOLA": "Scuola Secondaria di I Grado Marconi",
+    "CLASSE": "Classi prime",
     "TITOLO": "Ogni muro è una porta - elaborato 2"
   },
   {
@@ -98,6 +107,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Marche",
     "SCUOLA": "Scuola Secondaria di I Grado Beltrami (IC Filottrano)",
+    "CLASSE": "Classi 3A, 3C, 3D",
     "TITOLO": "Dentro gli occhi"
   },
   {
@@ -107,6 +117,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Piemonte",
     "SCUOLA": "Scuola Secondaria di I Grado Martiri della Libertà (Succursale)",
+    "CLASSE": "Classe 3B/S",
     "TITOLO": "100matitexl’arte=arteal100%"
   },
   {
@@ -116,6 +127,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Puglia",
     "SCUOLA": "Scuola Secondaria di I Grado Stefano da Putignano",
+    "CLASSE": "Classi 1E, 2A, 2D",
     "TITOLO": "Emozioni in carta...pesta"
   },
   {
@@ -125,6 +137,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Sicilia",
     "SCUOLA": "Istituto Comprensivo \"De Simone",
+    "CLASSE": "Classi 3B, 3C",
     "TITOLO": "(DI) stanza in stanza"
   },
   {
@@ -134,6 +147,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Toscana",
     "SCUOLA": "I.C. Città di Castiglion Fiorentino",
+    "CLASSE": "Classi seconde e terze, sezioni D-E-F",
     "TITOLO": "L'ArTe è ViTa!"
   },
   {
@@ -143,6 +157,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Trentino-Alto Adige",
     "SCUOLA": "Scuola Secondaria di I Grado F. Halbherr",
+    "CLASSE": "Classe 3A",
     "TITOLO": "I diritti delle donne"
   },
   {
@@ -152,6 +167,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Umbria",
     "SCUOLA": "Scuola Secondaria di I Grado Dante Alighieri",
+    "CLASSE": "Classi 2H, 3H",
     "TITOLO": "900 fold-double"
   },
   {
@@ -161,6 +177,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Valle d'Aosta",
     "SCUOLA": "I.S. Eugenia Martinet",
+    "CLASSE": "Classe 3D",
     "TITOLO": "Happy"
   },
   {
@@ -170,6 +187,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Veneto",
     "SCUOLA": "IC3 BRUSTOLON",
+    "CLASSE": "Classe 2A",
     "TITOLO": "Il goal della speranza"
   },
   {
@@ -179,6 +197,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Lazio",
     "SCUOLA": "I.C. Anzio III",
+    "CLASSE": "Classe 1B",
     "TITOLO": "Pop beauty"
   },
   {
@@ -188,6 +207,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Valle d'Aosta",
     "SCUOLA": "I.S. Eugenia Martinet",
+    "CLASSE": "Classe 3D",
     "TITOLO": "Selfie"
   },
   {
@@ -197,6 +217,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Lazio",
     "SCUOLA": "I.C. Piazza de Cupis - Secondaria di I grado Salvo d'Acquisto",
+    "CLASSE": "Tutte le classi",
     "TITOLO": "Noi l'arte la impariamo al volo"
   },
   {
@@ -206,6 +227,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Campania",
     "SCUOLA": "Scuola Secondaria di I Grado Dante Alighieri",
+    "CLASSE": "Classe 3D",
     "TITOLO": "Lo dirò a Dio!"
   },
   {
@@ -215,6 +237,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Lombardia",
     "SCUOLA": "I.C Aldo Moro - Scuola Secondaria di I Grado A. Manzoni",
+    "CLASSE": "Laboratori classi seconde e terze",
     "TITOLO": "Dalla realtà al sogno"
   },
   {
@@ -224,6 +247,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Campania",
     "SCUOLA": "Scuola Secondaria di I Grado Aldo Moro",
+    "CLASSE": "Classe 3B",
     "TITOLO": "Avanguardie"
   },
   {
@@ -233,6 +257,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Emilia-Romagna",
     "SCUOLA": "I.C.7 Luigi Orsini Imola",
+    "CLASSE": "Classe 3E",
     "TITOLO": "La lezione di arte"
   },
   {
@@ -242,6 +267,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Trentino-Alto Adige",
     "SCUOLA": "Scuola Secondaria di Primo Grado \"Savino Pedrolli",
+    "CLASSE": "Classi 2C, 2D, 2E",
     "TITOLO": "Rinascere con l'arte"
   },
   {
@@ -251,6 +277,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Piemonte",
     "SCUOLA": "Scuola secondaria primo grado \"Gualandi\" (Cooperativa sociale l'Arca)",
+    "CLASSE": "Tutte le classi",
     "TITOLO": "Abbracci perduti"
   },
   {
@@ -260,6 +287,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Puglia",
     "SCUOLA": "IC Vito Intini - Secondaria di 1 grado Vincenza Sofo",
+    "CLASSE": "Classi terze",
     "TITOLO": "Il bacio... Negato"
   },
   {
@@ -269,6 +297,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Abruzzo",
     "SCUOLA": "Scuola dell'Infanzia Sant'Antonio - IC Gianni Rodari",
+    "CLASSE": "Sezione C",
     "TITOLO": "Forme e colori in arte"
   },
   {
@@ -278,6 +307,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Basilicata",
     "SCUOLA": "Scuola dell'Infanzia Belvedere",
+    "CLASSE": "Tutte le classi",
     "TITOLO": "Come Kandinsky"
   },
   {
@@ -287,6 +317,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Calabria",
     "SCUOLA": "IC Don Milani - Scuola dell'Infanzia Farina",
+    "CLASSE": "Le sezioni dei 5 anni",
     "TITOLO": "La Rinascita: Arte, Musica, Emozioni"
   },
   {
@@ -296,6 +327,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Campania",
     "SCUOLA": "Scuola dell'Infanzia di Bellosguardo",
+    "CLASSE": "Tutte le classi",
     "TITOLO": "100 Colori"
   },
   {
@@ -305,6 +337,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Emilia-Romagna",
     "SCUOLA": "Scuola dell'Infanzia San Luigi",
+    "CLASSE": "Sezione Orto",
     "TITOLO": "Nel giardino di Monet"
   },
   {
@@ -314,6 +347,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Friuli-Venezia Giulia",
     "SCUOLA": "Scuola dell'Infanzia Grisulute Non Ti Scordar di Me - Avasinis presso centro studi di Alesso",
+    "CLASSE": "Sezioni A, B",
     "TITOLO": "Facciamo arte, faccia- mo arte, facci-amo-arte"
   },
   {
@@ -323,6 +357,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Lazio",
     "SCUOLA": "Scuola dell'Infanzia Giovanni Paolo II",
+    "CLASSE": "Sezione F",
     "TITOLO": "L'albero della vita , l'albero della speranza"
   },
   {
@@ -332,6 +367,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Liguria",
     "SCUOLA": "Scuola dell'Infanzia Collodi",
+    "CLASSE": "Sezioni A, B",
     "TITOLO": "Arcimboldiamo in mezzo all'arte"
   },
   {
@@ -341,6 +377,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Lombardia",
     "SCUOLA": "Kindergarten BSCSCHOOL",
+    "CLASSE": "Grade 1",
     "TITOLO": "Una magica scintilla"
   },
   {
@@ -350,6 +387,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Marche",
     "SCUOLA": "IC L. Lotto - Scuola dell'Infanzia Don Dante Raccichini",
+    "CLASSE": "Monosezione infanzia",
     "TITOLO": "L'abbraccio\" (opera ispirata alla Maternità di klimt)"
   },
   {
@@ -359,6 +397,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Molise",
     "SCUOLA": "I.C. Molise Altissimo di Carovilli",
+    "CLASSE": "Sezioni A,B",
     "TITOLO": "Le stelle e gli occhi di Mirò"
   },
   {
@@ -368,6 +407,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Piemonte",
     "SCUOLA": "Scuola dell'Infanzia Sezzadio",
+    "CLASSE": "Sezioni A, B",
     "TITOLO": "Marie-Thérèse Walter"
   },
   {
@@ -377,6 +417,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Puglia",
     "SCUOLA": "Scuola dell'Infanzia Piccinni - IC Roncalli 3",
+    "CLASSE": "Sezione F",
     "TITOLO": "Tanta Luce"
   },
   {
@@ -386,6 +427,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Sardegna",
     "SCUOLA": "Scuola dell’Infanzia - Sardara- IC Eleonora d'Arborea",
+    "CLASSE": "Sezione A",
     "TITOLO": "L'uomo delle stelle"
   },
   {
@@ -395,6 +437,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Sicilia",
     "SCUOLA": "Scuola dell'infanzia Palatucci presso 2° I.C A. Manzoni",
+    "CLASSE": "Sezioni 1,2,3,4,5",
     "TITOLO": "Un mondo d'arte"
   },
   {
@@ -404,6 +447,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Toscana",
     "SCUOLA": "Scuola dell'Infanzia Collodi",
+    "CLASSE": "Sezione D Formiche",
     "TITOLO": "Dal legno al disegno"
   },
   {
@@ -413,6 +457,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Umbria",
     "SCUOLA": "IC Dalmazio Birago - Scuola dell'Infanzia di Tuoro sul Trasimeno",
+    "CLASSE": "Sezione A",
     "TITOLO": "Il cielo con gli occhi di Matisse"
   },
   {
@@ -422,6 +467,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Valle d'Aosta",
     "SCUOLA": "Scuola dell’Infanzia di Torgnon",
+    "CLASSE": "Tutte le classi",
     "TITOLO": "Vivere qui è..."
   },
   {
@@ -431,6 +477,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Veneto",
     "SCUOLA": "Scuola dell'Infanzia G.R. Pastega",
+    "CLASSE": "Sezioni Unicorni e Draghetti",
     "TITOLO": "Torneremo ad abbracciarci"
   },
   {
@@ -440,6 +487,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Lombardia",
     "SCUOLA": "Scuola dell'Infanzia Sacra Famiglia",
+    "CLASSE": "Bambini 5 anni",
     "TITOLO": "Bomba D'Arte"
   },
   {
@@ -449,6 +497,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Piemonte",
     "SCUOLA": "Scuola dell'infanzia di Bagnasco",
+    "CLASSE": "Sezione unica infanzia",
     "TITOLO": "Da-lì ... a Qui!"
   },
   {
@@ -458,6 +507,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Campania",
     "SCUOLA": "Scuola dell'Infanzia Comunale Mario Ruta-2° Circolo Comunale",
+    "CLASSE": "Sezione Verde",
     "TITOLO": "The weather project- Olafur Eliasson"
   },
   {
@@ -467,6 +517,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Piemonte",
     "SCUOLA": "Scuola dell'Infanzia Collodi - IC Bottacchi",
+    "CLASSE": "Sezione 2A (Azzurra)",
     "TITOLO": "Ammiro Mirò"
   },
   {
@@ -476,6 +527,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Marche",
     "SCUOLA": "Scuola dell'Infanzia Gianni Rodari",
+    "CLASSE": "Sezione 3B (5 anni)",
     "TITOLO": "Passeggiando sulla luna"
   },
   {
@@ -485,6 +537,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Toscana",
     "SCUOLA": "Scuola dell'Infanzia di Cancelli",
+    "CLASSE": "Sezioni A, B",
     "TITOLO": "Un palloncino tra le stelle"
   },
   {
@@ -494,6 +547,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Friuli-Venezia Giulia",
     "SCUOLA": "Scuola dell'Infanzia di Enemonzo",
+    "CLASSE": "Sezioni A,B",
     "TITOLO": "I sogni della luna"
   },
   {
@@ -503,6 +557,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Liguria",
     "SCUOLA": "Scuola dell'Infanzia Cà di Ventura",
+    "CLASSE": "Sezione Girasoli",
     "TITOLO": "Il compleanno del pescegatto"
   },
   {
@@ -512,6 +567,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Campania",
     "SCUOLA": "IV° CIRCOLO DIDATTICO SCUOLA DELL'INFANZIA ANNUNZIATELLA",
+    "CLASSE": "Sezioni A,B,C,D,E,F,G,H,I",
     "TITOLO": "Caretakers of future (Custodi del futuro)."
   },
   {
@@ -521,6 +577,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Lombardia",
     "SCUOLA": "Scuola dell'Infanzia Giovanna Alfieri",
+    "CLASSE": "Sezione Anatroccoli",
     "TITOLO": "Notte scintillante"
   },
   {
@@ -530,6 +587,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Abruzzo",
     "SCUOLA": "Istituto Comprensivo \"Alda Merini",
+    "CLASSE": "Sezioni B,C,E (5 anni)",
     "TITOLO": "L'allegria in bolle"
   },
   {
@@ -539,6 +597,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Calabria",
     "SCUOLA": "Scuola dell'infanzia E. Codignola",
+    "CLASSE": "Sezione 3AR Infanzia",
     "TITOLO": "Vivere a colori\": il puzzle ispirato alle forme e ai colori di Auguste Herbin per dipingere giocando"
   },
   {
@@ -548,6 +607,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Basilicata",
     "SCUOLA": "Scuola dell'Infanzia Stella Marina",
+    "CLASSE": "Sezione B",
     "TITOLO": "Il sole salva il mondo dal Corona Virus"
   },
   {
@@ -557,6 +617,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Friuli-Venezia Giulia",
     "SCUOLA": "Scuola dell'Infanzia Passons",
+    "CLASSE": "Sezioni B (4 anni), D (5 anni)",
     "TITOLO": "“…Servono radici per avere grandi idee…”"
   },
   {
@@ -566,6 +627,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Sicilia",
     "SCUOLA": "Scuola dell'Infanzia Manzoni",
+    "CLASSE": "Sezioni A,B",
     "TITOLO": "Turbinio di emozioni contrastanti"
   },
   {
@@ -575,6 +637,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Abruzzo",
     "SCUOLA": "Scuola Primaria Castiglione Messer Marino",
+    "CLASSE": "Classe quinta",
     "TITOLO": "La libertà"
   },
   {
@@ -584,6 +647,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Basilicata",
     "SCUOLA": "I. C. \"D. Savio\" - Potenza",
+    "CLASSE": "Classi 5D, 5E, 5H",
     "TITOLO": "Se io fossi..."
   },
   {
@@ -593,6 +657,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Calabria",
     "SCUOLA": "Scuola Primaria Via Nazionale",
+    "CLASSE": "Classe 4D",
     "TITOLO": "Lo sguardo infinito"
   },
   {
@@ -602,6 +667,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Campania",
     "SCUOLA": "I.C. De Filippo-DD2",
+    "CLASSE": "Classi 5A, 5B, 5C",
     "TITOLO": "Un alfabeto...ad arte"
   },
   {
@@ -611,6 +677,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Emilia-Romagna",
     "SCUOLA": "Scuola Primaria G. Bertin",
+    "CLASSE": "Classe 5B",
     "TITOLO": "L'Arte e il \"brutto\" degli ultimi 100 anni."
   },
   {
@@ -620,6 +687,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Friuli-Venezia Giulia",
     "SCUOLA": "Scuola Primaria Umberto I Istituto Comprensivo A. Zanzotto Caneva",
+    "CLASSE": "Classe 5B",
     "TITOLO": "La classe"
   },
   {
@@ -629,6 +697,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Lazio",
     "SCUOLA": "Scuola Primaria Rio de Janeiro",
+    "CLASSE": "Classe 4B",
     "TITOLO": "Lavoro di squadra"
   },
   {
@@ -638,6 +707,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Liguria",
     "SCUOLA": "Scuola Primaria Paritaria Contubernio d'Albertis",
+    "CLASSE": "Classe 4A",
     "TITOLO": "Genova tra verde e azzurro"
   },
   {
@@ -647,6 +717,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Lombardia",
     "SCUOLA": "Scuola Primaria Maria Montessori",
+    "CLASSE": "Classi 5A, 5B",
     "TITOLO": "Cento anni in pop"
   },
   {
@@ -656,6 +727,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Marche",
     "SCUOLA": "Scuola Primaria San Vito",
+    "CLASSE": "Classe quinta",
     "TITOLO": "Viaggio tra l'arte"
   },
   {
@@ -665,6 +737,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Molise",
     "SCUOLA": "I.C. Don Giulio Testa",
+    "CLASSE": "Classi 5A, 5B",
     "TITOLO": "Noi ..."
   },
   {
@@ -674,6 +747,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Piemonte",
     "SCUOLA": "Scuola Primaria Treiso-Barbaresco",
+    "CLASSE": "Classe terza",
     "TITOLO": "Colline e un sogno"
   },
   {
@@ -683,6 +757,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Puglia",
     "SCUOLA": "Direzione Didattica Circolo 17 Poggiofranco - Plesso Carrante",
+    "CLASSE": "Classi 5A, 5C",
     "TITOLO": "Connessioni"
   },
   {
@@ -692,6 +767,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Sardegna",
     "SCUOLA": "Scuola Primaria Via Cimabue",
+    "CLASSE": "Classe 3A",
     "TITOLO": "100 anni ancora"
   },
   {
@@ -701,6 +777,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Sicilia",
     "SCUOLA": "c/o point service srl",
+    "CLASSE": "Classe 2A",
     "TITOLO": "Pinocchiando come Baj"
   },
   {
@@ -710,6 +787,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Toscana",
     "SCUOLA": "Istituto Beata Giovanna",
+    "CLASSE": "Classe quinta",
     "TITOLO": "Quando tutto Fila...nascono capolavori"
   },
   {
@@ -719,6 +797,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Trentino-Alto Adige",
     "SCUOLA": "S.P. Luigi Nicolussi",
+    "CLASSE": "Classe quinta",
     "TITOLO": "Birthday Pencils Cake"
   },
   {
@@ -728,6 +807,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Umbria",
     "SCUOLA": "Scuola Primaria Statale \"Sandro Pertini",
+    "CLASSE": "Classe 4A",
     "TITOLO": "La pop art libera il colore"
   },
   {
@@ -737,6 +817,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Valle d'Aosta",
     "SCUOLA": "Scuola Primaria Breuil-Cervinia",
+    "CLASSE": "Pluriclasse quarte e quinte",
     "TITOLO": "Il Cervino...una pARTE di noi"
   },
   {
@@ -746,6 +827,7 @@ const Concorso = [
     "CLASSIFICA": "Regionale",
     "REGIONE": "Veneto",
     "SCUOLA": "Scuola Primaria G. Carducci",
+    "CLASSE": "Classe quinta",
     "TITOLO": "Caleido Klimt"
   },
   {
@@ -755,6 +837,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Lazio",
     "SCUOLA": "Plesso Guido Alessi",
+    "CLASSE": "Classe 1B",
     "TITOLO": "La Covida"
   },
   {
@@ -764,6 +847,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Puglia",
     "SCUOLA": "I Circolo De Amicis",
+    "CLASSE": "Classi 5E, 5I",
     "TITOLO": "On de rock"
   },
   {
@@ -773,6 +857,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Lombardia",
     "SCUOLA": "Scuola Primaria Vittorio Ramella",
+    "CLASSE": "Classe 3A",
     "TITOLO": "Contatto"
   },
   {
@@ -782,6 +867,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Emilia-Romagna",
     "SCUOLA": "Scuola paritaria San Vincenzo de'Paoli",
+    "CLASSE": "Classe 3A",
     "TITOLO": "L'importanza dell'amicizia"
   },
   {
@@ -791,6 +877,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Liguria",
     "SCUOLA": "Scuola primaria callandrone",
+    "CLASSE": "Classi 4A, 4B",
     "TITOLO": "Artisti dalla A alla Z"
   },
   {
@@ -800,6 +887,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Basilicata",
     "SCUOLA": "IC Pietrelcina Pisticci",
+    "CLASSE": "Classi 4B, 4C Monreale",
     "TITOLO": "Un velo di modernità"
   },
   {
@@ -809,6 +897,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Marche",
     "SCUOLA": "Ufficio Presidenza Segreteria “S.Pellico”",
+    "CLASSE": "Classe 3C",
     "TITOLO": "Figli d'arte\" crescono...aspettando che torni a splendere il sole."
   },
   {
@@ -818,6 +907,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Lazio",
     "SCUOLA": "Scuola Primaria Giovanni Palatucci",
+    "CLASSE": "Classe 5C",
     "TITOLO": "Mirò and Co."
   },
   {
@@ -827,6 +917,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Toscana",
     "SCUOLA": "Scuola Primaria Bargellini",
+    "CLASSE": "Classe 5B",
     "TITOLO": "Pixeldalí"
   },
   {
@@ -836,6 +927,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Abruzzo",
     "SCUOLA": "Istituto Comprensivo \"Vivenza - Giovanni XXIII",
+    "CLASSE": "Classe 3A",
     "TITOLO": "Pensieri"
   },
   {
@@ -845,6 +937,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Puglia",
     "SCUOLA": "Scuola Primaria Via Garibaldi",
+    "CLASSE": "Classe 3D",
     "TITOLO": "Donna… vola più in alto che puoi!"
   },
   {
@@ -854,6 +947,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Piemonte",
     "SCUOLA": "I.C. A. Dasso",
+    "CLASSE": "Classi 4A, 4B, 4C",
     "TITOLO": "Nel tramonto..."
   },
   {
@@ -863,6 +957,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Piemonte",
     "SCUOLA": "Scuola primaria Franco Piccinelli",
+    "CLASSE": "Classe 3A",
     "TITOLO": "Nell'arte ci sono anch'io ...1 , 10, 100 di noi"
   },
   {
@@ -872,6 +967,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Veneto",
     "SCUOLA": "Scuola Primaria Cesare Battisti",
+    "CLASSE": "Pluriclasse terze, quarte e quinte",
     "TITOLO": "Cento di queste matite!"
   },
   {
@@ -881,6 +977,7 @@ const Concorso = [
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Toscana",
     "SCUOLA": "Scuola Primaria Paritaria Maestre Pie",
+    "CLASSE": "Classe terza",
     "TITOLO": "Giochi nel borgo"
   }
 ]
@@ -905,7 +1002,6 @@ illu.forEach((item, i) => {
   });
 
 });
-
 
 
 
@@ -1000,7 +1096,7 @@ tl.from(chars, {duration: 1.2, opacity:0, scale:0, y:80, rotationX:180, transfor
 
   // image gallery
 
-  function getRandomInt(min, max) {
+function getRandomInt(min, max) {
       min = Math.ceil(min);
       max = Math.floor(max);
       return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -1012,12 +1108,13 @@ var tmp = '';
 
 $.each( obj, function( key, value ) {
   tmp += '<div class="single-image">';
-  tmp += '  <img class="image" src="./foto_concorso/' + value.FILE + '"/>';
+  tmp += '  <img class="image image-modal" src="./foto_concorso/' + value.FILE + '"/>';
   tmp += '    <div class="image-details">';
   tmp += '      <div> <span> CONCORSO </span> ' + value.CONCORSO + '</div>';
   tmp += '      <div><span> CLASSIFICA </span> ' + value.CLASSIFICA + '</div>';
   tmp += '      <div><span> REGIONE </span> ' + value.REGIONE + '</div>';
   tmp += '      <div><span> SCUOLA </span> ' + value.SCUOLA + '</div>';
+  tmp += '      <div><span> CLASSE </span> ' + value.CLASSE + '</div>';
   tmp += '      <div><span> TITOLO </span> ' + value.TITOLO + '</div>';
   tmp += '    </div>';
   tmp += ' </div>';
@@ -1025,8 +1122,25 @@ $.each( obj, function( key, value ) {
 
 $('.image-gallery-container').prepend(tmp);
 
-// hero random image
 
+Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
+  const slider = document.querySelector('.image-gallery');
+  var scrollContainer = Draggable.create(".image-gallery-container", {
+    type: "x",
+    edgeResistance: 0.5,
+    snap: (val) => Math.round(val / 100) * 100,
+    inertia: true,
+    allowContextMenu : true,
+    bounds: {
+      minX: -document.querySelector(".image-gallery-container").offsetWidth + document.querySelector(".image-gallery").offsetWidth,
+      maxX: 0
+    }
+  });
+    console.log('images finished loading');
+});
+
+
+// hero random image
 $( document ).ready(function() {
   let len = obj.length;
   let randomImages = [];
@@ -1061,37 +1175,75 @@ $( document ).ready(function() {
       });
     });
 
+
+
 });
 
 
 // gallery slide
 
-const slider = document.querySelector('.image-gallery-container');
-let isDown = false;
-let startX;
-let scrollLeft;
+// const slider = document.querySelector('.image-gallery-container');
+// let isDown = false;
+// let startX;
+// let scrollLeft;
+//
+// slider.addEventListener('mousedown', (e) => {
+//   isDown = true;
+//   slider.classList.add('active');
+//   startX = e.pageX - slider.offsetLeft;
+//   scrollLeft = slider.scrollLeft;
+//   slider.style.cursor ="grabbing";
+//
+// });
+// slider.addEventListener('mouseleave', () => {
+//   isDown = false;
+//   slider.classList.remove('active');
+// });
+// slider.addEventListener('mouseup', () => {
+//   isDown = false;
+//   slider.classList.remove('active');
+//   slider.style.cursor ="grab";
+// });
+// slider.addEventListener('mousemove', (e) => {
+//   if(!isDown) return;
+//   e.preventDefault();
+//   const x = e.pageX - slider.offsetLeft;
+//   const walk = (x - startX) * 2; //scroll-fast
+//   slider.scrollLeft = scrollLeft - walk;
+// });
 
-slider.addEventListener('mousedown', (e) => {
-  isDown = true;
-  slider.classList.add('active');
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-  slider.style.cursor ="grabbing";
 
-});
-slider.addEventListener('mouseleave', () => {
-  isDown = false;
-  slider.classList.remove('active');
-});
-slider.addEventListener('mouseup', () => {
-  isDown = false;
-  slider.classList.remove('active');
-  slider.style.cursor ="grab";
-});
-slider.addEventListener('mousemove', (e) => {
-  if(!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 2; //scroll-fast
-  slider.scrollLeft = scrollLeft - walk;
-});
+// var scrollContainer = Draggable.create(".image-gallery-container", {
+//   type: "x",
+//   edgeResistance: 0.5,
+//   snap: (val) => Math.round(val / 100) * 100,
+//   inertia: true,
+//   allowContextMenu : true,
+//   onThrowComplete	: function() { console.log(this.x) },
+//   bounds: {
+//     minX: -document.querySelector(".image-gallery-container").offsetWidth + document.querySelector(".image-gallery").offsetWidth,
+//     maxX: 0
+//   }
+// });
+
+
+
+// modal
+  let modal = document.getElementById("myModal");
+  let imageList = document.querySelectorAll(".image-modal");
+  let imageContList = document.querySelectorAll(".single-image");
+
+  let modalImg = document.getElementById("img01");
+
+  imageContList.forEach((item, i) => {
+    item.onclick = function(){
+      let img = item.querySelector(".image");
+      modal.style.display = "flex";
+      modalImg.src = img.src;
+    }
+  });
+
+  var span = document.getElementsByClassName("close")[0];
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
