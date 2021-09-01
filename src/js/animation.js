@@ -1105,39 +1105,33 @@ function getRandomInt(min, max) {
 const myJSON = JSON.stringify(Concorso);
 var obj = JSON.parse( myJSON );
 var tmp = '';
-
-$.each( obj, function( key, value ) {
-  tmp += '<div class="single-image">';
-  tmp += '  <img class="image image-modal" src="./foto_concorso/' + value.FILE + '"/>';
+let arr = Array.from({length: 96}, () => Math.floor(Math.random() * 40));
+$.each( arr, function( key, value ) {
+  tmp += '<div fade class="single-image grid-item">';
+  tmp += '  <img class="image image-modal" src="./foto_concorso/' + obj[value].FILE + '"/>';
   tmp += '    <div class="image-details">';
-  tmp += '      <div> <span> CONCORSO </span> ' + value.CONCORSO + '</div>';
-  tmp += '      <div><span> CLASSIFICA </span> ' + value.CLASSIFICA + '</div>';
-  tmp += '      <div><span> REGIONE </span> ' + value.REGIONE + '</div>';
-  tmp += '      <div><span> SCUOLA </span> ' + value.SCUOLA + '</div>';
-  tmp += '      <div><span> CLASSE </span> ' + value.CLASSE + '</div>';
-  tmp += '      <div><span> TITOLO </span> ' + value.TITOLO + '</div>';
+  tmp += '      <div> <span> CONCORSO </span> ' + obj[value].CONCORSO + '</div>';
+  tmp += '      <div><span> CLASSIFICA </span> ' + obj[value].CLASSIFICA + '</div>';
+  tmp += '      <div><span> REGIONE </span> ' + obj[value].REGIONE + '</div>';
+  tmp += '      <div><span> SCUOLA </span> ' + obj[value].SCUOLA + '</div>';
+  tmp += '      <div><span> CLASSE </span> ' + obj[value].CLASSE + '</div>';
+  tmp += '      <div><span> TITOLO </span> ' + obj[value].TITOLO + '</div>';
   tmp += '    </div>';
   tmp += ' </div>';
+
 });
 
 $('.image-gallery-container').prepend(tmp);
 
 
 Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
-  const slider = document.querySelector('.image-gallery');
-  var scrollContainer = Draggable.create(".image-gallery-container", {
-    type: "x",
-    edgeResistance: 0.5,
-    snap: (val) => Math.round(val / 100) * 100,
-    inertia: true,
-    allowContextMenu : true,
-    bounds: {
-      minX: -document.querySelector(".image-gallery-container").offsetWidth + document.querySelector(".image-gallery").offsetWidth,
-      maxX: 0
-    }
-  });
-    console.log('images finished loading');
+  const slider = document.querySelector('.image-gallery-container');
+    var msnry = new Masonry( slider, {
+      itemSelector: '.single-image',
+    });
 });
+
+
 
 
 // hero random image

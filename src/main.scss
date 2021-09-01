@@ -437,40 +437,28 @@ body{
 }
 
 // gallery ok
-
+img[data-loaded="true"], [data-loaded="true"] img { animation-name: showLazyImg; animation-duration: 0.7s; animation-fill-mode: both; } @keyframes showLazyImg { from { opacity: 0; } to { opacity: 1; } }
 
 .image-gallery{
 	overflow: hidden;
+	margin: $spacing*2;
 }
 
 .image-gallery-container{
-	// display: flex;
-  // flex-flow: column wrap;
-  // max-height:100vh;
-  // align-items: center;
-	// overflow-x: scroll;
-	// overflow-y: hidden;
-	display: inline-flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
 	&::-webkit-scrollbar {
   display: none;
 	}
 	 -ms-overflow-style: none;
   scrollbar-width: none;
-	cursor: grab;
 	.single-image{
 		height: fit-content;
 		position: relative;
-		margin-left: $spacing*6;
-		margin-top: $spacing*6;
 		width:fit-content;
-		&:last-child{
-		margin-right: $spacing*6;
-		}
+		width: 33%;
+		padding: 16px;
 		img{
-			width:auto;
-			height: 600px;
+			width:100%;
+			height: auto;
 			display: flex;
 		}
 		&:hover{
@@ -482,15 +470,16 @@ body{
 			position: absolute;
 			color:white;
 			padding: $spacing*2;
-			top:0;
-			height: 100%;
-			width: 100%;
-			left: 0;
+			top:$spacing*2;
+			height: calc(100% - 32px);
+			width: calc(100% - 32px);
+			left: $spacing*2;
 			opacity: 0;
 			transition: .2s ease;
 			background: rgba(0, 0, 0, 0.85);
 			display: flex;
 			flex-direction: column;
+			overflow-y: scroll;
 			div{
 				display: flex;
 				font-family: $ap-bold;
@@ -506,6 +495,7 @@ body{
 		}
 	}
 }
+
 
 
 /* The Modal (background) */
@@ -684,6 +674,12 @@ footer{
 .mobile, .mobile-small{display: none !important;}
 .desktop, .desktop-small{display: flex !important;}
 
+	@media only screen and (max-width: 1300px) {
+	.image-gallery-container .single-image{
+		width:50%;
+	}
+
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -827,16 +823,12 @@ footer{
 		pointer-events: none;
 	}
 
+	.image-gallery-container .single-image{
+		width:100%;
+	}
 	.image-gallery{
 		.image-gallery-container{
 			.single-image{
-				width:unset;
-				margin-top: $spacing*5;
-				margin-left: $spacing*3;
-				img{
-					height: 400px;
-					width:auto;
-				}
 				.image-details{
 					overflow-y: scroll;
 					div{
