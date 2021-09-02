@@ -1105,7 +1105,17 @@ function getRandomInt(min, max) {
 const myJSON = JSON.stringify(Concorso);
 var obj = JSON.parse( myJSON );
 var tmp = '';
-let arr = Array.from({length: 96}, () => Math.floor(Math.random() * 40));
+let arr = Array.from(Array(96).keys())
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+shuffleArray(arr);
+console.log(arr)
+
 $.each( arr, function( key, value ) {
   tmp += '<div fade class="single-image grid-item">';
   tmp += '  <img class="image image-modal" src="./foto_concorso/' + obj[value].FILE + '"/>';

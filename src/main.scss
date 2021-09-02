@@ -301,6 +301,10 @@ body{
 	.logo{
 		position: absolute;
 		top:$spacing*4;
+		z-index: 99;
+		img{
+			width:180px;
+		}
 	}
 	.hero-images{
 		position: absolute;
@@ -400,6 +404,12 @@ body{
 				display: flex;
 				align-items: center;
 				padding: 0 4px;
+				#twitter-logo{
+					width:25px;
+				}
+				#facebook-logo{
+					width: 15px;
+				}
 			}
 		}
 		.hero-title{
@@ -454,7 +464,7 @@ img[data-loaded="true"], [data-loaded="true"] img { animation-name: showLazyImg;
 		height: fit-content;
 		position: relative;
 		width:fit-content;
-		width: 33%;
+		width: 33.33%;
 		padding: 16px;
 		img{
 			width:100%;
