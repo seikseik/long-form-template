@@ -51,10 +51,6 @@ div, section{
 
 }
 
-$ap-reg: "apfel-reg", sans-serif;
-$ap-bold: "apfel-bold", sans-serif;
-$plex-sans: 'IBM Plex Sans', sans-serif;
-$plaex-serif:'IBM Plex Serif', serif;
 
 // VARIABLES
 $spacing: 8px;
@@ -71,30 +67,11 @@ $size-body: 20px;
 $size-quote: 24px;
 $size-small: 16px;
 
-$blu: #3B7AF3;
-$black: #131313;
 
-@mixin circle{
-	width:40px;
-	height: 40px;
-	background: $blu;
-	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	.inner-circle{
-		background: white;
-		width:4px;
-		height: 4px;
-		border-radius: 50px;
-	}
-}
 
 body{
 	line-height: $line_height;
-	color:$black;
 	overflow-x:hidden;
-	font-family: $ap-reg;
 	font-size: $size-body;
 }
 
@@ -169,7 +146,6 @@ body{
 }
 
 .hr{
-	background: $blu;
 	height: 2px;
 	display: block;
 	margin: 0 $spacing*6;
@@ -183,9 +159,7 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color:$blu;
 	margin-right: $spacing*2;
-	font-family: $ap-bold;
 }
 
 // INIZIO INIZIO INIZIO INIZIO INIZIO INIZIO
@@ -199,40 +173,16 @@ body{
 	position: relative;
 	&.intro-section{
 		.text-container{
-			background: $blu;
 			border-radius: 16px;
 			padding: $spacing*4;
 			color:white;
 			position: relative;
 			p{
-				font-family: $ap-reg;
 				font-size: $size-quote;
 				border:2px solid white;
 				padding: $spacing*4;
 				text-align: center;
 				position: relative;
-			}
-			.circle{
-				&:first-child{
-					@include circle;
-					top:-20px;
-					left: -20px;
-				}
-				&:nth-child(2){
-					@include circle;
-					top:-20px;
-					right: -20px;
-				}
-				&:nth-child(3){
-					@include circle;
-					bottom:-20px;
-					left: -20px;
-				}
-				&:nth-child(4){
-					@include circle;
-					bottom:-20px;
-					right: -20px;
-				}
 			}
 		}
 	}
@@ -247,268 +197,15 @@ body{
 		margin-bottom:$spacing*3;
 		line-height: $line_height;
 		font-weight: normal;
-		font-family: $plaex-serif;
 		&:last-child{
 			margin-bottom: 0px;
 		}
 	}
 }
 
-.section-header--full{
-	width: $text-width;
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	margin-bottom: $spacing*4;
-	font-family: $ap-bold;
-	justify-content: center;
-	span{
-		width: 70px;
-		font-weight: bold;
-		height: 70px;
-		margin-right: $spacing*2;
-		color:white;
-		background: $blu;
-		display: flex;
-		justify-content: center;
-		align-items:center;
-		position: relative;
-	}
-	h1{
-		color:$blu;
-		border:2px solid $blu;
-		border-radius: 30px;
-		padding: 5px 8px;
-		margin: 0 $spacing;
-		white-space: nowrap;
-		text-transform: uppercase;
-	}
-}
-
-// hero section
-
-.hero{
-	width:100vw;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	a{
-		display: flex;
-		justify-content: center;
-	}
-	.logo{
-		position: absolute;
-		top:$spacing*4;
-		z-index: 99;
-		img{
-			width:180px;
-		}
-	}
-	.hero-images{
-		position: absolute;
-		top:0;
-		left: 0;
-		width:100%;
-		height: 100%;
-		display: flex;
-		justify-content: space-between;
-		z-index: 1;
-		overflow: hidden;
-		img{
-			width:100%;
-			height:auto;
-		}
-		.hero-image-left{
-			width: 40%;
-			height: 100%;
-			position: relative;
-			.image-hero{
-				position: absolute;
-				&:first-child{
-					width:30%;
-					top:20%;
-					left: 10%;
-					z-index: 2;
-				}
-				&:nth-child(2){
-					width:30%;
-					top:50%;
-					left: 20%;
-					z-index: 2;
-				}
-				&:nth-child(3){
-					width:35%;
-					top:22%;
-					left: 35%;
-					z-index: 1;
-				}
-				&:nth-child(4){
-					width:35%;
-					top:65%;
-					left: 23%;
-					z-index: 1;
-				}
-			}
-		}
-		.hero-image-right{
-			width: 40%;
-			height: 100%;
-			position: relative;
-			.image-hero{
-				position: absolute;
-				&:first-child{
-					width:30%;
-					top:20%;
-					right: 10%;
-					z-index: 2;
-				}
-				&:nth-child(2){
-					width:30%;
-					top:50%;
-					right: 20%;
-					z-index: 2;
-				}
-				&:nth-child(3){
-					width:35%;
-					top:50%;
-					right: 40%;
-					z-index: 1;
-				}
-				&:nth-child(4){
-					width:35%;
-					top:10%;
-					right: 10%;
-					z-index: 1;
-				}
-			}
-		}
-	}
-	.hero-text{
-		width: 60vw;
-		max-width: 1000px;
-		text-align: center;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		align-items: center;
-		z-index: 2;
-		pointer-events: none;
-		.hero-social ul{
-			display: flex;
-			align-items: center;
-			margin-bottom: $spacing*4;
-			pointer-events: auto;
-			li{
-				display: flex;
-				align-items: center;
-				padding: 0 4px;
-				#twitter-logo{
-					width:25px;
-				}
-				#facebook-logo{
-					width: 15px;
-				}
-			}
-		}
-		.hero-title{
-			color:$blu;
-			font-size: $mainTitle;
-			line-height: 1;
-			margin-bottom: $spacing*4;
-			font-family: $ap-bold;
-		}
-		.hero-subtitle{
-			margin-bottom: $spacing*5;
-		}
-		.hero-author{
-			color:$blu;
-			font-family: $ap-bold;
-			font-size: $size-small;
-			span{
-				color:black;
-				font-family: $plaex-serif;
-				font-style: italic;
-				margin-right: 3px;
-			}
-		}
-	}
-
-}
-
-
-// illustrations
-.background-illu{
-	position: absolute;
-	width:100%;
-	height: 100%;
-	z-index: 1;
-}
-
-// gallery ok
-img[data-loaded="true"], [data-loaded="true"] img { animation-name: showLazyImg; animation-duration: 0.7s; animation-fill-mode: both; } @keyframes showLazyImg { from { opacity: 0; } to { opacity: 1; } }
-
-.image-gallery{
-	overflow: hidden;
-	margin: $spacing*2;
-}
-
-.image-gallery-container{
-	&::-webkit-scrollbar {
-  display: none;
-	}
-	 -ms-overflow-style: none;
-  scrollbar-width: none;
-	.single-image{
-		height: fit-content;
-		position: relative;
-		width:fit-content;
-		width: 33.33%;
-		padding: 16px;
-		img{
-			width:100%;
-			height: auto;
-			display: flex;
-		}
-		&:hover{
-			.image-details{
-				opacity: 1;
-			}
-		}
-		.image-details{
-			position: absolute;
-			color:white;
-			padding: $spacing*2;
-			top:$spacing*2;
-			height: calc(100% - 32px);
-			width: calc(100% - 32px);
-			left: $spacing*2;
-			opacity: 0;
-			transition: .2s ease;
-			background: rgba(0, 0, 0, 0.85);
-			display: flex;
-			flex-direction: column;
-			overflow-y: scroll;
-			div{
-				display: flex;
-				font-family: $ap-bold;
-				margin-bottom: $spacing;
-				flex-direction: column;
-				font-size: $size-small;
-				span{
-					font-family: 'IBM Plex Mono', monospace;
-					margin-bottom: $spacing/2;
-					font-size: 14px;
-				}
-			}
-		}
-	}
-}
 
 
 
-/* The Modal (background) */
 .modal {
   display: none;
   position: fixed;
@@ -525,7 +222,6 @@ img[data-loaded="true"], [data-loaded="true"] img { animation-name: showLazyImg;
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Modal Content (Image) */
 .modal-content {
   margin: auto;
   display: block;
@@ -533,7 +229,6 @@ img[data-loaded="true"], [data-loaded="true"] img { animation-name: showLazyImg;
   max-height: 80vh;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
   margin: auto;
   display: block;
@@ -545,7 +240,6 @@ img[data-loaded="true"], [data-loaded="true"] img { animation-name: showLazyImg;
   height: 150px;
 }
 
-/* Add Animation - Zoom in the Modal */
 
 @keyframes zoom {
   from {transform:scale(0.8)}
@@ -576,12 +270,13 @@ img[data-loaded="true"], [data-loaded="true"] img { animation-name: showLazyImg;
   }
 }
 
+
+
+
 // footer
 footer{
-	background: $blu;
 	color:white;
 	a{color:white;}
-	font-family: $ap-bold;
 	margin-top: $spacing*12;
 	position: relative;
 	.footer-container{
@@ -644,7 +339,6 @@ footer{
 	height: 60px;
 	width:60px;
 	border-radius: 100%;
-	background: $blu;
 	color:white;
 	display: flex;
 	justify-content: center;
@@ -652,30 +346,6 @@ footer{
 	top: -30px;
 	border:3px solid white;
 	cursor: pointer;
-}
-#footer1{
-	position: absolute;
-	bottom:0;
-	left: 0px;
-	z-index: 1;
-}
-#footer2{
-	position: absolute;
-	bottom:0;
-	left: 200px;
-	z-index: 1;
-}
-#footer3{
-	position: absolute;
-	bottom:0;
-	right: 280px;
-	z-index: 1;
-}
-#footer4{
-	position: absolute;
-	bottom:0;
-	right: 0px;
-	z-index: 1;
 }
 
 
@@ -762,57 +432,6 @@ footer{
 		}
 	}
 
-	.hero{
-		height: auto;
-		flex-direction: column-reverse;
-		overflow: hidden;
-		.hero-images{
-			position: relative;
-			height: 80vh;
-			.hero-image-left{
-				width:100%;
-				.image-hero{
-					&:first-child{
-						left: 10%;
-				    top: 0%;
-				    width: 50%;
-				    z-index: 2;
-					}
-					&:nth-child(2){
-						left: 7%;
-				    top: 33%;
-				    width: 37%;
-						z-index: 2;
-					}
-					&:nth-child(3){
-						left: 48%;
-				    top: 24%;
-				    width: 60%;
-					}
-				}
-			}
-			.hero-image-right{
-				display: none;
-			}
-		}
-		.logo{
-			top:$spacing*3;
-		}
-		.hero-text{
-			height: 100vh;
-			width:100%;
-			display: flex;
-			align-items:center;
-			max-width: 100%;
-			padding: 0 $spacing*3;
-			.hero-social{
-				margin-top: $spacing*5;
-			}
-			.hero-title{
-				font-size: 40px;
-			}
-		}
-	}
 
 	.text-section.intro-section{
 		padding: 0 !important;
@@ -828,30 +447,6 @@ footer{
 		}
 	}
 
-	.background-illu{
-		top:100vh;
-		pointer-events: none;
-	}
-
-	.image-gallery-container .single-image{
-		width:100%;
-	}
-	.image-gallery{
-		.image-gallery-container{
-			.single-image{
-				.image-details{
-					overflow-y: scroll;
-					div{
-						font-size: 14px;
-						margin-bottom: 8px;
-						span{
-							margin-bottom: 1px;
-						}
-					}
-				}
-			}
-		}
-	}
 
 	footer .footer-container{
 		padding:$spacing*10 $spacing*3;
@@ -876,30 +471,5 @@ footer{
 			text-align: left;
 		}
 	}
-	#footer1{
-		bottom:0;
-		left: 0px;
-		height: 22vh;
-	}
-	#footer2{
-		left: 60%;
-    top: 30%;
-    height: 15vh;
-		bottom: unset;
-	}
-	#footer3{
-		top:60%;
-		right: 30px;
-		height: 20vh;
-	}
-	#footer4{
-		bottom:unset;
-		top:0px;
-		right: 0px;
-		height: 20vh;
-	}
-
-
-
 
 }

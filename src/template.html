@@ -19,7 +19,7 @@
       var pageType = 'dettaglio_content';
     </script>
     <esi:include src='http://www.repstatic.it/cless/common/stable/js/script/tlh/traffic_light_handler.html' />
-    <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script>
+    <!-- <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script> -->
     <!-- CONFIGURAZIONE STATS-->
 
     <!-- facebook -->
@@ -40,252 +40,56 @@
     <meta name="twitter:description" content="<?php echo $pageDescription; ?>">
     <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg.jpg'); ?>">
     <meta name="twitter:url" content="<?php echo $pageUrl; ?>">
-    <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
+    <!-- <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=IBM+Plex+Serif:ital@0;" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono" rel="stylesheet">
+
+
   </head>
 
   <body>
 
-  <div class="hero">
-    <a class=logo target="blank" href="https://www.repubblica.it/"><img src="./assets/repubblica.svg" alt=""></a>
-    <div class="hero-images">
-      <div class="hero-image-left">
-        <img fade class="image-hero" src="./assets/Gedi_Longform3_Gif_1.gif" alt="">
-        <img fade class="image-hero" src="./assets/Gedi_Longform3_Gif_2.gif" alt="">
-      </div>
-      <div class="hero-image-right">
-        <img fade class="image-hero" src="./assets/Gedi_Longform3_Gif_3.gif" alt="">
-        <img fade class="image-hero" src="./assets/Gedi_Longform3_Gif_4.gif" alt="">
-      </div>
-    </div>
-    <div class="hero-text">
-      <div class="hero-social">
-        <ul>
-          <li><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?"><img id="facebook-logo" src="./assets/social-facebook.svg" alt=""></a></li>
-          <li>
-            <svg width="65" height="2" viewBox="0 0 65 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="64.2266" width="2" height="64" rx="1" transform="rotate(90 64.2266 0)" fill="#3B7AF3"/>
-            </svg>
-            </li>
-          <li><a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"><img id="twitter-logo" src="./assets/social-twitter.svg" alt=""></a></li>
-        </ul>
-      </div>
-      <div class="hero-title animation-text-hero">
-        <h1>Creatività e spirito di gruppo: così la scuola valorizza l’arte</h1>
-      </div>
-      <div class="hero-subtitle">
-        <p>Partecipando al concorso “Cento di questi anni” promosso da Fila – Fabbrica Italiana Lapis ed Affini, studenti e insegnanti di tutta Italia si sono confrontati sulle opere del Novecento, reinterpretandole secondo le proprie sensibilità</p>
-      </div>
-      <div class="hero-author">
-        <span>di </span>SIBILLA DI PALMA
-      </div>
-    </div>
-  </div>
 
   <div class="hr"></div>
 
       <div class="page-container">
 
-        <svg class="background-illu desktop" width="1409" height="1949" viewBox="0 0 1409 1949" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g class="drag">
-        <circle cx="1199" cy="430" r="36" stroke="#E73A2F" stroke-width="36"/>
-        <circle  cx="1199" cy="399" r="23" fill="#E73A2F"/>
-        <circle cx="1199" cy="461" r="23" fill="#E73A2F"/>
-        <circle cx="1230" cy="430" r="23" fill="#E73A2F"/>
-        <circle cx="1168" cy="430" r="23" fill="#E73A2F"/>
-        </g>
-        <path class="drag" d="M1116.81 1919.21C1117.24 1920.09 1118.61 1920.03 1118.81 1919.07C1120.81 1908.94 1118.6 1898.03 1111.79 1889.22C1099.3 1873.05 1076.06 1870.08 1059.89 1882.57C1043.72 1895.07 1040.74 1918.3 1053.24 1934.47C1060.09 1943.34 1070.18 1948.24 1080.56 1948.8C1081.54 1948.85 1081.94 1947.54 1081.19 1946.9C1079.96 1945.87 1078.83 1944.69 1077.81 1943.37C1070.02 1933.29 1071.88 1918.81 1081.95 1911.02C1092.03 1903.23 1106.52 1905.09 1114.3 1915.17C1115.3 1916.45 1116.13 1917.8 1116.81 1919.21Z" fill="#E73A2F"/>
-        <ellipse  class="drag" cx="314.907" cy="1124.19" rx="38.2899" ry="16.337" transform="rotate(12.4158 314.907 1124.19)" fill="#FFC700"/>
-        <rect  class="drag" x="227.635" y="14" width="93.5265" height="49.3072" rx="24.6536" transform="rotate(55.5 227.635 14)" fill="#FFC700"/>
-        <path  class="drag" d="M51.3827 925.589C52.1797 918.024 62.0896 915.737 66.122 922.186L152.766 1060.77C155.678 1065.43 153.136 1071.57 147.782 1072.8L44.0139 1096.76C38.6602 1098 33.6826 1093.59 34.2583 1088.13L51.3827 925.589Z" fill="#3B7AF3"/>
-        <path  class="drag" d="M238.973 756.955C240.111 748.749 233.284 742 225 742H168C159.716 742 153 748.716 153 757V824C153 832.284 159.78 839.147 167.915 837.58C204.51 830.532 233.277 797.998 238.973 756.955Z" fill="#FFC700"/>
-        <g class="drag">
-        <path d="M1360.16 289C1360.16 287.895 1359.27 286.995 1358.16 287.051C1348.5 287.544 1339.34 291.599 1332.47 298.47C1325.13 305.815 1321 315.776 1321 326.162C1321 336.548 1325.13 346.509 1332.47 353.854C1339.34 360.725 1348.5 364.779 1358.16 365.273C1359.27 365.329 1360.16 364.428 1360.16 363.324L1360.16 289Z" fill="#FFC700"/>
-        <circle cx="1360" cy="325.724" r="23" fill="#FFC700"/>
-        </g>
-
-        <path class="drag" d="M1336.72 47.4624C1340.99 48.6059 1345.38 46.0733 1346.52 41.8056L1349.74 29.8008C1350.88 25.5331 1355.27 23.0004 1359.54 24.1439L1377.34 28.9135C1378.4 29.1994 1379.04 30.2961 1378.75 31.363L1350.87 135.406C1350.3 137.54 1348.11 138.806 1345.97 138.234L1241.93 110.356C1240.86 110.07 1240.23 108.973 1240.52 107.907L1245.29 90.1062C1246.43 85.8385 1250.82 83.3058 1255.09 84.4494L1267.09 87.666C1271.36 88.8096 1275.74 86.2769 1276.89 82.0092L1280.1 70.0044C1281.25 65.7367 1285.63 63.204 1289.9 64.3476L1301.91 67.5642C1306.18 68.7078 1310.56 66.1751 1311.71 61.9074L1314.92 49.9026C1316.07 45.6349 1320.45 43.1022 1324.72 44.2457L1336.72 47.4624Z" fill="#3B7AF3"/>
-
-        <g class="drag">
-        <path d="M1378.74 826.523L1353.32 797.33C1345.21 804.396 1344.32 816.659 1351.34 824.72C1358.36 832.782 1370.62 833.589 1378.74 826.523Z" fill="#3B7AF3"/>
-        <path d="M1380.73 799.132C1373.71 791.07 1374.6 778.808 1382.71 771.741L1353.32 797.329C1361.44 790.263 1373.71 791.07 1380.73 799.132Z" fill="#3B7AF3"/>
-        <path d="M1380.72 799.132C1387.74 807.194 1386.85 819.456 1378.74 826.523L1408.13 800.934C1400.01 808.001 1387.74 807.194 1380.72 799.132Z" fill="#3B7AF3"/>
-        <path d="M1380.73 799.133C1373.71 791.071 1361.44 790.263 1353.32 797.33L1378.74 826.523C1386.86 819.456 1387.75 807.194 1380.73 799.133Z" fill="#3B7AF3"/>
-        <path d="M1380.73 799.132C1387.75 807.193 1400.01 808 1408.13 800.934L1382.71 771.741C1374.6 778.808 1373.71 791.07 1380.73 799.132Z" fill="#3B7AF3"/>
-        </g>
-
-        <path  class="drag" fill-rule="evenodd" clip-rule="evenodd" d="M1148.44 1341.97C1145.44 1328.95 1153.55 1315.96 1166.57 1312.96L1229.44 1298.44C1242.46 1295.44 1255.45 1303.55 1258.45 1316.57C1260.67 1326.17 1256.84 1335.75 1249.46 1341.33C1258.54 1343.11 1266.18 1350.04 1268.4 1359.64C1270.61 1369.24 1266.78 1378.82 1259.4 1384.4C1268.48 1386.18 1276.13 1393.11 1278.34 1402.71C1281.35 1415.73 1273.23 1428.72 1260.21 1431.72L1197.35 1446.24C1184.33 1449.24 1171.34 1441.13 1168.33 1428.11C1166.11 1418.51 1169.94 1408.93 1177.32 1403.35C1168.24 1401.57 1160.6 1394.64 1158.39 1385.04C1156.17 1375.44 1160 1365.86 1167.38 1360.28C1158.3 1358.5 1150.66 1351.57 1148.44 1341.97Z" fill="#3B7AF3"/>
-
-
-        <g class="drag">
-        <path d="M1313.8 1033.95C1318.99 1040.3 1321.34 1048.54 1320.32 1056.87C1319.3 1065.19 1315 1072.92 1308.36 1078.35C1301.73 1083.78 1293.3 1086.46 1284.94 1085.81C1276.58 1085.16 1268.96 1081.23 1263.77 1074.89L1288.78 1054.42L1313.8 1033.95Z" fill="#E73A2F"/>
-        <path d="M1333.49 1058.02C1338.68 1064.36 1341.02 1072.61 1340 1080.93C1338.98 1089.26 1334.68 1096.98 1328.05 1102.41C1321.41 1107.84 1312.99 1110.52 1304.63 1109.88C1296.26 1109.23 1288.65 1105.3 1283.46 1098.95L1333.49 1058.02Z" fill="#E73A2F"/>
-        <path d="M1353.12 1082.01C1358.31 1088.36 1360.65 1096.6 1359.63 1104.92C1358.61 1113.25 1354.31 1120.98 1347.68 1126.4C1341.04 1131.83 1332.62 1134.52 1324.26 1133.87C1315.89 1133.22 1308.28 1129.29 1303.09 1122.94L1353.12 1082.01Z" fill="#E73A2F"/>
-        </g>
-
-
-        <circle  class="drag" cx="15.1593" cy="1432.16" r="61.1593" stroke="#E73A2F" stroke-width="40"/>
-        <path  class="drag" d="M106.049 206.668L99.8333 206.668C96.0593 206.668 93 209.727 93 213.501C93 217.275 96.0594 220.334 99.8334 220.334L106.05 220.334L101.26 225.124L104.088 227.953L101.26 225.124C98.6038 227.78 98.6038 232.087 101.26 234.743C103.916 237.399 108.223 237.399 110.879 234.743L115.668 229.954L115.668 236.167C115.668 239.941 118.728 243 122.502 243C126.276 243 129.335 239.941 129.335 236.167L129.335 229.953L134.124 234.743C136.781 237.399 141.089 237.399 143.746 234.742C146.403 232.086 146.402 227.778 143.746 225.121L138.958 220.334L145.167 220.334C148.941 220.334 152 217.275 152 213.501C152 209.727 148.941 206.667 145.167 206.667L138.954 206.667L143.738 201.884C146.394 199.228 146.394 194.921 143.738 192.265C141.082 189.609 136.775 189.609 134.119 192.265L129.335 197.049L129.335 190.833C129.335 187.059 126.275 184 122.501 184C118.727 184 115.668 187.059 115.668 190.833L115.668 197.044L110.89 192.266C108.233 189.609 103.926 189.609 101.269 192.266C98.612 194.923 98.6121 199.231 101.269 201.888L106.049 206.668Z" fill="#E73A2F" stroke="#E73A2F" stroke-width="8"/>
-        <path  class="drag" d="M1200 1705.5C1200 1671.53 1227.53 1644 1261.5 1644C1295.47 1644 1323 1671.53 1323 1705.5V1738.66C1323 1748.24 1315.24 1756 1305.66 1756H1217.34C1207.76 1756 1200 1748.24 1200 1738.66V1705.5Z" fill="#3AD15E"/>
-
-
-        <g class="drag">
-        <rect x="73" y="1864.44" width="59" height="59" rx="12" transform="rotate(-45 73 1864.44)" fill="#FFC700"/>
-        <rect x="114.719" y="1906.16" width="59" height="59" rx="12" transform="rotate(-45 114.719 1906.16)" fill="#FFC700"/>
-        <rect x="114.719" y="1822.72" width="59" height="59" rx="12" transform="rotate(-45 114.719 1822.72)" fill="#FFC700"/>
-        <rect x="156.439" y="1864.44" width="59" height="59" rx="12" transform="rotate(-45 156.439 1864.44)" fill="#FFC700"/>
-        </g>
-
-
-        <path class="drag" fill-rule="evenodd" clip-rule="evenodd" d="M263.874 1537.13C283.32 1524.5 288.847 1498.5 276.218 1479.05L304.016 1461C326.614 1495.8 316.724 1542.33 281.926 1564.93C247.127 1587.52 200.598 1577.63 178 1542.84L205.797 1524.78C218.426 1544.23 244.427 1549.76 263.874 1537.13Z" fill="#3AD15E"/>
-        <path class="drag" d="M1176 960C1176 966.329 1174.15 972.516 1170.69 977.778C1167.23 983.041 1162.31 987.142 1156.55 989.564C1150.8 991.986 1144.47 992.62 1138.35 991.385C1132.24 990.15 1126.63 987.103 1122.23 982.627C1117.82 978.152 1114.82 972.45 1113.61 966.243C1112.39 960.035 1113.01 953.601 1115.4 947.754C1117.78 941.907 1121.82 936.909 1127 933.393C1132.18 929.877 1138.27 928 1144.5 928V960H1176Z" fill="#FFC700"/>
-
-        <g class="drag">
-        <path d="M126.293 441.258C99.447 432.739 79.5186 420.05 81.7822 412.916C84.0458 405.783 107.644 406.906 134.491 415.425C161.337 423.944 181.266 436.633 179.002 443.766C176.738 450.9 153.14 449.777 126.293 441.258Z" fill="#3AD15E"/>
-        <path d="M119.047 464.092C92.2009 455.573 72.2725 442.885 74.5361 435.751C76.7997 428.617 100.398 429.74 127.245 438.259C154.091 446.778 174.019 459.467 171.756 466.601C169.492 473.734 145.894 472.611 119.047 464.092Z" fill="#3AD15E"/>
-        <path d="M111.801 486.927C84.9548 478.408 65.0264 465.72 67.29 458.586C69.5536 451.452 93.1521 452.575 119.999 461.094C146.845 469.613 166.773 482.302 164.51 489.436C162.246 496.569 138.648 495.446 111.801 486.927Z" fill="#3AD15E"/>
-        </g>
-
-        </svg>
-
-      <svg class="background-illu mobile" width="375" height="2524" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M301.904 2247.1C299.365 2244.56 299.365 2240.44 301.904 2237.9L315.308 2224.5C317.846 2221.96 321.962 2221.96 324.5 2224.5L337.904 2237.9C340.442 2240.44 340.442 2244.56 337.904 2247.1L324.5 2260.5C321.962 2263.04 317.846 2263.04 315.308 2260.5L301.904 2247.1Z" fill="#FFC700"/>
-      <path d="M324.5 2269.69C321.962 2267.15 321.962 2263.04 324.5 2260.5L337.904 2247.1C340.442 2244.56 344.558 2244.56 347.096 2247.1L360.5 2260.5C363.038 2263.04 363.038 2267.15 360.5 2269.69L347.096 2283.1C344.558 2285.63 340.442 2285.63 337.904 2283.1L324.5 2269.69Z" fill="#FFC700"/>
-      <path d="M324.5 2224.5C321.962 2221.96 321.962 2217.85 324.5 2215.31L337.904 2201.9C340.442 2199.37 344.558 2199.37 347.096 2201.9L360.5 2215.31C363.038 2217.85 363.038 2221.96 360.5 2224.5L347.096 2237.9C344.558 2240.44 340.442 2240.44 337.904 2237.9L324.5 2224.5Z" fill="#FFC700"/>
-      <path d="M347.096 2247.1C344.558 2244.56 344.558 2240.44 347.096 2237.9L360.5 2224.5C363.038 2221.96 367.154 2221.96 369.692 2224.5L383.096 2237.9C385.635 2240.44 385.635 2244.56 383.096 2247.1L369.692 2260.5C367.154 2263.04 363.038 2263.04 360.5 2260.5L347.096 2247.1Z" fill="#FFC700"/>
-      <circle cx="22.2614" cy="1548.26" r="25.2614" stroke="#E73A2F" stroke-width="18"/>
-      <circle cx="22.2618" cy="1528.59" r="14.5928" fill="#E73A2F"/>
-      <circle cx="22.2618" cy="1567.93" r="14.5928" fill="#E73A2F"/>
-      <circle cx="41.9297" cy="1548.26" r="14.5928" fill="#E73A2F"/>
-      <circle cx="2.59284" cy="1548.26" r="14.5928" fill="#E73A2F"/>
-      <path d="M106.69 2504.1C107.192 2504.95 108.58 2504.86 108.723 2503.89C109.613 2497.8 108.126 2491.38 104.068 2486.13C96.1371 2475.86 81.388 2473.97 71.1253 2481.9C60.8625 2489.83 58.9723 2504.58 66.9034 2514.85C70.9909 2520.14 76.8892 2523.2 83.051 2523.84C84.0323 2523.95 84.4607 2522.62 83.7616 2521.93C83.3155 2521.48 82.8929 2521 82.4976 2520.49C77.5541 2514.1 78.7323 2504.9 85.1291 2499.96C91.5258 2495.02 100.719 2496.19 105.662 2502.59C106.04 2503.08 106.383 2503.59 106.69 2504.1Z" fill="#E73A2F"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M237.023 1722.35L211.628 1743.36C210.255 1744.49 210.941 1746.72 212.714 1746.89L267.899 1752.11C268.998 1752.21 269.974 1751.41 270.078 1750.31L275.298 1695.12C275.465 1693.35 273.405 1692.26 272.032 1693.39L246.636 1714.4L251.213 1666.01C251.381 1664.23 249.321 1663.14 247.948 1664.28L187.544 1714.24C186.171 1715.38 186.856 1717.61 188.63 1717.77L237.023 1722.35Z" fill="#3AD15E"/>
-      <path d="M27.5443 1281.36C31.812 1282.5 36.1987 1279.97 37.3422 1275.7L37.8694 1273.73C39.013 1269.46 43.3997 1266.93 47.6674 1268.08L55.4305 1270.16C56.4974 1270.44 57.1305 1271.54 56.8447 1272.6L39.7244 1336.5C39.1526 1338.63 36.9593 1339.9 34.8254 1339.33L-29.0683 1322.21C-30.1352 1321.92 -30.7684 1320.82 -30.4825 1319.76L-28.4024 1311.99C-27.2589 1307.73 -22.8722 1305.19 -18.6044 1306.34L-16.6369 1306.86C-12.3692 1308.01 -7.98251 1305.48 -6.83898 1301.21L-6.31179 1299.24C-5.16825 1294.97 -0.781552 1292.44 3.48618 1293.58L5.45367 1294.11C9.7214 1295.25 14.1081 1292.72 15.2516 1288.45L15.7788 1286.49C16.9224 1282.22 21.3091 1279.69 25.5768 1280.83L27.5443 1281.36Z" fill="#3B7AF3"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M-16.5464 2120.07C-18.4535 2111.81 -13.3029 2103.57 -5.04239 2101.66L34.8431 2092.45C43.1036 2090.55 51.3462 2095.7 53.2533 2103.96C54.6592 2110.05 52.2294 2116.13 47.5456 2119.67C53.3064 2120.79 58.1551 2125.19 59.561 2131.28C60.9668 2137.37 58.5377 2143.45 53.855 2146.99C59.616 2148.12 64.465 2152.52 65.8709 2158.61C67.778 2166.87 62.6275 2175.11 54.3669 2177.02L14.4815 2186.23C6.2209 2188.13 -2.02161 2182.98 -3.92871 2174.72C-5.33449 2168.63 -2.90544 2162.55 1.77735 2159.01C-3.9837 2157.89 -8.83269 2153.49 -10.2386 2147.4C-11.6445 2141.31 -9.21479 2135.23 -4.53098 2131.69C-10.2918 2130.56 -15.1405 2126.16 -16.5464 2120.07Z" fill="#3B7AF3"/>
-      <path d="M350.743 1935C354.037 1939.03 355.524 1944.26 354.877 1949.54C354.23 1954.82 351.502 1959.72 347.292 1963.17C343.083 1966.61 337.737 1968.31 332.432 1967.9C327.126 1967.49 322.294 1965 319 1960.97L334.872 1947.99L350.743 1935Z" fill="#E73A2F"/>
-      <path d="M363.234 1950.27C366.529 1954.29 368.016 1959.52 367.369 1964.81C366.721 1970.09 363.993 1974.99 359.784 1978.43C355.574 1981.88 350.229 1983.58 344.923 1983.17C339.617 1982.76 334.785 1980.26 331.491 1976.24L363.234 1950.27Z" fill="#E73A2F"/>
-      <path d="M375.688 1965.49C378.983 1969.52 380.47 1974.75 379.823 1980.03C379.175 1985.31 376.447 1990.21 372.238 1993.66C368.028 1997.1 362.683 1998.8 357.377 1998.39C352.071 1997.98 347.24 1995.49 343.945 1991.46L375.688 1965.49Z" fill="#E73A2F"/>
-      <path d="M292 2445.33C292 2423.61 309.606 2406 331.325 2406C353.044 2406 370.65 2423.61 370.65 2445.33V2466.01C370.65 2472.08 365.728 2477 359.656 2477H302.994C296.922 2477 292 2472.08 292 2466.01V2445.33Z" fill="#3AD15E"/>
-      <path d="M35.325 1896.75C35.325 1900.86 34.1719 1904.87 32.0113 1908.29C29.8508 1911.7 26.7799 1914.36 23.187 1915.93C19.5942 1917.5 15.6407 1917.91 11.8266 1917.11C8.0124 1916.31 4.50887 1914.33 1.75902 1911.43C-0.990834 1908.53 -2.86351 1904.83 -3.62219 1900.8C-4.38087 1896.78 -3.99149 1892.6 -2.50328 1888.81C-1.01507 1885.02 1.50513 1881.78 4.73861 1879.5C7.97209 1877.22 11.7736 1876 15.6625 1876V1896.75H35.325Z" fill="#FFC700"/>
-      <ellipse cx="324.954" cy="893.346" rx="24.2939" ry="10.3654" transform="rotate(12.4158 324.954 893.346)" fill="#FFC700"/>
-      <rect x="243.782" width="59.3399" height="31.284" rx="15.642" transform="rotate(55.5 243.782 0)" fill="#FFC700"/>
-      <path d="M-13.578 612.288C-12.7811 604.724 -2.87115 602.436 1.16126 608.885L49.4617 686.139C52.3745 690.798 49.8317 696.939 44.478 698.175L-13.3687 711.53C-18.7224 712.766 -23.6999 708.362 -23.1242 702.897L-13.578 612.288Z" fill="#3B7AF3"/>
-      <path d="M381.051 628.879C382.889 620.802 375.995 614 367.71 614H342C333.716 614 327 620.716 327 629V660.172C327 668.457 333.858 675.385 341.79 672.994C361.081 667.177 376.187 650.257 381.051 628.879Z" fill="#FFC700"/>
-      <circle cx="7.49323" cy="935.493" r="31.4932" stroke="#E73A2F" stroke-width="40"/>
-      <path d="M354.08 303.821L354.08 304.123L353.747 303.779C351.495 301.449 347.785 301.449 345.533 303.779C343.354 306.033 343.354 309.633 345.533 311.886L346.189 312.566L345.76 312.566C342.452 312.566 340 315.3 340 318.386C340 321.472 342.452 324.207 345.76 324.207L346.19 324.207L345.527 324.892L348.072 327.352L345.527 324.892C343.349 327.146 343.349 330.745 345.527 332.998C347.779 335.328 351.488 335.328 353.74 332.998L354.08 332.646L354.08 332.95C354.08 336.036 356.532 338.771 359.84 338.771C363.148 338.771 365.6 336.036 365.6 332.95L365.6 332.646L365.941 332.998L368.817 330.218L365.941 332.998C368.193 335.328 371.903 335.328 374.155 332.998L371.279 330.218L374.155 332.998C376.334 330.744 376.334 327.144 374.155 324.89L371.609 327.351L374.155 324.89L373.494 324.207L373.919 324.207C377.226 324.206 379.679 321.472 379.679 318.386C379.678 315.3 377.226 312.565 373.919 312.565L373.492 312.565L374.15 311.884C376.329 309.631 376.328 306.031 374.15 303.778C371.898 301.448 368.189 301.448 365.937 303.778L365.6 304.127L365.6 303.821C365.6 300.735 363.148 298 359.84 298C356.532 298 354.08 300.735 354.08 303.821ZM371.689 309.338C371.688 309.339 371.688 309.339 371.687 309.34L371.689 309.338Z" fill="#E73A2F" stroke="#E73A2F" stroke-width="8"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M357.485 1062.3C369.823 1054.29 373.329 1037.79 365.317 1025.45L382.954 1014C397.292 1036.08 391.017 1065.6 368.938 1079.94C346.86 1094.28 317.338 1088 303 1065.92L320.637 1054.47C328.649 1066.81 345.147 1070.31 357.485 1062.3Z" fill="#3AD15E"/>
-      <path d="M28.0371 384.177C11.0038 378.772 -1.64019 370.722 -0.203985 366.196C1.23222 361.67 16.2047 362.382 33.238 367.787C50.2714 373.192 62.9153 381.243 61.4791 385.769C60.0429 390.295 45.0704 389.582 28.0371 384.177Z" fill="#3AD15E"/>
-      <path d="M23.4394 398.665C6.40612 393.26 -6.23784 385.209 -4.80164 380.683C-3.36544 376.157 11.6071 376.87 28.6404 382.275C45.6737 387.68 58.3177 395.731 56.8815 400.257C55.4453 404.783 40.4728 404.07 23.4394 398.665Z" fill="#3AD15E"/>
-      <path d="M18.8418 413.153C1.80847 407.748 -10.8355 399.698 -9.3993 395.171C-7.9631 390.645 7.00941 391.358 24.0427 396.763C41.0761 402.168 53.72 410.219 52.2838 414.745C50.8476 419.271 35.8751 418.558 18.8418 413.153Z" fill="#3AD15E"/>
-      <path d="M364.847 1382C364.847 1380.9 363.95 1379.99 362.849 1380.08C356.991 1380.55 351.464 1383.09 347.278 1387.28C342.618 1391.94 340 1398.26 340 1404.85C340 1411.44 342.618 1417.76 347.278 1422.42C351.464 1426.6 356.991 1429.14 362.849 1429.61C363.95 1429.7 364.847 1428.8 364.847 1427.69L364.847 1382Z" fill="#FFC700"/>
-      <circle cx="364.744" cy="1404.57" r="14.5928" fill="#FFC700"/>
-      </svg>
-
 
         <div class="text-section intro-section">
           <section class="text-container">
-            <p fade>Reinterpretare l'arte del Novecento per dar vita a opere sperimentali in termini di colori, accostamenti e forme. È la sfida con la quale si sono confrontati gli studenti italiani, dalla scuola dell’infanzia alla secondaria di primo grado, che hanno preso parte al concorso “Cento di questi anni”, promosso da Fila – Fabbrica Italiana Lapis ed Affini per festeggiare il centenario dell'azienda e che ha interessato due anni scolastici, dal 2019 al 2021. Il risultato sono stati lavori capaci di offrire nuove prospettive sulle opere del Secolo breve, in cui spiccano richiami e riferimenti a una molteplicità di artisti: dalle forme fantasiose di Mirò alle caleidoscopiche sfumature di Klee, dalle cromìe spirituali di Kandinskji ai dipinti d’azione di Pollock, fino alle serigrafie di Andy Warhol.
-              <span class="circle">
-                <span class="inner-circle"></span>
-              </span>
-              <span class="circle">
-                <span class="inner-circle"></span>
-              </span>
-              <span class="circle">
-                <span class="inner-circle"></span>
-              </span>
-              <span class="circle">
-                <span class="inner-circle"></span>
-              </span>
+            <p fade>
             </p>
           </section>
         </div>
 
         <!-- primo blocco testo -->
         <div class="text-section">
-          <div fade class="section-header--full">
-            <svg class="left-line" width="332" height="3"  fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="332" height="3" rx="1.5" fill="#3B7AF3"/>
-            </svg>
-            <h1 class="section-title">
-            I VALORI DEL GRUPPO ↓
-            </h1>
-            <svg class="right-line" width="332" height="3"  fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="332" y="3" width="332" height="3" rx="1.5" transform="rotate(180 332 3)" fill="#3B7AF3"/>
-            </svg>
-          </div>
 
           <section class="text-container">
-            <p fade> <span class="dropcap">L’</span>obiettivo dell'iniziativa, special edition dei Premi Giotto La Matita delle Idee (rivolto alle scuole dell'infanzia e primarie) e Lyra (secondarie di primo grado), era far emergere l'importanza e il valore del lavoro di gruppo inteso come spazio di espressione, tramite il quale mettere alla prova le proprie capacità di ascolto e di collaborazione e trovare appartenenza e riconoscimento. Aspetti sui quali vi è una crescente sensibilità alla luce del momento complesso che stiamo vivendo dalla primavera del 2020. Al contempo, in un'era di forte utilizzo degli dispositivi digitali, l'intento era stimolare la crescita creativa delle nuove generazioni attraverso la manualità e l'uso di strumenti semplici ma intramontabili come matita e pennarello. Le scuole hanno risposto con grande partecipazione e coinvolgimento: gli insegnanti, in particolare, si sono impegnati accompagnando gli studenti in un periodo non certo semplice, tra restrizioni e didattica a distanza, proponendo – attraverso nuove dinamiche – un percorso condiviso votato alla coralità.
+            <p fade> <span class="dropcap">L’</span>
             </p>
           </section>
         </div>
 
-        <!-- secondo blocco testo -->
-        <div class="text-section">
-          <div fade class="section-header--full">
-            <svg class="left-line" width="332" height="3"  fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="332" height="3" rx="1.5" fill="#3B7AF3"/>
-            </svg>
-            <h1 class="section-title">
-            I VINCITORI ↓
-            </h1>
-            <svg class="right-line" width="332" height="3"  fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="332" y="3" width="332" height="3" rx="1.5" transform="rotate(180 332 3)" fill="#3B7AF3"/>
-            </svg>
-          </div>
-
-          <section class="text-container">
-            <p fade> <span class="dropcap">S</span>ono state proclamate vincitrici 40 scuole a livello nazionale e 60 a livello regionale, alle quali Fila ha assegnato una maxi fornitura creativa (colori e album Giotto per i più piccoli, prodotti Lyra e carte Canson per le secondarie di primo grado) messa a disposizione di tutti gli alunni delle scuole che potranno così continuare a lavorare insieme in uno spirito di gruppo e di partecipazione. Da questo lavoro di condivisione e di riflessione sono nate opere innovative, originali, emozionanti e fortemente aderenti alle tematiche proposte. Numerosi sono stati gli elaborati riferiti all’attualità, incentrati sui drammi vissuti o sull'impossibilità di lasciarsi andare nell'ultimo periodo ad abbracci e baci o, ancora, ispirati alle stanze-mondi di Van Gogh e agli spazi metafisici di De Chirico per rappresentare i sentimenti suscitati dalle classi vuote o virtuali.
-            </p>
-          </section>
-        </div>
-
-        <!-- terzo blocco testo -->
-        <div class="text-section">
-          <div fade class="section-header--full">
-            <svg class="left-line" width="332" height="3" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="332" height="3" rx="1.5" fill="#3B7AF3"/>
-            </svg>
-            <h1 class="section-title">
-            Collaborazione scuola–azienda  ↓
-            </h1>
-            <svg class="right-line" width="332" height="3" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="332" y="3" width="332" height="3" rx="1.5" transform="rotate(180 332 3)" fill="#3B7AF3"/>
-            </svg>
-          </div>
-
-          <section class="text-container">
-            <p fade> <span class="dropcap">L’</span>iniziativa evidenzia la vicinanza di Fila alla scuola, non solo attraverso i propri prodotti, ma anche con progetti educativi e didattici. Nella convinzione del ruolo fondamentale ricoperto dall'istituzione scolastica nella formazione e nel futuro delle giovani generazioni, non solo come luogo di studio, conoscenza e apprendimento dei saperi, ma anche come spazio di educazione, di crescita civica ed emotiva. Impresa e scuola, dunque, che collaborano a progetti di sviluppo creativo, ciascuno secondo le proprie competenze, stimolando l’inventiva e dando ai più giovani la possibilità di esprimere le proprie potenzialità. Un percorso che l’azienda porta avanti sin dalla sua fondazione, avvenuta nel lontano 1920, e che l'ha spinta a promuovere e sostenere negli anni numerose iniziative capaci di creare valore, con l'obiettivo di stimolare la capacità espressiva degli individui e di rendere la cultura un’opportunità accessibile a tutti.
-            </p>
-          </section>
-        </div>
 
     </div>
 
     <div class="hr gallery-line"></div>
 
-      <div class="image-gallery">
-        <div class="image-gallery-container grid">
-        </div>
-      </div>
 
-      <div id="myModal" class="modal">
+
+      <!-- <div id="myModal" class="modal">
         <span class="close">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.6 14.3558L19.9557 10L21.2 11.2442L16.8442 15.6L21.2 19.9558L19.9557 21.2L15.6 16.8442L11.2442 21.2L10 19.9558L14.3557 15.6L10 11.2442L11.2442 10L15.6 14.3558Z" fill="white"></path>
               </svg></span>
         <img class="modal-content" id="img01">
-      </div>
+      </div> -->
 
 
     <footer>
@@ -302,7 +106,7 @@
           </div>
           <div class="col-footer">
             In collaborazione con
-            <a target="_blank" href="https://www.fila.it/it/it/"><img src="./assets/fila.png" alt=""></a>
+            <a target="_blank" href="https://www.fila.it/it/it/"></a>
           </div>
           <div class="col-footer">
             <span>Grafica e sviluppo:</span>
@@ -315,14 +119,9 @@
           <esi:include src="https://lab.gedidigital.it/utils/includes/footer/stampa_nazionale.html" />
         </div>
       </div>
-      <img id="footer1" src="./assets/footer-1.svg" alt="">
-      <img id="footer2" src="./assets/footer-2.svg" alt="">
-      <img id="footer3" src="./assets/footer-3.svg" alt="">
-      <img id="footer4" src="./assets/footer-4.svg" alt="">
+
     </footer>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-    <!-- or -->
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
 
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
