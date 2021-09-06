@@ -100,24 +100,31 @@ tl.from(chars, {duration: 1.2, opacity:0, scale:0, y:80, rotationX:180, transfor
   });
 
 
+let slideshows = document.querySelectorAll(".slideshow");
+slideshows.forEach((item, i) => {
+  $(item).slick({
+  infinite: true,
+});
+});
+
 
 
 // modal
-  let modal = document.getElementById("myModal");
-  let imageList = document.querySelectorAll(".image-modal");
-  let imageContList = document.querySelectorAll(".single-image");
-
-  let modalImg = document.getElementById("img01");
-
-  imageContList.forEach((item, i) => {
-    item.onclick = function(){
-      let img = item.querySelector(".image");
-      modal.style.display = "flex";
-      modalImg.src = img.src;
-    }
-  });
-
-  var span = document.getElementsByClassName("close")[0];
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
+  // let modal = document.getElementById("myModal");
+  // let imageList = document.querySelectorAll(".image-modal");
+  // let imageContList = document.querySelectorAll(".single-image");
+  //
+  // let modalImg = document.getElementById("img01");
+  //
+  // imageContList.forEach((item, i) => {
+  //   item.onclick = function(){
+  //     let img = item.querySelector(".image");
+  //     modal.style.display = "flex";
+  //     modalImg.src = img.src;
+  //   }
+  // });
+  //
+  // var span = document.getElementsByClassName("close")[0];
+  // span.onclick = function() {
+  //   modal.style.display = "none";
+  // }
