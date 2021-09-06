@@ -62,17 +62,19 @@ $text-width:70vw;
 $info-width:75vw;
 $offset: calc((#{$info-width} - #{$text-width})/2);
 
-$mainTitle: 64px;
+$mainTitle: 8vw;
 $size-body: 20px;
 $size-quote: 24px;
 $size-small: 16px;
 
-
+$grey: #E3E3E5;
 
 body{
 	line-height: $line_height;
 	overflow-x:hidden;
 	font-size: $size-body;
+	font-family: sans-serif;
+	color:black;
 }
 
 
@@ -140,7 +142,6 @@ body{
 }
 
 .page-container{
-	background: white;
 	padding-bottom: $spacing*12;
 	position: relative;
 }
@@ -148,50 +149,122 @@ body{
 .hr{
 	height: 2px;
 	display: block;
-	margin: 0 $spacing*6;
 }
 
 .dropcap {
-	font-size: 50px;
-	float:left;
-	width: 80px;
-	height: 60px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-right: $spacing*2;
+	font-size: $mainTitle;
 }
 
 // INIZIO INIZIO INIZIO INIZIO INIZIO INIZIO
 
+.container{
+max-width: 80vw;
+width:80vw;
+margin: 0 auto;
+z-index: 1;
+}
 
-.text-section{
-	padding: $spacing*12 $spacing*5;
-	padding-bottom:0;
-	z-index: 2;
-	pointer-events: none;
+// HERO HERO HERO
+.hero{
 	position: relative;
-	&.intro-section{
-		.text-container{
-			border-radius: 16px;
-			padding: $spacing*4;
-			color:white;
+	.grey-area{
+		background: $grey;
+		position: absolute;
+		height: 100%;
+		width:78vw;
+		z-index: -1;
+		right:0;
+		top:0;
+		height: 100vh;
+	}
+	.logo{
+		position: absolute;
+		left:0;
+		top:50px;
+	}
+	.toolbar-container{
+		display: flex;
+		justify-content:flex-end;
+		width:100%;
+		z-index: 2;
+		.inner-container{
+			width:90vw;
 			position: relative;
-			p{
-				font-size: $size-quote;
-				border:2px solid white;
-				padding: $spacing*4;
-				text-align: center;
-				position: relative;
+			background: black;
+			padding: $spacing;
+			.toolbar{
+				display:flex;
+				justify-content: flex-end;
+				margin-right: 10vw;
+				.language{
+					display: flex;
+					a{
+						min-width:40px;
+						min-height: 40px;
+						border-radius:100%;
+						border:1px solid white;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						margin-left: $spacing;
+						text-decoration: none;
+						color:white;
+					}
+				}
+			}
+		}
+	}
+	.title-section{
+		position: relative;
+		margin-top: $spacing*10;
+		h1{
+			position: relative;
+			font-size: $mainTitle;
+			span{
+				font-style: italic;
+			}
+		}
+		.line{
+			min-width: 90vw;
+			position: absolute;
+			height: 2px;
+			background: black;
+			bottom:10px;
+			left: 0;
+		}
+		.subtitle{
+			max-width: 70%;
+			margin-bottom: $spacing*10;
+			margin-top: $spacing*2;
+		}
+		.copy{
+			span{
+
+			}
+		}
+	}
+	.image-container{
+		z-index: 2;
+		.container{
+			position: relative;
+			padding-top: $spacing*2;
+			img{
+				width:100%;
+				height: auto;
+			}
+			.social{
+				position: absolute;
+				top:-$spacing*3;
+				right:0;
 			}
 		}
 	}
 }
 
+// TEXT CONTAINER TEXT CONTAINER
 .text-container{
 	width:$text-width;
 	margin: 0 auto;
-	padding: 0 $spacing*2;
 	max-width: 1200px;
 	p{
 		margin-bottom:$spacing*3;
@@ -203,6 +276,58 @@ body{
 	}
 }
 
+.text-section{
+	margin: $spacing*12 $spacing*5;
+	padding-bottom:0;
+	z-index: 2;
+	position: relative;
+	&.intro-section{
+		.text-container{
+			position: relative;
+			padding-bottom: $spacing*2;
+			p{
+				font-size: $size-quote;
+				position: relative;
+			}
+		}
+	}
+	.black-line{
+		height: $spacing;
+		background: black;
+		width:90vw;
+		position: absolute;
+		bottom:0;
+		left: 0;
+	}
+}
+
+// VIDEO VIDEO VIDEO
+
+.video-section{
+	width:100%;
+	display: flex;
+	justify-content: flex-end;
+	.video-row{
+		position: relative;
+		padding:$spacing 0;
+		width:90vw;
+		.video-part{
+			width:50%;
+		}
+		.text-part{
+			width:50%;
+			padding-left: $spacing;
+			.title{
+				text-transform: uppercase;
+				background: black;
+				color:white;
+			}
+		}
+	}
+	.background{
+		position: absolute;
+	}
+}
 
 
 
