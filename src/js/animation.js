@@ -293,7 +293,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "15349_R7A4013.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Abruzzo",
     "SCUOLA": "Scuola dell'Infanzia Sant'Antonio - IC Gianni Rodari",
@@ -303,7 +303,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "16594_R7A2893.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Basilicata",
     "SCUOLA": "Scuola dell'Infanzia Belvedere",
@@ -313,7 +313,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17468_R7A5328.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Calabria",
     "SCUOLA": "IC Don Milani - Scuola dell'Infanzia Farina",
@@ -323,7 +323,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "18249_R7A5257.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Campania",
     "SCUOLA": "Scuola dell'Infanzia di Bellosguardo",
@@ -333,7 +333,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "16536_R7A2681.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Emilia-Romagna",
     "SCUOLA": "Scuola dell'Infanzia San Luigi",
@@ -343,7 +343,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "18000_R7A5126.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Friuli-Venezia Giulia",
     "SCUOLA": "Scuola dell'Infanzia Grisulute Non Ti Scordar di Me - Avasinis presso centro studi di Alesso",
@@ -353,7 +353,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17387_R7A3309.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Lazio",
     "SCUOLA": "Scuola dell'Infanzia Giovanni Paolo II",
@@ -363,7 +363,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17137_R7A3330.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Liguria",
     "SCUOLA": "Scuola dell'Infanzia Collodi",
@@ -373,7 +373,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17471_R7A3389.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Lombardia",
     "SCUOLA": "Kindergarten BSCSCHOOL",
@@ -383,7 +383,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17484_R7A4977.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Marche",
     "SCUOLA": "IC L. Lotto - Scuola dell'Infanzia Don Dante Raccichini",
@@ -393,7 +393,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "16873_R7A2649.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Molise",
     "SCUOLA": "I.C. Molise Altissimo di Carovilli",
@@ -403,7 +403,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17702_R7A5203.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Piemonte",
     "SCUOLA": "Scuola dell'Infanzia Sezzadio",
@@ -413,7 +413,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17852_R7A4007.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Puglia",
     "SCUOLA": "Scuola dell'Infanzia Piccinni - IC Roncalli 3",
@@ -423,7 +423,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17865_R7A5261.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Sardegna",
     "SCUOLA": "Scuola dell’Infanzia - Sardara- IC Eleonora d'Arborea",
@@ -433,7 +433,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "18008_R7A3961.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Sicilia",
     "SCUOLA": "Scuola dell'infanzia Palatucci presso 2° I.C A. Manzoni",
@@ -443,7 +443,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "16554_R7A2452.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Toscana",
     "SCUOLA": "Scuola dell'Infanzia Collodi",
@@ -453,7 +453,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "16399_R7A2816.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Umbria",
     "SCUOLA": "IC Dalmazio Birago - Scuola dell'Infanzia di Tuoro sul Trasimeno",
@@ -463,7 +463,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "16472_R7A2623.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Valle d'Aosta",
     "SCUOLA": "Scuola dell’Infanzia di Torgnon",
@@ -473,7 +473,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "18202_R7A4944.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Veneto",
     "SCUOLA": "Scuola dell'Infanzia G.R. Pastega",
@@ -483,7 +483,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17227_R7A2655.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Lombardia",
     "SCUOLA": "Scuola dell'Infanzia Sacra Famiglia",
@@ -493,7 +493,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17965_R7A5292.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Piemonte",
     "SCUOLA": "Scuola dell'infanzia di Bagnasco",
@@ -503,7 +503,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "16303_R7A3343.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Campania",
     "SCUOLA": "Scuola dell'Infanzia Comunale Mario Ruta-2° Circolo Comunale",
@@ -513,7 +513,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17527_R7A3443.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Piemonte",
     "SCUOLA": "Scuola dell'Infanzia Collodi - IC Bottacchi",
@@ -523,7 +523,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "16172_R7A2679.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Marche",
     "SCUOLA": "Scuola dell'Infanzia Gianni Rodari",
@@ -533,7 +533,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "16261_R7A2567.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Toscana",
     "SCUOLA": "Scuola dell'Infanzia di Cancelli",
@@ -543,7 +543,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "15937_R7A2553.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Friuli-Venezia Giulia",
     "SCUOLA": "Scuola dell'Infanzia di Enemonzo",
@@ -553,7 +553,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "16376_R7A2535.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Liguria",
     "SCUOLA": "Scuola dell'Infanzia Cà di Ventura",
@@ -563,7 +563,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17123_R7A3329.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Campania",
     "SCUOLA": "IV° CIRCOLO DIDATTICO SCUOLA DELL'INFANZIA ANNUNZIATELLA",
@@ -573,7 +573,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17195_R7A3423.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Lombardia",
     "SCUOLA": "Scuola dell'Infanzia Giovanna Alfieri",
@@ -583,7 +583,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17934_R7A4025.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Abruzzo",
     "SCUOLA": "Istituto Comprensivo \"Alda Merini",
@@ -593,7 +593,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "18186_R7A5050.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Calabria",
     "SCUOLA": "Scuola dell'infanzia E. Codignola",
@@ -603,7 +603,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17625_R7A5169.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Basilicata",
     "SCUOLA": "Scuola dell'Infanzia Stella Marina",
@@ -613,7 +613,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17475_R7A5218.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Friuli-Venezia Giulia",
     "SCUOLA": "Scuola dell'Infanzia Passons",
@@ -623,7 +623,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "18255_R7A5540.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Sicilia",
     "SCUOLA": "Scuola dell'Infanzia Manzoni",
@@ -633,7 +633,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "18174_R7A5526.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Abruzzo",
     "SCUOLA": "Scuola Primaria Castiglione Messer Marino",
@@ -643,7 +643,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17759_R7A5191.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Basilicata",
     "SCUOLA": "I. C. \"D. Savio\" - Potenza",
@@ -653,7 +653,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17968_R7A4958.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Calabria",
     "SCUOLA": "Scuola Primaria Via Nazionale",
@@ -663,7 +663,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17944_R7A5013.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Campania",
     "SCUOLA": "I.C. De Filippo-DD2",
@@ -673,7 +673,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "18087_R7A5279.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Emilia-Romagna",
     "SCUOLA": "Scuola Primaria G. Bertin",
@@ -683,7 +683,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17125_R7A3475.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Friuli-Venezia Giulia",
     "SCUOLA": "Scuola Primaria Umberto I Istituto Comprensivo A. Zanzotto Caneva",
@@ -693,7 +693,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "15558_R7A2670.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Lazio",
     "SCUOLA": "Scuola Primaria Rio de Janeiro",
@@ -703,7 +703,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17108_R7A2638.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Liguria",
     "SCUOLA": "Scuola Primaria Paritaria Contubernio d'Albertis",
@@ -713,7 +713,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17202_R7A2658.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Lombardia",
     "SCUOLA": "Scuola Primaria Maria Montessori",
@@ -723,7 +723,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "18072_R7A5099.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Marche",
     "SCUOLA": "Scuola Primaria San Vito",
@@ -733,7 +733,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "18059_R7A5020.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Molise",
     "SCUOLA": "I.C. Don Giulio Testa",
@@ -743,7 +743,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "18162_R7A5026.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Piemonte",
     "SCUOLA": "Scuola Primaria Treiso-Barbaresco",
@@ -753,7 +753,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "16438_R7A5142.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Puglia",
     "SCUOLA": "Direzione Didattica Circolo 17 Poggiofranco - Plesso Carrante",
@@ -763,7 +763,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "16490_R7A5253.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Sardegna",
     "SCUOLA": "Scuola Primaria Via Cimabue",
@@ -773,7 +773,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "16096_R7A2687.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Sicilia",
     "SCUOLA": "c/o point service srl",
@@ -783,7 +783,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "18143_R7A5207.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Toscana",
     "SCUOLA": "Istituto Beata Giovanna",
@@ -793,7 +793,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17496_R7A4960.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Trentino-Alto Adige",
     "SCUOLA": "S.P. Luigi Nicolussi",
@@ -803,7 +803,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17813_R7A5185.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Umbria",
     "SCUOLA": "Scuola Primaria Statale \"Sandro Pertini",
@@ -813,7 +813,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "16840_R7A3384.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Valle d'Aosta",
     "SCUOLA": "Scuola Primaria Breuil-Cervinia",
@@ -823,7 +823,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "18111_R7A5006.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Regionale",
     "REGIONE": "Veneto",
     "SCUOLA": "Scuola Primaria G. Carducci",
@@ -833,7 +833,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "18053_R7A3294.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Lazio",
     "SCUOLA": "Plesso Guido Alessi",
@@ -843,7 +843,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "16398_R7A2713.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Puglia",
     "SCUOLA": "I Circolo De Amicis",
@@ -853,7 +853,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17668_R7A3487.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Lombardia",
     "SCUOLA": "Scuola Primaria Vittorio Ramella",
@@ -863,7 +863,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17876_R7A5181.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Emilia-Romagna",
     "SCUOLA": "Scuola paritaria San Vincenzo de'Paoli",
@@ -873,7 +873,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17855_R7A5320.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Liguria",
     "SCUOLA": "Scuola primaria callandrone",
@@ -883,7 +883,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17391_R7A3406.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Basilicata",
     "SCUOLA": "IC Pietrelcina Pisticci",
@@ -893,7 +893,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17682_R7A3924.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Marche",
     "SCUOLA": "Ufficio Presidenza Segreteria “S.Pellico”",
@@ -903,7 +903,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "15693_R7A2503.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Lazio",
     "SCUOLA": "Scuola Primaria Giovanni Palatucci",
@@ -913,7 +913,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "15343_R7A2546.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Toscana",
     "SCUOLA": "Scuola Primaria Bargellini",
@@ -923,7 +923,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17063_R7A2616.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Abruzzo",
     "SCUOLA": "Istituto Comprensivo \"Vivenza - Giovanni XXIII",
@@ -933,7 +933,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17181_R7A2667.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Puglia",
     "SCUOLA": "Scuola Primaria Via Garibaldi",
@@ -943,7 +943,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17168_R7A3449.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Piemonte",
     "SCUOLA": "I.C. A. Dasso",
@@ -953,7 +953,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17590_R7A4017.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Piemonte",
     "SCUOLA": "Scuola primaria Franco Piccinelli",
@@ -963,7 +963,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "18089_R7A5109.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Veneto",
     "SCUOLA": "Scuola Primaria Cesare Battisti",
@@ -973,7 +973,7 @@ const Concorso = [
   {
     "Titolo Opera": "",
     "FILE": "17549_R7A5533.JPG",
-    "CONCORSO": "Premio Giotto",
+    "CONCORSO": "Premio Giotto La Matita delle Idee",
     "CLASSIFICA": "Nazionale",
     "REGIONE": "Toscana",
     "SCUOLA": "Scuola Primaria Paritaria Maestre Pie",
