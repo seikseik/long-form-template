@@ -1,10 +1,24 @@
-/* @font-face {
-  font-family: "apfel-reg";
-  src: url("./assets/ApfelGrotezk-Regular.woff2") format("woff2"),
-       url("./assets/ApfelGrotezk-Regular.woff") format("woff");
-}
-@font-face {
-  font-family: "apfel-bold";
-  src: url("./assets/ApfelGrotezk-Fett.woff2") format("woff2"),
-       url("./assets/ApfelGrotezk-Fett.woff") format("woff");
-} */
+
+    @font-face {
+    font-family: 'HK-Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./assets/HKGrotesk-Light.woff') format('woff');
+    }
+
+
+
+    @font-face {
+    font-family: 'HK-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./assets/HKGrotesk-Medium.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'HK-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./assets/HKGrotesk-Bold.woff') format('woff');
+    }

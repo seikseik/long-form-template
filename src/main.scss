@@ -62,21 +62,31 @@ $text-width:60vw;
 $info-width:75vw;
 $offset: calc((#{$info-width} - #{$text-width})/2);
 
-$mainTitle: 8vw;
+$mainTitle: 10vw;
 $size-body: 20px;
 $size-quote: 24px;
 $size-small: 16px;
 
 $grey: #E3E3E5;
 
+$medium: "HK-Medium";
+$light: "HK-Light";
+$bold: "HK-Bold";
+
 body{
 	line-height: $line_height;
 	overflow-x:hidden;
 	font-size: $size-body;
-	font-family: sans-serif;
+	font-family: $medium, sans-serif;
 	color:black;
 }
-
+h1, h2, h3, h4, h5, h5, h6, .quote, .copy, .toolbar a, .dropcap{
+	font-family: $bold, sans-serif;
+	line-height: normal;
+}
+h1 span, .copy span{
+	font-family: $light, sans-serif;
+}
 
 .page-width{
   padding: 0 $padding;
@@ -171,7 +181,7 @@ z-index: 1;
 		background: $grey;
 		position: absolute;
 		height: 100%;
-		width:78vw;
+		width:75.5vw;
 		z-index: -1;
 		right:0;
 		top:0;
@@ -180,7 +190,7 @@ z-index: 1;
 	.logo{
 		position: absolute;
 		left:0;
-		top:50px;
+		top:60px;
 	}
 	.toolbar-container{
 		display: flex;
@@ -199,16 +209,25 @@ z-index: 1;
 				.language{
 					display: flex;
 					a{
-						min-width:40px;
-						min-height: 40px;
+						min-width:25px;
+						min-height: 25px;
+						font-size: 12px;
 						border-radius:100%;
-						border:1px solid white;
+						border:1.5px solid white;
 						display: flex;
 						justify-content: center;
 						align-items: center;
 						margin-left: $spacing;
 						text-decoration: none;
 						color:white;
+						&:hover{
+							color:black;
+							background: white;
+						}
+						&.active{
+							color:black;
+							background: white;
+						}
 					}
 				}
 			}
@@ -216,13 +235,10 @@ z-index: 1;
 	}
 	.title-section{
 		position: relative;
-		margin-top: $spacing*10;
+		margin-top: $spacing*20;
 		h1{
 			position: relative;
 			font-size: $mainTitle;
-			span{
-				font-style: italic;
-			}
 		}
 		.line{
 			min-width: 90vw;
@@ -236,13 +252,10 @@ z-index: 1;
 			max-width: 70%;
 			margin-bottom: $spacing*10;
 			margin-top: $spacing*2;
-			margin-left: 14vw;
+			margin-left: 16vw;
 		}
 		.copy{
-			margin-left: 14vw;
-			span{
-
-			}
+			margin-left: 16vw;
 		}
 	}
 	.image-container{
@@ -258,9 +271,13 @@ z-index: 1;
 				position: absolute;
 				top:-$spacing*3;
 				right:0;
+				display: flex;
+				img{
+					margin-left: $spacing*3;
+					height: 20px;
+				}
 			}
 		}
-		margin-bottom: $spacing*12;
 	}
 }
 
@@ -285,6 +302,7 @@ z-index: 1;
 	z-index: 2;
 	position: relative;
 	&.intro-section{
+		margin-top: $spacing*10 !important;
 		.text-container{
 			position: relative;
 			padding-bottom: $spacing*2;
@@ -383,12 +401,15 @@ z-index: 1;
 	align-items: flex-end;
 	margin-bottom: $spacing*25;
 	.scroll-container{
+		position: relative;
 		width:100vw;
 		display: flex;
 		flex-wrap: nowrap;
 		overflow-x: scroll;
+		overflow: visible;
 		padding-bottom: $spacing*2;
 		height: 50vh;
+		cursor: grab;
 		.first-item{
 			min-width:35vw;
 			margin: 0 5vw;
@@ -414,6 +435,28 @@ z-index: 1;
 			width:auto;
 		}
 	}
+	.slick-prev, .slick-next{
+		top:-100px;
+		color:white;
+		right:50px !important;
+	}
+	.slick-prev:before, .slick-next:before{
+		font-size: 30px;
+		color:black;
+	}
+	.slick-prev{
+		right:100px !important;
+		left: unset !important;
+	}
+}
+.slick-prev:before, .slick-next:before{
+	font-size: 30px !important;
+}
+.slick-next {
+	right: -45px !important;
+}
+.slick-prev {
+	left: -45px !important;
 }
 
 // SLIDESHOW
@@ -431,6 +474,9 @@ z-index: 1;
 				width:100% !important;
 			}
 		}
+	}
+	&.podcast{
+		margin-top: $spacing*2;
 	}
 	.container{
 		width:$text-width;

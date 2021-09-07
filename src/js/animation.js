@@ -42,3 +42,11 @@ slideshows.forEach((item, i) => {
   infinite: true,
 });
 });
+
+// scroll
+
+$('.scroll-container').slick({
+  slidesToShow: 2,
+  arrows: true,
+  infinite: false,
+});
