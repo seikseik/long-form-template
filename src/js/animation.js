@@ -7,6 +7,23 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 
 
+// const textAnimation = (item, del) =>{
+//   let tl = gsap.timeline(),
+//       mySplitText = new SplitText(item, {type:"words,chars", wordsClass: "split-line"
+//     }),
+//     chars = mySplitText.chars;
+//     gsap.set(item, {perspective: 400});
+//
+//   tl.fromTo(chars, {autoAlpha: 0},
+//     {  duration: 1,
+//          autoAlpha: 1,
+//          ease: "circ.out",
+//          stagger: 0.03,
+//          delay: del
+//     },
+//     "+=0");
+// }
+
   // fade in
   const fade = gsap.utils.toArray("[fade]");
   fade.forEach((el, i) => {
@@ -46,7 +63,10 @@ slideshows.forEach((item, i) => {
 // scroll
 
 $('.scroll-container').slick({
-  slidesToShow: 2,
+  slidesToShow: 1,
   arrows: true,
+  adaptiveHeight: false,
+  variableWidth: true,
   infinite: false,
+  edgeFriction: 0.9
 });

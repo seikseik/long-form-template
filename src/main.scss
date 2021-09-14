@@ -71,7 +71,7 @@ $grey: #E3E3E5;
 
 $medium: "HK-Medium";
 $light: "HK-Light";
-$bold: "HK-Bold";
+$bold: "HK-Black";
 
 body{
 	line-height: $line_height;
@@ -80,10 +80,16 @@ body{
 	font-family: $medium, sans-serif;
 	color:black;
 }
-h1, h2, h3, h4, h5, h5, h6, .quote, .copy, .toolbar a, .dropcap{
+h1, h2, h3, h4, h5, h5, h6, .quote, .copy, .toolbar a{
+	font-family: $bold, sans-serif;
+	line-height: normal;
+	font-size: $size-small;
+}
+.dropcap{
 	font-family: $bold, sans-serif;
 	line-height: normal;
 }
+
 h1 span, .copy span{
 	font-family: $light, sans-serif;
 }
@@ -213,7 +219,7 @@ z-index: 1;
 						min-height: 25px;
 						font-size: 12px;
 						border-radius:100%;
-						border:1.5px solid white;
+						border:2.3px solid white;
 						display: flex;
 						justify-content: center;
 						align-items: center;
@@ -341,6 +347,9 @@ z-index: 1;
 			padding: $spacing;
 			margin-right: 10vw;
 			z-index: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 			.title{
 				text-transform: uppercase;
 				background: black;
@@ -387,7 +396,7 @@ z-index: 1;
 
 
 .video-section .video-large {
-	padding-bottom: 54.8%;
+	padding-bottom: 56.25%;
 	padding-right: 24px;
 	position: relative;
 }
@@ -412,8 +421,10 @@ z-index: 1;
 		cursor: grab;
 		.first-item{
 			min-width:35vw;
+			width:35vw;
 			margin: 0 5vw;
 			margin-right: 10vw;
+			padding-left: 5vw;
 			height: 100%;
 			display: flex;
 			justify-content:flex-end;
@@ -538,11 +549,11 @@ z-index: 1;
 		text-decoration: underline;
 	}
 	.quote{
-		margin: $spacing*8;
+		margin: 5vw;
 		display: flex;
 		flex-direction: column;
 		span{
-			font-size: 30px;
+			font-size: 2vw;
 			text-transform: uppercase;
 			color:white;
 			background: black;
@@ -564,6 +575,7 @@ z-index: 1;
 	.image{
 		position: relative;
 		display:flex;
+		justify-content: center;
 		flex-direction: row-reverse;
 		width:80vw;
 		margin: 0 auto;
@@ -582,6 +594,10 @@ z-index: 1;
 	width:90vw;
 	margin: 0 auto;
 	margin-bottom: $spacing*25;
+	img{
+		width:100%;
+		height: auto;
+	}
 }
 
 // video large
