@@ -5,6 +5,9 @@ import { SplitText } from "gsap/SplitText";
 
 import lozad from 'lozad'
 
+const observer = lozad();
+observer.observe();
+
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, SplitText);
 
 
@@ -87,6 +90,14 @@ let slideshows = document.querySelectorAll(".slideshow");
 slideshows.forEach((item, i) => {
   $(item).slick({
   infinite: true,
+});
+});
+
+
+let slideshowsLazy = document.querySelectorAll(".slideshow-lazy");
+slideshowsLazy.forEach((item, i) => {
+  $(item).slick({
+  lazyLoad: 'progressive',
 });
 });
 

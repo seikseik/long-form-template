@@ -20,14 +20,22 @@ module.exports = merge(common, {
       new OptimizeCssAssetsPlugin(),
       new TerserPlugin(),
       new HtmlWebpackPlugin({
+        title: "Home",
+        filename: "index.html",
         template: "./src/template.html",
+        minify: false
+      }),
+      new HtmlWebpackPlugin({
+        title: "Home-eng",
+        filename: "index-en.html",
+        template: "./src/template-eng.html",
         minify: false
       })
     ]
   },
   plugins: [
     new MiniCssExtractPlugin({ filename: "[name].[contentHash].css" }),
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
   ],
   module: {
     rules: [

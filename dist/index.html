@@ -1,0 +1,736 @@
+<?php
+    include_once('./includes/config.php');
+?>
+<!DOCTYPE html>
+<html lang="it">
+
+  <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $pageTitle; ?></title>
+    <meta name="description" content="<?php echo $pageDescription; ?>" />
+    <link rel="canonical" href="<?php echo $pageUrl; ?>">
+
+    <!-- CONFIGURAZIONE STATS -->
+    <script type="text/javascript">
+      var pageHref = '<?php echo $pageUrl; ?>';
+      var pageType = 'dettaglio_content';
+    </script>
+    <esi:include src='http://www.repstatic.it/cless/common/stable/js/script/tlh/traffic_light_handler.html' />
+    <!-- <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script> -->
+    <!-- CONFIGURAZIONE STATS-->
+
+    <!-- facebook -->
+    <meta property="fb:app_id" content="182234715127717" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="<?php echo $pageTitle; ?>">
+    <meta property="og:description" content="<?php echo $pageDescription; ?>">
+    <meta property="og:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg.jpg'); ?>">
+    <meta property="og:url" content="<?php echo $pageUrl; ?>">
+    <meta property="article:published_time" content="2020-02-14T09:00">
+    <!-- facebook -->
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="<?php echo $pageTitle; ?>">
+    <meta name="twitter:description" content="<?php echo $pageDescription; ?>">
+    <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg.jpg'); ?>">
+    <meta name="twitter:url" content="<?php echo $pageUrl; ?>">
+    <!-- <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
+     -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+  <link href="main.6b7dc3afa58cc06f8401.css" rel="stylesheet"></head>
+
+  <body class="ita">
+
+      <div class="page-container">
+
+        <!-- HERO -->
+        <div class="hero">
+          <div class="grey-area"></div>
+
+          <div class="toolbar-container">
+            <div class="inner-container">
+            <a class="logo" href="#"><img src="assets/logo-piccolo.svg" alt=""></a>
+              <div class="toolbar">
+                <div class="language">
+                  <a id="ita" href="index.html">IT</a>
+                  <a id="eng" href="index-en.html">EN</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div fade class="container">
+            <div class="title-section">
+              <h1 class="animation-text-hero"><span>noi</span> esuli
+              <div class="line hr"></div>
+            </h1>
+
+              <div class="subtitle">
+                <p>Dalla fine cruenta della convivenza in Istria, Fiume e Dalmazia al faticoso e sofferto percorso di riconciliazione. La storia del confine orientale raccontata da chi l’ha vissuta. Per ricordare.</p>
+              </div>
+              <div class="copy">
+              <span>di</span>  ROBERTA GIANI
+              </div>
+            </div>
+          </div>
+
+          <div fade class="image-container">
+            <div class="container">
+              <div class="social">
+                <a href=""><img src="assets/icon-facebook.svg" alt=""></a>
+                <a href=""><img src="assets/icon-twitter.svg" alt=""></a>
+              </div>
+                <img src="assets/hero-image.jpg" alt="">
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- TESTO 1 -->
+        <div class="text-section intro-section">
+          <section class="text-container">
+            <p fade>
+              <span class="dropcap">«I</span>
+              <span class="bold">l dramma dell’esodo</span>
+               è il dramma della lacerazione sociale e familiare. Un nucleo viene estirpato, perché la sua terra non è più sua». Lo spiega in pocheparole Adriana, esule da Zara, cosa fu il dopoguerra per gli italiani dell’Adriatico orientale, al di là del fiume di dibattiti politici e storiografici sulle vicende del confine orientale.
+            </p>
+
+            <p fade>
+              Quella dei giuliano-dalmati è una storia di dolore. Di vite strappate e ricostruite faticosamente altrove. Per i suoi involontari protagonisti, l’esodo è memoria dello sradicamento, paura della polizia jugoslava, ricordo del padre ucciso sommariamente, l’abbraccio al nonno che sceglie di restare per morire nella sua casa, la disperazione di «lasciare tutto», l’onta dell’accoglienza ricevuta nei campi profughi. Gli occhi si riempiono di lacrime anche dopo settant’anni. In occasione dei suoi 140 anni, Il Piccolo usa lo sguardo dei testimoni per ripercorre il filo di una storia che ha contribuito a raccontare sulle sue pagine.
+            </p>
+
+            <p fade>
+              Con l’esodo sparisce un’intera società: più di 300 mila italiani lasciano la propria terra. I centri costieri dell’Istria si svuotano, le radici si troncano. Poi «il silenzio ci ha colpiti per sessant’anni»: cala l’oblio su una vicenda scomoda per tutti, tenuta viva dalle associazioni dei profughi e oggetto di troppe strumentalizzazioni, che stanno lasciando il posto alla pacificazione fra italiani, sloveni e croati dopo una faticosa opera di distensione. Ciascuno con la sua memoria, ma pronti a tendere la mano, perché «i confini non dovrebbero più esistere», dice in uno dei filmati chi sa quale sia il valore della convivenza e quale il volto mostruoso dei nazionalismi e dei totalitarismi.
+            </p>
+            <div class="black-line"></div>
+          </section>
+        </div>
+
+        <!-- VIDEO 1 -->
+        <div  class="video-section">
+          <div class="video-row">
+            <div class="background">
+              <div class="black"></div>
+              <div class="grey"></div>
+            </div>
+
+            <div class="video-part">
+              <div class="video-large">
+               <iframe class="video-embed" src="https://media.gedidigital.it/repubblicatv/file/2021/07/10/781210/781210-video-rrtv-4500-4_esuli_confine.mp4" width=""
+                 height="">
+               </iframe>
+             </div>
+            </div>
+            <div fade class="text-part">
+              <h3 class="title">IL CONFINE</h3>
+              <p>Così è stato definito il confine orientale, ridisegnato molte volte al mutare degli assetti geopolitici e della sovranità, dalla dominazione di Venezia all’amministrazione austriaca, passando per l’annessione all’Italia, la Seconda guerra mondiale e lo scontro totale che ne derivò. L’area oggi suddivisa fra Italia, Slovenia e Croazia ha vissuto tensioni nazionali, conflitti ideologici e guerre che ne hanno fatto un laboratorio della storia del Novecento.</p>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SCROLL 1 -->
+        <div fade class="scroll-section">
+          <div class="scroll-container">
+            <div class="first-item">
+              <h3>le tappe di una lunga storia</h3>
+              <p>Il crescendo di violenze politiche e nazionali che provocarono l’esodo giuliano-dalmata si spiega assumendo uno sguardo di lungo periodo fino ad arrivare al “secolo breve”, cominciato con la Grande guerra e proseguito con l’ascesa del Fascismo, l’invasione della Jugoslavia, la presa del potere di Tito e un trattato di pace che segnò la sorte dell’Adriatico orientale. Fatti da consegnare alla storia, dopo il lavoro di pacificazione compiuto nella cornice dell’integrazione europea.</p>
+            </div>
+              <!-- <img src="./assets/00.svg" alt=""> -->
+              <img src="assets/1797.svg" alt="">
+              <img src="assets/1809.svg" alt="">
+              <img src="assets/1814.svg" alt="">
+              <img src="assets/1866.svg" alt="">
+              <img src="assets/1919.svg" alt="">
+              <img src="assets/1920.svg" alt="">
+              <img src="assets/1924.svg" alt="">
+              <img src="assets/1940.svg" alt="">
+              <img src="assets/1943.svg" alt="">
+              <img src="assets/1944.svg" alt="">
+              <img src="assets/1945.svg" alt="">
+              <img src="assets/1945-2.svg" alt="">
+              <img src="assets/1946.svg" alt="">
+              <img src="assets/1947.svg" alt="">
+              <img src="assets/1948.svg" alt="">
+              <img src="assets/1954.svg" alt="">
+              <img src="assets/1975.svg" alt="">
+              <img src="assets/1991.svg" alt="">
+              <img src="assets/2004.svg" alt="">
+              <img src="assets/2004-2.svg" alt="">
+              <img src="assets/2010.svg" alt="">
+
+          </div>
+        </div>
+
+        <!-- VIDEO 2 -->
+        <div  class="video-section">
+          <div class="video-row">
+            <div class="background">
+              <div class="black"></div>
+              <div class="grey"></div>
+            </div>
+
+            <div class="video-part">
+              <div class="video-large">
+               <iframe class="video-embed" src="https://media.gedidigital.it/repubblicatv/file/2021/07/10/781210/781210-video-rrtv-4500-4_esuli_confine.mp4" width=""
+                 height="">
+               </iframe>
+             </div>
+            </div>
+            <div fade class="text-part">
+              <h3 class="title">così arrivò l’esodo</h3>
+              <p>L’esodo inizia, «strisciante», dopo il 1943. Assume «proporzioni di massa» dopo il 1945 fino ad arrivare allo svuotamento di Pola nel 1947. A spiegarlo - e a ricordare come si è arrivati a una pagina così drammatica di storia - Giuseppe de Vergottini, presidente della Federazione delle Associazioni degli Esuli istriani, fiumani e dalmati, professore emerito di Diritto costituzionale.</p>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SLIDESHOW 1 -->
+        <div class="slideshow-container">
+          <div class="container">
+            <div fade class="slideshow-text">
+              <h3>Così Il piccolo ha raccontato l’esodo</h3>
+              <p>In principio furono “semplicemente” i profughi. Poi, all’inizio del 1946, divennero per la prima volta esuli. Ma com’è stato raccontato “in diretta” il loro dramma dalla stampa dell’epoca?</p>
+
+              <p>Il Piccolo di Trieste – il quotidiano che più si è occupato degli italiani che hanno dovuto lasciare nel dopoguerra l’Istria, Fiume e la Dalmazia – ha cercato la risposta, anzi le risposte, nei suoi archivi. Nella gallery un assaggio della ricerca condotta da Jacopo Bassi su centinaia e centinaia di titoli, articoli, fotonotizie pubblicati tra il 1945 e il 1956.</p>
+            </div>
+
+            <div fade class="slideshow">
+              <div class="slide">
+                <div class="caption"><span>— 17.09.1947</span>
+                Così di notte evacuarono Pola senza cerimonie né strette di mano
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=d940e717-2285-4afd-b03f-12c0818670ee&search="><img src="assets/Gedi_Longform4_Giornale_2.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 4.10.1947</span>
+                Ai giuliani esuli
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=32f20871-cff9-47d0-a7d2-607249df4367&search="><img src="assets/Gedi_Longform4_Giornale_3.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 8.10.1947</span>
+                Zara morta e viva
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=23702cbc-36ab-4619-8c60-58ea802deb91&search="><img ="./assets/Gedi_Longform4_Giornale_4.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 26.03.1948</span>
+                Cartolina precetto
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=ad2a70e9-384d-406d-8b02-a319e3fd7031&search="><img src="assets/Gedi_Longform4_Giornale_5.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 14.04.1948</span>
+                Iniziato l'esodo degli optanti fiumani
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=26a6e9e3-a1d5-4ae1-9ac2-665822b3df19&search="><img  src="assets/Gedi_Longform4_Giornale_6.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 5.05.1948</span>
+                E' giunto da Zara un primo gruppo di optanti
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=83f7f27f-0890-41a6-853c-186933585db2&search="><img  src="assets/Gedi_Longform4_Giornale_7.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 17.07.1948</span>
+                Il destino qualche volta ha la mano dura e crudele
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=db0d6e05-f545-401c-a3b5-99e16ccdd19e&search="><img src="assets/Gedi_Longform4_Giornale_8.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 6.11.1948</span>
+                Un pezzo d'Istria sul Tevere: il villaggio giuliano all'E42
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=55c06cca-6e46-4792-b12f-5d1411eba10c&search="><img src="assets/Gedi_Longform4_Giornale_9.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 8.12.1948</span>
+                A piazza di Spagna anche visi olivastri
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=7712b615-67e8-4482-8b75-607e2df1808d&search="><img src="assets/Gedi_Longform4_Giornale_10.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 21.04.1949</span>
+                Gli esuli istriani optanti sono figli di nessuno
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=a47d3542-c984-4b63-8ac5-1699623f4075&search="><img src="assets/Gedi_Longform4_Giornale_11.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 21.10.1949</span>
+                La pianura di Fertilia [...]ende aratri e vita
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=c78fc9e6-a575-4364-9ff1-dd477305b343&search="><img src="assets/Gedi_Longform4_Giornale_12.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 20.11.1949</span>
+                Un lembo dell'Istria in provincia di Sassari
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=c78fc9e6-a575-4364-9ff1-dd477305b343&search="><img src="assets/Gedi_Longform4_Giornale_13.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 25.11.1949</span>
+                Dialetto di Pola tra i fichidindia
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=fc36bb93-33db-4c4d-b829-93ef6041540b&search="><img src="assets/Gedi_Longform4_Giornale_14.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 23.12.1949</span>
+                Gino Damerini, Natale giuliano a Venezia
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=70f507a3-3443-450b-89a7-6d1654c1a97a&search="><img src="assets/Gedi_Longform4_Giornale_15.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 22.6.1950</span>
+                Presto sorgerà a Milano la "Domus Julia Dalmatica"
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=e31eaf08-fd85-461d-bd58-fc35c747d682&search="><img src="assets/Gedi_Longform4_Giornale_16.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 8.8.1950</span>
+                Voci di bimbe da Strigno"
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=49c79918-fecf-4b22-bd82-3e20787c1227&search="><img src="assets/Gedi_Longform4_Giornale_17.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 6.8.1951</span>
+                Vi mandano tanti baci
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=d46e671f-d45e-41fd-8595-f7cb4ef434ec&search="><img src="assets/Gedi_Longform4_Giornale_18.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 19.9.1950</span>
+                Gino Damerini, Guardano i santi del Carpaccio con la dolorosa nostalgia dell'esiliato
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=250bbcbb-5d89-4a5b-b26c-029c7a5b0c6a&search="><img src="assets/Gedi_Longform4_Giornale_19.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 20.2.1951</span>
+                N. Carelli, Istriani e Dalmati attivissimi, come a casa loro
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=8c292b76-7aad-41ed-aef7-20599fc0e47c&search="><img src="assets/Gedi_Longform4_Giornale_20.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 11.4.1951</span>
+                Questa è la cartolina...
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=de2b8fec-083e-4fae-ab67-10568b754c23&search="><img src="assets/Gedi_Longform4_Giornale_21.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 16.4.1951</span>
+                Manlio Gianbassi, L'Istria si è ritrovata a Gorizia
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=130030ee-f5e6-405f-9750-9e663b6dd25f&search="><img src="assets/Gedi_Longform4_Giornale_22.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 28.9.1951</span>
+                Quanto si è fatto da noi per l'assistenza agli esuli
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=42b62401-e686-40f5-abda-e110aae8e85e&search="><img src="assets/Gedi_Longform4_Giornale_23.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 29.9.1951</span>
+                La fraterna assistenza all'indomani dell'esodo
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=605681bd-ef5f-4609-987c-1036924dc162&search="><img src="assets/Gedi_Longform4_Giornale_24.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 5.11.1951</span>
+                Non ci persuaderemo mai che "realtà" voglia dire rinuncia
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=f73f4c0f-bf7e-4589-b098-ecac0761818a&search="><img src="assets/Gedi_Longform4_Giornale_25.png" alt=""></a>
+              </div>
+
+              <div class="slide">
+                <div class="caption"><span>— 7.4.1952</span>
+                Gli insegnanti italiani fuggono dalla Zona B
+                </div>
+                <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=3fe5f6b9-304d-4658-a2ea-ac6bf6a6da29&search="><img src="assets/Gedi_Longform4_Giornale_26.png" alt=""></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- VIDEO 3 -->
+        <div  class="video-section">
+          <div class="video-row">
+            <div class="background">
+              <div class="black"></div>
+              <div class="grey"></div>
+            </div>
+
+            <div class="video-part">
+              <div class="video-large">
+               <iframe class="video-embed" src="https://media.gedidigital.it/repubblicatv/file/2021/07/10/781207/781207-video-rrtv-1200-100721perle_del_ricodo_versione_.mp4" width=""
+                 height="">
+               </iframe>
+             </div>
+            </div>
+            <div fade class="text-part">
+              <h3 class="title">Attraverso gli occhi dei testimoni </h3>
+              <p>Partire o restare. Ogni famiglia istriana si tormenta in questo interrogativo. La memoria è vivida nei bambini di allora, quanto il dolore che non se ne va. La paura dei militari del nuovo regime, un parente arrestato e mai più tornato, l’uccisione efferata di Norma Cossetto: la pressione ambientale cresce e la maggioranza degli italiani lascia la propria casa, partendo verso un futuro incerto. Le radici vengono tagliate: «A casa mia non ho più avuto il coraggio di rimettere piede»</p>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- TESTO 2 -->
+        <div class="text-section small-paragraph">
+          <section class="text-container">
+            <h3>IL LUNGO ESODO</h3>
+            <p fade>
+            L’abbandono dell’Adriatico orientale da parte degli italiani è uno stillicidio di partenze che dura quindici anni. I primi a fuggire sono gli abitanti di Zara, dopo i bombardamenti alleati del 1943-1944. Seguono istriani e fiumani, a cominciare dallo svuotamento di Pola nel febbraio 1947. Infine i residenti della Zona B: l’addio comincia nel 1953, si accentua dopo la firma del Memorandum di Londra che cede alla Jugoslavia l’ultimo lembo d’Istria, dura fino alla fine degli anni Cinquanta.
+            </p>
+          </section>
+        </div>
+
+        <!-- infografica -->
+        <div class="info-container">
+          <img fade src="assets/info.svg" alt="">
+        </div>
+
+        <!-- VIDEO 4 -->
+        <div class="video-section">
+          <div class="video-row">
+            <div class="background">
+              <div class="black"></div>
+              <div class="grey"></div>
+            </div>
+
+            <div class="video-part">
+              <div class="video-large">
+               <iframe class="video-embed" src="https://media.gedidigital.it/repubblicatv/file/2021/07/10/781217/781217-video-rrtv-1200-3_esuli_ricordo.mp4" width=""
+                 height="">
+               </iframe>
+             </div>
+            </div>
+            <div fade class="text-part">
+              <h3 class="title">“Piangevamo tutti”</h3>
+              <p>«Guardate questo bel mare, chissà quando lo rivedremo». Il ricordo di chi parte è memoria di un addio sofferto, di genitori incapaci di consolare i propri figli, di povertà vissuta dignitosamente anche in un campo profughi. I ricordi sono tutti simili e tutti diversi, accomunati dalla lacerazione di chi si era convinto che «non era possibile rimanere» e gettava per l’ultima volta lo sguardo alla propria casa e agli amici, prima di incamminarsi «verso l’ignoto».</p>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- TESTO 3 -->
+        <div class="text-section">
+          <section class="text-container">
+            <h3>IL CIMITERO DEGLI OGGETTI</h3>
+            <p class="underlined" fade>
+              Ancora oggi il Porto vecchio di Trieste conserva in uno dei suoi depositi la testimonianza visiva più forte di quello che l’esodo significò per i profughi. È una storia che anche molti triestini hanno scoperto solo grazie allo spettacolo teatrale “Magazzino 18” di Simone Cristicchi. Montagne di sedie accatastate, armadi, fotografie, quaderni, stoviglie e altri oggetti minuti: reduci silenziosi del viaggio verso l’Italia, rimasti abbandonati da chi non ha potuto reclamarli una volta arrivato in patria.
+            </p>
+            <p>Chi aveva deciso di partire dovette tentare di trasportare in poco tempo più cose possibili, caricandole su carri e imbarcazioni diretti verso Trieste e poi chissà dove. Valeva per i più fortunati, perché chi scelse di andarsene di notte mise nello zaino solo i vestiti di ricambio e qualche oggetto caro. Le masserizie furono accatastate in Porto vecchio e quelle non reclamate giacciono ancora lì. </p>
+
+            <div class="quote">
+              <span>camminando nei depositi</span>
+              <span>si trova di tutto</span>
+            </div>
+
+            <p>Gli oggetti furono prima sistemati nei padiglioni del Magazzino 22 e poi traslocati al Magazzino 18, dove rimasero per decenni. L’opera di conservazione dell’Istituto regionale per la cultura istriano-fiumano-dalmata e lo spettacolo di Simone Cristicchi li hanno preservati e riportati alla luce: ora le masserizie sono diventate un’esposizione permanente nel Magazzino 26, trasformandosi da oggetto di memoria individuale in patrimonio collettivo.</p>
+
+            <p>Camminando nei depositi si trova di tutto: gli armadi con il cognome del proprietario scritto sul retro col gesso, le foto di famiglia, i quaderni dei bambini, gli attrezzi da lavoro, perfino una rete da pesca. Cose modeste, fossili di una quotidianità smarrita, proprietà di gente che proveniva da un’area poverissima e che a volte non riuscì nemmeno a recuperare ciò che aveva spedito e non poteva portare dentro un campo profughi.</p>
+          </section>
+        </div>
+
+        <!-- VIDEO LARGE 1 -->
+        <div class="video-large-container">
+          <div class="video-full">
+            <iframe class="video-embed" src="https://media.gedidigital.it/repubblicatv/file/2021/07/10/781208/781208-video-rrtv-2500-5_esuli_cristicchi_short.mp4" width=""
+              height="">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- SLIDESHOW 2 -->
+        <div class="slideshow-container  no-caption">
+          <div class="container">
+            <div fade class="slideshow-text">
+              <h3>Il magazzino della memoria</h3>
+              <p>Il mestolo, le sedie da cucina, i materassi, il letto, una sedia a rotelle. E ancora le lettere, i ritratti, i quaderni di scuola, i giocattoli, gli arnesi da lavoro, una Divina Commedia avvolta nella bandiera tricolore: sono le masserizie degli esuli che – dopo molte traversie – trovano oggi spazio nel Magazzino 26 del Porto Vecchio di Trieste. Raccontano la quotidianità spezzata di migliaia di famiglie.</p>
+            </div>
+
+            <div fade class="slideshow">
+              <div class="slide">
+                <img src="#" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TESTO 4 -->
+        <div class="text-section">
+          <section class="text-container">
+            <h3>L’umiliazione del campo profughi</h3>
+            <p class="underlined" fade>
+              L’accoglienza degli esuli non fu semplice per un’Italia in ginocchio. Chi non riuscì ad aiutarsi da sé venne ospitato in un centro raccolta profughi anche per anni. La penisola è punteggiata da queste strutture, ricavate perfino dentro ex campi di concentramento. La vita all’interno era «avvilente e drammatica»: famiglie costrette in box senza privacy e servizi igienici, in luoghi così precari che a Padriciano una bambina morì congelata nel duro inverno del 1956.
+            </p>
+            <p>«All’interno del box era sottozero, mia sorella in una notte prese talmente tanto freddo…abbiamo chiamato l’ambulanza ma non c’era niente da fare. Marinella era morta di freddo». Fiore, da Grisignana, racconta la testimonianza più drammatica sulla vita nel campo profughi di Padriciano, a Trieste: uno dei 109 creati dal 1947 per ospitare gli esuli giuliano-dalmati, che in maggioranza non erano in grado di provvedere alla propria sopravvivenza. Il governo ricava spazi dentro caserme, ospedali, conventi, fabbriche dismesse e perfino ex campi di concentramento, come la Risiera di Sabba o Fossoli.</p>
+
+            <div class="quote">
+              <span>È stato un periodo drammatico</span>
+              <span>E CE L’HO ANCORa dentro</span>
+            </div>
+
+            <p>Buona parte degli esuli passa per Trieste e viene rapidamente sventagliata (come scrivevano le autorità), senza possibilità di esprimere la preferenza: ci si deve adattare alle disponibilità. La situazione che trovano è indecorosa: i box misurano pochi metri quadrati e sono divisi da lenzuola o pannelli di legno. La permanenza spesso si allunga per anni: nel 1963 ci sono ancora 8.500 persone nei 15 centri rimasti aperti. L’ultimo chiude nel 1975.</p>
+
+            <p>Le memorie raccontano di condizioni igieniche precarie, dell’umiliazione di dover lasciare le impronte digitali, della sensazione di essere gli unici a pagare la guerra fascista. Difficile integrarsi, perché gli esuli sono tenuti isolati: gli abitanti li vedono come assistiti e come pericolosi concorrenti nella ricerca di lavoro. «Siamo esuli, non ci vogliono. Questo fatto ci è rimasto appiccicato addosso».</p>
+          </section>
+
+          <div class="image">
+            <div class="legenda">
+              <img src="assets/legenda.svg" alt="">
+            </div>
+            <img src="assets/mappa.jpg" alt="">
+          </div>
+
+        </div>
+
+
+        <!-- SLIDESHOW 3 BLANK -->
+
+        <div fade class="slideshow-blank-container">
+          <div class="slideshow">
+            <img src="assets/hero-image.jpg" alt="">
+            <img src="assets/hero-image.jpg" alt="">
+            <img src="assets/hero-image.jpg" alt="">
+          </div>
+        </div>
+
+        <!-- MOSAICO  -->
+        <div fade class="mosaico-container">
+          <div class="text-section">
+            <div class="text-container">
+              <h3>IL RISCATTO DI UN POPOLO</h3>
+              <p>Attrici, sportivi, intellettuali, cantanti, stilisti e cuochi. Partiti dalla condizione di profughi, ma capaci di diventare simbolo di riscatto per un popolo ormai disperso. La voce di Sergio Endrigo, la bellezza e la bravura di Laura Antonelli, i pugni di Nino Benvenuti, la velocità di Mario Andretti, gli scritti di Fulvio Tomizza ed Enzo Bettiza, le creazioni di Ottavio Missoni, l’arte culinaria di Lidia Bastianich: sono il talento che i giuliano-dalmati hanno saputo spargere nel mondo.</p>
+            </div>
+          </div>
+          <div class="mosaico">
+            <div class="mosaico-container">
+              <div class="image-mosaico">
+                <img src="#" alt="">
+                <span>Mario Andretti</span>
+                <div class="text-mosaico">
+                  Mario Andretti nasce a Montona il 28 febbraio 1940. Deve lasciare la sua terra durante l’esodo. Finisce, con la famiglia, in un campo profughi in provincia di Lucca dove inizia a lavorare come apprendista meccanico. Si trasferisce negli Stati Uniti, inizia a gareggiare e, in pochi anni, diventa uno dei piloti più veloci e vincenti di sempre. Eclettico, plurivittorioso in tutte le categorie, dalla Formula uno alla Indycar, conquista uno storico titolo iridato nel 1978. Nel 2006 è nominato commendatore della Repubblica Italia e, l’anno dopo, sindaco del “Libero Comune di Montona in Esilio”.
+                </div>
+              </div>
+              <div class="image-mosaico">
+                <img src="#" alt="">
+                <span>Mario Andretti</span>
+                <div class="text-mosaico">
+                  Mario Andretti nasce a Montona il 28 febbraio 1940. Deve lasciare la sua terra durante l’esodo. Finisce, con la famiglia, in un campo profughi in provincia di Lucca dove inizia a lavorare come apprendista meccanico. Si trasferisce negli Stati Uniti, inizia a gareggiare e, in pochi anni, diventa uno dei piloti più veloci e vincenti di sempre. Eclettico, plurivittorioso in tutte le categorie, dalla Formula uno alla Indycar, conquista uno storico titolo iridato nel 1978. Nel 2006 è nominato commendatore della Repubblica Italia e, l’anno dopo, sindaco del “Libero Comune di Montona in Esilio”.
+                </div>
+              </div>
+              <div class="image-mosaico">
+                <img src="#" alt="">
+                <span>Mario Andretti</span>
+                <div class="text-mosaico">
+                  Mario Andretti nasce a Montona il 28 febbraio 1940. Deve lasciare la sua terra durante l’esodo. Finisce, con la famiglia, in un campo profughi in provincia di Lucca dove inizia a lavorare come apprendista meccanico. Si trasferisce negli Stati Uniti, inizia a gareggiare e, in pochi anni, diventa uno dei piloti più veloci e vincenti di sempre. Eclettico, plurivittorioso in tutte le categorie, dalla Formula uno alla Indycar, conquista uno storico titolo iridato nel 1978. Nel 2006 è nominato commendatore della Repubblica Italia e, l’anno dopo, sindaco del “Libero Comune di Montona in Esilio”.
+                </div>
+              </div>
+              <div class="image-mosaico">
+                <img src="#" alt="">
+                <span>Mario Andretti</span>
+                <div class="text-mosaico">
+                  Mario Andretti nasce a Montona il 28 febbraio 1940. Deve lasciare la sua terra durante l’esodo. Finisce, con la famiglia, in un campo profughi in provincia di Lucca dove inizia a lavorare come apprendista meccanico. Si trasferisce negli Stati Uniti, inizia a gareggiare e, in pochi anni, diventa uno dei piloti più veloci e vincenti di sempre. Eclettico, plurivittorioso in tutte le categorie, dalla Formula uno alla Indycar, conquista uno storico titolo iridato nel 1978. Nel 2006 è nominato commendatore della Repubblica Italia e, l’anno dopo, sindaco del “Libero Comune di Montona in Esilio”.
+                </div>
+              </div>
+              <div class="image-mosaico">
+                <img src="#" alt="">
+                <span>Mario Andretti</span>
+                <div class="text-mosaico">
+                  Mario Andretti nasce a Montona il 28 febbraio 1940. Deve lasciare la sua terra durante l’esodo. Finisce, con la famiglia, in un campo profughi in provincia di Lucca dove inizia a lavorare come apprendista meccanico. Si trasferisce negli Stati Uniti, inizia a gareggiare e, in pochi anni, diventa uno dei piloti più veloci e vincenti di sempre. Eclettico, plurivittorioso in tutte le categorie, dalla Formula uno alla Indycar, conquista uno storico titolo iridato nel 1978. Nel 2006 è nominato commendatore della Repubblica Italia e, l’anno dopo, sindaco del “Libero Comune di Montona in Esilio”.
+                </div>
+              </div>
+              <div class="image-mosaico">
+                <img src="#" alt="">
+                <span>Mario Andretti</span>
+                <div class="text-mosaico">
+                  Mario Andretti nasce a Montona il 28 febbraio 1940. Deve lasciare la sua terra durante l’esodo. Finisce, con la famiglia, in un campo profughi in provincia di Lucca dove inizia a lavorare come apprendista meccanico. Si trasferisce negli Stati Uniti, inizia a gareggiare e, in pochi anni, diventa uno dei piloti più veloci e vincenti di sempre. Eclettico, plurivittorioso in tutte le categorie, dalla Formula uno alla Indycar, conquista uno storico titolo iridato nel 1978. Nel 2006 è nominato commendatore della Repubblica Italia e, l’anno dopo, sindaco del “Libero Comune di Montona in Esilio”.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- TESTO 5 -->
+        <div class="text-section small-paragraph">
+          <section class="text-container">
+            <h3>I CAMPIONI DELL’ESODO</h3>
+            <p fade>
+          Partono da Istria e Dalmazia, ma si riscattano con la fatica e i successi dello sport. Diventano campioni: Benvenuti nel pugilato, Andretti nell’automobilismo, Straulino nella vela, Loik nel calcio, Pamich e Missoni nell’atletica. Andretti parla con accento americano, ma Montona gli è rimasta nel cuore. Benvenuti lascia Isola nel 1954 e ricorda la «guardia della polizia politica che disse a mia mamma che dovevamo andarcene l’indomani: la spinta del riscatto mi portò ai successi che ho avuto».
+            </p>
+          </section>
+        </div>
+
+        <!-- SLIDESHOW 4 -->
+        <div class="slideshow-container  no-caption podcast">
+          <div class="container">
+            <div fade class="slideshow-text">
+              <h3>I “campioni” dell’esodo</h3>
+              <p>Partono da Istria e Dalmazia, ma si riscattano con la fatica e i successi dello sport. Diventano campioni: Benvenuti nel pugilato, Andretti nell’automobilismo, Straulino nella vela, Loik nel calcio, Pamich e Missoni nell’atletica. Andretti parla con accento americano, ma Montona gli è rimasta nel cuore. Benvenuti lascia Isola nel 1954 e ricorda la «guardia della polizia politica che disse a mia mamma che dovevamo andarcene l’indomani: la spinta del riscatto mi portò ai successi che ho avuto».</p>
+            </div>
+            <div fade class="slideshow">
+              <div class="slide">
+                <iframe src="https://open.spotify.com/embed/episode/7hqU2nOJiblmTWrVdLattr" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              </div>
+              <div class="slide">
+              <iframe src="https://open.spotify.com/embed/episode/3YRc1mXh8Wcx31sx8TJ36E" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              </div>
+              <div class="slide">
+                <iframe src="https://open.spotify.com/embed/episode/01wWu8aqUT4TXQ1LoATTPz" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              </div>
+              <div class="slide">
+                <iframe src="https://open.spotify.com/embed/episode/01wWu8aqUT4TXQ1LoATTPz" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              </div>
+              <div class="slide">
+                <iframe src="https://open.spotify.com/embed/episode/3jSAqM5X9VW1RimFOdrToV" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              </div>
+              <div class="slide">
+                <iframe src="https://open.spotify.com/embed/episode/2uEge650t2eGTHr5S685Vc" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              </div>
+              <div class="slide">
+                <iframe src="https://open.spotify.com/embed/episode/5adynieZD2TyP3qTbMg1hm" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TESTO 6 -->
+        <div class="text-section">
+          <section class="text-container">
+            <h3>Finalmente il futuro</h3>
+            <p fade>
+              Una giovane studentessa spiega che «avere memoria non è solo ricordare come si sono susseguiti i fatti, ma restituire dignità a coloro che hanno vissuto sulla loro pelle questo terribile evento». Memoria e ricostruzione storica possono oggi convivere serenamente, tanto più dopo la pagina nuova che i presidenti di Italia e Slovenia Sergio Mattarella e Borut Pahor hanno aperto, tenendosi per mano sui luoghi simbolo delle violenze perpetrate a Trieste da nazifascisti e comunisti.
+            </p>
+            <div class="quote big">
+              <span>MEMORIA E RICOSTRUZIONE STORICA</span>
+              <span> POSSONO OGGI convivere serenamente</span>
+            </div>
+            <p>Per arrivare fin qui si è dovuto anzitutto aprire il dialogo in Italia: un percorso avviato da Fini e Violante nel 1998, approdato sei anni più tardi all’istituzione del Giorno del Ricordo, nato affinché in tutta Italia si potesse finalmente conoscere la storia travagliata del confine orientale. Ripercorrerne i fili per via digitale è fondamentale per aprirsi ai giovani che, forse per primi, si affacciano adesso senza il peso delle strumentalizzazioni su un racconto che può essere finalmente consegnato agli storici, ma che non deve smarrire il vissuto della “gente qualunque”, che della storia è stata quasi sempre spettatrice o purtroppo vittima. </p>
+
+
+            <p>
+            Quelle del dopoguerra non furono solo lacerazioni. Dagli anni Sessanta la frontiera fra Italia e Slovenia continuava a separare due mondi, ma divenne la più aperta fra quelle poste sulla Cortina di ferro. E se alcuni esuli non riuscivano nemmeno a pensare di tornare in visita alla propria terra, altri riallacciarono le relazioni con l’Istria, luogo a tutt’oggi splendidamente misto per linguaggi e identità. Il crollo del comunismo e l’integrazione europea stanno facendo il resto, dopo un lungo percorso di comprensione reciproca che tocca ai giovani rendere irreversibile.</p>
+
+          </section>
+        </div>
+
+        <!-- VIDEO LARGE 2 -->
+        <div class="video-large-container">
+          <div class="video-full">
+            <iframe class="video-embed" src="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=d940e717-2285-4afd-b03f-12c0818670ee&search=" width=""
+              height="">
+            </iframe>
+          </div>
+        </div>
+
+    </div>
+
+
+    <footer>
+      <div fade class="footer-container">
+        <div class="col-left">
+          <div class="row">
+            <h6>PROGETTO E COORDINAMENTO GIORNALISTICO</h6>
+            Roberta Giani
+          </div>
+          <div class="row">
+            <h6>Ricerche</h6>
+            Jacopo Bassi
+          </div>
+          <div class="row">
+            <h6>Fotografie</h6>
+            Archivi del CDM — Centro di Documentazione Multimediale della Cultura Giuliana Istrana Fiuamana Dalmata
+          </div>
+          <div class="row">
+            <h6>Realizzato per</h6>
+            ANVGD (Associazione Nazionale Venezia Giulia e Dalmazia) e CDM
+          </div>
+        </div>
+        <div class="col-right">
+          <div class="row">
+          <h6>Video, materiali grafici e ricerche</h6>
+          Pensiero Visibile
+          </div>
+          <div class="row">
+            <h6>Supervisione scientifica</h6>
+Prof.re Davide Rossi
+          </div>
+          <div class="row double">
+            <div class="col">
+              <h6>PODCAST</h6>
+              Letture
+            </div>
+            <div class="col">
+              <h6>Storie Avvolgibili</h6>
+              Adalberto Scemma
+            </div>
+          </div>
+          <div class="row">
+            <h6>REALIZZATO CON IL CONTRIBUTO DI</h6>
+            Legge n.72/01 “Interventi a tutela del patrimonio storico e culturale delle comunità degli esuli italiani dell’Istria, da Fiume e dalla Dalmazia” e successive modifiche.
+          </div>
+        </div>
+
+          <esi:include src="https://lab.gedidigital.it/utils/includes/footer/stampa_nazionale.html" />
+      </div>
+
+    </footer>
+
+
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
+    <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
+  <script type="text/javascript" src="main.495dd74ecc307a59e092.bundle.js"></script></body>
+
+
+</html>
