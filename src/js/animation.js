@@ -1,11 +1,29 @@
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap/SplitText";
+
 import lozad from 'lozad'
 
-gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
+gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, SplitText);
 
 
+  // animation hero text
+  const heroTitle = document.querySelector("#hero-text");
+
+  var tl = gsap.timeline(),
+      mySplitText = new SplitText(heroTitle, {type:"words,chars", wordsClass: "split-line"
+    }),
+      chars = mySplitText.chars;
+      gsap.set(heroTitle, {perspective: 400});
+
+  tl.from(chars,
+    {  duration: 2,
+      ease: "circ.out",
+      y: 80,
+      stagger: 0.02
+    },
+     "+=0");
 
 // const textAnimation = (item, del) =>{
 //   let tl = gsap.timeline(),
