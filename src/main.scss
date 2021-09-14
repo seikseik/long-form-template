@@ -68,6 +68,7 @@ $size-quote: 24px;
 $size-small: 16px;
 
 $grey: #E3E3E5;
+$black: #04171F;
 
 $medium: "HK-Medium";
 $light: "HK-Light";
@@ -78,7 +79,7 @@ body{
 	overflow-x:hidden;
 	font-size: $size-body;
 	font-family: $medium, sans-serif;
-	color:black;
+	color:$black;
 }
 h1, h2, h3, h4, h5, h5, h6, .quote, .copy, .toolbar a{
 	font-family: $bold, sans-serif;
@@ -87,7 +88,7 @@ h1, h2, h3, h4, h5, h5, h6, .quote, .copy, .toolbar a{
 }
 .dropcap{
 	font-family: $bold, sans-serif;
-	line-height: normal;
+	line-height: 0.9;
 }
 
 h1 span, .copy span{
@@ -145,7 +146,7 @@ h1 span, .copy span{
 	em{
 		-webkit-text-stroke-width: unset;
     -webkit-text-fill-color: unset;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: $black;
 	}
 }
 
@@ -206,7 +207,7 @@ z-index: 1;
 		.inner-container{
 			width:90vw;
 			position: relative;
-			background: black;
+			background: $black;
 			padding: $spacing;
 			.toolbar{
 				display:flex;
@@ -219,7 +220,7 @@ z-index: 1;
 						min-height: 25px;
 						font-size: 12px;
 						border-radius:100%;
-						border:2.3px solid white;
+						border:2px solid white;
 						display: flex;
 						justify-content: center;
 						align-items: center;
@@ -227,11 +228,11 @@ z-index: 1;
 						text-decoration: none;
 						color:white;
 						&:hover{
-							color:black;
+							color:$black;
 							background: white;
 						}
 						&.active{
-							color:black;
+							color:$black;
 							background: white;
 						}
 					}
@@ -250,7 +251,7 @@ z-index: 1;
 			min-width: 90vw;
 			position: absolute;
 			height: 2px;
-			background: black;
+			background: $black;
 			bottom:10px;
 			left: 0;
 		}
@@ -319,8 +320,8 @@ z-index: 1;
 		}
 	}
 	.black-line{
-		height: $spacing;
-		background: black;
+		height: 10px;
+		background: $black;
 		width:90vw;
 		position: absolute;
 		bottom:0;
@@ -352,7 +353,7 @@ z-index: 1;
 			justify-content: center;
 			.title{
 				text-transform: uppercase;
-				background: black;
+				background: $black;
 				color:white;
 				display: flex;
 				width: fit-content;
@@ -360,7 +361,7 @@ z-index: 1;
 				margin-bottom: $spacing;
 			}
 			p{
-				border-bottom: 8px solid black;
+				border-bottom: 8px solid $black;
 				padding-bottom:$spacing*2;
 			}
 		}
@@ -375,7 +376,7 @@ z-index: 1;
 		z-index: 0;
 		.black{
 			width:35%;
-			background: black;
+			background: $black;
 		}
 		.grey{
 			width:65%;
@@ -432,7 +433,7 @@ z-index: 1;
 			flex-direction: column;
 				h3{
 				text-transform: uppercase;
-				background: black;
+				background: $black;
 				color:white;
 				display: flex;
 				width: fit-content;
@@ -453,7 +454,7 @@ z-index: 1;
 	}
 	.slick-prev:before, .slick-next:before{
 		font-size: 30px;
-		color:black;
+		color:$black;
 	}
 	.slick-prev{
 		right:100px !important;
@@ -473,7 +474,7 @@ z-index: 1;
 // SLIDESHOW
 .slideshow-container{
 	width:90vw;
-	background: black;
+	background: $black;
 	margin: $spacing*25 auto;
 	padding: $spacing*10 0;
 	&.no-caption{
@@ -495,7 +496,7 @@ z-index: 1;
 		.slideshow-text{
 			color:white;
 			h3{
-				color:black;
+				color:$black;
 				background: white;
 				padding: 3px 8px;
 				text-transform: uppercase;
@@ -534,14 +535,14 @@ z-index: 1;
 	}
 	h3{
 		color:white;
-		background: black;
+		background: $black;
 		padding: 3px 8px;
 		text-transform: uppercase;
 		margin-bottom: $spacing*2;
 		max-width: fit-content;
 	}
 	p:last-child{
-		border-bottom: 8px solid black;
+		border-bottom: 8px solid $black;
 		padding-bottom:$spacing*2;
 	}
 	.underlined{
@@ -549,22 +550,26 @@ z-index: 1;
 		text-decoration: underline;
 	}
 	.quote{
-		margin: 5vw;
+		margin: 5vw 0;
+		margin-left: -10vw;
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		min-width: 80vw;
 		span{
-			font-size: 2vw;
+			font-size: 3vw;
 			text-transform: uppercase;
 			color:white;
-			background: black;
+			background: $black;
 			max-width: fit-content;
 			padding: $spacing;
+			white-space: nowrap;
 			&:first-child{
-				align-self: flex-start;
 				margin-bottom: $spacing;
+				margin-left: -25%;
 			}
 			&:last-child{
-				align-self: flex-end;
+				margin-left: 25%;
 			}
 		}
 	}
@@ -577,11 +582,13 @@ z-index: 1;
 		display:flex;
 		justify-content: center;
 		flex-direction: row-reverse;
-		width:80vw;
+		width:60vw;
 		margin: 0 auto;
 		margin-top: $spacing*2;
 		img{
-			width:auto;
+			width:100%;
+			height: auto;
+			max-width: 600px;
 		}
 		.legenda{
 			margin-left: $spacing*2;
@@ -630,10 +637,10 @@ z-index: 1;
 	margin-top: $spacing*10;
 	margin-bottom: $spacing*25;
 	img{
-		border: 8px solid black;
+		border: 8px solid $black;
 	}
 	.slick-prev:before, .slick-next:before{
-		color:black;
+		color:$black;
 	}
 }
 
@@ -648,7 +655,7 @@ z-index: 1;
 	.mosaico{
 		margin-top: $spacing*2;
 		width: 70vw;
-		background: black;
+		background: $black;
 		display:flex;
 		flex-wrap: wrap;
 		.mosaico-container{
@@ -675,14 +682,14 @@ z-index: 1;
 				width:calc(100% - 20px);
 				bottom:0;
 				left: 0;
-				background: black;
+				background: $black;
 				color:white;
 				padding: 2px 10px;
 				font-size: 14px;
 			}
 			.text-mosaico{
 				position: absolute;
-				background: black;
+				background: $black;
 				color:white;
 				padding: $spacing*3;
 				width:33vw;
@@ -705,7 +712,7 @@ footer{
 	a{color:white;}
 	position: relative;
 	.footer-container{
-		background: black;
+		background: $black;
 		width:95vw;
 		margin-left: 5vw;
 		color:white;

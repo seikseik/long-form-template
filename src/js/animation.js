@@ -8,39 +8,51 @@ import lozad from 'lozad'
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, SplitText);
 
 
+// check lingua
+
+let body = document.querySelector("body");
+let ita = document.querySelector("#ita");
+let eng = document.querySelector("#eng");
+
+if(body.classList.contains("ita")){
+  ita.classList.add("active")
+}else{
+  eng.classList.add("active")
+}
+
   // animation hero text
-  const heroTitle = document.querySelector("#hero-text");
+  const heroTitle = document.querySelector(".animation-text-hero");
 
-  var tl = gsap.timeline(),
-      mySplitText = new SplitText(heroTitle, {type:"words,chars", wordsClass: "split-line"
+  let tl = gsap.timeline(),
+    mySplitText = new SplitText(heroTitle, {type:"words,chars", wordsClass: "split-line"
+  }),
+  chars = mySplitText.chars;
+  gsap.set(heroTitle, {perspective: 400});
+  tl.fromTo(chars, {autoAlpha: 0},
+          {  duration: 1,
+               autoAlpha: 1,
+               ease: "circ.out",
+               stagger: 0.03,
+          },
+          "+=0");
+
+// anim text
+  const animtxt = gsap.utils.toArray(".animation-text");
+  animtxt.forEach((item, i) => {
+    let tl = gsap.timeline(),
+      mySplitText = new SplitText(item, {type:"words,chars", wordsClass: "split-line"
     }),
-      chars = mySplitText.chars;
-      gsap.set(heroTitle, {perspective: 400});
+    chars = mySplitText.chars;
+    gsap.set(item, {perspective: 400});
+    tl.fromTo(chars, {autoAlpha: 0},
+            {  duration: 1,
+                 autoAlpha: 1,
+                 ease: "circ.out",
+                 stagger: 0.03,
+            },
+            "+=0");
+  });
 
-  tl.from(chars,
-    {  duration: 2,
-      ease: "circ.out",
-      y: 80,
-      stagger: 0.02
-    },
-     "+=0");
-
-// const textAnimation = (item, del) =>{
-//   let tl = gsap.timeline(),
-//       mySplitText = new SplitText(item, {type:"words,chars", wordsClass: "split-line"
-//     }),
-//     chars = mySplitText.chars;
-//     gsap.set(item, {perspective: 400});
-//
-//   tl.fromTo(chars, {autoAlpha: 0},
-//     {  duration: 1,
-//          autoAlpha: 1,
-//          ease: "circ.out",
-//          stagger: 0.03,
-//          delay: del
-//     },
-//     "+=0");
-// }
 
   // fade in
   const fade = gsap.utils.toArray("[fade]");
