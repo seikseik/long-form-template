@@ -54,7 +54,7 @@ div, section{
 $ap-reg: "apfel-reg", sans-serif;
 $ap-bold: "apfel-bold", sans-serif;
 $plex-sans: 'IBM Plex Sans', sans-serif;
-$plaex-serif:'IBM Plex Serif', serif;
+$plex-serif:'IBM Plex Serif', serif;
 
 // VARIABLES
 $spacing: 8px;
@@ -247,7 +247,7 @@ body{
 		margin-bottom:$spacing*3;
 		line-height: $line_height;
 		font-weight: normal;
-		font-family: $plaex-serif;
+		font-family: $plex-serif;
 		&:last-child{
 			margin-bottom: 0px;
 		}
@@ -443,7 +443,7 @@ body{
 			font-size: $size-small;
 			span{
 				color:black;
-				font-family: $plaex-serif;
+				font-family: $plex-serif;
 				font-style: italic;
 				margin-right: 3px;
 			}
@@ -848,6 +848,7 @@ footer{
 			padding: $spacing*4 $spacing*3;
 			p{
 				font-size:$size-body;
+				font-family: $ap-reg;
 				border-left:none;
 				border-right: none;
 				padding: $spacing*2 0;
