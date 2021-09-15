@@ -3,12 +3,13 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 
-import lozad from 'lozad'
 
-const observer = lozad();
-observer.observe();
+  import lozad from 'lozad'
 
-gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, SplitText);
+  const observer = lozad();
+  observer.observe();
+
+  gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, SplitText);
 
 
 // check lingua
@@ -86,28 +87,19 @@ if(body.classList.contains("ita")){
   });
 
 
-let slideshows = document.querySelectorAll(".slideshow");
-slideshows.forEach((item, i) => {
-  $(item).slick({
-  infinite: true,
-});
-});
 
-
-let slideshowsLazy = document.querySelectorAll(".slideshow-lazy");
-slideshowsLazy.forEach((item, i) => {
-  $(item).slick({
-  lazyLoad: 'progressive',
-});
-});
-
-// scroll
-
-$('.scroll-container').slick({
-  slidesToShow: 1,
-  arrows: true,
-  adaptiveHeight: false,
-  variableWidth: true,
-  infinite: false,
-  edgeFriction: 0.9
+// swiper
+let swipers = document.querySelectorAll(".swiper-container")
+swipers.forEach((item, i) => {
+  const swiper = new Swiper(item, {
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 1,
+    centeredSlides: true,
+    preloadImages: false,
+    lazy: true,
+    autoHeight: true,
+  });
 });

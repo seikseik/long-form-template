@@ -45,8 +45,12 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 
     <!-- fonts -->
@@ -499,43 +503,72 @@
               <p>Il mestolo, le sedie da cucina, i materassi, il letto, una sedia a rotelle. E ancora le lettere, i ritratti, i quaderni di scuola, i giocattoli, gli arnesi da lavoro, una Divina Commedia avvolta nella bandiera tricolore: sono le masserizie degli esuli che – dopo molte traversie – trovano oggi spazio nel Magazzino 26 del Porto Vecchio di Trieste. Raccontano la quotidianità spezzata di migliaia di famiglie.</p>
             </div>
 
-            <div id="memoria" fade class="slideshow">
-              <div class="slide">
-                <img class="lozad" data-src="./assets/cristicchi al magazzino 18.jpg" alt="">
+            <div id="memoria" class="slideshow swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./assets/cristicchi al magazzino 18.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./assets/i ritratti foto andrea lasorte.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./assets/le foto 2.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./assets/le foto.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./assets/le lettere foto andrea lasorte.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./assets/le masserizie 2 - foto massimo silvano.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./assets/le masserizie 3.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./assets/le masserizie foto massimo silvano.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./assets/magazzino 18 masserizie 5 foto massimo silvano.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./assets/magazzino 18 masserizie 8 foto massimo silvano.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./assets/magazzino 18 masserizie 8 foto massimo silvano.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./assets/magazzino 18 masserizie foto massimo silvano.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
               </div>
-              <div class="slide">
-                <img class="lozad" data-src="./assets/i ritratti foto andrea lasorte.jpg" alt="">
-              </div>
-              <div class="slide">
-                <img class="lozad" data-src="./assets/le foto 2.jpg" alt="">
-              </div>
-              <div class="slide">
-                <img class="lozad" data-src="./assets/le foto.jpg" alt="">
-              </div>
-              <div class="slide">
-                <img class="lozad" data-src="./assets/le lettere foto andrea lasorte.jpg" alt="">
-              </div>
-              <div class="slide">
-                <img class="lozad" data-src="./assets/le masserizie 2 - foto massimo silvano.jpg" alt="">
-              </div>
-              <div class="slide">
-                <img class="lozad" data-src="./assets/le masserizie 3.jpg" alt="">
-              </div>
-              <div class="slide">
-                <img class="lozad" data-src="./assets/le masserizie foto massimo silvano.jpg" alt="">
-              </div>
-              <div class="slide">
-                <img class="lozad" data-src="./assets/magazzino 18 masserizie 5 foto massimo silvano.jpg" alt="">
-              </div>
-              <div class="slide">
-                <img class="lozad" data-src="./assets/magazzino 18 masserizie 8 foto massimo silvano.jpg" alt="">
-              </div>
-              <div class="slide">
-                <img class="lozad" data-src="./assets/magazzino 18 masserizie 8 foto massimo silvano.jpg" alt="">
-              </div>
-              <div class="slide">
-                <img class="lozad" data-src="./assets/magazzino 18 masserizie foto massimo silvano.jpg" alt="">
-              </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
           </div>
         </div>
@@ -570,50 +603,49 @@
 
 
         <!-- SLIDESHOW 3 BLANK -->
-
         <div fade class="slideshow-blank-container">
           <div class="slideshow">
             <div class="slide">
-              <img class="lozad" data-src="./assets/1954 10 04  famiglia Gardos scappata da Punta di Salvore arrivata a Muggia - Publifoto Milano.jpg" alt="">
+              <img  src="./assets/1954 10 04  famiglia Gardos scappata da Punta di Salvore arrivata a Muggia - Publifoto Milano.jpg" alt="">
             </div>
             <div class="slide">
-              <img class="lozad" data-src="./assets/1954 10 04 Famiglia Tampleniza di Punta Grossa trasporto materiali per imbarco per Punta Sottile (Italia).jpg" alt="">
+              <img  src="./assets/1954 10 04 Famiglia Tampleniza di Punta Grossa trasporto materiali per imbarco per Punta Sottile (Italia).jpg" alt="">
             </div>
             <div class="slide">
-              <img class="lozad" data-src="./assets/1954 10 10 utlimi arrivi di profughi al centro raccolta di Muggia - Publifoto Milano.jpg" alt="">
+              <img  src="./assets/1954 10 10 utlimi arrivi di profughi al centro raccolta di Muggia - Publifoto Milano.jpg" alt="">
             </div>
             <div class="slide">
-              <img class="lozad" data-src="./assets/1955 nuovi confini contadini - scritta lottiamo per i diritti della libertà quindi non vogliamo schiavi.jpg" alt="">
+              <img  src="./assets/1955 nuovi confini contadini - scritta lottiamo per i diritti della libertà quindi non vogliamo schiavi.jpg" alt="">
             </div>
             <div class="slide">
-              <img class="lozad" data-src="./assets/campo profughi di fossoli 2.jpg" alt="">
+              <img  src="./assets/campo profughi di fossoli 2.jpg" alt="">
             </div>
             <div class="slide">
-              <img class="lozad" data-src="./assets/campo profughi di fossoli 5.jpg" alt="">
+              <img  src="./assets/campo profughi di fossoli 5.jpg" alt="">
             </div>
             <div class="slide">
-              <img class="lozad" data-src="./assets/Campo Profughi di Noghere (Muggia) 1.jpg" alt="">
+              <img  src="./assets/Campo Profughi di Noghere (Muggia) 1.jpg" alt="">
             </div>
           <div class="slide">
-              <img class="lozad" data-src="./assets/Campo Profughi di Noghere (Muggia) veduta.jpg" alt="">
+              <img  src="./assets/Campo Profughi di Noghere (Muggia) veduta.jpg" alt="">
           </div>
             <div class="slide">
-              <img class="lozad" data-src="./assets/Crevatini esodo famiglia con pattuglia Polizia a cavallo.jpg" alt="">
+              <img  src="./assets/Crevatini esodo famiglia con pattuglia Polizia a cavallo.jpg" alt="">
             </div>
             <div class="slide">
-              <img class="lozad" data-src="./assets/Crevatini esodo famiglia con pattuglia Polizia a piedi.jpg" alt="">
+              <img  src="./assets/Crevatini esodo famiglia con pattuglia Polizia a piedi.jpg" alt="">
             </div>
             <div class="slide">
-              <img class="lozad" data-src="./assets/FERTILIA (Sardegna) profughi giuliano dalmati ai primi lavori della terra dopo insediamento Campo Profughi.jpg" alt="">
+              <img  src="./assets/FERTILIA (Sardegna) profughi giuliano dalmati ai primi lavori della terra dopo insediamento Campo Profughi.jpg" alt="">
             </div>
             <div class="slide">
-              <img class="lozad" data-src="./assets/Mons Giorgio Bruni con la moto usata per scappare a Trieste - Deltafoto Milano.jpg" alt="">
+              <img  src="./assets/Mons Giorgio Bruni con la moto usata per scappare a Trieste - Deltafoto Milano.jpg" alt="">
             </div>
             <div class="slide">
-              <img class="lozad" data-src="./assets/Mons Giorgio Bruni parroco di Capodistria 1954 10 9 scappato a Trieste nella notte - Deltafoto Milano.jpg" alt="">
+              <img  src="./assets/Mons Giorgio Bruni parroco di Capodistria 1954 10 9 scappato a Trieste nella notte - Deltafoto Milano.jpg" alt="">
             </div>
             <div class="slide">
-              <img class="lozad" data-src="./assets/scritte di protesta nelle citta in abbandono della Zona B.jpg" alt="">
+              <img  src="./assets/scritte di protesta nelle citta in abbandono della Zona B.jpg" alt="">
             </div>
           </div>
         </div>
@@ -800,9 +832,6 @@ Prof.re Davide Rossi
 
     </footer>
 
-
-
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
