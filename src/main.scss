@@ -473,6 +473,11 @@ z-index: 1;
 }
 
 // SLIDESHOW
+#memoria{
+	img{
+		border:8px solid white;
+	}
+}
 .slideshow-container{
 	width:90vw;
 	background: $black;
@@ -593,6 +598,9 @@ z-index: 1;
 		}
 		.legenda{
 			margin-left: $spacing*2;
+			img{
+				min-width: 200px;
+			}
 		}
 	}
 }
