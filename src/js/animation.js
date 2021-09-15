@@ -103,3 +103,14 @@ swipers.forEach((item, i) => {
     autoHeight: true,
   });
 });
+
+const swiper = new Swiper('.swiper-scroll-container', {
+  speed: 400,
+  spaceBetween: 50,
+  slidesPerView: "auto",
+  freeMode: true,
+  navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+  },
+});
