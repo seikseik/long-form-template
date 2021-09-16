@@ -77,17 +77,19 @@ if(body.classList.contains("ita")){
   });
 
 
-  // fade in
-  const fadeRight = gsap.utils.toArray("[fade-right]");
-  fadeRight.forEach((el, i) => {
-    const anim = gsap.fromTo(el, {autoAlpha: 0, x:30,}, {duration: 1, autoAlpha: 1, x:0});
-    ScrollTrigger.create({
-      trigger: el,
-      animation: anim,
-      toggleActions: 'play none none none',
-      once: true,
+  // fade right
+  if(window.innerWidth > 768){
+    const fadeRight = gsap.utils.toArray("[fade-right]");
+    fadeRight.forEach((el, i) => {
+      const anim = gsap.fromTo(el, {autoAlpha: 0, x:30,}, {duration: 1, autoAlpha: 1, x:0});
+      ScrollTrigger.create({
+        trigger: el,
+        animation: anim,
+        toggleActions: 'play none none none',
+        once: true,
+      });
     });
-  });
+  }
 
 
   // hr line animation
@@ -124,11 +126,15 @@ swipers.forEach((item, i) => {
 
 const swiper = new Swiper('.swiper-scroll-container', {
   speed: 400,
-  spaceBetween: 50,
+  spaceBetween: 20,
   slidesPerView: "auto",
   freeMode: true,
   navigation: {
   nextEl: '.swiper-button-next',
   prevEl: '.swiper-button-prev',
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
   },
 });
