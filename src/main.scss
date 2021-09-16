@@ -422,9 +422,12 @@ z-index: 1;
 		padding-bottom: $spacing*2;
 		height: 50vh;
 		cursor: grab;
-		.first-item{
-			min-width:35vw;
-			width:35vw;
+		.swiper-wrapper{
+			align-items: flex-end;
+		}
+		.first-item.swiper-slide{
+			min-width:35vw !important;
+			width:35vw !important;
 			margin: 0 5vw;
 			margin-right: 10vw;
 			padding-left: 5vw;
@@ -441,6 +444,19 @@ z-index: 1;
 				width: fit-content;
 				padding:2px 8px;
 				margin-bottom: $spacing;
+			}
+		}
+		.swiper-slide{
+			width:20vw !important;
+			height: fit-content !important;
+			&.small{
+				width:15vw !important;
+			}
+			&.medium{
+				width:30vw !important;
+			}
+			&.big{
+				width:40vw !important;
 			}
 		}
 		img{
@@ -575,7 +591,11 @@ z-index: 1;
 	}
 
 }
-
+.slideshow-container .container #giornale img {
+    margin: 0 auto;
+    width: 80%;
+		margin-left: 10%;
+}
 
 .swiper-lazy-preloader{
 	top:200px !important;
