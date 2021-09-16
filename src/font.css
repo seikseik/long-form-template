@@ -4,6 +4,7 @@
     font-style: normal;
     font-weight: normal;
     src: url('./assets/HKGrotesk-Light.woff') format('woff');
+    font-display: auto;
     }
 
 
@@ -12,6 +13,7 @@
     font-style: normal;
     font-weight: normal;
     src: url('./assets/HKGrotesk-Medium.woff') format('woff');
+    font-display: auto;
     }
 
 
@@ -20,6 +22,7 @@
     font-style: normal;
     font-weight: normal;
     src: url('./assets/HKGrotesk-Bold.woff') format('woff');
+    font-display: auto;
     }
 
     @font-face {
@@ -27,4 +30,5 @@
     font-style: normal;
     font-weight: normal;
     src: url('./assets/HKGrotesk-Black.woff') format('woff');
+    font-display: auto;
     }

@@ -541,7 +541,7 @@ z-index: 1;
 .slideshow-container{
 	position: relative;
 	width:90vw;
-	max-width: 1300px;
+	max-width: 1200px;
 	background: $black;
 	margin: $spacing*25 auto;
 	padding: $spacing*10 0;
@@ -600,9 +600,9 @@ z-index: 1;
 	}
 
 }
-.slideshow-container .container #giornale img {
+.slideshow-container .container #giornale img, .slideshow-container .container #memoria img,  {
     margin: 0 auto;
-    width: 80%;
+    width: 80% !important;
 		margin-left: 10%;
 }
 
@@ -758,17 +758,20 @@ z-index: 1;
 			height:23.33vw;
 			cursor: pointer;
 			&:hover{
+				img{
+					-webkit-filter: grayscale(100%);
+	 				filter: grayscale(100%);
+				}
 				.text-mosaico{
-					display: block;
+					opacity: 1;
+					transform: scale(1);
+					visibility: visible;
 				}
 			}
-
 			img{
+				object-fit: cover;
 				width:100%;
 				min-height: 100%;
-				object-fit: cover;
-				-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
- 				filter: grayscale(100%);
 			}
 			span{
 				position: absolute;
@@ -787,12 +790,17 @@ z-index: 1;
 				color:white;
 				padding: $spacing*3;
 				width:33vw;
-				top:50%;
-				left:30px;
+				top:30%;
+				left:-20%;
 				z-index: 9;
 				font-size: 14px;
 				border-radius: 8px;
-				display: none;
+				opacity: 0;
+				visibility: hidden;
+				transform: scale(0.9);
+				transition: .2s ease;
+				-webkit-box-shadow: 0px 5px 12px 10px rgba(0,0,0,0.15);
+				box-shadow: 0px 5px 12px 10px rgba(0,0,0,0.15);
 			}
 		}
 	}

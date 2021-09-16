@@ -41,23 +41,27 @@ if(body.classList.contains("ita")){
           },
           "+=0");
 
-// anim text
-  const animtxt = gsap.utils.toArray(".animation-text");
-  animtxt.forEach((item, i) => {
-    console.log(item);
-    let tl = gsap.timeline(),
-      mySplitText = new SplitText(item, {type:"words,chars", wordsClass: "split-line"
-    }),
-    chars = mySplitText.chars;
-    gsap.set(item, {perspective: 400});
-    tl.fromTo(chars, {autoAlpha: 0},
-            {  duration: 1,
-                 autoAlpha: 1,
-                 ease: "circ.out",
-                 stagger: 0.05,
-            },
-            "+=0");
-  });
+// animation quotes
+
+  const quotes = document.querySelectorAll(".animation-text");
+
+    quotes.forEach((quote, i) => {
+      quote.split = new SplitText(quote, {
+        type:"words,chars",
+        wordsClass: "split-line"
+      });
+      gsap.set(quote, {perspective: 400});
+      const anim = gsap.fromTo(quote.split.chars,
+      {autoAlpha: 0},{  duration: 1, autoAlpha: 1,ease: "circ.out",stagger: 0.045, delay: 0.2});
+
+      ScrollTrigger.create({
+        trigger: quote,
+        animation: anim,
+        toggleActions: 'play none none none',
+        once: true,
+      });
+    });
+
 
 
   // fade in
