@@ -175,8 +175,8 @@ h1 span, .copy span{
 // INIZIO INIZIO INIZIO INIZIO INIZIO INIZIO
 
 .container{
-max-width: 80vw;
-width:80vw;
+max-width: 1300px;
+width:70vw;
 margin: 0 auto;
 z-index: 1;
 }
@@ -188,7 +188,7 @@ z-index: 1;
 		background: $grey;
 		position: absolute;
 		height: 100%;
-		width:75.5vw;
+		width:70.5vw;
 		z-index: -1;
 		right:0;
 		top:0;
@@ -198,6 +198,9 @@ z-index: 1;
 		position: absolute;
 		left:0;
 		top:60px;
+		img{
+			width:13vw;
+		}
 	}
 	.toolbar-container{
 		display: flex;
@@ -205,7 +208,7 @@ z-index: 1;
 		width:100%;
 		z-index: 2;
 		.inner-container{
-			width:90vw;
+			width:85vw;
 			position: relative;
 			background: $black;
 			padding: $spacing;
@@ -330,6 +333,11 @@ z-index: 1;
 }
 
 // VIDEO VIDEO VIDEO
+.line-video{
+	height: 8px;
+	background: $black;
+	width:100%;
+}
 
 .video-section{
 	width:100%;
@@ -340,6 +348,7 @@ z-index: 1;
 		padding:$spacing*5 0;
 		display: flex;
 		width:95vw;
+		max-width: 1300px;
 		.video-part{
 			width:60%;
 		}
@@ -362,7 +371,6 @@ z-index: 1;
 				margin-bottom: $spacing;
 			}
 			p{
-				border-bottom: 8px solid $black;
 				padding-bottom:$spacing*2;
 			}
 		}
@@ -447,16 +455,16 @@ z-index: 1;
 			}
 		}
 		.swiper-slide{
-			width:20vw !important;
+			width:25vw !important;
 			height: fit-content !important;
 			&.small{
-				width:15vw !important;
+				width:20vw !important;
 			}
 			&.medium{
 				width:30vw !important;
 			}
 			&.big{
-				width:40vw !important;
+				width:35vw !important;
 			}
 		}
 		img{
@@ -533,6 +541,7 @@ z-index: 1;
 .slideshow-container{
 	position: relative;
 	width:90vw;
+	max-width: 1300px;
 	background: $black;
 	margin: $spacing*25 auto;
 	padding: $spacing*10 0;
@@ -617,7 +626,6 @@ z-index: 1;
 		max-width: fit-content;
 	}
 	p:last-child{
-		border-bottom: 8px solid $black;
 		padding-bottom:$spacing*2;
 	}
 	.underlined{
@@ -630,21 +638,23 @@ z-index: 1;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		min-width: 80vw;
+		width: 80vw;
+		max-width: 1400px;
 		span{
 			font-size: 3vw;
+			height: 4vw;
 			text-transform: uppercase;
 			color:white;
 			background: $black;
 			max-width: fit-content;
-			padding: $spacing;
+			padding: $spacing 15px;
 			white-space: nowrap;
 			&:first-child{
 				margin-bottom: $spacing;
-				margin-left: -25%;
+				margin-left: -20%;
 			}
 			&:last-child{
-				margin-left: 25%;
+				margin-left: 20%;
 			}
 		}
 	}
@@ -676,7 +686,8 @@ z-index: 1;
 
 // infografica
 .info-container{
-	width:90vw;
+	width:80vw;
+	max-width: 1300px;
 	margin: 0 auto;
 	margin-bottom: $spacing*25;
 	img{
@@ -689,6 +700,7 @@ z-index: 1;
 
 .video-large-container{
 	width:80vw;
+	max-width: 1300px;
 	margin: 0 auto;
 	margin-top: $spacing*4;
 	.video-full{
@@ -715,6 +727,10 @@ z-index: 1;
 	margin-top: $spacing*10;
 	margin-bottom: $spacing*25;
 	overflow: hidden;
+	img{
+		width:80% !important;
+		margin-left: 10%;
+	}
 }
 
 // mosaico
@@ -791,8 +807,8 @@ footer{
 	position: relative;
 	.footer-container{
 		background: $black;
-		width:95vw;
-		margin-left: 5vw;
+		width:90vw;
+		margin-left: 10vw;
 		color:white;
 		display: flex;
 		align-items: center;

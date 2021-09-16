@@ -35,14 +35,16 @@ if(body.classList.contains("ita")){
   tl.fromTo(chars, {autoAlpha: 0},
           {  duration: 1,
                autoAlpha: 1,
+               delay: 0.1,
                ease: "circ.out",
-               stagger: 0.03,
+               stagger: 0.095,
           },
           "+=0");
 
 // anim text
   const animtxt = gsap.utils.toArray(".animation-text");
   animtxt.forEach((item, i) => {
+    console.log(item);
     let tl = gsap.timeline(),
       mySplitText = new SplitText(item, {type:"words,chars", wordsClass: "split-line"
     }),
@@ -52,7 +54,7 @@ if(body.classList.contains("ita")){
             {  duration: 1,
                  autoAlpha: 1,
                  ease: "circ.out",
-                 stagger: 0.03,
+                 stagger: 0.05,
             },
             "+=0");
   });
@@ -62,6 +64,19 @@ if(body.classList.contains("ita")){
   const fade = gsap.utils.toArray("[fade]");
   fade.forEach((el, i) => {
     const anim = gsap.fromTo(el, {autoAlpha: 0}, {duration: 1, autoAlpha: 1});
+    ScrollTrigger.create({
+      trigger: el,
+      animation: anim,
+      toggleActions: 'play none none none',
+      once: true,
+    });
+  });
+
+
+  // fade in
+  const fadeRight = gsap.utils.toArray("[fade-right]");
+  fadeRight.forEach((el, i) => {
+    const anim = gsap.fromTo(el, {autoAlpha: 0, x:30,}, {duration: 1, autoAlpha: 1, x:0});
     ScrollTrigger.create({
       trigger: el,
       animation: anim,
@@ -85,7 +100,6 @@ if(body.classList.contains("ita")){
       once: true,
     });
   });
-
 
 
 // swiper
