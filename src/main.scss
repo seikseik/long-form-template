@@ -304,6 +304,9 @@ z-index: 1;
 			margin-bottom: 0px;
 		}
 	}
+	.bold{
+		font-family: $bold;
+	}
 }
 
 .text-section{
@@ -473,11 +476,11 @@ z-index: 1;
 			}
 			&.medium{
 				width:30vw !important;
-				max-width: 300px;
+				max-width: 340px;
 			}
 			&.big{
 				width:35vw !important;
-				max-width: 400px;
+				max-width: 450px;
 			}
 		}
 		img{
@@ -486,10 +489,21 @@ z-index: 1;
 			width:auto;
 		}
 	}
+	.line-video{
+		position: absolute;
+		width: 90vw;
+		left:5vw;
+	}
 }
 
 
 // SLIDESHOW
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+	&:focus{
+		outline: none !important;
+	}
+}
 #profughi{
 	img{
 		width:100%;
@@ -782,7 +796,7 @@ z-index: 1;
 			img{
 				object-fit: cover;
 				width:100%;
-				min-height: 100%;
+				min-height: 23.33vw;
 			}
 			span{
 				position: absolute;
@@ -801,6 +815,8 @@ z-index: 1;
 				color:white;
 				padding: $spacing*3;
 				width:33vw;
+				max-height: 40vw;
+				overflow: scroll;
 				top:30%;
 				left:-20%;
 				z-index: 9;
@@ -965,7 +981,9 @@ footer{
 // MOBILE MOBILE MOBILE
 
 @media only screen and (max-width: 768px) {
-
+	.page-container{
+		padding-bottom: $spacing*5;
+	}
 		// HERO MOBILE
 	.container{
 		width: 100%;
@@ -1081,7 +1099,9 @@ footer{
 		margin-top: $spacing*3;
 		width: 100%;
 	}
-
+	#last-video{
+		margin-bottom: $spacing*4;
+	}
 	// scroll section
 	.scroll-text-part{
 		width:100%;
@@ -1237,6 +1257,9 @@ footer{
 						width:calc(100vw - 32px);
 						height: auto;
 					}
+				}
+				.text-mosaico{
+					max-height: 60vh;
 				}
 			}
 		}

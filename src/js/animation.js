@@ -126,7 +126,7 @@ swipers.forEach((item, i) => {
 });
 
 const swiper = new Swiper('.swiper-scroll-container', {
-  speed: 400,
+  speed: 200,
   spaceBetween: 20,
   slidesPerView: "auto",
   freeMode: true,
