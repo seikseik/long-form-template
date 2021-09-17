@@ -117,6 +117,7 @@ swipers.forEach((item, i) => {
     prevEl: '.swiper-button-prev',
     },
     slidesPerView: 1,
+    spaceBetween: 10,
     centeredSlides: true,
     preloadImages: false,
     lazy: true,
