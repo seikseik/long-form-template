@@ -1,0 +1,920 @@
+<?php
+    include_once('./includes/config.php');
+?>
+<!DOCTYPE html>
+<html lang="it">
+
+  <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $pageTitle; ?></title>
+    <meta name="description" content="<?php echo $pageDescription; ?>" />
+    <link rel="canonical" href="<?php echo $pageUrl; ?>">
+
+    <!-- CONFIGURAZIONE STATS -->
+    <script type="text/javascript">
+      var pageHref = '<?php echo $pageUrl; ?>';
+      var pageType = 'dettaglio_content';
+    </script>
+    <esi:include src='http://www.repstatic.it/cless/common/stable/js/script/tlh/traffic_light_handler.html' />
+    <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script>
+    <!-- CONFIGURAZIONE STATS-->
+
+    <!-- facebook -->
+    <meta property="fb:app_id" content="182234715127717" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="<?php echo $pageTitle; ?>">
+    <meta property="og:description" content="<?php echo $pageDescription; ?>">
+    <meta property="og:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg.jpg'); ?>">
+    <meta property="og:url" content="<?php echo $pageUrl; ?>">
+    <meta property="article:published_time" content="2020-02-14T09:00">
+    <!-- facebook -->
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="<?php echo $pageTitle; ?>">
+    <meta name="twitter:description" content="<?php echo $pageDescription; ?>">
+    <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg.jpg'); ?>">
+    <meta name="twitter:url" content="<?php echo $pageUrl; ?>">
+    <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
+
+    <style media="screen">
+      @font-face {
+      font-family: 'HK-Light';
+      font-style: normal;
+      font-weight: normal;
+      src: url('./assets/HKGrotesk-Light.woff') format('woff');
+      font-display: auto;
+      }
+
+
+      @font-face {
+      font-family: 'HK-Medium';
+      font-style: normal;
+      font-weight: normal;
+      src: url('./assets/HKGrotesk-Medium.woff') format('woff');
+      font-display: auto;
+      }
+
+
+      @font-face {
+      font-family: 'HK-Bold';
+      font-style: normal;
+      font-weight: normal;
+      src: url('./assets/HKGrotesk-Bold.woff') format('woff');
+      font-display: auto;
+      }
+
+      @font-face {
+      font-family: 'HK-Black';
+      font-style: normal;
+      font-weight: normal;
+      src: url('./assets/HKGrotesk-Black.woff') format('woff');
+      font-display: auto;
+      }
+
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+  </head>
+
+  <body class="eng">
+
+      <div class="page-container">
+
+        <!-- HERO -->
+        <div class="hero">
+          <div class="grey-area"></div>
+
+          <div class="toolbar-container">
+            <div class="inner-container">
+            <a class="logo" target="_blank" href="https://ilpiccolo.gelocal.it/trieste"><img src="./assets/logo-piccolo.svg" alt=""></a>
+              <div class="toolbar">
+                <div class="language">
+                  <a id="ita" href="index.html">IT</a>
+                  <a id="eng" href="index-en.html">EN</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div fade class="container">
+            <div class="title-section">
+              <h1 class="animation-text-hero"><span>us,</span> the exiled
+              <div class="line hr desktop"></div>
+            </h1>
+
+              <div class="subtitle">
+                <div class="line hr mobile"></div>
+                <p>From a painful ending of coexistence to a hard, tormented path to reconciliation in Istria, Fiume and Dalmatia: The history of the Eastern border told by those who have personally experienced it. Never to forget</p>
+              </div>
+              <div class="copy">
+              <span>di</span>  ROBERTA GIANI
+              </div>
+            </div>
+          </div>
+
+          <div fade class="image-container">
+            <div class="container">
+              <div class="social">
+                <a href=""><img src="./assets/icon-facebook.svg" alt=""></a>
+                <a href=""><img src="./assets/icon-twitter.svg" alt=""></a>
+              </div>
+                <img src="./assets/hero-image.jpg" alt="">
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- TESTO 1 -->
+        <div class="text-section intro-section">
+          <section class="text-container">
+            <p fade>
+              <span class="dropcap">«T</span>
+              <span class="bold">he exodus is a tragedy</span>
+               of family and social destruction. A family unit is eradicated because their land no longer belongs to them”. These simple words by Adriana, exiled from Zara, explain what the postwar period meant for Italians who lived on the Eastern Adriatic coast much better than the endless political and historic debates on the Eastern border.
+            </p>
+
+            <p fade>
+              Julian-Dalmatians’ history is one of sorrow, of lives uprooted and painfully reestablished elsewhere. For those involuntarily affected by the exodus, it is a recollection of eradication; fear of the Yugoslav police; remembering a father hastily executed; hugging a grandfather who decided to stay and die in his own home; the desperation of “leaving everything behind”, and, finally, the shame for the way they were treated arriving at refugees camps. Seventy years after, eyes are still full of tears. Through the gaze of its direct witnesses, Il Piccolo celebrates its 140 years of existence by retracing this thread of history that the newspaper has contributed to document.
+            </p>
+
+            <p fade>
+              On account of the exodus, an entire society disappeared. Over 300,000 Italians left their land. Istria’s coastal cities were emptied and roots were cut. Then, “silence hit us for 60 years”: oblivion descended upon a sequence of events that makes everyone uneasy, kept alive by refugees’ associations and exploited too many times. Replaced now, after a long and difficult process, by reconciliation among Italians, Slovenians and Croatians. Each side has its own recollections yet is willing to reach out to the other. As stated by an individual in one of the recorded videos, because “borders should no longer exist”; someone who understands the value of peaceful coexistence and, by contrast, the horrific face of nationalism and totalitarianism.
+            </p>
+            <div class="black-line hr"></div>
+          </section>
+        </div>
+
+        <!-- VIDEO 1 -->
+        <div fade-right  class="video-section">
+          <div class="video-row">
+            <div class="background">
+              <div class="black"></div>
+              <div class="grey"></div>
+            </div>
+
+            <div class="video-part">
+              <div class="video-large">
+
+               <video poster="./gallery/poster/Esuli_Video_1.jpg" controls>
+                <source src="https://media.gedidigital.it/repubblicatv/file/2021/07/10/781210/781210-video-rrtv-4500-4_esuli_confine.mp4?responsive=true&generation=onclick&bgc=ffffff&adref=" type="video/mp4">
+              </video>
+
+             </div>
+            </div>
+            <div class="text-part">
+              <h3 class="title">A SHIFTING BORDER</h3>
+              <p>The Eastern border was retraced on multiple occasions with the changing geopolitical situation and sovereignties, from the Venetian domination to the Austrian administration, proceeding through Italy’s annexation and World War II, and ultimately with the ensuing final showdown. The area currently split between Italy, Slovenia and Croatia has lived through national tensions, ideological conflicts and wars that have transformed it into a historic experiment of the 20th century.</p>
+              <div class="line-video hr"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SCROLL 1 -->
+        <div class="mobile scroll-text-part">
+          <h3>A LONG STORY</h3>
+          <p>The crescendo of political and national violence that led to the Julian-Dalmatian exodus can be explained by adopting a long-term perspective that takes us back to the Short Twentieth Century, starting with World War I, continuing with the ascent of Fascism, the invasion of Yugoslavia, Tito’s rise and a peace treaty that decided the fate of the Eastern Adriatic coast. These are historic events that need to be archived, after the pacification efforts carried out within the context of European integration.</p>
+        </div>
+        <div fade class="scroll-section">
+          <div class="scroll-container swiper-scroll-container">
+            <div class="swiper-wrapper">
+              <div class="first-item desktop swiper-slide">
+                <h3>A LONG STORY</h3>
+                <p>The crescendo of political and national violence that led to the Julian-Dalmatian exodus can be explained by adopting a long-term perspective that takes us back to the Short Twentieth Century, starting with World War I, continuing with the ascent of Fascism, the invasion of Yugoslavia, Tito’s rise and a peace treaty that decided the fate of the Eastern Adriatic coast. These are historic events that need to be archived, after the pacification efforts carried out within the context of European integration.</p>
+              </div>
+                <img class="swiper-slide" src="./assets/1797.svg" alt="">
+                <img class="swiper-slide" src="./assets/1809.svg" alt="">
+                <img class="swiper-slide" src="./assets/1814.svg" alt="">
+                <img class="swiper-slide small" src="./assets/1866.svg" alt="">
+                <img class="swiper-slide medium" src="./assets/1919.svg" alt="">
+                <img class="swiper-slide" src="./assets/1920.svg" alt="">
+                <img class="swiper-slide" src="./assets/1924.svg" alt="">
+                <img class="swiper-slide small" src="./assets/1940.svg" alt="">
+                <img class="swiper-slide medium" src="./assets/1943.svg" alt="">
+                <img class="swiper-slide big" src="./assets/1944.svg" alt="">
+                <img class="swiper-slide medium" src="./assets/1945.svg" alt="">
+                <img class="swiper-slide" src="./assets/1945-2.svg" alt="">
+                <img class="swiper-slide big" src="./assets/1946.svg" alt="">
+                <img class="swiper-slide big" src="./assets/1947.svg" alt="">
+                <img class="swiper-slide medium" src="./assets/1948.svg" alt="">
+                <img class="swiper-slide" src="./assets/1954.svg" alt="">
+                <img class="swiper-slide" src="./assets/1975.svg" alt="">
+                <img class="swiper-slide" src="./assets/1991.svg" alt="">
+                <img class="swiper-slide medium" src="./assets/2004.svg" alt="">
+                <img class="swiper-slide small" src="./assets/2004-2.svg" alt="">
+                <img class="swiper-slide" src="./assets/2010.svg" alt="">
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="line-video hr"></div>
+        </div>
+
+        <!-- VIDEO 2 -->
+        <div fade-right class="video-section">
+          <div class="video-row">
+            <div class="background">
+              <div class="black"></div>
+              <div class="grey"></div>
+            </div>
+
+            <div class="video-part">
+              <div class="video-large">
+
+                <video poster="./gallery/poster/Esuli_Video_2.jpg" controls>
+                 <source src="https://media.gedidigital.it/repubblicatv/file/2021/07/10/781210/781210-video-rrtv-4500-4_esuli_confine.mp4?responsive=true&generation=onclick&bgc=ffffff&adref=" type="video/mp4">
+               </video>
+
+             </div>
+            </div>
+            <div class="text-part">
+              <h3 class="title">«HOW DID WE GET TO A MASS EXODUS?»</h3>
+              <p>The exodus started, “creeping” at first, after 1943. It acquired “mass proportions” after 1945, which resulted in Pola’s abandonment in 1947. Giuseppe de Vergottini, president of the Associations of Exiles from Istria, Fiume and Dalmatia, and Emeritus Professor of Constitutional Law, explains the events and remembers how we reached such a dramatic page of history.</p>
+              <div class="line-video hr"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SLIDESHOW 1 -->
+        <div class="slideshow-container">
+          <div class="container">
+            <div fade class="slideshow-text">
+              <h3>HOW IL PICCOLO DOCUMENTED THE EXODUS</h3>
+              <p>First, they were “just” refugees. Then, at the beginning of 1946, they became exiles for the first time.</p>
+
+              <p>How did the press cover their drama at the time, as it was unfolding? Il Piccolo of Trieste – the newspaper that predominantly covered the Italians forced to leave Istria, Fiume and Dalmatia in the postwar period – looked for answers, which were, all along, in its own archives. In the gallery, a glimpse of the research conducted by Jacopo Bassi on hundreds of titles, articles and photo news published between 1945 and 1956.</p>
+            </div>
+
+            <div id="giornale" fade class="slideshow swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 17.09.1947</span>
+                  How Pola was unceremoniously evacuated by night, with no handshakes
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=d940e717-2285-4afd-b03f-12c0818670ee&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_2.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 4.10.1947</span>
+                  To the Julian exiles
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=32f20871-cff9-47d0-a7d2-607249df4367&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_3.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 8.10.1947</span>
+                  Zara dead and alive
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=23702cbc-36ab-4619-8c60-58ea802deb91&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_4.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 26.03.1948</span>
+                  Draft card
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=ad2a70e9-384d-406d-8b02-a319e3fd7031&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_5.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 14.04.1948</span>
+                  Fiume’s optants exodus started
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=26a6e9e3-a1d5-4ae1-9ac2-665822b3df19&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_6.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 5.05.1948</span>
+                  First group of optants from Zara has arrived
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=83f7f27f-0890-41a6-853c-186933585db2&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_7.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 17.07.1948</span>
+                  Fate is sometimes hard and cruel
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=db0d6e05-f545-401c-a3b5-99e16ccdd19e&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_8.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 6.11.1948</span>
+                  A piece of Istria on the Tevere: the Julian village at E42
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=55c06cca-6e46-4792-b12f-5d1411eba10c&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_9.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 8.12.1948</span>
+                  Olive-colored faces in Piazza di Spagna
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=7712b615-67e8-4482-8b75-607e2df1808d&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_10.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 21.04.1949</span>
+                  Istrian optant exiles are nobody’s children
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=a47d3542-c984-4b63-8ac5-1699623f4075&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_11.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 21.10.1949</span>
+                  La pianura di Fertilia [...]ende aratri e vita
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=c78fc9e6-a575-4364-9ff1-dd477305b343&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_12.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 20.11.1949</span>
+                  Un lembo dell'Istria in provincia di Sassari
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=c78fc9e6-a575-4364-9ff1-dd477305b343&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_13.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 25.11.1949</span>
+                  Dialetto di Pola tra i fichidindia
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=fc36bb93-33db-4c4d-b829-93ef6041540b&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_14.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 23.12.1949</span>
+                  Gino Damerini, Natale giuliano a Venezia
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=70f507a3-3443-450b-89a7-6d1654c1a97a&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_15.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 22.6.1950</span>
+                  Presto sorgerà a Milano la "Domus Julia Dalmatica"
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=e31eaf08-fd85-461d-bd58-fc35c747d682&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_16.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 8.8.1950</span>
+                  Voci di bimbe da Strigno"
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=49c79918-fecf-4b22-bd82-3e20787c1227&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_17.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 6.8.1951</span>
+                  Vi mandano tanti baci
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=d46e671f-d45e-41fd-8595-f7cb4ef434ec&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_18.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 19.9.1950</span>
+                  Gino Damerini, Guardano i santi del Carpaccio con la dolorosa nostalgia dell'esiliato
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=250bbcbb-5d89-4a5b-b26c-029c7a5b0c6a&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_19.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 20.2.1951</span>
+                  N. Carelli, Istriani e Dalmati attivissimi, come a casa loro
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=8c292b76-7aad-41ed-aef7-20599fc0e47c&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_20.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 11.4.1951</span>
+                  Questa è la cartolina...
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=de2b8fec-083e-4fae-ab67-10568b754c23&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_21.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 16.4.1951</span>
+                  Manlio Gianbassi, L'Istria si è ritrovata a Gorizia
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=130030ee-f5e6-405f-9750-9e663b6dd25f&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_22.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 28.9.1951</span>
+                  Quanto si è fatto da noi per l'assistenza agli esuli
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=42b62401-e686-40f5-abda-e110aae8e85e&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_23.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 29.9.1951</span>
+                  La fraterna assistenza all'indomani dell'esodo
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=605681bd-ef5f-4609-987c-1036924dc162&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_24.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 5.11.1951</span>
+                  Non ci persuaderemo mai che "realtà" voglia dire rinuncia
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=f73f4c0f-bf7e-4589-b098-ecac0761818a&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_25.png" alt=""></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="caption"><span>— 7.4.1952</span>
+                  Gli insegnanti italiani fuggono dalla Zona B
+                  </div>
+                  <a href="http://teca.madeword.it/attilioHortis/index.php/catalogo?option=com_tecaviewer&view=showimg&myId=3fe5f6b9-304d-4658-a2ea-ac6bf6a6da29&search="><img class="swiper-lazy" data-src="./gallery/gallery_6/Gedi_Longform4_Giornale_26.png" alt=""></a>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIDEO 3 -->
+        <div fade-right class="video-section">
+          <div class="video-row">
+            <div class="background">
+              <div class="black"></div>
+              <div class="grey"></div>
+            </div>
+
+            <div class="video-part">
+              <div class="video-large">
+               <video poster="./gallery/poster/Esuli_Video_3.jpg" controls>
+                <source src="https://media.gedidigital.it/repubblicatv/file/2021/07/10/781207/781207-video-rrtv-1200-100721perle_del_ricodo_versione_.mp4?responsive=true&generation=onclick&bgc=ffffff&adref=" type="video/mp4">
+              </video>
+             </div>
+            </div>
+            <div class="text-part">
+              <h3 class="title">THROUGH THE EYES OF THE WITNESSES</h3>
+              <p>To leave or to stay. Each Istrian family was tormented by the dilemma. The memory is still vivid in those who were children at the time, as well as the pain that does not go away. The fear of the military and of the new regime. A family member arrested and never seen again. The heinous killing of Norma Cossetto. Pressure increased, and most Italians abandoned their homes, leaving for an uncertain future. Roots were cut: “I never had the courage to set foot in my home again”.</p>
+              <div class="line-video hr"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- TESTO 2 -->
+        <div class="text-section small-paragraph">
+          <section class="text-container">
+            <h3>A LONG EXODUS</h3>
+            <p fade>
+            A steady flow of Italians departing from the Eastern Adriatic coast continued for 15 years. The first to leave were Zara’s citizens, after the Allies’ bombings in 1943-1944. Right after, it was Istria and Fiume’s turn, starting with Pola’s evacuation in February 1947. Then, the B Zone residents: a departure started in 1953, increased after the signing of the Memorandum of understanding of London that awarded the last strip of Istria to Yugoslavia, and continued until the end of the 1950’s.
+            </p>
+            <div class="line-video hr"></div>
+          </section>
+        </div>
+
+        <!-- infografica -->
+        <div class="info-container">
+          <img class="desktop" fade src="./assets/info.svg" alt="">
+          <img class="mobile" fade src="./assets/info-mobile.svg" alt="">
+        </div>
+
+        <!-- VIDEO 4 -->
+        <div fade-right class="video-section">
+          <div class="video-row">
+            <div class="background">
+              <div class="black"></div>
+              <div class="grey"></div>
+            </div>
+
+            <div class="video-part">
+              <div class="video-large">
+               <video poster="./gallery/poster/Esuli_Video_4.jpg" controls>
+                <source src="https://media.gedidigital.it/repubblicatv/file/2021/07/10/781217/781217-video-rrtv-1200-3_esuli_ricordo.mp4?responsive=true&generation=onclick&bgc=ffffff&adref=" type="video/mp4">
+              </video>
+             </div>
+            </div>
+            <div class="text-part">
+              <h3 class="title">«WE WERE ALL CRYING»</h3>
+              <p>«Look at this beautiful sea, who knows when we can see it again”. Those who left remember a painful farewell, parents incapable of soothing their children, a life in poverty, trying to maintain dignity, in a refugee camp. Memories are similar, yet different, but wounds are the same, shared by those who had convinced themselves that it was “impossible to stay” and were looking at their homes and friends one last time, before stepping “into the unknown”. </p>
+              <div class="line-video hr"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- TESTO 3 -->
+        <div class="text-section">
+          <section class="text-container">
+            <h3>A GRAVEYARD OF OBJECTS</h3>
+            <p class="underlined" fade>
+                   To this day, Trieste’s old harbour stores in one of its warehouses the strongest visual testimony of what the exodus meant to refugees. It was discovered by many citizens of Trieste, thanks to Simone Cristicchi’s theatrical performance, Magazzino 18 (Warehouse 18). Heaps of chairs, wardrobes, photographs, notebooks, kitchenware, and other small objects: silent remnants of the journey to Italy, abandoned by those who could not reclaim them once having reached their home country.
+            </p>
+            <p>Those who had decided to leave had to take everything they could in the shortest amount of time and put it on wagons and ships bound for Trieste, and from there into the unknown. Those were the lucky ones, because those who chose to leave during the night could only fill their backpacks with a change of clothes and a few beloved objects. Household goods were piled up in the old harbour and what was unclaimed remain there to this day.</p>
+
+            <div class="quote animation-text">
+              <span>camminando nei depositi</span>
+              <span>si trova di tutto</span>
+            </div>
+
+            <p>Objects were first accommodated in the halls of Magazzino 22, and subsequently moved to Magazzino 18, where they remained for decades. The efforts of Istituto regionale per la cultura istriano-fiumano-dalmata (Regional institute for the Istrian, Fiuman, Dalmatian culture) and Simone Cristicchi’s performance preserved them and brought them back to light: today, those household effects are a permanent exhibition in Magazzino 26, transformed from objects of individual memories into a collective heritage. </p>
+
+            <p>Walking through the facility, you discover an array of items: wardrobes with the owner’s name written on the back with a piece of chalk; family pictures; children’s notebooks; work tools; a fishing net, even. These are modest possessions, fossils of a lost ordinary life, owned by impoverished people who could not retain what they had shipped and were not permitted to transport their belongings to a refugee camp.</p>
+
+            <div class="line-video hr"></div>
+          </section>
+        </div>
+
+
+
+        <!-- SLIDESHOW 2 -->
+        <div class="slideshow-container  no-caption">
+          <div class="container">
+            <div fade class="slideshow-text">
+              <h3>Il magazzino della memoria</h3>
+              <p>Il mestolo, le sedie da cucina, i materassi, il letto, una sedia a rotelle. E ancora le lettere, i ritratti, i quaderni di scuola, i giocattoli, gli arnesi da lavoro, una Divina Commedia avvolta nella bandiera tricolore: sono le masserizie degli esuli che – dopo molte traversie – trovano oggi spazio nel Magazzino 26 del Porto Vecchio di Trieste. Raccontano la quotidianità spezzata di migliaia di famiglie.</p>
+            </div>
+
+            <div id="memoria" class="slideshow swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./gallery/gallery_7/cristicchi al magazzino 18.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./gallery/gallery_7/i ritratti foto andrea lasorte.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./gallery/gallery_7/le foto 2.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./gallery/gallery_7/le foto.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./gallery/gallery_7/le lettere foto andrea lasorte.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./gallery/gallery_7/le masserizie 2 - foto massimo silvano.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./gallery/gallery_7/le masserizie 3.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./gallery/gallery_7/le masserizie foto massimo silvano.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./gallery/gallery_7/magazzino 18 masserizie 5 foto massimo silvano.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./gallery/gallery_7/magazzino 18 masserizie 8 foto massimo silvano.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./gallery/gallery_7/magazzino 18 masserizie 8 foto massimo silvano -2.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-lazy"  data-src="./gallery/gallery_7/magazzino 18 masserizie foto massimo silvano.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+                </div>
+              </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TESTO 4 -->
+        <div class="text-section">
+          <section class="text-container">
+            <h3>THE HUMILIATION OF REFUGEE CAMPS</h3>
+            <p class="underlined" fade>
+                   Accommodating the exiles was not easy for Italy, a country on its knees. Those who could not find a way to support themselves were hosted in refugee camps for years, in some cases. The Italian peninsula is dotted with similar structures, sometimes converted from former concentration camps. Life in the camp was “demeaning and dramatic “: families crammed in cubicles with no privacy or toilet, structures so precarious that in Padriciano a little girl froze to death during the harsh winter of 1956.
+            </p>
+            <p>«It was below zero inside the cubicle, and one night my sister got so cold… we called an ambulance, but they could not do anything. Marinella had frozen to death”. Fiore, from Grisignana, offers the most dramatic testimony on life at the refugee camp in Padriciano, in Trieste: one of the 109 created since 1947 to accommodate Julian-Dalmatian exiles, who were mostly not self-sufficient. In order to make more spaces available, the Government converted barracks, hospitals, monasteries, disused factories and even former concentration camps, like Risiera di Sabba (San Sabba Rice Mill) or Fossoli. </p>
+
+            <div class="quote animation-text">
+              <span>È stato un periodo drammatico</span>
+              <span>E CE L’HO ANCORa dentro</span>
+            </div>
+
+            <p>For the most part, exiles went through Trieste and were quickly “fanned out” (this is the term used by authorities), with no chance to express a preference: they had to adapt to availability. What they were presented with was unseemly: the cubicles were a few square meters, partitioned by sheets or wooden panels. In 1963, 8,500 people remained in the centers that were still open. The last one closed in 1975.</p>
+
+            <p>«It was a dramatic time and I still hold it within”. Memories tell stories of precarious hygienic conditions, the humiliation of having one’s fingerprints taken, the sensation of being punished for the fascist war. Integration was not easy because exiles were isolated: citizens saw them as people receiving subsidies and threatening competitors looking for a job. “We were exiles, they did not want us. The stigma remained”.</p>
+            <div class="line-video hr"></div>
+          </section>
+        </div>
+
+
+        <!-- SLIDESHOW 3 BLANK -->
+        <div id="profughi" fade class="slideshow-blank-container">
+          <div class="slideshow swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="swiper-lazy"  data-src="./gallery/gallery_8/1954 10 04  famiglia Gardos scappata da Punta di Salvore arrivata a Muggia - Publifoto Milano.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-lazy"  data-src="./gallery/gallery_8/1954 10 04 Famiglia Tampleniza di Punta Grossa trasporto materiali per imbarco per Punta Sottile (Italia).jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-lazy"  data-src="./gallery/gallery_8/1954 10 10 utlimi arrivi di profughi al centro raccolta di Muggia - Publifoto Milano.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-lazy"  data-src="./gallery/gallery_8/1955 nuovi confini contadini - scritta lottiamo per i diritti della libertà quindi non vogliamo schiavi.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-lazy"  data-src="./gallery/gallery_8/campo profughi di fossoli 2.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-lazy"  data-src="./gallery/gallery_8/campo profughi di fossoli 5.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-lazy"  data-src="./gallery/gallery_8/Campo Profughi di Noghere (Muggia) 1.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+            <div class="swiper-slide">
+                <img class="swiper-lazy"  data-src="./gallery/gallery_8/Campo Profughi di Noghere (Muggia) veduta.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+              <div class="swiper-slide">
+                <img class="swiper-lazy"  data-src="./gallery/gallery_8/Crevatini esodo famiglia con pattuglia Polizia a cavallo.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-lazy"  data-src="./gallery/gallery_8/Crevatini esodo famiglia con pattuglia Polizia a piedi.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-lazy"  data-src="./gallery/gallery_8/FERTILIA (Sardegna) profughi giuliano dalmati ai primi lavori della terra dopo insediamento Campo Profughi.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-lazy"  data-src="./gallery/gallery_8/Mons Giorgio Bruni con la moto usata per scappare a Trieste - Deltafoto Milano.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-lazy"  data-src="./gallery/gallery_8/Mons Giorgio Bruni parroco di Capodistria 1954 10 9 scappato a Trieste nella notte - Deltafoto Milano.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-lazy"  data-src="./gallery/gallery_8/scritte di protesta nelle citta in abbandono della Zona B.jpg" alt="">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+
+        <!-- MOSAICO  -->
+        <div fade class="mosaico-container">
+          <div class="text-section">
+            <div class="text-container">
+              <h3>REDEMPTION</h3>
+              <p>Actresses, athletes, intellectuals, singers, fashion designers, chefs. From an initial status as refugees, they were able to transform into a symbol of redemption for a dispersed population. Sergio Endrigo’s voice, the charms and talent of Laura Antonelli, Nino Benvenuti’s punches, Mario Andretti’s speed, Fulvio Tomizza and Enzo Bettizza’s written works, Ottavio Missoni’s creations, Lidia Bastianich’s culinary art: these are the talents that Julian-Dalmatians were able to share with the world.</p>
+              <div class="line-video hr"></div>
+            </div>
+          </div>
+          <div class="mosaico">
+            <div class="mosaico-container">
+              <div class="image-mosaico">
+                <img class="lozad" data-src="./gallery/gallery_9/MARIO ANDRETTI.jpg" alt="">
+                <span>Mario Andretti</span>
+                <div class="text-mosaico">
+                  Mario Andretti was born in Montona on 28 February, 1940. He had to leave his homeland during the exodus. With his family, he ended up in a refugee camp near Lucca where he started to work as a mechanic apprentice. He then moved to the United States, started racing and in a few years, he become one of the fastest and most successful drivers of all times. Eclectic, multi-champion in all driving categories, from Formula One to Indy car, he won a historic world title in 1978. In 2006 he was nominated “Commendatore” of the Italian Republic and the following year, mayor of the “Free City of Montona in exile”.
+                </div>
+              </div>
+              <div class="image-mosaico">
+                <img class="lozad" data-src="./gallery/gallery_9/LAURA ANTONELLI.jpg" alt="">
+                <span>Laura Antonelli</span>
+                <div class="text-mosaico">
+                  Laura Antonelli - given name Laura Antonaz - was born in Pola on 28 November 1941. The long journey of the Istrian exodus took her first to Naples then to Rome, where she was introduced to cinema. With Femi Benussi, Alida Valli and Sylva Koscina, she formed the “Bellissime quattro” group, Istrian and Dalmatian artists who made a great impression on Italians. Her success peaked between the 1970s and the 1980s, from erotic comedies and drama to pure entertainment and auteur cinema. The unforgettable star of Malizia, 1973, directed by Salvatore Samperi, died on 22 June 2015.
+                </div>
+              </div>
+              <div class="image-mosaico">
+                <img class="lozad" data-src="./gallery/gallery_9/Lidia BASTIANICH.jpg" alt="">
+                <span>Lidia Bastianich</span>
+                <div class="text-mosaico">
+                  Lidia Matticchio Bastianich was born in Pola on 21 February 1947. At nine, she left her homeland with her family on a gruelling journey. She ended up in a refugee camp in Trieste. In 1958, she moved again, to the United States this time, where her extraordinary entrepreneurial adventure started. She opened her first restaurant in Queens, New York, in her early twenties. In 1981, she inaugurated Felidia in Manhattan. There, she prepared jota, gulasch, frico, octopus salad and offered other regional specialties. It was a success. Lidia studied, published cookbooks, hosted TV shows. She has created an empire in the food industry. In addition, she has become the ambassador of Italian cuisine in the United States. Firmly tied to her roots, in one of her many TV interviews in which she had recollections of her childhood, she confessed: “I have been hungry as a child”.
+                </div>
+              </div>
+              <div class="image-mosaico">
+                <img class="lozad" data-src="./gallery/gallery_9/nino benvenuti.jpg" alt="">
+                <span>Nino Benvenuti</span>
+                <div class="text-mosaico">
+                  Giovanni “Nino” Benvenuti was born in Isola d’Istria, the third of five children, on 26 April 1938. Driven by his father’s passion, he started to frequent the boxing ring at a very young age. When he was just 16, he had to leave his home, ending up in Trieste, where he was met with prejudice and indifference. Boxing became a way to redemption. In the ring, where he looked more like a dancer, he moved his way up quickly. Olympic champion in 1960, world champion of mid-weights between 1967 and 1970, he is one of the most beloved athletes of all times in Italy. His first match of the trilogy against Emile Griffith at the Madison Square Garden, on 17 April 1967, became legendary. Since 1996, his name stands out in the International Boxing Hall of Fame.
+                </div>
+              </div>
+              <div class="image-mosaico">
+                <img class="lozad" data-src="./gallery/gallery_9/enzo bettiza.jpg" alt="">
+                <span>Enzo Bettiza</span>
+                <div class="text-mosaico">
+                  Enzo Bettiza was born in Spalato on 7 June 1927. First, he moved with his family to Gorizia then to Milan, as a refugee. “I am an exile in the most complete sense of the word: an organic exile, more than by birth”, he confessed to Il Piccolo in an interview when he was already known as a top-level journalist and an established writer. In his novels and essays, he described the ghosts, the tensions and the contradictions of Central Europe fallen into the Soviet Union’s orbit. He started his journalistic career at Epoca weekly magazine, then moved to La Stampa and Corriere della Sera. In 1974, with Indro Montanelli, he led the split-up that resulted into the birth of Il Giornale nuovo newspaper. He returned to La Stampa in the early 1990’s, and remained there, as a columnist, until his final days. He is the author of several novels and essays and won the Campiello literary prize with Esilio in 1996. He was elected Senator, from 1976 to 1979, then Member of the European Parliament with the Liberal Party, first, then with the Socialists. He died on 28 July 2017.
+                </div>
+              </div>
+              <div class="image-mosaico">
+                <img class="lozad" data-src="./gallery/gallery_9/sergio ENDRIGO.jpg" alt="">
+                <span>Sergio Endrigo</span>
+                <div class="text-mosaico">
+                Sergio Endrigo was born in Pola on 15 June 1933. He spent his childhood in Istria but, in 1947, he was forced to abandon his home with his mother Claudia Smareglia. He moved, as a refugee, first to Brindisi then to Venice. More than 20 years after, he told the story of his family “expelled from Pola” in his song 1947. “I did not suffer much at that time, I was 14 and to me leaving was like an adventure. Not so for my mother: having to abandon her home, friends, familiar places and street scenes, was a huge blow for her. Adults suffered greatly. So, I sang about it, with them in mind, not so much myself”. A cultured and reflective songwriter, he won the Sanremo Song Festival in 1968 with Canzone per te, then came in second with Lontano dagli occhi, and third with L’arca di Noè. In his long career, he collaborated with writers, poets, musicians: from Gianni Rodari to Pier Paolo Pasolini; from Vinicius de Moraes to Giuseppe Ungaretti; from Toquinho to Luis Bacalov, with whom he won a posthumous Oscar for Il postino’s soundtrack. He died in Rome on 7 September 2005.
+                </div>
+              </div>
+              <div class="image-mosaico">
+                <img class="lozad" data-src="./gallery/gallery_9/missoni.png" alt="">
+                <span>Ottavio Missoni</span>
+                <div class="text-mosaico">
+                Ottavio Missoni was born on 11 February 1921 in Ragusa. As a child, he moved to Zara where he alternated between sports and study. He raced the 400 meters first, then the 400 hurdles. In 1937 he was asked to join the National team. But war broke out and Missoni went to the front. He was captured in El Alamein by the British and spent four years in a prison camp. He ended up in Trieste and started competing again. In 1948 he was the flag-bearer for the National team at the Olympic Games in London. He met Rosita Jelmini, they fell in love and got married. In addition, they created one of the most prestigious fashion brands, exporting the originality and quality of Italian knitwear to the world market. The first collection was released in 1958 and the first fashion show took place in 1966. From there, it was one triumph after the other. He died at 92, in 2013. For 20 years, he has been the honorary mayor of the “Free city of Zara in exile”.
+                </div>
+              </div>
+              <div class="image-mosaico">
+                <img class="lozad" data-src="./gallery/gallery_9/abdon pamich.JPG" alt="">
+                <span>Abdon Pamich</span>
+                <div class="text-mosaico">
+              Abdon Pamich, one of the most successful and long-lived Italian race walkers, was born in Fiume, on 3 October 1933. At 14, in 1947, he had to leave his hometown with his elder brother in an effort to reunite with their father Giovanni. The journey lasted two months, an adventurous, forced march that led, in the end, to a refugee camp. A member of the Italian National team (the Azzurri) from 1954 to 1964, he participated in five Olympic Games, winning a bronze medal in Rome, in 1960, and gold in Tokyo, in 1964, after an exciting duel with Vincent Nihill (British) in the 50 km race. Race walking coach and athletic director of the Federal Tennis Center in Latina, two university degrees - in Psychology and Sociology of Sport - Pamich has always been actively involved in the preservation of the historic memory of the Julian-Dalmatian community.
+                </div>
+              </div>
+              <div class="image-mosaico">
+                <img class="lozad" data-src="./gallery/gallery_9/agostino straulino.jpg" alt="">
+                <span>Agostino Straulino</span>
+                <div class="text-mosaico">
+                  Agostino Straulino, “Son of the sea”, “Master of the wind”, a living legend, was born in Lussinpiccolo on 10 October 1914. When he was a child, his father and his uncle built for him a little boat, “Sogliola” (Sole), and “Tino” began to sail. After his diploma, he wandered throughout Dalmatia on “Lanzarda”, an eight-meter “passera”, a typical, traditional boat, with the company of his dog, Mark. He enrolled in the Naval Academy in Livorno, raced for the Academy, raked in victories and qualified for the Olympic Games in Berlin in 1936. War broke out. He was deployed on the cruiser “Garibaldi”, where he remained until 1942, when he joined the Gamma frogmen units and received two medals for bravery. After 1943, he left the Decima Mas and tried to go back home but was jailed by the Jugoslav partisans. He tried to evade capture several times, succeeded, but was subsequently captured by the Germans. He was sent to forced labor. He finally managed to escape by boat and reached Trieste. Back in the Navy, the war over, he was assigned to mine-clearing work in national ports. During one mission, in 1947, he was struck by a blast of mustard gas and partially lost his sight. He slowly recovered but was affected by the incident for the rest of his life. That is when he started training at night. After the disappointment of London’s Olympic Games, he recorded an incredible progression of victories until 1959.
+                  In just one year, 1952, he won an Olympic gold, he was world champion, European champion, and Italian champion. In 1956 he commanded the training ship Amerigo Vespucci. His memorable passage through the Taranto Channel in full sail and piloting the ship up the Thames to London became legendary. On 11 October 1972, he stepped down from active service, with the title of vice Admiral. He continued to participate in and win several sailing regattas in the over-60 category, the last of which in 2002, when he was 88. In 2002 he was awarded the “ordine di Cavaliere di Gran Croce della Repubblica Italiana” (Order of the Great Cross of the Italian Republic). He died on 14 December 2004. He is buried in the family tomb in Lussinpiccolo: his homecoming.
+                </div>
+            </div>
+            <div class="image-mosaico">
+              <img class="lozad" data-src="./gallery/gallery_9/giorgio-luxardo.jpg" alt="">
+              <span>Giorgio Luxardo</span>
+              <div class="text-mosaico">
+              Giorgio Luxardo was born in Zara on 1 September 1897 to a family of entrepreneurs: Girolamo, the head of the family, had a brilliant intuition and started an industrial production of the “rosolio maraschino”, a liquor obtained from distilled marasca cherries from Zara. Giorgio started working at the family factory at 25, along with his brothers Nicolò, Demetrio and Pietro, and contributed to its growth. World War II inflicted a deathblow to Luxardo’s business: first, the shortage of raw materials; a huge fire; the occupation of Tito’s partisans; his brothers’ deaths; the confiscation of property, and finally the destruction of the factory. Giorgio had to leave Dalmatia and accomplished a miracle: he transferred his activity to the hills of Torreglia, in the province of Padua, where he managed to grow marasca cherries from Zara and reopened a factory, diversifying production, in 1947. He died on 1 July 1963.
+              </div>
+            </div>
+            <div class="image-mosaico">
+              <img class="lozad" data-src="./gallery/gallery_9/fulvio-tomizza.jpg" alt="">
+              <span>Fulvio Tomizza </span>
+              <div class="text-mosaico">
+              Fulvio Tomizza was born in Materada, Istria, on 26 January 1935. His childhood was not easy, interethnic conflicts were raging and after the war his father was sent to prison twice and their properties were confiscated. His family moved to Trieste. After his father’s death, he succeeded in bringing him back to Materada, and afterwards he moved to Belgrade to study. In 1955, after the Memorandum of understanding of London was signed, he went back to Trieste where he worked as a journalist. His literary debut was in 1957, three short stories that awarded him the Cinque Bettole di Bordighera literary prize. In 1966, he started to publish his Istrian Trilogy, composed of Materada, La ragazza di Petrovia, Il bosco di acacie. A “frontier writer”, author of plays and novels such as La finzione di Maria, Gli sposi di via Rossetti and Franziska, he won several prizes and was awarded the Premio Strega for La miglior vita. He died in Trieste on 21 May 1999. He is buried in his hometown, Materada, according to his wishes.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+        <!-- SLIDESHOW 4 -->
+        <div class="slideshow-container  no-caption podcast">
+          <div class="container">
+            <div fade class="slideshow-text">
+              <h3>EXILES AND CHAMPIONS</h3>
+              <p>They left Istria and Dalmatia and redeemed themselves through hardships and success in sports. They are champions: Benvenuti (boxing), Andretti (car racing), Straulino (sailing), Loik (soccer), Pamich and Missoni (athletics). Andretti speaks with an American accent but Montona is still in his heart. Benvenuti left Isola in 1954 and still remembers “the political police officer telling my mother we would have to leave the following day: my inner desire for redemption drove all my successes”.</p>
+              <div class="line-video hr"></div>
+            </div>
+            <div id="podcast" fade class="slideshow swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <iframe src="https://open.spotify.com/embed/episode/7hqU2nOJiblmTWrVdLattr" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="swiper-slide">
+                <iframe src="https://open.spotify.com/embed/episode/3YRc1mXh8Wcx31sx8TJ36E" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="swiper-slide">
+                  <iframe src="https://open.spotify.com/embed/episode/01wWu8aqUT4TXQ1LoATTPz" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="swiper-slide">
+                  <iframe src="https://open.spotify.com/embed/episode/01wWu8aqUT4TXQ1LoATTPz" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="swiper-slide">
+                  <iframe src="https://open.spotify.com/embed/episode/3jSAqM5X9VW1RimFOdrToV" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="swiper-slide">
+                  <iframe src="https://open.spotify.com/embed/episode/2uEge650t2eGTHr5S685Vc" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="swiper-slide">
+                  <iframe src="https://open.spotify.com/embed/episode/5adynieZD2TyP3qTbMg1hm" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+              <span class="call-to-podcast"><a target="_blank" href="https://anchor.fm/anvgd">Ascolta gli altri podcast della serie ↗</a></span>
+          </div>
+        </div>
+
+        <!-- TESTO 6 -->
+        <div class="text-section">
+          <section class="text-container">
+            <h3>THE FUTURE, AT LAST </h3>
+            <p fade>
+              A young student explains, “memory not only entails a recollection of how events unfolded, but also returns a dignity to those who lived and were personally affected by this terrible tragedy”. Today, memory and historical reconstruction can peacefully coexist, even more so after a new page was opened by the Italian and Slovenian Presidents (Sergio Mattarella and Borut Pahor), who held hands in the symbolic locations of the violence perpetrated in Trieste by Nazi fascists and Communists.
+            </p>
+            <div class="quote big  animation-text">
+              <span>MEMORIA E RICOSTRUZIONE STORICA</span>
+              <span> POSSONO OGGI convivere serenamente</span>
+            </div>
+            <p>To arrive at this point, it was first necessary to open a dialogue in Italy: a path traced by Gianfranco Fini and Luciano Violante in 1998, that led - six years after - to establishing the “Giorno del Ricordo” (Remembrance Day). Its goal was to finally ensure that the troubled history of the Eastern border was known to the whole Nation. Following those threads digitally is essential in order to communicate with youth, who, perhaps for the first time, can be acquainted with an unburdened narration, that can finally be consigned to history without ignoring the lives of ordinary people, who were mostly bystanders or victims of history. </p>
+
+
+            <p>
+            The postwar period did not only bring deep wounds. Since the 1960s, the border between Italy and Slovenia continued to separate two worlds but was the most accessible border established along the Iron Curtain. Some exiles could not even think to return and visit their homeland, but others reestablished a link to Istria, which is, to this day, a wonderfully varied place for languages and identities. The fall of Communism and the European integration are doing the rest, after a long journey of mutual understanding that is up to youth to make irreversible.</p>
+            <div class="line-video hr"></div>
+          </section>
+        </div>
+
+        <!-- VIDEO LARGE 2 -->
+        <div id="last-video" class="video-large-container">
+          <div class="video-full">
+            <video poster="./gallery/poster/Esuli_Video_6.jpg" controls>
+             <source src="https://media.gedidigital.it/repubblicatv/file/2021/07/10/781205/781205-video-rrtv-1200-100721scuole_e_la_conoscenza_del.mp4" type="video/mp4">
+           </video>
+          </div>
+        </div>
+
+    </div>
+
+
+    <footer>
+      <div class="footer-container">
+        <div class="col-left">
+          <div class="row">
+            <h6>Editorial project by</h6>
+            Roberta Giani
+          </div>
+          <div class="row">
+            <h6>RESEARCH</h6>
+            Jacopo Bassi
+          </div>
+          <div class="row">
+            <h6>Photos</h6>
+            Archivi del CDM — Centro di Documentazione Multimediale della Cultura Giuliana Istrana Fiuamana Dalmata
+          </div>
+          <div class="row">
+            <h6>Made for</h6>
+            ANVGD (Associazione Nazionale Venezia Giulia e Dalmazia) e CDM
+          </div>
+        </div>
+        <div class="col-right">
+          <div class="row">
+          <h6>Videos, graphics and research</h6>
+          <a target="_blank" href="https://www.pensierovisibile.it/">Pensiero Visibile</a>
+          </div>
+          <div class="row">
+            <h6>Scientific supervision</h6>
+            Prof.re Davide Rossi
+          </div>
+          <div class="row double">
+            <div class="col">
+              <h6>Podcasts by</h6>
+              <a target="_blank" href="https://www.storieavvolgibili.it/">Storie Avvolgibili</a>
+            </div>
+            <div class="col">
+              <h6>Readings</h6>
+              Adalberto Scemma
+            </div>
+          </div>
+          <div class="row">
+            <h6>MADE WITH THE support OF</h6>
+            Legge n.72/01 “Interventi a tutela del patrimonio storico e culturale delle comunità degli esuli italiani dell’Istria, da Fiume e dalla Dalmazia” e successive modifiche.
+          </div>
+        </div>
+
+          <esi:include src="https://lab.gedidigital.it/utils/includes/footer/stampa_nazionale.html" />
+      </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
+    <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
+  </body>
+
+
+</html>
