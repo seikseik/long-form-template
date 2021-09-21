@@ -8,7 +8,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $pageTitle; ?></title>
     <meta name="description" content="<?php echo $pageDescription; ?>" />
     <link rel="canonical" href="<?php echo $pageUrl; ?>">
@@ -19,7 +19,7 @@
       var pageType = 'dettaglio_content';
     </script>
     <esi:include src='http://www.repstatic.it/cless/common/stable/js/script/tlh/traffic_light_handler.html' />
-    <!-- <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script> -->
+   <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script>
     <!-- CONFIGURAZIONE STATS-->
 
     <!-- facebook -->
@@ -40,8 +40,8 @@
     <meta name="twitter:description" content="<?php echo $pageDescription; ?>">
     <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg.jpg'); ?>">
     <meta name="twitter:url" content="<?php echo $pageUrl; ?>">
-    <!-- <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
-     -->
+    <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
+
     <style media="screen">
       @font-face {
       font-family: 'HK-Light';
@@ -84,7 +84,7 @@
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
 
-  <link href="main.14fdf7c15f0031312a22.css" rel="stylesheet"></head>
+  <link href="main.3762c1b1bf73ffee680a.css" rel="stylesheet"></head>
 
   <body class="ita">
 
@@ -117,7 +117,7 @@
                 <p>Dalla fine cruenta della convivenza in Istria, Fiume e Dalmazia al faticoso e sofferto percorso di riconciliazione. La storia del confine orientale raccontata da chi l’ha vissuta. Per ricordare</p>
               </div>
               <div class="copy">
-              <span>di</span>  ROBERTA GIANI
+              <span>di</span>  DIEGO D'AMELIO
               </div>
             </div>
           </div>
@@ -165,7 +165,7 @@
 
             <div class="video-part">
               <div class="video-large">
-              <iframe src="https://video.ilpiccolo.gelocal.it/embed/dossier/noi-esuli/il-confine/146357/147003" width="" height=""></iframe>
+              <iframe src="https://video.ilpiccolo.gelocal.it/embed/dossier/noi-esuli/il-confine/146357/147003?responsive=true&generation=onclick&bgc=ffffff&adref=<? echo $pageUrl; ?>" width="" height=""></iframe>
              </div>
             </div>
             <div class="text-part">
@@ -228,7 +228,7 @@
             <div class="video-part">
               <div class="video-large">
 
-                <iframe src="https://video.ilpiccolo.gelocal.it/embed/dossier/noi-esuli/cosi-si-arrivo-all-esodo/147364/148010" width="" height=""></iframe>
+                <iframe src="https://video.ilpiccolo.gelocal.it/embed/dossier/noi-esuli/cosi-si-arrivo-all-esodo/147364/148010?responsive=true&generation=onclick&bgc=ffffff&adref=<? echo $pageUrl; ?>" width="" height=""></iframe>
 
              </div>
             </div>
@@ -444,7 +444,7 @@
 
             <div class="video-part">
               <div class="video-large">
-               <iframe src="https://video.ilpiccolo.gelocal.it/embed/dossier/noi-esuli/perle-del-ricordo/148105/148751" width="" height=""></iframe>
+               <iframe src="https://video.ilpiccolo.gelocal.it/embed/dossier/noi-esuli/perle-del-ricordo/148105/148751?responsive=true&generation=onclick&bgc=ffffff&adref=<? echo $pageUrl; ?>" width="" height=""></iframe>
              </div>
             </div>
             <div class="text-part">
@@ -483,7 +483,7 @@
 
             <div class="video-part">
               <div class="video-large">
-               <iframe src="https://video.ilpiccolo.gelocal.it/embed/dossier/noi-esuli/piangevamo-tutti/146361/147007" width="" height=""></iframe>
+               <iframe src="https://video.ilpiccolo.gelocal.it/embed/dossier/noi-esuli/piangevamo-tutti/146361/147007?responsive=true&generation=onclick&bgc=ffffff&adref=<? echo $pageUrl; ?>" width="" height=""></iframe>
              </div>
             </div>
             <div class="text-part">
@@ -544,7 +544,7 @@
 
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiper-lazy"  data-src="./gallery/gallery_7/le foto.jpg" alt="">
+                  <img class="swiper-lazy"  data-src="./gallery/gallery_7/le_foto.jpg" alt="">
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 
                 </div>
@@ -840,7 +840,7 @@
         <!-- VIDEO LARGE 2 -->
         <div id="last-video" class="video-large-container">
           <div class="video-full">
-          <iframe src="https://video.ilpiccolo.gelocal.it/embed/dossier/noi-esuli/le-scuole-e-la-conoscenza-dell-esodo/148106/148752" width="" height=""></iframe>
+          <iframe src="https://video.ilpiccolo.gelocal.it/embed/dossier/noi-esuli/le-scuole-e-la-conoscenza-dell-esodo/148106/148752?responsive=true&generation=onclick&bgc=ffffff&adref=<? echo $pageUrl; ?>" width="" height=""></iframe>
           </div>
         </div>
 
@@ -866,6 +866,10 @@
             <h6>Realizzato per</h6>
             ANVGD (Associazione Nazionale Venezia Giulia e Dalmazia) e CDM
           </div>
+          <div class="row">
+            <h6>UNA PRODUZIONE</h6>
+            <a target="_blank" href="https://www.gedivisual.it/">Gedi Visual</a>
+          </div>
         </div>
         <div class="col-right">
           <div class="row">
@@ -890,6 +894,10 @@
             <h6>REALIZZATO CON IL CONTRIBUTO DI</h6>
             Legge n.72/01 “Interventi a tutela del patrimonio storico e culturale delle comunità degli esuli italiani dell’Istria, da Fiume e dalla Dalmazia” e successive modifiche.
           </div>
+          <div class="row">
+            <h6>GRAFICA E SVILUPPO</h6>
+            <a taget="_blank" href="https://www.beamediacompany.com/">BEA</a> x Gedi
+          </div>
         </div>
 
           <esi:include src="https://lab.gedidigital.it/utils/includes/footer/stampa_nazionale.html" />
@@ -900,7 +908,7 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
-  <script type="text/javascript" src="main.8a338ac70d077bf80ce2.bundle.js"></script></body>
+  <script type="text/javascript" src="main.00a58375463d863bdfa1.bundle.js"></script></body>
 
 
 </html>

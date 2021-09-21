@@ -139,3 +139,46 @@ const swiper = new Swiper('.swiper-scroll-container', {
   },
   },
 });
+
+
+// mosaico
+
+function is_touch_enabled() {
+           return ( 'ontouchstart' in window ) ||
+                  ( navigator.maxTouchPoints > 0 ) ||
+                  ( navigator.msMaxTouchPoints > 0 );
+       }
+
+let mosaico = document.querySelectorAll(".image-mosaico");
+ if( is_touch_enabled() ){
+   let pageCont = document.querySelector(".page-container")
+     pageCont.addEventListener("click", function(){
+       console.log("aa")
+       let allTxt = document.querySelectorAll(".text-mosaico");
+       allTxt.forEach((item, i) => {
+         item.style.opacity = 0;
+         item.style.visibility = "hidden";
+       });
+     })
+   mosaico.forEach((item, i) => {
+     item.addEventListener("click", function(e){
+       let txt = item.querySelector(".text-mosaico");
+       txt.style.opacity = 1;
+       txt.style.visibility = "visible";
+       e.stopPropagation();
+     })
+   });
+ }else{
+   mosaico.forEach((item, i) => {
+     item.addEventListener("mouseover", function(){
+       let txt = item.querySelector(".text-mosaico");
+       txt.style.opacity = 1;
+       txt.style.visibility = "visible";
+     })
+     item.addEventListener("mouseout", function(){
+       let txt = item.querySelector(".text-mosaico");
+       txt.style.opacity = 0;
+       txt.style.visibility = "hidden";
+     })
+   });
+ }

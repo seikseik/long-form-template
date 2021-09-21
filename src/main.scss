@@ -215,7 +215,7 @@ z-index: 1;
 			.toolbar{
 				display:flex;
 				justify-content: flex-end;
-				margin-right: 10vw;
+				margin-right: 14vw;
 				.language{
 					display: flex;
 					a{
@@ -255,13 +255,12 @@ z-index: 1;
 			position: absolute;
 			height: 2px;
 			background: $black;
-			bottom:10px;
+			bottom:50px;
 			left: 0;
 		}
 		.subtitle{
 			max-width: 70%;
 			margin-bottom: $spacing*10;
-			margin-top: $spacing*2;
 			margin-left: 16vw;
 		}
 		.copy{
@@ -502,6 +501,39 @@ z-index: 1;
 
 
 // SLIDESHOW
+
+
+// freccia-bianca
+.swiper-button-next:after{
+	content: " " !important;
+	background-image: url('./assets/freccia-r.svg') !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+}
+.swiper-button-prev:after{
+	content: " " !important;
+	background-image: url('./assets/freccia-l.svg') !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+}
+// freccia-nera
+
+#giornale, #memoria, #podcast{
+	.swiper-button-next:after{
+		content: " " !important;
+		background-image: url('./assets/freccia-r-nera.svg') !important;
+		background-repeat: no-repeat !important;
+		background-position: center !important;
+	}
+	.swiper-button-prev:after{
+		content: " " !important;
+		background-image: url('./assets/freccia-l-nera.svg') !important;
+		background-repeat: no-repeat !important;
+		background-position: center !important;
+	}
+}
+
+
 
 .swiper-button-next, .swiper-rtl .swiper-button-prev{
 	&:focus{
@@ -808,6 +840,22 @@ z-index: 1;
 			position: relative;
 			width:23.33vw;
 			height:23.33vw;
+
+			&:nth-child(10){
+				width:35vw;
+				height:23.33vw;
+				img{
+					min-width: 35vw;
+				}
+			}
+			&:last-child{
+				width:35vw;
+				height:23.33vw;
+				img{
+					min-width: 35vw;
+				}
+			}
+
 			cursor: pointer;
 			&:hover{
 				img{
@@ -815,9 +863,7 @@ z-index: 1;
 	 				filter: grayscale(100%);
 				}
 				.text-mosaico{
-					opacity: 1;
 					transform: scale(1);
-					visibility: visible;
 				}
 			}
 			img{
@@ -1047,7 +1093,24 @@ footer{
 
 // MOBILE MOBILE MOBILE
 
+@media (hover: none) {
+  .image-mosaico:hover{
+		.text-mosaico{
+			opacity: inherit;
+			visibility: inherit;
+		}
+	}
+}
+
 @media only screen and (max-width: 768px) {
+
+	.line-video{
+		margin-bottom: $spacing*2;
+	}
+
+	.swiper-lazy{
+		min-height: 100%;
+	}
 	.page-container{
 		padding-bottom: $spacing*5;
 	}
@@ -1056,6 +1119,7 @@ footer{
 		width: 100%;
 		padding: 0 $spacing*3;
 		margin: 0;
+		max-width: 100%;
 	}
 	.hero{
 		overflow:hidden;
@@ -1098,6 +1162,7 @@ footer{
 		width:100%;
 		max-width: 100%;
 		margin-bottom: $spacing*7;
+		margin-top: $spacing*3;
 	}
 	.hero .title-section .copy {
     margin-left: 0vw;
@@ -1194,7 +1259,10 @@ footer{
 		margin-bottom: $spacing*2;
 		background: $grey;
 		overflow: hidden;
-		height: 125vw;
+		height: 500px;
+		.line-video{
+			display: none;
+		}
 		.scroll-container{
 
 			.swiper-slide{
@@ -1218,7 +1286,7 @@ footer{
 		display: none !important;
 	}
 	.scroll-section .swiper-button-next, .scroll-section .swiper-button-prev{
-		top:-25vw !important;
+		top:40px !important;
 	}
 	 .scroll-section .swiper-button-prev{
 		 right:70px;
@@ -1245,6 +1313,9 @@ footer{
 					margin-bottom: $spacing*2;
 				}
 			}
+			.caption{
+				margin: $spacing*3 0 $spacing*2 0 !important;
+			}
 		}
 		.swiper-button-next, .swiper-button-prev{
 			top:unset;
@@ -1266,6 +1337,7 @@ footer{
 	.slideshow-blank-container{
 		max-width: 100%;
 		margin: $spacing*3 $spacing*3;
+		width:unset;
 		.swiper-wrapper{
 			padding-bottom: $spacing*10;
 		}
@@ -1298,15 +1370,33 @@ footer{
 		.mosaico{
 			width:100%;
 			background: 0;
+			margin-bottom: $spacing*15;
 			.image-mosaico{
 				width: 75vw;
 				height: 75vw;
 				border:2px solid $black;
-				// overflow: hidden;
 				margin-top: -2px;
+				&:nth-child(10){
+					width: 75vw;
+					height: 75vw;
+					img{
+						display: flex;
+						min-height: 100%;
+						height: 100%;
+					}
+				}
+				&:last-child{
+					width: 75vw;
+					height: 75vw;
+					img{
+						display: flex;
+						min-height: 100%;
+						height: 100%;
+					}
+				}
 				img{
 					display: flex;
-					min-height: unset;
+					min-height: 100%;
 					height: 100%;
 				}
 				&:nth-child(even){
@@ -1331,7 +1421,9 @@ footer{
 			}
 		}
 	}
-
+	footer .footer-container .col-left, footer .footer-container .col-right{
+		padding: 0;
+	}
 	footer{
 		.footer-container{
 			width:100%;
