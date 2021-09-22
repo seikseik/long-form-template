@@ -282,8 +282,10 @@ z-index: 1;
 				top:-$spacing*3;
 				right:0;
 				display: flex;
-				img{
+				a{
 					margin-left: $spacing*3;
+				}
+				img{
 					height: 20px;
 				}
 			}
