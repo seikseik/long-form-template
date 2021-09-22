@@ -716,6 +716,14 @@ z-index: 1;
 		font-size: 18px;
 		text-decoration: underline;
 	}
+
+	#last-quote{
+		span{
+			font-size: 2.4vw;
+			height: 3vw;
+		}
+	}
+
 	.quote{
 		margin: 5vw 0;
 		margin-left: -10vw;
@@ -1185,6 +1193,16 @@ footer{
 	 width: 100%;
 	 margin: 0;
 	}
+	.text-section #last-quote{
+		span{
+			font-size: 3vw;
+			height: 4vw;
+			&:last-child{
+				align-self: flex-end;
+			}
+		}
+	}
+
 	.text-section .quote{
 		margin: 5vw 0;
 		width:100%;
@@ -1197,6 +1215,7 @@ footer{
 			}
 			&:last-child{
 				margin-left: 0;
+				align-self: flex-end;
 			}
 		}
 
