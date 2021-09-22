@@ -541,6 +541,18 @@ z-index: 1;
 		outline: none !important;
 	}
 }
+
+.image-container{
+	width:100%;
+	img{
+		display: block;
+		margin: 0 auto;
+		height: auto;
+		max-width: 100%;
+		width: auto !important;
+		max-height: 800px;
+	}
+}
 #profughi{
 	img{
 		width:100%;
@@ -574,8 +586,8 @@ z-index: 1;
 	}
 }
 #memoria{
-	width: 50vw;
-	max-width: 800px;
+	width: 60vw;
+	max-width: 1000px;
 	margin: 0 auto;
 	img{
 		outline: 8px solid white;
@@ -583,17 +595,19 @@ z-index: 1;
 	}
 }
 #profughi{
-	width: 50vw;
-	max-width: 800px;
+	width: 60vw;
+	max-width: 1000px;
 }
 #giornale{
-	width: 50vw;
-	max-width: 800px;
+	width: 60vw;
+	max-width: 1000px;
 	margin: 0 auto;
-	.container .slideshow img {
-	    margin-left: 10% !important;
-	}
+	// .container .slideshow img {
+	//     margin-left: 10% !important;
+	// }
 }
+
+
 .swiper-container{
 	position: relative !important;
 }
@@ -696,7 +710,8 @@ z-index: 1;
 	}
 }
 
-.slideshow-container .container #giornale img, .slideshow-container .container #memoria img,  {
+// .slideshow-container .container #giornale img,
+ .slideshow-container .container #memoria img,  {
     margin: 0 auto;
     width: 80% !important;
 		margin-left: 10%;
@@ -832,8 +847,7 @@ z-index: 1;
 	margin-bottom: $spacing*25;
 	overflow: hidden;
 	img{
-		width:80% !important;
-		margin-left: 10%;
+		width:auto !important;
 	}
 }
 
@@ -943,6 +957,7 @@ footer{
 		color:white;
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
 		height: 100%;
 		position: relative;
 		padding: $spacing*4 $spacing*10;
@@ -984,6 +999,14 @@ footer{
 		}
 	}
 }
+}
+.footer-include{
+	width:100%;
+	font-size: 14px;
+	opacity: 0.7;
+	*{
+		padding: 0 5px;
+	}
 }
 
 // mobile
@@ -1130,6 +1153,7 @@ footer{
 	#profughi,
 	#giornale{
 	width: 100%;
+	// height: 100%;
 }
 
 	.line-video{
@@ -1377,12 +1401,13 @@ footer{
 		max-width: 100%;
 		padding: $spacing*3 $spacing*3;
 		margin: $spacing*3 0;
+		margin-bottom: 0;
 		width:unset;
 		.swiper-wrapper{
-			padding-bottom: $spacing*10;
+			padding-bottom: 75px;
 		}
 		img{
-			width:100% !important;
+			width:auto !important;
 			margin-left: 0;
 		}
 		.swiper-button-next, .swiper-button-prev{
