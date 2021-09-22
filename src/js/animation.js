@@ -117,7 +117,7 @@ swipers.forEach((item, i) => {
     prevEl: '.swiper-button-prev',
     },
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 30,
     centeredSlides: true,
     preloadImages: false,
     lazy: true,
@@ -148,16 +148,17 @@ function is_touch_enabled() {
                   ( navigator.maxTouchPoints > 0 ) ||
                   ( navigator.msMaxTouchPoints > 0 );
        }
+       console.log("ciao")
 
 let mosaico = document.querySelectorAll(".image-mosaico");
  if( is_touch_enabled() ){
-   let pageCont = document.querySelector(".page-container")
-     pageCont.addEventListener("click", function(){
-       console.log("aa")
-       let allTxt = document.querySelectorAll(".text-mosaico");
-       allTxt.forEach((item, i) => {
-         item.style.opacity = 0;
-         item.style.visibility = "hidden";
+       let close = document.querySelectorAll(".close");
+       close.forEach((item, i) => {
+         item.addEventListener("click", function(e){
+           console.log(item.parentElement)
+           item.parentElement.style.visibility = "hidden";
+           item.parentElement.style.opacity = 0;
+           e.stopPropagation();
        });
      })
    mosaico.forEach((item, i) => {

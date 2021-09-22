@@ -1375,7 +1375,8 @@ footer{
 
 	.slideshow-blank-container{
 		max-width: 100%;
-		margin: $spacing*3 $spacing*3;
+		padding: $spacing*3 $spacing*3;
+		margin: $spacing*3 0;
 		width:unset;
 		.swiper-wrapper{
 			padding-bottom: $spacing*10;
@@ -1415,6 +1416,19 @@ footer{
 				height: 75vw;
 				border:2px solid $black;
 				margin-top: -2px;
+				.close{
+					background-image: url("assets/close.svg")!important;
+			    background-position: 100%!important;
+			    background-repeat: no-repeat!important;
+			    content: " "!important;
+			    height: 18px;
+			    margin: 4px 0px;
+			    position: relative;
+			    right: -15px;
+			    top: -10px;
+			    width: 26px;
+			    width: 100%;
+				}
 				img{
 					display: flex;
 					min-height: 100%;
