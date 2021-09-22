@@ -268,7 +268,7 @@ z-index: 1;
 			margin-left: 16vw;
 		}
 	}
-	.image-container{
+	.image-container-hero{
 		z-index: 2;
 		.container{
 			position: relative;
@@ -1104,7 +1104,7 @@ footer{
 	.video-section .video-row{
 		width:80vw;
 	}
-	.hero .image-container .container{
+	.hero .image-container-hero .container{
 		max-width: 1400px;
 	}
 	.text-section .quote{
@@ -1178,7 +1178,7 @@ footer{
 	.hero{
 		overflow:hidden;
 	}
-	.hero .image-container .container .social{
+	.hero .image-container-hero .container .social{
 		right:35px;
 	}
 	.hero .toolbar-container{
