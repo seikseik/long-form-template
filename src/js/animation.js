@@ -12,6 +12,8 @@ import { SplitText } from "gsap/SplitText";
   gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, SplitText);
 
 
+let menuBtn = document.querySelector(".menu");
+menu-
 
   // animation hero text
   // const heroTitle = document.querySelector(".animation-text-hero");
