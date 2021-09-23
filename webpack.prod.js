@@ -24,12 +24,6 @@ module.exports = merge(common, {
         filename: "index.html",
         template: "./src/template.html",
         minify: false
-      }),
-      new HtmlWebpackPlugin({
-        title: "Home-eng",
-        filename: "index-en.html",
-        template: "./src/template-eng.html",
-        minify: false
       })
     ]
   },
