@@ -45,7 +45,7 @@
       <!-- font  -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;800&family=Inter:wght@300&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=Inter:wght@300;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
     <link
       rel="stylesheet"
@@ -106,7 +106,7 @@
         <div class="menu-item four disabled">
           <div class="menu-item-container">
             <span class="number">4</span>
-            <h2>La formula magica</h2>
+            <h2>La formula  magica</h2>
             <h4>dell’ispirazione</h4>
             <div class="vertical-line first-line"></div>
             <span class="menu-date">25 Ottobre 2021</span>
@@ -119,8 +119,15 @@
 
     <div class="hero">
       <div class="col-left">
-        <img src="./assets/hero.jpg" alt="">
-        <span class="menu closed">MENU</span>
+        <img class="image-hero" src="./assets/hero.jpg" alt="">
+        <div class="menu">
+            <span class="menu-open">MENU</span>
+            <span class="menu-closed">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.57991 15.976L0.211914 14.572L6.69191 8.12803L0.211914 1.64803L1.57991 0.280029L8.05991 6.72403L14.5399 0.280029L15.9079 1.64803L9.46391 8.12803L15.9079 14.572L14.5399 15.976L8.05991 9.49603L1.57991 15.976Z" fill="#282928"/>
+              </svg>
+            </span>
+        </div>
         <div class="logo">
           <img src="./assets/logo.svg" alt="">
         </div>
@@ -144,14 +151,18 @@
             </div>
           </div>
         </div>
+        <div class="social">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"><img src="./assets/fb.svg" alt=""></a>
+          <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"><img src="./assets/twitter.svg" alt=""></a>
+        </div>
       </div>
     </div>
 
       <div class="page-container">
 
-        <section class="quote-section left-quote">
+        <section  class="quote-section left-quote">
           <div class="hr top"></div>
-          <div class="quote-text">
+          <div fade class="quote-text">
             «Non dimenticate il Serpente... Il serpente dovrebbe essere a ogni dito e attorno a ogni polso e ovunque. Il serpente è il motivo delle ore nella gioielleria»
           </div>
           <div class="quote-name">
@@ -173,7 +184,7 @@
               <span>LOREM IPSUM</span>
             </div>
           </div>
-          <div class="text-inner first-text">
+          <div fade class="text-inner first-text">
             <p> <span class="dropcap">M</span>
             Rhoncus egestas volutpat volutpat commodo tellus. Lorem tortor mi fringilla mi. Urna magnis id consequat tempus eu justo placerat cras blandit. Sed tellus scelerisque ut</p>
             <p>nunc aliquet imperdiet pellentesque consequat ultricies. Nibh pellentesque nisi in nunc ut dignissim donec.</p>
@@ -183,20 +194,20 @@
 
         <div class="image-row first-row">
           <div class="left">
-            <img src="./assets/img1.png" alt="">
-            <div class="caption-img">
+            <img fade-up src="./assets/img1.png" alt="">
+            <div fadew class="caption-img">
               Gravida ac ac egestas condimentum ipsum aliquet. Consectetur feugiat odio feugiat euismod aenean. Purus scelerisque
             </div>
           </div>
           <div class="right">
-            <img src="./assets/img2.png" alt="">
-            <div class="caption-img">
+            <img fade-up src="./assets/img2.png" alt="">
+            <div fade class="caption-img">
               Amet ut sed non interdum congue. Ipsum eu enim orci, tellus viverra. Tellus at
             </div>
           </div>
         </div>
 
-        <section class="text-container">
+        <section fade class="text-container">
           <div class="text-inner first-text">
             <p>Et, fermentum, eu ullamcorper at nisl. Lorem faucibus dui, ut magnis feugiat cursus rhoncus id. Tristique vitae nibh arcu hac maecenas arcu, amet elementum. Cras arcu, sed amet nunc. Placerat pretium ultrices pulvinar lacus.</p>
             <p>Mi at quam at consectetur vulputate sed augue metus, turpis. Turpis a in libero in in cursus. Ac ultricies ac, orci massa maecenas.</p>
@@ -210,14 +221,14 @@
               <h4>Richard Burton</h4>
             </div>
           </div>
-          <div class="quote-text">
+          <div fade class="quote-text">
             «L'unica parola
             in italiano che Elizabeth conosce è Bulgari»
           </div>
           <div class="hr bottom"></div>
         </section>
 
-        <section class="text-container">
+        <section fade class="text-container">
           <div class="text-inner first-text">
             <p>Quisque gravida id pretium justo, condimentum. Dictum egestas consectetur ultricies enim, ipsum, a at. Facilisi nibh quis ipsum velit. Rutrum lacus vulputate eu vestibulum, elit sed.</p>
             <p>Convallis nulla vestibulum dui risus suspendisse a, vulputate nam interdum. Ornare leo et neque, ac et vitae ut tristique. Eu nibh aliquam ut sociis enim eu facilisis enim. Amet, ut et hendrerit sit quam nulla.</p>
@@ -227,28 +238,28 @@
 
         <div class="image-row second-row">
           <div class="left">
-            <img src="./assets/img3.png" alt="">
+            <img fade-up src="./assets/img3.png" alt="">
           </div>
           <div class="right">
-            <div class="caption-img full-caption">
+            <div fade class="caption-img full-caption">
             Gravida ac ac egestas condimentum ipsum aliquet. Consectetur feugiat odio feugiat euismod aenean. Purus scelerisque
             </div>
             <div class="small-row">
-              <img src="./assets/img4.png" alt="">
-              <div class="caption-img">
+              <img fade-up src="./assets/img4.png" alt="">
+              <div fade class="caption-img">
                 Amet ut sed non interdum congue. Ipsum eu enim orci, tellus viverra. Tellus at
               </div>
             </div>
             <div class="small-row">
-              <img src="./assets/img5.png" alt="">
-              <div class="caption-img">
+              <img fade-up src="./assets/img5.png" alt="">
+              <div fade class="caption-img">
                 Amet ut sed non interdum congue. Ipsum eu enim orci, tellus viverra. Tellus at
               </div>
             </div>
           </div>
         </div>
 
-        <section class="text-container">
+        <section fade class="text-container">
           <div class="text-inner first-text">
             <p>Mi cursus ridiculus at in semper sed facilisis nec. Nulla ac feugiat tristique natoque iaculis mauris cursus sit quis. Rhoncus, sem pretium arcu congue nisi. Cursus placerat sit habitant turpis cursus ac sodales curabitur.</p>
             <p>Odio nulla at malesuada ullamcorper. Auctor nunc, interdum pellentesque consequat risus. Ullamcorper ac bibendum augue lorem auctor vitae, elementum, est.</p>
@@ -263,7 +274,7 @@
           <div class="image-full-container">
             <div class="image-left">
               <img src="./assets/img6.png" alt="">
-              <div class="image-caption">
+              <div fade class="image-caption">
                 <svg width="296" height="18" viewBox="0 0 296 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="131" y="8" width="1.00001" height="131" transform="rotate(90 131 8)" fill="white"/>
                 <rect x="296" y="8" width="1.00001" height="131" transform="rotate(90 296 8)" fill="white"/>
@@ -275,7 +286,7 @@
             </div>
             <div class="image-right">
               <img src="./assets/img7.png" alt="">
-              <div class="image-caption">
+              <div fade class="image-caption">
                 <svg width="296" height="18" viewBox="0 0 296 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="131" y="8" width="1.00001" height="131" transform="rotate(90 131 8)" fill="white"/>
                 <rect x="296" y="8" width="1.00001" height="131" transform="rotate(90 296 8)" fill="white"/>
@@ -288,7 +299,7 @@
           </div>
         </section>
 
-        <section class="text-container">
+        <section fade class="text-container">
           <div class="text-inner first-text">
             <p>Volutpat arcu lacus proin eleifend. In mauris elit in scelerisque et in. Fringilla ultrices enim in ultrices tincidunt eget et diam. Ut dignissim est odio cursus interdum sed aliquet consectetur etiam. Eleifend amet, est et et ut non. Ipsum tempor, egestas odio odio integer fermentum eleifend consequat.</p>
             <p>Eget adipiscing quisque libero, pellentesque. Eleifend nisl justo, dignissim egestas cursus laoreet. Ipsum tempor, egestas odio odio intege.</p>
@@ -299,7 +310,7 @@
 
         <section class="quote-section left-quote">
           <div class="hr top"></div>
-          <div class="quote-text">
+          <div fade class="quote-text">
           «Quando sono a Roma vado sempre da Bulgari perché è il più importante museo di arte contemporanea»
           </div>
           <div class="quote-name">
@@ -317,10 +328,10 @@
             <circle cx="11" cy="11" r="10.5" stroke="white"/>
             </svg>
 
-            <h2>SERPENTi METAMORPHOSIS</h2>
-            <h4>DENTRO L’OPERA D’ARTE</h4>
-            <div class="vertical-line"> </div>
-            <div class="event-date">11 Ottobre 2021</div>
+            <h2 fade>SERPENTi METAMORPHOSIS</h2>
+            <h4 fade>DENTRO L’OPERA D’ARTE</h4>
+            <div fade class="vertical-line"> </div>
+            <div fade class="event-date">11 Ottobre 2021</div>
           </div>
         </div>
         <!-- fine page-container -->
@@ -331,7 +342,7 @@
             <img src="./assets/circle.png" alt="">
         </div>
         <div class="event-inner-container">
-         <div class="event-left-col">
+         <div fade class="event-left-col">
             <div class="event-text-row">
               <div class="event-text">Arcu lacinia sodales eget nulla pellentesque nec. Cras tincidunt enim, et euismod hac aliquam in enim at. Sit bibendum in est nulla nunc vitae neque placerat. Vulputate tincidunt sagittis gravida leo tellus orci.</div>
               <div class="qr-container">

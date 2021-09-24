@@ -58,23 +58,22 @@ $serif: 'Lora', serif;
 
 @mixin title{
 	font-family: 'Big Shoulders Display', sans-serif;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 48px;
 	text-transform: uppercase;
 	letter-spacing: 10px;
 }
 @mixin subtitle{
 	font-family: 'Big Shoulders Display', sans-serif;
-	font-weight: 400;
-	font-size: 24px;
+	font-weight: 600;
+	font-size: 36px;
 	text-transform: uppercase;
 	letter-spacing: 0px;
 }
 
 @mixin quote{
 	font-family: 'Big Shoulders Display', sans-serif;
-	font-weight: 400;
-	font-size: 40px;
+	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 0px;
 }
@@ -175,6 +174,7 @@ body{
 .menu-full{
 	position: fixed;
 	top:0px;
+	visibility: hidden;
 	width:100%;
 	height: 100vh;
 	background: $black;
@@ -210,7 +210,18 @@ body{
 			text-align: center;
 			&.disabled{
 				.menu-item-container{
-					opacity: .2;
+					pointer-events: none;
+					color:#414141;
+					.number{
+						border-color: #414141;
+					}
+					.menu-link{
+						color:#414141;
+						border-color: #414141;
+					}
+					.vertical-line{
+						background: #414141;
+					}
 				}
 			}
 			&.one{
@@ -302,20 +313,35 @@ body{
 	.menu{
 		background: white;
 		border: 1px solid black;
-		position: absolute;
+		position: fixed;
 		bottom: $spacing*8;
 		width:50px;
 		height: 50px;
 		left: $spacing*10;
 		border-radius: 100%;
 		padding: 5px;
-		font-size: 20px;
+		font-size: 16px;
 		font-family: $condensed;
 		letter-spacing: 2px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		cursor: pointer;
+		z-index: 999;
+		.menu-closed{
+			display: none;
+		}
+		.menu-open{
+			display: flex;
+		}
+		&.active{
+			.menu-closed{
+				display: flex;
+			}
+			.menu-open{
+				display: none;
+			}
+		}
 	}
 	.arrow{
 		background: white;
@@ -359,6 +385,13 @@ body{
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		flex-direction: column;
+		.social{
+			margin-top: $spacing*4;
+			img{
+				padding: 0 $spacing*2;
+			}
+		}
 		.hero-text-container{
 			padding-bottom: $spacing*2;
 			border-bottom: 1px solid white;
@@ -367,24 +400,27 @@ body{
 			flex-direction: column;
 			color:white;
 			.title{
+				svg{
+					margin-bottom: $spacing/2;
+				}
 				h1{
 					@include title;
 				}
 				.subtitle{
-					font-family: $condensed;
-					font-size: 48px;
+					@include subtitle;
 					letter-spacing: 0;
 					text-transform: uppercase;
 				}
 			}
 			.vertical-line{
-				width: 50%;
-				border-right: 1px solid white;
-				height: 33vh;
-				padding: $spacing 0;
+				width: 1px;
+				height: 25vh;
+				background: white;
+				margin: $spacing*2 auto;
 			}
 			.hero-description{
 				color:white;
+				font-size: 16px;
 			}
 		}
 	}
@@ -438,6 +474,7 @@ body{
 				font-family: $condensed;
 				color: white;
 				text-transform: uppercase;
+				font-weight: 800;
 			}
 		}
 	}
@@ -804,8 +841,8 @@ footer{
 				color:$black;
 				h6{
 					font-family: $sans;
+					font-weight: 700;
 					text-transform: uppercase;
-					font-weight: bold;
 					letter-spacing: 2px;
 					font-size: 12px;
 					margin-bottom: $spacing;
