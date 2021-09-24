@@ -70,7 +70,7 @@ menuBtn.onclick = function(){
   const hr = gsap.utils.toArray(".hr");
   hr.forEach((el, i) => {
     gsap.set(el, {transformOrigin:"left"})
-    const anim = gsap.fromTo(el, {scaleX: 0}, {duration: 0.9, scaleX: 1, delay: .3, ease: "circ.out"});
+    const anim = gsap.fromTo(el, {scaleX: 0}, {duration: 1.3, scaleX: 1, delay: .3, ease: "circ.out"});
     ScrollTrigger.create({
       trigger: el,
       animation: anim,
@@ -78,4 +78,15 @@ menuBtn.onclick = function(){
       toggleActions: 'play none none none',
       once: true,
     });
+  });
+
+  // scroll top
+  let topArrow = document.querySelector(".arrow-top");
+  topArrow.addEventListener("click", function(){
+    gsap.to(window, {duration: 2, scrollTo: 0});
+  });
+
+  let arrow = document.querySelector(".arrow");
+  arrow.addEventListener("click", function(){
+    gsap.to(window, {duration: 0.9, scrollTo: 600});
   });
