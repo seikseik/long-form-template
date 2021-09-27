@@ -983,11 +983,200 @@ footer{
 	}
 }
 
-// TABLET
+// SCHERMO PICCOLO
+@media only screen and (max-width: 1360px) {
+	.page-container{
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	.text-container{
+		max-width: 700px;
+	}
+	.image-row, .image-full-row{
+		max-width: 1000px;
+		margin: $spacing*12 -50px;
+	}
+	.text-image-container{
+		width: 700px;
+		flex-direction: column-reverse;
+		margin: 0 auto;
+		padding-top: 0;
+		.text-column{
+			width:100%;
+		}
+		.image-column{
+			width:100%;
+			margin-bottom: $spacing*4;
+		}
+	}
+	.quote-section{
+		justify-content: space-between;
+		.quote-name{
+			.quote-name-inner{
+				height: calc(100% - 24px);
+				width: calc(100% - 24px);
+			}
+		}
+	}
+
+	.event-full-banner .event-inner-container{
+		max-width: 900px;
+	}
+	footer .footer-container{
+		max-width: 900px;
+	}
+}
+
+
+
+//  TABLET
 @media only screen and (max-width: 1080px) {
 
+	// menu mobile
 
+	.menu-full{
+		.centered-logo{
+			left: unset;
+			top: unset;
+			bottom: $spacing*2;
+			right: $spacing*2;
+			padding: 0;
+			height: auto;
+			width: 40vw;
+			max-width: 200px;
+			background: 0;
+		}
+		.menu-container{
+			align-items: flex-start;
+			flex-direction: row;
+			justify-content: flex-start;
+			padding-bottom: $spacing*11;
+			.menu-item{
+				width:100%;
+				height: fit-content;
+				height: auto;
+				min-width: auto;
+				text-align: left;
+				border: none !important;
+				padding-bottom: $spacing !important;
+				.menu-item-container{
+					align-items: flex-start;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: flex-start;
+					.number{
+						order: 1;
+					}
+					h2{
+					order: 4;
+					width: 100%;
+					font-size: 30px;
+					letter-spacing: 2px;
+					text-align: left;
+					margin-top: 5px;
+					max-width: 100%;
+					}
+					h4{
+					order: 5;
+					width: 100%;
+					font-size: 20px;
+					text-align: left;
+					}
+					.vertical-line{
+						order: 2;
+						flex: 1;
+						height: 1px;
+						background: white;
+						margin: 0 $spacing;
+						position: relative;
+						top:10px;
+						&.first-line{
+
+						}
+						&.second-line{
+							display: none;
+						}
+					}
+					.menu-date{
+					order: 3;
+					line-height: 1.4;
+					}
+					.menu-link{
+						display: none;
+					}
+				}
+			}
+		}
+
+	}
+
+	.hero{
+		flex-direction: column;
+		height: auto;
+		.arrow{
+			display: none;
+		}
+		.logo{
+			left: $spacing*3;
+			top:$spacing*3;
+			width:70px;
+		}
+		.menu{
+			left: $spacing*2;
+			bottom: $spacing*2;
+			width: 60px;
+			height: 60px;
+			font-size: 18px;
+		}
+		.col-left{
+			width:100%;
+			padding-top: $spacing*4;
+			padding-right: $spacing*2;
+		}
+		.col-right{
+			width:100%;
+			padding:$spacing*2;
+			padding-bottom: $spacing*4;
+			margin-top: $spacing*2;
+			max-width: 600px;
+			margin: 0 auto;
+			.hero-text-container{
+				.vertical-line{
+					height: 20vh;
+				}
+				.title{
+					h1{
+						font-size: 40px;
+					}
+					.subtitle{
+						font-size: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	.image-row{
+		margin: 0 auto;
+		max-width: 100%;
+		padding: 0 $spacing*2;
+		&.second-row{
+			margin-top: $spacing*6;
+			margin-bottom: $spacing*4;
+		}
+	}
+
+	#quote-1{
+		font-size: 30px;
+	}
+	#quote-2{
+		font-size: 40px;
+	}
+	#quote-3{
+		font-size: 30px;
+	}
 }
+
 
 // MOBILE
 
@@ -1027,83 +1216,6 @@ body{
 	font-size: 18px;
 }
 
-
-// menu mobile
-
-.menu-full{
-	.centered-logo{
-		left: unset;
-		top: unset;
-		bottom: $spacing*2;
-		right: $spacing*2;
-		padding: 0;
-		height: auto;
-		width: 40vw;
-		background: 0;
-	}
-	.menu-container{
-		align-items: flex-start;
-		flex-direction: row;
-		justify-content: flex-start;
-		padding-bottom: $spacing*11;
-		.menu-item{
-			width:100%;
-			height: fit-content;
-			height: auto;
-			min-width: auto;
-			text-align: left;
-			border: none !important;
-			padding-bottom: $spacing !important;
-			.menu-item-container{
-				align-items: flex-start;
-				flex-direction: row;
-				flex-wrap: wrap;
-				justify-content: flex-start;
-				.number{
-					order: 1;
-				}
-				h2{
-				order: 4;
-				width: 100%;
-				font-size: 30px;
-				letter-spacing: 2px;
-				text-align: left;
-				margin-top: 5px;
-				max-width: 100%;
-				}
-				h4{
-				order: 5;
-				width: 100%;
-				font-size: 20px;
-				text-align: left;
-				}
-				.vertical-line{
-					order: 2;
-					flex: 1;
-					height: 1px;
-					background: white;
-					margin: 0 $spacing;
-					position: relative;
-					top:10px;
-					&.first-line{
-
-					}
-					&.second-line{
-						display: none;
-					}
-				}
-				.menu-date{
-				order: 3;
-				line-height: 1.4;
-				}
-				.menu-link{
-					display: none;
-				}
-			}
-		}
-	}
-
-}
 
 
 // hero mobile
