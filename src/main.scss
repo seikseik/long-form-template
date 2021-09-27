@@ -266,6 +266,8 @@ body{
 				text-align: center;
 				align-items: center;
 				flex-direction: column;
+				text-decoration: none;
+				color: inherit;
 			}
 			.number{
 				font-family: $condensed;
@@ -304,7 +306,6 @@ body{
 				}
 			}
 			.menu-link{
-				text-decoration: none;
 				border-bottom:1px solid white;
 				padding-bottom: 3px;
 				text-transform: uppercase;
@@ -1197,8 +1198,33 @@ body{
 	padding: 0 $spacing*2;
 }
 
-// image row mobile
+ // text image container mobile
 
+ .text-image-container{
+	 flex-direction: column-reverse;
+	 margin: 0;
+	 margin-left: -16px;
+	 width:100%;
+	 background: 0;
+	 .image-column{
+		 width:100%;
+		 background: 0;
+		 width:calc(100% + 32px);
+		 .caption-image-column{
+			 margin-top: $spacing*2;
+			 margin-left: $spacing*4;
+		 }
+	 }
+	 .text-column{
+		 width:100%;
+		 margin-left: $spacing*4;
+		 margin-top:$spacing*4;
+		 padding-bottom: $spacing*8;
+	 }
+ }
+
+
+// image row mobile
 .image-row{
 	margin: 0;
 	flex-wrap: wrap;
@@ -1258,8 +1284,26 @@ body{
 }
 
 #serpente{
-
+	.caption-img{
+		position: relative;
+		width:80%;
+		left: unset;
+	}
+	&:before{
+		background: #fff;
+    content: " ";
+    height: 110px;
+    left: -18px;
+    position: absolute;
+    top: -24px;
+    width: 200px;
+	}
+	img{
+		width:calc(100% + 36px);
+		margin-left: -28px;
+	}
 }
+
 
 .second-row{
 	.right{
@@ -1280,6 +1324,9 @@ body{
 	margin-top: $spacing*2;
 	align-items: flex-end;
 	margin-bottom:$spacing*6;
+	.caption-img{
+		width:90%;
+	}
 }
 
 .event-banner{

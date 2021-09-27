@@ -92,5 +92,5 @@ menuBtn.onclick = function(){
   let h = document.querySelector(".hero").offsetHeight;
   let arrow = document.querySelector(".arrow");
   arrow.addEventListener("click", function(){
-    gsap.to(window, {duration: 0.9, scrollTo: h});
+    gsap.to(window, {duration: 0.7, scrollTo: h});
   });
