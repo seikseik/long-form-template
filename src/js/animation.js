@@ -24,17 +24,20 @@ gsap.fromTo(vLine,{scaleY: 0}, {duration: 0.7, scaleY: 1, delay: 0.7, ease: "cir
 let menuBtn = document.querySelector(".menu");
 let menu =  document.querySelector(".menu-full");
 let menuItems = gsap.utils.toArray(".menu-item-container");
+let body = document.querySelector("body");
 menuBtn.onclick = function(){
     if(menuBtn.classList.contains("active")){
       let tl = gsap.timeline();
         tl.fromTo(menuItems,{autoAlpha: 1},{  duration: 0.2, autoAlpha: 0 ,stagger: -0.1, delay: 0.1});
         tl.fromTo(menu,{autoAlpha: 1},{  duration: 0.3, autoAlpha: 0, ease: "circ.out"});
         tl.set(menu, {visibility: "hidden"});
+        body.style.overflowY = "scroll"
         menuBtn.classList.remove("active")
     }else{
       menu.visibility = "visible";
       gsap.fromTo(menu,{autoAlpha: 0},{  duration: 0.35, autoAlpha: 1,ease: "circ.out"});
       gsap.fromTo(menuItems,{autoAlpha: 0},{  duration: 1, autoAlpha: 1 ,stagger: 0.2, delay: 0.35});
+      body.style.overflowY = "hidden"
       menuBtn.classList.add("active")
     }
   };
@@ -86,7 +89,8 @@ menuBtn.onclick = function(){
     gsap.to(window, {duration: 2, scrollTo: 0});
   });
 
+  let h = document.querySelector(".hero").offsetHeight;
   let arrow = document.querySelector(".arrow");
   arrow.addEventListener("click", function(){
-    gsap.to(window, {duration: 0.9, scrollTo: 600});
+    gsap.to(window, {duration: 0.9, scrollTo: h});
   });
