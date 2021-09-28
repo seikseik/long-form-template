@@ -52,7 +52,7 @@
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
 
-  <link href="main.6a1c16a38e10c1985899.css" rel="stylesheet"></head>
+  <link href="main.8fe24fcb38f263bafc3f.css" rel="stylesheet"></head>
 
   <body>
 
@@ -143,16 +143,16 @@
           </div>
         </div>
         <div class="social">
-          <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"><img src="assets/fb.svg" alt=""></a>
-          <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"><img src="assets/twitter.svg" alt=""></a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"><img id="fb" src="assets/fb.svg" alt=""></a>
+          <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"><img id="tw" src="assets/twitter.svg" alt=""></a>
         </div>
       </div>
     </div>
 
       <div class="page-container">
-        <section  class="quote-section left-quote">
+        <section class="quote-section left-quote">
           <div class="hr top"></div>
-          <div id="quote-1" fade class="quote-text">
+          <div id="quote-1" fade-quote class="quote-text">
             «Non dimenticate il Serpente... Il serpente dovrebbe essere a  ogni dito e attorno a ogni polso e ovunque. Il serpente è il motivo delle ore nella gioielleria»
           </div>
           <div class="quote-name">
@@ -213,7 +213,7 @@
               <h4>Richard Burton</h4>
             </div>
           </div>
-          <div id="quote-2" fade class="quote-text">
+          <div id="quote-2" fade-quote class="quote-text">
             «L'unica parola
             in italiano che  Elizabeth conosce  è Bulgari»
           </div>
@@ -284,7 +284,9 @@
           </div>
           <div class="image-full-container">
             <div class="image-left">
-              <img src="assets/img_7.png" alt="">
+              <div class="img-scroll-cont">
+                <img img-zoom src="assets/img_7.png" alt="">
+              </div>
               <div fade class="image-caption">
                 <svg width="296" height="18" viewBox="0 0 296 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="131" y="8" width="1.00001" height="131" transform="rotate(90 131 8)" fill="white"/>
@@ -296,7 +298,9 @@
               </div>
             </div>
             <div class="image-right">
-              <img src="assets/img_8.png" alt="">
+              <div class="img-scroll-cont">
+                  <img img-zoom src="assets/img_8.png" alt="">
+              </div>
               <div fade class="image-caption">
                 <svg width="296" height="18" viewBox="0 0 296 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="131" y="8" width="1.00001" height="131" transform="rotate(90 131 8)" fill="white"/>
@@ -321,7 +325,7 @@
 
         <section class="quote-section left-quote">
           <div class="hr top"></div>
-          <div id="quote-3" fade class="quote-text">
+          <div id="quote-3" fade-quote class="quote-text">
           «Quando sono a Roma vado  sempre da Bulgari perché  è il più importante museo di arte contemporanea»
           </div>
           <div class="quote-name">
@@ -354,10 +358,10 @@
             <img src="assets/img_11.png" alt="">
         </div>
         <div class="event-inner-container">
-         <div fade class="event-left-col">
+         <div class="event-left-col">
             <div class="event-text-row">
-              <div class="event-text">Arcu lacinia sodales eget nulla pellentesque nec. Cras tincidunt enim, et euismod hac aliquam in enim at. Sit bibendum in est nulla nunc vitae neque placerat. Vulputate tincidunt sagittis gravida leo tellus orci.</div>
-              <div class="qr-container desktop">
+              <div fade class="event-text">Arcu lacinia sodales eget nulla pellentesque nec. Cras tincidunt enim, et euismod hac aliquam in enim at. Sit bibendum in est nulla nunc vitae neque placerat. Vulputate tincidunt sagittis gravida leo tellus orci.</div>
+              <div fade class="qr-container desktop">
                 <div class="image-qr-container desktop">
                 <img src="assets/img_10.png" alt="">
               </div>
@@ -370,7 +374,7 @@
                 </div>
               </div>
             </div>
-            <div class="event-render-row">
+            <div  fade class="event-render-row">
               <div class="event-image">
                 <img src="assets/img_9.png" alt="">
               </div>
@@ -392,17 +396,17 @@
               </div>
             </div>
 
-            <div class="caption mobile">
+            <div fade class="caption mobile">
               <span>↗ Enim vitae eget lectus nulla. A pharetra metus aliquam integer</span>
               <span>↓ Enim vitae eget lectus nulla.</span>
             </div>
-            <div class="event-circle mobile">
+            <div fade class="event-circle mobile">
                 <img src="assets/img_11.png" alt="">
             </div>
-            <div class="image-qr-container mobile">
+            <div fade class="image-qr-container mobile">
             <img src="assets/img_10.png" alt="">
             </div>
-            <div class="caption-qr mobile">
+            <div fade class="caption-qr mobile">
               <span>↑ Lorem egestas convallis in mattis dictum morbi.</span>
             </div>
 
@@ -443,7 +447,7 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
-  <script type="text/javascript" src="main.e532c03490cb108ecf5a.bundle.js"></script></body>
+  <script type="text/javascript" src="main.267bcb0af8dc16c585aa.bundle.js"></script></body>
 
 
 </html>
