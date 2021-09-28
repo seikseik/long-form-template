@@ -47,7 +47,7 @@ menuBtn.onclick = function(){
   // fade in
   const fade = gsap.utils.toArray("[fade]");
   fade.forEach((el, i) => {
-    const anim = gsap.fromTo(el, {autoAlpha: 0}, {duration: 1.5, autoAlpha: 1});
+    const anim = gsap.fromTo(el, {autoAlpha: 0}, {duration: 2, autoAlpha: 1});
     ScrollTrigger.create({
       trigger: el,
       animation: anim,
@@ -59,7 +59,33 @@ menuBtn.onclick = function(){
   // fade up
   const fadeUp = gsap.utils.toArray("[fade-up]");
   fadeUp.forEach((el, i) => {
-    const anim = gsap.fromTo(el, {autoAlpha: 0, y:0}, {duration: 1, autoAlpha: 1, y: -15});
+    const anim = gsap.fromTo(el, {autoAlpha: 0, y:0}, {duration: 1.5, autoAlpha: 1, y: -18});
+    ScrollTrigger.create({
+      trigger: el,
+      animation: anim,
+      toggleActions: 'play none none none',
+      once: true,
+    });
+  });
+
+
+  // fade quote
+  const fadeQ = gsap.utils.toArray("[fade-quote]");
+  fadeQ.forEach((el, i) => {
+    const anim = gsap.fromTo(el, {autoAlpha: 0}, {duration: 2.5, autoAlpha: 1, delay: 0.2});
+    ScrollTrigger.create({
+      trigger: el,
+      animation: anim,
+      toggleActions: 'play none none none',
+      once: true,
+    });
+  });
+
+
+  // zoom img
+  const zoom = gsap.utils.toArray("[img-zoom]");
+  zoom.forEach((el, i) => {
+    const anim = gsap.fromTo(el, {scale: 1}, {scale: 1.05, duration: 2.5, delay: 0.2});
     ScrollTrigger.create({
       trigger: el,
       animation: anim,
@@ -73,7 +99,7 @@ menuBtn.onclick = function(){
   const hr = gsap.utils.toArray(".hr");
   hr.forEach((el, i) => {
     gsap.set(el, {transformOrigin:"left"})
-    const anim = gsap.fromTo(el, {scaleX: 0}, {duration: 1.3, scaleX: 1, delay: .3, ease: "circ.out"});
+    const anim = gsap.fromTo(el, {scaleX: 0}, {duration: 1.4, scaleX: 1, delay: .3, ease: "circ.out"});
     ScrollTrigger.create({
       trigger: el,
       animation: anim,
