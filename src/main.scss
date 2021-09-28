@@ -848,18 +848,14 @@ body{
 			position: relative;
 			.event-text-row{
 				display: flex;
-				&:before{
-					content: " ";
-					position: absolute;
-					width:30%;
-					top:0;
-					left: 0;
-					height: 1px;
-					background:white;
-				}
 				.event-text{
-					padding-top: $spacing;
 					width:60%;
+					h6{
+						font-family: $condensed;
+						margin-bottom: $spacing;
+						text-transform: uppercase;
+						font-size: 2vw;
+					}
 
 				}
 				.qr-container{
@@ -885,7 +881,7 @@ body{
 			}
 			.event-render-row{
 				display: flex;
-				margin-top: $spacing*5;
+				margin-top: $spacing*8;
 				.event-image{
 					width:60%;
 					border-top: 1px solid white;
@@ -896,7 +892,8 @@ body{
 					}
 				}
 				.event-caption{
-					align-self: flex-end;
+					// align-self: flex-end;
+					margin-left: $spacing*8;
 					flex-direction: column;
 					height: fit-content;
 					width:40%;
@@ -904,8 +901,8 @@ body{
 					padding: $spacing;
 					border-left: 1px solid white;
 					border-top:1px solid white;
-					.cap-row:first-child{
-						margin-bottom: $spacing;
+					a{
+						color:white;
 					}
 				}
 			}
