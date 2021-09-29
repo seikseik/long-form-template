@@ -566,6 +566,9 @@ body{
 	p{
 		margin-bottom: $spacing*2;
 	}
+	&.no-margin{
+		margin-bottom: $spacing*4;
+	}
 }
 
 .text-image-container{
