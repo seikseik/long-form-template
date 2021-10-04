@@ -1022,6 +1022,20 @@ footer{
 	}
 }
 
+
+// SECONDO LONGFORM
+
+.video{
+	max-width: $large-container;
+	margin: 0 -100px;
+	margin-bottom: $spacing*12;
+	position: relative;
+	z-index: 2;
+	background: $black;
+}
+
+
+
 // SCHERMO PICCOLO
 @media only screen and (max-width: 1360px) {
 	.page-container{
@@ -1233,6 +1247,8 @@ footer{
 		font-size: 30px;
 	}
 }
+
+
 
 
 // MOBILE
