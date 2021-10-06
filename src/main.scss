@@ -1141,6 +1141,95 @@ footer{
 }
 
 
+// MASONRY
+.grid-sizer { width: 33%; padding: $spacing; }
+.masonry-section{
+	max-width: $large-container;
+	margin: 0 -100px;
+	margin-top: $spacing*12;
+	margin-bottom: $spacing*16;
+	position: relative;
+	z-index: 2;
+	background: $black;
+	.masonry-container{
+		padding: $spacing*6;
+			.image-gallery-container{
+				img{
+					width:100%;
+					height: auto;
+				}
+			}
+	}
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: scroll;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 85%;
+  max-height: 80vh;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+
+@keyframes zoom {
+  from {transform:scale(0.8)}
+  to {transform:scale(1)}
+}
+
+.close {
+  position: absolute;
+  top: 14px;
+  right: 24px;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px){
+  .modal-content {
+    width: 100%;
+    padding:$spacing*2;
+  }
+  .close {
+    top: 10px;
+    right: 16px;
+  }
+}
+
 
 
 

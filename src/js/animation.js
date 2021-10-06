@@ -1,10 +1,39 @@
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-
+import Masonry from "masonry-layout"
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
+
+let grid = document.querySelector(".image-gallery-container")
+var msnry = new Masonry( grid, {
+      itemSelector: '.grid-sizer',
+    });
+
+// modal
+  let modal = document.getElementById("myModal");
+  let imageList = document.querySelectorAll(".image-modal");
+  let imageContList = document.querySelectorAll(".single-image");
+
+  let modalImg = document.getElementById("img01");
+
+  imageContList.forEach((item, i) => {
+    item.onclick = function(){
+      modal.style.display = "flex";
+      modalImg.src = item.src;
+    }
+  });
+
+  var span = document.getElementsByClassName("close")[0];
+  if(span != undefined){
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+  }
+
+
+
+// hero
 
 let imagHero =  document.querySelector(".image-hero");
 let title = document.querySelector(".title h1");
