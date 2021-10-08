@@ -2,34 +2,13 @@ import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Masonry from "masonry-layout"
+import lozad from 'lozad'
+
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 
-let grid = document.querySelector(".image-gallery-container")
-var msnry = new Masonry( grid, {
-      itemSelector: '.grid-sizer',
-    });
 
-// modal
-  let modal = document.getElementById("myModal");
-  let imageList = document.querySelectorAll(".image-modal");
-  let imageContList = document.querySelectorAll(".single-image");
 
-  let modalImg = document.getElementById("img01");
-
-  imageContList.forEach((item, i) => {
-    item.onclick = function(){
-      modal.style.display = "flex";
-      modalImg.src = item.src;
-    }
-  });
-
-  var span = document.getElementsByClassName("close")[0];
-  if(span != undefined){
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-  }
 
 
 
@@ -72,18 +51,6 @@ menuBtn.onclick = function(){
   };
 
 
-
-  // fade in
-  const fade = gsap.utils.toArray("[fade]");
-  fade.forEach((el, i) => {
-    const anim = gsap.fromTo(el, {autoAlpha: 0}, {duration: 2, autoAlpha: 1});
-    ScrollTrigger.create({
-      trigger: el,
-      animation: anim,
-      toggleActions: 'play none none none',
-      once: true,
-    });
-  });
 
   // fade up
   const fadeUp = gsap.utils.toArray("[fade-up]");
@@ -149,3 +116,53 @@ menuBtn.onclick = function(){
   arrow.addEventListener("click", function(){
     gsap.to(window, {duration: 0.7, scrollTo: h});
   });
+
+
+
+  window.addEventListener('load', function(){
+
+    // let grid = document.querySelector(".image-gallery-container")
+    // var msnry = new Masonry( grid, {
+    //       itemSelector: '.grid-sizer',
+    //       percentPosition: true
+    //     });
+
+    let gridlayout = document.querySelector(".image-gallery-container");
+    let gridWidth  = document.querySelector(".grid-sizer");
+    let w = gridWidth.offsetWidth;
+    gridlayout.style.gridAutoRows = `${w}px`
+        // fade in
+        const fade = gsap.utils.toArray("[fade]");
+        fade.forEach((el, i) => {
+          const anim = gsap.fromTo(el, {autoAlpha: 0}, {duration: 2, autoAlpha: 1});
+          ScrollTrigger.create({
+            trigger: el,
+            animation: anim,
+            toggleActions: 'play none none none',
+            once: true,
+          });
+        });
+
+
+  });
+
+  // modal
+    let modal = document.getElementById("myModal");
+    let imageList = document.querySelectorAll(".image-modal");
+    let imageContList = document.querySelectorAll(".single-image-masonry");
+
+    let modalImg = document.getElementById("img01");
+
+    imageContList.forEach((item, i) => {
+      item.onclick = function(){
+        modal.style.display = "flex";
+        modalImg.src = item.src;
+      }
+    });
+
+    var span = document.getElementsByClassName("modal")[0];
+    if(span != undefined){
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    }
