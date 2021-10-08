@@ -3,11 +3,7 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Masonry from "masonry-layout"
 import lozad from 'lozad'
-
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
-
-
-
 
 
 
@@ -121,11 +117,9 @@ menuBtn.onclick = function(){
 
   window.addEventListener('load', function(){
 
-    // let grid = document.querySelector(".image-gallery-container")
-    // var msnry = new Masonry( grid, {
-    //       itemSelector: '.grid-sizer',
-    //       percentPosition: true
-    //     });
+    const observer = lozad();
+    observer.observe();
+    
 
     let gridlayout = document.querySelector(".image-gallery-container");
     let gridWidth  = document.querySelector(".grid-sizer");
@@ -142,8 +136,6 @@ menuBtn.onclick = function(){
             once: true,
           });
         });
-
-
   });
 
   // modal
@@ -152,11 +144,14 @@ menuBtn.onclick = function(){
     let imageContList = document.querySelectorAll(".single-image-masonry");
 
     let modalImg = document.getElementById("img01");
+    let modalCaption = document.getElementById("modal-caption");
 
     imageContList.forEach((item, i) => {
+      let caption = item.nextElementSibling.innerHTML;
       item.onclick = function(){
         modal.style.display = "flex";
         modalImg.src = item.src;
+        modalCaption.innerHTML = caption;
       }
     });
 

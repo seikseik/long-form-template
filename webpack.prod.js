@@ -27,8 +27,8 @@ module.exports = merge(common, {
       }),
       new HtmlWebpackPlugin({
         title: "Home-2",
-        filename: "serpenti-metamorphosis/index.html",
-        template: "./src/serpenti-metamorphosis/template.html",
+        filename: "serpenti-metamorfosi/index.html",
+        template: "./src/serpenti-metamorfosi/template.html",
         minify: false
       })
     ]

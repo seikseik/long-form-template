@@ -40,7 +40,8 @@ module.exports = {
         options: {
           limit:false,
           outputPath: "assets/",
-          name: '[name].[ext]'
+          name: '[name].[ext]',
+          publicPath: '../assets',
         }
       },
     }
