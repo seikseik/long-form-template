@@ -41,7 +41,7 @@ module.exports = {
           limit:false,
           outputPath: "assets/",
           name: '[name].[ext]',
-          publicPath: '../assets',
+          publicPath: './assets',
         }
       },
     }

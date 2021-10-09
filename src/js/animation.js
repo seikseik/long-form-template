@@ -119,13 +119,16 @@ menuBtn.onclick = function(){
 
     const observer = lozad();
     observer.observe();
-    
+
 
     let gridlayout = document.querySelector(".image-gallery-container");
     let gridWidth  = document.querySelector(".grid-sizer");
-    let w = gridWidth.offsetWidth;
-    gridlayout.style.gridAutoRows = `${w}px`
-        // fade in
+    if(gridWidth != null){
+      let w = gridWidth.offsetWidth;
+      gridlayout.style.gridAutoRows = `${w}px`
+    }
+
+      // fade in
         const fade = gsap.utils.toArray("[fade]");
         fade.forEach((el, i) => {
           const anim = gsap.fromTo(el, {autoAlpha: 0}, {duration: 2, autoAlpha: 1});
