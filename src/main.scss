@@ -745,6 +745,15 @@ body{
 	}
 	&.with-margin{
 		margin-top:$spacing*14;
+		#serpente{
+			flex-direction: row;
+			.caption-img{
+				position: absolute;
+				bottom: unset;
+				left: unset;
+				right:-50%;
+			}
+		}
 	}
 }
 
@@ -876,6 +885,11 @@ body{
 		img{
 			width:100%;
 			height: auto;
+		}
+		&.circle-big{
+			right: -4vw;
+    top: -10%;
+    width: 37vw;
 		}
 	}
 	.event-inner-container{
@@ -1127,6 +1141,9 @@ footer{
 	margin-bottom: $spacing*11;
 	&.margin-top{
 		margin-top: $spacing*11;
+		.single-image-section-container{
+			padding: $spacing*5 $spacing*10;
+		}
 	}
 	&.large-image{
 		max-width: 100%;
