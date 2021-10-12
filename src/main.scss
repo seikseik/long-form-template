@@ -88,6 +88,14 @@ $serif: 'Lora', serif;
 		font-size: 3.8vw;
 	}
 }
+.third-long{
+	#quote-1{
+		font-size: 2.5vw;
+	}
+	#quote-2{
+		font-size: 3.3vw;
+	}
+}
 #quote-1{
 	font-size: 2.8vw;
 }
@@ -652,6 +660,10 @@ body{
 			clear: left;
 		}
 	}
+	&.no-overflow{
+		max-width: 100%;
+		margin: $spacing*14 $spacing*4;
+	}
 }
 .first-row{
 	.left{
@@ -730,6 +742,9 @@ body{
 			padding-top: $spacing*3;
 		}
 
+	}
+	&.with-margin{
+		margin-top:$spacing*14;
 	}
 }
 
@@ -1110,13 +1125,15 @@ footer{
 	max-width: $text-container;
 	margin: 0 auto;
 	margin-bottom: $spacing*11;
-
+	&.margin-top{
+		margin-top: $spacing*11;
+	}
 	&.large-image{
 		max-width: 100%;
 		margin: $spacing*10 0;
 		.single-image-section-container{
 			max-width: 100%;
-			margin: 0 $spacing*4;
+			// margin: 0 $spacing*4;
 			.single-image-container{
 				.single-image{
 					img{
@@ -1131,7 +1148,7 @@ footer{
 		max-width: 700px;
 		margin: 0 auto;
 		position: relative;
-		padding: $spacing*4 $spacing*4;
+		padding: $spacing*5 $spacing*5;
 		padding-top: 0;
 		.single-image{
 				overflow: hidden;
@@ -1175,7 +1192,11 @@ footer{
 			background: $black;
 		}
 	}
-
+}
+.third-long{
+	.single-image-section.large-image{
+		margin-bottom: $spacing*3;
+	}
 }
 
 // PROVA MASONRY GRID
@@ -1715,7 +1736,6 @@ body{
 	max-width: unset;
 	width:calc(100% + 34px);
 	margin-left: -17px;
-
 	&.large-image{
 		margin-left: -$spacing*2;
 		max-width: unset;

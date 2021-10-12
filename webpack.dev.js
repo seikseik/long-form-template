@@ -16,8 +16,12 @@ module.exports = merge(common, {
       template: "./src/template.html"
     }),
     new HtmlWebpackPlugin({
-      filename: "./src/serpenti-metamorfosi/index.html",
+      filename: "serpenti-metamorfosi/index.html",
       template: "./src/serpenti-metamorfosi/template.html"
+    }),
+    new HtmlWebpackPlugin({
+      filename: "arte-dell-emozione/index.html",
+      template: "./src/arte-dell-emozione/template.html"
     })
   ],
   module: {
@@ -25,7 +29,7 @@ module.exports = merge(common, {
       {
         test: /\.scss$/,
         use: [
-          "style-loader", //3. Inject styles into DOM
+          "style-loader",
           {
             loader: "css-loader",
             options: {
@@ -35,7 +39,7 @@ module.exports = merge(common, {
           {
             loader: "postcss-loader",
           },
-          "sass-loader" //1. Turns sass into css
+          "sass-loader"
         ]
       }
     ]

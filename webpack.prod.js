@@ -13,7 +13,7 @@ module.exports = merge(common, {
   mode: "production",
   output: {
     filename: "[name].[contentHash].bundle.js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "dist"),
   },
   optimization: {
     minimizer: [
@@ -29,6 +29,12 @@ module.exports = merge(common, {
         title: "Home-2",
         filename: "serpenti-metamorfosi/index.html",
         template: "./src/serpenti-metamorfosi/template.html",
+        minify: false
+      }),
+      new HtmlWebpackPlugin({
+        title: "Home-3",
+        filename: "arte-dell-emozione/index.html",
+        template: "./src/arte-dell-emozione/template.html",
         minify: false
       })
     ]
