@@ -1,4 +1,4 @@
-@import "font.css";
+// @import "font.css";
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -54,7 +54,14 @@ div, section{
 
 // VARIABLES
 $spacing: 8px;
+$green: #387267;
+$white: #FCFCF3;
+$black: #493C3C;
 
+body{
+	background: $white;
+	color: $black;
+}
 
 // policy
 .iubenda-cs-container{
