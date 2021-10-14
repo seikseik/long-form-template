@@ -90,10 +90,10 @@ $serif: 'Lora', serif;
 }
 .third-long{
 	#quote-1{
-		font-size: 2.5vw;
+		font-size: 3.3vw;
 	}
 	#quote-2{
-		font-size: 3.3vw;
+		font-size: 3.8vw;
 	}
 }
 #quote-1{
@@ -1139,6 +1139,7 @@ footer{
 	max-width: $text-container;
 	margin: 0 auto;
 	margin-bottom: $spacing*11;
+	overflow: hidden;
 	&.margin-top{
 		margin-top: $spacing*11;
 		.single-image-section-container{
@@ -1568,6 +1569,7 @@ img[data-loaded="true"], [data-loaded="true"] img { animation-name: showLazyImg;
 	.hero{
 		flex-direction: column;
 		height: auto;
+		overflow: hidden;
 		.arrow{
 			display: none;
 		}
@@ -1618,6 +1620,21 @@ img[data-loaded="true"], [data-loaded="true"] img { animation-name: showLazyImg;
 		&.second-row{
 			margin-top: $spacing*6;
 			margin-bottom: $spacing*4;
+		}
+		&.no-overflow{
+			margin: $spacing*5 $spacing*2;
+			margin-top: $spacing*6;
+			padding: 0;
+			.right{
+				.caption-container-white{
+					margin-bottom: $spacing*3;
+				}
+			}
+			.left{
+				.caption-img{
+					min-width: 100%;
+				}
+			}
 		}
 	}
 
@@ -1751,8 +1768,9 @@ body{
 
 .single-image-section{
 	max-width: unset;
-	width:calc(100% + 34px);
+	width:calc(100% + 33px);
 	margin-left: -17px;
+	margin-bottom: $spacing*5;
 	&.large-image{
 		margin-left: -$spacing*2;
 		max-width: unset;
@@ -1776,6 +1794,23 @@ body{
 	svg{
 		width:100%;
 	}
+	&.margin-top{
+		margin-top: $spacing*3;
+	}
+}
+.single-image-section.margin-top .single-image-section-container{
+	padding: 16px;
+	.single-image-container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		img{
+			width:calc(100% - 48px) !important;
+		}
+	}
+}
+.third-long .single-image-section.large-image{
+	margin-bottom: 0;
 }
 
 .video-row{
@@ -1855,6 +1890,14 @@ body{
 .second-long{
 	#quote-1{
 		font-size: 40px;
+	}
+}
+.third-long{
+	#quote-1{
+		font-size: 35px;
+	}
+	#quote-2{
+		font-size: 35px;
 	}
 }
 #quote-1{
@@ -2012,6 +2055,7 @@ body{
 		width:calc(100% + 36px);
 		margin-left: -28px;
 	}
+
 }
 
 
@@ -2026,6 +2070,20 @@ body{
 			flex-direction: column;
 			img{
 				width:60%;
+			}
+		}
+		.caption-white-container{
+			padding-top: 0;
+			margin-bottom: $spacing*2;
+		}
+	}
+	&.with-margin{
+		#serpente{
+			.caption-img{
+				position: relative;
+				right: unset;
+				margin-bottom: $spacing*2;
+				width:100%;
 			}
 		}
 	}
