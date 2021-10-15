@@ -1,0 +1,514 @@
+<?php
+
+    $pageUrl = strtok( (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) || isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", "?");
+    $pageTitle = "L’arte dell’emozione secondo Bulgari";
+    $pageDescription = "Jean-Christophe Babin, ceo del Gruppo Bulgari, e Lucia Silvestri, direttore creativo della gioielleria Bulgari, raccontano l'evoluzione del segno Serpenti.";
+
+    $twitterString = "%23bulgari %23bulgariserpenti %23Bulgarijewelry" . $pageUrl;
+    $whatsappString = $pageTitle. " " . $pageUrl;
+?>
+
+<!DOCTYPE html>
+<html lang="it">
+
+  <head>
+    <link rel="apple-touch-icon" sizes="57x57" href="//www.repstatic.it/cless/main/d/2021-v1/img/common/favicon/apple-touch-icon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="//www.repstatic.it/cless/main/d/2021-v1/img/common/favicon/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="//www.repstatic.it/cless/main/d/2021-v1/img/common/favicon/apple-touch-icon-120.png">
+    <link rel="apple-touch-icon-precomposed" href="//www.repstatic.it/cless/main/d/2021-v1/img/common/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="//www.repstatic.it/cless/main/d/2021-v1/img/common/favicon/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="//www.repstatic.it/cless/main/d/2021-v1/img/common/favicon/favicon.ico">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><?php echo $pageTitle; ?></title>
+    <meta name="description" content="<?php echo $pageDescription; ?>" />
+    <link rel="canonical" href="<?php echo $pageUrl; ?>">
+
+    <!-- CONFIGURAZIONE STATS -->
+    <script type="text/javascript">
+      var pageHref = '<?php echo $pageUrl; ?>';
+      var pageType = 'dettaglio_content';
+    </script>
+    <esi:include src='http://www.repstatic.it/cless/common/stable/js/script/tlh/traffic_light_handler.html' />
+   <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script>
+    <!-- CONFIGURAZIONE STATS-->
+
+    <!-- facebook -->
+    <meta property="fb:app_id" content="182234715127717" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="<?php echo $pageTitle; ?>">
+    <meta property="og:description" content="<?php echo $pageDescription; ?>">
+    <meta property="og:image" content="<?php echo $pageUrl; ?>meta2.jpg?<?php echo filemtime('./meta2.jpg'); ?>">
+    <meta property="og:url" content="<?php echo $pageUrl; ?>">
+    <meta property="article:published_time" content="2021-10-25T09:00">
+    <!-- facebook -->
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="<?php echo $pageTitle; ?>">
+    <meta name="twitter:description" content="<?php echo $pageDescription; ?>">
+    <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta2.jpg?<?php echo filemtime('./meta2.jpg'); ?>">
+    <meta name="twitter:url" content="<?php echo $pageUrl; ?>">
+    <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
+
+      <!-- font  -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=Inter:wght@300;700&family=Lora:ital,wght@0,400;0,500;1,400" rel="stylesheet">
+
+
+  <link href="../main.078c298be97b1b5d4b29.css" rel="stylesheet"></head>
+
+  <body class="third-long">
+
+    <div class="menu-full">
+      <div class="menu-container">
+        <div class="centered-logo">
+          <img src="../assets/logo-bulgari-white.png" alt="">
+        </div>
+        <div class="menu-item one">
+          <a href="../" class="menu-item-container">
+            <span class="number">1</span>
+            <h2>SERPENTI</h2>
+            <h4>un emblema tra Mito e Glamour</h4>
+            <div class="vertical-line first-line"></div>
+            <span class="menu-date">04 Ottobre 2021</span>
+            <div class="vertical-line second-line"></div>
+            <div class="menu-link" href="../">VAI AL CONTENUTO</div>
+          </a>
+        </div>
+        <div class="menu-item two">
+          <a href="./serpenti-metamorfosi" class="menu-item-container">
+            <span class="number">2</span>
+            <h2>SERPENTI METAMORFOSI</h2>
+            <h4>DENTRO L’OPERA D’ARTE</h4>
+            <div class="vertical-line first-line"></div>
+            <span class="menu-date">11 Ottobre 2021</span>
+            <div class="vertical-line second-line"></div>
+            <div class="menu-link" href="./serpenti-metamorfosi">VAI AL CONTENUTO</div>
+          </a>
+        </div>
+        <div class="menu-item three">
+          <a href="./"" class="menu-item-container">
+            <span class="number">3</span>
+            <h2>L'ARTE DELL'EMOZIONE</h2>
+            <h4>secondo bulgari</h4>
+            <div class="vertical-line first-line"></div>
+            <span class="menu-date">18 Ottobre 2021</span>
+            <div class="vertical-line second-line"></div>
+            <div class="menu-link" href="./"">VAI AL CONTENUTO</div>
+          </a>
+        </div>
+        <div class="menu-item four disabled">
+          <a href="#" class="menu-item-container">
+            <span class="number">4</span>
+            <h2>LA FORMULA MAGICA</h2>
+            <h4>dell’ispirazione</h4>
+            <div class="vertical-line first-line"></div>
+            <span class="menu-date">25 Ottobre 2021</span>
+            <div class="vertical-line second-line"></div>
+            <div class="menu-link" href="#">VAI AL CONTENUTO</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="col-left">
+        <img class="image-hero" src="../assets/Gedi_Longform7_1 2.png" alt="">
+        <div class="menu">
+            <span class="menu-open">MENU</span>
+            <span class="menu-closed">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.57991 15.976L0.211914 14.572L6.69191 8.12803L0.211914 1.64803L1.57991 0.280029L8.05991 6.72403L14.5399 0.280029L15.9079 1.64803L9.46391 8.12803L15.9079 14.572L14.5399 15.976L8.05991 9.49603L1.57991 15.976Z" fill="#282928"/>
+              </svg>
+            </span>
+        </div>
+        <div class="logo">
+          <a target="_blank" href="https://www.repubblica.it/d/"><img src="../assets/logo.svg" alt=""></a>
+        </div>
+        <span class="arrow"><svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.67039 0.54541H7.23857V15.392L1.30675 9.46018L0.318115 10.4659L7.95448 18.1022L15.6079 10.4659L14.5937 9.46018L8.67039 15.392V0.54541Z" fill="#282928"/>
+              </svg>
+        </span>
+      </div>
+      <div class="col-right">
+        <div class="hero-text-container">
+          <div class="title">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.9233 21.153C12.8133 21.153 12.0093 20.922 11.5113 20.46C11.0133 19.992 10.7493 19.224 10.7193 18.156C10.7133 17.922 10.7073 17.706 10.7013 17.508C10.7013 17.31 10.7013 17.103 10.7013 16.887C10.7073 16.671 10.7133 16.416 10.7193 16.122H12.6633V18.399C12.6633 18.783 12.7653 19.071 12.9693 19.263C13.1733 19.449 13.4763 19.542 13.8783 19.542C14.2743 19.542 14.5683 19.449 14.7603 19.263C14.9583 19.071 15.0603 18.783 15.0663 18.399C15.0843 17.967 15.0933 17.505 15.0933 17.013C15.0933 16.521 15.0843 16.071 15.0663 15.663C15.0483 15.249 14.9493 14.919 14.7693 14.673C14.5893 14.427 14.2383 14.31 13.7163 14.322L12.3663 14.331L12.3033 12.693L14.7513 8.328H10.8273V6.6H16.9833L16.9563 8.247L14.4273 12.63C15.3093 12.696 15.9483 12.966 16.3443 13.44C16.7463 13.908 16.9683 14.643 17.0103 15.645C17.0223 15.903 17.0283 16.146 17.0283 16.374C17.0343 16.602 17.0373 16.818 17.0373 17.022C17.0373 17.226 17.0343 17.424 17.0283 17.616C17.0283 17.802 17.0223 17.982 17.0103 18.156C16.9683 19.224 16.7073 19.992 16.2273 20.46C15.7533 20.922 14.9853 21.153 13.9233 21.153Z" fill="white"/>
+            <circle cx="14" cy="14" r="13.5" stroke="white"/>
+            </svg>
+
+            <h1>L'arte dell'emozione</h1>
+            <h3 class="subtitle">secondo bulgari</h3>
+            <div class="vertical-line"></div>
+            <div class="hero-description">
+              Jean-Christophe Babin, Ceo del Gruppo Bulgari, e Lucia Silvestri, direttore creativo della gioielleria Bulgari, raccontano l'evoluzione del segno Serpenti. Tra tradizione, innovazione, arte digitale, materiali preziosi e uno sguardo sul futuro
+            </div>
+          </div>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"><img id="fb" src="../assets/fb.svg" alt=""></a>
+          <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"><img id="tw" src="../assets/twitter.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+      <div class="page-container">
+
+        <section class="quote-section left-quote">
+          <div class="hr top"></div>
+          <div id="quote-1" fade-quote class="quote-text">
+            «Il serpente è un emblema di seduzione che si ripete da secoli fin dall'antichità. Reinterpretarlo è una sfida piena di stimoli»
+          </div>
+          <div class="quote-name">
+            <div class="quote-name-inner">
+              <h4>Lucia Silvestri</h4>
+            </div>
+          </div>
+          <div class="hr bottom"></div>
+        </section>
+
+
+        <section class="text-container">
+          <div class="article-info">
+            <div class="date">
+              Lunedì 18 Ottobre 2021
+            </div>
+            <div class="author">
+               di
+              <span>ILENIA CARLESIMO</span>
+            </div>
+          </div>
+          <div fade class="text-inner first-text">
+            <p> <span class="dropcap">«È</span>
+            un emblema talmente forte e unico nel suo genere che ci piace l’idea di reinterpretarlo mantenendone intatto il dna, di trasformarlo senza cambiarne le caratteristiche principali». Per Lucia Silvestri, direttrice creativa della gioielleria Bulgari, il successo della collezione Serpenti sta anche in questo perfetto equilibrio tra essere e diventare: nel suo saper evolvere al passo con i tempi – o addirittura anticipandoli – senza mai perdere il suo appeal. D’altronde il fascino fa parte del simbolo stesso da sempre: «Il serpente è un emblema di seduzione che si ripete da secoli fin dall’antichità: noi non abbiamo fatto altro che enfatizzare questo suo potere. Reinterpretarlo è una sfida divertente e piena di stimoli».</p>
+            <p>Lo è stato negli anni Quaranta, quando la maison presentò il primo orologio-gioiello della linea, un pezzo audace frutto di creatività e tecniche orafe all'avanguardia. Lo è stato negli anni Sessanta quando con le sue preziose metamorfosi conquistò le più grandi dive di Hollywood.</p>
+          </div>
+        </section>
+
+        <div class="single-image-section">
+          <div class="single-image-section-container">
+            <div class="background">
+              <div class="white-background"></div>
+              <div class="black-background"></div>
+            </div>
+            <div class="single-image-container">
+                <img src="../assets/Gedi_Longform7_2.png" alt="" style="width:100%" height="auto">
+              <div class="single-image-caption">
+                <svg width="408" height="18" viewBox="0 0 408 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="187" y="9" width="1.00001" height="187" transform="rotate(90 187 9)" fill="white"/>
+                <rect x="408" y="9" width="1.00001" height="187" transform="rotate(90 408 9)" fill="white"/>
+                <path d="M203.539 14.2144H204.373V5.57039L207.826 9.02405L208.402 8.43851L203.956 3.99243L199.5 8.43851L200.09 9.02405L203.539 5.57039V14.2144Z" fill="white"/>
+                <circle cx="204" cy="9" r="8.75" stroke="white" stroke-width="0.5"/>
+                </svg>
+                <span>Lucia Silvestri Direttore Creativo della Gioielleria Bulgari</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section fade class="text-container">
+          <div class="text-inner first-text">
+            <p>E lo è oggi, come dimostra la collana Hypnotic Emerald Bulgari della collezione di Alta Gioielleria Magnifica indossata da Zendaya all'ultimo Festival di Venezia: un gioiello in platino dove il rettile ha tra le fauci un enorme smeraldo colombiano di 93,83 carati. «È stata una vera e propria sfida per la manifattura, dall'acquisto della pietra fino alle 1.800 ore di lavoro che ha richiesto», racconta il direttore creativo. E il risultato è una piccola grande opera d'arte.</p>
+          </div>
+        </section>
+
+        <div class="image-row first-row no-overflow">
+          <div class="left">
+            <img fade-up src="../assets/Gedi_Longform7_3.png" alt="">
+            <div fade class="caption-img desktop">
+              <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.40136 15L8.37609 14.0123L2.62682 8.20313H17V6.79688H2.62682L8.37609 0.970981L7.40136 0L0 7.5L7.40136 15Z" fill="#282928"/>
+              </svg>
+           Anello Bulgari Collezione Serpenti Viper in oro rosa e diamanti
+            </div>
+            <div fade class="caption-img mobile">
+              ↑  Anello Bulgari Collezione Serpenti Viper in oro rosa e diamanti
+            </div>
+          </div>
+          <div class="right">
+            <img fade-up src="../assets/Gedi_Longform7_4.png" alt="">
+            <div class="caption-container-white">
+              <div fade class="caption-img desktop">
+                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.40136 15L8.37609 14.0123L2.62682 8.20313H17V6.79688H2.62682L8.37609 0.970981L7.40136 0L0 7.5L7.40136 15Z" fill="#282928"/>
+                </svg>
+               Anello Bulgari Collezione Serpenti Viper in oro bianco e diamanti
+              </div>
+              <div fade class="caption-img mobile">
+              ↑ Anello Bulgari Collezione Serpenti Viper in oro bianco e diamanti</div>
+            </div>
+          </div>
+        </div>
+
+
+        <section fade class="text-container">
+          <div class="text-inner first-text">
+            <p>Tra le evoluzioni del segno, però, ci sono anche declinazioni in taglie più piccole come quelle della nuova collezione Serpenti Viper. «Gioielli flessibili e sinuosi facili da indossare, e per questo ideali anche per le nuove generazioni, capaci di regalare grandi emozioni».</p>
+            <p>E per il futuro? «Serpenti vivrà nuove metamorfosi: trasformazioni pazzesche», assicura Lucia Silvestri. «Come del resto fa da sempre. Non dimentichiamo che tutto partì da un'idea affascinante e all'avanguardia come il Tubogas». Da quelle maglie, ingegnosamente connesse tra loro senza alcuna saldatura e ispirate alla forma dei tubi che a partire dagli anni Venti trasportavano il gas, che con il tempo sono diventate uno dei marchi di fabbrica della maison. ■</p>
+          </div>
+        </section>
+
+
+        <section class="quote-section left-quote">
+          <div class="hr top"></div>
+          <div id="quote-2" fade-quote class="quote-text">
+            «Milano è stata per Bulgari un vero scrigno nel quale parlare di lusso»
+          </div>
+          <div class="quote-name">
+            <div class="quote-name-inner">
+              <h4>Jean-Christophe Babin</h4>
+            </div>
+          </div>
+          <div class="hr bottom"></div>
+        </section>
+
+
+        <div class="image-row second-row with-margin">
+          <div id="serpente" class="left">
+            <img src="../assets/Gedi_Longform7_5.png" alt="">
+            <div fade class="caption-img full-caption desktop">
+              <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.40136 15L8.37609 14.0123L2.62682 8.20313H17V6.79688H2.62682L8.37609 0.970981L7.40136 0L0 7.5L7.40136 15Z" fill="#282928"/>
+              </svg>
+             Collana Bulgari Collezione Serpenti Viper in oro rosa e diamanti
+            </div>
+            <div fade class="caption-img full-caption mobile">
+             ↑ Collana Bulgari Collezione Serpenti Viper in oro rosa e diamanti
+            </div>
+
+          </div>
+
+          <div class="right">
+            <div class="small-row">
+              <img fade-up src="../assets/Gedi_Longform7_6.png" alt="">
+              <div class="caption-white-container">
+                <div fade class="caption-img desktop">
+                  <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.40136 15L8.37609 14.0123L2.62682 8.20313H17V6.79688H2.62682L8.37609 0.970981L7.40136 0L0 7.5L7.40136 15Z" fill="#282928"/>
+                  </svg>
+                   Bracciale Bulgari Collezione Serpenti Viper due giri in oro rosa e diamanti
+                </div>
+                <div fade class="caption-img mobile">
+                  ↑ Bracciale Bulgari Collezione Serpenti Viper due giri in oro rosa e diamanti
+                </div>
+              </div>
+            </div>
+            <div id="second-small-row" class="small-row">
+              <img fade-up src="../assets/Gedi_Longform7_7.png" alt="">
+              <div fade class="caption-img desktop">
+                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.40136 15L8.37609 14.0123L2.62682 8.20313H17V6.79688H2.62682L8.37609 0.970981L7.40136 0L0 7.5L7.40136 15Z" fill="#282928"/>
+                </svg>
+                 Bracciale Bulgari Collezione Serpenti Viper in oro rosa e diamanti
+              </div>
+              <div fade class="caption-img mobile">
+              ↑ Bracciale Bulgari Collezione Serpenti Viper in oro rosa e diamanti
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <section fade class="text-container no-margin">
+          <div class="text-inner first-text">
+            <p>«Un’immersione nelle infinite forme di trasformazione che avvengono in natura unita al colore e alla sensualità del serpente, da sempre parte del dna di Bulgari». È così che Jean-Christophe Babin, ceo del gruppo Bulgari, racconta Serpenti Metamorfosi, la scultura multimediale realizzata con l'intelligenza artificiale dal media artist Refik Anadol. «Un progetto nato mettendo insieme più idee» spiega.</p>
+            <p>«Prima di tutto il desiderio del brand di far reinterpretare la sua icona, il Serpente: un segno che negli anni ha saputo concedersi generosamente alla visione di molti designer e artisti trasformandosi sempre in qualcosa di nuovo, al passo con i tempi e i cambiamenti». Da qui l'idea di coinvolgere un artista visionario come Refik Anadol.</p>
+          </div>
+        </section>
+
+        <div class="single-image-section margin-top">
+          <div class="single-image-section-container">
+            <div class="background">
+              <div class="white-background"></div>
+              <div class="black-background"></div>
+            </div>
+            <div class="single-image-container">
+                <img src="../assets/Gedi_Longform7_8.png" alt="" style="width:100%" height="auto">
+              <div class="single-image-caption">
+                <svg width="408" height="18" viewBox="0 0 408 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="187" y="9" width="1.00001" height="187" transform="rotate(90 187 9)" fill="white"/>
+                <rect x="408" y="9" width="1.00001" height="187" transform="rotate(90 408 9)" fill="white"/>
+                <path d="M203.539 14.2144H204.373V5.57039L207.826 9.02405L208.402 8.43851L203.956 3.99243L199.5 8.43851L200.09 9.02405L203.539 5.57039V14.2144Z" fill="white"/>
+                <circle cx="204" cy="9" r="8.75" stroke="white" stroke-width="0.5"/>
+                </svg>
+                <span>Jean-Christophe Babin, CEO Gruppo Bulgari</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section fade class="text-container no-margin">
+          <div class="text-inner first-text">
+            <p>Le sue opere rappresentano la quintessenza del concetto di metamorfosi con uno straordinario impatto visivo”, continua Babin. «Inoltre noi e lui parliamo la stessa lingua. La centralità della manifattura sta tanto nelle mani intelligenti dei nostri artigiani quanto nella capacità di Refik Anadol di mettere insieme una tecnologia così complessa come quella utilizzata in questa installazione trasformandola in arte. È incredibile pensare come partendo da più di 200 milioni di immagini della natura si arrivi a visioni poetiche che ipnotizzano chi le osserva. Il risultato è un mondo parallelo affascinante e magico».</p>
+          </div>
+        </section>
+
+        <div class="image-row first-row no-overflow">
+          <div class="left">
+            <img fade-up src="../assets/Gedi_Longform7_9.png" alt="">
+            <div fade class="caption-img desktop">
+              <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.40136 15L8.37609 14.0123L2.62682 8.20313H17V6.79688H2.62682L8.37609 0.970981L7.40136 0L0 7.5L7.40136 15Z" fill="#282928"/>
+              </svg>
+           Bracciale Bulgari Collezione Serpenti Viper in oro rosa e diamanti
+            </div>
+            <div fade class="caption-img mobile">
+              ↑  Bracciale Bulgari Collezione Serpenti Viper in oro rosa e diamanti
+            </div>
+          </div>
+          <div class="right">
+            <img fade-up src="../assets/Gedi_Longform7_10.png" alt="">
+            <div class="caption-container-white">
+              <div fade class="caption-img desktop">
+                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.40136 15L8.37609 14.0123L2.62682 8.20313H17V6.79688H2.62682L8.37609 0.970981L7.40136 0L0 7.5L7.40136 15Z" fill="#282928"/>
+                </svg>
+               Bracciale Bulgari Collezione Serpenti Viper due giri in oro bianco e diamanti
+              </div>
+              <div fade class="caption-img mobile">
+              ↑ Bracciale Bulgari Collezione Serpenti Viper due giri in oro bianco e diamanti</div>
+            </div>
+          </div>
+        </div>
+
+
+        <section fade class="text-container no-margin">
+          <div class="text-inner first-text">
+            <p>Ma celebrare il serpente, da sempre simbolo di rinascita, partendo da Milano, cosa significa per il brand? «Quest'anno Bulgari ha voluto omaggiare la città per la sua identità internazionale e contemporanea e soprattutto per la sua tenacia e forza nel momento della rinascita», spiega l'ad del gruppo raccontando i tanti eventi organizzati da maggio a oggi nella città lombarda.</p>
+            <p>«Nel corso di questo anno più che mai, Milano è stata per Bulgari un vero scrigno nel quale parlare di lusso, bellezza e “ben fatto”. Non smetteremo mai di ringraziarla abbastanza per questa calorosa accoglienza». ■</p>
+          </div>
+        </section>
+
+
+        <div class="single-image-section large-image">
+          <div class="single-image-section-container">
+            <div class="background">
+              <div class="white-background"></div>
+              <div class="black-background"></div>
+            </div>
+            <div class="single-image-container">
+              <div class="single-image">
+                <img img-zoom src="../assets/Gedi_Longform7_11.jpg" alt="">
+              </div>
+              <div fade class="single-image-caption">
+                <svg width="408" height="18" viewBox="0 0 408 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="187" y="9" width="1.00001" height="187" transform="rotate(90 187 9)" fill="white"/>
+                <rect x="408" y="9" width="1.00001" height="187" transform="rotate(90 408 9)" fill="white"/>
+                <path d="M203.539 14.2144H204.373V5.57039L207.826 9.02405L208.402 8.43851L203.956 3.99243L199.5 8.43851L200.09 9.02405L203.539 5.57039V14.2144Z" fill="white"/>
+                <circle cx="204" cy="9" r="8.75" stroke="white" stroke-width="0.5"/>
+                </svg>
+                <span>Jean-Christophe Babin, CEO Gruppo Bulgari, Chiara Ferragni, madrina dell'evento, Refik Anadol, media artist</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="event-banner">
+          <div class="banner-inner">
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.2394 16.998V13.43H7.88741V11.998L10.5034 4.19805H12.8634V11.91H14.1114V13.43H12.8634V16.998H11.2394ZM9.55141 11.91H11.2394L11.4554 8.70205L11.6554 5.73405H11.2794L10.4954 8.70205L9.55141 11.91Z" fill="white"/>
+            <circle cx="11.5" cy="11" r="10.5" stroke="white"/>
+            </svg>
+
+            <h2 fade>La formula magica</h2>
+            <h4 fade>dell'ispirazione</h4>
+            <div fade class="vertical-line"> </div>
+            <div fade class="event-date">25 Ottobre 2021</div>
+          </div>
+            <div class="hr bottom desktop"></div>
+        </div>
+        <!-- fine page-container -->
+      </div>
+
+      <div class="event-full-banner">
+        <div class="event-circle desktop circle-big">
+            <img src="../assets/circle2.png" alt="">
+        </div>
+        <div class="event-inner-container">
+         <div class="event-left-col">
+            <div class="event-text-row">
+              <div fade class="event-text">
+                <h6>La retrospettiva in boutique</h6>
+                <p>Per completare il percorso narrativo dedicato a Serpenti, nello stesso periodo dell'installazione in piazza Duomo, il negozio Bulgari di via Montenapoleone ospita una retrospettiva con alcune delle creazioni più significative della collezione.</p></div>
+              <div fade class="qr-container desktop">
+                <div class="image-qr-container desktop">
+                <img src="../assets/img_10.png" alt="">
+              </div>
+                <div class="qr-caption">
+                  <span>↑ Inquadra il QR code per prenotare la visita all’installazione</span>
+                </div>
+              </div>
+            </div>
+            <div  fade class="event-render-row">
+              <div class="event-image">
+                <img src="../assets/img_9.png" alt="">
+              </div>
+              <div class="event-caption desktop">
+                <div class="cap-row">
+                  <span>Per visitare l’installazione è possibile prenotare sul <a target="_blank" href="https://events-bulgari.force.com/s/?language=it">sito di Bulgari</a>, o attraverso il QR code</span>
+                </div>
+              </div>
+            </div>
+
+            <div fade class="caption mobile">
+              <span>Per visitare l’installazione è possibile prenotare sul <a target="_blank" href="https://events-bulgari.force.com/s/?language=it">sito di Bulgari</a>, o attraverso il QR code</span>
+            </div>
+            <div fade class="event-circle mobile">
+                <img src="../assets/circle2.png" alt="">
+            </div>
+            <div fade class="image-qr-container mobile">
+            <img src="../assets/img_10.png" alt="">
+            </div>
+            <div fade class="caption-qr mobile">
+              <span>↑ Inquadra il QR code per prenotare la visita all’installazione</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    <footer>
+      <div class="footer-container">
+        <div class="arrow-top">
+          <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.32961 18.4546L8.76143 18.4546L8.76143 3.608L14.6932 9.53982L15.6819 8.53413L8.04552 0.897771L0.392112 8.53413L1.40632 9.53982L7.32961 3.608L7.32961 18.4546Z" fill="#282928"/>
+          </svg>
+        </div>
+        <div class="footer-row">
+          <div class="col col-left-footer">
+            <h6>A cura di</h6>
+            <span><a target="_blank" href="https://www.gedivisual.it/#gerenza">Gedi Visual</a></span>
+          </div>
+          <div class="col col-center-footer">
+            <h6>IN COLLABORAZIONE CON </h6>
+            <img src="../assets/bulgari_logo.png" alt="">
+          </div>
+          <div class="col col-right-footer">
+            <h6>GRAFICA E SVILUPPO</h6>
+            <span><a target="_blank" href="https://www.beamediacompany.com/">BEA</a> x Gedi</span>
+          </div>
+        </div>
+
+          <div class="footer-include">
+              GEDI News Network S.p.A. - P.Iva 01578251009 ISSN 2499-0817 -
+              <a href="javascript:void" id="kw-cookie-link">Cookie Policy</a> -
+              <a href="javascript:void" id="kw-privacy-link">Privacy</a>
+          </div>
+      </div>
+
+    </footer>
+  <script type="text/javascript" src="../main.347ab268f2f71a25b3c1.bundle.js"></script>
+    <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
+    <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
+</body>
+
+
+</html>
