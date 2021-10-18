@@ -107,12 +107,8 @@ swipers.forEach((item, i) => {
     slidesPerView: 3,
     freeMode: true,
     grabCursor: true,
-
-    pagination: {
-     el: '.swiper-pagination',
-     type: 'bullets',
-     clickable: true,
-   },
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
     scrollbar: {
       el: '.swiper-scrollbar',
       draggable: true,

@@ -416,7 +416,14 @@ body{
 		}
 	}
 }
+#number_1, #number_2, #number_3, #number_4, #number_5{
+	cursor: pointer;
+}
 
+
+
+
+// info
 .infografica{
 	margin-top: $spacing*10;
 	padding: $spacing*10 0;
