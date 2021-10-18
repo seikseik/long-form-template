@@ -4,15 +4,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import lozad from 'lozad'
 
-gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, SplitText, Draggable, InertiaPlugin);
+gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, SplitText);
 
 
 
 // scroll top
-let topArrow = document.querySelector(".arrow-top");
-topArrow.addEventListener("click", function(){
-  gsap.to(window, {duration: 2, scrollTo: 0});
-});
+// let topArrow = document.querySelector(".arrow-top");
+// topArrow.addEventListener("click", function(){
+//   gsap.to(window, {duration: 2, scrollTo: 0});
+// });
 
   // animation hero text
   const heroTitle = document.querySelector(".animation-text-hero");
@@ -95,3 +95,28 @@ tl.from(chars, {duration: 1.2, opacity:0, scale:0, y:80, rotationX:180, transfor
       once: true,
     });
   });
+
+
+  // swiper scroll
+  let swipers = document.querySelectorAll(".swiper-scroll-container")
+
+swipers.forEach((item, i) => {
+  const swiper = new Swiper(item, {
+    speed: 200,
+    spaceBetween: 50,
+    slidesPerView: 3,
+    freeMode: true,
+    grabCursor: true,
+
+    pagination: {
+     el: '.swiper-pagination',
+     type: 'bullets',
+     clickable: true,
+   },
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+    },
+
+});
+});

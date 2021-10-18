@@ -1,4 +1,4 @@
-// @import "font.css";
+@import "font.css";
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -53,14 +53,24 @@ div, section{
 
 
 // VARIABLES
+$young: "Young", serif;
+$nova: "proxima-nova", sans-serif;
 $spacing: 8px;
 $green: #387267;
 $white: #FCFCF3;
 $black: #493C3C;
+$grey: #8E8E8E;
+$size-text: 20px;
+$size-quote: 26px;
+$size-caption: 18px;
+$size-small-caption: 16px;
 
 body{
 	background: $white;
 	color: $black;
+	line-height: 1.4;
+	font-family: $nova;
+	font-weight: 500;
 }
 
 // policy
@@ -118,6 +128,49 @@ body{
 		position: absolute;
 		top:$spacing*4;
 	}
+	.text-hero-container{
+		position: absolute;
+		top:0;
+		width:100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: $spacing*15 0;
+		align-items: center;
+		h1{
+			font-size: 6vw;
+			text-align:center;
+			color: $white;
+			font-family: $young;
+			line-height: 1;
+		}
+		.sommario{
+			text-align: center;
+			max-width: 70%;
+			margin: 0 auto;
+			font-size: 24px;
+			color:$white;
+			line-height: 1.4;
+			font-family: $nova;
+		}
+	}
+	.image-hero-container{
+		height: 100vh;
+		width:100%;
+		overflow: hidden;
+		img{
+			width:100%;
+			min-height: 100%;
+			min-width: 100%;
+			object-fit: cover;
+		}
+	}
+	.arrow-hero{
+		position: absolute;
+		left:calc(50% - 18px);
+		bottom:40px;
+	}
 }
 
 
@@ -133,6 +186,417 @@ body{
 	top: -30px;
 	border:3px solid white;
 	cursor: pointer;
+}
+
+
+
+.first-block{
+	position: relative;
+	overflow: hidden;
+	.green-back{
+		background: $green;
+		position: absolute;
+		width:100%;
+		height: 100%;
+		top:0;
+		left: 20vw;
+		border-bottom-left-radius: 20px;
+	}
+	.first-block-container{
+		display: flex;
+		align-items: center;
+		padding-left: 10vw;
+		padding-right: 5vw;
+		padding-top: $spacing*10;
+		padding-bottom: $spacing*5;
+		position: relative;
+
+		.col-text{
+			margin-left: $spacing*8;
+			width:60%;
+			color:$white;
+			.author{
+				padding: 6px 14px;
+				border-radius: 90px;
+				border: 2px solid $white;
+				display:inline;
+				margin-bottom: $spacing*5;
+				font-size: $size-small-caption;
+				span{
+					font-family: $young;
+				}
+			}
+			.text-paragraph{
+				font-size: 20px;
+				margin-top:$spacing*5;
+				margin-bottom: $spacing*10;
+			}
+			.text-quote{
+				h4{
+					font-size: 24px;
+					font-family: $young;
+					line-height: 1.45;
+				}
+				.quote-author{
+					margin-top: $spacing*3;
+					display: flex;
+					.arrow{
+						margin-right: $spacing;
+					}
+					.author-text{
+						h6{
+							font-weight: 700;
+							font-size: $size-caption;
+							line-height: 1;
+							margin-bottom: $spacing/2;
+						}
+						span{
+							font-weight: lighter;
+							font-size: $size-small-caption;
+						}
+					}
+
+				}
+			}
+		}
+		.col-image{
+			width:40%;
+			position:relative;
+			.stella{
+				position: absolute;
+				right:-32px;
+				top:-40px;
+			}
+			img{
+				width:100%;
+				height: auto;
+				border-radius: 20px;
+			}
+		}
+	}
+}
+
+
+.page-width{
+	padding: 0 5vw;
+}
+.text-section{
+	margin-top: $spacing*12;
+	.line-container{
+		display: flex;
+		align-items: center;
+		.line-hr{
+			margin-left: $spacing;
+			height: 2px;
+			width:100%;
+			background: $black;
+		}
+	}
+	.column-container{
+		display: flex;
+		.col-left-text{
+			position: relative;
+			width:30%;
+			padding-top: $spacing*4;
+			padding-right: $spacing*6;
+			.stella-black{
+				position: absolute;
+				right: -15px;
+				top: -35px;
+			}
+			.vertical-line-hr{
+				position: absolute;
+				top:-14px;
+				right: 0;
+				width:2px;
+				background: $black;
+				height: calc(100% + 14px);
+			}
+			.title-paragraph{
+				position: sticky;
+				top:$spacing*4;
+				h3{
+					font-size: $size-quote;
+					color: $green;
+					font-family: $young;
+					margin-bottom: $spacing*2;
+				}
+				p{
+					color:$grey;
+					font-size: $size-caption;
+				}
+			}
+		}
+		.col-right-text{
+			width:70%;
+			padding-top: $spacing*4;
+			padding-left: $spacing*4;
+			.text-paragraph{
+				font-size: $size-text;
+				strong{font-weight: 700;}
+				p{
+					margin-bottom: $spacing*6;
+				}
+			}
+			.quote-paragraph{
+				margin-bottom: $spacing*6;
+				display: flex;
+				img{
+					width: 20px;
+					height: auto;
+					margin-bottom: $spacing/2;
+				}
+				h4{
+					font-size: $size-quote;
+					color:$green;
+					font-family: $young;
+					width:75%;
+					margin-right: $spacing*2;
+				}
+				.quote-author{
+					display: flex;
+					flex-direction: column;
+					padding-left: $spacing*3;
+					width:25%;
+					h6{
+						font-size: $size-caption;
+						color:$green;
+						font-weight: 700;
+					}
+					span{
+						font-size: $size-small-caption;
+						color:$grey;
+					}
+				}
+			}
+		}
+	}
+}
+
+.mappa{
+	margin-top: $spacing*12;
+	display: flex;
+	.col-left-mappa{
+		width:30%;
+		padding-right: $spacing*6;
+		h3{
+			font-size: $size-quote;
+			color: $green;
+			font-family: $young;
+			margin-bottom: $spacing*2;
+		}
+		p{
+			color:$grey;
+			font-size: $size-caption;
+		}
+	}
+}
+
+.infografica{
+	margin-top: $spacing*10;
+	padding: $spacing*10 0;
+	position: relative;
+	.green-back-left{
+		background: $green;
+		height: 100%;
+		position: absolute;
+		top:0;
+		width:calc(100% - 5vw);
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+		z-index: -1;
+	}
+	.info-container{
+		display: flex;
+		padding-right: 10vw;
+		.col-left-info{
+			width:25%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			h3{
+				font-size: $size-quote;
+				color: $white;
+				font-family: $young;
+				margin-bottom: $spacing*2;
+			}
+			p, .info-caption{
+				color:$white;
+				font-size: $size-caption;
+			}
+		}
+		.col-right-info{
+			width:75%;
+			padding-left: $spacing*2;
+			img{
+				width:100%;
+				height: auto;
+			}
+		}
+	}
+	&.second-info{
+		.info-container{
+			flex-direction: column;
+			.col-left-info{
+				width:100%;
+				display: flex;
+				position: relative;
+				.title-paragraph{
+					width:80%;
+					display: flex;
+					h3{
+						width:30%;
+					}
+					p{
+						width:70%;
+					}
+					img{
+						position: absolute;
+						right: 0;
+						top:-40px;
+					}
+				}
+			}
+			.col-right-info{
+				width:100%;
+				padding: 0;
+				.row-info-container{
+					display: flex;
+					margin-top: $spacing*6;
+					.col{
+						display: flex;
+						flex-direction: column;
+						flex:1;
+						span{
+							margin-top: $spacing*6;
+							color: $white;
+							font-size: $size-small-caption;
+						}
+						&:first-child{
+							padding-right: $spacing*2;
+						}
+						&:last-child{
+							padding-left: $spacing*2;
+						}
+						.title-info{
+							display: flex;
+							margin-bottom: $spacing*4;
+							align-items: flex-start;
+							img{
+								width:20px;
+								height: auto;
+								margin-right: $spacing*2;
+								padding-top: $spacing/2;
+							}
+							h4{
+								color:white;
+								font-size: 24px;
+								font-family: $young;
+								max-width: 50%;
+								line-height: 1.1;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.swiper-section{
+	overflow: hidden;
+	padding: $spacing*3 0;
+	margin-top: $spacing*12;
+	margin-bottom: $spacing*12;
+	position: relative;
+	.green-back-scroll{
+		background: $green;
+		height: 100%;
+		width:100%;
+		left: 10vw;
+		top:0;
+		position: absolute;
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
+	}
+}
+.swiper-scroll-container{
+	position: relative;
+	.swiper-slide{
+		img{
+			border-radius: 20px;
+			width:100%;
+			height: auto;
+		}
+		&:first-child{
+			margin-left: $spacing*3;
+		}
+		&:last-child{
+			margin-right: $spacing*3;
+		}
+	}
+}
+
+	.hr-separator{
+		margin: 0 10vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		margin-bottom: $spacing*12;
+		.hr-line{
+			width:100%;
+			height: 2px;
+			background: $black;
+		}
+		img{
+			position: absolute;
+		}
+	}
+
+.row-image-section{
+	margin-bottom: $spacing*12;
+	position: relative;
+	.green-back-row{
+		background: $green;
+		top:0;
+		width:calc(100% - 10vw);
+		position: absolute;
+		z-index: -1;
+		height: 100%;
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+	}
+	.row-image-container{
+		display: flex;
+		padding-top: $spacing*5;
+		padding-bottom: $spacing*5;
+		.col-left{
+			width:25%;
+			padding-right: $spacing*2;
+			padding-top: $spacing*4;
+			h4{
+				color:$white;
+				margin-bottom: $spacing*2;
+				font-size: $size-quote;
+				font-family: $young;
+			}
+			p{
+				font-size: $size-caption;
+				color:$white;
+			}
+		}
+		.col-right{
+			width:75%;
+			padding-left: $spacing*2;
+			img{
+				width:100%;
+				height: auto;
+				border-radius: 20px;
+			}
+		}
+	}
 }
 
 
