@@ -61,6 +61,12 @@
       <h1>Il Parco<br> va in città</h1>
       <div class="sommario">
         <div class="social-container">
+          <div class="hr-left"></div>
+          <div class="social-links">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"><img id="fb" src="./assets/fb.svg" alt=""></a>
+            <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"><img id="tw" src="./assets/twitter.svg" alt=""></a>
+          </div>
+          <div class="hr-right"></div>
         </div>
         <p>Un parco nel cuore della città con fioriere e orti urbani, dove fare sport con attrezzature e app intelligenti, riposare su panchine di design e ammirare qualche opera d’arte urbana.</p>
         <div class="arrow-hero">
@@ -365,7 +371,40 @@
 
     </div>
 
-    
+
+    <footer>
+      <div class="footer-container">
+        <div class="arrow-top">
+          <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="34" cy="34" r="34" fill="#493C3C"/>
+          <path d="M33.4181 47.1818L35.5659 47.1818L35.5659 24.9119L44.4636 33.8097L45.9466 32.3011L34.492 20.8466L23.0119 32.3011L24.5332 33.8097L33.4181 24.9119L33.4181 47.1818Z" fill="#FCFCF3"/>
+          </svg>
+        </div>
+        <div class="footer-row">
+          <div class="col col-left-footer">
+            <h6>A cura di</h6>
+            <span><a target="_blank" href="https://www.gedivisual.it/#gerenza">Gedi Visual</a></span>
+          </div>
+          <div class="col col-center-footer">
+            <h6>IN COLLABORAZIONE CON </h6>
+            <img src="./assets/agos.png" alt="">
+          </div>
+          <div class="col col-right-footer">
+            <h6>GRAFICA E SVILUPPO</h6>
+            <span><a target="_blank" href="https://www.beamediacompany.com/">BEA</a> x Gedi</span>
+          </div>
+        </div>
+
+          <div class="footer-include">
+            GEDI News Network S.p.A. - P.Iva 01578251009 ISSN 2499-0817 -
+            <a href="javascript:void" id="kw-cookie-link">Cookie Policy</a> -
+            <a href="javascript:void" id="kw-privacy-link">Privacy</a>
+          </div>
+      </div>
+
+    </footer>
+
+
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
