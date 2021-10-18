@@ -9,27 +9,11 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, SplitText);
 
 
 // scroll top
-// let topArrow = document.querySelector(".arrow-top");
-// topArrow.addEventListener("click", function(){
-//   gsap.to(window, {duration: 2, scrollTo: 0});
-// });
+let topArrow = document.querySelector(".arrow-top");
+topArrow.addEventListener("click", function(){
+  gsap.to(window, {duration: 2, scrollTo: 0});
+});
 
-  // animation hero text
-  const heroTitle = document.querySelector(".animation-text-hero");
-
-  var tl = gsap.timeline(),
-      mySplitText = new SplitText(heroTitle, {type:"words,chars", wordsClass: "split-line"
-    }),
-      chars = mySplitText.chars;
-  gsap.set(heroTitle, {perspective: 400});
-tl.from(chars, {duration: 1.2, opacity:0, scale:0, y:80, rotationX:180, transformOrigin:"0% 50% -50",  ease:"back", stagger: 0.01}, "+=0");
-  // tl.from(chars,
-  //   {  duration: 0.6,
-  //     ease: "circ.out",
-  //     y: -80,
-  //     stagger: 0.02
-  //   },
-  //    "+=0");
 
 
   // animate text on scroll
@@ -79,14 +63,35 @@ tl.from(chars, {duration: 1.2, opacity:0, scale:0, y:80, rotationX:180, transfor
       once: true,
     });
   });
+  const fadeUp = gsap.utils.toArray("[fade-up]");
+  fadeUp.forEach((el, i) => {
+    const anim = gsap.fromTo(el, {autoAlpha: 0, y: -100}, {duration: 1, autoAlpha: 1, y: 0});
+    ScrollTrigger.create({
+      trigger: el,
+      animation: anim,
+      toggleActions: 'play none none none',
+      once: true,
+    });
+  });
 
 
   // hr line animation
-  const hr = gsap.utils.toArray(".hr");
-
+  const hr = gsap.utils.toArray(".vertical-line-hr");
   hr.forEach((el, i) => {
-    gsap.set(el, {transformOrigin:"left"})
-    const anim = gsap.fromTo(el, {scaleX: 0}, {duration: .5, scaleX: 1});
+    gsap.set(el, {transformOrigin:"top"})
+    const anim = gsap.fromTo(el, {scaleY: 0}, {duration: 2, scaleY: 1});
+    ScrollTrigger.create({
+      trigger: el,
+      animation: anim,
+      ease: "circ.out",
+      toggleActions: 'play none none none',
+      once: true,
+    });
+  });
+  const hrcenter = gsap.utils.toArray(".hr-line");
+  hrcenter.forEach((el, i) => {
+    gsap.set(el, {transformOrigin:"center"})
+    const anim = gsap.fromTo(el, {scaleX: 0}, {duration: 1, scaleX: 1});
     ScrollTrigger.create({
       trigger: el,
       animation: anim,
@@ -96,7 +101,24 @@ tl.from(chars, {duration: 1.2, opacity:0, scale:0, y:80, rotationX:180, transfor
     });
   });
 
-
+  gsap.set(".hr-left", {transformOrigin:"right"})
+  const hrLeft = gsap.fromTo(".hr-left", {scaleX: 0}, {duration: 1, scaleX: 1});
+  ScrollTrigger.create({
+    trigger: ".hr-left",
+    animation: hrLeft,
+    ease: "circ.out",
+    toggleActions: 'play none none none',
+    once: true,
+  });
+  gsap.set(".hr-right", {transformOrigin:"left"})
+  const hrRight = gsap.fromTo(".hr-right", {scaleX: 0}, {duration: 1, scaleX: 1});
+  ScrollTrigger.create({
+    trigger: ".hr-right",
+    animation: hrRight,
+    ease: "circ.out",
+    toggleActions: 'play none none none',
+    once: true,
+  });
   // swiper scroll
   let swipers = document.querySelectorAll(".swiper-scroll-container")
 
@@ -107,8 +129,10 @@ swipers.forEach((item, i) => {
     slidesPerView: 3,
     freeMode: true,
     grabCursor: true,
+    navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+    },
     scrollbar: {
       el: '.swiper-scrollbar',
       draggable: true,
