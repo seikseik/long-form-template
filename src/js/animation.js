@@ -14,7 +14,11 @@ topArrow.addEventListener("click", function(){
   gsap.to(window, {duration: 2, scrollTo: 0});
 });
 
-
+let h = document.querySelector(".hero").offsetHeight;
+let arrow = document.querySelector(".arrow");
+arrow.addEventListener("click", function(){
+  gsap.to(window, {duration: 0.7, scrollTo: h});
+});
 
   // animate text on scroll
 
