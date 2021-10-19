@@ -74,6 +74,31 @@ topArrow.addEventListener("click", function(){
     });
   });
 
+  // fade circles
+  ScrollTrigger.batch(".circle", {
+    onEnter: elements => {
+      gsap.from(elements, {
+        autoAlpha: 0,
+        stagger: 0.15,
+        duration: 1
+      });
+    },
+    once: true
+  });
+
+
+// zoom
+  const zoom = gsap.utils.toArray("[img-zoom]");
+  zoom.forEach((el, i) => {
+    const anim = gsap.fromTo(el, {scale: 1}, {scale: 1.05, duration: 2.5, delay: 0.2});
+    ScrollTrigger.create({
+      trigger: el,
+      animation: anim,
+      toggleActions: 'play none none none',
+      once: true,
+    });
+  });
+
 
   // hr line animation
   const hr = gsap.utils.toArray(".vertical-line-hr");
@@ -139,4 +164,20 @@ swipers.forEach((item, i) => {
     },
 
 });
+});
+
+// mappa
+let numbers = document.querySelectorAll(".number");
+numbers.forEach((item, i) => {
+  console.log(item)
+  item.addEventListener("click", function(){
+    let id = item.id
+    let overlay = document.querySelector(`[${id}]`);
+    overlay.style.opacity = 1;
+    overlay.style.visibility = "visible";
+    overlay.onclick = function(){
+      overlay.style.opacity = 0;
+      overlay.style.visibility = "hidden";
+    }
+  })
 });

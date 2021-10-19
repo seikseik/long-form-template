@@ -421,10 +421,27 @@ body{
 			font-size: $size-caption;
 		}
 	}
+	.col-right-mappa{
+		position: relative;
+			.map-overlay{
+				position: absolute;
+				top:0;
+				opacity: 0;
+				visibility: hidden;
+				cursor: pointer;
+				pointer-events: all;
+		}
+	}
 }
 #number_1, #number_2, #number_3, #number_4, #number_5{
 	cursor: pointer;
 }
+.number {
+
+}
+
+
+
 
 
 
@@ -434,6 +451,7 @@ body{
 	margin-top: $spacing*10;
 	padding: $spacing*10 0;
 	position: relative;
+	overflow: hidden;
 	.green-back-left{
 		background: $green;
 		height: 100%;
@@ -466,9 +484,16 @@ body{
 		.col-right-info{
 			width:75%;
 			padding-left: $spacing*2;
-			img{
+			display: flex;
+			flex-direction: column;
+			svg{
 				width:100%;
 				height: auto;
+			}
+			.legenda-info{
+				margin: 0 auto;
+				margin-bottom: $spacing*2;
+				max-width: 80%;
 			}
 		}
 	}
@@ -504,7 +529,6 @@ body{
 					.col{
 						display: flex;
 						flex-direction: column;
-						flex:1;
 						span{
 							margin-top: $spacing*6;
 							color: $white;
@@ -512,9 +536,11 @@ body{
 						}
 						&:first-child{
 							padding-right: $spacing*2;
+							width:60%;
 						}
 						&:last-child{
 							padding-left: $spacing*2;
+							width:45%;
 						}
 						.title-info{
 							display: flex;
@@ -550,9 +576,9 @@ body{
 	.green-back-scroll{
 		background: $green;
 		height: 100%;
+		top:0px;
 		width:100%;
 		left: 10vw;
-		top:0;
 		position: absolute;
 		border-top-left-radius: 20px;
 		border-bottom-left-radius: 20px;
@@ -579,7 +605,7 @@ body{
 .swiper-button-next{
 	left: 25vw !important;
 	top:unset !important;
-	bottom: 10px !important;
+	bottom: 40px !important;
 		background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.9846 32C24.8297 32 32 24.8366 32 16C32 7.16344 24.8297 0 15.9846 0C7.47573 0 0.516681 6.62928 0 15L22.3783 15L16.8804 9.50747C16.4897 9.11713 16.4894 8.48397 16.8798 8.09326C17.2701 7.70254 17.9033 7.70224 18.294 8.09258L25.5009 15.2926C25.6886 15.4801 25.7941 15.7346 25.7941 16C25.7941 16.2654 25.6886 16.5199 25.5009 16.7075L18.294 23.9075C17.9033 24.2978 17.2701 24.2975 16.8798 23.9068C16.4894 23.5161 16.4897 22.8829 16.8804 22.4926L22.3783 17L2.8287e-06 17C0.516707 25.3707 7.47574 32 15.9846 32Z' fill='%23493C3C'/%3E%3C/svg%3E%3C/svg%3E%0A") !important;
 		background-repeat: no-repeat;
     background-position: initial;
@@ -591,7 +617,7 @@ body{
 .swiper-button-prev{
 	left: 18vw !important;
 	top:unset !important;
-	bottom: 10px !important;
+	bottom: 40px !important;
 	background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16.0154 32C7.17033 32 0 24.8366 0 16C0 7.16344 7.17033 0 16.0154 0C24.5243 0 31.4833 6.62928 32 15L9.62173 15L15.1196 9.50747C15.5103 9.11713 15.5106 8.48397 15.1202 8.09326C14.7299 7.70254 14.0967 7.70224 13.706 8.09258L6.49911 15.2926C6.31136 15.4801 6.20588 15.7346 6.20588 16C6.20588 16.2654 6.31136 16.5199 6.49911 16.7075L13.706 23.9075C14.0967 24.2978 14.7299 24.2975 15.1202 23.9068C15.5106 23.5161 15.5103 22.8829 15.1196 22.4926L9.62173 17L32 17C31.4833 25.3707 24.5243 32 16.0154 32Z' fill='%23493C3C'/%3E%3C/svg%3E%0A") !important;
 	background-repeat: no-repeat;
     background-position: initial;
