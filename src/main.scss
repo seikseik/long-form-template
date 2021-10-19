@@ -127,6 +127,7 @@ body{
 	.logo{
 		position: absolute;
 		top:$spacing*4;
+		z-index: 9;
 	}
 	.text-hero-container{
 		position: absolute;
