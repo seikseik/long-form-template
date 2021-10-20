@@ -42,7 +42,10 @@
     <meta name="twitter:url" content="<?php echo $pageUrl; ?>">
     <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
 
-
+    <link rel="stylesheet" href="https://use.typekit.net/wfx6pbw.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:wght@400;500" rel="stylesheet">
 
   </head>
 
@@ -51,11 +54,14 @@
   <div class="hero">
     <div class="video-container">
       <div class="video-overlay"></div>
+      <img src="./assets/prova-hero.jpg" alt="">
 
     </div>
     <div class="hero-text-container">
       <div class="logo">
-        <img src="" alt="">
+        <a href="#">
+          <img src="./assets/logo.svg" alt="">
+        </a>
       </div>
       <div class="title">
         <h1>La  nuova rete del alcio</h1>
@@ -64,8 +70,10 @@
         <p>Lo sport in tv sta vivendo una transizione epocale, spostandosi dal satellite allo streaming. Ora, grazie a TimVision, i tifosi hanno lo stadio in tasca</p>
       </div>
       <div class="social">
-        <a href="#">Fb</a>
-        <a href="#">Tw</a>
+      <div class="social-container">
+          <a href="#"> <img src="./assets/facebook.svg" alt=""></a>
+        <a href="#"> <img src="./assets/twitter.svg" alt=""></a>
+      </div>
         <div class="arrow">
           <svg width="36" height="26" viewBox="0 0 36 26" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M3 2L25.1091 2L25.1091 25.2727M25.1091 25.2727L15.2182 15.3818M25.1091 25.2727L35 15.3818" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="bevel"/>
@@ -79,7 +87,7 @@
   <section class="first-section">
 
     <div class="text-container">
-      <p>l satellite sta cedendo il passo allo streaming. Sempre più operatori stanno entrando in questo mercato e tra i big si fa strada TimVision. Grazie agli accordi con Disney, Netflix, Dazn e Mediaset Infinity, la tv di Tim sta raggruppando le principali piattaforme per diventare il servizio su cui poter vedere tutto. A partire dal calcio. Dall’inizio del campionato stanno cambiando le abitudini dei tifosi, che adesso possono seguire la propria squadra non solo da casa, ma anche in viaggio, tra una riunione e l’altra, dalla spiaggia. Si tratta di una spinta verso quell’innovazione digitale di cui l’Italia ha bisogno e che è stata messa al centro del Piano nazionale di ripresa e resilienza. Cambiare il calcio in tv per modernizzare il Paese: la partita più importante da vincere.</p>
+      <p> <span class="dropcap">I</span> l satellite sta cedendo il passo allo streaming. Sempre più operatori stanno entrando in questo mercato e tra i big si fa strada TimVision. Grazie agli accordi con Disney, Netflix, Dazn e Mediaset Infinity, la tv di Tim sta raggruppando le principali piattaforme per diventare il servizio su cui poter vedere tutto. A partire dal calcio. Dall’inizio del campionato stanno cambiando le abitudini dei tifosi, che adesso possono seguire la propria squadra non solo da casa, ma anche in viaggio, tra una riunione e l’altra, dalla spiaggia. Si tratta di una spinta verso quell’innovazione digitale di cui l’Italia ha bisogno e che è stata messa al centro del Piano nazionale di ripresa e resilienza. Cambiare il calcio in tv per modernizzare il Paese: la partita più importante da vincere.</p>
     </div>
 
     <div class="image-parallax">
@@ -106,6 +114,7 @@
 
     <section class="info">
       <div class="col-1">
+        <img id="cerchi-1" src="./assets/cerchi-sx.svg" alt="">
         <div class="col-container">
           <span>oltre</span>
           <div class="number">1700</div>
@@ -116,9 +125,10 @@
             <p>LE PARTITE  SVOLTE</p>
           </div>
         </div>
+        <img id="trat-1" src="./assets/trat.svg" alt="">
       </div>
 
-      <div class="col-3">
+      <div class="col-2">
         <div class="col-container">
           <div class="col-left">
             <div class="number">13</div>
@@ -139,6 +149,7 @@
       </div>
 
       <div class="col-3">
+        <img id="trat-2" src="./assets/trat.svg" alt="">
         <div class="col-container">
           <span>oltre</span>
           <div class="number">2600</div>
@@ -149,43 +160,127 @@
             <p>LE ORE DI STREAMING TOTALI</p>
           </div>
         </div>
+        <img id="cerchi-2" src="./assets/cerchi-dx.svg" alt="">
+      </div>
+    </section>
+
+    <section class="second-section">
+      <img id="fischietto" src="./assets/fischietto.svg" alt="">
+      <img id="carte" src="./assets/carte.svg" alt="">
+
+      <div class="text-container">
+        <p>Il 29 agosto 1993 Tele+ trasmette Lazio-Foggia (0-0), la prima partita di Serie A mandata in onda da una pay-tv nel nostro Paese. Dal garage dell’amico che si poteva permettere un abbonamento salato o dal bar che per cinquemila lire offriva partita, patatine e bibita, si passa alla visione in streaming su smart tv, tablet e smartphone in qualsiasi luogo ci sia la connessione a Internet. In mezzo ci sono quasi tre decenni di evoluzione. Nel 1996 a Tele+ si aggiunge Stream, (prima via cavo e poi via satellite): le due emittenti si dividono i diritti delle squadre dando vita a un duopolio televisivo del calcio. Prima di unirsi nel 2003, dopo il via libera alla fusione da parte della Commissione europea, per dare vita a Sky. Le parabole inondano i tetti dei palazzi, ridisegnando gli skyline delle città.</p>
+
+        <p>Il rito collettivo della partita al bar si trasforma in visione individuale nel salotto di casa. Gli highlights ripropongono le reti a qualsiasi ora. “Diretta Gol”, prima dell’avvento del campionato spezzatino, permette di vedere il meglio delle partite della domenica in contemporanea. Il massimo sforzo si raggiunge durante le Olimpiadi di Londra 2012, con dodici sport trasmessi nello stesso momento su altrettanti canali. La tv satellitare di Rupert Murdoch domina la scena, lasciando a Rai e Mediaset qualche partita in chiaro della Champions League e dell’Europa League e la Coppa Italia. Fino, appunto, all’irruzione dello streaming. L’inizio di una nuova era.</p>
+      </div>
+    </section>
+
+
+    <section class="sticky-scrolling">
+      <div class="section-scroll">
+        <div class="col-left">
+          <div class="sticky-container">
+            <img src="./assets/campo-1.svg" alt="">
+          </div>
+
+        </div>
+        <div class="col-right">
+          <div class="col-container">
+            <div class="title">
+              <h2>L’universo sportivo in una piattaforma</h2>
+              <img src="./assets/arrow-down.svg" alt="">
+            </div>
+            <div class="text-scroll">
+              <p>Dazn con tutta la Serie A Tim, 104 partite della Champions League, l’Europa League, la Conference League, la Serie B, la Coppa del mondo di sci, i tornei del Grande Slam di tennis, la Serie A di basket. Oltre alle grandi corse a tappe del ciclismo. Le emozioni del grande sport con i due canali Eurosport 1 e 2, gli esclusivi extra di Eurosport Player e la Serie A Femminile TimVision. E poi le serie tv, i cartoni animati, i film, i contenuti di Infinity+, l’intrattenimento di Discovery+ e le produzioni originali di TimVision.</p>
+
+              <p>Tutto a 19,99 euro al mese (anziché 29,99 per attivazioni entro il 15 novembre) con prezzo bloccato fino a settembre 2022 (con addebito in bolletta Tim o, per attivazioni da mobile, su credito telefonico attivando il servizio Tim ricarica automatica). L’offerta “Calcio e Sport” di TimVision è disponibile per i clienti Tim fissi e mobili e per i clienti di altri operatori.</p>
+
+              <p>Per chi intende disporre sulla propria smart tv di tutti i contenuti di TimVision, Dazn, Infinity+, Disney+ e Netflix, ecco il pacchetto “Gold” a 29,99 euro al mese (anziché 44,99), fino a settembre 2022 per attivazioni entro il 15 novembre. Per le due offerte in promozione è previsto un contributo di attivazione una tantum di 9,99 euro.</p>
+
+              <p>Tutto quello che serve per godersi sul divano questa varietà di contenuti sono una buona connessione a Internet e il TimVision Box, decoder capace di rafforzare e stabilizzare il segnale. Tim consiglia il Wi-Fi 360 Serie A, una connessione ultra-broadband con modem Tim e wi-fi certificato dai tecnici Tim. In questo modo è assicurata la copertura dell’abitazione e la migliore qualità per la visione in Full HD e 4K.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-scroll">
+        <div class="col-left">
+          <div class="sticky-container">
+            <img src="./assets/campo-2.svg" alt="">
+          </div>
+        </div>
+        <div class="col-right">
+          <div class="col-container">
+            <div class="title">
+              <h2>Perché lo streaming semplifica la vita</h2>
+              <img src="./assets/arrow-down.svg" alt="">
+            </div>
+            <div class="text-scroll">
+              <p>Oltre ad avere tutto il meglio dello sport e dell’intrattenimento, ci sono altri tre motivi validi per attivare un abbonamento a TimVision.</p>
+
+              <p>Primo, tutto è contenuto all’interno di un unico dispositivo, il TimVision Box, che mette in evidenza gli eventi in diretta e che propone contenuti personalizzati legati al palinsesto e ai gusti dell’utente. Secondo: per muoversi tra canali, piattaforme, visioni on-demand ed eventi in diretta, c’è un solo telecomando semplice da usare.</p>
+
+              <p>E poi il TimVision Box dispone del tuner digitale terrestre DVB-T2, il nuovo standard del digitale terreste che consente la fruizione di tutti i canali senza bisogno di acquistare una nuova televisione o un altro decoder. Il supporto del 4K HDR, del Dolby Digital+ e del Dolby Atmos passthrough, permette di fruire dei contenuti di TimVision e di tutti gli altri partner con la massima qualità video e audio.</p>
+
+              <p>Per un’esperienza completa sono inoltre disponibili funzioni aggiuntive come “pause&play”, per mettere in pausa i programmi del digitale terrestre fino a 15 minuti per poi riprenderne la visione, lo smart zapping, per navigare tra i programmi senza cambiare canale e scegliere quello preferito su cui sintonizzarsi e il restart, disponibile per i canali Mediaset, Viacom e Discovery.</p>
+
+              <p>Oltre a una guida tv grazie a cui è possibile ricercare i programmi andati in onda fino a sette giorni prima. Senza dimenticare Chromecast, la funzione che riproduce film, musica e foto dallo smartphone o dal pc sullo schermo della tv.</p>
+            </div>
+          </div>
+        </div>
       </div>
 
     </section>
 
 
-
-    <footer>
-      <div class="footer-container">
-        <div class="arrow-top">
-          <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="34" cy="34" r="34" fill="#493C3C"/>
-          <path d="M33.4181 47.1818L35.5659 47.1818L35.5659 24.9119L44.4636 33.8097L45.9466 32.3011L34.492 20.8466L23.0119 32.3011L24.5332 33.8097L33.4181 24.9119L33.4181 47.1818Z" fill="#FCFCF3"/>
-          </svg>
-        </div>
-        <div class="footer-row">
-          <div class="col col-left-footer">
-            <h6>A cura di</h6>
-            <span><a target="_blank" href="https://www.gedivisual.it/#gerenza">Gedi Visual</a></span>
-          </div>
-          <div class="col col-center-footer">
-            <h6>IN COLLABORAZIONE CON </h6>
-
-          </div>
-          <div class="col col-right-footer">
-            <h6>GRAFICA E SVILUPPO</h6>
-            <span><a target="_blank" href="https://www.beamediacompany.com/">BEA</a> x Gedi</span>
-          </div>
-        </div>
-
-          <div class="footer-include">
-            GEDI News Network S.p.A. - P.Iva 01578251009 ISSN 2499-0817 -
-            <a href="javascript:void" id="kw-cookie-link">Cookie Policy</a> -
-            <a href="javascript:void" id="kw-privacy-link">Privacy</a>
-          </div>
+<footer>
+<div class="footer-container">
+  <div class="col-left">
+    <img src="" alt="">
+  </div>
+  <div class="col-right">
+    <div class="row-1">
+      <div class="title-footer">
+          <h6>IN COLLABORAZIONE CON</h6>
+          <img src="./assets/logo-tim.svg" alt="">
       </div>
+        <img src="./assets/campo-3.svg" alt="">
+    </div>
+    <div class="row-2">
+      <div class="col">
+        <div class="title-footer">
+            <h6>Una produzione</h6>
+            <a target="_blank" href="https://www.gedivisual.it/#gerenza">GEDI VISUAL</a>
+        </div>
+      </div>
+      <div class="col">
+        <h6>GRAFICA E SVILUPPO</h6>
+        <a target="_blank" href="https://www.beamediacompany.com/">BEA x GEDI</a>
+      </div>
+    </div>
+    <div class="row-3">
+      <div class="footer-include">
+        GEDI News Network S.p.A. - P.Iva 01578251009 ISSN 2499-0817 -
+        <a href="javascript:void" id="kw-cookie-link">Cookie Policy</a> -
+        <a href="javascript:void" id="kw-privacy-link">Privacy</a>
+      </div>
+      <div class="arrow-top">
+        <svg width="42" height="31" viewBox="0 0 42 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_1184:2)">
+        <path d="M13.45 0.999999L13.45 30L35.5 30L35.5 10M13.45 0.999999L23.5 11.05M13.45 0.999999L3.4 11.05" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_1184:2">
+        <rect width="42" height="31" fill="white" transform="translate(42 31) rotate(-180)"/>
+        </clipPath>
+        </defs>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
 
-    </footer>
+</footer>
 
 
 
