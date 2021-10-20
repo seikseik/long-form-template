@@ -472,6 +472,7 @@ footer{
 			width:70%;
 			display: flex;
 			flex-direction: column;
+			overflow: hidden;
 			.row-1{
 				flex: 3;
 				position: relative;
