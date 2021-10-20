@@ -22,6 +22,10 @@ module.exports = merge(common, {
     new HtmlWebpackPlugin({
       filename: "arte-dell-emozione/index.html",
       template: "./src/arte-dell-emozione/template.html"
+    }),
+    new HtmlWebpackPlugin({
+      filename: "la-formula-magica/index.html",
+      template: "./src/la-formula-magica/template.html"
     })
   ],
   module: {

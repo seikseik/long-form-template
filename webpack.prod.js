@@ -36,6 +36,12 @@ module.exports = merge(common, {
         filename: "arte-dell-emozione/index.html",
         template: "./src/arte-dell-emozione/template.html",
         minify: false
+      }),
+      new HtmlWebpackPlugin({
+        title: "Home-3",
+        filename: "la-formula-magica/index.html",
+        template: "./src/la-formula-magica/template.html",
+        minify: false
       })
     ]
   },
