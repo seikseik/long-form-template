@@ -21,38 +21,26 @@ arrow.addEventListener("click", function(){
 });
 
   // animate text on scroll
-
+  let delay = 0;
   const quotes = document.querySelectorAll(".animation-text");
-  const timing = [ 0.3, 0.4, 0.4, 0.4];
-  const stagger = [ 0.01, 0.02, 0.02, 0.02];
-  function setupSplits() {
     quotes.forEach((quote, i) => {
 
-      if(quote.anim) {
-        quote.anim.progress(1).kill();
-        quote.split.revert();
-      }
-
       quote.split = new SplitText(quote, {
-        type:"words,chars",
+        type:"words",
         wordsClass: "split-line"
       });
 
-      quote.anim = gsap.from(quote.split.chars, {
-        scrollTrigger: {
-          trigger: quote,
-          start: "top 75%",
-        },
-        duration: timing[i],
+      quote.anim = gsap.from(quote.split.words, {
+        duration: 0.4,
         ease: "circ.out",
-        y: 80,
-        stagger: stagger[i]
+        y: 160,
+        delay: delay,
       });
+      delay += 0.135;
     });
-  }
 
-  ScrollTrigger.addEventListener("refresh", setupSplits);
-  setupSplits();
+
+
 
 
   // fade in
@@ -128,4 +116,17 @@ arrow.addEventListener("click", function(){
       toggleActions: 'play none none none',
       once: true,
     });
+  });
+
+
+  // parallax
+  const parallax = gsap.utils.toArray(".parallax");
+  parallax.forEach((item, i) => {
+    gsap.to(item, {
+    scrollTrigger: {
+      scrub: true
+    },
+    y: (i, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,
+    ease: "none"
+  });
   });
