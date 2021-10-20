@@ -88,7 +88,7 @@ $serif: 'Lora', serif;
 		font-size: 3.8vw;
 	}
 }
-.third-long{
+.third-long, .fourth-long{
 	#quote-1{
 		font-size: 3.3vw;
 	}
@@ -96,6 +96,9 @@ $serif: 'Lora', serif;
 		font-size: 3.8vw;
 	}
 }
+
+
+
 #quote-1{
 	font-size: 2.8vw;
 }
@@ -1067,6 +1070,13 @@ footer{
 
 
 // SECONDO LONGFORM
+.fourth-long{
+	.video-row{
+		max-width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
 
 .video-row{
 	max-width: $large-container;
@@ -1134,6 +1144,8 @@ footer{
 	}
 	@include caption;
 }
+
+
 
 .single-image-section{
 	max-width: $text-container;
@@ -1212,6 +1224,11 @@ footer{
 	}
 }
 .third-long{
+	.single-image-section.large-image{
+		margin-bottom: $spacing*3;
+	}
+}
+.fourth-long{
 	.single-image-section.large-image{
 		margin-bottom: $spacing*3;
 	}
@@ -1467,7 +1484,7 @@ img[data-loaded="true"], [data-loaded="true"] img { animation-name: showLazyImg;
 			font-size: 75px;
 		}
 	}
-	.third-long{
+	.third-long, .fourth-long{
 		#quote-1{
 			font-size: 55px;
 		}
@@ -1900,7 +1917,7 @@ body{
 		font-size: 40px;
 	}
 }
-.third-long{
+.third-long, .fourth-long{
 	#quote-1{
 		font-size: 35px;
 	}
