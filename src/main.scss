@@ -712,6 +712,31 @@ body{
 	}
 }
 
+.image-serpente{
+	position: relative;
+	width:80%;
+	margin: $spacing*12 auto;
+	img{
+		width:100%;
+		height: auto;
+	}
+	.caption-serpente{
+		position: absolute;
+		bottom:0;
+		@include caption;
+		width:50%;
+		padding: $spacing;
+		border-left: 1px solid #DEDEDE;
+		border-top: 1px solid #DEDEDE;
+		text-align: left;
+		display: flex;
+		flex-direction: column;
+		color:#282928;
+	}
+}
+.fourth-caption{
+	margin-top: $spacing;
+}
 
 .second-row{
 	height: auto;
@@ -1788,6 +1813,20 @@ body{
 	}
 }
 
+//  image fourth long
+.image-serpente{
+	position: relative;
+	width:100%;
+	margin: $spacing*10 auto;
+	img{
+		width:100%;
+		height: auto;
+	}
+	.caption-serpente{
+		width:70%;
+		padding: $spacing;
+	}
+}
 
 // SECONDO LONGFORM MOBILE
 
