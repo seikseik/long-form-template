@@ -149,13 +149,19 @@ arrow.addEventListener("click", function(){
     once: true,
   });
   // swiper scroll
-  let swipers = document.querySelectorAll(".swiper-scroll-container")
+let swipers = document.querySelectorAll(".swiper-scroll-container")
 
 swipers.forEach((item, i) => {
   const swiper = new Swiper(item, {
     speed: 200,
     spaceBetween: 50,
-    slidesPerView: 3,
+    slidesPerView: 1,
+    breakpoints: {
+      768: {
+        slidesPerView: 3
+      }
+
+    },
     freeMode: true,
     grabCursor: true,
     navigation: {
@@ -173,7 +179,6 @@ swipers.forEach((item, i) => {
 // mappa
 let numbers = document.querySelectorAll(".number");
 numbers.forEach((item, i) => {
-  console.log(item)
   item.addEventListener("click", function(){
     let id = item.id
     let overlay = document.querySelector(`[${id}]`);

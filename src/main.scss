@@ -1,5 +1,8 @@
 @import "font.css";
-
+html {
+    visibility: visible;
+    opacity: 1;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -112,7 +115,14 @@ body{
 
 
 // hero section
+.overlay-hero{
+	position: absolute;
+	height: 100%;
+	width:100%;
+	background-color: rgba(0,0,0,0.3);
+	z-index: 1;
 
+}
 .hero{
 	width:100vw;
 	height: 100vh;
@@ -131,6 +141,7 @@ body{
 	}
 	.text-hero-container{
 		position: absolute;
+		z-index: 2;
 		top:0;
 		width:100%;
 		height: 100%;
@@ -158,6 +169,7 @@ body{
 	}
 	.image-hero-container{
 		height: 100vh;
+		position: relative;
 		width:100%;
 		overflow: hidden;
 		img{
@@ -424,6 +436,11 @@ body{
 	}
 	.col-right-mappa{
 		position: relative;
+		padding-left: $spacing*4;
+		svg, img{
+			width:100%;
+			height: auto;
+		}
 			.map-overlay{
 				position: absolute;
 				top:0;
@@ -434,12 +451,10 @@ body{
 		}
 	}
 }
-#number_1, #number_2, #number_3, #number_4, #number_5{
+#number_1, #number_2, #number_3, #number_4, #number_5, #number_6{
 	cursor: pointer;
 }
-.number {
 
-}
 
 
 
@@ -585,6 +600,17 @@ body{
 		border-bottom-left-radius: 20px;
 	}
 }
+.scroll-caption-container{
+	text-align: right;
+	position: relative;
+	padding-right: 5vw;
+	span{
+		position: absolute;
+		right:5vw;
+		top:-$spacing*10;
+	}
+}
+
 .swiper-scroll-container{
 	position: relative;
 	padding: $spacing*4 0 !important;
@@ -702,11 +728,14 @@ body{
 	}
 }
 footer{
+	background: $green;
+	padding-bottom: $spacing*5;
+	padding-top: $spacing*5;
 	.footer-container{
-		background: $green;
+		background: $white;
 		border-radius: 30px;
 		margin: 0 9vw;
-		margin-bottom: $spacing*12;
+
 		padding: $spacing*6 $spacing*10;
 		padding-bottom: $spacing*4;
 		display: flex;
@@ -719,17 +748,23 @@ footer{
 			border:none;
 		}
 		.footer-include{
-			color: $white;
+			color: $green;
 			text-align: center;
-			margin-top: $spacing*3;
-			a{color:$white; text-decoration: none;}
+			margin-top: $spacing*4;
+			a{color:$green; text-decoration: none;}
 		}
 		.footer-row{
 			display: flex;
 			justify-content: space-between;
+			h6{
+				color:$black;
+				text-transform: uppercase;
+				letter-spacing: 0.5;
+				margin-bottom: $spacing;
+			}
 			.col{
-				color:$white;
-				a{color:$white; text-decoration: none;}
+				color:$green;
+				a{color:$green; text-decoration: none;}
 				span{font-size: 20px; font-family: $young; margin-top: $spacing*2;}
 				&.col-left-footer{
 
@@ -767,7 +802,6 @@ footer{
 		display: none;
 	}
 
-
 	.dropcap{
 		height: 80px;
 		&.black{
@@ -775,4 +809,232 @@ footer{
 			margin-bottom: $spacing;
 		}
 	}
+	body{
+		font-size: 18px;
+	}
+
+.hero{
+	.logo img{
+		width:150px;
+	}
+	.arrow{
+		bottom: $spacing*2;
+	}
+	.text-hero-container{
+		padding: $spacing*10 0;
+		h1{
+			font-size: 40px;
+		}
+		.sommario{
+			max-width: 100%;
+			p{
+				padding: 0 $spacing*2;
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+.first-block{
+	background: $green;
+	.green-back{
+		display: none;
+	}
+	.first-block-container{
+		padding: 0;
+		flex-direction: column-reverse;
+		.col-text{
+			width:100%;
+			margin-left: 0;
+			padding: $spacing*8 $spacing*2;
+		}
+		.col-image{
+			width:100%;
+			.stella{
+				display: none;
+			}
+			img{
+				border-radius: 0 !important;
+				display:flex;
+			}
+		}
+	}
+}
+
+
+.text-section{
+	margin-top: $spacing*5;
+	.column-container{
+		flex-direction: column;
+		.col-left-text{
+			width:100%;
+			.vertical-line-hr{
+				display: none;
+			}
+			.stella-black{
+
+			}
+			.title-paragraph{
+				position: relative;
+				top:unset;
+				h3{
+
+				}
+			}
+
+		}
+		.col-right-text{
+			width:100%;
+			padding: 0;
+			.quote-paragraph{
+				flex-direction:column;
+				h4{
+					width:100%;
+					margin-right: 0;
+				}
+				.quote-author{
+					width:100%;
+					display: flex;
+					padding-left: 0;
+					padding-top: $spacing*2;
+					img{
+						transform: rotate(90DEG)
+					}
+				}
+			}
+		}
+	}
+}
+
+.mappa{
+	margin-top: $spacing*2;
+	border-top:2px solid $black;
+	padding-top: $spacing*3;
+	flex-direction: column;
+	.col-left-mappa{
+		width:100%;
+		padding-right: 0;
+	}
+	.col-right-mappa{
+		width:100%;
+		padding-left: 0;
+		margin-top: $spacing*4;
+	}
+}
+
+.infografica{
+	margin-top: $spacing*2;
+	background: $green;
+	padding: $spacing*5 0;
+	.green-back-left{
+		display: none;
+	}
+	.info-container{
+		flex-direction: column;
+		padding: 0 $spacing*2;
+		.col-left-info{
+			width:100%;
+		}
+		.col-right-info{
+			width:100%;
+			padding-left: 0;
+			margin-top: $spacing*2;
+		}
+	}
+}
+
+.swiper-section{
+	margin: $spacing*3 0;
+	margin-bottom: $spacing*14;
+	background: $green;
+	.green-back-scroll{
+		background: 0;
+	}
+	.swiper{
+		padding: $spacing*2 !important;
+	}
+	.swiper-scroll-container{
+		.swiper-slide{
+			img{
+				border-radius: 10px;
+			}
+			&:first-child{
+				margin-left: 0;
+			}
+		}
+	}
+}
+.swiper-button-next, .swiper-button-prev{
+	left: calc(50% - 20px) !important;
+}
+.swiper-button-next{
+	top:25px !important;
+}
+.swiper-button-prev{
+	bottom:-5px !important;
+}
+.scroll-caption-container{
+	padding-right: $spacing*2;
+	span{
+		right:$spacing*2;
+		top:-$spacing*12;
+		font-size: 15px;
+		width:50%;
+	}
+}
+
+.hr-separator{
+	display: none;
+}
+
+.row-image-section{
+	margin-bottom: $spacing*6;
+	background: $green;
+	.green-back-row{
+		display: none;
+	}
+	.row-image-container{
+		padding: $spacing*5 $spacing*2;
+		padding-bottom: $spacing*2;
+		flex-direction: column;
+		.col-left{
+			width:100%;
+			padding: 0;
+			margin-bottom: $spacing*5;
+		}
+		.col-right{
+			width:100%;
+			padding: 0;
+		}
+	}
+}
+.row-image-section .row-image-container .col-right .col-image-cont{
+	border-radius: 10px;
+}
+
+footer .footer-container{
+	padding: $spacing*7 $spacing*2;
+	padding-bottom: $spacing*5;
+	margin: 0 $spacing*2;
+	.arrow-top{
+		left:calc(50% - 30px);
+		top:-30px;
+	}
+	.footer-include{
+		font-size: 15px;
+	}
+	.footer-row{
+		flex-direction: column;
+		h6{
+			margin-bottom: 6px;
+			font-size: 15px;
+		}
+
+		.col{
+			text-align: center !important;
+			margin-bottom: $spacing*2;
+		}
+	}
+}
+
 }
