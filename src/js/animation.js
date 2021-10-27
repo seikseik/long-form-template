@@ -40,6 +40,21 @@ arrow.addEventListener("click", function(){
     });
 
 
+// nimbers
+
+const items = document.querySelectorAll(".number");
+
+const animNumbers = gsap.from(items, {
+  textContent: 0,
+  duration: 1,
+  snap: { textContent: 1 },
+});
+ScrollTrigger.create({
+  trigger: items,
+  animation: animNumbers,
+  toggleActions: 'play none none none',
+  once: true,
+});
 
 
 
