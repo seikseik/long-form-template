@@ -162,6 +162,7 @@ body{
 		color:white;
 		.logo{
 			margin-bottom: $spacing*6;
+			width:200px;
 		}
 		.title{
 			font-size: 13vh;
@@ -201,9 +202,10 @@ body{
     border-right: 1px solid #0038ff;
     margin: 0 auto;
     max-width: 1000px;
-    padding: 0 32px;
+    padding: $spacing*2 32px;
     width: 70vw;
 		position: relative;
+		overflow: hidden;
 		.image-container{
 			display: flex;
 			flex-wrap: wrap;
@@ -430,7 +432,9 @@ body{
 	top:0;
 	height: 100%;
 }
-
+#divider{
+	padding: 0 $spacing/2;
+}
 
 
 // sticky scrolling
@@ -595,7 +599,8 @@ footer{
 // mobile
 
 .mobile, .mobile-small{display: none !important;}
-.desktop, .desktop-small{display: flex !important;}
+.desktop, .desktop-small{display: flex;}
+.sticky-container.desktop{display: block;}
 
 @media only screen and (max-width: 768px) {
 
@@ -625,6 +630,9 @@ footer{
 	.hero-text-container{
 		width:100%;
 		padding: $spacing*2;
+		.logo{
+			width:150px;
+		}
 		.title{
 			font-size: 10vh;
 			h1{height: 9vh;}
@@ -665,6 +673,25 @@ footer{
 		}
 	}
 }
+#card1{
+	left:10%;
+}
+#card2{
+	left:$spacing*2;
+}
+#card3{
+	left:20%;
+}
+#card4{
+	left:$spacing*2;
+}
+.margin-negative-mobile{
+	margin-top: -$spacing*9 !important;
+}
+
+.img-mobile{
+	justify-content: center;
+}
 
 .info{
 	flex-direction: column;
@@ -681,9 +708,34 @@ footer{
 			padding: $spacing*6 $spacing*2;
 		}
 	}
+	.col-1 .col-container, .col-3 .col-container{
+		padding: $spacing*9 $spacing*2;
+	}
+}
+
+.cornice-up{
+	position: absolute;
+	top:0px;
+	left: 0;
+	width:100%;
+}
+.cornice-down{
+	position: absolute;
+	bottom:0px;
+	left: 0;
+	width:100%;
+}
+#trat-mobile-1{
+	position: absolute;
+	bottom: 8px;
+}
+#trat-mobile-2{
+	position: absolute;
+	top: 8px;
 }
 
 .sticky-scrolling{
+	margin-top: $spacing*3;
 	.section-scroll{
 		flex-direction: column;
 		.col-left{

@@ -50,7 +50,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:wght@400;500" rel="stylesheet">
 
-  <link href="main.2d64b7ccbc9aa39a5a76.css" rel="stylesheet"></head>
+  <link href="main.959da26c9b5956e289bf.css" rel="stylesheet"></head>
 
   <body>
 
@@ -66,11 +66,11 @@
     <div class="hero-text-container">
       <div class="logo">
         <a target="_blank" href="https://www.repubblica.it/">
-          <img src="assets/logo.svg" alt="">
+          <img src="assets/logo-repubblica.svg" alt="">
         </a>
       </div>
       <div class="title">
-         <h1 class="animation-text">La </h1>
+         <h1 class="animation-text">La</h1>
          <h1 class="animation-text">nuova</h1>
          <h1 class="animation-text">rete</h1>
          <h1 class="animation-text">del</h1>
@@ -101,12 +101,15 @@
 
     <div class="text-container">
       <p fade> <span class="dropcap">I</span> l satellite sta cedendo il passo allo streaming. Sempre più operatori stanno entrando in questo mercato e tra i big si fa strada TimVision. Grazie agli accordi con Disney, Netflix, Dazn e Mediaset Infinity, la tv di Tim sta raggruppando le principali piattaforme per diventare il servizio su cui poter vedere tutto. A partire dal calcio. Dall’inizio del campionato stanno cambiando le abitudini dei tifosi, che adesso possono seguire la propria squadra non solo da casa, ma anche in viaggio, tra una riunione e l’altra, dalla spiaggia. Si tratta di una spinta verso quell’innovazione digitale di cui l’Italia ha bisogno e che è stata messa al centro del Piano nazionale di ripresa e resilienza. Cambiare il calcio in tv per modernizzare il Paese: la partita più importante da vincere.</p>
+      <div fade class="mobile img-mobile">
+        <img src="assets/trombe-mobile.png" alt="">
+      </div>
     </div>
 
     <div class="image-parallax">
 
-      <div fade class="image-container">
-        <div class="image">
+      <div class="image-container">
+        <div id="card1" class="image">
           <img src="assets/Gedi_Longform10_Img_1.jpg" alt="">
           <span class="num">1</span>
           <div class="img-overlay">
@@ -117,7 +120,7 @@
             </div>
           </div>
         </div>
-        <div class="image">
+        <div id="card2" class="image">
           <img src="assets/Gedi_Longform10_Img_2.jpg" alt="">
           <span class="num">2</span>
           <div class="img-overlay">
@@ -128,7 +131,7 @@
             </div>
           </div>
         </div>
-        <div class="image">
+        <div id="card3" class="image">
           <img src="assets/Gedi_Longform10_Img_3.jpg" alt="">
           <span class="num">3</span>
           <div class="img-overlay">
@@ -139,7 +142,7 @@
             </div>
           </div>
         </div>
-        <div class="image">
+        <div id="card4" class="image">
           <img src="assets/Gedi_Longform10_Img_4.jpg" alt="">
           <span class="num">4</span>
           <div class="img-overlay">
@@ -153,7 +156,11 @@
       </div>
     </div>
 
-    <div class="text-container">
+    <div class="text-container margin-negative-mobile">
+      <div fade class="mobile img-mobile">
+        <img src="assets/pallone-mobile.svg" alt="">
+      </div>
+
       <p fade>Ripercorriamo la strada che ha portato fino alla trasmissione in streaming delle partite. Fine agosto 1993. Ciro Ferrara, colonna della difesa del Napoli, si appresta a iniziare l’ultimo anno con la maglia azzurra. In quel campionato Roberto Mancini farà gioire 12 volte i tifosi della Sampdoria seppur orfano del gemello del gol Gianluca Vialli, passato alla Juventus l’anno precedente. Filippo Inzaghi a Verona e Christian Vieri a Ravenna sono due centravanti di belle speranze alle prese con le difese della Serie B. Ventotto anni dopo, un’era geologica per la tecnologia, i quattro campioni (ormai ex) compaiono in alcuni spot pubblicitari di TimVision, la piattaforma streaming di Tim.</p>
     </div>
 
@@ -166,13 +173,20 @@
           <span>oltre</span>
           <div id="stat1" class="number">1700</div>
           <div class="footer-info">
-            <svg class="desktop" width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg  width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10.3414 0.635631H8.67099V17.9567L1.75053 11.0362L0.597124 12.2095L9.50622 21.1186L18.4352 12.2095L17.252 11.0362L10.3414 17.9567V0.635631Z" fill="#0038FF"/>
             </svg>
+            <svg class="mobile cornice-up" width="266" height="38" viewBox="0 0 266 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 0.793942C0.999999 20.6762 17.1177 36.7939 37 36.7939C56.8823 36.7939 73 20.6762 73 0.793945" stroke="#0038FF"/>
+            <path d="M97 0.793942C97 20.6762 113.118 36.7939 133 36.7939C152.882 36.7939 169 20.6762 169 0.793945" stroke="#0038FF"/>
+            <path d="M193 0.793942C193 20.6762 209.118 36.7939 229 36.7939C248.882 36.7939 265 20.6762 265 0.793945" stroke="#0038FF"/>
+            </svg>
+
             <p>LE PARTITE  SVOLTE</p>
           </div>
         </div>
         <img class="desktop" id="trat-1" src="assets/trat.svg" alt="">
+        <img class="mobile" id="trat-mobile-1" src="assets/trat-mobile.svg" alt="">
       </div>
 
       <div class="col-2">
@@ -186,28 +200,36 @@
               <p>COMPETIZIONI CALCISTICHE</p>
             </div>
           </div>
-          <svg width="34" height="201" viewBox="0 0 34 201" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg id="divider" width="34" height="201" viewBox="0 0 34 201" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M33 1L1 200" stroke="white" stroke-linejoin="bevel"/>
           </svg>
           <div class="col-right">
-            Serie A, Serie B Europa League, Liga Copa Libertadores Copa Sudamericana Conference League FA Cup, Carabao Cup Champions League Coppa Italia Super Coppa Serie A Femminile
+            Serie A, Serie B Europa League, Liga Copa Libertadores Copa Sudamericana Conference League FA Cup, Carabao Cup Champions League Coppa Italia Super Coppa Serie A Femminile
           </div>
         </div>
       </div>
 
       <div class="col-3">
         <img class="desktop" id="trat-2" src="assets/trat.svg" alt="">
+        <img class="mobile" id="trat-mobile-2" src="assets/trat-mobile.svg" alt="">
+
         <div class="col-container">
           <span>oltre</span>
           <div id="stat3" class="number">2600</div>
           <div class="footer-info">
-            <svg class="desktop" width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg  width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10.3414 0.635631H8.67099V17.9567L1.75053 11.0362L0.597124 12.2095L9.50622 21.1186L18.4352 12.2095L17.252 11.0362L10.3414 17.9567V0.635631Z" fill="#0038FF"/>
             </svg>
-            <p>LE ORE DI STREAMING TOTALI</p>
+            <p>LE ORE DI  STREAMING TOTALI</p>
           </div>
         </div>
         <img class="desktop" id="cerchi-2" src="assets/cerchi-dx.svg" alt="">
+        <svg class="mobile cornice-down" width="266" height="37" viewBox="0 0 266 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M265 36.7939C265 16.9117 248.882 0.793946 229 0.793946C209.118 0.793946 193 16.9117 193 36.7939" stroke="#0038FF"/>
+        <path d="M169 36.7939C169 16.9117 152.882 0.793946 133 0.793946C113.118 0.793946 97 16.9117 97 36.7939" stroke="#0038FF"/>
+        <path d="M73 36.7939C73 16.9117 56.8823 0.793946 37 0.793946C17.1177 0.793946 1 16.9117 1 36.7939" stroke="#0038FF"/>
+        </svg>
+
       </div>
     </section>
 
@@ -218,7 +240,16 @@
       <div class="text-container">
         <p fade>Il 29 agosto 1993 Tele+ trasmette Lazio-Foggia (0-0), la prima partita di Serie A mandata in onda da una pay-tv nel nostro Paese. Dal garage dell’amico che si poteva permettere un abbonamento salato o dal bar che per cinquemila lire offriva partita, patatine e bibita, si passa alla visione in streaming su smart tv, tablet e smartphone in qualsiasi luogo ci sia la connessione a Internet. In mezzo ci sono quasi tre decenni di evoluzione. Nel 1996 a Tele+ si aggiunge Stream, (prima via cavo e poi via satellite): le due emittenti si dividono i diritti delle squadre dando vita a un duopolio televisivo del calcio. Prima di unirsi nel 2003, dopo il via libera alla fusione da parte della Commissione europea, per dare vita a Sky. Le parabole inondano i tetti dei palazzi, ridisegnando gli skyline delle città.</p>
 
+        <div fade class="mobile img-mobile">
+          <img src="assets/fischietto-mobile.svg" alt="">
+        </div>
+
         <p fade>Il rito collettivo della partita al bar si trasforma in visione individuale nel salotto di casa. Gli highlights ripropongono le reti a qualsiasi ora. “Diretta Gol”, prima dell’avvento del campionato spezzatino, permette di vedere il meglio delle partite della domenica in contemporanea. Il massimo sforzo si raggiunge durante le Olimpiadi di Londra 2012, con dodici sport trasmessi nello stesso momento su altrettanti canali. La tv satellitare di Rupert Murdoch domina la scena, lasciando a Rai e Mediaset qualche partita in chiaro della Champions League e dell’Europa League e la Coppa Italia. Fino, appunto, all’irruzione dello streaming. L’inizio di una nuova era.</p>
+
+        <div fade class="mobile img-mobile">
+          <img src="assets/carte-mobile.svg" alt="">
+        </div>
+
       </div>
     </section>
 
@@ -226,8 +257,11 @@
     <section class="sticky-scrolling">
       <div class="section-scroll">
         <div class="col-left">
-          <div class="sticky-container">
+          <div class="sticky-container desktop">
             <img src="assets/campo-1.svg" alt="">
+          </div>
+          <div class="mobile">
+            <img src="assets/campo-1-mobile.svg" alt="">
           </div>
 
         </div>
@@ -252,8 +286,11 @@
 
       <div class="section-scroll">
         <div class="col-left">
-          <div class="sticky-container">
+          <div class="sticky-container desktop">
             <img src="assets/campo-2.svg" alt="">
+          </div>
+          <div class="mobile">
+            <img src="assets/campo-2-mobile.svg" alt="">
           </div>
         </div>
         <div class="col-right">
@@ -335,7 +372,7 @@
 
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
-  <script type="text/javascript" src="main.ec1892e1929ba5ae4577.bundle.js"></script></body>
+  <script type="text/javascript" src="main.15debe4283d4cae6d270.bundle.js"></script></body>
 
 
 </html>
