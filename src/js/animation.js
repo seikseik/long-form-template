@@ -154,7 +154,7 @@ let swipers = document.querySelectorAll(".swiper-scroll-container")
 swipers.forEach((item, i) => {
   const swiper = new Swiper(item, {
     speed: 200,
-    spaceBetween: 50,
+    spaceBetween: 15,
     slidesPerView: 1,
     breakpoints: {
       768: {

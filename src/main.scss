@@ -553,10 +553,15 @@ body{
 						&:first-child{
 							padding-right: $spacing*2;
 							width:60%;
+
 						}
 						&:last-child{
 							padding-left: $spacing*2;
-							width:45%;
+							width:40%;
+              img, svg{
+                width:100%;
+                height: auto;
+              }
 						}
 						.title-info{
 							display: flex;
@@ -570,10 +575,10 @@ body{
 							}
 							h4{
 								color:white;
-								font-size: 24px;
+								font-size: 20px;
 								font-family: $young;
-								max-width: 50%;
-								line-height: 1.1;
+								max-width: 100%;
+								line-height: 1.3;
 							}
 						}
 					}
