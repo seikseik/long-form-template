@@ -502,13 +502,14 @@ body{
 			padding-left: $spacing*2;
 			display: flex;
 			flex-direction: column;
+      align-items: center;
 			svg{
 				width:100%;
 				height: auto;
 			}
 			.legenda-info{
 				margin: 0 auto;
-				margin-bottom: $spacing*2;
+				margin-bottom: $spacing*4;
 				max-width: 80%;
 			}
 		}
@@ -787,6 +788,22 @@ footer{
 	}
 }
 
+
+
+@media only screen and (min-width: 1920px) {
+  .infografica.second-info .info-container .col-right-info .row-info-container .col .title-info h4{
+    font-size: 26px;
+  }
+
+  .infografica .info-container .col-right-info svg {
+    height: auto;
+    width: 80% !important;
+  }
+  .infografica.first-info .info-container .col-right-info svg {
+    height: auto;
+    width: 65% !important;
+  }
+}
 
 
 // mobile
