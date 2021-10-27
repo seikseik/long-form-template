@@ -946,7 +946,40 @@ footer{
 			margin-top: $spacing*2;
 		}
 	}
+  &.second-info{
+    .info-container{
+      .col-left-info{
+        flex-direction: column;
+        .title-paragraph{
+          width:100%;
+          flex-direction: column;
+          h3, p{width:100%;}
+          img{display: none;}
+        }
+      }
+      .col-right-info{
+        .row-info-container{
+          flex-direction: column;
+          .col{
+            width:100% !important;
+            padding: 0 !important;
+            span{
+              margin-top: $spacing*3;
+              font-size: 12px;
+            }
+            &:first-child{
+              margin-bottom: $spacing*5;
+            }
+          }
+        }
+
+      }
+    }
+  }
 }
+
+
+
 
 .swiper-section{
 	margin: $spacing*3 0;
