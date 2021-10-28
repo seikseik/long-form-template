@@ -50,16 +50,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:wght@400;500" rel="stylesheet">
 
-  <link href="main.c9ebdb1770cf5b2edfde.css" rel="stylesheet"></head>
+  <link href="main.5304cc5a5ee8e8f64300.css" rel="stylesheet"></head>
 
   <body>
 
   <div class="hero">
     <div class="video-container">
       <div class="video-overlay"></div>
-      <!-- <iframe src="https://media.gedidigital.it/repubblicatv/visual-lab/loop_calcio_min.mp4?responsive=true&generation=onclick&bgc=ffffff&adref=<? echo $pageUrl; ?>" width="" height=""></iframe> -->
-      <video poster="" autoplay playsinline muted loop preload="auto">
-        <source src="https://media.gedidigital.it/repubblicatv/visual-lab/loop_calcio_min.mp4?responsive=true&generation=onclick&bgc=ffffff" type="video/mp4">
+      <video class="desktop" poster="" autoplay playsinline muted loop preload="auto">
+        <source src="https://media.gedidigital.it/repubblicatv/visual-lab/loop_calcio_min.mp4" type="video/mp4">
+      </video>
+      <video class="mobile" poster="" autoplay playsinline muted loop preload="auto">
+        <source src="https://media.gedidigital.it/repubblicatv/visual-lab/loop_calcio_mob_min.mp4" type="video/mp4">
       </video>
 
     </div>
@@ -370,10 +372,10 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="text/javascript" src="main.f0b33b33e488cc0135a5.bundle.js"></script>
+
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
-  </body>
+  <script type="text/javascript" src="main.f0b33b33e488cc0135a5.bundle.js"></script></body>
 
 
 </html>
