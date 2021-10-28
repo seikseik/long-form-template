@@ -194,7 +194,6 @@ $(document).ready(function() {
   img.forEach((item, i) => {
     $(item).on('touchstart touchend', function(e) {
         e.preventDefault();
-        console.log("haha")
         $(this).toggleClass('hover_effect');
     });
   });
