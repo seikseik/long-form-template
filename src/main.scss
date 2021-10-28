@@ -233,10 +233,12 @@ body{
 					top:-120px;
 					left: 20%;
 				}
-				&:hover{
+				&:hover, .hover_effect{
 					.img-overlay{
 						opacity: 1;
 						visibility:visible;
+						-webkit-user-select: none;
+						-webkit-touch-callout: none;  
 					}
 					.num{
 						background: white;
