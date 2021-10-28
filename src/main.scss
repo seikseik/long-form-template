@@ -74,6 +74,7 @@ body{
 	font-size: $size-body;
 	font-family: $inter;
 	font-weight: normal;
+	overflow-x: hidden;
 }
 
 // policy
@@ -238,7 +239,7 @@ body{
 						opacity: 1;
 						visibility:visible;
 						-webkit-user-select: none;
-						-webkit-touch-callout: none;  
+						-webkit-touch-callout: none;
 					}
 					.num{
 						background: white;

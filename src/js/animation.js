@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   const animNumbers = gsap.from(items, {
     textContent: 0,
-    duration: 1,
+    duration: 2,
     snap: { textContent: 1 },
   });
   ScrollTrigger.create({
