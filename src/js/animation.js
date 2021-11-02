@@ -51,6 +51,7 @@ arrow.addEventListener("click", function(){
     });
   }
 
+
   ScrollTrigger.addEventListener("refresh", setupSplits);
   setupSplits();
 
@@ -117,6 +118,7 @@ arrow.addEventListener("click", function(){
       once: true,
     });
   });
+
   const hrcenter = gsap.utils.toArray(".hr-line");
   hrcenter.forEach((el, i) => {
     gsap.set(el, {transformOrigin:"center"})
