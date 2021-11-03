@@ -276,6 +276,7 @@ body{
 				font-size: 20px;
 				margin-top:$spacing*5;
 				margin-bottom: $spacing*10;
+
 			}
 			.text-quote{
 				h4{
@@ -389,6 +390,9 @@ body{
 				strong{font-weight: 700;}
 				p{
 					margin-bottom: $spacing*6;
+          a{
+            color:$black;
+          }
 				}
 			}
 			.quote-paragraph{
