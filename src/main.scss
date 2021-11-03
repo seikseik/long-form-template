@@ -906,8 +906,16 @@ footer{
 	}
 }
 
+.text-section .column-container .col-left-text .stella-black {
+    position: absolute;
+    right: -15px;
+    top: -34px;
+}
+
 .first-block{
 	background: $green;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 	.green-back{
 		display: none;
 	}
@@ -1068,15 +1076,11 @@ footer{
 		}
 	}
 }
-.swiper-button-next, .swiper-button-prev{
-	left: calc(50% - 20px) !important;
-}
+
 .swiper-button-next{
-	top:25px !important;
+	width:33px !important;
 }
-.swiper-button-prev{
-	bottom:-5px !important;
-}
+
 .scroll-caption-container{
 	padding-right: $spacing*2;
 	span{
