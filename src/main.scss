@@ -283,6 +283,9 @@ body{
 					font-family: $young;
 					line-height: 1.45;
 				}
+        a{
+          color:$white;
+        }
 				.quote-author{
 					margin-top: $spacing*3;
 					display: flex;
