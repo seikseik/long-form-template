@@ -32,9 +32,21 @@ let lastScroll = 0;
     lastScroll = currentScroll;
   });
 
+// arrow
+let topArrow = document.querySelector(".arrow-top");
+topArrow.addEventListener("click", function(){
+  gsap.to(window, {duration: 1, scrollTo: 0});
+});
+//
+let h = document.querySelector(".hero").offsetHeight;
+let arrow = document.querySelector(".arrow");
+arrow.addEventListener("click", function(){
+  console.log("ciao")
+  gsap.to(window, {duration: 0.7, scrollTo: h});
+});
 
 
-let toggle = document.querySelectorAll(".toggle-card");
+let toggle = document.querySelectorAll(".accordion");
 let panels = document.querySelectorAll(".panel");
 
 toggle.forEach((item, i) => {
@@ -48,13 +60,12 @@ toggle.forEach((item, i) => {
           pan.style.maxHeight = null;
           let att = pan.getAttribute("panel")
           let card = document.querySelector(`[card=${att}]`)
-          console.log(card)
-          card.parentNode.classList.remove("active");
+          card.classList.remove("active");
         }
       }
     });
 
-    this.parentNode.classList.toggle("active");
+    this.classList.toggle("active");
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
@@ -64,6 +75,17 @@ toggle.forEach((item, i) => {
 });
 
 
+// fade blocchi
+ScrollTrigger.batch(".card", {
+  onEnter: elements => {
+    gsap.to(elements, {
+      opacity: 1,
+      stagger: 0.15,
+      duration: 0.2
+    });
+  },
+  once: true
+});
 
 
 
@@ -107,15 +129,3 @@ toggle.forEach((item, i) => {
       once: true,
     });
   });
-
-  // scroll top
-  // let topArrow = document.querySelector(".arrow-top");
-  // topArrow.addEventListener("click", function(){
-  //   gsap.to(window, {duration: 2, scrollTo: 0});
-  // });
-  //
-  // let h = document.querySelector(".hero").offsetHeight;
-  // let arrow = document.querySelector(".arrow");
-  // arrow.addEventListener("click", function(){
-  //   gsap.to(window, {duration: 0.7, scrollTo: h});
-  // });

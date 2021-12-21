@@ -43,11 +43,24 @@ table {
 div, section{
   box-sizing: border-box;
 }
+strong{
+	font-weight: 500;
+}
 
 *{
 	-webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@font-face {
+  font-family: 'Gambarino-Regular';
+  src: url('./assets/Gambarino-Regular.woff2') format('woff2'),
+       url('./assets/Gambarino-Regular.woff') format('woff'),
+       url('./assets/Gambarino-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Serif:wght@400;500');
 
 $text-container: 900px;
 $container: 1100px;
@@ -60,14 +73,17 @@ $green: #3A504B;
 $light: #E8E0D2;
 $white: #F7F7F7;
 
-$condensed: 'Big Shoulders Display', sans-serif;
-$sans: 'Inter', sans-serif;
-$serif: 'Lora', serif;
+$mainTitle: 12vw;
+$title: 40px;
+
+$serif: 'Gambarino-Regular', serif;
+$plex: 'IBM Plex Mono', monospace;
+
 
 
 
 body{
-	font-family: 'Lora', serif;
+	font-family: 'IBM Plex Serif', serif;
 	font-size: 20px;
 	line-height: 1.4;
 	overflow-x: hidden;
@@ -133,13 +149,35 @@ nav{
 		display: flex;
 		border-radius:10px;
 		border: 1.5px solid $black;
+		-webkit-box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.12);
+		box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.12);
 		a{
 			color:$green;
 			flex: 1;
+			font-family: $plex;
+			font-weight: 500;
 			text-decoration: none;
-			font-size: 14px;
+			text-align: center;
+			font-size: 16px;
+			text-transform: uppercase;
+			position: relative;
+			&.active{
+				&:before{
+					content: " ";
+					position: absolute;
+					left: 20px;
+					top:5px;
+					margin-right: $spacing;
+					height: 12px;
+					width:12px;
+					border-radius: 100%;
+					background: $green;
+				}
+			}
 			&:nth-child(2){
 				text-align: center;
+				border-left: 1px solid $green;
+				border-right: 1px solid $green;
 			}
 		}
 	}
@@ -162,6 +200,67 @@ nav{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	position: relative;
+	.arrow{cursor: pointer;}
+	.image-hero-container{
+		width:100%;
+		height: 100%;
+		pointer-events: none;
+		position: absolute;
+		top:0;
+		display: flex;
+		justify-content: center;
+		.img-wrap{
+			max-width: $container;
+			position: relative;
+			width:100%;
+		}
+		.img-container{
+			span{
+				font-size: 12px;
+				padding: 3px 8px;
+				border-radius: 5px;
+				border: 1px solid $black;
+				background: $white;
+				font-family: $plex;
+			}
+			&:nth-child(1){
+				position: absolute;
+				top:10%;
+				left: 0%;
+			}
+			&:nth-child(2){
+
+			}
+			&:nth-child(3){
+
+			}
+			&:nth-child(4){
+
+			}
+			&:nth-child(5){
+
+			}
+			&:nth-child(6){
+
+			}
+			&:nth-child(7){
+
+			}
+			&:nth-child(8){
+
+			}
+			&:nth-child(9){
+
+			}
+			&:nth-child(10){
+
+			}
+			&:nth-child(10){
+
+			}
+		}
+	}
 	.hero-container{
 		max-width: $container;
 		text-align: center;
@@ -169,12 +268,16 @@ nav{
 			color:$green;
 			text-transform: uppercase;
 			h1{
-				font-size: 12vw;
+				font-size: $mainTitle;
+				font-family: $serif;
+				letter-spacing: 1px;
 				line-height: 1;
 				margin-bottom: $spacing*3;
 			}
 			p{
-
+				font-family:  $plex;
+				font-size: 35px;
+				letter-spacing: 5px;
 			}
 		}
 	}
@@ -182,13 +285,25 @@ nav{
 		width:100%;
 		display: flex;
 		justify-content: space-between;
+		padding-bottom: $spacing*3;
+		margin-top: $spacing*3;
+		border-bottom: 1px solid $black;
 		.hero-social{
 			display: flex;
 			text-align: center;
+			flex-direction: column;
 			span{
-				display: inline-block;
-				width:100%;
 				color:$green;
+				padding: 3px 5px;
+				border-bottom:1px solid $green;
+				font-family: $plex;
+				font-size: 12px;
+			}
+			.social-row{
+				display: flex;
+				justify-content: space-around;
+				margin-top: $spacing;
+				a{text-decoration: none; padding: 0 $spacing;}
 			}
 		}
 	}
@@ -213,6 +328,7 @@ nav{
 	.dropcap{
 		height: 80px;
 		width:80px;
+		font-family: $serif;
 		float: left;
 		margin-right: $spacing;
 		font-size: 80px;
@@ -233,8 +349,24 @@ nav{
 	}
 }
 
+.card{opacity: 0;}
 .card-container{
 	margin-top: $spacing*5;
+	position: relative;
+	.card-info{
+		span{
+			font-family: $plex;
+			text-transform: uppercase;
+
+		}
+		h2{
+			font-family: $serif;
+			text-transform: uppercase;
+			font-size: 40px;
+			line-height: 1.2;
+			letter-spacing: 1px;
+		}
+	}
 	.row{
 		display:flex;
 		margin-bottom: $spacing*3;
@@ -252,9 +384,25 @@ nav{
 				align-items: flex-end;
 				background: $green;
 				color:$white;
-				&.active{
+				cursor: pointer;
+				&:after{
+					content: " ";
+					position: absolute;
+					bottom:0;
+					right: 0;
+					width: 0;
+					height: 0;
+					border-bottom: 100px solid $white;
+					border-left: 100px solid transparent;
+				}
+				&.active, &:hover{
 					background: $white;
 					color: $green;
+					&:after{
+						border-bottom: 100px solid $green;
+					}
+				}
+				&.active{
 					.toggle-card img{
 						transform: rotate(45DEG)
 					}
@@ -262,9 +410,11 @@ nav{
 			}
 			.toggle-card{
 				position: absolute;
-				right: $spacing*2;
-				bottom: $spacing*2;
-				cursor: pointer;
+				right: $spacing;
+				bottom: $spacing;
+				z-index: 1;
+				img{transition: .2s ease;}
+
 			}
 		}
 		&:not(.row-two){
@@ -316,10 +466,14 @@ nav{
 
 		.panel-title{
 			h1{
-				font-size: 30px;
+				font-size: 44px;
+				font-family: $serif;
+				letter-spacing: 1px;
+				width:80%;
+				line-height: 1.2;
 				text-transform: uppercase;
 				color: $green;
-				margin-bottom: $spacing*3;
+				margin-bottom: $spacing*4;
 			}
 		}
 		.panel-text-container{
@@ -330,6 +484,8 @@ nav{
 			span{
 				background: $green;
 				color: $white;
+				font-size: 13px;
+				font-family: $plex;
 				padding: 3px 8px;
 				border-radius: 3px;
 			}
@@ -346,17 +502,25 @@ footer{
 	width:100%;
 	position: relative;
 	background: $green;
+	margin-top: $spacing*20;
+	&:before{
+		content:" ";
+		height: 150px;
+		width:100%;
+		position: absolute;
+		left: 0;
+		top:-150px;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(58,80,75,0)),to(#3A504B));
+    background: linear-gradient(to bottom,rgba(58,80,75,0) 0%,#3A504B 100%);
+	}
+
 	.arrow-top{
 		position: absolute;
 		right:$spacing*10;
-		bottom:$spacing*5;
-		height: 50px;
-		width: 50px;
+		top:$spacing*5;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		border:1px solid $black;
-		border-radius: 100%;
 		cursor: pointer;
 	}
 	.footer-container{
@@ -365,28 +529,30 @@ footer{
 		max-width:$large-container;
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 		.footer-row{
 			display: flex;
+			justify-content: center;
 			.col{
 				width:33%;
 				flex-direction: column;
-				color:$black;
+				color:$white;
+				text-align: center;
 				h6{
-					font-family: $sans;
-					font-weight: 700;
+					font-family: $plex;
+					font-weight: 500;
 					text-transform: uppercase;
 					letter-spacing: 2px;
-					font-size: 12px;
+					font-size: 14px;
 					margin-bottom: $spacing;
 				}
-				a{
+				a, span{
+					font-family: $serif;
 					text-decoration: none;
-					color:$black;
+					color:$white;
+					font-size: 30px;
 				}
-				span{
-					font-family: $condensed;
-					font-size: 24px;
-				}
+
 				&.col-left-footer{
 					text-align: left;
 					padding-right: $spacing;
@@ -413,12 +579,11 @@ footer{
 	width:100%;
 	font-size: 14px;
 	opacity: 0.7;
-	color:black;
+	color:$white;
 	text-align: center;
 	margin-top: $spacing*4;
-	font-family: $sans;
 	a{
-		color:black;
+		color:$white;
 	}
 	*{
 		padding: 0 5px;

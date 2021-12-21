@@ -5,12 +5,6 @@
 <html lang="it">
 
   <head>
-    <link rel="apple-touch-icon" sizes="57x57" href="//www.repstatic.it/cless/main/d/2021-v1/img/common/favicon/apple-touch-icon-57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="//www.repstatic.it/cless/main/d/2021-v1/img/common/favicon/apple-touch-icon-114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="//www.repstatic.it/cless/main/d/2021-v1/img/common/favicon/apple-touch-icon-120.png">
-    <link rel="apple-touch-icon-precomposed" href="//www.repstatic.it/cless/main/d/2021-v1/img/common/favicon/apple-touch-icon.png">
-    <link rel="apple-touch-icon-precomposed" href="//www.repstatic.it/cless/main/d/2021-v1/img/common/favicon/apple-touch-icon-precomposed.png">
-    <link rel="shortcut icon" href="//www.repstatic.it/cless/main/d/2021-v1/img/common/favicon/favicon.ico">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,12 +13,12 @@
     <link rel="canonical" href="<?php echo $pageUrl; ?>">
 
     <!-- CONFIGURAZIONE STATS -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       var pageHref = '<?php echo $pageUrl; ?>';
       var pageType = 'dettaglio_content';
     </script>
     <esi:include src='http://www.repstatic.it/cless/common/stable/js/script/tlh/traffic_light_handler.html' />
-   <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script>
+   <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script> -->
     <!-- CONFIGURAZIONE STATS-->
 
     <!-- facebook -->
@@ -60,13 +54,62 @@
 
 <nav>
   <div class="nav-container">
-    <a href="#">I 12 POSSIBILI PRESIDENTI</a>
+    <a class="active" href="#">I 12 POSSIBILI PRESIDENTI</a>
     <a href="#">IL SIMULATORE</a>
     <a href="#">LE CURIOSITà DEL PASSATO</a>
   </div>
 </nav>
 
     <div class="hero">
+
+      <div class="image-hero-container">
+        <div class="img-wrap">
+          <div class="img-container">
+            <img src="" alt="">
+            <span>Marta Maria Cartabia</span>
+          </div>
+          <div class="img-container">
+            <img src="" alt="">
+            <span>Mario Draghi</span>
+          </div>
+          <div class="img-container">
+            <img src="" alt="">
+            <span>Walter Veltroni</span>
+          </div>
+          <div class="img-container">
+            <img src="" alt="">
+            <span>Maria Elisabetta Casellati</span>
+          </div>
+          <div class="img-container">
+            <img src="" alt="">
+            <span>Paolo Gentiloni</span>
+          </div>
+          <div class="img-container">
+            <img src="" alt="">
+            <span>Marcello Pera</span>
+          </div>
+          <div class="img-container">
+            <img src="" alt="">
+            <span>Sergio Mattarella</span>
+          </div>
+          <div class="img-container">
+            <img src="" alt="">
+            <span>Romano Prodi</span>
+          </div>
+          <div class="img-container">
+            <img src="" alt="">
+            <span>Giuliano Amato</span>
+          </div>
+          <div class="img-container">
+            <img src="" alt="">
+            <span>Silvio Berlusconi</span>
+          </div>
+          <div class="img-container">
+            <img src="" alt="">
+            <span>Dario Franceschini</span>
+          </div>
+        </div>
+      </div>
 
       <div class="hero-container">
         <div class="hero-title">
@@ -81,8 +124,10 @@
           </span>
           <div class="hero-social">
             <span>condividi</span>
-            <a href="#"> <img src="./assets/fb.svg" alt=""> </a>
-            <a href="#"> <img src="./assets/twitter.svg" alt=""> </a>
+            <div class="social-row">
+              <a href="#"> <img src="./assets/fb.svg" alt=""> </a>
+              <a href="#"> <img src="./assets/twitter.svg" alt=""> </a>
+            </div>
           </div>
         </div>
 
@@ -104,35 +149,35 @@
       <div class="card-container">
         <!-- row 1 -->
         <div class="row row-three">
-          <div class="card-one-third">
-            <div class="card-container">
+          <div class="card card-one-third">
+            <div card="panel-1" class="card-container accordion">
               <div class=card-info>
                 <span>Marta Maria</span>
                 <h2>Cartabia</h2>
               </div>
-              <div card="panel-1" class="toggle-card">
+              <div class="toggle-card">
                 <img src="./assets/card.svg" alt="">
               </div>
             </div>
           </div>
-          <div class="card-one-third">
-            <div class="card-container">
+          <div class="card card-one-third">
+            <div card="panel-2" class="card-container accordion">
               <div class=card-info>
                 <span>Sergio</span>
                 <h2>Mattarella</h2>
               </div>
-              <div card="panel-2" class="toggle-card">
+              <div class="toggle-card">
                 <img src="./assets/card.svg" alt="">
               </div>
             </div>
           </div>
-          <div class="card-one-third">
-            <div class="card-container">
+          <div class="card card-one-third">
+            <div card="panel-3" class="card-container accordion">
               <div class=card-info>
                 <span>Marcello</span>
                 <h2>Pera</h2>
               </div>
-              <div card="panel-3" class="toggle-card">
+              <div class="toggle-card">
                 <img src="./assets/card.svg" alt="">
               </div>
             </div>
@@ -179,7 +224,7 @@
         </div>
         <!-- row 2 -->
         <div class="row row-two">
-          <div class="card-two-third left">
+          <div class="card card-two-third left">
             <div class="card-container quote">
               <div class=card-info>
                 <h2>Ultricies neque, sed mollis tortor. Est dictum faucibus neque proin adipiscing tellus tellus. Massa tincidunt</h2>
@@ -187,13 +232,13 @@
               </div>
             </div>
           </div>
-          <div class="card-one-third">
-            <div class="card-container">
+          <div class="card card-one-third">
+            <div card="panel-4" class="card-container accordion">
               <div class=card-info>
                 <span>Sergio</span>
                 <h2>Mattarella</h2>
               </div>
-              <div card="panel-4" class="toggle-card">
+              <div class="toggle-card">
                 <img src="./assets/card.svg" alt="">
               </div>
             </div>
@@ -214,35 +259,35 @@
         </div>
         <!-- row 3 -->
         <div class="row row-three">
-          <div class="card-one-third">
-            <div class="card-container">
+          <div class="card card-one-third">
+            <div card="panel-5" class="card-container accordion">
               <div class=card-info>
                 <span>Maria Elisabetta</span>
                 <h2>Casellati</h2>
               </div>
-              <div card="panel-5" class="toggle-card">
+              <div class="toggle-card">
                 <img src="./assets/card.svg" alt="">
               </div>
             </div>
           </div>
-          <div class="card-one-third">
-            <div class="card-container">
+          <div class="card card-one-third">
+            <div card="panel-6" class="card-container accordion">
               <div class=card-info>
                 <span>Walter</span>
                 <h2>Veltroni</h2>
               </div>
-              <div card="panel-6" class="toggle-card">
+              <div class="toggle-card">
                 <img src="./assets/card.svg" alt="">
               </div>
             </div>
           </div>
-          <div class="card-one-third">
-            <div class="card-container">
+          <div class="card card-one-third">
+            <div card="panel-7" class="card-container accordion">
               <div class=card-info>
                 <span>Mario</span>
                 <h2>Draghi</h2>
               </div>
-              <div card="panel-7" class="toggle-card">
+              <div class="toggle-card">
                 <img src="./assets/card.svg" alt="">
               </div>
             </div>
@@ -289,18 +334,18 @@
         </div>
         <!-- row 4 -->
         <div class="row row-two">
-         <div class="card-one-third">
-            <div class="card-container">
+         <div class="card card-one-third">
+            <div card="panel-8" class="card-container accordion">
               <div class=card-info>
                 <span>Silvio</span>
                 <h2>Berlusconi </h2>
               </div>
-              <div card="panel-8" class="toggle-card">
+              <div class="toggle-card">
                 <img src="./assets/card.svg" alt="">
               </div>
             </div>
          </div>
-         <div class="card-two-third right">
+         <div class="card card-two-third right">
             <div class="card-container quote">
               <div class=card-info>
                 <h2>Ultricies neque, sed mollis tortor. Est dictum faucibus neque proin adipiscing tellus tellus. Massa tincidunt</h2>
@@ -325,35 +370,35 @@
 
         <!-- row 5 -->
         <div class="row row-three">
-          <div class="card-one-third">
-            <div class="card-container">
+          <div class="card card-one-third">
+            <div card="panel-9" class="card-container accordion">
               <div class=card-info>
                 <span>Paolo</span>
                 <h2>gentiloni</h2>
               </div>
-              <div card="panel-9" class="toggle-card">
+              <div class="toggle-card">
                 <img src="./assets/card.svg" alt="">
               </div>
             </div>
           </div>
-          <div class="card-one-third">
-            <div class="card-container">
+          <div class="card card-one-third">
+            <div card="panel-10" class="card-container accordion">
               <div class=card-info>
                 <span>Giuliano</span>
                 <h2>Amato</h2>
               </div>
-              <div card="panel-10" class="toggle-card">
+              <div class="toggle-card">
                 <img src="./assets/card.svg" alt="">
               </div>
             </div>
           </div>
-          <div class="card-one-third">
-            <div class="card-container">
+          <div class="card card-one-third">
+            <div card="panel-11" class="card-container accordion">
               <div class=card-info>
                 <span>Romano</span>
                 <h2>Prodi</h2>
               </div>
-              <div card="panel-11" class="toggle-card">
+              <div class="toggle-card">
                 <img src="./assets/card.svg" alt="">
               </div>
             </div>
@@ -404,9 +449,11 @@
           <footer>
             <div class="footer-container">
               <div class="arrow-top">
-                <svg width="21" height="32" viewBox="0 0 21 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18.0098 30.9824C18.0098 31.2425 18.1151 31.492 18.3027 31.6759C18.4902 31.8599 18.7445 31.9632 19.0098 31.9632C19.275 31.9632 19.5293 31.8599 19.7169 31.6759C19.9044 31.492 20.0098 31.2425 20.0098 30.9824L18.0098 30.9824ZM8.70977 0.372179C8.52241 0.189507 8.26896 0.0869741 8.00477 0.086974C7.74058 0.086974 7.48713 0.189507 7.29977 0.372179L0.929769 6.61976C0.743518 6.80353 0.638979 7.05211 0.638979 7.31122C0.638979 7.57033 0.743518 7.81891 0.929769 8.00267C1.02273 8.0946 1.13333 8.16756 1.25519 8.21735C1.37705 8.26715 1.50776 8.29278 1.63977 8.29278C1.77178 8.29278 1.90249 8.26715 2.02435 8.21735C2.14621 8.16756 2.25681 8.0946 2.34977 8.00267L8.00977 2.45144L13.6598 8.00267C13.7527 8.0946 13.8633 8.16756 13.9852 8.21735C14.107 8.26715 14.2378 8.29279 14.3698 8.29279C14.5018 8.29279 14.6325 8.26715 14.7543 8.21735C14.8762 8.16756 14.9868 8.0946 15.0798 8.00267C15.266 7.81891 15.3706 7.57033 15.3706 7.31122C15.3706 7.05211 15.266 6.80353 15.0798 6.61977L8.70977 0.372179ZM20.0098 30.9824L20.0098 20.0369L18.0098 20.0369L18.0098 30.9824L20.0098 30.9824ZM18.0098 18.0753L9.00977 18.0753L9.00977 20.0369L18.0098 20.0369L18.0098 18.0753ZM9.00977 18.0753L9.00977 1.06854L7.00977 1.06853L7.00977 18.0753L9.00977 18.0753ZM9.00977 18.0753L7.00977 18.0753C7.00977 18.5955 7.22048 19.0945 7.59555 19.4623C7.97063 19.8302 8.47934 20.0369 9.00977 20.0369L9.00977 18.0753ZM20.0098 20.0369C20.0098 19.5166 19.7991 19.0177 19.424 18.6498C19.0489 18.282 18.5402 18.0753 18.0098 18.0753L18.0098 20.0369L20.0098 20.0369Z" fill="#3A504B"/>
-                </svg>
+                <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M27.5 0.999937C12.8645 0.999935 1 12.8185 0.999998 27.3974C0.999997 41.9764 12.8644 53.7949 27.5 53.7949C42.1355 53.7949 54 41.9764 54 27.3974C54 12.8185 42.1355 0.999938 27.5 0.999937Z" fill="#F7F7F7" stroke="#3A504B" stroke-width="2"/>
+<path d="M33.0098 42.9824C33.0098 43.2425 33.1151 43.4919 33.3027 43.6759C33.4902 43.8598 33.7445 43.9631 34.0098 43.9631C34.275 43.9631 34.5293 43.8598 34.7169 43.6759C34.9044 43.4919 35.0098 43.2425 35.0098 42.9824L33.0098 42.9824ZM23.7098 12.3721C23.5224 12.1894 23.269 12.0869 23.0048 12.0869C22.7406 12.0869 22.4871 12.1894 22.2998 12.3721L15.9298 18.6197C15.7435 18.8035 15.639 19.052 15.639 19.3112C15.639 19.5703 15.7435 19.8188 15.9298 20.0026C16.0227 20.0945 16.1333 20.1675 16.2552 20.2173C16.3771 20.2671 16.5078 20.2927 16.6398 20.2927C16.7718 20.2927 16.9025 20.2671 17.0243 20.2173C17.1462 20.1675 17.2568 20.0945 17.3498 20.0026L23.0098 14.4514L28.6598 20.0026C28.7527 20.0945 28.8633 20.1675 28.9852 20.2173C29.1071 20.2671 29.2378 20.2927 29.3698 20.2927C29.5018 20.2927 29.6325 20.2671 29.7543 20.2173C29.8762 20.1675 29.9868 20.0945 30.0798 20.0026C30.266 19.8188 30.3706 19.5703 30.3706 19.3112C30.3706 19.0521 30.266 18.8035 30.0798 18.6197L23.7098 12.3721ZM35.0098 42.9824L35.0098 32.0368L33.0098 32.0368L33.0098 42.9824L35.0098 42.9824ZM33.0098 30.0752L24.0098 30.0752L24.0098 32.0368L33.0098 32.0368L33.0098 30.0752ZM24.0098 30.0752L24.0098 13.0685L22.0098 13.0685L22.0098 30.0752L24.0098 30.0752ZM24.0098 30.0752L22.0098 30.0752C22.0098 30.5955 22.2205 31.0944 22.5956 31.4623C22.9706 31.8302 23.4793 32.0368 24.0098 32.0368L24.0098 30.0752ZM35.0098 32.0368C35.0098 31.5166 34.7991 31.0176 34.424 30.6498C34.0489 30.2819 33.5402 30.0752 33.0098 30.0752L33.0098 32.0368L35.0098 32.0368Z" fill="#3A504B"/>
+</svg>
+
               </div>
 
               <div class="footer-row">
