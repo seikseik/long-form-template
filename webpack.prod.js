@@ -13,7 +13,7 @@ module.exports = merge(common, {
   mode: "production",
   output: {
     filename: "[name].[contentHash].bundle.js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "dist"),
   },
   optimization: {
     minimizer: [
@@ -23,6 +23,18 @@ module.exports = merge(common, {
         title: "Home",
         filename: "index.html",
         template: "./src/template.html",
+        minify: false
+      }),
+      new HtmlWebpackPlugin({
+        title: "Home-2",
+        filename: "simulatore/index.html",
+        template: "./src/simulatore/index.html",
+        minify: false
+      }),
+      new HtmlWebpackPlugin({
+        title: "Home-3",
+        filename: "curiosita-del-passato/index.html",
+        template: "./src/curiosita-del-passato/index.html",
         minify: false
       })
     ]

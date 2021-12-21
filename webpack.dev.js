@@ -14,6 +14,14 @@ module.exports = merge(common, {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "./src/template.html"
+    }),
+    new HtmlWebpackPlugin({
+      filename: "simulatore/index.html",
+      template: "./src/simulatore/index.html"
+    }),
+    new HtmlWebpackPlugin({
+      filename: "curiosita-del-passato/index.html",
+      template: "./src/curiosita-del-passato/index.html"
     })
   ],
   module: {
@@ -21,7 +29,7 @@ module.exports = merge(common, {
       {
         test: /\.scss$/,
         use: [
-          "style-loader", //3. Inject styles into DOM
+          "style-loader",
           {
             loader: "css-loader",
             options: {
@@ -31,7 +39,7 @@ module.exports = merge(common, {
           {
             loader: "postcss-loader",
           },
-          "sass-loader" //1. Turns sass into css
+          "sass-loader"
         ]
       }
     ]

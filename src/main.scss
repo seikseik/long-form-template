@@ -201,6 +201,12 @@ nav{
 	align-items: center;
 	flex-direction: column;
 	position: relative;
+	.logo{
+		position: absolute;
+		top:$spacing*5;
+		width:100%;
+		text-align: center;
+	}
 	.arrow{cursor: pointer;}
 	.image-hero-container{
 		width:100%;
@@ -298,6 +304,7 @@ nav{
 				border-bottom:1px solid $green;
 				font-family: $plex;
 				font-size: 12px;
+				font-weight: 500;
 			}
 			.social-row{
 				display: flex;
@@ -432,22 +439,31 @@ nav{
 			&.left{
 				margin-right: $spacing*3;
 			}
+			.wrap{
+				margin: $spacing*3 0;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				border-top: 1px solid $white;
+				border-bottom: 1px solid $white;
+				height: calc(32vw - 48px);
+			}
 			.card-container{
 				height: 32vw;
 				margin: auto;
 				color:$white;
 				display: flex;
-				align-items: center;
 				background: $green;
-
+				align-items: center;
 				.card-info{
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
 					align-items: center;
 					text-align: center;
-					border-top: 1px solid $white;
-					border-bottom: 1px solid $white;
+					span{
+						margin-top: $spacing*4;
+					}
 				}
 			}
 		}
