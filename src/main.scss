@@ -121,8 +121,10 @@ nav{
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	height: 80px;
+	padding: $spacing*3 0;
 	z-index: 9;
+	transition: transform .35s ease;
+
 	.nav-container{
 		max-width: $container;
 		width:$container;
@@ -142,6 +144,13 @@ nav{
 		}
 	}
 }
+
+	.scroll-down nav{
+		 transform: translate3d(0, 100px, 0);
+	}
+	.scroll-up nav{
+		transform: translate3d(0, 0%, 0);
+	}
 
 // INIZIO
 
@@ -231,10 +240,9 @@ nav{
 		margin-bottom: $spacing*3;
 		.card-one-third{
 			flex:1;
-			background: $green;
 			border-radius: 10px;
+			overflow: hidden;
 			border:1px solid $black;
-			color:$white;
 			position: relative;
 			.card-container{
 				padding: $spacing*3;
@@ -242,6 +250,15 @@ nav{
 				margin: auto;
 				height: 32vw;
 				align-items: flex-end;
+				background: $green;
+				color:$white;
+				&.active{
+					background: $white;
+					color: $green;
+					.toggle-card img{
+						transform: rotate(45DEG)
+					}
+				}
 			}
 			.toggle-card{
 				position: absolute;
@@ -256,8 +273,8 @@ nav{
 			}
 		}
 		.card-two-third{
-			background: $green;
 			border-radius: 10px;
+			overflow: hidden;
 			width:66.66%;
 			&.right{
 				margin-left: $spacing*3;
@@ -271,6 +288,8 @@ nav{
 				color:$white;
 				display: flex;
 				align-items: center;
+				background: $green;
+
 				.card-info{
 					display: flex;
 					flex-direction: column;
@@ -285,11 +304,16 @@ nav{
 	}
 }
 .panel{
+ max-height: 0;
+ overflow: hidden;
+ transition: max-height 0.2s ease-out;
 	.panel-container{
 		background: $white;
 		border-radius: 10px;
 		border:1.5px solid $black;
 		padding: $spacing*5;
+		margin-bottom: $spacing*3;
+
 		.panel-title{
 			h1{
 				font-size: 30px;

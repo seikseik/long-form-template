@@ -6,41 +6,64 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 
-let imagHero =  document.querySelector(".image-hero");
-let title = document.querySelector(".title h1");
-let subtitle = document.querySelector(".title h3");
-let vLine = document.querySelector(".title .vertical-line");
-let summary = document.querySelector(".hero-description");
-let heroContainer = document.querySelector(".hero-text-container");
 
-let heroTl =  gsap.timeline();
-heroTl.fromTo(imagHero,{autoAlpha: 0},{  duration: 1.5, autoAlpha: 1});
-heroTl.fromTo(heroContainer,{autoAlpha: 0},{  duration: 1.5, autoAlpha: 1, delay: -1});
-gsap.set(vLine, {transformOrigin:"bottom"})
-gsap.fromTo(vLine,{scaleY: 0}, {duration: 0.7, scaleY: 1, delay: 0.7, ease: "circ.out",});
+// HEADER SCROLL
+let body = document.querySelector("body")
+const nav = document.querySelector('nav');
+const scrollUp = "scroll-up";
+const scrollDown = "scroll-down";
+let lastScroll = 0;
 
-
-
-let menuBtn = document.querySelector(".menu");
-let menu =  document.querySelector(".menu-full");
-let menuItems = gsap.utils.toArray(".menu-item-container");
-let body = document.querySelector("body");
-menuBtn.onclick = function(){
-    if(menuBtn.classList.contains("active")){
-      let tl = gsap.timeline();
-        tl.fromTo(menuItems,{autoAlpha: 1},{  duration: 0.2, autoAlpha: 0 ,stagger: -0.1, delay: 0.1});
-        tl.fromTo(menu,{autoAlpha: 1},{  duration: 0.3, autoAlpha: 0, ease: "circ.out"});
-        tl.set(menu, {visibility: "hidden"});
-        body.style.overflowY = "scroll"
-        menuBtn.classList.remove("active")
-    }else{
-      menu.visibility = "visible";
-      gsap.fromTo(menu,{autoAlpha: 0},{  duration: 0.35, autoAlpha: 1,ease: "circ.out"});
-      gsap.fromTo(menuItems,{autoAlpha: 0},{  duration: 1, autoAlpha: 1 ,stagger: 0.2, delay: 0.35});
-      body.style.overflowY = "hidden"
-      menuBtn.classList.add("active")
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll <= 50) {
+      body.classList.remove(scrollUp);
+      return;
     }
-  };
+    if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
+        body.classList.remove(scrollUp);
+        body.classList.add(scrollDown);
+    }
+     else if (currentScroll+25 < lastScroll && body.classList.contains(scrollDown)) {
+        // up
+        body.classList.remove(scrollDown);
+        body.classList.add(scrollUp);
+    }
+    lastScroll = currentScroll;
+  });
+
+
+
+let toggle = document.querySelectorAll(".toggle-card");
+let panels = document.querySelectorAll(".panel");
+
+toggle.forEach((item, i) => {
+  item.addEventListener("click", function(){
+    let panNum = item.getAttribute('card');
+    let panel = document.querySelector(`[panel=${panNum}]`)
+
+    panels.forEach((pan, i) => {
+      if(panel != pan){
+        if (pan.style.maxHeight) {
+          pan.style.maxHeight = null;
+          let att = pan.getAttribute("panel")
+          let card = document.querySelector(`[card=${att}]`)
+          console.log(card)
+          card.parentNode.classList.remove("active");
+        }
+      }
+    });
+
+    this.parentNode.classList.toggle("active");
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  })
+});
+
+
 
 
 
@@ -69,30 +92,6 @@ menuBtn.onclick = function(){
   });
 
 
-  // fade quote
-  const fadeQ = gsap.utils.toArray("[fade-quote]");
-  fadeQ.forEach((el, i) => {
-    const anim = gsap.fromTo(el, {autoAlpha: 0}, {duration: 2.5, autoAlpha: 1, delay: 0.2});
-    ScrollTrigger.create({
-      trigger: el,
-      animation: anim,
-      toggleActions: 'play none none none',
-      once: true,
-    });
-  });
-
-
-  // zoom img
-  const zoom = gsap.utils.toArray("[img-zoom]");
-  zoom.forEach((el, i) => {
-    const anim = gsap.fromTo(el, {scale: 1}, {scale: 1.05, duration: 2.5, delay: 0.2});
-    ScrollTrigger.create({
-      trigger: el,
-      animation: anim,
-      toggleActions: 'play none none none',
-      once: true,
-    });
-  });
 
 
   // hr line animation
@@ -110,13 +109,13 @@ menuBtn.onclick = function(){
   });
 
   // scroll top
-  let topArrow = document.querySelector(".arrow-top");
-  topArrow.addEventListener("click", function(){
-    gsap.to(window, {duration: 2, scrollTo: 0});
-  });
-
-  let h = document.querySelector(".hero").offsetHeight;
-  let arrow = document.querySelector(".arrow");
-  arrow.addEventListener("click", function(){
-    gsap.to(window, {duration: 0.7, scrollTo: h});
-  });
+  // let topArrow = document.querySelector(".arrow-top");
+  // topArrow.addEventListener("click", function(){
+  //   gsap.to(window, {duration: 2, scrollTo: 0});
+  // });
+  //
+  // let h = document.querySelector(".hero").offsetHeight;
+  // let arrow = document.querySelector(".arrow");
+  // arrow.addEventListener("click", function(){
+  //   gsap.to(window, {duration: 0.7, scrollTo: h});
+  // });
