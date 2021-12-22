@@ -73,7 +73,7 @@ $green: #3A504B;
 $light: #E8E0D2;
 $white: #F7F7F7;
 
-$mainTitle: 12vw;
+$mainTitle: 13vw;
 $title: 40px;
 
 $serif: 'Gambarino-Regular', serif;
@@ -136,8 +136,10 @@ nav{
 	bottom: 0;
 	display:flex;
 	justify-content: center;
+	pointer-events: none;
 	align-items: center;
 	padding: $spacing*3 0;
+	padding-bottom: $spacing*4;
 	z-index: 9;
 	transition: transform .35s ease;
 
@@ -154,6 +156,7 @@ nav{
 		a{
 			color:$green;
 			flex: 1;
+			pointer-events: auto;
 			font-family: $plex;
 			font-weight: 500;
 			text-decoration: none;
@@ -201,6 +204,7 @@ nav{
 	align-items: center;
 	flex-direction: column;
 	position: relative;
+
 	.logo{
 		position: absolute;
 		top:$spacing*5;
@@ -288,14 +292,15 @@ nav{
 		}
 	}
 	.hero-footer{
-		width:100%;
+		width:calc(100% - 48px);
 		display: flex;
 		justify-content: space-between;
-		padding-bottom: $spacing*3;
-		margin-top: $spacing*3;
-		border-bottom: 1px solid $black;
+		position: absolute;
+		bottom:$spacing*3;
+		left: $spacing*3;
 		.hero-social{
 			display: flex;
+			justify-content: center;
 			text-align: center;
 			flex-direction: column;
 			span{
