@@ -74,7 +74,9 @@ $light: #E8E0D2;
 $white: #F7F7F7;
 
 $mainTitle: 13vw;
-$title: 40px;
+$title: 2.5vw;
+$small-title: 1vw;
+
 
 $serif: 'Gambarino-Regular', serif;
 $plex: 'IBM Plex Mono', monospace;
@@ -217,6 +219,8 @@ nav{
 			display: flex;
 			flex-direction: column;
 			justify-content: space-around;
+			position: absolute;
+			left: 0;
 			width:40%;
 			height: 100%;
 			background: $green;
@@ -224,7 +228,11 @@ nav{
 			padding-bottom: 7%;
 		}
 		.col-right{
-			width:60%;
+			width:100%;
+			img{
+				width:100%;
+				height: auto;
+			}
 		}
 		.hero-title{
 			color:$white;
@@ -333,38 +341,67 @@ nav{
 .card-container{
 	margin-top: $spacing*5;
 	position: relative;
+	.img-pres{
+		position: absolute;
+		bottom:25%;
+		width:100%;
+		left: 0;
+		padding: 0 $spacing*3;
+		pointer-events: none;
+		img{
+			width:100%;
+			height: auto;
+			border-bottom:1px solid $white;
+		}
+	}
 	.card-info{
 		span{
 			font-family: $plex;
+			font-size: $small-title;
 			text-transform: uppercase;
-
 		}
 		h2{
 			font-family: $serif;
 			text-transform: uppercase;
-			font-size: 40px;
+			font-size: $title;
 			line-height: 1.2;
 			letter-spacing: 1px;
 		}
 	}
 	.row{
 		display:flex;
+		flex-wrap: wrap;
+
 		margin-bottom: $spacing*3;
 		.card-one-third{
 			flex:1;
-			border-radius: 10px;
-			overflow: hidden;
-			border:1px solid $black;
 			position: relative;
+			.white{
+				display: flex;
+			}
+			.green{
+				display: none;
+			}
+			&.active{
+				.white{
+					display: none;
+				}
+				.green{
+					display: flex;
+				}
+			}
 			.card-container{
 				padding: $spacing*3;
 				display: flex;
 				margin: auto;
 				height: 32vw;
 				align-items: flex-end;
-				background: $green;
 				color:$white;
+				overflow: hidden;
 				cursor: pointer;
+				border-radius: 10px;
+				border:1px solid $black;
+				background: $green;
 				&:after{
 					content: " ";
 					position: absolute;
@@ -398,7 +435,7 @@ nav{
 			}
 		}
 		&:not(.row-two){
-			.card-one-third:nth-child(2){
+			.card-one-third.central{
 				margin: 0 $spacing*3;
 			}
 		}
@@ -579,11 +616,71 @@ footer{
 	}
 }
 
+
+.mobile, .mobile-small{display: none !important;}
+.desktop, .desktop-small{display: flex !important;}
+
+@media only screen and (max-width: 1100px) {
+	.card-container .row .card-two-third .wrap{
+		border:none;
+	}
+	.card-container .row .card-two-third .card-container .card-info span{
+		margin-top: $spacing*2;
+	}
+}
+
 // SCHERMO PICCOLO
-@media only screen and (max-width: 1360px) {
+@media only screen and (max-width: 900px) {
+
+		.mobile{
+			display: flex!important;
+		}
+		.desktop{
+			display: none !important;
+		}
+
 	.page-container{
 		max-width: 900px;
 		margin: 0 auto;
+		border:none;
+		padding-bottom: $spacing*4;
+	}
+	.card-container{
+		padding: 0 $spacing*3;
+	}
+
+	.card-container{
+		.row{
+			margin-bottom: 0;
+			.card-one-third{
+				width:100%;
+				flex: unset;
+				.card-container{
+					height: 89vw;
+				}
+				margin-bottom: $spacing*4;
+			}
+			.card-two-third{
+				width:100%;
+				margin-bottom: $spacing*4;
+				margin-left: 0 !important;
+				margin-right: 0 !important;
+				.card-container{
+					height: 60vw;
+				}
+			}
+		}
+	}
+	.card-container .row:not(.row-two) .card-one-third.central{
+		margin: 0;
+		margin-bottom: $spacing*4;
+	}
+
+
+	.panel{
+		.panel-container{
+			overflow: scroll;
+		}
 	}
 
 	footer .footer-container{
@@ -593,11 +690,7 @@ footer{
 
 
 
-
 // MOBILE
-
-.mobile, .mobile-small{display: none !important;}
-.desktop, .desktop-small{display: flex !important;}
 
 @media only screen and (max-width: 768px) {
 

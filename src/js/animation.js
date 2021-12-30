@@ -56,20 +56,27 @@ toggle.forEach((item, i) => {
 
     panels.forEach((pan, i) => {
       if(panel != pan){
+        let parent = pan.parentNode;
         if (pan.style.maxHeight) {
           pan.style.maxHeight = null;
           let att = pan.getAttribute("panel")
           let card = document.querySelector(`[card=${att}]`)
           card.classList.remove("active");
+          parent.classList.remove("active");
         }
       }
     });
 
     this.classList.toggle("active");
+    this.parentNode.classList.toggle("active");
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
+      if(window.innerWidth > 900){
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }else{
+        panel.style.maxHeight = 600 + "px";
+      }
     }
   })
 });
@@ -112,7 +119,6 @@ ScrollTrigger.batch(".card", {
       once: true,
     });
   });
-
 
 
 
