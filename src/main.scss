@@ -76,16 +76,16 @@ $white: #F7F7F7;
 $mainTitle: 13vw;
 $title: 2.5vw;
 $small-title: 1vw;
-
+$section-title: 3.5vw;
 
 $serif: 'Gambarino-Regular', serif;
 $plex: 'IBM Plex Mono', monospace;
-
+$plexSerif: 'IBM Plex Serif', serif;
 
 
 
 body{
-	font-family: 'IBM Plex Serif', serif;
+	font-family: $plexSerif;
 	font-size: 20px;
 	line-height: 1.4;
 	overflow-x: hidden;
@@ -142,7 +142,7 @@ nav{
 	align-items: center;
 	padding: $spacing*3 0;
 	padding-bottom: $spacing*4;
-	z-index: 9;
+	z-index: 999;
 	transition: transform .35s ease;
 
 	.nav-container{
@@ -220,19 +220,20 @@ nav{
 			flex-direction: column;
 			justify-content: space-around;
 			left: 0;
-			width:40%;
+			width:35%;
 			height: 100%;
 			background: $green;
 			padding: $spacing*4 $spacing*3;
 			padding-bottom: 7%;
 		}
 		.col-right{
-			width:60%;
-			background: $green;
+			width:65%;
 			display: flex;
 			align-items: flex-end;
 			img{
 				width:100%;
+				min-height: 100vh;
+				object-fit:cover;
 				height: auto;
 			}
 		}
@@ -272,7 +273,7 @@ nav{
 				padding: 3px 5px;
 				border-bottom:1px solid $white;
 				font-family: $plex;
-				font-size: 12px;
+				font-size: 13px;
 				font-weight: 500;
 			}
 			.social-row{
@@ -325,7 +326,7 @@ nav{
 		position: relative;
 		padding: $spacing*3 0;
 		h2{
-			font-size: 70px;
+			font-size: $section-title;
 			font-family: $serif;
 			text-align: center;
 		}
@@ -336,6 +337,23 @@ nav{
 			top:-22px;
 			left:calc(50% - 22px);
 		}
+	}
+	.text-inner{
+		p{font-family: $plexSerif;}
+		p:not(:last-child){
+			margin-bottom: $spacing*3;
+		}
+	}
+}
+
+.separator{
+	max-width:$large-container;
+	margin: 0 auto;
+	height: 1px;
+	background: $black;
+	margin-bottom: $spacing*7;
+	&.margin{
+		margin: $spacing*10 auto;
 	}
 }
 
@@ -374,7 +392,7 @@ nav{
 		flex-wrap: wrap;
 
 		margin-bottom: $spacing*3;
-		.card-one-third{
+		.card-one-third, .card-one-fourth{
 			flex:1;
 			position: relative;
 			.white{
@@ -478,6 +496,22 @@ nav{
 				}
 			}
 		}
+		.card-one-fourth{
+			&:not(.last){
+				margin-right: $spacing*3;
+			}
+			flex:1;
+			.card-container{
+				height: 23vw;
+				align-items: center;
+				text-align: center;
+				margin: 0 auto;
+				justify-content: center;
+				.card-info{
+					width:70%;
+				}
+			}
+		}
 	}
 }
 .panel-mobile{
@@ -491,7 +525,7 @@ nav{
 		background: $white;
 		border-radius: 10px;
 		border:1.5px solid $black;
-		padding: $spacing*5;
+		padding: $spacing*5 $spacing*10;
 		.panel-title{
 			h1{
 				font-size: 44px;
@@ -507,8 +541,7 @@ nav{
 		.panel-text-container{
 			max-width: $text-container;
 			margin: 0 auto;
-			margin-bottom: $spacing*11;
-			padding: 0 $spacing*3;
+			padding-bottom: $spacing*5;
 			span{
 				background: $green;
 				color: $white;
@@ -519,7 +552,53 @@ nav{
 			}
 			p{
 				margin-top: $spacing*3;
+				font-family: $plexSerif;
 			}
+		}
+	}
+}
+
+// simulatore
+.elezioni-wrapper{
+	margin: $spacing*4 0 !important;
+}
+.simulatore-section-container{
+	.elections-widget{
+		width:100%;
+	}
+}
+.simulatore-result-container{
+	max-width: $large-container;
+	margin: 0 auto;
+	margin-top: $spacing*5;
+	display: flex;
+	border-top:1px solid $black;
+	border-bottom:1px solid $black;
+	.image-simulatore{
+		width:40%;
+		padding: $spacing*3;
+		img{
+			width:100%;
+			height: auto;
+		}
+	}
+	.text-simulatore{
+		padding: $spacing*2;
+		display: flex;
+		flex-direction:column;
+		align-items: flex-start;
+		justify-content: center;
+		width:60%;
+		.scenario, .text-result{
+			text-transform: uppercase;
+			font-family: $plex;
+		}
+		.title-presidente{
+			font-family: $serif;
+			font-size: $section-title;
+			line-height: 1;
+			text-transform: uppercase;
+			margin: $spacing*3 0;
 		}
 	}
 }
@@ -641,7 +720,7 @@ footer{
 }
 
 // SCHERMO PICCOLO
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1100px) {
 
 		.mobile{
 			display: flex!important;
@@ -667,7 +746,7 @@ footer{
 				width:100%;
 				flex: unset;
 				.card-container{
-					height: 89vw;
+					height: 90vw;
 				}
 				margin-bottom: $spacing*4;
 			}
@@ -697,6 +776,11 @@ footer{
 	footer .footer-container{
 		max-width: 900px;
 	}
+
+	.separator{
+		margin-left: $spacing*2;
+		margin-right: $spacing*2;
+	}
 }
 
 
@@ -710,6 +794,121 @@ footer{
 	}
 	.desktop{
 		display: none !important;
+	}
+
+	.hero{
+		height: auto;
+		.hero-container{
+			flex-direction: column;
+			.col-left{
+				width:100%;
+				height: 100vh;
+				.hero-title h1{
+					font-size: 55px;
+				}
+			}
+			.col-right{
+				width:100%;
+				img{
+					height: auto;
+					min-height: unset;
+				}
+			}
+		}
+	}
+
+	.text-container{
+		.title-container{
+			h2{
+				font-size: 30px;
+			}
+		}
+	}
+
+.card-container{
+	padding: 0 $spacing*2;
+	.img-pres{
+		bottom: 30%;
+	}
+	.card-info{
+		span{
+			font-size: 18px;
+		}
+		h2{
+			font-size: 30px;
+		}
+	}
+}
+.card-container .row .card-two-third .card-container{
+	height: auto;
+	.wrap{
+		height: auto;
+	}
+	.card-info{
+		h2{
+			font-size: 25px;
+		}
+	}
+}
+
+.panel-mobile .panel-container .panel-title h1, .panel .panel-container .panel-title h1{
+	font-size: 25px;
+	width:100%;
+}
+.panel-mobile .panel-container{
+	padding: $spacing*2 $spacing;
+}
+.panel-mobile .panel-container .panel-text-container, .panel .panel-container .panel-text-container{
+	padding-bottom: 0;
+}
+
+	.simulatore-result-container{
+		padding: 0 $spacing*2;
+		flex-direction: column;
+		border: none;
+		.image-simulatore{
+			width:100%;
+			padding: $spacing*2 0;
+			border-top:1px solid $black;
+			border-bottom:1px solid $black;
+		}
+		.text-simulatore{
+			padding: $spacing*3 0;
+			padding-bottom: $spacing*3;
+			border-bottom:1px solid $black;
+			width:100%;
+			.title-presidente{
+				font-size: 35px;
+				line-height: 1.2;
+			}
+		}
+	}
+
+	footer{
+		&:before{
+			height: 100px;
+			top:-99px;
+		}
+		.arrow-top{
+			right: 16px;
+			top:unset;
+			bottom:16px;
+		}
+		.footer-container{
+			padding: $spacing*4 $spacing*2;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			.footer-row{
+				flex-direction: column;
+				.col{
+					flex-direction: row;
+					justify-content: center;
+					width:100%;
+					margin-bottom: $spacing*2;
+				}
+			}
+		}
 	}
 
 }

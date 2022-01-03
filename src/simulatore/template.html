@@ -41,10 +41,6 @@
     <meta name="twitter:url" content="<?php echo $pageUrl; ?>">
     <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
 
-      <!-- font  -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=Inter:wght@300;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
 
   </head>
@@ -52,13 +48,13 @@
   <body>
 
 
-<nav>
-  <div class="nav-container">
-    <a href="../">I 12 POSSIBILI PRESIDENTI</a>
-    <a class="active" href="./simulatore">IL SIMULATORE</a>
-    <a href="./curiosita-del-passato">LE CURIOSITà DEL PASSATO</a>
-  </div>
-</nav>
+    <nav>
+      <div class="nav-container">
+        <a href="../">I 12 POSSIBILI PRESIDENTI</a>
+        <a class="active" href="./simulatore">IL SIMULATORE</a>
+        <a href="./curiosita-del-passato">LE CURIOSITà DEL PASSATO</a>
+      </div>
+    </nav>
 
     <div class="hero">
 
@@ -94,57 +90,99 @@
 
     </div>
 
+    <div class="page-container">
+      <section class="text-container">
+        <div class="title-container">
+          <div class="number">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="14" cy="14" r="13.5" fill="#F7F7F7" stroke="#1E2528" />
+              <path d="M18.6475 19.5V18.024H15.4615V6.936H12.7615L9.50352 10.212L10.5475 11.238L13.5895 8.214H13.7155V18.024H10.1515V19.5H18.6475Z" fill="black" />
+            </svg>
+          </div>
+          <h2>I 12 POSSIBILI PRESIDENTI</h2>
+        </div>
+
+        <div fade class="text-inner first-text">
+          <p> <span class="dropcap">E</span>
+            d quis pulvinar at posuere. Ac lacus, tellus porttitor fusce phasellus venenatis, consectetur arcu tristique. Sit id lacus, urna faucibus nunc tortor. Lacinia quis in leo amet, porta montes, ultricies. Sed cursus imperdiet elementum nibh
+            odio mattis diam. Tincidunt dolor consequat posuere lacus nunc, lobortis dictum mauris risus. Sed gravida egestas non consequat id. Tristique euismod viverra accumsan auctor. Mus tellus porta eget turpis pulvinar. Ullamcorper faucibus sit
+            velit, nam. Tristique maecenas sit nunc ultrices pretium quis.</p>
+
+          <p>Lacinia quis in leo amet, porta montes, ultricies. Sed cursus imperdiet elementum nibh odio mattis diam. Tincidunt dolor consequat posuere lacus nunc, lobortis dictum mauris risus. Sed gravida egestas non consequat id. Tristique euismod
+            viverra accumsan auctor. Mus tellus porta eget turpis pulvinar. Ullamcorper faucibus sit velit, nam. Tristique maecenas sit nunc ultrices pretium quis.</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="simulatore-section-container">
+      <div class="vue-wrapper" id="simulatore" data-url="../dataset/dataset.tsv" data-config="../dataset/config1.json">
+      </div>
+      <div class="simulatore-result-container">
+        <div class="image-simulatore">
+          <img class="img-candidato" src="" alt="">
+        </div>
+        <div class="text-simulatore">
+          <span class="scenario"></span>
+          <h2 class="title-presidente"></h2>
+          <p class="text-result"></p>
+        </div>
+      </div>
+
+
       <div class="page-container">
         <section class="text-container">
-          <div class="title-container">
-            <div class="number">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="14" cy="14" r="13.5" fill="#F7F7F7" stroke="#1E2528"/>
-              <path d="M18.6475 19.5V18.024H15.4615V6.936H12.7615L9.50352 10.212L10.5475 11.238L13.5895 8.214H13.7155V18.024H10.1515V19.5H18.6475Z" fill="black"/>
-              </svg>
-            </div>
-            <h2>I 12 POSSIBILI PRESIDENTI</h2>
-          </div>
-
           <div fade class="text-inner first-text">
-            <p> <span class="dropcap">E</span>
-            d quis pulvinar at posuere. Ac lacus, tellus porttitor fusce phasellus venenatis, consectetur arcu tristique. Sit id lacus, urna faucibus nunc tortor. Lacinia quis in leo amet, porta montes, ultricies. Sed cursus imperdiet  elementum nibh odio mattis diam. Tincidunt dolor consequat posuere lacus nunc, lobortis dictum mauris risus. Sed gravida egestas non consequat id. Tristique euismod viverra accumsan auctor. Mus tellus porta eget turpis pulvinar. Ullamcorper faucibus sit velit, nam. Tristique maecenas sit nunc ultrices pretium quis.</p>
+            <p>Ac lacus, tellus porttitor fusce phasellus venenatis, consectetur arcu tristique. Sit id lacus, urna faucibus nunc tortor. Iaculis erat tellus tellus massa quam sagittis, viverra in justo. Molestie blandit nisl donec risus massa
+              imperdiet sollicitudin. Felis nisi, sed diam ipsum id. Consectetur libero arcu eget fermentum sagittis quis cursus augue. Pellentesque id rutrum morbi vitae. Condimentum nisl varius rhoncus sit id tellus. Ornare faucibus justo, nec
+              facilisis urna adipiscing lectus ut. Lectus diam neque, rutrum lorem suscipit sit nisi cum ac. Enim vel sociis quam habitasse. Nam eget facilisi non commodo vestibulum mauris enim.</p>
+
+            <p>Scelerisque pellentesque enim ligula pretium morbi molestie neque dui gravida. Sit tortor interdum interdum amet. Tortor tortor congue nisl pellentesque dignissim. Semper massa suspendisse adipiscing ac eget. Tristique a senectus
+              volutpat ac at integer mauris, pulvinar. Mi habitasse tortor, viverra augue sed. Massa condimentum felis risus fringilla consectetur viverra ut. Tortor porttitor purus suscipit gravida turpis.</p>
+
+            <p>Faucibus in dui mattis quisque at tristique viverra habitant nibh. In scelerisque mattis eu elementum nec. Laoreet enim ac habitant elit justo, dictum ornare. Nulla maecenas suscipit viverra diam blandit dolor. Imperdiet tortor sed
+              commodo, ac vel porta hendrerit commodo. Eget etiam volutpat vitae sed adipiscing nisl. Arcu, justo diam eu malesuada. Cursus adipiscing eget mollis consequat massa eget volutpat odio ut. Purus facilisi pellentesque hendrerit feugiat.
+              Morbi est malesuada vel tortor. Faucibus arcu tempor id dolor pellentesque. Quam urna, a habitant sed. Purus neque ipsum ut at ornare leo.
+              Cras dui, sed sed tempus. Eget maecenas quis arcu dignissim sit lorem. Nibh</p>
           </div>
         </section>
       </div>
 
+      <div class="separator"></div>
 
       <footer>
-            <div class="footer-container">
-              <div class="arrow-top">
-                <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M27.5 0.999937C12.8645 0.999935 1 12.8185 0.999998 27.3974C0.999997 41.9764 12.8644 53.7949 27.5 53.7949C42.1355 53.7949 54 41.9764 54 27.3974C54 12.8185 42.1355 0.999938 27.5 0.999937Z" fill="#F7F7F7" stroke="#3A504B" stroke-width="2"/>
-<path d="M33.0098 42.9824C33.0098 43.2425 33.1151 43.4919 33.3027 43.6759C33.4902 43.8598 33.7445 43.9631 34.0098 43.9631C34.275 43.9631 34.5293 43.8598 34.7169 43.6759C34.9044 43.4919 35.0098 43.2425 35.0098 42.9824L33.0098 42.9824ZM23.7098 12.3721C23.5224 12.1894 23.269 12.0869 23.0048 12.0869C22.7406 12.0869 22.4871 12.1894 22.2998 12.3721L15.9298 18.6197C15.7435 18.8035 15.639 19.052 15.639 19.3112C15.639 19.5703 15.7435 19.8188 15.9298 20.0026C16.0227 20.0945 16.1333 20.1675 16.2552 20.2173C16.3771 20.2671 16.5078 20.2927 16.6398 20.2927C16.7718 20.2927 16.9025 20.2671 17.0243 20.2173C17.1462 20.1675 17.2568 20.0945 17.3498 20.0026L23.0098 14.4514L28.6598 20.0026C28.7527 20.0945 28.8633 20.1675 28.9852 20.2173C29.1071 20.2671 29.2378 20.2927 29.3698 20.2927C29.5018 20.2927 29.6325 20.2671 29.7543 20.2173C29.8762 20.1675 29.9868 20.0945 30.0798 20.0026C30.266 19.8188 30.3706 19.5703 30.3706 19.3112C30.3706 19.0521 30.266 18.8035 30.0798 18.6197L23.7098 12.3721ZM35.0098 42.9824L35.0098 32.0368L33.0098 32.0368L33.0098 42.9824L35.0098 42.9824ZM33.0098 30.0752L24.0098 30.0752L24.0098 32.0368L33.0098 32.0368L33.0098 30.0752ZM24.0098 30.0752L24.0098 13.0685L22.0098 13.0685L22.0098 30.0752L24.0098 30.0752ZM24.0098 30.0752L22.0098 30.0752C22.0098 30.5955 22.2205 31.0944 22.5956 31.4623C22.9706 31.8302 23.4793 32.0368 24.0098 32.0368L24.0098 30.0752ZM35.0098 32.0368C35.0098 31.5166 34.7991 31.0176 34.424 30.6498C34.0489 30.2819 33.5402 30.0752 33.0098 30.0752L33.0098 32.0368L35.0098 32.0368Z" fill="#3A504B"/>
-</svg>
+        <div class="footer-container">
+          <div class="arrow-top">
+            <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M27.5 0.999937C12.8645 0.999935 1 12.8185 0.999998 27.3974C0.999997 41.9764 12.8644 53.7949 27.5 53.7949C42.1355 53.7949 54 41.9764 54 27.3974C54 12.8185 42.1355 0.999938 27.5 0.999937Z" fill="#F7F7F7" stroke="#3A504B"
+                stroke-width="2" />
+              <path
+                d="M33.0098 42.9824C33.0098 43.2425 33.1151 43.4919 33.3027 43.6759C33.4902 43.8598 33.7445 43.9631 34.0098 43.9631C34.275 43.9631 34.5293 43.8598 34.7169 43.6759C34.9044 43.4919 35.0098 43.2425 35.0098 42.9824L33.0098 42.9824ZM23.7098 12.3721C23.5224 12.1894 23.269 12.0869 23.0048 12.0869C22.7406 12.0869 22.4871 12.1894 22.2998 12.3721L15.9298 18.6197C15.7435 18.8035 15.639 19.052 15.639 19.3112C15.639 19.5703 15.7435 19.8188 15.9298 20.0026C16.0227 20.0945 16.1333 20.1675 16.2552 20.2173C16.3771 20.2671 16.5078 20.2927 16.6398 20.2927C16.7718 20.2927 16.9025 20.2671 17.0243 20.2173C17.1462 20.1675 17.2568 20.0945 17.3498 20.0026L23.0098 14.4514L28.6598 20.0026C28.7527 20.0945 28.8633 20.1675 28.9852 20.2173C29.1071 20.2671 29.2378 20.2927 29.3698 20.2927C29.5018 20.2927 29.6325 20.2671 29.7543 20.2173C29.8762 20.1675 29.9868 20.0945 30.0798 20.0026C30.266 19.8188 30.3706 19.5703 30.3706 19.3112C30.3706 19.0521 30.266 18.8035 30.0798 18.6197L23.7098 12.3721ZM35.0098 42.9824L35.0098 32.0368L33.0098 32.0368L33.0098 42.9824L35.0098 42.9824ZM33.0098 30.0752L24.0098 30.0752L24.0098 32.0368L33.0098 32.0368L33.0098 30.0752ZM24.0098 30.0752L24.0098 13.0685L22.0098 13.0685L22.0098 30.0752L24.0098 30.0752ZM24.0098 30.0752L22.0098 30.0752C22.0098 30.5955 22.2205 31.0944 22.5956 31.4623C22.9706 31.8302 23.4793 32.0368 24.0098 32.0368L24.0098 30.0752ZM35.0098 32.0368C35.0098 31.5166 34.7991 31.0176 34.424 30.6498C34.0489 30.2819 33.5402 30.0752 33.0098 30.0752L33.0098 32.0368L35.0098 32.0368Z"
+                fill="#3A504B" />
+            </svg>
 
-              </div>
+          </div>
 
-              <div class="footer-row">
-                <div class="col">
-                  <h6>Una produzione di</h6>
-                  <span><a target="_blank" href="https://www.gedivisual.it/">Gedi Visual</a></span>
-                </div>
-
-                <div class="col">
-                  <h6>GRAFICA E SVILUPPO</h6>
-                  <span><a target="_blank" href="https://www.beamediacompany.com/">BEA</a> x Gedi</span>
-                </div>
-              </div>
-
-                <div class="footer-include">
-                    <esi:include src='https://lab.gedidigital.it/utils/includes/footer/gnn.html' />
-                </div>
+          <div class="footer-row">
+            <div class="col">
+              <h6>Una produzione di</h6>
+              <span><a target="_blank" href="https://www.gedivisual.it/">Gedi Visual</a></span>
             </div>
+
+            <div class="col">
+              <h6>GRAFICA E SVILUPPO</h6>
+              <span><a target="_blank" href="https://www.beamediacompany.com/">BEA</a> x Gedi</span>
+            </div>
+          </div>
+
+          <div class="footer-include">
+            <esi:include src='https://lab.gedidigital.it/utils/includes/footer/gnn.html' />
+          </div>
+        </div>
 
       </footer>
 
-    <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
-    <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
+      <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
+      <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
   </body>
 
 

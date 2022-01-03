@@ -51,9 +51,8 @@ arrow.addEventListener("click", function(){
 let toggle = document.querySelectorAll(".accordion");
 
 function accordions(){
-  if(window.innerWidth < 1000){
+  if(window.innerWidth < 1100){
     let panels = document.querySelectorAll(".panel-mobile");
-
     toggle.forEach((item, i) => {
       item.addEventListener("click", function(){
         let panNum = item.getAttribute('card');
@@ -63,6 +62,7 @@ function accordions(){
             let parent = pan.parentNode;
             if (pan.style.maxHeight) {
               pan.style.maxHeight = null;
+              pan.style.marginBottom = null;
               let att = pan.getAttribute("panel")
               let card = document.querySelector(`[card=${att}]`)
               card.classList.remove("active");
@@ -75,15 +75,16 @@ function accordions(){
         this.parentNode.classList.toggle("active");
         if (panel.style.maxHeight) {
           panel.style.maxHeight = null;
+          panel.style.marginBottom = null;
         } else {
             panel.style.maxHeight = 800 + "px";
+            panel.style.marginBottom = 16 + "px";
         }
       })
     });
-
   }else{
+    console.log("desktop")
     let panels = document.querySelectorAll(".panel");
-
     toggle.forEach((item, i) => {
       item.addEventListener("click", function(){
         let panNum = item.getAttribute('card');
@@ -94,6 +95,7 @@ function accordions(){
             let parent = pan.parentNode;
             if (pan.style.maxHeight) {
               pan.style.maxHeight = null;
+              pan.style.marginBottom = null;
               let att = pan.getAttribute("panel")
               let card = document.querySelector(`[card=${att}]`)
               card.classList.remove("active");
@@ -106,8 +108,10 @@ function accordions(){
         this.parentNode.classList.toggle("active");
         if (panel.style.maxHeight) {
           panel.style.maxHeight = null;
+          panel.style.marginBottom = null;
         } else {
             panel.style.maxHeight = panel.scrollHeight + "px";
+            panel.style.marginBottom = 24 + "px";
         }
       })
     });
@@ -118,9 +122,12 @@ function accordions(){
 window.onload = function() {
   accordions()
 };
-window.addEventListener('resize', function(event) {
-accordions()
-}, true);
+
+
+// window.addEventListener('resize', function(event) {
+//   console.log(event)
+//   accordions();
+// }, true);
 
 
 
@@ -135,7 +142,6 @@ ScrollTrigger.batch(".card", {
   },
   once: true
 });
-
 
 
   // fade in
@@ -161,7 +167,6 @@ ScrollTrigger.batch(".card", {
       once: true,
     });
   });
-
 
 
   // hr line animation
