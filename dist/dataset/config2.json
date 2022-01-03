@@ -1,0 +1,90 @@
+{
+  "schemaColore": 1,
+  "fontFamily": "IBM Plex Mono",
+  "lingua": "it-IT",
+  "maggioranze": [
+    {
+      "label": "Maggioranza",
+      "value": 508
+    },
+    {
+      "label": "Maggioranza &#8532;",
+      "value": 677
+    }
+  ],
+  "totale": {
+    "label": "Totale voti",
+    "value": 1007
+  },
+  "tipologiaVoto": [
+    "pro",
+    "null",
+    "contro"
+  ],
+  "polarizzazione": [
+    "Sinistra",
+    "Centro",
+    " prova Destra"
+  ],
+  "interattivo": true,
+  "selettoreCandidati": true,
+  "callToAction": {
+    "selettore": "Seleziona un possibile candidato",
+    "reset": "Reset"
+  },
+  "callToActionMobile": {
+    "ruota": "Scorri per visualizzare",
+    "zoomIn": "Ingrandisci la visualizzazione per interagire",
+    "zoomOut": "Riduci la visualizzazione"
+  },
+  "onBoarding": {
+    "step1": [
+      {
+        "text": "Attraverso il simulatore è possibile ipotizzare il proprio scenario politico in vista di una votazione in parlamento"
+      },
+      {
+        "text": "Al variare del voto dei partiti sottostanti, il voto complessivo per la maggioranza sarà aggiornato"
+      },
+      {
+        "text": "Cliccando su ciascun partito è possibile variare il voto tra pro, contrario e null.<br><br><e>Fai una prova cliccando su</e>"
+      }
+    ],
+    "step2": [
+      {
+        "text": "Per tornare alla visualizzazione di partenza, clicca su RESET"
+      },
+      {
+        "text": "In questo scenario i voti sarebbero sufficienti per una maggioranza"
+      }
+    ]
+  },
+  "onBoardingMobile": {
+    "step1": [
+      {
+        "text": "Qui è possibile visualizzare il numero minimo di voti a favore affinchè si arrivi ad una maggioranza"
+      },
+      {
+        "text": "Tappando sul bottone sottostante è possibile passare al dettaglio e interagire con la visualizzazione"
+      }
+    ],
+    "step2": [
+      {
+        "text": "Tappando  su ciascun partito è possibile variare il voto tra pro, contrario e null"
+      },
+      {
+        "text": "Tappando sul bottone sottostante si riduce la visualizzazione tornando ad una vista di insieme"
+      }
+    ],
+    "step3": [
+      {
+        "text": "Per tornare alla visualizzazione di partenza, clicca su RESET"
+      }
+    ]
+  },
+  "eventoRisultato": {
+    "occhiello": "Nello scenario selezionato",
+    "positivo": "viene eletto Presidente della Repubblica Italiana",
+    "negativo": "non viene eletto Presidente della Repubblica Italiana",
+    "maggioranzaAttuale": 1
+  }
+}
