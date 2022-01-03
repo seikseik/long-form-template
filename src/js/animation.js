@@ -6,32 +6,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 
-
-// HEADER SCROLL
-let body = document.querySelector("body")
-const nav = document.querySelector('nav');
-const scrollUp = "scroll-up";
-const scrollDown = "scroll-down";
-let lastScroll = 0;
-
-  window.addEventListener("scroll", () => {
-    const currentScroll = window.pageYOffset;
-    if (currentScroll <= 50) {
-      body.classList.remove(scrollUp);
-      return;
-    }
-    if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
-        body.classList.remove(scrollUp);
-        body.classList.add(scrollDown);
-    }
-     else if (currentScroll+25 < lastScroll && body.classList.contains(scrollDown)) {
-        // up
-        body.classList.remove(scrollDown);
-        body.classList.add(scrollUp);
-    }
-    lastScroll = currentScroll;
-  });
-
 // arrow
 let topArrow = document.querySelector(".arrow-top");
 topArrow.addEventListener("click", function(){
@@ -44,7 +18,6 @@ arrow.addEventListener("click", function(){
   console.log("ciao")
   gsap.to(window, {duration: 0.7, scrollTo: h});
 });
-
 
 
 // accordion
@@ -83,7 +56,6 @@ function accordions(){
       })
     });
   }else{
-    console.log("desktop")
     let panels = document.querySelectorAll(".panel");
     toggle.forEach((item, i) => {
       item.addEventListener("click", function(){
