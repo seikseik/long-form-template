@@ -28,13 +28,13 @@ module.exports = merge(common, {
       new HtmlWebpackPlugin({
         title: "Home-2",
         filename: "simulatore/index.html",
-        template: "./src/simulatore/index.html",
+        template: "./src/simulatore/template.html",
         minify: false
       }),
       new HtmlWebpackPlugin({
         title: "Home-3",
         filename: "curiosita-del-passato/index.html",
-        template: "./src/curiosita-del-passato/index.html",
+        template: "./src/curiosita-del-passato/template.html",
         minify: false
       })
     ]

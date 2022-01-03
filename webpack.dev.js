@@ -17,11 +17,11 @@ module.exports = merge(common, {
     }),
     new HtmlWebpackPlugin({
       filename: "simulatore/index.html",
-      template: "./src/simulatore/index.html"
+      template: "./src/simulatore/template.html"
     }),
     new HtmlWebpackPlugin({
       filename: "curiosita-del-passato/index.html",
-      template: "./src/curiosita-del-passato/index.html"
+      template: "./src/curiosita-del-passato/template.html"
     })
   ],
   module: {
