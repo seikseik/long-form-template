@@ -46,40 +46,82 @@ arrow.addEventListener("click", function(){
 });
 
 
+
+// accordion
 let toggle = document.querySelectorAll(".accordion");
-let panels = document.querySelectorAll(".panel");
 
-toggle.forEach((item, i) => {
-  item.addEventListener("click", function(){
-    let panNum = item.getAttribute('card');
-    let panel = document.querySelector(`[panel=${panNum}]`)
+function accordions(){
+  if(window.innerWidth < 1000){
+    let panels = document.querySelectorAll(".panel-mobile");
 
-    panels.forEach((pan, i) => {
-      if(panel != pan){
-        let parent = pan.parentNode;
-        if (pan.style.maxHeight) {
-          pan.style.maxHeight = null;
-          let att = pan.getAttribute("panel")
-          let card = document.querySelector(`[card=${att}]`)
-          card.classList.remove("active");
-          parent.classList.remove("active");
+    toggle.forEach((item, i) => {
+      item.addEventListener("click", function(){
+        let panNum = item.getAttribute('card');
+        let panel = document.querySelector(`[panel=${panNum}-mobile]`)
+        panels.forEach((pan, i) => {
+          if(panel != pan){
+            let parent = pan.parentNode;
+            if (pan.style.maxHeight) {
+              pan.style.maxHeight = null;
+              let att = pan.getAttribute("panel")
+              let card = document.querySelector(`[card=${att}]`)
+              card.classList.remove("active");
+              parent.classList.remove("active");
+            }
+          }
+        });
+
+        this.classList.toggle("active");
+        this.parentNode.classList.toggle("active");
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = 800 + "px";
         }
-      }
+      })
     });
 
-    this.classList.toggle("active");
-    this.parentNode.classList.toggle("active");
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      if(window.innerWidth > 900){
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      }else{
-        panel.style.maxHeight = 600 + "px";
-      }
-    }
-  })
-});
+  }else{
+    let panels = document.querySelectorAll(".panel");
+
+    toggle.forEach((item, i) => {
+      item.addEventListener("click", function(){
+        let panNum = item.getAttribute('card');
+        let panel = document.querySelector(`[panel=${panNum}]`)
+
+        panels.forEach((pan, i) => {
+          if(panel != pan){
+            let parent = pan.parentNode;
+            if (pan.style.maxHeight) {
+              pan.style.maxHeight = null;
+              let att = pan.getAttribute("panel")
+              let card = document.querySelector(`[card=${att}]`)
+              card.classList.remove("active");
+              parent.classList.remove("active");
+            }
+          }
+        });
+
+        this.classList.toggle("active");
+        this.parentNode.classList.toggle("active");
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      })
+    });
+
+  }
+
+}
+window.onload = function() {
+  accordions()
+};
+window.addEventListener('resize', function(event) {
+accordions()
+}, true);
+
 
 
 // fade blocchi

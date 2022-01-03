@@ -351,7 +351,6 @@ nav{
 		img{
 			width:100%;
 			height: auto;
-			border-bottom:1px solid $white;
 		}
 	}
 	.card-info{
@@ -382,7 +381,7 @@ nav{
 			.green{
 				display: none;
 			}
-			&.active{
+			&.active, &:hover{
 				.white{
 					display: none;
 				}
@@ -479,7 +478,10 @@ nav{
 		}
 	}
 }
-.panel{
+.panel-mobile{
+	display: none;
+}
+.panel, .panel-mobile{
  max-height: 0;
  overflow: hidden;
  transition: max-height 0.2s ease-out;
@@ -488,8 +490,6 @@ nav{
 		border-radius: 10px;
 		border:1.5px solid $black;
 		padding: $spacing*5;
-		margin-bottom: $spacing*3;
-
 		.panel-title{
 			h1{
 				font-size: 44px;
@@ -621,6 +621,15 @@ footer{
 .desktop, .desktop-small{display: flex !important;}
 
 @media only screen and (max-width: 1100px) {
+
+	.panel-mobile{
+		display: flex;
+		.panel-container{
+			overflow: scroll;
+			padding: $spacing;
+		}
+	}
+
 	.card-container .row .card-two-third .wrap{
 		border:none;
 	}
