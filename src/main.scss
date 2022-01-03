@@ -219,7 +219,6 @@ nav{
 			display: flex;
 			flex-direction: column;
 			justify-content: space-around;
-			position: absolute;
 			left: 0;
 			width:40%;
 			height: 100%;
@@ -228,7 +227,10 @@ nav{
 			padding-bottom: 7%;
 		}
 		.col-right{
-			width:100%;
+			width:60%;
+			background: $green;
+			display: flex;
+			align-items: flex-end;
 			img{
 				width:100%;
 				height: auto;
@@ -346,7 +348,7 @@ nav{
 		bottom:25%;
 		width:100%;
 		left: 0;
-		padding: 0 $spacing*3;
+		// padding: 0 $spacing*3;
 		pointer-events: none;
 		img{
 			width:100%;
