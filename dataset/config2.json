@@ -29,14 +29,15 @@
   "interattivo": true,
   "selettoreCandidati": true,
   "callToAction": {
-    "selettore": "Seleziona un possibile candidato",
+    "selettore": "Seleziona un candidato",
     "reset": "Reset"
   },
   "callToActionMobile": {
     "ruota": "Scorri per visualizzare",
-    "zoomIn": "Ingrandisci la visualizzazione per interagire",
-    "zoomOut": "Riduci la visualizzazione"
+    "zoomIn": "Ingrandisci",
+    "zoomOut": "Riduci"
   },
+  "legend": "Cliccando su ciascun partito è possibile variare il voto tra:",
   "onBoarding": {
     "step1": [
       {
@@ -46,12 +47,12 @@
         "text": "Al variare del voto dei partiti sottostanti, il voto complessivo per la maggioranza sarà aggiornato"
       },
       {
-        "text": "Cliccando su ciascun partito è possibile variare il voto tra pro, contrario e null.<br><br><e>Fai una prova cliccando su</e>"
+        "text": "Cliccando su ciascun partito è possibile variare il voto tra pro, contrario e null.<br><br><em>Fai una prova cliccando sull’area attiva del grafico</em>"
       }
     ],
     "step2": [
       {
-        "text": "Per tornare alla visualizzazione di partenza, clicca su RESET"
+        "text": "Per tornare alla visualizzazione basata sui sondaggi, clicca sul pulsante di RESET"
       },
       {
         "text": "In questo scenario i voti sarebbero sufficienti per una maggioranza"
@@ -64,18 +65,18 @@
         "text": "Qui è possibile visualizzare il numero minimo di voti a favore affinchè si arrivi ad una maggioranza"
       },
       {
-        "text": "Tappando sul bottone sottostante è possibile passare al dettaglio e interagire con la visualizzazione"
+        "text": "Cliccando sul bottone sottostante è possibile passare al dettaglio e interagire con la visualizzazione"
       }
     ],
     "step2": [
       {
-        "text": "Tappando  su ciascun partito è possibile variare il voto tra pro, contrario e null"
-      },
-      {
-        "text": "Tappando sul bottone sottostante si riduce la visualizzazione tornando ad una vista di insieme"
+        "text": "Cliccando sul nome del partito è possibile variare il voto tra pro, contrario e null"
       }
     ],
     "step3": [
+      {
+        "text": "In questo scenario i voti sarebbero sufficienti per una maggioranza"
+      },
       {
         "text": "Per tornare alla visualizzazione di partenza, clicca su RESET"
       }

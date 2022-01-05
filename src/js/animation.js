@@ -20,6 +20,11 @@ arrow.addEventListener("click", function(){
 });
 
 
+let body = document.querySelector("body")
+if(body.classList.contains("scroll-to-section")){
+  gsap.to(window, {duration: 0, scrollTo: h});
+}
+
 // accordion
 let toggle = document.querySelectorAll(".accordion");
 
@@ -46,12 +51,15 @@ function accordions(){
 
         this.classList.toggle("active");
         this.parentNode.classList.toggle("active");
+        let title = this.querySelector("h2")
+
         if (panel.style.maxHeight) {
           panel.style.maxHeight = null;
           panel.style.marginBottom = null;
         } else {
             panel.style.maxHeight = 800 + "px";
             panel.style.marginBottom = 16 + "px";
+            gsap.to(window, {duration: 0.2, scrollTo:title, delay: 0.15});
         }
       })
     });
@@ -78,12 +86,14 @@ function accordions(){
 
         this.classList.toggle("active");
         this.parentNode.classList.toggle("active");
+        let title = this.querySelector("h2")
         if (panel.style.maxHeight) {
           panel.style.maxHeight = null;
           panel.style.marginBottom = null;
         } else {
             panel.style.maxHeight = panel.scrollHeight + "px";
             panel.style.marginBottom = 24 + "px";
+            gsap.to(window, {duration: 0.2, scrollTo:title, delay: 0.15});
         }
       })
     });
