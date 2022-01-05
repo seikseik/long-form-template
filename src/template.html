@@ -1,6 +1,13 @@
 <?php
-    include_once('./includes/config.php');
+
+    $pageUrl = strtok( (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) || isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", "?");
+    $pageTitle = "12 POSSIBILI PRESIDENTI";
+    $pageDescription = "";
+
+    $twitterString = "%23" . $pageUrl;
+    $whatsappString = $pageTitle. " " . $pageUrl;
 ?>
+
 <!DOCTYPE html>
 <html lang="it">
 
@@ -27,7 +34,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="<?php echo $pageTitle; ?>">
     <meta property="og:description" content="<?php echo $pageDescription; ?>">
-    <meta property="og:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg.jpg'); ?>">
+    <meta property="og:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg'); ?>">
     <meta property="og:url" content="<?php echo $pageUrl; ?>">
     <meta property="article:published_time" content="2020-02-14T09:00">
     <!-- facebook -->
@@ -37,10 +44,9 @@
     <meta name="twitter:site" content="" />
     <meta name="twitter:title" content="<?php echo $pageTitle; ?>">
     <meta name="twitter:description" content="<?php echo $pageDescription; ?>">
-    <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg.jpg'); ?>">
+    <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg'); ?>">
     <meta name="twitter:url" content="<?php echo $pageUrl; ?>">
     <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
-
 
 
 
@@ -98,8 +104,8 @@
             <div class="hero-social">
               <span>condividi</span>
               <div class="social-row">
-                <a href="#"> <img src="./assets/fb.svg" alt=""> </a>
-                <a href="#"> <img src="./assets/twitter.svg" alt=""> </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"> <img src="./assets/fb.svg" alt=""> </a>
+                <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"> <img src="./assets/twitter.svg" alt=""> </a>
               </div>
             </div>
             <span class="arrow">
