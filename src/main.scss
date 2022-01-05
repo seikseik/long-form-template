@@ -702,6 +702,17 @@ nav {
 				font-family: $plexSerif;
 			}
 		}
+		.info-container{
+			padding-bottom:$spacing*10;
+			padding-top: $spacing*5;
+			svg{
+				width:100%;
+				height: auto;
+				// .info-fade{
+				// 	opacity: 0;
+				// }
+			}
+		}
 	}
 }
 // simulatore

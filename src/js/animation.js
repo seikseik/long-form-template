@@ -125,6 +125,27 @@ ScrollTrigger.batch(".card", {
   },
   once: true
 });
+// fade infografiche
+ScrollTrigger.batch(".info-fade", {
+  onEnter: elements => {
+
+    // gsap.to(elements, {
+    //   opacity: 1,
+    //   stagger: 0.25,
+    //   duration: 0.5,
+    // });
+    gsap.set(elements, {transformOrigin: 'center'});
+    gsap.fromTo(elements, {autoAlpha: 0, scale: 0.9},
+    {
+      autoAlpha: 1,
+      stagger: 0.25,
+      duration: 0.4,
+      scale: 1,
+    })
+
+  },
+  once: true
+});
 
 
   // fade in
