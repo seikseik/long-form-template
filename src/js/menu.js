@@ -13,26 +13,26 @@ var burger = gsap.timeline({
 });
 
 burger
-    .to(" .burger-one", 0.3, { y: "5px", ease: "circ.out" }, "burg")
-    .to(" .burger-tree", 0.3, { y: "-5px", ease: "circ.out" }, "burg")
+    .to(" .burger-one", 0.25, { y: "5px", ease: "circ.out" }, "burg")
+    .to(" .burger-tree", 0.25, { y: "-5px", ease: "circ.out" }, "burg")
     .to(
         " .burger-two",
-        0.3,
+        0.25,
         { scale: 0.1, transformOrigin: "center", ease: "circ.out" },
         "burg"
     )
     .add("rotate")
-    .to(" .burger-one", 0.3, { y: "10", ease: "circ.out" }, "rotate")
-    .to(" .burger-tree", 0.3, { y: "-10", ease: "circ.out" }, "rotate")
+    .to(" .burger-one", 0.25, { y: "10", ease: "circ.out" }, "rotate")
+    .to(" .burger-tree", 0.25, { y: "-10", ease: "circ.out" }, "rotate")
     .to(
         " .burger-one",
-        0.3,
+        0.25,
         { rotationZ: 45, transformOrigin: "50% 50%", ease: "circ.out" },
         "rotate"
     )
     .to(
         " .burger-tree",
-        0.3,
+        0.25,
         { rotationZ: -45, transformOrigin: "50% 50%", ease: "circ.out" },
         "rotate"
     );
@@ -47,16 +47,16 @@ menuBtn.addEventListener("click", () => {
         flag = !flag;
         if (flag) {
             menu.visibility = "visible";
-            gsap.fromTo(menu,{autoAlpha: 0},{  duration: 0.25, autoAlpha: 1, ease: "circ.out"});
-            gsap.fromTo(menuItems,{autoAlpha: 0},{  duration: 0.5, autoAlpha: 1, stagger: 0.2, delay: 0.35});
+            gsap.fromTo(menu,{autoAlpha: 0},{  duration: 0.3, autoAlpha: 1, ease: "circ.out"});
+            gsap.fromTo(menuItems,{autoAlpha: 0},{  duration: 0.2, autoAlpha: 1, stagger: 0.2, delay: 0.2});
             body.style.overflowY = "hidden"
             burger.restart();
         } else {
             let tl = gsap.timeline({
                 paused: true
               });
-              tl.fromTo(menuItems,{autoAlpha: 1},{  duration: 0.2, autoAlpha: 0 ,stagger: -0.1, delay: 0.1});
-              tl.fromTo(menu,{autoAlpha: 1},{  duration: 0.4, autoAlpha: 0, ease: "circ.out", delay: 0.2});
+              tl.fromTo(menuItems,{autoAlpha: 1},{  duration: 0.15, autoAlpha: 0 ,stagger: -0.1, delay: 0.1});
+              tl.fromTo(menu,{autoAlpha: 1},{  duration: 0.3, autoAlpha: 0, ease: "circ.out", delay: 0.15});
               tl.set(menu, {visibility: "hidden"});
               tl.restart();
               body.style.overflowY = "scroll";

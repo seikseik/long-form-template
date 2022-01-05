@@ -642,7 +642,12 @@ nav {
 				justify-content: center;
 
 				.card-info {
-					width: 70%;
+					width: 90%;
+					height: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border-top: 1px solid;
 				}
 			}
 		}
@@ -900,7 +905,7 @@ footer {
 	}
 
 	.card-container {
-		padding: 0 $spacing*3;
+		padding: 0 $spacing*5;
 	}
 
 	.card-container {
@@ -914,15 +919,22 @@ footer {
 				.card-container {
 					height: 90vw;
 				}
-				margin-bottom: $spacing*4;
+				margin-top: $spacing*5;
+				margin-bottom: 0;
+				&.active{
+					margin-bottom: $spacing !important;
+				}
 			}
 
 			.card-two-third {
 				width: 100%;
-				margin-bottom: $spacing*4;
+				margin-top: $spacing*5;
+				margin-bottom: 0;
 				margin-left: 0 !important;
 				margin-right: 0 !important;
-
+				.wrap{
+					margin: $spacing*5 0;
+				}
 				.card-container {
 					height: 60vw;
 				}
@@ -931,8 +943,9 @@ footer {
 	}
 
 	.card-container .row:not(.row-two) .card-one-third.central {
-		margin: 0 0 $spacing*4;
+		margin: $spacing*4 0 0;
 	}
+
 
 	.panel {
 		.panel-container {
@@ -970,6 +983,7 @@ footer {
 			font-family: $plex;
 			font-size: 16px;
 			line-height: 1;
+			text-transform: uppercase;
 			margin-left: $spacing*3;
 				&:before {
 					content: " ";
@@ -1036,7 +1050,7 @@ footer {
 				width:100%;
 				color: white;
 				font-family: $serif;
-				font-size: 35px;
+				font-size: 40px;
 				text-align: center;
 				text-decoration: none;
 			}
@@ -1083,10 +1097,32 @@ footer {
 		}
 	}
 
+	.separator{
+		display: none;
+	}
+
+	.page-container{
+		padding-left: $spacing;
+		padding-right: $spacing;
+		padding-bottom: $spacing*2;
+
+		.text-container{
+			border-left: 1px solid $black;
+			border-right: 1px solid $black;
+			padding-left: $spacing;
+			padding-right: $spacing;
+			.text-inner{
+				padding-bottom: $spacing*2;
+				border-bottom: 1px solid $black;
+			}
+		}
+	}
+
 	.text-container {
 		.title-container {
 			h2 {
-				font-size: 30px;
+				font-size: 55px;
+				line-height: 1.1;
 			}
 		}
 	}
@@ -1122,10 +1158,26 @@ footer {
 			}
 		}
 	}
+	.card-container .row .card-one-fourth:not(.last){
+		margin-right: 0;
+		margin-bottom: $spacing*3;
+	}
+	.card-container .row .card-one-fourth{
+		.card-container{
+			height: 100vw;
+			.card-info{
+				width:100%;
+				h2{
+					font-size: 40px;
+					line-height: 1.1;
+				}
+			}
+		}
+	}
 
 	.panel .panel-container .panel-title h1,
 	.panel-mobile .panel-container .panel-title h1 {
-		font-size: 25px;
+		font-size: 30px;
 		width: 100%;
 	}
 

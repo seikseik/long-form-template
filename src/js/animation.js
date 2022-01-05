@@ -42,7 +42,8 @@ function accordions(){
               pan.style.maxHeight = null;
               pan.style.marginBottom = null;
               let att = pan.getAttribute("panel")
-              let card = document.querySelector(`[card=${att}]`)
+              let attStrip = att.substr(0, 7);
+              let card = document.querySelector(`[card=${attStrip}]`)
               card.classList.remove("active");
               parent.classList.remove("active");
             }
@@ -58,7 +59,7 @@ function accordions(){
           panel.style.marginBottom = null;
         } else {
             panel.style.maxHeight = 800 + "px";
-            panel.style.marginBottom = 16 + "px";
+            panel.style.marginBottom = 24 + "px";
             gsap.to(window, {duration: 0.2, scrollTo:title, delay: 0.15});
         }
       })
