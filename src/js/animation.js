@@ -15,7 +15,6 @@ topArrow.addEventListener("click", function(){
 let h = document.querySelector(".hero").offsetHeight;
 let arrow = document.querySelector(".arrow");
 arrow.addEventListener("click", function(){
-  console.log("ciao")
   gsap.to(window, {duration: 0.7, scrollTo: h});
 });
 
@@ -103,7 +102,6 @@ function accordions(){
 
 }
 
-
 function accordionsResponsive(){
 
     toggle.forEach((item, i) => {
@@ -156,7 +154,6 @@ function accordionsResponsive(){
               pan.style.marginBottom = null;
               let att = pan.getAttribute("panel")
               let card = document.querySelector(`[card=${att}]`)
-              console.log(card)
               card.classList.remove("active");
               let parent = card.parentNode;
               parent.classList.remove("active");
@@ -188,12 +185,6 @@ window.onload = function() {
 };
 
 
-// window.addEventListener('resize', function(event) {
-//   console.log(event)
-//   accordions();
-// }, true);
-
-
 
 // fade blocchi
 ScrollTrigger.batch(".card", {
@@ -209,6 +200,23 @@ ScrollTrigger.batch(".card", {
 
 
 // fade infografiche
+// ScrollTrigger.batch(".fade-in-zoom", {
+//   onEnter: elements => {
+//     gsap.set(elements, {transformOrigin: 'center'});
+//     gsap.to(elements,
+//     { opacity: 1,
+//       stagger: 0.25,
+//       duration: 0.4,
+//     })
+//   },
+//   onLeaveBack: elements => {
+//     console.log("back")
+//     gsap.fromTo(elements, {autoAlpha: 0}, {duration: 2, autoAlpha: 1});
+//   },
+//   once: false
+// });
+
+// fade infografiche
 ScrollTrigger.batch(".fade-in-zoom", {
   onEnter: elements => {
     gsap.set(elements, {transformOrigin: 'center'});
@@ -217,8 +225,7 @@ ScrollTrigger.batch(".fade-in-zoom", {
       stagger: 0.25,
       duration: 0.4,
     })
-  },
-  once: false
+  }
 });
 
 // fade in scale
@@ -231,6 +238,7 @@ ScrollTrigger.batch(".fade-in-scale", {
       duration: 0.4,
     })
   },
+
   once: false
 });
 
