@@ -1040,6 +1040,7 @@ footer {
 	background: $white;
 	transition: background 0.2s ease, padding-top 0.2s ease, padding-bottom 0.2s ease;
 	position: sticky;
+	position: -webkit-sticky;
 	top:0;
 	height: 46px;
 	z-index: 999;
@@ -1209,7 +1210,7 @@ footer {
 
 	.card-container {
 		padding: 0 $spacing*2;
-
+		margin-top: 0;
 		.img-pres {
 			bottom: 30%;
 		}
@@ -1227,24 +1228,32 @@ footer {
 
 	.card-container .row .card-two-third .card-container {
 		height: auto;
-
 		.wrap {
 			height: auto;
 		}
-
 		.card-info {
 			h2 {
 				font-size: 25px;
 			}
 		}
 	}
+
 	.card-container .row .card-one-fourth:not(.last){
 		margin-right: 0;
-		margin-bottom: $spacing*3;
 	}
 	.card-container .row .card-one-fourth{
+		&.active{
+			margin-bottom: $spacing;
+		}
 		.card-container{
 			height: 100vw;
+			&:hover{
+				background: $green;
+				color:white;
+				&:after{
+					border-bottom: 100px solid $white;
+				}
+			}
 			.card-info{
 				width:100%;
 				h2{

@@ -57,7 +57,7 @@ function accordions(){
           panel.style.maxHeight = null;
           panel.style.marginBottom = null;
         } else {
-            panel.style.maxHeight = 800 + "px";
+            panel.style.maxHeight = 400 + "px";
             panel.style.marginBottom = 24 + "px";
             gsap.to(window, {duration: 0.2, scrollTo:title, delay: 0.15});
         }
@@ -135,7 +135,7 @@ function accordionsResponsive(){
           panel.style.maxHeight = null;
           panel.style.marginBottom = null;
         } else {
-            panel.style.maxHeight = 800 + "px";
+            panel.style.maxHeight = 500 + "px";
             panel.style.marginBottom = 24 + "px";
             gsap.to(window, {duration: 0.2, scrollTo:title, delay: 0.15});
         }
