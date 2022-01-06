@@ -125,26 +125,32 @@ ScrollTrigger.batch(".card", {
   },
   once: true
 });
-// fade infografiche
-ScrollTrigger.batch(".info-fade", {
-  onEnter: elements => {
 
-    // gsap.to(elements, {
-    //   opacity: 1,
-    //   stagger: 0.25,
-    //   duration: 0.5,
-    // });
+
+// fade infografiche
+ScrollTrigger.batch(".fade-in-zoom", {
+  onEnter: elements => {
     gsap.set(elements, {transformOrigin: 'center'});
-    gsap.fromTo(elements, {autoAlpha: 0, scale: 0.9},
-    {
-      autoAlpha: 1,
+    gsap.to(elements,
+    { opacity: 1,
       stagger: 0.25,
       duration: 0.4,
-      scale: 1,
     })
-
   },
-  once: true
+  once: false
+});
+
+// fade in scale
+ScrollTrigger.batch(".fade-in-scale", {
+  onEnter: elements => {
+    gsap.set(elements, {transformOrigin: 'center'});
+    gsap.to(elements,
+    { opacity: 1,
+      stagger: 0.25,
+      duration: 0.4,
+    })
+  },
+  once: false
 });
 
 
@@ -160,18 +166,9 @@ ScrollTrigger.batch(".info-fade", {
     });
   });
 
-  // fade up
-  const fadeUp = gsap.utils.toArray("[fade-up]");
-  fadeUp.forEach((el, i) => {
-    const anim = gsap.fromTo(el, {autoAlpha: 0, y:0}, {duration: 1.5, autoAlpha: 1, y: -18});
-    ScrollTrigger.create({
-      trigger: el,
-      animation: anim,
-      toggleActions: 'play none none none',
-      once: true,
-    });
-  });
-
+// titolo fade
+let title =  document.querySelector(".fade-in");
+gsap.fromTo(title, {autoAlpha: 0}, {duration: 1, autoAlpha: 1});
 
   // hr line animation
   const hr = gsap.utils.toArray(".hr");

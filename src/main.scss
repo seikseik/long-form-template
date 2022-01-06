@@ -274,6 +274,23 @@ nav {
 .scroll-up nav {
 	transform: translate3d(0, 0%, 0);
 }
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
 // INIZIO
 .hero {
 	height: 100vh;
@@ -705,12 +722,19 @@ nav {
 		.info-container{
 			padding-bottom:$spacing*10;
 			padding-top: $spacing*5;
+			img{
+				width:100%;
+				height: auto;
+			}
 			svg{
 				width:100%;
 				height: auto;
-				// .info-fade{
-				// 	opacity: 0;
-				// }
+				.fade-in-zoom{
+					opacity: 0;
+				}
+				.fade-in-scale{
+					opacity: 0;
+				}
 			}
 		}
 	}
@@ -882,7 +906,6 @@ footer {
 @media only screen and (max-width: 1100px) {
 	.panel-mobile {
 		display: flex;
-
 		.panel-container {
 			overflow: scroll;
 			padding: $spacing;
@@ -900,6 +923,7 @@ footer {
 
 // SCHERMO PICCOLO
 @media only screen and (max-width: 1100px) {
+
 	.mobile {
 		display: flex!important;
 	}
@@ -1073,9 +1097,15 @@ footer {
 	}
 }
 
+.panel-tablet{
+	display: none !important;
+}
 @media only screen and (max-width: 768px) {
 	.mobile {
 		display: flex!important;
+	}
+	.panel-mobile-noTablet{
+		display: flex  !important;
 	}
 
 	.desktop {
