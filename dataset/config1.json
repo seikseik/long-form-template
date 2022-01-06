@@ -18,7 +18,7 @@
   },
   "tipologiaVoto": [
     "pro",
-    "indecisi",
+    "null",
     "contro"
   ],
   "polarizzazione": [
@@ -60,24 +60,13 @@
     ]
   },
   "onBoardingMobile": {
-    "step1": [
-      {
-        "text": "Qui è possibile visualizzare il numero minimo di voti a favore affinchè si arrivi ad una maggioranza"
-      },
-      {
-        "text": "Cliccando sul bottone sottostante è possibile passare al dettaglio e interagire con la visualizzazione"
-      }
+    "texts": [
+      "Il grafico in alto visualizza il numero minimo di voti a favore affinchè si arrivi ad una maggioranza.",
+      "Il bottone INGRADISCI sottostante permette di passare al dettaglio e interagire con la visualizzazione",
+      "Scorrendo la visualizzazione verso destra o verso sinistra è possibile selezionare il partito.",
+      "Cliccando su PRO, INDECISI o CONTRO è possibile variare il voto del partito selezionato"
     ],
-    "step2": [
-      {
-        "text": "Cliccando sul nome del partito è possibile variare il voto tra pro, contrario e null"
-      }
-    ],
-    "step3": [
-      {
-        "text": "Per tornare alla visualizzazione di partenza, clicca su RESET"
-      }
-    ]
+    "buttonLabel": "Ho capito"
   },
   "eventoRisultato": {
     "occhiello": "Nello scenario selezionato",

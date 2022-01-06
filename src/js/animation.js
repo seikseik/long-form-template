@@ -102,8 +102,89 @@ function accordions(){
   }
 
 }
+
+
+function accordionsResponsive(){
+
+    toggle.forEach((item, i) => {
+      item.addEventListener("click", function(){
+
+        if(window.innerWidth < 1100){
+        // mobile
+        let panels = document.querySelectorAll(".panel-mobile");
+        let panNum = item.getAttribute('card');
+        let panel = document.querySelector(`[panel=${panNum}-mobile]`)
+        panels.forEach((pan, i) => {
+          if(panel != pan){
+            let parent = pan.parentNode;
+            if (pan.style.maxHeight) {
+              pan.style.maxHeight = null;
+              pan.style.marginBottom = null;
+              let att = pan.getAttribute("panel")
+              let attStrip = att.substr(0, 7);
+              let card = document.querySelector(`[card=${attStrip}]`)
+              card.classList.remove("active");
+              parent.classList.remove("active");
+            }
+          }
+        });
+
+        this.classList.toggle("active");
+        this.parentNode.classList.toggle("active");
+        let title = this.querySelector("h2")
+
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+          panel.style.marginBottom = null;
+        } else {
+            panel.style.maxHeight = 800 + "px";
+            panel.style.marginBottom = 24 + "px";
+            gsap.to(window, {duration: 0.2, scrollTo:title, delay: 0.15});
+        }
+        // end mobile
+      }else{
+        // desktop
+        let panels = document.querySelectorAll(".panel");
+        let panNum = item.getAttribute('card');
+        let panel = document.querySelector(`[panel=${panNum}]`)
+
+        panels.forEach((pan, i) => {
+          if(panel != pan){
+
+            if (pan.style.maxHeight) {
+              pan.style.maxHeight = null;
+              pan.style.marginBottom = null;
+              let att = pan.getAttribute("panel")
+              let card = document.querySelector(`[card=${att}]`)
+              console.log(card)
+              card.classList.remove("active");
+              let parent = card.parentNode;
+              parent.classList.remove("active");
+            }
+          }
+        });
+
+        this.classList.toggle("active");
+        this.parentNode.classList.toggle("active");
+        let title = this.querySelector("h2")
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+          panel.style.marginBottom = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            panel.style.marginBottom = 24 + "px";
+            gsap.to(window, {duration: 0.2, scrollTo:title, delay: 0.15});
+        }
+        // end desktop
+      }
+      })
+    });
+
+}
+
+
 window.onload = function() {
-  accordions()
+  accordionsResponsive()
 };
 
 

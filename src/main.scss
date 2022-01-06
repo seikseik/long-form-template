@@ -535,7 +535,6 @@ nav {
 				.white {
 					display: none;
 				}
-
 				.green {
 					display: flex;
 				}
@@ -603,7 +602,7 @@ nav {
 		.card-two-third {
 			border-radius: 10px;
 			overflow: hidden;
-			width: 66.66%;
+			width: 66.1%;
 
 			&.right {
 				margin-left: $spacing*3;
@@ -803,7 +802,7 @@ footer {
 		width: 100%;
 		position: absolute;
 		left: 0;
-		top: -150px;
+		top: -149px;
 		background: -webkit-gradient(linear,left top,left bottom,from(rgba(58,80,75,0)),to(#3A504B));
 		background: linear-gradient(to bottom,rgba(58,80,75,0) 0%,#3A504B 100%);
 	}
@@ -895,7 +894,8 @@ footer {
 	}
 }
 .mobile,
-.mobile-small {
+.mobile-small,
+.smartphone {
 	display: none !important;
 }
 
@@ -903,21 +903,31 @@ footer {
 .desktop-small {
 	display: flex !important;
 }
+
 @media only screen and (max-width: 1100px) {
+	.tablet{
+		display: flex;
+	}
 	.panel-mobile {
 		display: flex;
 		.panel-container {
 			overflow: scroll;
-			padding: $spacing;
+			padding: $spacing*3;
 		}
 	}
-
+	.separator{
+		display: none;
+	}
 	.card-container .row .card-two-third .wrap {
 		border: none;
 	}
 
 	.card-container .row .card-two-third .card-container .card-info span {
 		margin-top: $spacing*2;
+	}
+	.simulatore-result-container .text-simulatore .title-presidente{
+		font-size: 55px;
+		line-height: 1.1;
 	}
 }
 
@@ -938,7 +948,15 @@ footer {
 		border: none;
 		padding-bottom: $spacing*4;
 	}
-
+	.text-container .title-container h2{
+		font-size: 55px;
+	}
+	.card-container .card-info h2{
+		font-size: 55px;
+	}
+	.card-container .card-info span{
+		font-size: 25px;
+	}
 	.card-container {
 		padding: 0 $spacing*5;
 	}
@@ -968,14 +986,32 @@ footer {
 				margin-left: 0 !important;
 				margin-right: 0 !important;
 				.wrap{
-					margin: $spacing*5 0;
+					margin: $spacing*5 $spacing*2;
+					.card-info{
+						h2{
+							font-size: 44px;
+						}
+					}
 				}
 				.card-container {
-					height: 60vw;
+					height: auto;
+					padding: $spacing*6 0;
+				}
+			}
+			.card-one-fourth{
+				margin-right: 0 !important;
+				margin-top: $spacing*3;
+				.card-container{
+					height: 50vw;
+					.card-info h2{
+						font-size: 55px;
+					}
 				}
 			}
 		}
 	}
+
+
 
 	.card-container .row:not(.row-two) .card-one-third.central {
 		margin: $spacing*4 0 0;
@@ -1101,8 +1137,11 @@ footer {
 	display: none !important;
 }
 @media only screen and (max-width: 768px) {
-	.mobile {
+	.mobile, .smartphone {
 		display: flex!important;
+	}
+	.tablet{
+		display: none;
 	}
 	.panel-mobile-noTablet{
 		display: flex  !important;
@@ -1249,7 +1288,7 @@ footer {
 			width: 100%;
 
 			.title-presidente {
-				font-size: 35px;
+				font-size: 45px;
 				line-height: 1.2;
 			}
 		}
