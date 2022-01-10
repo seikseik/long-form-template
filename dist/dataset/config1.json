@@ -1,0 +1,77 @@
+{
+  "schemaColore": 0,
+  "fontFamily": "IBM Plex Mono",
+  "lingua": "it-IT",
+  "maggioranze": [
+    {
+      "label": "Maggioranza",
+      "value": 508
+    },
+    {
+      "label": "Maggioranza &#8532;",
+      "value": 677
+    }
+  ],
+  "totale": {
+    "label": "Totale voti",
+    "value": 1007
+  },
+  "tipologiaVoto": [
+    "pro",
+    "null",
+    "contro"
+  ],
+  "polarizzazione": [
+    "Sinistra",
+    "Centro",
+    "Destra"
+  ],
+  "interattivo": true,
+  "selettoreCandidati": true,
+  "callToAction": {
+    "selettore": "Seleziona un candidato",
+    "reset": "Reset"
+  },
+  "callToActionMobile": {
+    "ruota": "Scorri per visualizzare",
+    "zoomIn": "Ingrandisci",
+    "zoomOut": "Riduci"
+  },
+  "legend": "Cliccando su ciascun partito è possibile variare il voto tra:",
+  "onBoarding": {
+    "step1": [
+      {
+        "text": "Attraverso il simulatore è possibile ipotizzare il proprio scenario politico in vista di una votazione in parlamento"
+      },
+      {
+        "text": "Al variare del voto dei partiti sottostanti, il voto complessivo per la maggioranza sarà aggiornato"
+      },
+      {
+        "text": "Cliccando su ciascun partito è possibile variare il voto tra pro, contrario e null.<br><br><em>Fai una prova cliccando sull’area attiva del grafico</em>"
+      }
+    ],
+    "step2": [
+      {
+        "text": "In questo scenario i voti sarebbero sufficienti per una maggioranza"
+      },
+      {
+        "text": "Per tornare alla visualizzazione basata sui sondaggi, clicca sul pulsante di RESET"
+      }
+    ]
+  },
+  "onBoardingMobile": {
+    "texts": [
+      "Il grafico in alto visualizza il numero minimo di voti a favore affinchè si arrivi ad una maggioranza.",
+      "Il bottone INGRADISCI sottostante permette di passare al dettaglio e interagire con la visualizzazione",
+      "Scorrendo la visualizzazione verso destra o verso sinistra è possibile selezionare il partito.",
+      "Cliccando su PRO, INDECISI o CONTRO è possibile variare il voto del partito selezionato"
+    ],
+    "buttonLabel": "Ho capito"
+  },
+  "eventoRisultato": {
+    "occhiello": "Nello scenario selezionato",
+    "positivo": "viene eletto Presidente della Repubblica Italiana",
+    "negativo": "non viene eletto Presidente della Repubblica Italiana",
+    "maggioranzaAttuale": 1
+  }
+}
