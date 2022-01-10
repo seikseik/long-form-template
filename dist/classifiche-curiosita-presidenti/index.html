@@ -1,10 +1,10 @@
 <?php
 
     $pageUrl = strtok( (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) || isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", "?");
-    $pageTitle = "Elezioni Quirinale 2022";
-    $pageDescription = "Il tredicesimo colle";
+    $pageTitle = "Le curiosità del passato";
+    $pageDescription = "Quante votazioni sono state necessarie per eleggere Leone? Su quanti voti ha potuto contare Cossiga? E chi è stato il presidente più giovane? Ecco alcune curiosità sulle passate elezioni al Quirinale e sui "grandi sconfitti" mai arrivati al Colle";
 
-    $twitterString = "%23" . $pageUrl;
+    $twitterString = "Dai "grandi sconfitti" ai più votati: scopri curiosità e numeri sulle passate %23elezioni dei presidenti della Repubblica %23Quirinale" . $pageUrl;
     $whatsappString = $pageTitle. " " . $pageUrl;
 ?>
 
@@ -40,7 +40,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="<?php echo $pageTitle; ?>">
     <meta property="og:description" content="<?php echo $pageDescription; ?>">
-    <meta property="og:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('../meta.jpg'); ?>">
+    <meta property="og:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg'); ?>">
     <meta property="og:url" content="<?php echo $pageUrl; ?>">
     <meta property="article:published_time" content="2020-02-14T09:00">
     <!-- facebook -->
@@ -50,12 +50,12 @@
     <meta name="twitter:site" content="" />
     <meta name="twitter:title" content="<?php echo $pageTitle; ?>">
     <meta name="twitter:description" content="<?php echo $pageDescription; ?>">
-    <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('../meta.jpg'); ?>">
+    <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg'); ?>">
     <meta name="twitter:url" content="<?php echo $pageUrl; ?>">
     <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
 
 
-  <link href="../main.ca1360108dc16fe013a0.css" rel="stylesheet"></head>
+  <link href="../main.2153e7c4ee09307bdf29.css" rel="stylesheet"></head>
 
   <body class="scroll-to-section">
 
@@ -76,10 +76,10 @@
           <a href="../" class="menu-item-container">12 POSSIBILI PRESIDENTI </a>
         </div>
         <div class="menu-item two">
-          <a href="../simulatore" class="menu-item-container">IL SIMULATORE</a>
+          <a href="./simulatore-di-voti" class="menu-item-container">IL SIMULATORE</a>
         </div>
         <div class="menu-item three">
-          <a href="./curiosita-del-passato" class="menu-item-container">LE CURIOSITà DEL PASSATO</a>
+          <a href="./classifiche-curiosita-presidenti" class="menu-item-container">LE CURIOSITà DEL PASSATO</a>
         </div>
       </div>
     </div>
@@ -88,8 +88,8 @@
     <nav class="desktop">
       <div class="nav-container">
         <a href="../">12 POSSIBILI PRESIDENTI</a>
-        <a href="../simulatore">IL SIMULATORE</a>
-        <a class="active" href="./curiosita-del-passato">LE CURIOSITà DEL PASSATO</a>
+        <a href="./simulatore-di-voti">IL SIMULATORE</a>
+        <a class="active" href="./classifiche-curiosita-presidenti">LE CURIOSITà DEL PASSATO</a>
       </div>
     </nav>
 
@@ -98,7 +98,7 @@
       <div class="hero-container">
         <div class="col-left">
           <div class="logo">
-            <img src="../assets/logo.svg" alt="">
+            <a target="_blank" href="https://www.gedivisual.it/"><img src="./assets/logo.svg" alt=""></a>
           </div>
           <div class="hero-title">
             <h1 class="fade-in">Elezioni Quirinale 2022</h1>
@@ -108,17 +108,17 @@
             <div class="hero-social">
               <span>condividi</span>
               <div class="social-row">
-                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"> <img src="../assets/fb.svg" alt=""> </a>
-                <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"> <img src="../assets/twitter.svg" alt=""> </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"> <img src="./assets/fb.svg" alt=""> </a>
+                <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"> <img src="./assets/twitter.svg" alt=""> </a>
               </div>
             </div>
             <span class="arrow bounce">
-              <img src="../assets/arrow-down.svg" alt="">
+              <img src="./assets/arrow-down.svg" alt="">
             </span>
           </div>
         </div>
         <div class="col-right">
-          <img src="../assets/hero.png" alt="">
+          <img src="./assets/hero.png" alt="">
         </div>
 
       </div>
@@ -202,7 +202,7 @@
               <h2>Da nord a sud</h2>
             </div>
             <div class="toggle-card">
-              <img src="../assets/card.svg" alt="">
+              <img src="./assets/card.svg" alt="">
             </div>
           </div>
         </div>
@@ -213,13 +213,13 @@
               <h1>I torinesi, i napoletani e i due sassaresi: da dove venivano i capi dello Stato</h1>
             </div>
             <!-- <div class="info-container smartphone">
-              <img src="../assets/info2-mobile.svg" alt="">
+              <img src="./assets/info2-mobile.svg" alt="">
             </div>
             <div class="info-container tablet">
-              <img src="../assets/info2.svg" alt="">
+              <img src="./assets/info2.svg" alt="">
             </div> -->
             <div class="info-container">
-              <img src="../assets/info2-mobile.svg" alt="">
+              <img src="./assets/info2-mobile.svg" alt="">
             </div>
           </div>
         </div>
@@ -230,7 +230,7 @@
               <h2>Dal più  anziano  al più  giovane</h2>
             </div>
             <div class="toggle-card">
-              <img src="../assets/card.svg" alt="">
+              <img src="./assets/card.svg" alt="">
             </div>
           </div>
         </div>
@@ -241,7 +241,7 @@
               <h1>57 anni il più giovane, 88 il più anziano: le età dei presidenti appena eletti.</h1>
             </div>
             <div class="info-container">
-              <img src="../assets/info1-mobile.svg" alt="">
+              <img src="./assets/info1-mobile.svg" alt="">
             </div>
           </div>
         </div>
@@ -252,7 +252,7 @@
               <h2>Da più  scrutini a meno  scrutini</h2>
             </div>
             <div class="toggle-card">
-              <img src="../assets/card.svg" alt="">
+              <img src="./assets/card.svg" alt="">
             </div>
           </div>
         </div>
@@ -263,7 +263,7 @@
               <h1>Dal primo colpo al 23esimo scrutinio: le sedute necessarie per eleggere i presidenti</h1>
             </div>
             <div class="info-container">
-              <img src="../assets/info3-mobile.svg" alt="">
+              <img src="./assets/info3-mobile.svg" alt="">
             </div>
           </div>
         </div>
@@ -274,7 +274,7 @@
               <h2>Dalla  maggioranza più Ampia a quella più piccola</h2>
             </div>
             <div class="toggle-card">
-              <img src="../assets/card.svg" alt="">
+              <img src="./assets/card.svg" alt="">
             </div>
           </div>
         </div>
@@ -285,7 +285,7 @@
               <h1>Dal plebiscito alla maggioranza risicata: con quanti voti sono stati eletti i presidenti</h1>
             </div>
             <div class="info-container">
-              <img src="../assets/info4-mobile.svg" alt="">
+              <img src="./assets/info4-mobile.svg" alt="">
             </div>
           </div>
         </div>
@@ -298,7 +298,7 @@
           </div>
 
           <div class="info-container">
-            <img src="../assets/info2.svg" alt="">
+            <img src="./assets/info2.svg" alt="">
           </div>
         </div>
       </div>
@@ -310,7 +310,7 @@
           </div>
 
           <div class="info-container">
-            <img src="../assets/info1.svg" alt="">
+            <img src="./assets/info1.svg" alt="">
           </div>
         </div>
       </div>
@@ -320,7 +320,7 @@
             <h1>Dal primo colpo al 23esimo scrutinio: le sedute necessarie per eleggere i presidenti</h1>
           </div>
           <div class="info-container">
-            <img src="../assets/info3.svg" alt="">
+            <img src="./assets/info3.svg" alt="">
           </div>
         </div>
       </div>
@@ -331,7 +331,7 @@
           </div>
 
           <div class="info-container">
-            <img src="../assets/info4.svg" alt="">
+            <img src="./assets/info4.svg" alt="">
           </div>
 
         </div>
@@ -379,10 +379,9 @@
 
     </footer>
 
-    <script type="text/javascript" src="../main.e3aa1d71f70da0a23483.bundle.js"></script>
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
-</body>
+  <script type="text/javascript" src="../main.a07222bacac4378d902e.bundle.js"></script></body>
 
 
 </html>

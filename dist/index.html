@@ -2,9 +2,9 @@
 
     $pageUrl = strtok( (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) || isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", "?");
     $pageTitle = "Elezioni Quirinale 2022";
-    $pageDescription = "Il tredicesimo colle";
+    $pageDescription = "Elezioni Quirinale 2022, il tredicesimo Colle. Sergio Mattarella, che a sorpresa accetta la riconferma, il presidente del Consiglio Mario Draghi o la grande novità di una donna, come Marta Cartabia o Letizia Moratti: chi sarà il prossimo presidente della Repubblica? Ecco 12 possibili scenari";
 
-    $twitterString = "%23" . $pageUrl;
+    $twitterString = "Elezioni %23Quirinale 2022: 12 possibili scenari. Da Mattarella bis a Draghi, da Berlusconi a Prodi, da Cartabia fino a Moratti. Chi sarà il prossimo #presidente della Repubblica?" . $pageUrl;
     $whatsappString = $pageTitle. " " . $pageUrl;
 ?>
 
@@ -57,7 +57,7 @@
 
 
 
-  <link href="main.ca1360108dc16fe013a0.css" rel="stylesheet"></head>
+  <link href="main.2153e7c4ee09307bdf29.css" rel="stylesheet"></head>
 
   <body>
 
@@ -78,10 +78,10 @@
           <a href="/" class="menu-item-container">12 POSSIBILI PRESIDENTI </a>
         </div>
         <div class="menu-item two">
-          <a href="./simulatore" class="menu-item-container">IL SIMULATORE</a>
+          <a href="./simulatore-di-voto" class="menu-item-container">IL SIMULATORE</a>
         </div>
         <div class="menu-item three">
-          <a href="./curiosita-del-passato" class="menu-item-container">LE CURIOSITà DEL PASSATO</a>
+          <a href="./classifiche-curiosita-presidenti" class="menu-item-container">LE CURIOSITà DEL PASSATO</a>
         </div>
       </div>
     </div>
@@ -90,8 +90,8 @@
     <nav class="desktop">
       <div class="nav-container">
         <a class="active" href="/">12 POSSIBILI PRESIDENTI</a>
-        <a href="./simulatore">IL SIMULATORE</a>
-        <a href="./curiosita-del-passato">LE CURIOSITà DEL PASSATO</a>
+        <a href="./simulatore-di-voto">IL SIMULATORE</a>
+        <a href="./classifiche-curiosita-presidenti">LE CURIOSITà DEL PASSATO</a>
       </div>
     </nav>
 
@@ -101,7 +101,7 @@
       <div class="hero-container">
         <div class="col-left">
           <div class="logo">
-            <img src="./assets/logo.svg" alt="">
+            <a target="_blank" href="https://www.gedivisual.it/"><img src="./assets/logo.svg" alt=""></a>
           </div>
           <div class="hero-title">
             <h1 class="fade-in">Elezioni Quirinale 2022</h1>
@@ -1163,10 +1163,10 @@
       </div>
 
     </footer>
-    <script type="text/javascript" src="main.e3aa1d71f70da0a23483.bundle.js"></script>
+
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
-</body>
+  <script type="text/javascript" src="main.a07222bacac4378d902e.bundle.js"></script></body>
 
 
 </html>

@@ -16,12 +16,12 @@ module.exports = merge(common, {
       template: "./src/template.html"
     }),
     new HtmlWebpackPlugin({
-      filename: "simulatore/index.html",
-      template: "./src/simulatore/template.html"
+      filename: "simulatore-di-voto/index.html",
+      template: "./src/simulatore-di-voto/template.html"
     }),
     new HtmlWebpackPlugin({
-      filename: "curiosita-del-passato/index.html",
-      template: "./src/curiosita-del-passato/template.html"
+      filename: "classifiche-curiosita-presidenti/index.html",
+      template: "./src/classifiche-curiosita-presidenti/template.html"
     })
   ],
   module: {

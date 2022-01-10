@@ -27,14 +27,14 @@ module.exports = merge(common, {
       }),
       new HtmlWebpackPlugin({
         title: "Home-2",
-        filename: "simulatore/index.html",
-        template: "./src/simulatore/template.html",
+        filename: "simulatore-di-voto/index.html",
+        template: "./src/simulatore-di-voto/template.html",
         minify: false
       }),
       new HtmlWebpackPlugin({
         title: "Home-3",
-        filename: "curiosita-del-passato/index.html",
-        template: "./src/curiosita-del-passato/template.html",
+        filename: "classifiche-curiosita-presidenti/index.html",
+        template: "./src/classifiche-curiosita-presidenti/template.html",
         minify: false
       })
     ]

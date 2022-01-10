@@ -1,10 +1,10 @@
 <?php
 
     $pageUrl = strtok( (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) || isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", "?");
-    $pageTitle = "Elezioni Quirinale 2022";
-    $pageDescription = "Il tredicesimo colle";
+    $pageTitle = "Le curiosità del passato";
+    $pageDescription = "Quante votazioni sono state necessarie per eleggere Leone? Su quanti voti ha potuto contare Cossiga? E chi è stato il presidente più giovane? Ecco alcune curiosità sulle passate elezioni al Quirinale e sui "grandi sconfitti" mai arrivati al Colle";
 
-    $twitterString = "%23" . $pageUrl;
+    $twitterString = "Dai "grandi sconfitti" ai più votati: scopri curiosità e numeri sulle passate %23elezioni dei presidenti della Repubblica %23Quirinale" . $pageUrl;
     $whatsappString = $pageTitle. " " . $pageUrl;
 ?>
 
@@ -76,10 +76,10 @@
           <a href="../" class="menu-item-container">12 POSSIBILI PRESIDENTI </a>
         </div>
         <div class="menu-item two">
-          <a href="./simulatore" class="menu-item-container">IL SIMULATORE</a>
+          <a href="./simulatore-di-voti" class="menu-item-container">IL SIMULATORE</a>
         </div>
         <div class="menu-item three">
-          <a href="./curiosita-del-passato" class="menu-item-container">LE CURIOSITà DEL PASSATO</a>
+          <a href="./classifiche-curiosita-presidenti" class="menu-item-container">LE CURIOSITà DEL PASSATO</a>
         </div>
       </div>
     </div>
@@ -88,8 +88,8 @@
     <nav class="desktop">
       <div class="nav-container">
         <a href="../">12 POSSIBILI PRESIDENTI</a>
-        <a href="./simulatore">IL SIMULATORE</a>
-        <a class="active" href="./curiosita-del-passato">LE CURIOSITà DEL PASSATO</a>
+        <a href="./simulatore-di-voti">IL SIMULATORE</a>
+        <a class="active" href="./classifiche-curiosita-presidenti">LE CURIOSITà DEL PASSATO</a>
       </div>
     </nav>
 
@@ -98,7 +98,7 @@
       <div class="hero-container">
         <div class="col-left">
           <div class="logo">
-            <img src="../assets/logo.svg" alt="">
+            <a target="_blank" href="https://www.gedivisual.it/"><img src="../assets/logo.svg" alt=""></a>
           </div>
           <div class="hero-title">
             <h1 class="fade-in">Elezioni Quirinale 2022</h1>
@@ -356,8 +356,8 @@
         </div>
 
         <div class="row-coord">
-          <h5>Coordinamento progetto</h5>
-          <p>Stefano Cappellini, Annalisa D'Aprile, Paolo Festuccia, Emanuele Lauria, Lavinia Rivara, Alessio Sgherza, Daniele Testa</p>
+          <h5>Progetto di</h5>
+          <p>Stefano Cappellini, Annalisa D'Aprile, Paolo Festuccia,  Emanuele Lauria, Lavinia Rivara, Alessio Sgherza, Daniele Testa</p>
         </div>
 
         <div class="footer-row">

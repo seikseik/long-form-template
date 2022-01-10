@@ -1,10 +1,10 @@
 <?php
 
     $pageUrl = strtok( (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) || isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", "?");
-    $pageTitle = "Elezioni Quirinale 2022";
-    $pageDescription = "Il tredicesimo colle";
+    $pageTitle = "Il simulatore";
+    $pageDescription = "Gioca con il simulatore per cambiare l'orientamento di voto e spostare le maggioranze: scopri così chi potrebbe essere il prossimo presidente della Repubblica, su quali schieramenti e su quanti parlamentari potrà contare e quante sono le probabilità che venga eletto al Colle";
 
-    $twitterString = "%23" . $pageUrl;
+    $twitterString = " Gioca con il simulatore per cambiare l'orientamento di voto e spostare le maggioranze: scopri chi potrebbe essere il prossimo %23presidente della Repubblica %23elezoni %23Quirinale" . $pageUrl;
     $whatsappString = $pageTitle. " " . $pageUrl;
 ?>
 
@@ -40,7 +40,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="<?php echo $pageTitle; ?>">
     <meta property="og:description" content="<?php echo $pageDescription; ?>">
-    <meta property="og:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('../meta.jpg'); ?>">
+    <meta property="og:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg'); ?>">
     <meta property="og:url" content="<?php echo $pageUrl; ?>">
     <meta property="article:published_time" content="2020-02-14T09:00">
     <!-- facebook -->
@@ -50,13 +50,13 @@
     <meta name="twitter:site" content="" />
     <meta name="twitter:title" content="<?php echo $pageTitle; ?>">
     <meta name="twitter:description" content="<?php echo $pageDescription; ?>">
-    <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('../meta.jpg'); ?>">
+    <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg'); ?>">
     <meta name="twitter:url" content="<?php echo $pageUrl; ?>">
     <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
 
 
 
-  <link href="../main.ca1360108dc16fe013a0.css" rel="stylesheet"></head>
+  <link href="../main.2153e7c4ee09307bdf29.css" rel="stylesheet"></head>
 
   <body class="scroll-to-section">
 
@@ -78,10 +78,10 @@
           <a href="../" class="menu-item-container">12 POSSIBILI PRESIDENTI </a>
         </div>
         <div class="menu-item two">
-          <a href="./simulatore" class="menu-item-container">IL SIMULATORE</a>
+          <a href="./simulatore-di-voto" class="menu-item-container">IL SIMULATORE</a>
         </div>
         <div class="menu-item three">
-          <a href="../curiosita-del-passato" class="menu-item-container">LE CURIOSITà DEL PASSATO</a>
+          <a href="./classifiche-curiosita-presidenti" class="menu-item-container">LE CURIOSITà DEL PASSATO</a>
         </div>
       </div>
     </div>
@@ -89,8 +89,8 @@
     <nav class="desktop">
       <div class="nav-container">
         <a href="../">12 POSSIBILI PRESIDENTI</a>
-        <a class="active" href="./simulatore">IL SIMULATORE</a>
-        <a href="../curiosita-del-passato">LE CURIOSITà DEL PASSATO</a>
+        <a class="active" href="./simulatore-di-voto">IL SIMULATORE</a>
+        <a href="./classifiche-curiosita-presidenti">LE CURIOSITà DEL PASSATO</a>
       </div>
     </nav>
 
@@ -99,7 +99,7 @@
       <div class="hero-container">
         <div class="col-left">
           <div class="logo">
-            <img src="../assets/logo.svg" alt="">
+            <a target="_blank" href="https://www.gedivisual.it/"><img src="./assets/logo.svg" alt=""></a>
           </div>
           <div class="hero-title">
             <h1 class="fade-in">Elezioni Quirinale 2022</h1>
@@ -109,17 +109,17 @@
             <div class="hero-social">
               <span>condividi</span>
               <div class="social-row">
-                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"> <img src="../assets/fb.svg" alt=""> </a>
-                <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"> <img src="../assets/twitter.svg" alt=""> </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"> <img src="./assets/fb.svg" alt=""> </a>
+                <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"> <img src="./assets/twitter.svg" alt=""> </a>
               </div>
             </div>
             <span class="arrow bounce">
-              <img src="../assets/arrow-down.svg" alt="">
+              <img src="./assets/arrow-down.svg" alt="">
             </span>
           </div>
         </div>
         <div class="col-right">
-          <img src="../assets/hero.png" alt="">
+          <img src="./assets/hero.png" alt="">
         </div>
 
       </div>
@@ -152,11 +152,12 @@
     </div>
 
     <div class="simulatore-section-container">
+      <span class="crediti-tva">sviluppato da The Visual Agency</span>
       <div class="vue-wrapper" id="simulatore" data-url="../dataset/dataset.tsv" data-config="../dataset/config1.json">
       </div>
       <div class="simulatore-result-container">
         <div class="image-simulatore">
-          <img class="img-candidato" src="xxxHTMLLINKxxx0.83566738236112490.8681203337205341xxx" alt="">
+          <img class="img-candidato" src="xxxHTMLLINKxxx0.94223148948688220.7518368559416895xxx" alt="">
         </div>
         <div class="text-simulatore">
           <span class="scenario"></span>
@@ -216,10 +217,10 @@
         </div>
 
       </footer>
-      <script type="text/javascript" src="../main.e3aa1d71f70da0a23483.bundle.js"></script>
+
       <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
       <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
-</body>
+  <script type="text/javascript" src="../main.a07222bacac4378d902e.bundle.js"></script></body>
 
 
 </html>

@@ -705,7 +705,7 @@ nav {
 .panel-mobile {
 	max-height: 0;
 	overflow: hidden;
-	transition: max-height 0.2s ease-out;
+	transition: max-height 0.3s ease-out;
 
 	.panel-container {
 		background: $white;
@@ -714,6 +714,8 @@ nav {
 		padding: 39px $spacing*10;
 		width: 100%;
 		.panel-title {
+			max-width: $text-container;
+			margin: 0 auto;
 			h1 {
 				font-size: 44px;
 				font-family: $serif;
@@ -773,6 +775,15 @@ nav {
 .simulatore-section-container {
 	max-width: $large-container;
 	margin: 0 auto;
+	position: relative;
+	.crediti-tva{
+		right: 2.5rem;
+		top:-$spacing*3;
+		position: absolute;
+		font-family: $plex;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
 	.elections-widget {
 		width: 100%;
 	}
@@ -1347,6 +1358,10 @@ footer {
 				line-height: 1.2;
 			}
 		}
+	}
+
+	.simulatore-section-container .crediti-tva{
+		right: $spacing;
 	}
 
 	footer {

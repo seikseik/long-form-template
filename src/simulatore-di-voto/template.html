@@ -1,10 +1,10 @@
 <?php
 
     $pageUrl = strtok( (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) || isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", "?");
-    $pageTitle = "Elezioni Quirinale 2022";
-    $pageDescription = "Il tredicesimo colle";
+    $pageTitle = "Il simulatore";
+    $pageDescription = "Gioca con il simulatore per cambiare l'orientamento di voto e spostare le maggioranze: scopri così chi potrebbe essere il prossimo presidente della Repubblica, su quali schieramenti e su quanti parlamentari potrà contare e quante sono le probabilità che venga eletto al Colle";
 
-    $twitterString = "%23" . $pageUrl;
+    $twitterString = " Gioca con il simulatore per cambiare l'orientamento di voto e spostare le maggioranze: scopri chi potrebbe essere il prossimo %23presidente della Repubblica %23elezoni %23Quirinale" . $pageUrl;
     $whatsappString = $pageTitle. " " . $pageUrl;
 ?>
 
@@ -78,10 +78,10 @@
           <a href="../" class="menu-item-container">12 POSSIBILI PRESIDENTI </a>
         </div>
         <div class="menu-item two">
-          <a href="./simulatore" class="menu-item-container">IL SIMULATORE</a>
+          <a href="./simulatore-di-voto" class="menu-item-container">IL SIMULATORE</a>
         </div>
         <div class="menu-item three">
-          <a href="./curiosita-del-passato" class="menu-item-container">LE CURIOSITà DEL PASSATO</a>
+          <a href="./classifiche-curiosita-presidenti" class="menu-item-container">LE CURIOSITà DEL PASSATO</a>
         </div>
       </div>
     </div>
@@ -89,8 +89,8 @@
     <nav class="desktop">
       <div class="nav-container">
         <a href="../">12 POSSIBILI PRESIDENTI</a>
-        <a class="active" href="./simulatore">IL SIMULATORE</a>
-        <a href="./curiosita-del-passato">LE CURIOSITà DEL PASSATO</a>
+        <a class="active" href="./simulatore-di-voto">IL SIMULATORE</a>
+        <a href="./classifiche-curiosita-presidenti">LE CURIOSITà DEL PASSATO</a>
       </div>
     </nav>
 
@@ -99,7 +99,7 @@
       <div class="hero-container">
         <div class="col-left">
           <div class="logo">
-            <img src="../assets/logo.svg" alt="">
+            <a target="_blank" href="https://www.gedivisual.it/"><img src="../assets/logo.svg" alt=""></a>
           </div>
           <div class="hero-title">
             <h1 class="fade-in">Elezioni Quirinale 2022</h1>
@@ -142,9 +142,7 @@
 
         <div fade class="text-inner first-text">
           <p> <span class="dropcap">I</span>
-            I numeri sono tutto. Lo sanno i parlamentari, che ad ogni scrutinio si attrezzano di foglio e penna per segnare i voti dell’uno o dell’altro</p>
-
-            <p>candidato, per far scattare l’applauso al momento giusto, superata la maggioranza necessaria. Ma lo sanno soprattutto i leader che al voto per il Quirinale si devono preparare. Chi ha i voti? Chi può garantirli, nel segreto del catafalco? Come dimostrare che si controlla un pacchetto di voti? in quante correnti sono divisi certi partiti o certi gruppi parlamentari, e cosa succede se una quota di voti cambia cavallo? I numeri sono tutto. Noi abbiamo voluto simulare, a bocce ferme, le maggioranze possibili per i 12 candidati che prendiamo in considerazione in questo speciale. </p>
+            I numeri sono tutto. Lo sanno i parlamentari, che ad ogni scrutinio si attrezzano di foglio e penna per segnare i voti dell’uno o dell’altro candidato, per far scattare l’applauso al momento giusto, superata la maggioranza necessaria. Ma lo sanno soprattutto i leader che al voto per il Quirinale si devono preparare. Chi ha i voti? Chi può garantirli, nel segreto del catafalco? Come dimostrare che si controlla un pacchetto di voti? in quante correnti sono divisi certi partiti o certi gruppi parlamentari, e cosa succede se una quota di voti cambia cavallo? I numeri sono tutto. Noi abbiamo voluto simulare, a bocce ferme, le maggioranze possibili per i 12 candidati che prendiamo in considerazione in questo speciale. </p>
 
   <p>Il simulatore che trovate qui di seguito vi mostrerà i numeri a sostegno di questo o quel candidato, per quanto è stato possibile ricostruirli. Certo, ogni grande elettore è autonomo, ma i macrogruppi votano in maniera simile. Vale quindi la pena di andare a vedere cosa può succedere dal 24 gennaio in poi. E potete anche ‘giocare’ con il simulatore, cliccando sui vari gruppi e cambiandone l’orientamento di voto. Per fare la vostra maggioranza, per vedere chi è necessario e chi no. Buono studio!</p>
         </div>
@@ -152,6 +150,7 @@
     </div>
 
     <div class="simulatore-section-container">
+      <span class="crediti-tva">sviluppato da The Visual Agency</span>
       <div class="vue-wrapper" id="simulatore" data-url="../dataset/dataset.tsv" data-config="../dataset/config1.json">
       </div>
       <div class="simulatore-result-container">
@@ -194,8 +193,8 @@
           </div>
 
           <div class="row-coord">
-            <h5>Coordinamento progetto</h5>
-            <p>Stefano Cappellini, Annalisa D'Aprile, Paolo Festuccia, Emanuele Lauria, Lavinia Rivara, Alessio Sgherza, Daniele Testa</p>
+              <h5>Progetto di</h5>
+            <p>Stefano Cappellini, Annalisa D'Aprile, Paolo Festuccia,  Emanuele Lauria, Lavinia Rivara, Alessio Sgherza, Daniele Testa</p>
           </div>
 
           <div class="footer-row">

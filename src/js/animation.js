@@ -27,80 +27,80 @@ if(body.classList.contains("scroll-to-section")){
 // accordion
 let toggle = document.querySelectorAll(".accordion");
 
-function accordions(){
-  if(window.innerWidth < 1100){
-    let panels = document.querySelectorAll(".panel-mobile");
-    toggle.forEach((item, i) => {
-      item.addEventListener("click", function(){
-        let panNum = item.getAttribute('card');
-        let panel = document.querySelector(`[panel=${panNum}-mobile]`)
-        panels.forEach((pan, i) => {
-          if(panel != pan){
-            let parent = pan.parentNode;
-            if (pan.style.maxHeight) {
-              pan.style.maxHeight = null;
-              pan.style.marginBottom = null;
-              let att = pan.getAttribute("panel")
-              let attStrip = att.substr(0, 7);
-              let card = document.querySelector(`[card=${attStrip}]`)
-              card.classList.remove("active");
-              parent.classList.remove("active");
-            }
-          }
-        });
-
-        this.classList.toggle("active");
-        this.parentNode.classList.toggle("active");
-        let title = this.querySelector("h2")
-
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-          panel.style.marginBottom = null;
-        } else {
-            panel.style.maxHeight = 400 + "px";
-            panel.style.marginBottom = 24 + "px";
-            gsap.to(window, {duration: 0.2, scrollTo:title, delay: 0.15});
-        }
-      })
-    });
-  }else{
-    let panels = document.querySelectorAll(".panel");
-    toggle.forEach((item, i) => {
-      item.addEventListener("click", function(){
-        let panNum = item.getAttribute('card');
-        let panel = document.querySelector(`[panel=${panNum}]`)
-
-        panels.forEach((pan, i) => {
-          if(panel != pan){
-            let parent = pan.parentNode;
-            if (pan.style.maxHeight) {
-              pan.style.maxHeight = null;
-              pan.style.marginBottom = null;
-              let att = pan.getAttribute("panel")
-              let card = document.querySelector(`[card=${att}]`)
-              card.classList.remove("active");
-              parent.classList.remove("active");
-            }
-          }
-        });
-
-        this.classList.toggle("active");
-        this.parentNode.classList.toggle("active");
-        let title = this.querySelector("h2")
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-          panel.style.marginBottom = null;
-        } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-            panel.style.marginBottom = 24 + "px";
-            gsap.to(window, {duration: 0.2, scrollTo:title, delay: 0.15});
-        }
-      })
-    });
-
-  }
-
-}
+// function accordions(){
+//   if(window.innerWidth < 1100){
+//     let panels = document.querySelectorAll(".panel-mobile");
+//     toggle.forEach((item, i) => {
+//       item.addEventListener("click", function(){
+//         let panNum = item.getAttribute('card');
+//         let panel = document.querySelector(`[panel=${panNum}-mobile]`)
+//         panels.forEach((pan, i) => {
+//           if(panel != pan){
+//             let parent = pan.parentNode;
+//             if (pan.style.maxHeight) {
+//               pan.style.maxHeight = null;
+//               pan.style.marginBottom = null;
+//               let att = pan.getAttribute("panel")
+//               let attStrip = att.substr(0, 7);
+//               let card = document.querySelector(`[card=${attStrip}]`)
+//               card.classList.remove("active");
+//               parent.classList.remove("active");
+//             }
+//           }
+//         });
+//
+//         this.classList.toggle("active");
+//         this.parentNode.classList.toggle("active");
+//         let title = this.querySelector("h2")
+//
+//         if (panel.style.maxHeight) {
+//           panel.style.maxHeight = null;
+//           panel.style.marginBottom = null;
+//         } else {
+//             panel.style.maxHeight = 400 + "px";
+//             panel.style.marginBottom = 24 + "px";
+//             gsap.to(window, {duration: 0.2, scrollTo:title, delay: 0.4});
+//         }
+//       })
+//     });
+//   }else{
+//     let panels = document.querySelectorAll(".panel");
+//     toggle.forEach((item, i) => {
+//       item.addEventListener("click", function(){
+//         let panNum = item.getAttribute('card');
+//         let panel = document.querySelector(`[panel=${panNum}]`)
+//
+//         panels.forEach((pan, i) => {
+//           if(panel != pan){
+//             let parent = pan.parentNode;
+//             if (pan.style.maxHeight) {
+//               pan.style.maxHeight = null;
+//               pan.style.marginBottom = null;
+//               let att = pan.getAttribute("panel")
+//               let card = document.querySelector(`[card=${att}]`)
+//               card.classList.remove("active");
+//               parent.classList.remove("active");
+//             }
+//           }
+//         });
+//
+//         this.classList.toggle("active");
+//         this.parentNode.classList.toggle("active");
+//         let title = this.querySelector("h2")
+//         if (panel.style.maxHeight) {
+//           panel.style.maxHeight = null;
+//           panel.style.marginBottom = null;
+//         } else {
+//             panel.style.maxHeight = panel.scrollHeight + "px";
+//             panel.style.marginBottom = 24 + "px";
+//             gsap.to(window, {duration: 0.2, scrollTo:title, delay: 0.4});
+//         }
+//       })
+//     });
+//
+//   }
+//
+// }
 
 function accordionsResponsive(){
 
@@ -137,7 +137,7 @@ function accordionsResponsive(){
         } else {
             panel.style.maxHeight = 500 + "px";
             panel.style.marginBottom = 24 + "px";
-            gsap.to(window, {duration: 0.2, scrollTo:title, delay: 0.15});
+            gsap.to(window, {duration: 0.4, scrollTo:title, delay: 0.3});
         }
         // end mobile
       }else{
@@ -170,7 +170,7 @@ function accordionsResponsive(){
         } else {
             panel.style.maxHeight = panel.scrollHeight + "px";
             panel.style.marginBottom = 24 + "px";
-            gsap.to(window, {duration: 0.2, scrollTo:title, delay: 0.15});
+            gsap.to(window, {duration: 0.4, scrollTo:title, delay: 0.3});
         }
         // end desktop
       }
