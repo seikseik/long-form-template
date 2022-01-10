@@ -26,12 +26,12 @@
     <link rel="canonical" href="<?php echo $pageUrl; ?>">
 
     <!-- CONFIGURAZIONE STATS -->
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
       var pageHref = '<?php echo $pageUrl; ?>';
       var pageType = 'dettaglio_content';
     </script>
     <esi:include src='http://www.repstatic.it/cless/common/stable/js/script/tlh/traffic_light_handler.html' />
-   <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script> -->
+   <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script>
     <!-- CONFIGURAZIONE STATS-->
 
     <!-- facebook -->
@@ -40,7 +40,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="<?php echo $pageTitle; ?>">
     <meta property="og:description" content="<?php echo $pageDescription; ?>">
-    <meta property="og:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg'); ?>">
+    <meta property="og:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('../meta.jpg'); ?>">
     <meta property="og:url" content="<?php echo $pageUrl; ?>">
     <meta property="article:published_time" content="2020-02-14T09:00">
     <!-- facebook -->
@@ -50,13 +50,13 @@
     <meta name="twitter:site" content="" />
     <meta name="twitter:title" content="<?php echo $pageTitle; ?>">
     <meta name="twitter:description" content="<?php echo $pageDescription; ?>">
-    <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg'); ?>">
+    <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('../meta.jpg'); ?>">
     <meta name="twitter:url" content="<?php echo $pageUrl; ?>">
     <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
 
 
 
-  <link href="../main.f357c8ba25a9622b04a9.css" rel="stylesheet"></head>
+  <link href="../main.93850b1d523ff4fa23ef.css" rel="stylesheet"></head>
 
   <body class="scroll-to-section">
 
@@ -99,7 +99,7 @@
       <div class="hero-container">
         <div class="col-left">
           <div class="logo">
-            <a target="_blank" href="https://www.gedivisual.it/"><img src="./assets/logo.svg" alt=""></a>
+            <a target="_blank" href="https://www.gedivisual.it/"><img src="../assets/logo.svg" alt=""></a>
           </div>
           <div class="hero-title">
             <h1 hero-title-animation>Elezioni Quirinale 2022</h1>
@@ -109,17 +109,17 @@
             <div class="hero-social">
               <span>condividi</span>
               <div class="social-row">
-                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"> <img src="./assets/fb.svg" alt=""> </a>
-                <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"> <img src="./assets/twitter.svg" alt=""> </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"> <img src="../assets/fb.svg" alt=""> </a>
+                <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"> <img src="../assets/twitter.svg" alt=""> </a>
               </div>
             </div>
             <span class="arrow bounce">
-              <img src="./assets/arrow-down.svg" alt="">
+              <img src="../assets/arrow-down.svg" alt="">
             </span>
           </div>
         </div>
         <div class="col-right">
-          <img src="./assets/hero.png" alt="">
+          <img src="../assets/hero.png" alt="">
         </div>
 
       </div>
@@ -150,12 +150,11 @@
     </div>
 
     <div class="simulatore-section-container">
-      <span class="crediti-tva">sviluppato da The Visual Agency</span>
       <div class="vue-wrapper" id="simulatore" data-url="../dataset/dataset.tsv" data-config="../dataset/config1.json">
       </div>
       <div class="simulatore-result-container">
         <div class="image-simulatore">
-          <img class="img-candidato" src="xxxHTMLLINKxxx0.301641310955515160.34215924706091205xxx" alt="">
+          <img class="img-candidato" src="xxxHTMLLINKxxx0.48813354840174240.5111787997889823xxx" alt="">
         </div>
         <div class="text-simulatore">
           <span class="scenario"></span>
@@ -172,6 +171,10 @@
 
             <div class="credit-end">
               → Analisi e simulazioni a cura di Emanuele Lauria
+            </div>
+            <div class="nota-end">
+              <h6>NOTA</h6>
+              <p>Nel simulatore troverete 1007 grandi elettori invece di 1009 come dovrebbe essere, perché due seggi parlamentari al momento sono vacanti. Uno sarà riempito dall'elezione suppletiva nel Collegio Roma 1, l'altro rimarrà non assegnato. Le maggioranze sono comunque calcolate sulla base di 1009 aventi diritto</p>
             </div>
           </div>
         </section>
@@ -215,10 +218,10 @@
         </div>
 
       </footer>
-
+      <script type="text/javascript" src="../main.946f15f14f72f7642c67.bundle.js"></script>
       <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
       <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
-  <script type="text/javascript" src="../main.d2badbb4390a97a245fd.bundle.js"></script></body>
+  </body>
 
 
 </html>
