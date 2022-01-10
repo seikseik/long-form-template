@@ -155,7 +155,7 @@ $white: #F7F7F7;
 $mainTitle: 13vw;
 $title: 2.5vw;
 $small-title: 1vw;
-$section-title: 3.5vw;
+$section-title: 4.5vw;
 $serif: 'Gambarino-Regular', serif;
 $plex: 'IBM Plex Mono', monospace;
 $plexSerif: 'IBM Plex Serif', serif;
@@ -429,6 +429,27 @@ nav {
 		margin-bottom: $spacing*4;
 	}
 
+	.subtitle-section{
+		h4{
+				font-size: 44px;
+				font-family: $serif;
+				letter-spacing: 1px;
+				line-height: 1.2;
+				text-transform: uppercase;
+				color: $black;
+				margin-bottom: $spacing*4;
+		}
+		span {
+			background: $black;
+			color: $white;
+			font-size: 13px;
+			font-family: $plex;
+			padding: 3px 8px;
+			border-radius: 3px;
+		}
+		margin-bottom: $spacing*6;
+	}
+
 	.title-container {
 		margin-bottom: $spacing*4;
 		border-top: 1px solid $black;
@@ -440,6 +461,7 @@ nav {
 			font-size: $section-title;
 			font-family: $serif;
 			text-align: center;
+			letter-spacing: 1px;
 		}
 
 		.number {
@@ -459,6 +481,11 @@ nav {
 		p:not(:last-child) {
 			margin-bottom: $spacing*3;
 		}
+	}
+	.credit-end{
+		font-family: $plexSerif;
+		font-style: italic;
+		font-size: 18px;
 	}
 }
 
@@ -744,6 +771,8 @@ nav {
 }
 
 .simulatore-section-container {
+	max-width: $large-container;
+	margin: 0 auto;
 	.elections-widget {
 		width: 100%;
 	}
@@ -786,6 +815,7 @@ nav {
 			line-height: 1;
 			text-transform: uppercase;
 			margin: $spacing*3 0;
+			letter-spacing: 1px;
 		}
 	}
 }
@@ -824,6 +854,21 @@ footer {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+
+		.row-coord{
+			color:$white;
+			text-align: center;
+			width:60%;
+			margin: 0 auto;
+			margin-bottom: $spacing*4;
+			font-family: $plex;
+			font-size: 14px;
+			font-weight: 500;
+			h5{
+				text-transform: uppercase;
+				margin-bottom: $spacing*2;
+			}
+		}
 
 		.footer-row {
 			display: flex;
@@ -883,8 +928,9 @@ footer {
 	opacity: 0.7;
 	color: $white;
 	text-align: center;
-	margin-top: $spacing*4;
-
+	margin-top: $spacing*3;
+	font-family: $plex;
+	text-transform: uppercase;
 	a {
 		color: $white;
 	}
@@ -989,7 +1035,7 @@ footer {
 					margin: $spacing*5 $spacing*2;
 					.card-info{
 						h2{
-							font-size: 44px;
+							font-size: 40px;
 						}
 					}
 				}
@@ -1320,7 +1366,10 @@ footer {
 			justify-content: center;
 			align-items: center;
 			display: flex;
-
+			padding-bottom: 70px;
+			.row-coord{
+				width:90%;
+			}
 			.footer-row {
 				flex-direction: column;
 
