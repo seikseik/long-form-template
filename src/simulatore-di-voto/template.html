@@ -4,7 +4,7 @@
     $pageTitle = "Il simulatore";
     $pageDescription = "Gioca con il simulatore per cambiare l'orientamento di voto e spostare le maggioranze: scopri così chi potrebbe essere il prossimo presidente della Repubblica, su quali schieramenti e su quanti parlamentari potrà contare e quante sono le probabilità che venga eletto al Colle";
 
-    $twitterString = " Gioca con il simulatore per cambiare l'orientamento di voto e spostare le maggioranze: scopri chi potrebbe essere il prossimo %23presidente della Repubblica %23elezoni %23Quirinale" . $pageUrl;
+    $twitterString = " Gioca con il simulatore per cambiare l'orientamento di voto e spostare le maggioranze: scopri chi potrebbe essere il prossimo %23presidente della Repubblica %23elezoni %23Quirinale " . $pageUrl;
     $whatsappString = $pageTitle. " " . $pageUrl;
 ?>
 
@@ -18,7 +18,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://www.gedivisual.it/assets/img/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.gedivisual.it/assets/img/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.gedivisual.it/assets/img/favicon/favicon-16x16.png">
-<link rel="manifest" href="https://www.gedivisual.it/assets/img/favicon/site.webmanifest">
 <link rel="mask-icon" href="https://www.gedivisual.it/assets/img/favicon/safari-pinned-tab.svg" color="#5BBAD5">
 <link rel="shortcut icon" href="https://www.gedivisual.it/assets/img/favicon/favicon.ico">
     <title><?php echo $pageTitle; ?></title>
@@ -26,12 +25,12 @@
     <link rel="canonical" href="<?php echo $pageUrl; ?>">
 
     <!-- CONFIGURAZIONE STATS -->
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
       var pageHref = '<?php echo $pageUrl; ?>';
       var pageType = 'dettaglio_content';
     </script>
     <esi:include src='http://www.repstatic.it/cless/common/stable/js/script/tlh/traffic_light_handler.html' />
-   <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script> -->
+   <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script>
     <!-- CONFIGURAZIONE STATS-->
 
     <!-- facebook -->
@@ -42,7 +41,7 @@
     <meta property="og:description" content="<?php echo $pageDescription; ?>">
     <meta property="og:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg'); ?>">
     <meta property="og:url" content="<?php echo $pageUrl; ?>">
-    <meta property="article:published_time" content="2020-02-14T09:00">
+    <meta property="article:published_time" content="2022-01-12T09:00">
     <!-- facebook -->
 
     <!-- twitter -->
@@ -109,8 +108,8 @@
             <div class="hero-social">
               <span>condividi</span>
               <div class="social-row">
-                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"> <img src="../assets/fb.svg" alt=""> </a>
-                <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"> <img src="../assets/twitter.svg" alt=""> </a>
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"> <img src="../assets/fb.svg" alt=""> </a>
+                <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"> <img src="../assets/twitter.svg" alt=""> </a>
               </div>
             </div>
             <span class="arrow bounce">
@@ -203,7 +202,7 @@
           <div class="footer-row">
             <div class="col">
               <h6>Una produzione di</h6>
-              <span><a target="_blank" href="https://www.gedivisual.it/">Gedi Visual</a></span>
+              <span><a target="_blank" href="https://www.gedivisual.it/#gerenza">Gedi Visual</a></span>
             </div>
 
             <div class="col">

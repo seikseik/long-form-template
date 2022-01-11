@@ -141,11 +141,7 @@ function accordionsResponsive(){
     });
 
 }
-
-
-window.onload = function() {
-  accordionsResponsive()
-  };
+accordionsResponsive()
 
 
 
@@ -163,22 +159,7 @@ ScrollTrigger.batch(".card", {
 });
 
 
-// fade infografiche
-// ScrollTrigger.batch(".fade-in-zoom", {
-//   onEnter: elements => {
-//     gsap.set(elements, {transformOrigin: 'center'});
-//     gsap.to(elements,
-//     { opacity: 1,
-//       stagger: 0.25,
-//       duration: 0.4,
-//     })
-//   },
-//   onLeaveBack: elements => {
-//     console.log("back")
-//     gsap.fromTo(elements, {autoAlpha: 0}, {duration: 2, autoAlpha: 1});
-//   },
-//   once: false
-// });
+
 
 // fade infografiche
 ScrollTrigger.batch(".fade-in-zoom", {
@@ -202,7 +183,6 @@ ScrollTrigger.batch(".fade-in-scale", {
       duration: 0.4,
     })
   },
-
   once: false
 });
 
