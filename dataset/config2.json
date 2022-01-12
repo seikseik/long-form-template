@@ -1,5 +1,6 @@
 {
   "schemaColore": 1,
+  "backgroundColor": "#E0D9D3",
   "fontFamily": "IBM Plex Mono",
   "lingua": "it-IT",
   "maggioranze": [
@@ -38,6 +39,7 @@
     "zoomOut": "Riduci"
   },
   "legend": "Cliccando su ciascun partito è possibile variare il voto tra:",
+  "onBoardingClickablePosition": "32",
   "onBoarding": {
     "step1": [
       {
