@@ -847,16 +847,7 @@ nav {
   max-width: $large-container;
   margin: 0 auto;
   position: relative;
-
-  .crediti-tva {
-    right: 2.5rem;
-    top: -$spacing*3;
-    position: absolute;
-    font-family: $plex;
-    font-size: 12px;
-    text-transform: uppercase;
-  }
-
+  z-index: 1;
   .elections-widget {
     width: 100%;
   }
@@ -1207,7 +1198,7 @@ footer {
 
     .current {
       font-family: $plex;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1;
       text-transform: uppercase;
       margin-left: $spacing*3;
@@ -1234,16 +1225,14 @@ footer {
   z-index: 9999;
   height: auto;
   user-select: none;
-
-  span {
-    width: 35px;
-    height: 2px;
-    background: $black;
-    position: relative;
-    display: block;
-    margin: 4px 0;
-    border-radius: 2px;
-    transform: scale(0.8);
+  font-size: 14px;
+  font-family: $plex;
+  text-decoration: underline;
+  .menu{display: flex;}
+  .close{display: none;}
+  &.active{
+    .menu{display: none;}
+    .close{display: flex;}
   }
 }
 
