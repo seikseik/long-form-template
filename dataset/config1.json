@@ -1,5 +1,6 @@
 {
   "schemaColore": 0,
+  "backgroundColor": "#E0D9D3",
   "fontFamily": "IBM Plex Mono",
   "lingua": "it-IT",
   "maggioranze": [
@@ -38,6 +39,7 @@
     "zoomOut": "Riduci"
   },
   "legend": "Cliccando su ciascun partito è possibile variare il voto tra:",
+  "onBoardingClickablePosition": "32",
   "onBoarding": {
     "step1": [
       {
@@ -70,8 +72,18 @@
   },
   "eventoRisultato": {
     "occhiello": "Nello scenario selezionato",
-    "positivo": "viene eletto Presidente della Repubblica Italiana",
-    "negativo": "non viene eletto Presidente della Repubblica Italiana",
+    "esito": [
+      {
+        "positivo": "potrà essere eletto nei primi tre scrutini, quando la maggioranza richiesta è di 673 voti.",
+        "negativo": "non potrà essere eletto nei primi tre scrutini, quando la maggioranza richiesta è di 673 voti."
+      },
+      {
+        "positivoAssoluto": "viene eletto presidente della Repubblica nei primi tre scrutini, quando la maggioranza richiesta è di 673 voti.",
+        "positivo": "potrà essere eletto dopo i primi tre scrutini, quando la maggioranza richiesta è di 505 voti.",
+        "negativo": "non potrà essere eletto né dopo i primi tre scrutini, quando la maggioranza richiesta è di 505 voti, ne dal quarto scrutinio in poi."
+      }
+    ],
+    "esitoAttuale": 1,
     "maggioranzaAttuale": 1
   }
 }
