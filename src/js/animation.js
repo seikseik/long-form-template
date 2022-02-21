@@ -9,25 +9,25 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 
 // hero
+//
+// let imagHero =  document.querySelector(".image-hero");
+// let title = document.querySelector(".title h1");
+// let subtitle = document.querySelector(".title h3");
+// let vLine = document.querySelector(".title .vertical-line");
+// let summary = document.querySelector(".hero-description");
+// let heroContainer = document.querySelector(".hero-text-container");
+//
+// let heroTl =  gsap.timeline();
+// heroTl.fromTo(imagHero,{autoAlpha: 0},{  duration: 1.5, autoAlpha: 1});
+// heroTl.fromTo(heroContainer,{autoAlpha: 0},{  duration: 1.5, autoAlpha: 1, delay: -1});
+// gsap.set(vLine, {transformOrigin:"bottom"})
+// gsap.fromTo(vLine,{scaleY: 0}, {duration: 0.7, scaleY: 1, delay: 0.7, ease: "circ.out",});
 
-let imagHero =  document.querySelector(".image-hero");
-let title = document.querySelector(".title h1");
-let subtitle = document.querySelector(".title h3");
-let vLine = document.querySelector(".title .vertical-line");
-let summary = document.querySelector(".hero-description");
-let heroContainer = document.querySelector(".hero-text-container");
-
-let heroTl =  gsap.timeline();
-heroTl.fromTo(imagHero,{autoAlpha: 0},{  duration: 1.5, autoAlpha: 1});
-heroTl.fromTo(heroContainer,{autoAlpha: 0},{  duration: 1.5, autoAlpha: 1, delay: -1});
-gsap.set(vLine, {transformOrigin:"bottom"})
-gsap.fromTo(vLine,{scaleY: 0}, {duration: 0.7, scaleY: 1, delay: 0.7, ease: "circ.out",});
 
 
-
-let menuBtn = document.querySelector(".menu");
+let menuBtn = document.querySelector(".menu-toggle");
 let menu =  document.querySelector(".menu-full");
-let menuItems = gsap.utils.toArray(".menu-item-container");
+let menuItems = gsap.utils.toArray(".menu-item");
 let body = document.querySelector("body");
 menuBtn.onclick = function(){
     if(menuBtn.classList.contains("active")){
@@ -115,52 +115,27 @@ menuBtn.onclick = function(){
 
 
 
-  window.addEventListener('load', function(){
-
-    const observer = lozad();
-    observer.observe();
-
-
-    let gridlayout = document.querySelector(".image-gallery-container");
-    let gridWidth  = document.querySelector(".grid-sizer");
-    if(gridWidth != null){
-      let w = gridWidth.offsetWidth;
-      gridlayout.style.gridAutoRows = `${w}px`
-    }
-
-      // fade in
-        const fade = gsap.utils.toArray("[fade]");
-        fade.forEach((el, i) => {
-          const anim = gsap.fromTo(el, {autoAlpha: 0}, {duration: 2, autoAlpha: 1});
-          ScrollTrigger.create({
-            trigger: el,
-            animation: anim,
-            toggleActions: 'play none none none',
-            once: true,
-          });
-        });
-  });
 
   // modal
-    let modal = document.getElementById("myModal");
-    let imageList = document.querySelectorAll(".image-modal");
-    let imageContList = document.querySelectorAll(".single-image-masonry");
-
-    let modalImg = document.getElementById("img01");
-    let modalCaption = document.getElementById("modal-caption");
-
-    imageContList.forEach((item, i) => {
-      let caption = item.nextElementSibling.innerHTML;
-      item.onclick = function(){
-        modal.style.display = "flex";
-        modalImg.src = item.src;
-        modalCaption.innerHTML = caption;
-      }
-    });
-
-    var span = document.getElementsByClassName("modal")[0];
-    if(span != undefined){
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
-    }
+    // let modal = document.getElementById("myModal");
+    // let imageList = document.querySelectorAll(".image-modal");
+    // let imageContList = document.querySelectorAll(".single-image-masonry");
+    //
+    // let modalImg = document.getElementById("img01");
+    // let modalCaption = document.getElementById("modal-caption");
+    //
+    // imageContList.forEach((item, i) => {
+    //   let caption = item.nextElementSibling.innerHTML;
+    //   item.onclick = function(){
+    //     modal.style.display = "flex";
+    //     modalImg.src = item.src;
+    //     modalCaption.innerHTML = caption;
+    //   }
+    // });
+    //
+    // var span = document.getElementsByClassName("modal")[0];
+    // if(span != undefined){
+    //   span.onclick = function() {
+    //     modal.style.display = "none";
+    //   }
+    // }

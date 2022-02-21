@@ -24,24 +24,6 @@ module.exports = merge(common, {
         filename: "index.html",
         template: "./src/template.html",
         minify: false
-      }),
-      new HtmlWebpackPlugin({
-        title: "Home-2",
-        filename: "serpenti-metamorfosi/index.html",
-        template: "./src/serpenti-metamorfosi/template.html",
-        minify: false
-      }),
-      new HtmlWebpackPlugin({
-        title: "Home-3",
-        filename: "arte-dell-emozione/index.html",
-        template: "./src/arte-dell-emozione/template.html",
-        minify: false
-      }),
-      new HtmlWebpackPlugin({
-        title: "Home-3",
-        filename: "la-formula-magica/index.html",
-        template: "./src/la-formula-magica/template.html",
-        minify: false
       })
     ]
   },
