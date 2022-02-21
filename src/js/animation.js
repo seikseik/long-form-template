@@ -1,27 +1,7 @@
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Masonry from "masonry-layout"
-import lozad from 'lozad'
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
-
-
-
-
-// hero
-//
-// let imagHero =  document.querySelector(".image-hero");
-// let title = document.querySelector(".title h1");
-// let subtitle = document.querySelector(".title h3");
-// let vLine = document.querySelector(".title .vertical-line");
-// let summary = document.querySelector(".hero-description");
-// let heroContainer = document.querySelector(".hero-text-container");
-//
-// let heroTl =  gsap.timeline();
-// heroTl.fromTo(imagHero,{autoAlpha: 0},{  duration: 1.5, autoAlpha: 1});
-// heroTl.fromTo(heroContainer,{autoAlpha: 0},{  duration: 1.5, autoAlpha: 1, delay: -1});
-// gsap.set(vLine, {transformOrigin:"bottom"})
-// gsap.fromTo(vLine,{scaleY: 0}, {duration: 0.7, scaleY: 1, delay: 0.7, ease: "circ.out",});
 
 
 
@@ -49,9 +29,9 @@ menuBtn.onclick = function(){
 
 
   // fade up
-  const fadeUp = gsap.utils.toArray("[fade-up]");
+  const fadeUp = gsap.utils.toArray("[fade]");
   fadeUp.forEach((el, i) => {
-    const anim = gsap.fromTo(el, {autoAlpha: 0, y:0}, {duration: 1.5, autoAlpha: 1, y: -18});
+    const anim = gsap.fromTo(el, {autoAlpha: 0, y:0}, {duration: 1.5, autoAlpha: 1});
     ScrollTrigger.create({
       trigger: el,
       animation: anim,
@@ -75,67 +55,40 @@ menuBtn.onclick = function(){
 
 
   // zoom img
-  const zoom = gsap.utils.toArray("[img-zoom]");
-  zoom.forEach((el, i) => {
-    const anim = gsap.fromTo(el, {scale: 1}, {scale: 1.05, duration: 2.5, delay: 0.2});
-    ScrollTrigger.create({
-      trigger: el,
-      animation: anim,
-      toggleActions: 'play none none none',
-      once: true,
-    });
-  });
-
-
-  // hr line animation
-  const hr = gsap.utils.toArray(".hr");
-  hr.forEach((el, i) => {
-    gsap.set(el, {transformOrigin:"left"})
-    const anim = gsap.fromTo(el, {scaleX: 0}, {duration: 1.4, scaleX: 1, delay: .3, ease: "circ.out"});
-    ScrollTrigger.create({
-      trigger: el,
-      animation: anim,
-      ease: "circ.out",
-      toggleActions: 'play none none none',
-      once: true,
-    });
-  });
+  // const zoom = gsap.utils.toArray("[img-zoom]");
+  // zoom.forEach((el, i) => {
+  //   const anim = gsap.fromTo(el, {scale: 1}, {scale: 1.05, duration: 2.5, delay: 0.2});
+  //   ScrollTrigger.create({
+  //     trigger: el,
+  //     animation: anim,
+  //     toggleActions: 'play none none none',
+  //     once: true,
+  //   });
+  // });
+  //
+  //
+  // // hr line animation
+  // const hr = gsap.utils.toArray(".hr");
+  // hr.forEach((el, i) => {
+  //   gsap.set(el, {transformOrigin:"left"})
+  //   const anim = gsap.fromTo(el, {scaleX: 0}, {duration: 1.4, scaleX: 1, delay: .3, ease: "circ.out"});
+  //   ScrollTrigger.create({
+  //     trigger: el,
+  //     animation: anim,
+  //     ease: "circ.out",
+  //     toggleActions: 'play none none none',
+  //     once: true,
+  //   });
+  // });
 
   // scroll top
-  let topArrow = document.querySelector(".arrow-top");
-  topArrow.addEventListener("click", function(){
-    gsap.to(window, {duration: 2, scrollTo: 0});
-  });
-
-  let h = document.querySelector(".hero").offsetHeight;
-  let arrow = document.querySelector(".arrow");
-  arrow.addEventListener("click", function(){
-    gsap.to(window, {duration: 0.7, scrollTo: h});
-  });
-
-
-
-
-  // modal
-    // let modal = document.getElementById("myModal");
-    // let imageList = document.querySelectorAll(".image-modal");
-    // let imageContList = document.querySelectorAll(".single-image-masonry");
-    //
-    // let modalImg = document.getElementById("img01");
-    // let modalCaption = document.getElementById("modal-caption");
-    //
-    // imageContList.forEach((item, i) => {
-    //   let caption = item.nextElementSibling.innerHTML;
-    //   item.onclick = function(){
-    //     modal.style.display = "flex";
-    //     modalImg.src = item.src;
-    //     modalCaption.innerHTML = caption;
-    //   }
-    // });
-    //
-    // var span = document.getElementsByClassName("modal")[0];
-    // if(span != undefined){
-    //   span.onclick = function() {
-    //     modal.style.display = "none";
-    //   }
-    // }
+  // let topArrow = document.querySelector(".arrow-top");
+  // topArrow.addEventListener("click", function(){
+  //   gsap.to(window, {duration: 2, scrollTo: 0});
+  // });
+  //
+  // let h = document.querySelector(".hero").offsetHeight;
+  // let arrow = document.querySelector(".arrow");
+  // arrow.addEventListener("click", function(){
+  //   gsap.to(window, {duration: 0.7, scrollTo: h});
+  // });
