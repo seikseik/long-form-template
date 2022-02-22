@@ -48,6 +48,6 @@
     "lozad": "^1.16.0",
     "masonry-layout": "^4.2.2",
     "postcss-viewport-height-correction": "^1.1.1",
-    "swiper": "^7.0.6"
+    "swiper": "^7.4.1"
   }
 }

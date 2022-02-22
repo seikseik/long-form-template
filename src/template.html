@@ -47,6 +47,11 @@
     <meta name="twitter:url" content="<?php echo $pageUrl; ?>">
     <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
 
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+
     <!-- font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -194,6 +199,14 @@
 
 
           <div class="text-container">
+            <div class="text-header">
+              <div class="date">
+                14/03/22
+              </div>
+              <div class="author">
+                <span>di</span>ILENIA CARLESIMO
+              </div>
+            </div>
             <p fade><span class="dropcap">A</span>
               <strong> met, convallis vestibulum, nulla imperdiet nulla ut diam</strong>. Dui at nec erat eu. Id tempus congue cursus tempor leo vitae sit aliquam. In leo faucibus lacinia massa malesuada interdum sed ac eget. Sed eu morbi purus
               placerat vehicula eget faucibus tortor eget. Accumsan accumsan tristique tortor ut purus vel vitae. Platea consectetur sed et mattis fermentum et. Neque, iaculis in enim, egestas pharetra. Libero nascetur in ut pellentesque sit cursus.
@@ -220,7 +233,25 @@
           </div>
 
 
-          <div class="slideshow-section"></div>
+        <div class="slideshow">
+          <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./assets/prova.png" alt="" data-caption="Nec hac aliquam volutpat / eget gravida nunc eu, etiam cursus. Nisl, a, at risus ornare ipsum. Porttitor
+        "></div>
+            <div class="swiper-slide"><img src="./assets/prova.png" alt="" data-caption="Nec hac aliquam volutpat / eget gravida nunc eu, etiam cursus. Nisl, a, at risus ornare ipsum. Porttitor
+        "></div>
+            <div class="swiper-slide"><img src="./assets/prova.png" alt="" data-caption="Nec hac aliquam volutpat / eget gravida nunc eu, etiam cursus. Nisl, a, at risus ornare ipsum. Porttitor
+        "></div>
+          </div>
+        </div>
+        <div class="swiper-button-prev-custom"> <img src="./assets/prev-icon.svg" alt=""> </div>
+        <div class="swiper-button-next-custom"><img src="./assets/next-icon.svg" alt=""></div>
+
+        <div class="control-footer-slideshow">
+          <div class="slide-captions"></div>
+        </div>
+        </div>
+
 
 
 
@@ -269,13 +300,41 @@
           </div>
 
           <div class="image-container">
-            <img src="" alt="">
+            <div class="section-title">
+              <span></span><h4>Sit non vitae semper pellentesque </h4><span></span>
+            </div>
+            <img src="./assets/prova.png" alt="">
             <div class="image-caption">
               <p>
                 <span>Nec hac aliquam volutpat</span> / eget gravida nunc eu, etiam cursus. Nisl, a, at risus ornare ipsum. Porttitor
               </p>
             </div>
           </div>
+
+
+          <div class="chapter-section">
+            <div class="section-title">
+              <span></span><h4>il prossimo episodio </h4><span></span>
+            </div>
+            <div class="chapter-container">
+              <div class="wrapper">
+                <div class="col-1">
+                  <div class="date">
+                    21/03/22
+                  </div>
+                  <img src="./assets/nav-number-2.svg" alt="">
+                </div>
+                <div class="col">
+                  <h5>Cartier, <br>Design Immortale</h5>
+                </div>
+                <div class="col">
+                  <p>Malesuada lobortis viverra volutpat facilisis integer vel lectus ultricies mauris. Lacus, odio nibh ornare odio morbi tellus. Porttitor sed lacinia tellus ac porttitor</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
 
         <footer>
@@ -287,11 +346,11 @@
               </div>
               <div class="col">
                 <span>in colloborazione con</span>
-                <h4><a href="#">CARTIER</a></h4>
+                <h4><a href="#"><img src="./assets/logo-cliente.svg" alt=""></a></h4>
               </div>
               <div class="col">
                 <span>GRAFICA E SVILUPPO</span>
-                <h4><a href="#">BEA X GEDI</a></h4>
+                <h4><a href="#">BEA <span>+</span> DALK <span>x</span> GEDI</a></h4>
               </div>
             </div>
             <div class="row-credits">

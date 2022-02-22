@@ -2,6 +2,8 @@ import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
+import Swiper, { Navigation, Pagination } from 'swiper';
+Swiper.use([Navigation, Pagination]);
 
 
 
@@ -26,6 +28,13 @@ menuBtn.onclick = function(){
     }
   };
 
+
+// menu
+let h = document.querySelector(".hero").offsetHeight;
+let arrow = document.querySelector(".scroll");
+arrow.addEventListener("click", function(){
+  gsap.to(window, {duration: 1, scrollTo: h});
+});
 
 
   // fade up
@@ -52,6 +61,31 @@ menuBtn.onclick = function(){
       once: true,
     });
   });
+
+
+  // slideshow
+
+  const swiper = new Swiper('.swiper', {
+  loop: true,
+  slidesPerView: 1,
+  // centeredSlides: true,
+  grabCursor: true,
+  spaceBetween: 0,
+  navigation: {
+    nextEl: '.swiper-button-next-custom',
+    prevEl: '.swiper-button-prev-custom',
+  },
+  on: {
+   slideChangeTransitionStart: function () {
+       let activeSlide = this.el.querySelector('div.swiper-slide-active');
+       let caption = activeSlide.querySelector('img').getAttribute("data-caption");
+       let slideCaption = this.el.parentElement.querySelector(".slide-captions");
+       if(slideCaption != null){
+         slideCaption.innerHTML = "<h2 class='current-title'>" + caption + "</h2>"
+       }
+   }
+ }
+});
 
 
   // zoom img
@@ -87,8 +121,3 @@ menuBtn.onclick = function(){
   //   gsap.to(window, {duration: 2, scrollTo: 0});
   // });
   //
-  // let h = document.querySelector(".hero").offsetHeight;
-  // let arrow = document.querySelector(".arrow");
-  // arrow.addEventListener("click", function(){
-  //   gsap.to(window, {duration: 0.7, scrollTo: h});
-  // });

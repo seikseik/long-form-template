@@ -119,6 +119,26 @@ body{
 		align-items:center;
 		span{margin: 0 $spacing*2;}
 	}
+	.hero-footer{
+		z-index: 2;
+		margin-bottom: -15px;
+		cursor: pointer;
+		.scroll{
+			display: flex;
+			align-items: center;
+			span{
+				background: $white;
+				font-size: $sizecaption;
+				line-height: 1;
+				font-family: $termina;
+				text-transform: uppercase;
+				color: $black;
+				margin-left: $spacing;
+				padding: 10px $spacing*2;
+				border-radius: 60px;
+			}
+		}
+	}
 	.hero-background{
 		background: $black;
 		height: 100vh;
@@ -130,7 +150,7 @@ body{
 	}
 	.title{
 		width:80%;
-		margin: $spacing*4 auto;
+		margin: $spacing*5 auto;
 		h1{
 			font-size: $sizeTitle;
 			font-family: $fontTitle;
@@ -346,7 +366,7 @@ body{
 	display: flex;
 }
 .page-content{
-	margin: 0 $spacing*3;
+	padding: 0 $spacing*3;
 	width:100%;
 	.wrapper{
 		max-width: $contL;
@@ -378,6 +398,50 @@ body{
 .text-container{
 	max-width: $contS;
 	margin: $spacing*10 0 $spacing*10 auto;
+	.text-header{
+		margin-bottom: $spacing*5;
+		padding-bottom: $spacing;
+		border-bottom: 1px solid $black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.date{
+			font-family: $termina;
+			font-size: $sizecaption;
+			color: $red;
+			padding: $spacing 10px;
+			line-height: 1;
+			border: 1px solid $red;
+			border-radius: 60px;
+			margin-bottom: $spacing;;
+		}
+		.author{
+			font-family: $termina;
+			font-size: $sizecaption;
+			span{
+				font-family: 'Lora', serif;
+				font-style: italic;
+				margin-right: $spacing/2;
+			}
+		}
+	}
+	.dropcap{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: normal;
+		float: left;
+		height: 60px;
+		width:60px;
+		background: $black;
+		padding: $spacing;
+		margin: $spacing;
+		margin-right: $spacing*2;
+		font-size: 38px;
+		font-family: $termina;
+		color: $white;
+		border-radius: 100%;
+	}
 }
 
 .quote-section{
@@ -388,9 +452,11 @@ body{
 		color:$red;
 		text-align: center;
 		padding-right: $spacing;
+		padding-top: 40px;
 		text-transform: uppercase;
 		font-family: $termina;
 		font-size: $sizecaption;
+		transform: rotate(180DEG);
 	}
 	.quote-container{
 		padding-left: $spacing;
@@ -425,8 +491,126 @@ body{
 }
 
 
-footer{
+.slideshow{
 	max-width: $contL;
+	width:100%;
+	padding: 0 $spacing*4;
+	margin: $spacing*10 auto;
+	position:relative;
+	.swiper{
+		width:100%;
+	}
+	.swiper-button-prev-custom{
+		position: absolute;
+		top: calc(50% - 50px);
+		left: -2px;
+		z-index: 9;
+		cursor: pointer;
+	}
+	.swiper-button-next-custom{
+		position: absolute;
+		top: calc(50% - 50px);
+		right: -2px;
+		z-index: 9;
+		cursor: pointer;
+	}
+	.swiper-slide{
+		width:100% !important;
+		display: flex;
+		img{
+			width:100%;
+			height: auto;
+		}
+	}
+	.slide-captions{
+		margin-top: $spacing*2;
+		padding-top: $spacing;
+		border-top:1px solid $black;
+		.current-title{
+			font-family: $termina;
+			font-size: $sizecaption;
+			text-align: left;
+			width: 80%;
+			text-transform: uppercase;
+			color: $grey;
+			span{color:$red;}
+		}
+	}
+}
+
+.section-title{
+	display: flex;
+	align-items: center;
+	padding-bottom: $spacing*2;
+	span{
+		height: 1px;
+		background: $red;
+		width:100%;
+	}
+	h4{
+		text-transform: uppercase;
+		font-size: $sizecaption;
+		color:$red;
+		font-family: $termina;
+		font-weight: 500;
+		white-space: nowrap;
+		margin: 0 $spacing*2;
+		line-height: 1;
+	}
+}
+.chapter-section{
+	margin: $spacing*10 auto;
+	max-width: $contS;
+}
+.chapter-container{
+	background: $black;
+	padding: $spacing*2;
+	.wrapper{
+		border: 1px solid $white;
+		display: flex;
+		.col-1{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			color:$white;
+			padding: $spacing;
+			flex:1;
+			.date{
+				font-family: $termina;
+				font-size: 12px;
+				padding: 6px $spacing*2;
+				border:1px solid $white;
+				border-radius: 60px;
+				margin-bottom: $spacing*2;
+			}
+		}
+		.col{
+			flex:2;
+			padding: $spacing*2;
+			display: flex;
+			align-items: center;
+			h5{
+				font-family: $fontTitle;
+				font-size: 45px;
+				line-height: 1;
+				color: $white;
+				text-transform: uppercase;
+			}
+			p{
+				color:$white;
+				font-size: 16px;
+			}
+			&:nth-child(2){
+				border-left:1px solid $white;
+				border-right:1px solid $white;
+			}
+		}
+	}
+}
+
+
+footer{
 	margin: 0 0 0 auto;
 	margin-right: -$spacing*3;
 	background: $black;
@@ -447,12 +631,28 @@ footer{
 				h4{
 					font-size: 35px;
 					font-family: $fontTitle;
+					a{
+						display: flex;
+						align-items: center;
+						flex-wrap: wrap;
+					}
+					span{
+						font-size: 18px;
+						margin: 0 $spacing;
+					}
 				}
-				flex:1;
+				width:33.33%;
 				padding: $spacing*2;
 				&:nth-child(2){
 					border-left:1px solid $white;
 					border-right: 1px solid $white;
+					img{
+						width:110px;
+						height: auto;
+					}
+				}
+				&:nth-child(3){
+					flex:1;
 				}
 			}
 		}
