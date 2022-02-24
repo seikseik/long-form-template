@@ -69,6 +69,7 @@ arrow.addEventListener("click", function(){
   loop: true,
   slidesPerView: 1,
   // centeredSlides: true,
+  draggable: true,
   grabCursor: true,
   spaceBetween: 0,
   navigation: {
