@@ -125,7 +125,9 @@
 
           <div class="navigation">
             <div class="logo">
-              <img src="./assets/logo.svg" alt="">
+              <a target="_blank" href="https://www.repubblica.it/d/">
+                <img src="./assets/logo.svg" alt="">
+              </a>
             </div>
 
             <div class="menu-toggle">
@@ -141,11 +143,11 @@
             </div>
           </div>
           <div class="menu-footer">
-            <a href="#">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>">
               <img src="./assets/fb.svg" alt="">
             </a>
             <span></span>
-            <a href="#">
+            <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>">
               <img src="./assets/tw.svg" alt="">
             </a>
           </div>
@@ -363,19 +365,20 @@
             <div class="row">
               <div class="col">
                 <span>UNA PRODUZIONE DI</span>
-                <h4><a href="#">GEDI VISUAL</a></h4>
+                <h4><a target="_blank" href="#">GEDI VISUAL</a></h4>
               </div>
               <div class="col">
                 <span>in colloborazione con</span>
-                <h4><a href="#"><img src="./assets/logo-cliente.svg" alt=""></a></h4>
+                <h4><a target="_blank" href="#"><img src="./assets/logo-cliente.svg" alt=""></a></h4>
               </div>
               <div class="col">
                 <span>GRAFICA E SVILUPPO</span>
-                <h4><a href="#">BEA <span>+</span> DALK <span>x</span> GEDI</a></h4>
+                <h4><a target="_blank" href="#">BEA <span>+</span> DALK <span>x</span> GEDI</a></h4>
               </div>
             </div>
             <div class="row-credits">
-              GNN - GEDI GRUPPO EDITORIALE S.P.A. - P.IVA 01578251009 - COOKIE POLICY - PRIVACY
+              GNN - GEDI GRUPPO EDITORIALE S.P.A. - P.IVA 01578251009 -  <a href="javascript:void" id="kw-cookie-link">COOKIE POLICY</a> -
+            <a href="javascript:void" id="kw-privacy-link">PRIVACY</a>
             </div>
           </div>
         </footer>
