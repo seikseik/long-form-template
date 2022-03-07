@@ -37,6 +37,25 @@ arrow.addEventListener("click", function(){
 });
 
 
+
+// animate text on scroll
+let delay = 0;
+const quotes = document.querySelectorAll(".animation-text");
+  quotes.forEach((quote, i) => {
+
+    quote.split = new SplitText(quote, {
+      type:"words",
+      wordsClass: "split-line"
+    });
+
+    quote.anim = gsap.from(quote.split.words, {
+      duration: 0.4,
+      ease: "circ.out",
+      delay: delay,
+    });
+    delay += 0.135;
+  });
+
   // fade up
   const fadeUp = gsap.utils.toArray("[fade]");
   fadeUp.forEach((el, i) => {
