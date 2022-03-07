@@ -33,7 +33,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="<?php echo $pageTitle; ?>">
     <meta property="og:description" content="<?php echo $pageDescription; ?>">
-    <meta property="og:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg'); ?>">
+    <meta property="og:image" content="<?php echo $pageUrl; ?>meta.png?<?php echo filemtime('./meta.png'); ?>">
     <meta property="og:url" content="<?php echo $pageUrl; ?>">
     <meta property="article:published_time" content="2021-10-04T09:00">
     <!-- facebook -->
@@ -43,7 +43,7 @@
     <meta name="twitter:site" content="" />
     <meta name="twitter:title" content="<?php echo $pageTitle; ?>">
     <meta name="twitter:description" content="<?php echo $pageDescription; ?>">
-    <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.jpg'); ?>">
+    <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta.png?<?php echo filemtime('./meta.png'); ?>">
     <meta name="twitter:url" content="<?php echo $pageUrl; ?>">
     <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
 
@@ -55,7 +55,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Oranienbaum&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/ius5gxb.css">
 
-  <link href="main.44e68b939c4b3254276e.css" rel="stylesheet"></head>
+  <link href="main.d147a064a86a7a08dd7a.css" rel="stylesheet"></head>
 
   <body>
 
@@ -76,7 +76,7 @@
                   1
                 </div>
                 <h2 class="menu-item-title">IL NUOVO <br> VOLTO DELLA BOUTIQUE <br> DI MILANO</h2>
-                <p>Malesuada lobortis viverra volutpat facilisis integer vel lectus ultricies mauris. Lacus, odio nibh ornare odio morbi tellus. Porttitor sed lacinia tellus ac porttitor</p>
+                <p>Al centro del restyling, a cui ha contribuito anche l'architetto Stefano Boeri, un omaggio alla città e all'eleganza dello stile italiano. Tra cenni al passato e codici contemporanei</p>
 
                 <div class="menu-item-footer">
                   <span>14/03/22</span>
@@ -95,7 +95,7 @@
                 <p>Malesuada lobortis viverra volutpat facilisis integer vel lectus ultricies mauris. Lacus, odio nibh ornare odio morbi tellus. Porttitor sed lacinia tellus ac porttitor</p>
 
                 <div class="menu-item-footer">
-                  <span>14/03/22</span>
+                  <span>21/03/22</span>
                 </div>
               </div>
             </div>
@@ -108,7 +108,7 @@
                 <p>Malesuada lobortis viverra volutpat facilisis integer vel lectus ultricies mauris. Lacus, odio nibh ornare odio morbi tellus. Porttitor sed lacinia tellus ac porttitor</p>
 
                 <div class="menu-item-footer">
-                  <span>14/03/22</span>
+                  <span>28/03/22</span>
                 </div>
               </div>
             </div>
@@ -125,7 +125,9 @@
 
           <div class="navigation">
             <div class="logo">
-              <img src="./assets/logo.svg" alt="">
+              <a target="_blank" href="https://www.repubblica.it/d/">
+                <img src="./assets/logo.svg" alt="">
+              </a>
             </div>
 
             <div class="menu-toggle">
@@ -141,11 +143,11 @@
             </div>
           </div>
           <div class="menu-footer">
-            <a href="#">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>">
               <img src="./assets/fb.svg" alt="">
             </a>
             <span></span>
-            <a href="#">
+            <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>">
               <img src="./assets/tw.svg" alt="">
             </a>
           </div>
@@ -155,9 +157,6 @@
       <div class="page-content">
 
         <div class="wrapper">
-
-
-
           <div class="hero">
             <div class="hero-background"></div>
             <div class="occhiello">
@@ -168,7 +167,7 @@
 
             <div class="title">
               <span fade class="number"> 1 </span>
-              <h1 title-animation>IL NUOVO VOLTO DELLA BOUTIQUE DI MILANO</h1>
+              <h1 class="animation-text-hero">IL NUOVO VOLTO DELLA BOUTIQUE DI MILANO</h1>
               <p fade>Al centro del restyling, a cui ha contribuito anche l'architetto Stefano Boeri, un omaggio alla città e all'eleganza dello stile italiano. Tra cenni al passato e codici contemporanei</p>
             </div>
 
@@ -183,10 +182,10 @@
             </div>
 
             <div class="image-container">
-              <img src="./assets/prova.png" alt="">
+                <img src="./assets/Gedi_Cartier_Gallery_1.png" alt="">
               <div class="image-caption">
                 <p>
-                  <span fade>Nec hac aliquam volutpat</span> / eget gravida nunc eu, etiam cursus. Nisl, a, at risus ornare ipsum. Porttitor
+                <span> Sinergie e affinità</span> / Nella boutique di Montenapoleone la vivacità di Milano incontra l'art de faire di Cartier
                 </p>
               </div>
             </div>
@@ -223,17 +222,19 @@
 
           <div class="quote-section">
             <div class="quote-author">
-              <span>stefano boeri</span>
+              <span>CLAIRE Bétaille <br>
+                + BRUNO MOINARD</span>
             </div>
             <div class="quote-container">
-              <h2 title-animation>
+              <h2 class="animation-text">
                 <div class="image-quote">
-                  <img src="./assets/mask.png" alt="">
+                  <img src="./assets/Gedi_longform12_Quote_1.png" alt="">
                 </div>
-                La nuova Résidence di Cartier, in via Montenapoleone, è un salotto che abbiamo voluto elegante e riservato, ispirato dall’incontro tra lo stile sofisticato e discreto del design milanese e la natura vivente dei fiori e delle piante
+                Per incantare gli ambienti abbiamo utilizzato gli intarsi, la lacca, i vetri preziosi, il gesso scolpito, le trame di paglia e il mosaico. Che il “Palazzo Cartier” di Milano sia storico, senza tempo e al di sopra delle mode
               </h2>
+              <div class="hr">  </div>
               <div class="quote-caption">
-                → Eget pulvinar nibh at eget ornare risus pulvinar. Non vel morbi sit selectu
+                → Gli archietti francesi realizzano da oltre venti anni le boutique Cartier nel mondo
               </div>
             </div>
           </div>
@@ -242,12 +243,14 @@
           <div class="image-container">
             <div class="section-title">
               <span></span>
-              <h4>Sit non vitae semper pellentesque </h4><span></span>
+              <h4>LA BOUTIQUE DI VIA MONTENAPOLEONE </h4><span></span>
             </div>
-            <img src="./assets/prova.png" alt="">
+            <div class="videoWrapper">
+              <iframe src="https://video.d.repubblica.it/embed/moda/cartier-boutique-milano/9050/9162" frameborder="0" allowfullscreen></iframe>
+            </div>
             <div class="image-caption">
               <p>
-                <span>Nec hac aliquam volutpat</span> / eget gravida nunc eu, etiam cursus. Nisl, a, at risus ornare ipsum. Porttitor
+              <span>Teatrale accoglienza</span> / Opere d’arte e oggetti di design milanese cari alla maison si alternano alle icone Cartier
               </p>
             </div>
           </div>
@@ -264,30 +267,45 @@
 
 
           <div class="quote-section">
-            <div class="quote-author">
-              <span>CLAIRE Bétaille + <br>BRUNO MOINARD</span>
+            <div fade class="quote-author">
+              <span>stefano boeri</span>
             </div>
-            <div class="quote-container">
-              <h2>
+            <div fade class="quote-container">
+              <h2 class="animation-text">
                 <div class="image-quote">
-                  <img src="./assets/mask.png" alt="">
+                  <img src="./assets/Gedi_longform12_Quote_2.png" alt="">
                 </div>
-                Per incantare gli ambienti abbiamo utilizzato gli intarsi, la lacca, i vetri preziosi, il gesso scolpito, le trame di paglia e il mosaico. Che il “Palazzo Cartier” di Milano sia storico, senza tempo e al di sopra delle mode</h2>
+                La nuova Résidence di Cartier, in via Montenapoleone, è un salotto che abbiamo voluto elegante, riservato, ispirato dall’incontro tra lo stile sofisticato e discreto del design milanese e la natura vivente dei fiori e delle piante</h2>
+                <div class="hr">  </div>
               <div class="quote-caption">
-                → Eget pulvinar nibh at eget ornare risus pulvinar. Non vel morbi sit selectu
+                →  Architetto e urbanista
               </div>
             </div>
+          </div>
+
+          <div class="text-container">
+            <p>
+              Dopo l'arioso ingresso e la parte centrale del pianterreno con gli orologi e i gioielli più emblematici, una pantera in bassorilievo realizzata dall’Atelier Louis del Boca conduce ai livelli successivi, con il piano nobile dedicato all'alta gioielleria e il secondo piano che ospita l'area bar e gli spazi per le fragranze e il customer service. E infine l'ultimo piano, con la novità più importante: La Résidence, uno spazio moderno, con uno stile decisamente milanese e un marcato senso di aria e natura, pensato per accogliere clienti e appassionati tra concerti, conversazioni e mostre.
+            </p>
           </div>
 
 
           <div class="slideshow">
             <div class="swiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./assets/prova.png" alt="" data-caption="Nec hac aliquam volutpat / eget gravida nunc eu, etiam cursus. Nisl, a, at risus ornare ipsum. Porttitor
+                <div class="swiper-slide"><img src="./assets/Gedi_Cartier_Gallery_2.jpg" alt="" data-caption="Senza confini / La Résidence, progettata dallo studio Stefano Boeri Interiors, è uno spazio immerso nel verde in cui gli interni si confondono con l’esterno
           "></div>
-                <div class="swiper-slide"><img src="./assets/prova.png" alt="" data-caption="Nec hac aliquam volutpat / eget gravida nunc eu, etiam cursus. Nisl, a, at risus ornare ipsum. Porttitor
+                <div class="swiper-slide"><img src="./assets/Gedi_Cartier_Gallery_3.jpg" alt="" data-caption="Senza confini / La Résidence, progettata dallo studio Stefano Boeri Interiors, è uno spazio immerso nel verde in cui gli interni si confondono con l’esterno
           "></div>
-                <div class="swiper-slide"><img src="./assets/prova.png" alt="" data-caption="Nec hac aliquam volutpat / eget gravida nunc eu, etiam cursus. Nisl, a, at risus ornare ipsum. Porttitor
+                <div class="swiper-slide"><img src="./assets/Gedi_Cartier_Gallery_4.jpg" alt="" data-caption="Senza confini / La Résidence, progettata dallo studio Stefano Boeri Interiors, è uno spazio immerso nel verde in cui gli interni si confondono con l’esterno
+          "></div>
+                <div class="swiper-slide"><img src="./assets/Gedi_Cartier_Gallery_5.jpg" alt="" data-caption="Senza confini / La Résidence, progettata dallo studio Stefano Boeri Interiors, è uno spazio immerso nel verde in cui gli interni si confondono con l’esterno
+          "></div>
+                <div class="swiper-slide"><img src="./assets/Gedi_Cartier_Gallery_6.jpg" alt="" data-caption="Senza confini / La Résidence, progettata dallo studio Stefano Boeri Interiors, è uno spazio immerso nel verde in cui gli interni si confondono con l’esterno
+          "></div>
+                <div class="swiper-slide"><img src="./assets/Gedi_Cartier_Gallery_7.jpg" alt="" data-caption="Senza confini / La Résidence, progettata dallo studio Stefano Boeri Interiors, è uno spazio immerso nel verde in cui gli interni si confondono con l’esterno
+          "></div>
+                <div class="swiper-slide"><img src="./assets/Gedi_Cartier_Gallery_8.jpg" alt="" data-caption="Senza confini / La Résidence, progettata dallo studio Stefano Boeri Interiors, è uno spazio immerso nel verde in cui gli interni si confondono con l’esterno
           "></div>
               </div>
             </div>
@@ -321,12 +339,12 @@
           <div class="image-container">
             <div class="section-title">
               <span></span>
-              <h4>Sit non vitae semper pellentesque </h4><span></span>
+              <h4>L’ARTE NELLA BOUTIQUE</h4><span></span>
             </div>
-            <img src="./assets/prova.png" alt="">
+            <img src="./assets/Gedi_Cartier_Gallery_8.jpg" alt="">
             <div class="image-caption">
               <p>
-                <span>Nec hac aliquam volutpat</span> / eget gravida nunc eu, etiam cursus. Nisl, a, at risus ornare ipsum. Porttitor
+              <span>Omaggi</span> / Le pareti della boutique accolgono diverse forme d'arte. Come al primo piano, dove su uno sfondo ispirato alla Triennale di Milano risalta la pantera
               </p>
             </div>
           </div>
@@ -363,19 +381,20 @@
             <div class="row">
               <div class="col">
                 <span>UNA PRODUZIONE DI</span>
-                <h4><a href="#">GEDI VISUAL</a></h4>
+                <h4><a target="_blank" href="#">GEDI VISUAL</a></h4>
               </div>
               <div class="col">
                 <span>in colloborazione con</span>
-                <h4><a href="#"><img src="./assets/logo-cliente.svg" alt=""></a></h4>
+                <h4><a target="_blank" href="#"><img src="./assets/logo-cliente.svg" alt=""></a></h4>
               </div>
               <div class="col">
                 <span>GRAFICA E SVILUPPO</span>
-                <h4><a href="#">BEA <span>+</span> DALK <span>x</span> GEDI</a></h4>
+                <h4><a target="_blank" href="#">BEA <span>+</span> DALK <span>x</span> GEDI</a></h4>
               </div>
             </div>
             <div class="row-credits">
-              GNN - GEDI GRUPPO EDITORIALE S.P.A. - P.IVA 01578251009 - COOKIE POLICY - PRIVACY
+              GNN - GEDI GRUPPO EDITORIALE S.P.A. - P.IVA 01578251009 -  <a href="javascript:void" id="kw-cookie-link">COOKIE POLICY</a> -
+            <a href="javascript:void" id="kw-privacy-link">PRIVACY</a>
             </div>
           </div>
         </footer>
@@ -394,7 +413,7 @@
 
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
-  <script type="text/javascript" src="main.6e3df91ea83c91bc8826.bundle.js"></script></body>
+  <script type="text/javascript" src="main.fce7f23852c9ce9c2662.bundle.js"></script></body>
 
 
 </html>
