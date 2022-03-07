@@ -41,23 +41,48 @@ arrow.addEventListener("click", function(){
 
 
 
-// animate text on scroll
-let delay = 0;
+// animation hero text
+const heroTitle = document.querySelector(".animation-text-hero");
+
+let tl = gsap.timeline(),
+  mySplitText = new SplitText(heroTitle, {type:"words,chars", wordsClass: "split-line"
+}),
+chars = mySplitText.chars;
+gsap.set(heroTitle, {perspective: 400});
+tl.fromTo(chars, {autoAlpha: 0},
+        {  duration: 1,
+             autoAlpha: 1,
+             delay: 0.1,
+             ease: "ease",
+             stagger: 0.055,
+        },
+        "+=0");
+
+
+
+// animation quotes
 const quotes = document.querySelectorAll(".animation-text");
   quotes.forEach((quote, i) => {
 
-    quote.split = new SplitText(quote, {
-      type:"words",
+    let image = quote.querySelector("img")
+        quote.split = new SplitText(quote, {
+      type:"words,chars",
       wordsClass: "split-line"
     });
+    gsap.set(quote, {perspective: 400});
 
-    quote.anim = gsap.from(quote.split.words, {
-      duration: 0.4,
-      ease: "circ.out",
-      delay: delay,
-      autoAlpha: 0
+
+    let tl = gsap.timeline()
+    tl.to(image,{ opacity: 1, ease: "ease", duration: 1});
+    tl.fromTo(quote.split.words,
+    {autoAlpha: 0},{  duration: 1, autoAlpha: 1,ease: "circ.out",stagger: 0.05});
+
+    ScrollTrigger.create({
+      trigger: quote,
+      animation: tl,
+      toggleActions: 'play none none none',
+      once: true,
     });
-    delay += 0.135;
   });
 
   // fade up
@@ -73,17 +98,6 @@ const quotes = document.querySelectorAll(".animation-text");
   });
 
 
-  // fade quote
-  const fadeQ = gsap.utils.toArray("[fade-quote]");
-  fadeQ.forEach((el, i) => {
-    const anim = gsap.fromTo(el, {autoAlpha: 0}, {duration: 2.5, autoAlpha: 1, delay: 0.2});
-    ScrollTrigger.create({
-      trigger: el,
-      animation: anim,
-      toggleActions: 'play none none none',
-      once: true,
-    });
-  });
 
 
   // slideshow
@@ -126,18 +140,18 @@ const quotes = document.querySelectorAll(".animation-text");
   //
   //
   // // hr line animation
-  // const hr = gsap.utils.toArray(".hr");
-  // hr.forEach((el, i) => {
-  //   gsap.set(el, {transformOrigin:"left"})
-  //   const anim = gsap.fromTo(el, {scaleX: 0}, {duration: 1.4, scaleX: 1, delay: .3, ease: "circ.out"});
-  //   ScrollTrigger.create({
-  //     trigger: el,
-  //     animation: anim,
-  //     ease: "circ.out",
-  //     toggleActions: 'play none none none',
-  //     once: true,
-  //   });
-  // });
+  const hr = gsap.utils.toArray(".hr");
+  hr.forEach((el, i) => {
+    gsap.set(el, {transformOrigin:"left"})
+    const anim = gsap.fromTo(el, {scaleX: 0}, {duration: 1.4, scaleX: 1, delay: 2, ease: "circ.out"});
+    ScrollTrigger.create({
+      trigger: el,
+      animation: anim,
+      ease: "circ.out",
+      toggleActions: 'play none none none',
+      once: true,
+    });
+  });
 
   // scroll top
   // let topArrow = document.querySelector(".arrow-top");
