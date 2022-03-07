@@ -63,23 +63,47 @@ tl.fromTo(chars, {autoAlpha: 0},
 // animation quotes
 const quotes = document.querySelectorAll(".animation-text");
   quotes.forEach((quote, i) => {
-
     let image = quote.querySelector("img")
-        quote.split = new SplitText(quote, {
+      quote.split = new SplitText(quote, {
       type:"words,chars",
       wordsClass: "split-line"
     });
     gsap.set(quote, {perspective: 400});
-
-
     let tl = gsap.timeline()
-    tl.to(image,{ opacity: 1, ease: "ease", duration: 1});
+    tl.to(image,{ opacity: 1, ease: "ease", duration: 0.1});
     tl.fromTo(quote.split.words,
-    {autoAlpha: 0},{  duration: 1, autoAlpha: 1,ease: "circ.out",stagger: 0.05});
+    {autoAlpha: 0},{  duration: 0.7, autoAlpha: 1,ease: "ease",stagger: 0.03});
 
     ScrollTrigger.create({
       trigger: quote,
       animation: tl,
+      toggleActions: 'play none none none',
+      once: true,
+    });
+  });
+
+
+  const qc = gsap.utils.toArray(".quote-caption");
+  qc.forEach((el, i) => {
+    const anim = gsap.fromTo(el, {autoAlpha: 0},{  duration: 0.3, autoAlpha: 1,ease: "ease",delay: 1.5});
+    ScrollTrigger.create({
+      trigger: el,
+      animation: anim,
+      ease: "ease",
+      toggleActions: 'play none none none',
+      once: true,
+    });
+  });
+
+  // // hr line animation
+  const hr = gsap.utils.toArray(".hr");
+  hr.forEach((el, i) => {
+    gsap.set(el, {transformOrigin:"left"})
+    const anim = gsap.fromTo(el, {scaleX: 0}, {duration: 1.4, scaleX: 1, delay: 1, ease: "circ.out"});
+    ScrollTrigger.create({
+      trigger: el,
+      animation: anim,
+      ease: "circ.out",
       toggleActions: 'play none none none',
       once: true,
     });
@@ -99,13 +123,10 @@ const quotes = document.querySelectorAll(".animation-text");
 
 
 
-
   // slideshow
-
   const swiper = new Swiper('.swiper', {
   loop: true,
   slidesPerView: 1,
-  // centeredSlides: true,
   draggable: true,
   grabCursor: true,
   spaceBetween: 0,
@@ -139,19 +160,7 @@ const quotes = document.querySelectorAll(".animation-text");
   // });
   //
   //
-  // // hr line animation
-  const hr = gsap.utils.toArray(".hr");
-  hr.forEach((el, i) => {
-    gsap.set(el, {transformOrigin:"left"})
-    const anim = gsap.fromTo(el, {scaleX: 0}, {duration: 1.4, scaleX: 1, delay: 2, ease: "circ.out"});
-    ScrollTrigger.create({
-      trigger: el,
-      animation: anim,
-      ease: "circ.out",
-      toggleActions: 'play none none none',
-      once: true,
-    });
-  });
+
 
   // scroll top
   // let topArrow = document.querySelector(".arrow-top");

@@ -153,6 +153,12 @@ strong{
 				margin-left: $spacing;
 				padding: 10px $spacing*2;
 				border-radius: 60px;
+				border:1px solid $white;
+				&:hover{
+					background: $black;
+					color:white;
+					border:1px solid $black;
+				}
 			}
 		}
 	}
@@ -514,7 +520,6 @@ strong{
 			img{
 				width:70px;
 				height: 70px;
-				opacity: 0;
 			}
 		}
 	}
