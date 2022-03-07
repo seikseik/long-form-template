@@ -1,7 +1,10 @@
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
+import { SplitText } from "gsap/SplitText";
+
+gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, SplitText);
+
 import Swiper, { Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation, Pagination]);
 
@@ -52,6 +55,7 @@ const quotes = document.querySelectorAll(".animation-text");
       duration: 0.4,
       ease: "circ.out",
       delay: delay,
+      autoAlpha: 0
     });
     delay += 0.135;
   });
