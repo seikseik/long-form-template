@@ -54,7 +54,7 @@ div, section{
 
 $spacing: 8px;
 $black: #040E14;
-$red: #E81E29;
+$red: #D31B33;
 $white: #FBF9F4;
 $grey: #525252;
 
@@ -192,6 +192,12 @@ strong{
 	}
 	.image-container{
 		margin-top: 0;
+	}
+	.zoom-image{
+		.zoom-container{
+			display: flex;
+			overflow: hidden;
+		}
 	}
 }
 
@@ -428,6 +434,20 @@ strong{
 		}
 	}
 }
+.slide-captions{
+	margin-top: $spacing;
+	padding-top: $spacing;
+	border-top:1px solid $black;
+	p{
+		font-family: $termina;
+		font-size: $sizecaption;
+		text-align: left;
+		width: 80%;
+		text-transform: uppercase;
+		color: $grey;
+		span{color:$red;}
+	}
+}
 
 .text-container{
 	max-width: $contS;
@@ -480,6 +500,9 @@ strong{
 		color: $white;
 		border-radius: 100%;
 	}
+	a{
+		color:black;
+	}
 }
 
 .quote-section{
@@ -495,6 +518,7 @@ strong{
 		font-family: $termina;
 		font-size: $sizecaption;
 		transform: rotate(180DEG);
+		font-weight: 500;
 	}
 	.quote-container{
 		padding-left: $spacing;
@@ -673,6 +697,8 @@ footer{
 				h4{
 					font-size: 35px;
 					font-family: $fontTitle;
+					display: flex;
+					align-items: center;
 					a{
 						display: flex;
 						align-items: center;
@@ -859,7 +885,7 @@ body{
 			font-size: 30px;
 		}
 		h1{
-			width:90%;
+			width:100%;
 			font-size: 40px;
 			margin: $spacing*3 0;
 		}
@@ -877,7 +903,6 @@ body{
 		margin-bottom: $spacing*2;
 		border-bottom: 5px solid $red;
 		padding-top: 0;
-		font-weight: 500;
 	}
 	.quote-container{
 		h2{
@@ -940,6 +965,9 @@ body{
 		}
 	}
 	.slide-captions{
+		p{
+			width:100%;
+		}
 		.current-title{
 			width: 100%;
 			font-size: 12px;

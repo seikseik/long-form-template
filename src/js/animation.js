@@ -84,6 +84,7 @@ const quotes = document.querySelectorAll(".animation-text");
 
 
   const qc = gsap.utils.toArray(".quote-caption");
+  // const qc = document.querySelectorAll(".quote-caption");
   qc.forEach((el, i) => {
     const anim = gsap.fromTo(el, {autoAlpha: 0},{  duration: 0.3, autoAlpha: 1,ease: "ease",delay: 1.5});
     ScrollTrigger.create({
@@ -94,8 +95,8 @@ const quotes = document.querySelectorAll(".animation-text");
       once: true,
     });
   });
-
-  // // hr line animation
+  //
+  // // // hr line animation
   const hr = gsap.utils.toArray(".hr");
   hr.forEach((el, i) => {
     gsap.set(el, {transformOrigin:"left"})
@@ -108,8 +109,8 @@ const quotes = document.querySelectorAll(".animation-text");
       once: true,
     });
   });
-
-  // fade up
+  //
+  // // fade up
   const fadeUp = gsap.utils.toArray("[fade]");
   fadeUp.forEach((el, i) => {
     const anim = gsap.fromTo(el, {autoAlpha: 0, y:0}, {duration: 1.5, autoAlpha: 1});
@@ -134,30 +135,30 @@ const quotes = document.querySelectorAll(".animation-text");
     nextEl: '.swiper-button-next-custom',
     prevEl: '.swiper-button-prev-custom',
   },
-  on: {
-   slideChangeTransitionStart: function () {
-       let activeSlide = this.el.querySelector('div.swiper-slide-active');
-       let caption = activeSlide.querySelector('img').getAttribute("data-caption");
-       let slideCaption = this.el.parentElement.querySelector(".slide-captions");
-       if(slideCaption != null){
-         slideCaption.innerHTML = "<h2 class='current-title'>" + caption + "</h2>"
-       }
-   }
- }
+ //  on: {
+ //   slideChangeTransitionStart: function () {
+ //       let activeSlide = this.el.querySelector('div.swiper-slide-active');
+ //       let caption = activeSlide.querySelector('img').getAttribute("data-caption");
+ //       let slideCaption = this.el.parentElement.querySelector(".slide-captions");
+ //       if(slideCaption != null){
+ //         slideCaption.innerHTML = "<h2 class='current-title'>" + caption + "</h2>"
+ //       }
+ //   }
+ // }
 });
 
 
   // zoom img
-  // const zoom = gsap.utils.toArray("[img-zoom]");
-  // zoom.forEach((el, i) => {
-  //   const anim = gsap.fromTo(el, {scale: 1}, {scale: 1.05, duration: 2.5, delay: 0.2});
-  //   ScrollTrigger.create({
-  //     trigger: el,
-  //     animation: anim,
-  //     toggleActions: 'play none none none',
-  //     once: true,
-  //   });
-  // });
+  const zoom = gsap.utils.toArray("[img-zoom]");
+  zoom.forEach((el, i) => {
+    const anim = gsap.fromTo(el, {autoAlpha: 0, scale: 1}, {autoAlpha: 1, scale: 1.12, duration: 3, delay: 0.2});
+    ScrollTrigger.create({
+      trigger: el,
+      animation: anim,
+      toggleActions: 'play none none none',
+      once: true,
+    });
+  });
   //
   //
 
