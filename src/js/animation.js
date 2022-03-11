@@ -61,25 +61,28 @@ tl.fromTo(chars, {autoAlpha: 0},
 
 
 // animation quotes
+
+
 const quotes = document.querySelectorAll(".animation-text");
   quotes.forEach((quote, i) => {
     let image = quote.querySelector("img")
+
       quote.split = new SplitText(quote, {
       type:"words,chars",
       wordsClass: "split-line"
     });
+
     gsap.set(quote, {perspective: 400});
-    let tl = gsap.timeline()
-    tl.to(image,{ opacity: 1, ease: "ease", duration: 0.1});
+    let tl = gsap.timeline({
+      scrollTrigger :{
+        trigger: quote,
+        animation: tl,
+      }
+    })
+    // tl.to(image,{ opacity: 1, ease: "ease", duration: 0.1});
     tl.fromTo(quote.split.words,
     {autoAlpha: 0},{  duration: 0.7, autoAlpha: 1,ease: "ease",stagger: 0.03});
 
-    ScrollTrigger.create({
-      trigger: quote,
-      animation: tl,
-      toggleActions: 'play none none none',
-      once: true,
-    });
   });
 
 
@@ -95,6 +98,7 @@ const quotes = document.querySelectorAll(".animation-text");
       once: true,
     });
   });
+
   //
   // // // hr line animation
   const hr = gsap.utils.toArray(".hr");
@@ -135,16 +139,16 @@ const quotes = document.querySelectorAll(".animation-text");
     nextEl: '.swiper-button-next-custom',
     prevEl: '.swiper-button-prev-custom',
   },
- //  on: {
- //   slideChangeTransitionStart: function () {
- //       let activeSlide = this.el.querySelector('div.swiper-slide-active');
- //       let caption = activeSlide.querySelector('img').getAttribute("data-caption");
- //       let slideCaption = this.el.parentElement.querySelector(".slide-captions");
- //       if(slideCaption != null){
- //         slideCaption.innerHTML = "<h2 class='current-title'>" + caption + "</h2>"
- //       }
- //   }
- // }
+  on: {
+   slideChangeTransitionStart: function () {
+       let activeSlide = this.el.querySelector('div.swiper-slide-active');
+       let caption = activeSlide.querySelector('img').getAttribute("data-caption");
+       let slideCaption = this.el.parentElement.querySelector(".slide-captions");
+       if(slideCaption != null){
+         slideCaption.innerHTML = "<p class='current-title'> <span>SENZA CONFINI </span>" + caption + "</p>"
+       }
+   }
+ }
 });
 
 
@@ -159,7 +163,11 @@ const quotes = document.querySelectorAll(".animation-text");
       once: true,
     });
   });
+
+
   //
+
+
   //
 
 
