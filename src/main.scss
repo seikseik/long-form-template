@@ -232,6 +232,11 @@ strong{
 			span{margin: 0 $spacing*2;}
 		}
 	}
+
+	.link-menu-container{
+		color:white;
+		text-decoration: none;
+	}
 	.menu-row{
 		padding: 0 $spacing*5;
 		height: 100%;
@@ -743,6 +748,19 @@ footer{
 }
 
 
+@media (min-width: 768px) and (max-width:1024px){
+	.hero .hero-background{
+		height: 85vh;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.hero .hero-background{
+		height: 130vh;
+	}
+}
+
+
 
 // MOBILE
 
@@ -761,6 +779,7 @@ body{
 .page-container{
 	flex-direction: column;
 }
+
 .menu-fixed{
 	height: 100px;
 	flex-direction: row;
@@ -879,9 +898,10 @@ body{
 	.occhiello{
 		padding: 0 $spacing*2;
 		span{
-			font-size: 14px;
+			font-size: 13px;
 			line-height: 1;
 			white-space: nowrap;
+			margin: 0 8px;
 		}
 	}
 	.title{
@@ -978,7 +998,7 @@ body{
 			width: 100%;
 			font-size: 12px;
 			span{
-				font-size: 12px;				
+				font-size: 12px;
 			}
 		}
 	}
