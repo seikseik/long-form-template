@@ -9,7 +9,28 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation, Pagination]);
 
 
+// hero
+let imageHero = document.querySelector(".zoom-image")
+let back = document.querySelector(".hero-background");
 
+function getPosition(element) {
+  var yPosition = 0;
+  while(element) {
+      yPosition += (element.offsetTop - element.scrollTop + element.clientTop );
+      element = element.offsetParent ;
+  }
+  return  yPosition + imageHero.offsetHeight ;
+}
+
+let screenHeight = screen.height;
+let imageHeight =  getPosition(imageHero);
+if(imageHeight <  screenHeight){
+  let imageHerohalf = imageHero.clientHeight;
+  let finalHeight = screenHeight - imageHerohalf;
+  back.style.height = `${finalHeight}`+"px"
+}
+
+//  menu
 let menuBtn = document.querySelector(".menu-toggle");
 let menu =  document.querySelector(".menu-full");
 let menuItems = gsap.utils.toArray(".menu-item");
@@ -163,24 +184,3 @@ const quotes = document.querySelectorAll(".animation-text");
       once: true,
     });
   });
-
-
-  let imageHero = document.querySelector(".zoom-container")
-  let back = document.querySelector(".hero-background");
-
-  function getPosition(element) {
-    var yPosition = 0;
-    while(element) {
-        yPosition += (element.offsetTop - element.scrollTop + element.clientTop );
-        element = element.offsetParent ;
-    }
-    return  yPosition + imageHero.offsetHeight ;
-  }
-
-  let screenHeight = screen.height;
-  let imageHeight =  getPosition(imageHero);
-
-  if(imageHeight <  screenHeight){
-    let finalHeight = screenHeight - 200;
-    back.style.height = `${finalHeight}`+"px"
-  }
