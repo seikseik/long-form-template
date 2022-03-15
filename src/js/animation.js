@@ -165,15 +165,22 @@ const quotes = document.querySelectorAll(".animation-text");
   });
 
 
-  //
+  let imageHero = document.querySelector(".zoom-container")
+  let back = document.querySelector(".hero-background");
 
+  function getPosition(element) {
+    var yPosition = 0;
+    while(element) {
+        yPosition += (element.offsetTop - element.scrollTop + element.clientTop );
+        element = element.offsetParent ;
+    }
+    return  yPosition + imageHero.offsetHeight ;
+  }
 
-  //
+  let screenHeight = screen.height;
+  let imageHeight =  getPosition(imageHero);
 
-
-  // scroll top
-  // let topArrow = document.querySelector(".arrow-top");
-  // topArrow.addEventListener("click", function(){
-  //   gsap.to(window, {duration: 2, scrollTo: 0});
-  // });
-  //
+  if(imageHeight <  screenHeight){
+    let finalHeight = screenHeight - 200;
+    back.style.height = `${finalHeight}`+"px"
+  }
