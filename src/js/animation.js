@@ -10,25 +10,29 @@ Swiper.use([Navigation, Pagination]);
 
 
 // hero
-let imageHero = document.querySelector(".zoom-image")
+let imageHero = document.querySelector(".zoom-image");
 let back = document.querySelector(".hero-background");
 
 function getPosition(element) {
   var yPosition = 0;
   while(element) {
       yPosition += (element.offsetTop - element.scrollTop + element.clientTop );
-      element = element.offsetParent ;
+      element = element.offsetParent;
   }
-  return  yPosition + imageHero.offsetHeight ;
+  return  yPosition;
 }
 
-let screenHeight = screen.height;
+let screenHeight = window.innerHeight;
 let imageHeight =  getPosition(imageHero);
-if(imageHeight <  screenHeight){
-  let imageHerohalf = imageHero.clientHeight;
-  let finalHeight = screenHeight - imageHerohalf;
-  back.style.height = `${finalHeight}`+"px"
+let bottomImage = imageHeight + imageHero.offsetHeight;
+if(bottomImage <  screenHeight){
+
+  let imageHerohalf = imageHero.clientHeight / 2;
+  let finalHeight = imageHeight + imageHerohalf;
+
+  back.style.height = `${finalHeight}`+"px";
 }
+
 
 //  menu
 let menuBtn = document.querySelector(".menu-toggle");
