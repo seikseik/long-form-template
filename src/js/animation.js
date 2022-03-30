@@ -10,25 +10,29 @@ Swiper.use([Navigation, Pagination]);
 
 
 // hero
-let imageHero = document.querySelector(".zoom-image")
+let imageHero = document.querySelector(".zoom-image");
 let back = document.querySelector(".hero-background");
 
 function getPosition(element) {
   var yPosition = 0;
   while(element) {
       yPosition += (element.offsetTop - element.scrollTop + element.clientTop );
-      element = element.offsetParent ;
+      element = element.offsetParent;
   }
-  return  yPosition + imageHero.offsetHeight ;
+  return  yPosition;
 }
 
-let screenHeight = screen.height;
+let screenHeight = window.innerHeight;
 let imageHeight =  getPosition(imageHero);
-if(imageHeight <  screenHeight){
-  let imageHerohalf = imageHero.clientHeight;
-  let finalHeight = screenHeight - imageHerohalf;
-  back.style.height = `${finalHeight}`+"px"
+let bottomImage = imageHeight + imageHero.offsetHeight;
+if(bottomImage <  screenHeight){
+
+  let imageHerohalf = imageHero.clientHeight / 2;
+  let finalHeight = imageHeight + imageHerohalf;
+
+  back.style.height = `${finalHeight}`+"px";
 }
+
 
 //  menu
 let menuBtn = document.querySelector(".menu-toggle");
@@ -173,6 +177,28 @@ const quotes = document.querySelectorAll(".animation-text");
 });
 
 
+const swiperTwo = new Swiper('.swiper-fade', {
+loop: true,
+slidesPerView: 1,
+draggable: true,
+grabCursor: true,
+spaceBetween: 0,
+navigation: {
+  nextEl: '.swiper-button-next-custom',
+  prevEl: '.swiper-button-prev-custom',
+},
+on: {
+ slideChangeTransitionStart: function () {
+     let activeSlide = this.el.querySelector('div.swiper-slide-active');
+     let caption = activeSlide.querySelector('img').getAttribute("data-caption");
+     let slideCaption = this.el.parentElement.querySelector(".slide-captions");
+     if(slideCaption != null){
+       slideCaption.innerHTML = "<p class='current-title'> <span>DA OLTRE UN SECOLO </span>" + caption + "</p>"
+     }
+ }
+}
+});
+
   // zoom img
   const zoom = gsap.utils.toArray("[img-zoom]");
   zoom.forEach((el, i) => {
@@ -184,3 +210,31 @@ const quotes = document.querySelectorAll(".animation-text");
       once: true,
     });
   });
+
+
+  // mosaico
+
+  class Mosaico {
+    constructor(mosaico){
+      this.mosaico = document.querySelector(mosaico)
+      this.caption = this.mosaico.querySelector(".last-caption")
+      this.image = this.mosaico.querySelector(".img-full")
+
+      this.captionHeight = "";
+      this.checkCaptionHeight();
+      this.setImageHeight();
+    }
+    checkCaptionHeight(){
+      this.captionHeight = this.caption.offsetHeight;
+      this.captionHeight += parseInt(window.getComputedStyle(this.caption).getPropertyValue('margin-top'));
+      this.captionHeight += parseInt(window.getComputedStyle(this.caption).getPropertyValue('padding-top'));
+    }
+    setImageHeight(){
+      this.image.style.minHeight = `calc(100% - ${this.captionHeight}px)`
+    }
+
+  }
+
+
+  let mos1 = new Mosaico(".mosaico-1")
+  let mos2 = new Mosaico(".mosaico-2")

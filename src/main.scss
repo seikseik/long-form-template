@@ -519,7 +519,7 @@ strong{
 .quote-section{
 	display: flex;
 	.quote-author{
-		writing-mode: vertical-lr;
+		writing-mode: vertical-rl;
 		text-orientation: mixed;
 		color:$red;
 		text-align: center;
@@ -748,12 +748,56 @@ footer{
 	}
 }
 
-
-@media (min-width: 768px) and (max-width:1024px){
-	.hero .hero-background{
-		height: 85vh;
+// LONGFORM 2
+.mosaico-2{
+	.mosaico-container{
+		flex-direction: row-reverse;
+		.col-left-mosaico{
+			padding-left: 8px;
+			padding-right: 0;
+		}
+		.col-right-mosaico{
+			padding-right: 8px;
+			padding-left: 0;
+		}
 	}
 }
+.mosaico-container{
+	display: flex;
+	 .image-caption p{
+		width:100%;
+	}
+	.col-left-mosaico{
+		display: flex;
+		flex-direction: column;
+		width:50%;
+		padding-right: 8px;
+		.image-container-mosaico:last-child img{
+			margin-top: $spacing*2;
+		}
+		.last-caption{
+			height: 100px;
+		}
+	}
+	.col-right-mosaico{
+		width:50%;
+		padding-left: 8px;
+		.image-container-mosaico{
+			height: 100%;
+			img{
+				min-height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+
+// @media (min-width: 829px) and (max-width:1024px){
+// 	.hero .hero-background{
+// 		height: 85vh;
+// 	}
+// }
 
 @media only screen and (max-width: 320px) {
 	.hero .hero-background{
@@ -768,7 +812,7 @@ footer{
 .mobile, .mobile-small{display: none !important;}
 .desktop, .desktop-small{display: flex !important;}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
 
 	.mobile, .mobile-small{display: flex !important;}
 	.desktop, .desktop-small{display: none !important;}
