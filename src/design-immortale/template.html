@@ -1,0 +1,488 @@
+<?php
+
+    $pageUrl = strtok( (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) || isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", "?");
+    $pageTitle = "Il nuovo volto della boutique di Milano";
+    $pageDescription = "Al centro del restyling, a cui ha contribuito anche l'architetto Stefano Boeri, un omaggio alla città e all'eleganza dello stile italiano. Tra cenni al passato e codici contemporanei";
+
+    $twitterString = "" . $pageUrl;
+    $whatsappString = $pageTitle. " " . $pageUrl;
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="it">
+
+  <head>
+    <link rel="apple-touch-icon" sizes="57x57" href="//www.repstatic.it/cless/main/nazionale/2016-v1/img/common/favicon/apple-touch-icon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="//www.repstatic.it/cless/main/nazionale/2016-v1/img/common/favicon/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="//www.repstatic.it/cless/main/nazionale/2016-v1/img/common/favicon/apple-touch-icon-120.png">
+    <link rel="apple-touch-icon-precomposed" href="//www.repstatic.it/cless/main/nazionale/2016-v1/img/common/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="//www.repstatic.it/cless/main/nazionale/2016-v1/img/common/favicon/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="//www.repstatic.it/cless/main/nazionale/2016-v1/img/common/favicon/favicon.ico">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><?php echo $pageTitle; ?></title>
+    <meta name="description" content="<?php echo $pageDescription; ?>" />
+    <link rel="canonical" href="<?php echo $pageUrl; ?>">
+
+    <!-- CONFIGURAZIONE STATS -->
+    <script type="text/javascript">
+      var pageHref = '<?php echo $pageUrl; ?>';
+      var pageType = 'dettaglio_content';
+    </script>
+    <esi:include src='http://www.repstatic.it/cless/common/stable/js/script/tlh/traffic_light_handler.html' />
+    <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script>
+    <!-- CONFIGURAZIONE STATS-->
+
+    <!-- facebook -->
+    <meta property="fb:app_id" content="182234715127717" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="<?php echo $pageTitle; ?>">
+    <meta property="og:description" content="<?php echo $pageDescription; ?>">
+    <meta property="og:image" content="<?php echo $pageUrl; ?>meta.png?<?php echo filemtime('../meta2.png'); ?>">
+    <meta property="og:url" content="<?php echo $pageUrl; ?>">
+    <meta property="article:published_time" content="2022-04-11T09:00">
+    <!-- facebook -->
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="<?php echo $pageTitle; ?>">
+    <meta name="twitter:description" content="<?php echo $pageDescription; ?>">
+    <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta.png?<?php echo filemtime('../meta2.png'); ?>">
+    <meta name="twitter:url" content="<?php echo $pageUrl; ?>">
+    <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Oranienbaum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/ius5gxb.css">
+
+  </head>
+
+  <body>
+
+
+
+    <div class="menu-full">
+      <div class="menu-container">
+        <div class="menu-title">
+          <h3><img src="../assets/star.svg" alt="">
+            <span> Cartier: ieri, oggi, domani</span>
+            <img src="../assets/star.svg" alt=""></h3>
+        </div>
+        <div class="menu-row">
+          <div class="link-wrapper">
+            <div class="menu-item">
+              <a class="link-menu-container" href="../">
+                <div class="menu-item-container">
+
+                  <div class="number">
+                    1
+                  </div>
+                  <h2 class="menu-item-title">IL NUOVO <br> VOLTO DELLA BOUTIQUE <br> DI MILANO</h2>
+                  <p>Al centro del restyling, a cui ha contribuito anche l'architetto Stefano Boeri, un omaggio alla città e all'eleganza dello stile italiano. Tra cenni al passato e codici contemporanei</p>
+                  <div class="menu-item-footer">
+                    <span>04/04/22</span>
+                    <a href="/">
+                      <img src="../assets/menu-link.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="menu-item">
+              <a class="link-menu-container" href="/design-immortale">
+              <div class="menu-item-container">
+                <div class="number">
+                  2
+                </div>
+                <h2 class="menu-item-title">CARTIER, <br> DESIGN <br> IMMORTALE</h2>
+                <p>Dalla Panthère di Jeanne Toussaint al Tank indossato da Gary Cooper, Yves Montand e Catherine Deneuve: le creazioni della maison che hanno fatto storia tra savoir-faire artigianale, ricerca e senso estetico</p>
+                <div class="menu-item-footer">
+                  <span>11/04/22</span>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="menu-item disabled">
+              <div class="menu-item-container">
+                <div class="number">
+                  3
+                </div>
+                <h2 class="menu-item-title">L'INDOMABILE <br> BESTIARIO <br> DI CARTIER</h2>
+                <p>Pantera, tigre, zebra, giraffa e coccodrillo: la nuova collezione Indomptables riunisce gli animali caratteristici della maison. Dieci creazioni dal forte impatto grafico per un concentrato di eleganza e stravaganza</p>
+                <div class="menu-item-footer">
+                  <span>18/04/22</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="page-container">
+      <div class="menu-fixed">
+        <div class="menu-container">
+
+          <div class="navigation">
+            <div class="logo">
+              <a target="_blank" href="https://www.repubblica.it/d/">
+                <img src="../assets/logo.svg" alt="">
+              </a>
+            </div>
+
+            <div class="menu-toggle">
+              <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="36" width="2" height="74" fill="#FBF9F4" />
+                <rect x="74" y="36" width="2" height="74" transform="rotate(90 74 36)" fill="#FBF9F4" />
+              </svg>
+              <span class="open">MENU</span>
+              <span class="close">CHIUDI</span>
+            </div>
+            <div class="nav-number desktop">
+              <img src="../assets/nav-number-2.svg" alt="">
+            </div>
+          </div>
+          <div class="menu-footer">
+            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>">
+              <img src="../assets/fb.svg" alt="">
+            </a>
+            <span></span>
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>">
+              <img src="../assets/tw.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-content">
+
+        <div class="wrapper">
+          <div class="hero">
+            <div class="hero-background"></div>
+            <div class="occhiello">
+              <img src="../assets/star.svg" alt="">
+              <span fade> Cartier: ieri, oggi, domani</span>
+              <img src="../assets/star.svg" alt="">
+            </div>
+
+            <div class="title">
+              <span fade class="number"> 2 </span>
+              <h1 class="animation-text-hero">CARTIER, <br> DESIGN <br> IMMORTALE</h1>
+              <p fade>Dalla Panthère di Jeanne Toussaint al Tank indossato da Gary Cooper, Yves Montand e Catherine Deneuve: le creazioni della maison che hanno fatto storia tra savoir-faire artigianale, ricerca e senso estetico</p>
+            </div>
+
+            <div class="hero-footer">
+              <div class="scroll">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="26" height="26" rx="13" fill="#FBF9F4" />
+                  <path d="M17.0756 13.044L13.5476 16.684V7.64H12.4556V16.684L8.94159 13.044L8.21359 13.772L13.0016 18.56L17.8036 13.772L17.0756 13.044Z" fill="#E81E29" />
+                </svg>
+                <span>scroll down</span>
+              </div>
+            </div>
+
+            <div class="image-container zoom-image">
+              <div class="zoom-container">
+                <img img-zoom src="../assets/Gedi_longform12_B_Img_1.jpg" alt="">
+              </div>
+              <div class="image-caption">
+                <p>
+                  <span>regale opulenza</span> / Collana Maharajah: un trionfo di pietre incise nel solco della grande tradizione indiana.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="text-container">
+            <div class="text-header">
+              <div class="header-author">
+                <div class="date">
+                  11/04/22
+                </div>
+                <div class="author">
+                  <span>di</span>ILENIA CARLESIMO
+                </div>
+              </div>
+
+              <div class="mobile">
+                <div class="nav-number">
+                  <img src="../assets/nav-number-black.svg" alt="">
+                </div>
+              </div>
+
+            </div>
+            <p fade><span class="dropcap">H</span>
+              <strong>anno attraversato epoche e mode</strong> mantenendo intatto il loro fascino, sono stati reinterpretati senza mai tradire il loro dna e riescono a unire generazioni dai gusti molto diversi. Non hanno davvero tempo ed età alcuni gioielli e orologi Cartier. Creazioni dai tratti inconfondibili, radicate nell'immaginario collettivo, che svelano il grande savoir-faire artigianale della maison e la sua costante ricerca innovativa. Accessori dal design immortale come quelli della collezione Panthère che vede protagonista l'animale emblema del brand, comparso per la prima volta nel 1914 su un orologio femminile sotto forma di manto maculato in platino, onice e diamanti e consacrato un paio di decenni dopo grazie a Jeanne Toussaint, alla guida della gioielleria Cartier dal 1933 al 1970.
+            </p>
+          </div>
+
+
+          <div class="quote-section">
+            <div class="quote-author">
+              <span >Cecil Beaton</span>
+            </div>
+            <div class="quote-container">
+              <h2 class="animation-text">
+                <div class="image-quote">
+                  <img src="../assets/Gedi_longform12_B_Img_2.png" alt="">
+                </div>
+                È a lei che dobbiamo i gioielli attuali, più flessibili. Le sue cascate di diamanti, i bracciali di ispirazione orientale, i serpenti, i leopardi e le tigri
+              </h2>
+              <div class="hr"> </div>
+              <div class="quote-caption">
+                → Cecil Beaton, fotografo e costumista britannico, parlando di Jeanne Toussaint
+              </div>
+            </div>
+          </div>
+
+
+          <div class="image-container mosaico-1">
+            <div class="section-title">
+              <span></span>
+              <h4>ICONE </h4><span></span>
+            </div>
+
+            <div class="mosaico-container">
+              <div class="col-left-mosaico">
+                <div class="image-container-mosaico">
+                  <img src="../assets/Gedi_longform12_B_Img_3.jpg" alt="">
+                  <div class="image-caption">
+                    <p>
+                      <span>Estro e creatività</span> / Le mani di Jeanne Toussaint fotografate da François Kollar, 1938.
+                    </p>
+                  </div>
+                </div>
+                <div class="image-container-mosaico">
+                  <img src="../assets/Gedi_longform12_B_Img_5.jpg" alt="">
+                  <div class="image-caption last-caption">
+                    <p>
+                      <span>Un manto prezioso</span> / Bracciale della collezione Panthère
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-right-mosaico">
+                <div class="image-container-mosaico">
+                  <img class="img-full" src="../assets/Gedi_longform12_B_Img_4.jpg" alt="">
+                  <div class="image-caption">
+                    <p>
+                      <span>“La Panthère” </span> / Jeanne Toussaint è stata al timone creativo della gioielleria di Cartier dal 1933 al 1970. Le sue creazioni sono ancora oggi tra le più emblematiche
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="text-container">
+            <p>
+              È con lei - donna raffinata e risoluta soprannominata La Panthère per il suo spirito acuto e la sua determinazione - che il felino diventa firma della maison. Comparsa a tutto tondo nel 1948 su una  spilla commissionata dal duca di Windsor per la “sua” Wallis Simpson, da quel momento viene continuamente reinterpretata. Come del resto anche il Tank, l'orologio dalle linee squadrate e l'estetica essenziale – in cui i brancard laterali integrano senza interruzione gli attacchi del cinturino nella cassa – che Louis Cartier ha immaginato nel 1917 prendendo ispirazione dai cingoli dei primi carri armati della Grande Guerra.
+            </p>
+          </div>
+
+
+
+          <div  class="quote-section">
+            <div fade class="quote-author">
+              <span>Hubert de Givenchy</span>
+            </div>
+            <div fade class="quote-container">
+              <h2 id="second-quote" class="animation-text">
+                <div class="image-quote">
+                  <img src="../assets/mask-givenchy.png" alt="">
+                </div>
+                Uno stile molto personale, molto particolare, molto Cartier
+              </h2>
+              <div class="hr"> </div>
+              <div class="quote-caption">
+              →  Lo stilista francese Hubert de Givenchy a proposito di Jeanne Toussaint
+              </div>
+            </div>
+          </div>
+
+          <div class="slideshow">
+            <div class="section-title">
+              <span></span>
+              <h4>L'idea di un visionario</h4><span></span>
+            </div>
+            <div class="swiper-fade">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../assets/Gedi_longform12_B_Img_7.jpg" alt=""
+                data-caption="/ Le evoluzioni dell'orologio Tank, sempre fedele al design essenziale ideato da Louis Cartier"></div>
+                <div class="swiper-slide"><img src="../assets/Gedi_longform12_B_Img_8.jpg" alt="" data-caption="/ Le evoluzioni dell'orologio Tank, sempre fedele al design essenziale ideato da Louis Cartier"></div>
+
+                <div class="swiper-slide"><img src="../assets/Gedi_longform12_B_Img_9.jpg" alt="" data-caption="/ Le evoluzioni dell'orologio Tank, sempre fedele al design essenziale ideato da Louis Cartier"></div>
+
+                <div class="swiper-slide"><img src="../assets/Gedi_longform12_B_Img_10.jpg" alt="" data-caption="/ Le evoluzioni dell'orologio Tank, sempre fedele al design essenziale ideato da Louis Cartier"></div>
+
+                <div class="swiper-slide"><img src="../assets/Gedi_longform12_B_Img_11.jpg" alt="" data-caption="/ Catherine Deneuve"></div>
+              </div>
+            </div>
+            <div class="swiper-button-prev-custom"> <img src="../assets/prev-icon.svg" alt=""> </div>
+            <div class="swiper-button-next-custom"><img src="../assets/next-icon.svg" alt=""></div>
+
+            <div class="control-footer-slideshow">
+              <div class="slide-captions">
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="text-container">
+            <p>
+            Un emblema della produzione Cartier che ha sedotto diverse celebrità, tra cui Gary Cooper, Catherine Deneuve, Alain Delon e Yves Montand. Anche Andy Warhol ne aveva uno. Tutt'altro che essenziale, ma altrettanto potente, la collezione Tutti Frutti, nata negli anni Venti ma chiamata così solo cinquant'anni dopo: gioielli ispirati alla tradizione indiana, vestiti di zaffiri, rubini e smeraldi in un vivace gioco di volumi e colori, che all'epoca hanno affascinato due delle donne più eleganti al mondo, Lady Mountbatten e Daisy Fellowes, e oggi continuano a stupire con le loro linee scultoree e un sapiente uso delle pietre.
+            </p>
+          </div>
+
+
+
+          <div class="image-container mosaico-2">
+            <div class="section-title">
+              <span></span>
+              <h4>Ispirazione indiana </h4><span></span>
+            </div>
+
+            <div class="mosaico-container">
+              <div class="col-left-mosaico">
+                <div class="image-container-mosaico">
+                  <img src="../assets/Gedi_longform12_B_Img_13.jpg" alt="">
+                  <div class="image-caption">
+                    <p>
+                      <span>Icona di charme</span>/ Daisy Fellowes indossa una collana Tutti Frutti, 1936.
+                    </p>
+                  </div>
+                </div>
+                <div class="image-container-mosaico">
+                  <img src="../assets/Gedi_longform12_B_Img_15.jpg" alt="">
+                  <div class="image-caption last-caption">
+                    <p>
+                      <span>Tra gemme e fiori</span> / La collana Rajasthan, creata nel 2016
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-right-mosaico">
+                <div class="image-container-mosaico">
+                  <img class="img-full" src="../assets/Gedi_longform12_B_Img_14.jpg" alt="">
+                  <div class="image-caption">
+                    <p>
+                    <span>Volume e colori</span> / Lo stile Tutti Frutti della collana Maharajah.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="text-container">
+            <p>
+              È l'incontro perfetto tra funzionalità e design, infine, Love: il bracciale rigido dalla forma ovale, disegnato dall'italiano Aldo Cipullo nel 1969, che si rimuove con il cacciavite con cui è venduto. Un simbolo di amore totalizzante e indissolubile pensato come unisex - una vera innovazione per l'epoca - che Cartier non ha mai smesso di rivisitare. Collezioni, frutto del felice incontro tra savoir-faire artigianale e creatività, che sono un ponte tra passato e futuro.
+            </p>
+          </div>
+
+          <div class="image-container due-colonne">
+            <div class="section-title">
+              <span></span>
+              <h4>Estetica e funzionalità</h4><span></span>
+            </div>
+
+            <div class="col-container">
+              <div class="col-left">
+                <img src="../assets/Gedi_longform12_B_Img_16.jpg" alt="">
+                <div class="image-caption">
+                  <p>
+                  <span> Innovazioni</span> Un bracciale ovale che avvolge il polso e si rimuove con un cacciavite. Il simbolo di legami indissolubili
+                  </p>
+                </div>
+              </div>
+              <div class="col-right">
+                <img src="../assets/Gedi_longform12_B_Img_17.jpg" alt="">
+                <div class="image-caption">
+                  <p>
+                    <span>Dal 1969</span> / Con linee essenziali e proporzioni rigorose, il bracciale Love incarna la visione del design Cartier
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+          <div class="chapter-section">
+            <div class="section-title">
+              <span></span>
+              <h4>Il prossimo episodio</h4><span></span>
+            </div>
+            <div class="chapter-container">
+              <div class="wrapper">
+                <div class="col-1">
+                  <div class="date">
+                    18/04/22
+                  </div>
+                  <img src="../assets/nav-number-3.svg" alt="">
+                </div>
+                <div class="col">
+                  <h5>L'indomabile bestiario di Cartier</h5>
+                </div>
+                <div class="col">
+                  <p>Pantera, tigre, zebra, giraffa e coccodrillo: la nuova collezione Les Indomptables riunisce gli animali caratteristici della maison. Dieci creazioni dal forte impatto grafico per un concentrato di eleganza e stravaganza</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <footer>
+          <div class="footer-container">
+            <div class="row">
+              <div class="col">
+                <span>UNA PRODUZIONE DI</span>
+                <h4><a target="_blank" href="https://lab.gedidigital.it/visual-lab/">GEDI VISUAL</a></h4>
+              </div>
+              <div class="col">
+                <span>in colloborazione con</span>
+                <h4><a target="_blank" href="https://www.cartier.com/it-it/?utm_source=La-Repubblica-logo&utm_medium=sponsored-content&utm_campaign=Montenapoleone-Boutique-28March"><img src="../assets/logo-cliente.svg" alt=""></a></h4>
+              </div>
+              <div class="col">
+                <span>GRAFICA E SVILUPPO</span>
+                <h4><a target="_blank" href="https://www.beamediacompany.com/">BEA</a> <span>+</span> <a target="_blank" href="https://www.datatalk.it/">DALK</a> <span>x</span> <a target="_blank" href="https://lab.gedidigital.it/visual-lab/">GEDI</a>
+                </h4>
+              </div>
+            </div>
+            <div class="row-credits">
+              GNN - GEDI GRUPPO EDITORIALE S.P.A. - P.IVA 01578251009 - <a href="javascript:void" id="kw-cookie-link">COOKIE POLICY</a> -
+              <a href="javascript:void" id="kw-privacy-link">PRIVACY</a>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+
+    <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
+    <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
+  </body>
+
+
+</html>
