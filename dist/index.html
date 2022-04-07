@@ -1,6 +1,13 @@
 <?php
-    include_once('./includes/config.php');
+
+    $pageUrl = strtok( (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) || isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", "?");
+    $pageTitle = "Il nuovo volto della boutique di Milano";
+    $pageDescription = "Al centro del restyling, a cui ha contribuito anche l'architetto Stefano Boeri, un omaggio alla città e all'eleganza dello stile italiano. Tra cenni al passato e codici contemporanei";
+
+    $twitterString = "" . $pageUrl;
+    $whatsappString = $pageTitle. " " . $pageUrl;
 ?>
+
 <!DOCTYPE html>
 <html lang="it">
 
@@ -58,7 +65,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Oranienbaum&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/ius5gxb.css">
 
-  <link href="main.c8bd42cba0cba11ef784.css" rel="stylesheet"></head>
+  <link href="main.b6a79c7bbb19f8dd189a.css" rel="stylesheet"></head>
 
   <body>
 
@@ -114,7 +121,7 @@
                   3
                 </div>
                 <h2 class="menu-item-title">L'INDOMABILE <br> BESTIARIO <br> DI CARTIER</h2>
-                <p>Pantera, tigre, zebra, giraffa e coccodrillo: la nuova collezione Indomptables riunisce gli animali caratteristici della maison. Dieci creazioni dal forte impatto grafico per un concentrato di eleganza e stravaganza</p>
+                <p>Pantera, tigre, zebra, giraffa e coccodrillo: la nuova collezione Les Indomptables riunisce gli animali caratteristici della maison. Dieci creazioni dal forte impatto grafico per un concentrato di eleganza e stravaganza</p>
                 <div class="menu-item-footer">
                   <span>18/04/22</span>
                 </div>
@@ -418,9 +425,10 @@
       </div>
     </div>
 
+    <script type="text/javascript" src="main.9117fcdf39daf6a3c0d5.bundle.js"></script>
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
-  <script type="text/javascript" src="main.9117fcdf39daf6a3c0d5.bundle.js"></script></body>
+  </body>
 
 
 </html>
