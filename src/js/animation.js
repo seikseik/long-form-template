@@ -91,7 +91,6 @@ tl.fromTo(chars, {autoAlpha: 0},
 
 // animation quotes
 
-
 const quotes = document.querySelectorAll(".animation-text");
   quotes.forEach((quote, i) => {
     let image = quote.querySelector("img")
@@ -239,6 +238,8 @@ on: {
       checkCaptionHeight(){
         this.captionHeight = this.caption.offsetHeight;
         this.captionHeight += parseInt(window.getComputedStyle(this.caption).getPropertyValue('margin-top'));
+        this.captionHeight += parseInt(window.getComputedStyle(this.caption).getPropertyValue('margin-bottom'));
+        this.captionHeight += parseInt(window.getComputedStyle(this.caption).getPropertyValue('padding-bottom'));
         this.captionHeight += parseInt(window.getComputedStyle(this.caption).getPropertyValue('padding-top'));
       }
       setImageHeight(){

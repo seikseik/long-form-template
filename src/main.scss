@@ -542,7 +542,8 @@ strong{
 			border-left: 5px solid $red;
 		}
 		#second-quote{
-			font-size: 70px;
+			font-size: 62px;
+			line-height: 0.9;
 		}
 		.hr{
 			height: 1px;
@@ -567,6 +568,7 @@ strong{
 		text-transform: uppercase;
 		color: $grey;
 		font-size: $sizecaption;
+		span{color:$red;}
 	}
 }
 
@@ -781,7 +783,7 @@ footer{
 			margin-top: $spacing*2;
 		}
 		.last-caption{
-			height: 85px;
+			height: 100px;
 		}
 	}
 	.col-right-mosaico{
@@ -1022,7 +1024,7 @@ body{
 	flex-direction: column;
 	.quote-author{
 		text-orientation: unset;
-		transform: none;
+		transform: none !important;
 		writing-mode: unset;
 		padding-bottom: $spacing;
 		margin-bottom: $spacing*2;
@@ -1045,7 +1047,7 @@ body{
 .section-title{
 	h4{
 		white-space: normal;
-		min-width: 60vw;
+		min-width: -webkit-fit-content;min-width: -moz-fit-content;min-width: fit-content;
 		text-align: center;
 	}
 }
