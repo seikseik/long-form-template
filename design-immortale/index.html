@@ -1,8 +1,8 @@
 <?php
 
     $pageUrl = strtok( (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) || isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", "?");
-    $pageTitle = "Il nuovo volto della boutique di Milano";
-    $pageDescription = "Al centro del restyling, a cui ha contribuito anche l'architetto Stefano Boeri, un omaggio alla città e all'eleganza dello stile italiano. Tra cenni al passato e codici contemporanei";
+    $pageTitle = "Cartier, design immortale";
+    $pageDescription = "Dalla Panthère di Jeanne Toussaint al Tank indossato da Gary Cooper, Yves Montand e Catherine Deneuve: le creazioni della maison che hanno fatto storia tra savoir-faire artigianale, ricerca e senso estetico";
 
     $twitterString = "" . $pageUrl;
     $whatsappString = $pageTitle. " " . $pageUrl;
@@ -14,12 +14,15 @@
 <html lang="it">
 
   <head>
-    <link rel="apple-touch-icon" sizes="57x57" href="//www.repstatic.it/cless/main/nazionale/2016-v1/img/common/favicon/apple-touch-icon-57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="//www.repstatic.it/cless/main/nazionale/2016-v1/img/common/favicon/apple-touch-icon-114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="//www.repstatic.it/cless/main/nazionale/2016-v1/img/common/favicon/apple-touch-icon-120.png">
-    <link rel="apple-touch-icon-precomposed" href="//www.repstatic.it/cless/main/nazionale/2016-v1/img/common/favicon/apple-touch-icon.png">
-    <link rel="apple-touch-icon-precomposed" href="//www.repstatic.it/cless/main/nazionale/2016-v1/img/common/favicon/apple-touch-icon-precomposed.png">
-    <link rel="shortcut icon" href="//www.repstatic.it/cless/main/nazionale/2016-v1/img/common/favicon/favicon.ico">
+    <link rel="shortcut icon" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/moda-e-beauty/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/moda-e-beauty/img/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/moda-e-beauty/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/moda-e-beauty/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/moda-e-beauty/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/moda-e-beauty/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/moda-e-beauty/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/moda-e-beauty/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/moda-e-beauty/apple-touch-icon-152x152.png" />
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -54,7 +57,6 @@
     <meta name="twitter:description" content="<?php echo $pageDescription; ?>">
     <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta.png?<?php echo filemtime('../meta2.png'); ?>">
     <meta name="twitter:url" content="<?php echo $pageUrl; ?>">
-    <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
 
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
@@ -65,7 +67,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Oranienbaum&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/ius5gxb.css">
 
-  <link href="../main.8502e4979e563a6d9a11.css" rel="stylesheet"></head>
+  <link href="../main.c8bd42cba0cba11ef784.css" rel="stylesheet"></head>
 
   <body>
 
@@ -74,9 +76,9 @@
     <div class="menu-full">
       <div class="menu-container">
         <div class="menu-title">
-          <h3><img src="../assets/star.svg" alt="">
+          <h3><img src="../assetss/star.svg" alt="">
             <span> Cartier: ieri, oggi, domani</span>
-            <img src="../assets/star.svg" alt=""></h3>
+            <img src="../assetss/star.svg" alt=""></h3>
         </div>
         <div class="menu-row">
           <div class="link-wrapper">
@@ -92,7 +94,7 @@
                   <div class="menu-item-footer">
                     <span>04/04/22</span>
                     <a href="/">
-                      <img src="../assets/menu-link.svg" alt="">
+                      <img src="../assetss/menu-link.svg" alt="">
                     </a>
                   </div>
                 </div>
@@ -108,6 +110,9 @@
                 <p>Dalla Panthère di Jeanne Toussaint al Tank indossato da Gary Cooper, Yves Montand e Catherine Deneuve: le creazioni della maison che hanno fatto storia tra savoir-faire artigianale, ricerca e senso estetico</p>
                 <div class="menu-item-footer">
                   <span>11/04/22</span>
+                  <a href="/design-immortale">
+                    <img src="../assetss/menu-link.svg" alt="">
+                  </a>
                 </div>
               </div>
               </a>
@@ -137,8 +142,8 @@
 
           <div class="navigation">
             <div class="logo">
-              <a target="_blank" href="https://www.repubblica.it/d/">
-                <img src="../assets/logo.svg" alt="">
+              <a target="_blank" href="https://www.moda.it/">
+                <img src="../assetss/logo.svg" alt="">
               </a>
             </div>
 
@@ -151,16 +156,16 @@
               <span class="close">CHIUDI</span>
             </div>
             <div class="nav-number desktop">
-              <img src="../assets/nav-number-2.svg" alt="">
+              <img src="../assetss/nav-number-2.svg" alt="">
             </div>
           </div>
           <div class="menu-footer">
             <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>">
-              <img src="../assets/fb.svg" alt="">
+              <img src="../assetss/fb.svg" alt="">
             </a>
             <span></span>
             <a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>">
-              <img src="../assets/tw.svg" alt="">
+              <img src="../assetss/tw.svg" alt="">
             </a>
           </div>
         </div>
@@ -172,9 +177,9 @@
           <div class="hero">
             <div class="hero-background"></div>
             <div class="occhiello">
-              <img src="../assets/star.svg" alt="">
+              <img src="../assetss/star.svg" alt="">
               <span fade> Cartier: ieri, oggi, domani</span>
-              <img src="../assets/star.svg" alt="">
+              <img src="../assetss/star.svg" alt="">
             </div>
 
             <div class="title">
@@ -195,7 +200,7 @@
 
             <div class="image-container zoom-image">
               <div class="zoom-container">
-                <img img-zoom src="../assets/Gedi_longform12_B_Img_1.jpg" alt="">
+                <img img-zoom src="../assetss/Gedi_longform12_B_Img_1.jpg" alt="">
               </div>
               <div class="image-caption">
                 <p>
@@ -220,7 +225,7 @@
 
               <div class="mobile">
                 <div class="nav-number">
-                  <img src="../assets/nav-number-black.svg" alt="">
+                  <img src="../assetss/nav-number-black.svg" alt="">
                 </div>
               </div>
 
@@ -238,13 +243,13 @@
             <div class="quote-container">
               <h2 class="animation-text">
                 <div class="image-quote">
-                  <img src="../assets/Gedi_longform12_B_Img_2.png" alt="">
+                  <img src="../assetss/Gedi_longform12_B_Img_2.png" alt="">
                 </div>
                 È a lei che dobbiamo i gioielli attuali, più flessibili. Le sue cascate di diamanti, i bracciali di ispirazione orientale, i serpenti, i leopardi e le tigri
               </h2>
               <div class="hr"> </div>
               <div class="quote-caption">
-                → Cecil Beaton, fotografo e costumista britannico, parlando di Jeanne Toussaint
+                <span>→</span> Cecil Beaton, fotografo e costumista britannico, parlando di Jeanne Toussaint
               </div>
             </div>
           </div>
@@ -259,7 +264,7 @@
             <div class="mosaico-container">
               <div class="col-left-mosaico">
                 <div class="image-container-mosaico">
-                  <img src="../assets/Gedi_longform12_B_Img_3.jpg" alt="">
+                  <img src="../assetss/Gedi_longform12_B_Img_3.jpg" alt="">
                   <div class="image-caption">
                     <p>
                       <span>Estro e creatività</span> / Le mani di Jeanne Toussaint fotografate da François Kollar, 1938.
@@ -267,7 +272,7 @@
                   </div>
                 </div>
                 <div class="image-container-mosaico">
-                  <img src="../assets/Gedi_longform12_B_Img_5.jpg" alt="">
+                  <img src="../assetss/Gedi_longform12_B_Img_5.jpg" alt="">
                   <div class="image-caption last-caption">
                     <p>
                       <span>Un manto prezioso</span> / Bracciale della collezione Panthère
@@ -277,7 +282,7 @@
               </div>
               <div class="col-right-mosaico">
                 <div class="image-container-mosaico">
-                  <img class="img-full" src="../assets/Gedi_longform12_B_Img_4.jpg" alt="">
+                  <img class="img-full" src="../assetss/Gedi_longform12_B_Img_4.jpg" alt="">
                   <div class="image-caption">
                     <p>
                       <span>“La Panthère” </span> / Jeanne Toussaint è stata al timone creativo della gioielleria di Cartier dal 1933 al 1970. Le sue creazioni sono ancora oggi tra le più emblematiche
@@ -304,13 +309,13 @@
             <div fade class="quote-container">
               <h2 id="second-quote" class="animation-text">
                 <div class="image-quote">
-                  <img src="../assets/mask-givenchy.png" alt="">
+                  <img src="../assetss/mask-givenchy.png" alt="">
                 </div>
-                Uno stile molto personale, molto particolare, molto Cartier
+                Uno stile molto personale, molto particolare,  molto Cartier
               </h2>
               <div class="hr"> </div>
               <div class="quote-caption">
-              →  Lo stilista francese Hubert de Givenchy a proposito di Jeanne Toussaint
+              <span>→</span>  Lo stilista francese Hubert de Givenchy a proposito di Jeanne Toussaint
               </div>
             </div>
           </div>
@@ -322,19 +327,19 @@
             </div>
             <div class="swiper-fade">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="../assets/Gedi_longform12_B_Img_7.jpg" alt=""
+                <div class="swiper-slide"><img src="../assetss/Gedi_longform12_B_Img_7.jpg" alt=""
                 data-caption="/ Le evoluzioni dell'orologio Tank, sempre fedele al design essenziale ideato da Louis Cartier"></div>
-                <div class="swiper-slide"><img src="../assets/Gedi_longform12_B_Img_8.jpg" alt="" data-caption="/ Le evoluzioni dell'orologio Tank, sempre fedele al design essenziale ideato da Louis Cartier"></div>
+                <div class="swiper-slide"><img src="../assetss/Gedi_longform12_B_Img_8.jpg" alt="" data-caption="/ Le evoluzioni dell'orologio Tank, sempre fedele al design essenziale ideato da Louis Cartier"></div>
 
-                <div class="swiper-slide"><img src="../assets/Gedi_longform12_B_Img_9.jpg" alt="" data-caption="/ Le evoluzioni dell'orologio Tank, sempre fedele al design essenziale ideato da Louis Cartier"></div>
+                <div class="swiper-slide"><img src="../assetss/Gedi_longform12_B_Img_9.jpg" alt="" data-caption="/ Le evoluzioni dell'orologio Tank, sempre fedele al design essenziale ideato da Louis Cartier"></div>
 
-                <div class="swiper-slide"><img src="../assets/Gedi_longform12_B_Img_10.jpg" alt="" data-caption="/ Le evoluzioni dell'orologio Tank, sempre fedele al design essenziale ideato da Louis Cartier"></div>
+                <div class="swiper-slide"><img src="../assetss/Gedi_longform12_B_Img_10.jpg" alt="" data-caption="/ Le evoluzioni dell'orologio Tank, sempre fedele al design essenziale ideato da Louis Cartier"></div>
 
-                <div class="swiper-slide"><img src="../assets/Gedi_longform12_B_Img_11.jpg" alt="" data-caption="/ Catherine Deneuve"></div>
+                <div class="swiper-slide"><img src="../assetss/Gedi_longform12_B_Img_11.jpg" alt="" data-caption="/ Catherine Deneuve"></div>
               </div>
             </div>
-            <div class="swiper-button-prev-custom"> <img src="../assets/prev-icon.svg" alt=""> </div>
-            <div class="swiper-button-next-custom"><img src="../assets/next-icon.svg" alt=""></div>
+            <div class="swiper-button-prev-custom"> <img src="../assetss/prev-icon.svg" alt=""> </div>
+            <div class="swiper-button-next-custom"><img src="../assetss/next-icon.svg" alt=""></div>
 
             <div class="control-footer-slideshow">
               <div class="slide-captions">
@@ -363,7 +368,7 @@
             <div class="mosaico-container">
               <div class="col-left-mosaico">
                 <div class="image-container-mosaico">
-                  <img src="../assets/Gedi_longform12_B_Img_13.jpg" alt="">
+                  <img src="../assetss/Gedi_longform12_B_Img_13.jpg" alt="">
                   <div class="image-caption">
                     <p>
                       <span>Icona di charme</span>/ Daisy Fellowes indossa una collana Tutti Frutti, 1936.
@@ -371,7 +376,7 @@
                   </div>
                 </div>
                 <div class="image-container-mosaico">
-                  <img src="../assets/Gedi_longform12_B_Img_15.jpg" alt="">
+                  <img src="../assetss/Gedi_longform12_B_Img_15.jpg" alt="">
                   <div class="image-caption last-caption">
                     <p>
                       <span>Tra gemme e fiori</span> / La collana Rajasthan, creata nel 2016
@@ -381,7 +386,7 @@
               </div>
               <div class="col-right-mosaico">
                 <div class="image-container-mosaico">
-                  <img class="img-full" src="../assets/Gedi_longform12_B_Img_14.jpg" alt="">
+                  <img class="img-full" src="../assetss/Gedi_longform12_B_Img_14.jpg" alt="">
                   <div class="image-caption">
                     <p>
                     <span>Volume e colori</span> / Lo stile Tutti Frutti della collana Maharajah.
@@ -407,7 +412,7 @@
 
             <div class="col-container">
               <div class="col-left">
-                <img src="../assets/Gedi_longform12_B_Img_16.jpg" alt="">
+                <img src="../assetss/Gedi_longform12_B_Img_16.jpg" alt="">
                 <div class="image-caption">
                   <p>
                   <span> Innovazioni</span> Un bracciale ovale che avvolge il polso e si rimuove con un cacciavite. Il simbolo di legami indissolubili
@@ -415,7 +420,7 @@
                 </div>
               </div>
               <div class="col-right">
-                <img src="../assets/Gedi_longform12_B_Img_17.jpg" alt="">
+                <img src="../assetss/Gedi_longform12_B_Img_17.jpg" alt="">
                 <div class="image-caption">
                   <p>
                     <span>Dal 1969</span> / Con linee essenziali e proporzioni rigorose, il bracciale Love incarna la visione del design Cartier
@@ -439,7 +444,7 @@
                   <div class="date">
                     18/04/22
                   </div>
-                  <img src="../assets/nav-number-3.svg" alt="">
+                  <img src="../assetss/nav-number-3.svg" alt="">
                 </div>
                 <div class="col">
                   <h5>L'indomabile bestiario di Cartier</h5>
@@ -462,7 +467,7 @@
               </div>
               <div class="col">
                 <span>in colloborazione con</span>
-                <h4><a target="_blank" href="https://www.cartier.com/it-it/?utm_source=La-Repubblica-logo&utm_medium=sponsored-content&utm_campaign=Montenapoleone-Boutique-28March"><img src="../assets/logo-cliente.svg" alt=""></a></h4>
+                <h4><a target="_blank" href="https://www.cartier.com/it-it/?utm_source=La-Repubblica-logo&utm_medium=sponsored-content&utm_campaign=Montenapoleone-Boutique-28March"><img src="../assetss/logo-cliente.svg" alt=""></a></h4>
               </div>
               <div class="col">
                 <span>GRAFICA E SVILUPPO</span>
@@ -471,7 +476,7 @@
               </div>
             </div>
             <div class="row-credits">
-              GNN - GEDI GRUPPO EDITORIALE S.P.A. - P.IVA 01578251009 - <a href="javascript:void" id="kw-cookie-link">COOKIE POLICY</a> -
+              GEDI GRUPPO EDITORIALE S.P.A. - P.IVA 01578251009 - <a href="javascript:void" id="kw-cookie-link">COOKIE POLICY</a> -
               <a href="javascript:void" id="kw-privacy-link">PRIVACY</a>
             </div>
           </div>
@@ -482,7 +487,7 @@
 
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
     <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
-  <script type="text/javascript" src="../main.2d9393ab770077ee8c21.bundle.js"></script></body>
+  <script type="text/javascript" src="../main.9117fcdf39daf6a3c0d5.bundle.js"></script></body>
 
 
 </html>
