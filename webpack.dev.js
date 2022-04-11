@@ -18,7 +18,11 @@ module.exports = merge(common, {
     new HtmlWebpackPlugin({
      filename: "design-immortale/index.html",
      template: "./src/design-immortale/template.html"
-   })
+   }),
+   new HtmlWebpackPlugin({
+    filename: "indomabile-bestiario-di-cartier/index.html",
+    template: "./src/indomabile-bestiario-di-cartier/template.html"
+  })
   ],
   module: {
     rules: [

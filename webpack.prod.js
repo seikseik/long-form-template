@@ -30,6 +30,12 @@ module.exports = merge(common, {
         filename: "design-immortale/index.html",
         template: "./src/design-immortale/template.html",
         minify: false
+      }),
+      new HtmlWebpackPlugin({
+        title: "Home-3",
+        filename: "indomabile-bestiario-di-cartier/index.html",
+        template: "./src/indomabile-bestiario-di-cartier/template.html",
+        minify: false
       })
     ]
   },

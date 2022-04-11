@@ -250,6 +250,5 @@ on: {
 
     }
 
-
-    let mos1 = new Mosaico(".mosaico-1")
     let mos2 = new Mosaico(".mosaico-2")
+    let mos1 = new Mosaico(".mosaico-1")
