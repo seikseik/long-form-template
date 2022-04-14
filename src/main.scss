@@ -827,13 +827,28 @@ footer{
 }
 
 @media only screen and (max-width: 768px) {
+
+	.reverse .mosaico-container{
+		flex-direction: column-reverse !important;
+		.col-right-mosaico{
+			margin-bottom: $spacing*2;
+			margin-right: 0;
+			padding: 0;
+		}
+		.col-left-mosaico{
+			padding: 0;
+		}
+	}
+
 	.mosaico-container{
 		flex-direction: column !important;
 		.col-left-mosaico{
 			width:100%;
+			padding: 0;
 		}
 		.col-right-mosaico{
 			width:100%;
+			padding: 0;
 		}
 	}
 	.due-colonne .col-container{
