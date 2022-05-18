@@ -1,33 +1,16 @@
-import Marquee3k from 'marquee3000';
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import LocomotiveScroll from 'locomotive-scroll';
 
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
-Marquee3k.init()
-
-var modal = document.getElementById("myModal");
-
-var btn = document.getElementById("myBtn");
-
-var span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 
 
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+});
 
 // // fade up
 const fadeUp = gsap.utils.toArray("[fade]");
@@ -42,7 +25,7 @@ fadeUp.forEach((el, i) => {
 });
 
 
-let h = document.querySelector(".hero_section").offsetHeight;
+let h = document.querySelector(".section_hero").offsetHeight;
 let arrow = document.querySelector(".scroll");
 arrow.addEventListener("click", function(){
   gsap.to(window, {duration: 1, scrollTo: h});

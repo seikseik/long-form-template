@@ -89,8 +89,9 @@
   },
   "target": "web",
   "dependencies": {
+    "gsap": "npm:@gsap/member@^3.10.4",
+    "locomotive-scroll": "^4.1.4",
     "marquee3000": "^1.1.1",
-    "matter-js": "^0.18.0",
-    "gsap": "npm:@gsap/member@^3.10.4"
+    "matter-js": "^0.18.0"
   }
 }

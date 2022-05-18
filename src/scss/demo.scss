@@ -1,0 +1,43 @@
+body{
+  overflow: hidden;
+
+}
+
+
+.section_hero{
+  height: 100vh;
+}
+.hero_header{
+  position: absolute;
+  top:0;
+  width:100%;
+  display: flex;
+  align-items: center;
+  padding: $space;
+}
+.hero_container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.black-bck{
+  background: #282928;
+  color:white;
+}
+
+.section_text{
+  padding: $space*3 $space*2;
+  &.right_text{
+    .section_text_wrapper{justify-content: flex-end;}
+  }
+  .section_text_wrapper{
+    display: flex;
+    .text_container{
+      width:50%;
+      max-width: 800px;
+    }
+  }
+}
