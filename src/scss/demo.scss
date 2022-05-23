@@ -6,6 +6,7 @@ body{
 
 .section_hero{
   height: 100vh;
+  position: relative;
 }
 .hero_header{
   position: absolute;
@@ -13,7 +14,24 @@ body{
   width:100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: $space;
+  .menu_btn{
+    color:white;
+    padding: $spacing $spacing*2;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  .social_container{
+    display: flex;
+    align-items: center;
+    padding: $spacing;
+    border: 1px solid white;
+    border-radius: 5px;
+    a{
+      padding: 0 $spacing*2;
+    }
+  }
 }
 .hero_container{
   height: 100%;
@@ -21,6 +39,35 @@ body{
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+
+.hero_content{
+  h1{
+
+  }
+}
+
+.video_container{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  z-index: -1;
+  top:0;
+  .video_back{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+  .overlay{
+    position: absolute;
+    top:0;
+    width:100%;
+    height: 100%;
+    background: #282928;
+    mix-blend-mode: multiply;
+    opacity: 0.35;
+  }
 }
 
 .black-bck{
