@@ -4,6 +4,7 @@ $size_heading: 60px;
 $size_subtitle: 32px;
 $size_number: 300px;
 $size_section_title: 80px;
+$size_slide: 6vw;
 
 $sans: "Manrope", sans-serif;
 $serif: "Playfair Display", serif;
@@ -20,6 +21,14 @@ $serif: "Playfair Display", serif;
   font-weight: 400;
   font-style: italic;
 }
+
+@mixin slideshow{
+  font-family: $serif;
+  font-size: $size_slide;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 @mixin subtitle{
   font-family: $sans;

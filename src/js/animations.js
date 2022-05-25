@@ -25,10 +25,34 @@ imagesLoaded(scrollContainer, { background: true }, function () {
   scroll.update();
 });
 
+const target = document.querySelector('#scrollto');
+let scrollto = document.querySelector(".scroll");
+scrollto.addEventListener("click", function(){
+  scroll.scrollTo(target);
+})
 
+
+// slideshow
 const swiper = new Swiper('.swiper', {
-  modules: [Navigation, Pagination],
-  ...
+loop: false,
+slidesPerView: 1,
+draggable: true,
+grabCursor: true,
+spaceBetween: 0,
+navigation: {
+  nextEl: '.swiper-button-next-custom',
+  prevEl: '.swiper-button-prev-custom',
+},
+on: {
+ slideChangeTransitionStart: function () {
+     // let activeSlide = this.el.querySelector('div.swiper-slide-active');
+     // let caption = activeSlide.querySelector('img').getAttribute("data-caption");
+     // let slideCaption = this.el.parentElement.querySelector(".slide-captions");
+     // if(slideCaption != null){
+     //   slideCaption.innerHTML = "<p class='current-title'> <span>SENZA CONFINI </span>" + caption + "</p>"
+     // }
+ }
+}
 });
 
 
@@ -39,6 +63,27 @@ const swiper = new Swiper('.swiper', {
 
 
 
+// menu
+let openMenu = document.querySelector(".menu_btn");
+let closeMenu = document.querySelector(".close");
+
+openMenu.addEventListener("click", function(){
+  let tl = gsap.timeline();
+  tl.to(".hero_content", {opacity: 0, duration: 0.1, ease: "ease"})
+  tl.to(".hero_header", {opacity: 0, duration: 0.1, ease: "ease"})
+  tl.to(".scroll", {opacity: 0, duration: 0.1, ease: "ease"})
+  tl.to(".menu_full", {opacity: 1, duration: 0.2, ease: "ease", visibility: "visible"})
+})
+
+closeMenu.addEventListener("click", function(){
+  let tl = gsap.timeline();
+  tl.to(".menu_full", {opacity: 0, duration: 0.2, ease: "ease"})
+  tl.set(".menu_full", {visibility: "hidden"})
+
+  tl.to(".hero_content", {opacity: 1, duration: 0.1, ease: "ease"})
+  tl.to(".hero_header", {opacity: 1, duration: 0.1, ease: "ease"})
+  tl.to(".scroll", {opacity: 1, duration: 0.1, ease: "ease"})
+})
 
 
 // // fade up
@@ -51,11 +96,4 @@ fadeUp.forEach((el, i) => {
     toggleActions: 'play none none none',
     once: true,
   });
-});
-
-
-let h = document.querySelector(".section_hero").offsetHeight;
-let arrow = document.querySelector(".scroll");
-arrow.addEventListener("click", function(){
-  gsap.to(window, {duration: 1, scrollTo: h});
 });

@@ -14,6 +14,67 @@ html.has-scroll-smooth {
 strong{font-weight: 600;}
 .author{margin-top: $spacing*2;}
 
+
+.menu_full{
+  position: fixed;
+  top:0;
+  width:100%;
+  height: 100vh;
+  z-index: 9;
+  color:white;
+  a{color:white;}
+  opacity: 0;
+  visibility: hidden;
+  .menu-container{
+    position: relative;
+    height: 100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .menu_footer{
+    position: absolute;
+    bottom:$space;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    span{@include small; font-weight: 600;}
+    h4{font-family: $serif;}
+  }
+  img{
+    z-index: 2;
+  }
+  .close{
+    position: absolute;
+    top:$space;
+    right: $space;
+    cursor: pointer;
+  }
+  .menu_header{
+    position: absolute;
+    top:$space;
+    line-height: 1;
+    left: $space;
+    h2{
+      font-size: 40px;
+      span{
+        font-family: $serif;
+      }
+    }
+  }
+  .overlay{
+    background: rgb(0,0,0,0.5);
+    position: absolute;
+    top:0;
+    width:100%;
+    height: 100%;
+  }
+}
+
 .section_hero{
   height: 100vh;
   position: relative;
@@ -32,6 +93,7 @@ strong{font-weight: 600;}
     padding: $spacing $spacing*2;
     border: 1px solid white;
     border-radius: 5px;
+    cursor: pointer;
   }
   .social_container{
     display: flex;
@@ -65,6 +127,7 @@ strong{font-weight: 600;}
   @include small;
   letter-spacing: 2px;
   font-weight: 600;
+  cursor: pointer;
   .line{
     height: 100px;
     margin-top: $spacing;
@@ -313,5 +376,76 @@ strong{font-weight: 600;}
   }
   .padding_right img{
     padding-right: $space*2;
+  }
+}
+
+
+.section_slideshow_locations{
+  .swiper-slide{
+    position: relative;
+  }
+  .slide_content{
+    position: absolute;
+    top:0;
+    width:100%;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    height: 100%;
+    .slide_header{
+      position: absolute;
+      top:0;
+      left: 0;
+      padding: $space;
+      h5{
+        @include small;
+        font-weight: 600;
+      }
+    }
+    .slide_title_container{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: $space*2;
+      h1{
+        @include slideshow;
+        line-height: 1;
+        margin-bottom: $spacing;
+      }
+      p{
+        margin-top: $spacing*2;
+      }
+      a{
+        padding: $spacing $space;
+        margin-top: $spacing;
+        border: 1px solid white;
+        border-radius: 5px;
+        width: fit-content;
+        color: white;
+        @include small;
+        margin: 0 auto;
+        margin-top: $spacing*3;
+        &:hover{
+          background: white;
+          color:black;
+        }
+      }
+    }
+  }
+}
+
+footer{
+  padding: $space*4 $space*2;
+  .footer_top{
+    display: flex;
+    .footer_col{
+      flex:1;
+      text-align: center;
+      @include small;
+      letter-spacing: 2px;
+      font-weight: 600;
+      a{color:black;}
+    }
   }
 }
