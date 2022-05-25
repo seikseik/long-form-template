@@ -3,10 +3,8 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import LocomotiveScroll from 'locomotive-scroll';
 import imagesLoaded from 'imagesLoaded';
-
-
-
-
+import Swiper, { Navigation, Pagination } from 'swiper';
+import 'swiper/css';
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 
@@ -28,10 +26,18 @@ imagesLoaded(scrollContainer, { background: true }, function () {
 });
 
 
+const swiper = new Swiper('.swiper', {
+  modules: [Navigation, Pagination],
+  ...
+});
+
+
 // const scroll = new LocomotiveScroll({
 //     el: document.querySelector('[data-scroll-container]'),
 //     smooth: true
 // });
+
+
 
 
 
