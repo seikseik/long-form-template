@@ -1,8 +1,18 @@
 body{
   overflow: hidden;
-
 }
 
+html.has-scroll-smooth {
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+strong{font-weight: 600;}
+.author{margin-top: $spacing*2;}
 
 .section_hero{
   height: 100vh;
@@ -16,6 +26,7 @@ body{
   align-items: center;
   justify-content: space-between;
   padding: $space;
+  z-index: 9;
   .menu_btn{
     color:white;
     padding: $spacing $spacing*2;
@@ -41,10 +52,43 @@ body{
   text-align: center;
 }
 
+.scroll{
+  color:white;
+  position: absolute;
+  bottom:0;
+  width:200px;
+  left: calc(50% - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  @include small;
+  letter-spacing: 2px;
+  font-weight: 600;
+  .line{
+    height: 100px;
+    margin-top: $spacing;
+    width: 1px;
+    background: white;
+  }
+}
+
 
 .hero_content{
   h1{
-
+  color:white;
+  font-size: 5vw;
+  line-height: 1;
+  margin-bottom: $spacing*2;
+  span{
+    font-family: $serif;
+    font-style: italic;
+  }
+  }
+  p{
+    color:white;
+    max-width: 50%;
+    margin: 0 auto;
   }
 }
 
@@ -71,12 +115,32 @@ body{
 }
 
 .black-bck{
-  background: #282928;
   color:white;
+  background: 0;
+  position: relative;
+  &:after{
+    content: "";
+    position: absolute;
+    background: #282928;
+    width:100%;
+    height: calc(100% - 100px);
+    top: 100px;
+    z-index: -1;
+  }
 }
+
 
 .section_text{
   padding: $space*3 $space*2;
+  h2{
+    @include heading;
+    margin-bottom: $spacing*3;
+  }
+  h3{
+    @include subtitle;
+    margin-bottom: $spacing*3;
+  }
+
   &.right_text{
     .section_text_wrapper{justify-content: flex-end;}
   }
@@ -86,5 +150,168 @@ body{
       width:50%;
       max-width: 800px;
     }
+  }
+  &.black{
+    color: white;
+  }
+}
+
+
+.scroll_image_section{
+  padding: $space $space*2;
+}
+
+.text_number{
+  display: flex;
+  position: absolute;
+  align-items: center;
+  &.top{
+    top:$spacing;
+  }
+  &.bottom{
+    bottom: $spacing;
+  }
+  h2{
+    @include number;
+    line-height: 1;
+  }
+  p{
+    @include section_title;
+    line-height: 1;
+    max-width: 300px;
+  }
+}
+
+.image_row{
+  display: flex;
+  position: relative;
+  padding: $space 0;
+  align-items: flex-end;
+  position: relative;
+  &.space-between{
+    justify-content: space-between;
+  }
+  .col{
+    display: flex;
+    flex-direction: column;
+    &:not(:first-child){
+      margin-left: $space*2;
+    }
+    &.wide{
+      width:100%;
+    }
+    &.small_half{
+      width:40%;
+    }
+    &.one-fourth{
+      width:24%;
+    }
+    &.one-third{
+      width:33%;
+    }
+    &.one-half{
+      width:50%;
+    }
+  }
+}
+.image_full{
+  position: relative;
+  margin-bottom: $space*2;
+  .dida{
+    margin-left: $space*2;
+  }
+}
+.dida{
+  font-size: $size_small;
+  margin-top: $spacing;
+}
+
+#title_1_1{
+  top: 10%;
+  right: 10%;
+}
+#title_1_2{
+  bottom: -4%;
+  right: 10%;
+}
+#title_1_3{
+  bottom: -4%;
+  right: $space*3;
+}
+
+
+.chef_row{
+  padding: $space*2;
+  .chef_row_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: $space;
+  }
+  .single_card{
+    position: relative;
+    display: flex;
+    .dida_chef{
+      position: absolute;
+      width:80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 10%;
+      bottom: -25px;
+      background:#8C3D2C;
+      height: 50px;
+      border: 2px solid white;
+      text-align: center;
+      font-family: $serif;
+      padding: $spacing*2 $space;
+      line-height: 1;
+    }
+  }
+}
+
+
+.section_image_gallery{
+  display: flex;
+  flex-direction: column;
+  .img_card{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $space*2;
+  }
+  .img_full{
+    img{
+      width:100%;
+    }
+  }
+  .img_half{
+    img{
+      width:50%;
+    }
+  }
+  .img_third{
+    img{
+      width:40%;
+    }
+  }
+  .left_image{
+    align-items: flex-start;
+  }
+  .right_image{
+    align-items: flex-end;
+  }
+  .margin_right{
+    margin-right: $space*2;
+  }
+  .margin_left{
+    margin-left: $space*2;
+  }
+  .padding img{
+    padding: 0 $space*2;
+  }
+  .padding_left img{
+    padding-left: $space*2;
+  }
+  .padding_right img{
+    padding-right: $space*2;
   }
 }

@@ -2,15 +2,38 @@ import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import LocomotiveScroll from 'locomotive-scroll';
+import imagesLoaded from 'imagesLoaded';
+
+
+
 
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 
+let scrollContainer = document.querySelector("[data-scroll-container]");
 
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true
+var scroll;
+
+scroll = new LocomotiveScroll({
+  el: scrollContainer,
+  smooth: true,
+  getSpeed: true,
+  getDirection: true,
+  offset:["15%",0]
 });
+
+
+imagesLoaded(scrollContainer, { background: true }, function () {
+  scroll.update();
+});
+
+
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('[data-scroll-container]'),
+//     smooth: true
+// });
+
+
 
 // // fade up
 const fadeUp = gsap.utils.toArray("[fade]");
