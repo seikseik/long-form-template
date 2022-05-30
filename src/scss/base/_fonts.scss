@@ -1,10 +1,12 @@
 $size_text: 21px;
-$size_small: 18px;
+$size_small: 16px;
 $size_heading: 60px;
 $size_subtitle: 32px;
-$size_number: 300px;
-$size_section_title: 80px;
+$size_number: 250px;
+$size_section_title: 60px;
 $size_slide: 6vw;
+
+$size_small_mobile: 14px;
 
 $sans: "Manrope", sans-serif;
 $serif: "Playfair Display", serif;
@@ -53,7 +55,7 @@ $serif: "Playfair Display", serif;
 @mixin small{
   font-family: $sans;
   font-size: $size_small;
-  font-weight: 100;
+  font-weight: 600;
   font-style: normal;
   text-transform: uppercase;
 }
