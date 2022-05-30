@@ -10,57 +10,96 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 let scrollContainer = document.querySelector("[data-scroll-container]");
 
-var scroll;
 
-scroll = new LocomotiveScroll({
+const locoScroll = new LocomotiveScroll({
   el: scrollContainer,
   smooth: true,
-  getSpeed: true,
-  getDirection: true,
-  offset:["15%",0]
+  inertia: 0.8,
+  getDirection: true
+});
+
+  locoScroll.on("scroll", function (t) {
+      document.documentElement.setAttribute("data-direction", t.direction);
+  });
+
+  locoScroll.on("scroll", ScrollTrigger.update);
+
+
+    ScrollTrigger.scrollerProxy(scrollContainer, {
+
+      scrollTop(value) {
+      return arguments.length
+        ? locoScroll.scrollTo(value, 0, 0)
+        : locoScroll.scroll.instance.scroll.y;
+    },
+
+      getBoundingClientRect() {
+        return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+      },
+
+  pinType: scrollContainer.style.transform ? "transform" : "fixed"
 });
 
 
+
+let horizontalSections = document.querySelectorAll(".section_slideshow_locations");
+
+ horizontalSections.forEach((horizontalSection) => {
+   let pinWrap = horizontalSection.querySelector(".slide-container");
+   let pinWrapWidth = pinWrap.offsetWidth;
+   let horizontalScrollLength = pinWrapWidth - window.innerWidth;
+   gsap.to(pinWrap, {
+     scrollTrigger: {
+       scroller: "[data-scroll-container]",
+       scrub: true,
+       trigger: horizontalSection,
+       pin: true,
+       start: "top top",
+       end: () => `+=${pinWrapWidth}`,
+       invalidateOnRefresh: true
+     },
+     x: -horizontalScrollLength,
+     ease: "none"
+   });
+ });
+
+
+//
+// let sections = gsap.utils.toArray(".slide");
+// let container = document.querySelector('.slide-container')
+//
+// let scrollTween = gsap.to(sections, {
+//   xPercent: -100 * (sections.length - 1),
+//   ease: "none",
+//   duration: 6,
+//   scrollTrigger: {
+//     trigger: ".slide-container",
+//     scroller:scrollContainer,
+//     pin: true,
+//     scrub: true,
+//     markers: true,
+//     end: `+=${container.offsetWidth}`
+//   }
+// });
+
+
+
+
+ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+
+ScrollTrigger.refresh();
+
+
 imagesLoaded(scrollContainer, { background: true }, function () {
-  scroll.update();
+  locoScroll.update();
 });
 
 const target = document.querySelector('#scrollto');
 let scrollto = document.querySelector(".scroll");
 scrollto.addEventListener("click", function(){
-  scroll.scrollTo(target);
+  locoScroll.scrollTo(target);
 })
-
-
-// slideshow
-const swiper = new Swiper('.swiper', {
-loop: false,
-slidesPerView: 1,
-draggable: true,
-grabCursor: true,
-spaceBetween: 0,
-navigation: {
-  nextEl: '.swiper-button-next-custom',
-  prevEl: '.swiper-button-prev-custom',
-},
-on: {
- slideChangeTransitionStart: function () {
-     // let activeSlide = this.el.querySelector('div.swiper-slide-active');
-     // let caption = activeSlide.querySelector('img').getAttribute("data-caption");
-     // let slideCaption = this.el.parentElement.querySelector(".slide-captions");
-     // if(slideCaption != null){
-     //   slideCaption.innerHTML = "<p class='current-title'> <span>SENZA CONFINI </span>" + caption + "</p>"
-     // }
- }
-}
-});
-
-
-// const scroll = new LocomotiveScroll({
-//     el: document.querySelector('[data-scroll-container]'),
-//     smooth: true
-// });
-
 
 
 // menu
