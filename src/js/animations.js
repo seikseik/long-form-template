@@ -15,15 +15,19 @@ const locoScroll = new LocomotiveScroll({
   el: scrollContainer,
   smooth: true,
   inertia: 0.8,
-  getDirection: true
+  getDirection: true,
+  mobile: {
+       smooth: true
+   },
+   tablet: {
+       smooth: true,
+       breakpoint: 0
+   }
 });
 
-  locoScroll.on("scroll", function (t) {
-      document.documentElement.setAttribute("data-direction", t.direction);
-  });
+
 
   locoScroll.on("scroll", ScrollTrigger.update);
-
 
     ScrollTrigger.scrollerProxy(scrollContainer, {
 
@@ -64,35 +68,16 @@ let horizontalSections = document.querySelectorAll(".section_slideshow_locations
  });
 
 
-//
-// let sections = gsap.utils.toArray(".slide");
-// let container = document.querySelector('.slide-container')
-//
-// let scrollTween = gsap.to(sections, {
-//   xPercent: -100 * (sections.length - 1),
-//   ease: "none",
-//   duration: 6,
-//   scrollTrigger: {
-//     trigger: ".slide-container",
-//     scroller:scrollContainer,
-//     pin: true,
-//     scrub: true,
-//     markers: true,
-//     end: `+=${container.offsetWidth}`
-//   }
-// });
-
-
-
 
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-
 
 ScrollTrigger.refresh();
 
 
+
 imagesLoaded(scrollContainer, { background: true }, function () {
   locoScroll.update();
+  console.log("ciao")
 });
 
 const target = document.querySelector('#scrollto');
