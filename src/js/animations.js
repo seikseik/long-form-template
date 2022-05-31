@@ -90,6 +90,7 @@ scrollto.addEventListener("click", function(){
 // menu
 let openMenu = document.querySelector(".menu_btn");
 let closeMenu = document.querySelector(".close");
+let menuItems = gsap.utils.toArray(".menu_col");
 
 openMenu.addEventListener("click", function(){
   let tl = gsap.timeline();
@@ -97,13 +98,15 @@ openMenu.addEventListener("click", function(){
   tl.to(".hero_header", {opacity: 0, duration: 0.1, ease: "ease"})
   tl.to(".scroll", {opacity: 0, duration: 0.1, ease: "ease"})
   tl.to(".menu_full", {opacity: 1, duration: 0.2, ease: "ease", visibility: "visible"})
+  tl.fromTo(menuItems,{autoAlpha: 0},{  duration: 0.5, autoAlpha: 1, stagger: 0.09});
+
 })
 
 closeMenu.addEventListener("click", function(){
   let tl = gsap.timeline();
+  tl.fromTo(menuItems,{autoAlpha: 1},{  duration: 0.1, autoAlpha: 0 ,stagger: -0.06});
   tl.to(".menu_full", {opacity: 0, duration: 0.2, ease: "ease"})
   tl.set(".menu_full", {visibility: "hidden"})
-
   tl.to(".hero_content", {opacity: 1, duration: 0.1, ease: "ease"})
   tl.to(".hero_header", {opacity: 1, duration: 0.1, ease: "ease"})
   tl.to(".scroll", {opacity: 1, duration: 0.1, ease: "ease"})
