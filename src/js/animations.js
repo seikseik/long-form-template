@@ -8,84 +8,110 @@ import 'swiper/css';
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 
-let scrollContainer = document.querySelector("[data-scroll-container]");
 
+if(window.innerWidth < 768){
+   initMobile();
+}
+if(window.innerWidth > 768){
+   initDesktop();
+}
 
-const locoScroll = new LocomotiveScroll({
-  el: scrollContainer,
-  smooth: true,
-  inertia: 0.8,
-  getDirection: true,
-  mobile: {
-       smooth: true
-   },
-   tablet: {
-       smooth: true,
-       breakpoint: 0
-   }
+window.addEventListener("resize", function(){
+  if(window.innerWidth < 768){
+     initMobile();
+  }
+  if(window.innerWidth > 768){
+     initDesktop();
+  }
 });
 
 
+function initDesktop(){
+  let scrollContainer = document.querySelector("[data-scroll-container]");
 
-  locoScroll.on("scroll", ScrollTrigger.update);
+  const locoScroll = new LocomotiveScroll({
+    el: scrollContainer,
+    smooth: true,
+    inertia: 0.8,
+    getDirection: true,
+    mobile: {
+         smooth: true
+     },
+     tablet: {
+         smooth: true,
+         breakpoint: 0
+     }
+  });
 
-    ScrollTrigger.scrollerProxy(scrollContainer, {
 
-      scrollTop(value) {
-      return arguments.length
-        ? locoScroll.scrollTo(value, 0, 0)
-        : locoScroll.scroll.instance.scroll.y;
-    },
 
-      getBoundingClientRect() {
-        return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+    locoScroll.on("scroll", ScrollTrigger.update);
+
+      ScrollTrigger.scrollerProxy(scrollContainer, {
+
+        scrollTop(value) {
+        return arguments.length
+          ? locoScroll.scrollTo(value, 0, 0)
+          : locoScroll.scroll.instance.scroll.y;
       },
 
-  pinType: scrollContainer.style.transform ? "transform" : "fixed"
-});
+        getBoundingClientRect() {
+          return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+        },
+
+    pinType: scrollContainer.style.transform ? "transform" : "fixed"
+  });
 
 
 
-let horizontalSections = document.querySelectorAll(".section_slideshow_locations");
+  let horizontalSections = document.querySelectorAll(".section_slideshow_locations");
 
- horizontalSections.forEach((horizontalSection) => {
-   let pinWrap = horizontalSection.querySelector(".slide-container");
-   let pinWrapWidth = pinWrap.offsetWidth;
-   let horizontalScrollLength = pinWrapWidth - window.innerWidth;
-   gsap.to(pinWrap, {
-     scrollTrigger: {
-       scroller: "[data-scroll-container]",
-       scrub: true,
-       trigger: horizontalSection,
-       pin: true,
-       start: "top top",
-       end: () => `+=${pinWrapWidth}`,
-       invalidateOnRefresh: true
-     },
-     x: -horizontalScrollLength,
-     ease: "none"
+   horizontalSections.forEach((horizontalSection) => {
+     let pinWrap = horizontalSection.querySelector(".slide-container");
+     let pinWrapWidth = pinWrap.offsetWidth;
+     let horizontalScrollLength = pinWrapWidth - window.innerWidth;
+     gsap.to(pinWrap, {
+       scrollTrigger: {
+         scroller: "[data-scroll-container]",
+         scrub: true,
+         trigger: horizontalSection,
+         pin: true,
+         start: "top top",
+         end: () => `+=${pinWrapWidth}`,
+         invalidateOnRefresh: true
+       },
+       x: -horizontalScrollLength,
+       ease: "none"
+     });
    });
- });
 
 
 
-ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+  ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
-ScrollTrigger.refresh();
+  ScrollTrigger.refresh();
 
 
 
-imagesLoaded(scrollContainer, { background: true }, function () {
-  locoScroll.update();
-  console.log("ciao")
-});
+  imagesLoaded(scrollContainer, { background: true }, function () {
+    locoScroll.update();
+  });
 
-const target = document.querySelector('#scrollto');
-let scrollto = document.querySelector(".scroll");
-scrollto.addEventListener("click", function(){
-  locoScroll.scrollTo(target);
-})
+  const target = document.querySelector('#scrollto');
+  let scrollto = document.querySelector(".scroll");
+  scrollto.addEventListener("click", function(){
+    locoScroll.scrollTo(target);
+  })
+}
 
+function initMobile(){
+    const swiper = new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+}
 
 // menu
 let openMenu = document.querySelector(".menu_btn");

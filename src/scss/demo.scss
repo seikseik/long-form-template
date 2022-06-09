@@ -561,7 +561,13 @@ footer{
 }
 
 
+
+
 @media screen and (max-width: 768px) {
+
+  body{
+    overflow-y: scroll;
+  }
 
   .mob{
     display: flex !important;
@@ -756,6 +762,7 @@ footer{
     padding: $space $spacing*2;
     .img_card{
       margin-bottom: $space;
+      opacity: 1;
     }
     .padding{
       img{
