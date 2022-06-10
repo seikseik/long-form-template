@@ -100,11 +100,11 @@
           <h4>Conclusione</h4>
         </a>
       </div>
-      <div class="social-mobile mobile">
+      <div class="social-mobile mob">
         <span>SHARE</span>
         <div class="social_container">
-          <a href="#"><img src="./images/content/fb.svg" alt=""></a>
-          <a href="#"><img src="./images/content/tw.svg" alt=""></a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"><img src="./images/content/fb.svg" alt=""></a>
+          <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"><img src="./images/content/tw.svg" alt=""></a>
         </div>
       </div>
     </div>
@@ -116,7 +116,7 @@
     <div data-scroll class="section_hero">
       <div class="hero_container">
         <div class="video_container">
-          <video class="video_back" autoplay muted loop id="myVideo">
+          <video class="video_back" autoplay muted loop playsinline id="myVideo">
             <source src="loop.mp4" type="video/mp4">
           </video>
           <div class="overlay"></div>
@@ -132,8 +132,8 @@
           </div>
 
           <div class="social_container vis_none">
-            <a href="#"><img src="./images/content/fb.svg" alt=""></a>
-            <a href="#"><img src="./images/content/tw.svg" alt=""></a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"><img src="./images/content/fb.svg" alt=""></a>
+            <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"><img src="./images/content/tw.svg" alt=""></a>
           </div>
 
         </div>
@@ -174,7 +174,7 @@
     </div>
 
 
-    <div data-scroll class="section_video desk">
+    <div data-scroll class="section_video desk-block">
       <div class="videoWrapper">
           <iframe src="https://video.greenandblue.it/embed/vivere-green/perche-i-probiotici-creano-un-ambiente-sano/3939/3954?adref=<?php echo $pageUrl; ?>" frameborder="0" allowfullscreen></iframe>
         </div>
@@ -197,7 +197,7 @@
     <section data-scroll class="text black-bck">
 
 
-      <div data-scroll class="section_video mob">
+      <div data-scroll class="section_video mob-block">
         <div class="videoWrapper">
             <iframe src="https://video.greenandblue.it/embed/vivere-green/perche-i-probiotici-creano-un-ambiente-sano/3939/3954?adref=<?php echo $pageUrl; ?>" frameborder="0" allowfullscreen></iframe>
           </div>
@@ -457,7 +457,7 @@
   </section>
 
 
-  <div data-scroll class="section_slideshow_locations desk">
+  <div id="horizontal_scroll" data-scroll class="section_slideshow_locations desk">
       <div class="slide-container">
         <div class="slide">
           <img src="./images/content/prova-scroll.jpg" alt="">

@@ -9,23 +9,24 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 
 
-if(window.innerWidth < 768){
-   initMobile();
-}
-if(window.innerWidth > 768){
-   initDesktop();
-}
+// if(window.innerWidth < 768){
+//    initMobile();
+// }
+// if(window.innerWidth > 768){
+//    initDesktop();
+// }
+//
+// window.addEventListener("resize", function(){
+//   if(window.innerWidth < 768){
+//      initMobile();
+//   }
+//   if(window.innerWidth > 768){
+//      initDesktop();
+//   }
+// });
 
-window.addEventListener("resize", function(){
-  if(window.innerWidth < 768){
-     initMobile();
-  }
-  if(window.innerWidth > 768){
-     initDesktop();
-  }
-});
 
-
+// FUNCTION DESKTOP
 function initDesktop(){
   let scrollContainer = document.querySelector("[data-scroll-container]");
 
@@ -35,14 +36,15 @@ function initDesktop(){
     inertia: 0.8,
     getDirection: true,
     mobile: {
-         smooth: true
+         smooth: true,
+         inertia: 0.2,
      },
      tablet: {
          smooth: true,
-         breakpoint: 0
+         breakpoint: 0,
+         inertia: 0.2,
      }
   });
-
 
 
     locoScroll.on("scroll", ScrollTrigger.update);
@@ -62,35 +64,9 @@ function initDesktop(){
     pinType: scrollContainer.style.transform ? "transform" : "fixed"
   });
 
-
-
-  let horizontalSections = document.querySelectorAll(".section_slideshow_locations");
-
-   horizontalSections.forEach((horizontalSection) => {
-     let pinWrap = horizontalSection.querySelector(".slide-container");
-     let pinWrapWidth = pinWrap.offsetWidth;
-     let horizontalScrollLength = pinWrapWidth - window.innerWidth;
-     gsap.to(pinWrap, {
-       scrollTrigger: {
-         scroller: "[data-scroll-container]",
-         scrub: true,
-         trigger: horizontalSection,
-         pin: true,
-         start: "top top",
-         end: () => `+=${pinWrapWidth}`,
-         invalidateOnRefresh: true
-       },
-       x: -horizontalScrollLength,
-       ease: "none"
-     });
-   });
-
-
-
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
   ScrollTrigger.refresh();
-
 
 
   imagesLoaded(scrollContainer, { background: true }, function () {
@@ -102,16 +78,55 @@ function initDesktop(){
   scrollto.addEventListener("click", function(){
     locoScroll.scrollTo(target);
   })
+
+
+  // HORIZONTAL SCROLL SECTION
+
+   let horizontalSection = document.querySelector("#horizontal_scroll");
+   let pinWrap = horizontalSection.querySelector(".slide-container");
+   let pinWrapWidth = pinWrap.offsetWidth;
+   let horizontalScrollLength = pinWrapWidth - window.innerWidth;
+
+     gsap.to(pinWrap, {
+       scrollTrigger: {
+         scroller: "[data-scroll-container]",
+         scrub: true,
+         trigger: horizontalSection,
+         pin: true,
+         start: "top top",
+         end: () => `+=${pinWrap.offsetWidth}`,
+         invalidateOnRefresh: true
+       },
+       x: () => `-${pinWrap.offsetWidth - window.innerWidth}`,
+       ease: "none"
+     });
+
+     // ScrollTrigger.addEventListener("refreshInit");
+
 }
 
-function initMobile(){
-    const swiper = new Swiper('.swiper', {
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  });
-}
+initDesktop();
+
+
+const swiper = new Swiper('.swiper', {
+loop: true,
+pagination: {
+  el: '.swiper-pagination',
+  type: 'bullets',
+},
+});
+
+
+// FUNCTION MOBILE
+// function initMobile(){
+//     const swiper = new Swiper('.swiper', {
+//     loop: true,
+//     pagination: {
+//       el: '.swiper-pagination',
+//       type: 'bullets',
+//     },
+//   });
+// }
 
 // menu
 let openMenu = document.querySelector(".menu_btn");
