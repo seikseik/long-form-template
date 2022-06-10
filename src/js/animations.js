@@ -70,19 +70,20 @@ function initDesktop(){
 initDesktop();
 
 
-// var modal = document.getElementById("myModal");
-// var img = document.getElementById("myImg");
-// var modalImg = document.getElementById("img01");
-// var captionText = document.getElementById("caption");
-//
-// img.onclick = function(){
-//   modal.style.display = "block";
-//   modalImg.src = this.src;
-//   captionText.innerHTML = this.alt;
-// }
-//
-// var span = document.getElementsByClassName("close")[0];
-//
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
+let modal = document.getElementById("myModal");
+let imageContList = document.querySelectorAll(".tiles__line-img");
+
+let modalImg = document.getElementById("img01");
+
+imageContList.forEach((item, i) => {
+  item.onclick = function(){
+    let img = item.querySelector("img");
+    modal.style.display = "flex";
+    modalImg.src = img.src;
+  }
+});
+
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+}
