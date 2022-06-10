@@ -126,7 +126,7 @@
         </div>
       </div>
       <div class="section_text_wrapper">
-        <div class="text_container">
+        <div class="text_container" id="bici">
           <p><strong>Negli ultimi due anni l’Europa è salita in bicicletta.</strong> Le due ruote hanno garantito quel distanziamento sociale che il trasporto pubblico non può per sua natura dare e hanno permesso di trascorrere il tempo libero e le vacanze all’aperto e in posti difficilmente raggiungibili con altri mezzi. L’Italia si è perfettamente inserita in questo trend, nonostante la cultura della bicicletta (fatta eccezione per quella da competizione) non sia nel Dna del Belpaese. Le vendite sono esplose e tutt’ora i negozi hanno difficoltà a soddisfare la domanda. Le amministrazioni locali hanno cercato, pur con inevitabili errori e scarsità di fondi, di rendere le città bike-friendly. Gli alberghi e i ristoranti si sono attrezzati per ospitare i cicloturisti che, grazie alle e-bike, hanno affrontato percorsi impegnativi su ciclovie che, in molti casi, necessitano di significative migliorie. Anche l’Unione Europea ha colto i numerosi benefici che possono arrivare dall’adozione di una mobilità su due ruote e ha stanziato importanti capitali del piano Next Generation Eu per lo sviluppo della bike economy. ●</p>
         </div>
       </div>
@@ -135,7 +135,7 @@
 
   <div data-scroll class="divider-biciclette">
     <img src="./images/content/div-2.svg" alt="">
-    <img class="bici-scroll" src="./images/content/bici.svg" alt="">
+    <img data-scroll data-scroll-speed="-2.5" data-scroll-target="#bici" data-scroll-direction="horizontal" class="bici-scroll" src="./images/content/bici.svg" alt="">
   </div>
 
 
@@ -190,9 +190,40 @@
       </div>
     </div>
 
-    <div data-scroll class="section_mosaico">
+    <section class="tiles" id="grid">
+				<div class="tiles__wrap">
+					<div class="tiles__line" data-scroll data-scroll-speed="1" data-scroll-target="#grid" data-scroll-direction="horizontal">
+						<div class="tiles__line-img" style="background-image:url(./images/content/rect-1.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(./images/content/rect-1.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(./images/content/rect-1.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(./images/content/rect-1.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(./images/content/rect-1.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(./images/content/rect-1.jpg)"></div>
+					</div>
+					<!-- <div class="tiles__line" data-scroll data-scroll-speed="2" data-scroll-target="#grid" data-scroll-direction="horizontal">
+						<div class="tiles__line-img" style="background-image:url(img/demo1/24.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/23.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/22.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/19.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/18.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/17.jpg)"></div>
+					</div>
+					<div class="tiles__line" data-scroll data-scroll-speed="1" data-scroll-target="#grid" data-scroll-direction="horizontal">
+						<div class="tiles__line-img" style="background-image:url(img/demo1/16.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/15.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/14.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/13.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/12.jpg)"></div>
+						<div class="tiles__line-img" style="background-image:url(img/demo1/11.jpg)"></div>
+					</div> -->
+				</div>
+			</section>
 
-    </div>
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
 
     <div data-scroll class="section_text">
       <div class="section_heading">
