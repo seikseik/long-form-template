@@ -5,7 +5,9 @@ import LocomotiveScroll from 'locomotive-scroll';
 import imagesLoaded from 'imagesLoaded';
 import Swiper, { Navigation, Pagination } from 'swiper';
 import 'swiper/css';
+import 'swiper/css/pagination';
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
+Swiper.use([Navigation, Pagination]);
 
 
 
@@ -113,9 +115,28 @@ loop: true,
 pagination: {
   el: '.swiper-pagination',
   type: 'bullets',
+  clickable: true,
 },
 });
 
+
+const swiper_chef = new Swiper('.swiper-chef', {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  freeMode: true,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+  breakpoints: {
+    '768': {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      pagination: false,
+    }
+  }
+});
 
 // FUNCTION MOBILE
 // function initMobile(){
