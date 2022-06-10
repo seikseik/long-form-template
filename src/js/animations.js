@@ -11,22 +11,6 @@ Swiper.use([Navigation, Pagination]);
 
 
 
-// if(window.innerWidth < 768){
-//    initMobile();
-// }
-// if(window.innerWidth > 768){
-//    initDesktop();
-// }
-//
-// window.addEventListener("resize", function(){
-//   if(window.innerWidth < 768){
-//      initMobile();
-//   }
-//   if(window.innerWidth > 768){
-//      initDesktop();
-//   }
-// });
-
 
 // FUNCTION DESKTOP
 function initDesktop(){
@@ -81,106 +65,6 @@ function initDesktop(){
     locoScroll.scrollTo(target);
   })
 
-
-  // HORIZONTAL SCROLL SECTION
-
-   let horizontalSection = document.querySelector("#horizontal_scroll");
-   let pinWrap = horizontalSection.querySelector(".slide-container");
-   let pinWrapWidth = pinWrap.offsetWidth;
-   let horizontalScrollLength = pinWrapWidth - window.innerWidth;
-
-     gsap.to(pinWrap, {
-       scrollTrigger: {
-         scroller: "[data-scroll-container]",
-         scrub: true,
-         trigger: horizontalSection,
-         pin: true,
-         start: "top top",
-         end: () => `+=${pinWrap.offsetWidth}`,
-         invalidateOnRefresh: true
-       },
-       x: () => `-${pinWrap.offsetWidth - window.innerWidth}`,
-       ease: "none"
-     });
-
 }
 
 initDesktop();
-
-
-const swiper = new Swiper('.swiper', {
-loop: true,
-pagination: {
-  el: '.swiper-pagination',
-  type: 'bullets',
-  clickable: true,
-},
-});
-
-
-const swiper_chef = new Swiper('.swiper-chef', {
-  slidesPerView: 2,
-  spaceBetween: 20,
-  freeMode: true,
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true,
-  },
-  breakpoints: {
-    '768': {
-      slidesPerView: 3,
-      spaceBetween: 20,
-      pagination: false,
-    }
-  }
-});
-
-// FUNCTION MOBILE
-// function initMobile(){
-//     const swiper = new Swiper('.swiper', {
-//     loop: true,
-//     pagination: {
-//       el: '.swiper-pagination',
-//       type: 'bullets',
-//     },
-//   });
-// }
-
-// menu
-let openMenu = document.querySelector(".menu_btn");
-let closeMenu = document.querySelector(".close");
-let menuItems = gsap.utils.toArray(".menu_col");
-
-openMenu.addEventListener("click", function(){
-  let tl = gsap.timeline();
-  tl.to(".hero_content", {opacity: 0, duration: 0.1, ease: "ease"})
-  tl.to(".hero_header", {opacity: 0, duration: 0.1, ease: "ease"})
-  tl.to(".scroll", {opacity: 0, duration: 0.1, ease: "ease"})
-  tl.to(".menu_full", {opacity: 1, duration: 0.2, ease: "ease", visibility: "visible"})
-  tl.fromTo(menuItems,{autoAlpha: 0},{  duration: 0.5, autoAlpha: 1, stagger: 0.09});
-
-})
-
-closeMenu.addEventListener("click", function(){
-  let tl = gsap.timeline();
-  tl.fromTo(menuItems,{autoAlpha: 1},{  duration: 0.1, autoAlpha: 0 ,stagger: -0.06});
-  tl.to(".menu_full", {opacity: 0, duration: 0.2, ease: "ease"})
-  tl.set(".menu_full", {visibility: "hidden"})
-  tl.to(".hero_content", {opacity: 1, duration: 0.1, ease: "ease"})
-  tl.to(".hero_header", {opacity: 1, duration: 0.1, ease: "ease"})
-  tl.to(".scroll", {opacity: 1, duration: 0.1, ease: "ease"})
-})
-
-
-// // fade up
-const fadeUp = gsap.utils.toArray("[fade]");
-fadeUp.forEach((el, i) => {
-  const anim = gsap.fromTo(el, {autoAlpha: 0, y:0}, {duration: 1.5, autoAlpha: 1});
-  ScrollTrigger.create({
-    trigger: el,
-    animation: anim,
-    toggleActions: 'play none none none',
-    once: true,
-  });
-});

@@ -1,62 +1,45 @@
-$size_text: 21px;
-$size_small: 16px;
-$size_heading: 60px;
-$size_subtitle: 32px;
-$size_number: 250px;
-$size_section_title: 60px;
-$size_slide: 6vw;
+$size_text: 24px;
+$size_small: 18px;
+
+$size_heading: 84px;
+$size_subtitle: 22px;
+
+$size_section_title: 40px;
 
 $size_small_mobile: 14px;
 
-$sans: "Manrope", sans-serif;
-$serif: "Playfair Display", serif;
+$font_space: 'Space Grotesk', sans-serif;
+$font_deg_display: "degular-display", sans-serif;
+$font_deg: "degular", sans-serif;
+
 
 @mixin text{
-  font-family: $sans;
+  font-family: $font_space;
   font-size: $size_text;
-  font-weight: 100;
 }
+
 
 @mixin heading{
-  font-family: $serif;
+  font-family: $font_deg_display;
   font-size: $size_heading;
-  font-weight: 400;
-  font-style: italic;
+  font-weight: 700;
 }
 
-@mixin slideshow{
-  font-family: $serif;
-  font-size: $size_slide;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-@mixin subtitle{
-  font-family: $sans;
-  font-size: $size_subtitle;
-  font-weight: 100;
-}
-
-@mixin number{
-  font-family: $serif;
-  font-size: $size_number;
-  font-weight: 400;
-  line-height: 1;
-  font-style: normal;
-}
 
 @mixin section_title{
-  font-family: $sans;
+  font-family: $font_deg_display;
   font-size: $size_section_title;
-  font-weight: 100;
+  font-weight: 700;
   font-style: normal;
+  color:$blu;
 }
+
+
 @mixin small{
-  font-family: $sans;
+  font-family: $font_deg;
   font-size: $size_small;
-  font-weight: 600;
   font-style: normal;
+  font-weight: normal;
   text-transform: uppercase;
 }
 
