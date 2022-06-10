@@ -1,8 +1,8 @@
 <?php
 
     $pageUrl = strtok( (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) || isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", "?");
-    $pageTitle = "L’abuso dei prodotti chimici per igienizzare gli ambienti ha impatti negativi non solo sull’ambiente, ma anche sulla nostra salute. La nuova frontiera fa leva sul ruolo dei batteri buoni, i probiotici.";
-
+    $pageTitle = "La sostenibilità si muove in bicicletta.";
+    $pageDescription = "Copenhagen ha costruito la propria strategia di sostenibilità attorno alla bicicletta. La utilizzano i lavoratori per andare in ufficio, gli studenti per andare a scuola e i turisti per visitarne le bellezze. Quest’anno la sua vocazione ciclistica verrà celebrata con il via al Tour de France";
     $twitterString = "" . $pageUrl;
     $whatsappString = $pageTitle. " " . $pageUrl;
 ?>
@@ -34,7 +34,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="<?php echo $pageTitle; ?>">
     <meta property="og:description" content="<?php echo $pageDescription; ?>">
-    <meta property="og:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.png'); ?>">
+    <meta property="og:image" content="<?php echo $pageUrl; ?>meta.jpg?<?phpmeta echo filemtime('./meta.png'); ?>">
     <meta property="og:url" content="<?php echo $pageUrl; ?>">
     <meta property="article:published_time" content="2022-05-20T09:00">
     <!-- facebook -->
@@ -62,7 +62,7 @@
 
     <div data-scroll class="section_hero">
 
-      <div class="video_container">
+      <div data-scroll data-scroll-speed="-4.5" class="video_container">
         <video class="video_back" autoplay muted loop playsinline id="myVideo">
           <source src="CirkelBroen_15Sek_02.mp4" type="video/mp4">
         </video>
@@ -135,7 +135,7 @@
 
   <div data-scroll class="divider-biciclette">
     <img src="./images/content/div-2.svg" alt="">
-    <img data-scroll data-scroll-speed="-2.5" data-scroll-target="#bici" data-scroll-direction="horizontal" class="bici-scroll" src="./images/content/bici.svg" alt="">
+    <img data-scroll data-scroll-speed="-0.85" data-scroll-target="#bici" data-scroll-direction="horizontal" class="bici-scroll" src="./images/content/bici.svg" alt="">
   </div>
 
 
