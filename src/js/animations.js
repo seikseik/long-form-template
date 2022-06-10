@@ -37,8 +37,8 @@ function initDesktop(){
     smooth: true,
     inertia: 0.8,
     getDirection: true,
-    mobile: {
-         smooth: true,
+    smartphone: {
+         smooth: false,
          inertia: 0.2,
      },
      tablet: {
@@ -102,8 +102,6 @@ function initDesktop(){
        x: () => `-${pinWrap.offsetWidth - window.innerWidth}`,
        ease: "none"
      });
-
-     // ScrollTrigger.addEventListener("refreshInit");
 
 }
 
