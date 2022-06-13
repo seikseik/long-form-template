@@ -71,15 +71,17 @@ initDesktop();
 
 
 let modal = document.getElementById("myModal");
+
 let imageContList = document.querySelectorAll(".tiles__line-img");
 
 let modalImg = document.getElementById("img01");
 
 imageContList.forEach((item, i) => {
   item.onclick = function(){
-    let img = item.querySelector("img");
     modal.style.display = "flex";
-    modalImg.src = img.src;
+    let source = item.getAttribute('src')
+    modalImg.src = source;
+
   }
 });
 
