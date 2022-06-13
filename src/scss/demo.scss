@@ -59,6 +59,7 @@ strong{font-weight: 600;}
   @include heading;
   line-height: 1;
   margin-bottom: $spacing*2;
+  text-decoration: underline;
   span{
     font-style: italic;
   }
@@ -184,15 +185,7 @@ strong{font-weight: 600;}
     margin-bottom: $spacing*3;
     width:fit-content;
     position: relative;
-    &:after{
-      content: "";
-      position: absolute;
-      height: 3px;
-      background: $blu;
-      width:100%;
-      bottom: -3px;
-      left: 0;
-    }
+    text-decoration: underline;
   }
   h3{
     margin-bottom: $spacing*3;
@@ -613,6 +606,41 @@ footer{
     float: left;
     margin-right: 10px;
   }
+
+
+
+  .tiles {
+    height: 100vh;
+  	position: relative;
+  	overflow: hidden;
+    background: $viola;
+  }
+
+
+  .tiles__line {
+  	display: flex;
+  }
+
+
+  .tiles__wrap {
+  	width: 150%;
+  	height: 100vh;
+  	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	transform: translate3d(-50%,-50%, 0);
+  }
+
+  .tiles__line-img {
+  	flex: none;
+  	width: calc(33% - 10px * 2);
+  	height: calc( 100vh / 3 - 20px);
+  	margin: 10px;
+  	background-size: cover;
+  	background-position: 50% 50%;
+    cursor: pointer;
+  }
+
 
   footer{
     padding: $space $spacing*2;
