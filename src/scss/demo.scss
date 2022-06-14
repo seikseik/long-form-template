@@ -202,6 +202,28 @@ strong{font-weight: 600;}
   }
 }
 
+.map_container{
+  width:100%;
+
+  iframe{
+    overflow: hidden;
+    border-radius: 10px;
+    border:2px solid $blu;
+  }
+}
+.flourish-credit{display: none;}
+
+.video_small_container{
+  margin-top: $space*2;
+  overflow: hidden;
+  border-radius: 10px;
+  border:2px solid $blu;
+  display: flex;
+  video{
+    width:100%;
+  }
+}
+
 .first_heading{
   width: 1000px;
   max-width: 100%;
@@ -266,6 +288,10 @@ strong{font-weight: 600;}
   position: relative;
   margin-bottom: 80px;
     display: flex;
+    img:not(.bici-scroll){
+      min-width: 100%;
+      height: auto;
+    }
 }
 .divide-footer{
   margin-bottom: -1px;
