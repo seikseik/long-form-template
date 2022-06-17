@@ -645,9 +645,9 @@ footer{
     margin-bottom: 10px;
   }
   .bici-scroll{
-    top: -75%;
+    top: -150%;
     left: -50%;
-    min-width: 200%;
+    min-width: 300%;
   }
 
 
@@ -656,7 +656,12 @@ footer{
     margin-right: 10px;
   }
 
-
+.section_crop{
+  padding: 0 15px;
+}
+.video_crop{
+  padding-bottom: 57.25%;
+}
 
   .tiles {
     height: 100vh;
