@@ -71,6 +71,18 @@
 
   <body>
 
+    <div id="myModal" class="modal modal_fixed">
+      <div class="modal-container">
+        <svg class="close" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L11.6667 11.6667M17 17L33 33M33 1L1 33" stroke="#CCFC82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="bevel"/>
+        </svg>
+
+        <div class="modal_image_container">
+          <img class="modal-content" id="img01">
+        </div>
+      </div>
+    </div>
+
 
   <div class="main" data-scroll-container>
 
@@ -181,8 +193,13 @@
             </clipPath>
             </defs>
         </svg> -->
-        <video class="video_back" autoplay muted loop playsinline id="myVideo">
-          <source src="video_2.mp4" type="video/mp4">
+        <svg class="crop_prova" width="2007" height="1106" viewBox="0 0 2007 1106" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 886C16.7424 894.803 372.519 1089.13 987.804 1100.65C1461.71 1109.51 1853.36 970.127 2007 891.455V1106H0V886Z" fill="#F7F7F5"/>
+        <path d="M0 3C216.149 136.954 1139.31 408.9 2006 3L2006 0H0V3Z" fill="#F7F7F5"/>
+        </svg>
+
+        <video poster="./images/content/poster_crop.png" class="video_back" autoplay muted loop playsinline id="myVideo">
+          <source src="video_4.mp4" type="video/mp4">
         </video>
         <div class="overlay"></div>
       </div>
@@ -239,18 +256,6 @@
 
       </section>
 
-      <div id="myModal" class="modal">
-        <div class="modal-container">
-          <span class="close">
-            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L11.6667 11.6667M17 17L33 33M33 1L1 33" stroke="#CCFC82" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="bevel"/>
-            </svg>
-          </span>
-          <div class="modal_image_container">
-            <img class="modal-content" id="img01">
-          </div>
-        </div>
-      </div>
     </div>
 
 
@@ -358,9 +363,7 @@
           </div>
         </div>
         <div class="video_small_container">
-          <video class="video_back" autoplay muted loop playsinline id="myVideo">
-            <source src="video_4.mp4" type="video/mp4">
-          </video>
+          <iframe src="https://video.greenandblue.it/embed/vivere-green/copenaghen/4126/4141?responsive=true&generation=onclick&bgc=ffffff&adref=<? echo $pageUrl; ?>" width="" height=""></iframe>
         </div>
       </div>
       <div data-scroll class="divide-footer">
