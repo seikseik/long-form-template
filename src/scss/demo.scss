@@ -314,8 +314,8 @@ strong{font-weight: 600;}
 .bici-scroll{
   position: absolute;
   top:-40%;
-  left: -15%;
-  min-width: 130%;
+  left: -70%;
+  min-width: 180%;
 }
 
 
@@ -505,6 +505,11 @@ footer{
   img{
     padding: 20px $spacing;
   }
+}
+.footer_bottom_content{
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 
