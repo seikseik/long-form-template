@@ -131,14 +131,15 @@
 }
 
 .drop{
-  font-size: 200px;
+  font-size: 300px;
+  line-height: 300px;
   font-family: $mixta_p;
   font-style: italic;
   color:$yellow;
   z-index: -1;
   position: absolute;
-  top:-40px;
-  left: -40px;
+  top:-75px;
+  left: 0px;
 }
 
 
@@ -295,7 +296,11 @@
   p{z-index: 2; position: relative;}
   .drop{
     color: $green;
+    font-size: 200px;
     z-index: 1;
+    top:-50px;
+    left: 0;
+    line-height: 200px;
   }
 
   .left_heading{
@@ -305,13 +310,12 @@
     text-transform: uppercase;
     font-weight: 600;
     position: absolute;
-    left: -190px;
+    left: -60px;
     top:0;
-    transform: rotate(-90DEG);
-    transform-origin: right;
-
+    writing-mode: vertical-rl;
+    transform: rotate(180DEG);
     p{
-      padding: 5px 16px;
+      padding: 16px 3px;
     }
   }
 }
