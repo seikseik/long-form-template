@@ -318,3 +318,39 @@
     background: $green;
   }
 }
+
+footer{
+  display: flex;
+  border-top: $bo;
+  border-bottom: $bo;
+  .footer_left{
+    width:50%;
+    @include center;
+    padding: 5%;
+    border-right: $bo;
+  }
+  .footer_right{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    .footer_col{
+      border-bottom: $bo;
+      @include center;
+      flex-direction: column;
+    }
+    .footer_bottom{
+      display: flex;
+      .footer_bottom_container{
+        width:calc(100% - 80px);
+        @include center;
+      }
+      .scroll-top{
+        background: $yellow;
+        border-left: $bo;
+        @include center;
+        width:80px;
+        padding: $spacing*2;
+      }
+    }
+  }
+}
