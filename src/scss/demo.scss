@@ -16,8 +16,6 @@
       justify-content: space-between;
       padding: 10% 0;
       .logo{
-        position: absolute;
-        top:0;
         width:100%;
         display: flex;
         justify-content: center;
@@ -100,6 +98,8 @@
     display: flex;
     align-items: center;
     margin-bottom: $spacing*2;
+    position: relative;
+    z-index: -1;
     .line{
       width:100%;
       height: 1px;
@@ -138,7 +138,7 @@
   color:$yellow;
   z-index: -1;
   position: absolute;
-  top:-75px;
+  top:-130px;
   left: 0px;
 }
 
@@ -153,6 +153,13 @@
     @include quote;
     font-size: 46px;
     line-height: 1.1;
+    position: relative;
+    z-index: 3;
+  }
+  .drop{
+    top:-150px;
+    left: -50px;
+    z-index: 2;
   }
 }
 .quote_footer{
@@ -202,18 +209,27 @@
       background: $yellow;
     }
   }
+
+  .info_quote_container{position: relative;}
   .info_right{
     width:50%;
     border-left: $bo;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: $spacing*10 $spacing*4;
+    padding: $spacing*10 $spacing*6;
+    .drop{
+      font-size: 200px;
+      top:-135px;
+      left: -35px;
+      z-index: 2;
+    }
     h2{
       @include quote;
       font-size: 35px;
       line-height: 1.1;
       position: relative;
+      z-index: 3;
     }
   }
 }
