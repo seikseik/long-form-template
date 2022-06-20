@@ -35,6 +35,14 @@
       line-height: 1.1;
       margin: $spacing*2 0;
     }
+    p{
+      font-family: $mixta_p;
+      font-style: italic;
+      span{
+        color:$yellow;
+        font-style: normal;
+      }
+    }
   }
 
   .hero_description{
@@ -53,6 +61,19 @@
       min-height: 100%;
       object-fit: cover;
     }
+  }
+}
+
+.social-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: $spacing*3;
+  .line-divider{
+    width:70px;
+    height: 1px;
+    background: $white;
+    margin: 0 $spacing;
   }
 }
 
@@ -337,6 +358,21 @@ footer{
       border-bottom: $bo;
       @include center;
       flex-direction: column;
+      padding: $spacing*3 $spacing*2;
+      h5{
+        font-size: $size_s;
+        letter-spacing: 1px;
+        margin-bottom: $spacing*2;
+      }
+      .footer_col_content{
+        font-family: $mixta_s;
+        font-size: 30px;
+        text-transform: uppercase;
+        color:$brown;
+        a{
+          color:$brown;
+        }
+      }
     }
     .footer_bottom{
       display: flex;
