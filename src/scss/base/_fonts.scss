@@ -1,50 +1,24 @@
-$size_text: 24px;
-$size_small: 18px;
+$work: 'Work Sans', sans-serif;
+$mixta_s: "mixta-sharp", serif;
+$mixta_p: "mixta-pro", serif;
 
-$size_heading: 84px;
-$size_subtitle: 22px;
-
-$size_section_title: 40px;
-
-$size_mobile: 16px;
-$size_small_mobile: 14px;
-
-$font_space: 'Space Grotesk', sans-serif;
-$font_deg_display: "degular-display", sans-serif;
-$font_deg: "degular", sans-serif;
-
-
-@mixin text{
-  font-family: $font_space;
-  font-size: $size_text;
-}
-
-
-@mixin heading{
-  font-family: $font_deg_display;
-  font-size: $size_heading;
-  font-weight: 700;
-}
-
-
-@mixin section_title{
-  font-family: $font_deg_display;
-  font-size: $size_section_title;
-  font-weight: 700;
-  font-style: normal;
-  color:$blu;
-}
-
-
-@mixin small{
-  font-family: $font_deg;
-  font-size: $size_small;
-  font-style: normal;
-  font-weight: normal;
-  text-transform: uppercase;
-}
+$size_text: 22px;
+$size_heading: 48px;
+$size_s: 16px;
+$size_xs: 13px;
 
 body{
-  @include text;
-  line-height: 1.5;
+  font-family: $work;
+  font-size: $size_text;
+  line-height: 1.4;
+  background: $white;
+  color:$brown;
+}
+
+
+@mixin quote{
+  font-family: $mixta_s;
+  text-transform: uppercase;
+  position: relative;
+  color:$green;
 }
