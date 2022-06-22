@@ -532,6 +532,13 @@ footer{
       top: -100px;
     }
 
+    .top_label{
+      h4{
+        font-size: 12px;
+        letter-spacing: 0;
+      }
+    }
+
     .section_text{
       margin: $spacing*6 0;
       .text_heading{
@@ -563,20 +570,29 @@ footer{
     .info_left{
       border:$bo;
       width:100%;
+      .top_label{
+        top:-28px;
+      }
       .info_left_space{display: none;}
       .info_left_container{
         width:100%;
         border:0;
         .numbers_grid{
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 50% 50%;
         }
       }
     }
     .info_right{
       width:100%;
       padding: $spacing*4 $spacing;
+      padding-top: $spacing*10;
       border-right: $bo;
       border-bottom: $bo;
+      position: relative;
+      .top_label{
+        left: -1px;
+        top:-2px;
+      }
       h2{
         font-size: 28px;
         line-height: 1.25;
@@ -608,6 +624,15 @@ footer{
       .num_data{border-right: 1px solid $white;}
     }
   }
+  .col_num .num_data{
+    font-size: 12px;
+  }
+  .col_num .num_box{
+    font-size: 28px;
+    span{
+      font-size: 20px;
+    }
+  }
 
   .info_left_container .info_container{padding-left: 0;}
 
@@ -631,6 +656,9 @@ footer{
 
   .info_two{
     padding: 0;
+    .top_label{
+      top:-30px;
+    }
     .info_two_container{
       overflow-x: scroll;
       position: relative;
@@ -643,11 +671,28 @@ footer{
   }
 
   .info_three{
+    &.second{
+      .top_label{
+        left: 0;
+        width:100%;
+      }
+    }
     .info_col_center{
       padding: $spacing;
-      padding-top: $spacing*4;
+      padding-top: $spacing*8;
+      .top_label{
+        position: unset;
+        width:100%;
+        margin: $spacing*4 0;
+        svg{
+          padding: 0 !important;
+        }
+      }
       img, svg{
         width:100%;
+        &.hide_desktop{
+          padding: $spacing*2 $spacing*2;
+        }
       }
     }
   }
