@@ -22,6 +22,9 @@
       }
     }
   }
+  .scroll{
+    cursor: pointer;
+  }
 
   .hero_title{
     text-align: center;
@@ -190,10 +193,32 @@
   align-items: center;
   background: $yellow;
   border: $bo;
+  border-left: 0;
   font-size: $size_xs;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
+  h4{margin: 0 $spacing;}
+  .icon{
+    background: $brown;
+    height: 30px;
+    width:30px;
+    padding: 2px;
+    @include center;
+  }
+}
+
+.left_align{
+  left: $spacing*2;
+}
+.right_align{
+  right: calc((100% - 950px)/2);
+}
+.half_align{
+  left: 50%;
+}
+.bottom_align{
+  top:-1px;
 }
 
 .info_one{
@@ -354,6 +379,7 @@
   .info_col_center{
     width:$max;
     padding: $spacing*5;
+    padding-top: $spacing*10;
     border-left: $bo;
     border-right: $bo;
     background: $green;
@@ -406,6 +432,7 @@ footer{
       .scroll-top{
         background: $yellow;
         border-left: $bo;
+        cursor: pointer;
         @include center;
         width:80px;
         padding: $spacing*3 $spacing*2;

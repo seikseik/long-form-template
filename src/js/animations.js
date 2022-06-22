@@ -14,3 +14,17 @@ fadeUp.forEach((el, i) => {
     once: true,
   });
 });
+
+
+// menu
+let h = document.querySelector(".section_hero").offsetHeight;
+let arrow = document.querySelector(".scroll");
+arrow.addEventListener("click", function(){
+  gsap.to(window, {duration: 1, scrollTo: h});
+});
+
+
+let arrow_top = document.querySelector(".scroll-top");
+arrow_top.addEventListener("click", function(){
+  gsap.to(window, {duration: 1, scrollTo: 0});
+});
