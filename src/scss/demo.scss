@@ -361,6 +361,12 @@
   }
 }
 
+.banner_container{
+  img{
+    min-width: 100%;
+  }
+}
+
 
 .info_three{
   position: relative;
@@ -394,7 +400,7 @@ footer{
     width:50%;
     @include center;
     padding: 5%;
-    padding-top: 10%;
+    padding-top: 15%;
     border-right: $bo;
   }
   .footer_right{
@@ -453,7 +459,7 @@ footer{
   &:after{
     content: "";
     display: block;
-    padding-bottom: 80%;
+    padding-bottom: 95%;
   }
   .card-bottom{
     position: absolute;
@@ -466,13 +472,16 @@ footer{
 }
 .image_container{
   position: absolute;
-  top:-10%;
+  top:-25%;
   width:60%;
   left: 20%;
   overflow: hidden;
   border-radius: 10px;
   border:$bo;
   filter: drop-shadow(6px 8px 12px rgba(51, 40, 39, 0.4));
+  img{
+    min-width: 100%;
+  }
 }
 
 .card_content{
@@ -575,7 +584,6 @@ footer{
 
   .hide_mobile{display: none;}
 
-  .section_hero{display: none;}
 
     body{
       font-size: $size_s;
@@ -592,6 +600,26 @@ footer{
       h4{
         font-size: 11px;
         letter-spacing: 0;
+      }
+    }
+
+    .section_hero{
+      flex-direction: column;
+      height: auto;
+      .hero_left{
+        width:100%;
+        padding: $spacing*2;
+        .hero_title{
+          h2{
+            font-size: 35px;
+          }
+        }
+        .hero_left_container{
+          padding: $spacing*2 0;
+        }
+      }
+      .hero_right{
+        width:100%;
       }
     }
 
@@ -615,6 +643,14 @@ footer{
     .drop{
       top: -65px;
       left: 8px;
+    }
+  }
+
+  .banner_container{
+    height: 100vw;
+    img{
+      min-height: 100%;
+      object-fit: cover;
     }
   }
 
