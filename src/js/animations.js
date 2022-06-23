@@ -1,6 +1,8 @@
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap/SplitText";
+
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, SplitText);
 
 
@@ -31,27 +33,6 @@ arrow_top.addEventListener("click", function(){
 
 
 
-// animation quotes
-const quotes = document.querySelectorAll(".quote_animation");
-  quotes.forEach((quote, i) => {
-
-      quote.split = new SplitText(quote, {
-      type:"words,chars",
-      wordsClass: "split-line"
-    });
-
-    gsap.set(quote, {perspective: 400});
-    let tl = gsap.timeline({
-      scrollTrigger :{
-        trigger: quote,
-        animation: tl,
-      }
-    })
-    tl.fromTo(quote.split.words,
-    {autoAlpha: 0},{  duration: 0.7, autoAlpha: 1,ease: "ease",stagger: 0.03});
-
-  });
-
 
   const qc = gsap.utils.toArray(".quote_footer > span");
   qc.forEach((el, i) => {
@@ -79,3 +60,26 @@ const quotes = document.querySelectorAll(".quote_animation");
       once: true,
     });
   });
+
+
+  // animation quotes
+  const quotes = document.querySelectorAll(".quote_animation");
+    quotes.forEach((quote, i) => {
+
+        quote.split = new SplitText(quote, {
+        type:"words,chars",
+        wordsClass: "split-line"
+      });
+
+      gsap.set(quote, {perspective: 400});
+
+      let tl = gsap.timeline({
+        scrollTrigger :{
+          trigger: quote,
+        }
+      })
+
+      tl.fromTo(quote.split.words,
+      {autoAlpha: 0},{  duration: 0.4, autoAlpha: 1, ease: "ease",stagger: 0.02});
+
+    });
