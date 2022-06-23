@@ -6,7 +6,10 @@ import imagesLoaded from 'imagesLoaded';
 import Swiper, { Navigation, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
+
 Swiper.use([Navigation, Pagination]);
 
 
@@ -122,6 +125,7 @@ const swiper_chef = new Swiper('.swiper-chef', {
   slidesPerView: 2,
   spaceBetween: 20,
   freeMode: true,
+
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
@@ -132,6 +136,11 @@ const swiper_chef = new Swiper('.swiper-chef', {
       slidesPerView: 3,
       spaceBetween: 20,
       pagination: false,
+      grabCursor: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     }
   }
 });

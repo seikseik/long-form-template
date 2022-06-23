@@ -393,6 +393,9 @@ strong{font-weight: 600;}
   }
 }
 
+.swiper-button-next, .swiper-button-prev{color:white;}
+
+
 .text_number_title{
   display: flex;
   align-items: center;
@@ -467,7 +470,7 @@ strong{font-weight: 600;}
   .slide-container{
     display: flex;
     height: 100vh;
-    width:300%;
+    width:600%;
     flex-wrap: nowrap;
   }
 
@@ -767,6 +770,7 @@ footer{
       }
     }
   }
+
 
   .section_image_gallery{
     padding: $space $spacing*2;
