@@ -51,7 +51,7 @@ arrow_top.addEventListener("click", function(){
   const hr = gsap.utils.toArray(".line");
   hr.forEach((el, i) => {
     gsap.set(el, {transformOrigin:"left"})
-    const anim = gsap.fromTo(el, {scaleX: 0}, {duration: 1.4, scaleX: 1, delay: 1, ease: "circ.out"});
+    const anim = gsap.fromTo(el, {scaleX: 0}, {duration: 0.3, scaleX: 1, ease: "circ.out"});
     ScrollTrigger.create({
       trigger: el,
       animation: anim,
