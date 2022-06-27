@@ -19,6 +19,9 @@
         width:100%;
         display: flex;
         justify-content: center;
+        img{
+          width: 200px;
+        }
       }
     }
   }
@@ -30,7 +33,7 @@
     text-align: center;
     margin: $spacing*3 0;
     h2{
-      font-size: $size_heading;
+      font-size: 3vw;
       font-family: $mixta_s;
       text-transform: uppercase;
       line-height: 1.1;
@@ -478,6 +481,13 @@ footer{
         width:calc(100% - 80px);
         @include center;
         color:$brown;
+        .footer_bottom_content{
+          color:$brown;
+          a{color: $brown;}
+          padding: $spacing;
+          text-align: center;
+          font-size: 14px;
+        }
       }
       .scroll-top{
         background: $yellow;
@@ -665,6 +675,9 @@ footer{
       .hero_right{
         width:100%;
       }
+    }
+    .section_hero .hero_left .hero_left_container .logo img{
+      width: 160px;
     }
 
     .section_text{
