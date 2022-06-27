@@ -222,6 +222,7 @@ body{
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    opacity: 0;
     .num{
       padding: $spacing*4 $spacing*2;
       @include center;
