@@ -111,7 +111,6 @@ arrow.addEventListener("click", function(){
 
   let img = document.querySelectorAll(".modal_image")
 
-  console.log(img)
   img.forEach((item, i) => {
     item.addEventListener("click", function(){
       modal.style.display = "block";
