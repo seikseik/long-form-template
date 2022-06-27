@@ -55,7 +55,14 @@ const swiper_quarter = new Swiper('.slide_quarter', {
 
 
 
-
+ScrollTrigger.batch(".card_time", {
+  interval: 0.1, // time window (in seconds) for batching to occur.
+  batchMax: 5,   // maximum batch size (targets). Can be function-based for dynamic values
+  onEnter: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: {each: 0.15, grid: [1, 3]}, overwrite: true}),
+  onLeave: batch => gsap.set(batch, {opacity: 0, y: -100, overwrite: true}),
+  onEnterBack: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15, overwrite: true}),
+  onLeaveBack: batch => gsap.set(batch, {opacity: 0, y: 100, overwrite: true})
+});
 
 
 const fadeUp = gsap.utils.toArray("[fade]");
@@ -93,19 +100,19 @@ arrow.addEventListener("click", function(){
   // });
 
   //
-  // // // hr line animation
-  // const hr = gsap.utils.toArray(".line");
-  // hr.forEach((el, i) => {
-  //   gsap.set(el, {transformOrigin:"left"})
-  //   const anim = gsap.fromTo(el, {scaleX: 0}, {duration: 0.3, scaleX: 1, ease: "circ.out"});
-  //   ScrollTrigger.create({
-  //     trigger: el,
-  //     animation: anim,
-  //     ease: "circ.out",
-  //     toggleActions: 'play none none none',
-  //     once: true,
-  //   });
-  // });
+  // // hr line animation
+  const hr = gsap.utils.toArray(".line_separator");
+  hr.forEach((el, i) => {
+    gsap.set(el, {transformOrigin:"left"})
+    const anim = gsap.fromTo(el, {scaleX: 0}, {duration: 0.7, scaleX: 1, ease: "circ.out"});
+    ScrollTrigger.create({
+      trigger: el,
+      animation: anim,
+      ease: "circ.out",
+      toggleActions: 'play none none none',
+      once: true,
+    });
+  });
 
 
   // animation quotes
