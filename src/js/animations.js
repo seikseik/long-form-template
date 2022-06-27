@@ -2,8 +2,50 @@ import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
+import Swiper, { Navigation, Pagination } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+
+Swiper.use([Navigation, Pagination]);
 
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, SplitText);
+
+
+
+const swiper_chef = new Swiper('.swiper_fade', {
+  slidesPerView: 1,
+  spaceBetween: 0,
+});
+
+
+const swiper_half = new Swiper('.slide_half', {
+  slidesPerView: 2,
+  spaceBetween: 16,
+  pagination: false,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+
+
+const swiper_quarter = new Swiper('.slide_quarter', {
+  slidesPerView: 4,
+  spaceBetween: 16,
+  pagination: false,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+
+
+
+
 
 
 const fadeUp = gsap.utils.toArray("[fade]");
