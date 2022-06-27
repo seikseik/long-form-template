@@ -89,19 +89,6 @@ arrow.addEventListener("click", function(){
 
 
   //
-  // const qc = gsap.utils.toArray(".quote_footer > span");
-  // qc.forEach((el, i) => {
-  //   const anim = gsap.fromTo(el, {autoAlpha: 0},{  duration: 0.3, autoAlpha: 1,ease: "ease",delay: 1.5});
-  //   ScrollTrigger.create({
-  //     trigger: el,
-  //     animation: anim,
-  //     ease: "ease",
-  //     toggleActions: 'play none none none',
-  //     once: true,
-  //   });
-  // });
-
-  //
   // // hr line animation
   const hr = gsap.utils.toArray(".line_separator");
   hr.forEach((el, i) => {
@@ -117,24 +104,22 @@ arrow.addEventListener("click", function(){
   });
 
 
-  // animation quotes
-  // const quotes = document.querySelectorAll(".quote_animation");
-  //   quotes.forEach((quote, i) => {
-  //
-  //       quote.split = new SplitText(quote, {
-  //       type:"words,chars",
-  //       wordsClass: "split-line"
-  //     });
-  //
-  //     gsap.set(quote, {perspective: 400});
-  //
-  //     let tl = gsap.timeline({
-  //       scrollTrigger :{
-  //         trigger: quote,
-  //       }
-  //     })
-  //
-  //     tl.fromTo(quote.split.words,
-  //     {autoAlpha: 0},{  duration: 0.4, autoAlpha: 1, ease: "ease",stagger: 0.02});
-  //
-  //   });
+// modal
+  var modal = document.getElementById("myModal");
+
+  var modalImg = document.getElementById("img01");
+
+  let img = document.querySelectorAll(".modal_image")
+
+  console.log(img)
+  img.forEach((item, i) => {
+    item.addEventListener("click", function(){
+      modal.style.display = "block";
+      modalImg.src = item.src;
+    })
+  });
+
+  var span = document.getElementsByClassName("close")[0];
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
