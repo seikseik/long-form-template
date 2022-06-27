@@ -354,7 +354,7 @@ footer{
 
 
 
-.modal_image{cursor: pointer;}
+.modal_image, .scroll{cursor: pointer;}
 
 .modal {
   display: none;
@@ -367,15 +367,40 @@ footer{
   height: 100vh;
   overflow: auto;
   background-color: $green;
-  @include center;
 }
+
+
+.back_line{
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  top:0;
+}
+.v-line{
+  height: 100%;
+  width:1px;
+  background: $grey;
+  opacity: 0.5;
+}
+
 
 /* Modal Content (Image) */
 .modal-content {
   margin: auto;
+  z-index: 2;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  position: relative;
+  @include center;
+  width: 100%;
+  max-width: 100%;
+  pointer-events: none;
+  img{
+    height: 80vh;
+    width:auto;
+  }
 }
 
 
@@ -384,6 +409,7 @@ footer{
   top: 50px;
   right: 35px;
   color: #f1f1f1;
+  z-index: 99;
   font-weight: bold;
   display: flex;
   flex-direction: column;
