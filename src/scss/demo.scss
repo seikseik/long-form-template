@@ -29,7 +29,7 @@ body{
       h1{
         font-size: $size_hero;
         margin-bottom: $spacing*3;
-        line-height: 1.1;
+        line-height: 1;
         font-family: $futura;
         font-weight: 500;
       }
@@ -38,6 +38,9 @@ body{
       }
       span{
         text-transform: uppercase;
+        font-family: $futura;
+        font-size: 16px;
+        font-weight: 500;
       }
     }
     .hero_footer{
@@ -114,15 +117,24 @@ body{
     }
     .card_bottom{
       background: $grey;
-      font-size: 25px;
+      font-size: 30px;
+      line-height: 1.25;
       border-radius: $radius;
       overflow: hidden;
       .card_quote{
         padding: $spacing*4 $spacing*2;
+        font-family: $futura;
       }
       .card_description{
         background: white;
         padding:10px $spacing*2;
+        p{
+          font-size: $size_s;
+          line-height: 1;
+        }
+        span{
+          font-size: $size_xs;
+        }
       }
     }
   }
@@ -131,12 +143,16 @@ body{
 .image_description{
   position: absolute;
   bottom:0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.7);
   padding:10px $spacing*2;
   width:100%;
   color:white;
   p{
-    margin-bottom: 10px;
+    font-size: $size_s;
+    font-weight: lighter;
+  }
+  span{
+    font-size: $size_xs;
   }
 }
 
@@ -144,18 +160,33 @@ body{
   border-radius: $radius;
   padding: $spacing*4 $spacing*2;
   background: white;
+  .text_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
   .author{
     background: $grey;
     padding: $spacing/2 $spacing*2;
     width: fit-content;
     border-radius: 100px;
     margin-bottom: $spacing*6;
+    font-family: $futura;
+    font-weight: 500;
+    font-size: $size_s;
   }
   .title_chapter{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     h2{
       font-size: $size_head;
       color:$grey;
       margin-bottom: $spacing*6;
+      font-family: $futura;
+      font-weight: 500;
     }
     .line_separator{
       width:40%;
@@ -193,6 +224,12 @@ body{
       padding: $spacing*4 $spacing*2;
       @include center;
       background: $grey;
+      color:white;
+      font-size: 50px;
+      span{
+        font-size: 30px;
+        margin-left: 5px;
+      }
     }
     .info{
       padding: $spacing*4 $spacing*2;
@@ -200,6 +237,7 @@ body{
       background: white;
       height: 150px;
       text-align: center;
+      font-size: $size_s;
     }
   }
 }
@@ -233,7 +271,7 @@ body{
 }
 
 .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
-  
+
 }
 
 
