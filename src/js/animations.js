@@ -2,13 +2,14 @@ import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination,  EffectFade, Autoplay} from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import 'swiper/css/effect-fade';
 
 
-Swiper.use([Navigation, Pagination]);
+Swiper.use([Navigation, Pagination, EffectFade, Autoplay]);
 
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, SplitText);
 
@@ -17,6 +18,15 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, SplitText);
 const swiper_chef = new Swiper('.swiper_fade', {
   slidesPerView: 1,
   spaceBetween: 0,
+  autoplay: {
+    delay: 3000,
+  },
+  effect: 'fade',
+  speed: 800,
+   fadeEffect: {
+     crossFade: true
+   },
+
 });
 
 
