@@ -1,8 +1,8 @@
 <?php
 
     $pageUrl = strtok( (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) || isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", "?");
-    $pageTitle = "La sostenibilità si muove in bicicletta.";
-    $pageDescription = "Copenaghen ha costruito la propria strategia di sostenibilità attorno alla bicicletta. La utilizzano i lavoratori per andare in ufficio, gli studenti per andare a scuola e i turisti per visitarne le bellezze. Quest’anno la sua vocazione ciclistica verrà celebrata con il via al Tour de France";
+    $pageTitle = "L’arte per la comunità";
+    $pageDescription = "Con le aperture di Napoli e Torino arrivano a quattro le “Gallerie d’Italia” di Intesa Sanpaolo, musei che valorizzano i patrimoni d’arte di proprietà, condividendoli con i territori";
     $twitterString = "" . $pageUrl;
     $whatsappString = $pageTitle. " " . $pageUrl;
 ?>
@@ -64,16 +64,31 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://use.typekit.net/ghj1glf.css">
-  <script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"></head>
+    <link rel="stylesheet" href="https://use.typekit.net/ctn5pmh.css">
+
+  <script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"><script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"></head>
 
   <body>
   <div class="main">
 
 
+    <div id="myModal" class="modal">
 
+      <div class="modal-content">
+        <span class="close">
+          <svg width="52" height="35" viewBox="0 0 52 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 34L51.2105 1.16607" stroke="white"/>
+          <path d="M1 1L51.2105 33.8339" stroke="white"/>
+          </svg>
+          chiudi
+        </span>
+      </div>
+
+      <img class="modal-content" id="img01">
+
+    </div>
 
     <div class="section_hero">
       <div class="section_hero_container">
@@ -82,12 +97,11 @@
             <img src="./images/content/logo.svg" alt="">
           </div>
           <div class="hero_text_container">
-            <h1>L’arte per la comunità</h1>
+            <h1>L’arte per <br> la comunità</h1>
             <p>Con le aperture di Napoli e Torino arrivano a quattro le “Gallerie d’Italia” di Intesa Sanpaolo, musei che valorizzano i patrimoni d’arte di proprietà, condividendoli con i territori</p>
             <span>▲ IN COLLABORAZIONE CON INTESA SAN PAOLO</span>
           </div>
           <div class="hero_footer">
-            <div class="social-list_container">
               <div class="social-list">
                 <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"><img src="./images/content/fb.svg" alt=""></a>
                 <span class="line-divider"></span>
@@ -99,11 +113,28 @@
                 <path d="M20.835 13.4091V23.4574L24.6638 19.6158L25.8271 20.7663L20.004 26.5767L14.1936 20.7663L15.3314 19.6158L19.173 23.4574V13.4091H20.835Z" fill="#374F35"/>
                 </svg>
               </div>
-            </div>
           </div>
         </div>
         <div class="hero_right">
-
+          <div class="swiper swiper_fade">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/content/1_Landing.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/content/2_Landing.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/content/3_Landing.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/content/4_Landing.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/content/5_Landing.jpg" alt="">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -112,7 +143,7 @@
     <div class="section_text">
       <div class="col_image">
         <div class="image_container">
-          <img src="#" alt="">
+          <img class="modal_image"  src="./images/content/1_Scroll.png" alt="">
         </div>
         <div class="image_description">
           <p>La nuova sede museale di Intesa Sanpaolo</p>
@@ -124,7 +155,7 @@
           <div class="author chip">
             di Luigi dell’Olio
           </div>
-          <p>L’arte come motore per lo sviluppo sostenibile dei territori, nonché strumento di progresso civile e di inclusione sociale. È l’approccio che orienta il “Progetto Cultura” inserito da Intesa Sanpaolo all’interno del suo piano d’impresa. Un programma pluriennale dedicato che da una parte punta a salvaguardare le opere architettoniche e artistiche del gruppo per poterle condividere con la comunità, dall’altro a tutelare e valorizzare il patrimonio storico-artistico nazionale grazie alle sinergie tra pubblico e privato. Un’azione condivisa con istituzioni culturali e museali in ambito nazionale – dal teatro alla musica, alla fotografia, al cinema, all’editoria – per contribuire alla crescita civile e culturale del Paese. In questa logica rientra “Restituzioni”, programma di restauro e valorizzazione delle opere d’arte appartenenti al patrimonio nazionale. Un ruolo fondamentale è svolto anche dall’archivio storico, che costituisce la memoria del gruppo bancario e al tempo stesso un bene culturale collettivo del Paese, che si occupa di tutelare le fonti documentarie ereditate.</p>
+          <p fade>L’arte come motore per lo sviluppo sostenibile dei territori, nonché strumento di progresso civile e di inclusione sociale. È l’approccio che orienta il “Progetto Cultura” inserito da Intesa Sanpaolo all’interno del suo piano d’impresa. Un programma pluriennale dedicato che da una parte punta a salvaguardare le opere architettoniche e artistiche del gruppo per poterle condividere con la comunità, dall’altro a tutelare e valorizzare il patrimonio storico-artistico nazionale grazie alle sinergie tra pubblico e privato. Un’azione condivisa con istituzioni culturali e museali in ambito nazionale – dal teatro alla musica, alla fotografia, al cinema, all’editoria – per contribuire alla crescita civile e culturale del Paese. In questa logica rientra “Restituzioni”, programma di restauro e valorizzazione delle opere d’arte appartenenti al patrimonio nazionale. Un ruolo fondamentale è svolto anche dall’archivio storico, che costituisce la memoria del gruppo bancario e al tempo stesso un bene culturale collettivo del Paese, che si occupa di tutelare le fonti documentarie ereditate.</p>
         </div>
       </div>
     </div>
@@ -137,13 +168,13 @@
             <h2>Gallerie d’Italia</h2>
             <div class="line_separator"></div>
           </div>
-          <p>Palazzi, collezioni d’arte e archivi, ereditati dalle banche progressivamente entrati a far parte del gruppo costituiscono un vasto patrimonio da tutelare e condividere con il pubblico. Così sono nate nel 1999 e si sono alimentate negli anni le “Gallerie d’Italia”, una rete di quattro musei presenti nel territorio nazionale (Milano, Vicenza, Napoli e Torino), per una superficie di 14.200 mq destinati a diventare 30mila entro il 2025, che puntano a far conoscere una selezione delle 35 mila opere d’arte, «nella consapevolezza che questo patrimonio, al di là della proprietà giuridica, appartiene alla ricchezza del Paese», spiega Giovanni Bazoli, presidente emerito del gruppo. «Per realizzare l’obiettivo abbiamo trasformato in musei, cioè a uso pubblico, pregevoli palazzi situati in luoghi simbolo delle città e precedentemente adibiti ai nostri uffici. Tutto questo è servito anche a rivitalizzare i centri storici delle città interessate», aggiunge. </p>
+          <p fade>Palazzi, collezioni d’arte e archivi, ereditati dalle banche progressivamente entrati a far parte del gruppo costituiscono un vasto patrimonio da tutelare e condividere con il pubblico. Così sono nate nel 1999 e si sono alimentate negli anni le “Gallerie d’Italia”, una rete di quattro musei presenti nel territorio nazionale (Milano, Vicenza, Napoli e Torino), per una superficie di 14.200 mq destinati a diventare 30mila entro il 2025, che puntano a far conoscere una selezione delle 35 mila opere d’arte, «nella consapevolezza che questo patrimonio, al di là della proprietà giuridica, appartiene alla ricchezza del Paese», spiega Giovanni Bazoli, presidente emerito del gruppo. «Per realizzare l’obiettivo abbiamo trasformato in musei, cioè a uso pubblico, pregevoli palazzi situati in luoghi simbolo delle città e precedentemente adibiti ai nostri uffici. Tutto questo è servito anche a rivitalizzare i centri storici delle città interessate», aggiunge. </p>
         </div>
       </div>
 
       <div class="col_image">
         <div class="image_container">
-          <img src="#" alt="">
+          <img class="modal_image"  src="./images/content/2_Scroll.png" alt="">
         </div>
         <div class="image_description">
           <p>La nuova sede museale di Intesa Sanpaolo</p>
@@ -200,7 +231,7 @@
     <div class="section_text">
       <div class="col_image">
         <div class="image_container">
-          <img src="#" alt="">
+          <img class="modal_image" src="./images/content/3_Scroll.png" alt="">
         </div>
         <div class="image_description">
           <p>Sansone e Dalila</p>
@@ -213,7 +244,7 @@
             <h2>La novità di Napoli</h2>
             <div class="line_separator"></div>
           </div>
-          <p>Accanto alle collezioni permanenti, le Gallerie d’Italia organizzano anche mostre temporanee. L’ultima apertura risale a metà maggio a Napoli, all’interno del monumentale edificio storico dell’ex Banco di Napoli riqualificato dallo studio Michele De Lucchi–Amdl Circle. Il museo ospita una selezione di dipinti e sculture di ambito napoletano e meridionale dagli inizi del Diciasettesimo ai primi decenni del Ventesimo secolo, a partire dal capolavoro del “Martirio di sant’Orsola” di Caravaggio, al primo piano, oltre a nuovi itinerari dedicati alle ceramiche attiche e magnogreche e all’arte moderna e contemporanea al secondo. Le opere della collezione permanente sono distribuite lungo tre direttrici tematiche. Le “Gallerie d’Italia – Napoli” sono state concepite come un luogo per la cittadinanza e grazie al monumentale atrio d’ingresso che vive in simbiosi con la strada si stabilisce continuità e stretta connessione con lo spazio urbano.</p>
+          <p fade>Accanto alle collezioni permanenti, le Gallerie d’Italia organizzano anche mostre temporanee. L’ultima apertura risale a metà maggio a Napoli, all’interno del monumentale edificio storico dell’ex Banco di Napoli riqualificato dallo studio Michele De Lucchi–Amdl Circle. Il museo ospita una selezione di dipinti e sculture di ambito napoletano e meridionale dagli inizi del Diciasettesimo ai primi decenni del Ventesimo secolo, a partire dal capolavoro del “Martirio di sant’Orsola” di Caravaggio, al primo piano, oltre a nuovi itinerari dedicati alle ceramiche attiche e magnogreche e all’arte moderna e contemporanea al secondo. Le opere della collezione permanente sono distribuite lungo tre direttrici tematiche. Le “Gallerie d’Italia – Napoli” sono state concepite come un luogo per la cittadinanza e grazie al monumentale atrio d’ingresso che vive in simbiosi con la strada si stabilisce continuità e stretta connessione con lo spazio urbano.</p>
         </div>
       </div>
     </div>
@@ -221,34 +252,57 @@
     <div class="section_slideshow slide_half swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="" alt="">
+          <img src="./images/content/1_Gallery_1.jpg" alt="">
           <div class="image_description">
             <p>Natura morta con pesci e molluschi</p>
             <span>Giuseppe Recco</span>
           </div>
         </div>
         <div class="swiper-slide">
-          <img src="" alt="">
+          <img src="./images/content/2_Gallery_1.jpg" alt="">
           <div class="image_description">
             <p>Natura morta con pesci e molluschi</p>
             <span>Giuseppe Recco</span>
           </div>
         </div>
         <div class="swiper-slide">
-          <img src="" alt="">
+          <img src="./images/content/3_Gallery_1.jpg" alt="">
           <div class="image_description">
             <p>Natura morta con pesci e molluschi</p>
             <span>Giuseppe Recco</span>
           </div>
         </div>
         <div class="swiper-slide">
-          <img src="" alt="">
+          <img src="./images/content/4_Gallery_1.jpg" alt="">
+          <div class="image_description">
+            <p>Natura morta con pesci e molluschi</p>
+            <span>Giuseppe Recco</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/content/5_Gallery_1.jpg" alt="">
+          <div class="image_description">
+            <p>Natura morta con pesci e molluschi</p>
+            <span>Giuseppe Recco</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/content/6_Gallery_1.jpg" alt="">
+          <div class="image_description">
+            <p>Natura morta con pesci e molluschi</p>
+            <span>Giuseppe Recco</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/content/7_Gallery_1.jpg" alt="">
           <div class="image_description">
             <p>Natura morta con pesci e molluschi</p>
             <span>Giuseppe Recco</span>
           </div>
         </div>
       </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
 
 
@@ -260,14 +314,14 @@
             <h2>La novità di Napoli</h2>
             <div class="line_separator"></div>
           </div>
-          <p>Accanto alle collezioni permanenti, le Gallerie d’Italia organizzano anche mostre temporanee. L’ultima apertura risale a metà maggio a Napoli, all’interno del monumentale edificio storico dell’ex Banco di Napoli riqualificato dallo studio Michele De Lucchi–Amdl Circle. Il museo ospita una selezione di dipinti e sculture di ambito napoletano e meridionale dagli inizi del Diciasettesimo ai primi decenni del Ventesimo secolo, a partire dal capolavoro del “Martirio di sant’Orsola” di Caravaggio, al primo piano, oltre a nuovi itinerari dedicati alle ceramiche attiche e magnogreche e all’arte moderna e contemporanea al secondo. Le opere della collezione permanente sono distribuite lungo tre direttrici tematiche. Le “Gallerie d’Italia – Napoli” sono state concepite come un luogo per la cittadinanza e grazie al monumentale atrio d’ingresso che vive in simbiosi con la strada si stabilisce continuità e stretta connessione con lo spazio urbano.</p>
+          <p fade>Accanto alle collezioni permanenti, le Gallerie d’Italia organizzano anche mostre temporanee. L’ultima apertura risale a metà maggio a Napoli, all’interno del monumentale edificio storico dell’ex Banco di Napoli riqualificato dallo studio Michele De Lucchi–Amdl Circle. Il museo ospita una selezione di dipinti e sculture di ambito napoletano e meridionale dagli inizi del Diciasettesimo ai primi decenni del Ventesimo secolo, a partire dal capolavoro del “Martirio di sant’Orsola” di Caravaggio, al primo piano, oltre a nuovi itinerari dedicati alle ceramiche attiche e magnogreche e all’arte moderna e contemporanea al secondo. Le opere della collezione permanente sono distribuite lungo tre direttrici tematiche. Le “Gallerie d’Italia – Napoli” sono state concepite come un luogo per la cittadinanza e grazie al monumentale atrio d’ingresso che vive in simbiosi con la strada si stabilisce continuità e stretta connessione con lo spazio urbano.</p>
         </div>
       </div>
 
       <div class="col_image doppia_card">
         <div class="card_top">
           <div class="image_container">
-            <img src="#" alt="">
+            <img  class="modal_image" src="./images/content/scroll_small.jpg" alt="">
           </div>
           <div class="image_description">
             <p>Sansone e Dalila</p>
@@ -277,7 +331,7 @@
 
         <div class="card_bottom">
           <div class="card_quote">
-            <h2>«All’arte, alla storia e alla cultura facciamo ricorso per attingere forza morale in questi drammatici momenti di guerra che hanno sconvolto l’Europa. Con il progetto delle Gallerie vogliamo favorire la vitalità dei territori, in una prospettiva sempre più europea e internazionale»</h2>
+            <h2 fade>«All’arte, alla storia e alla cultura facciamo ricorso per attingere forza morale in questi drammatici momenti di guerra che hanno sconvolto l’Europa. Con il progetto delle Gallerie vogliamo favorire la vitalità dei territori, in una prospettiva sempre più europea e internazionale»</h2>
           </div>
           <div class="card_description">
             <p>Giovanni Bazoli</p>
@@ -291,41 +345,78 @@
     <div class="section_slideshow slide_quarter swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="" alt="">
+          <img src="./images/content/1_Gallery_2.jpg" alt="">
           <div class="image_description">
             <p>Natura morta con pesci e molluschi</p>
             <span>Giuseppe Recco</span>
           </div>
         </div>
         <div class="swiper-slide">
-          <img src="" alt="">
+          <img src="./images/content/2_Gallery_2.jpg" alt="">
           <div class="image_description">
             <p>Natura morta con pesci e molluschi</p>
             <span>Giuseppe Recco</span>
           </div>
         </div>
         <div class="swiper-slide">
-          <img src="" alt="">
+          <img src="./images/content/3_Gallery_2.jpg" alt="">
           <div class="image_description">
             <p>Natura morta con pesci e molluschi</p>
             <span>Giuseppe Recco</span>
           </div>
         </div>
         <div class="swiper-slide">
-          <img src="" alt="">
+          <img src="./images/content/4_Gallery_2.jpg" alt="">
+          <div class="image_description">
+            <p>Natura morta con pesci e molluschi</p>
+            <span>Giuseppe Recco</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/content/5_Gallery_2.jpg" alt="">
+          <div class="image_description">
+            <p>Natura morta con pesci e molluschi</p>
+            <span>Giuseppe Recco</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/content/6_Gallery_2.jpg" alt="">
+          <div class="image_description">
+            <p>Natura morta con pesci e molluschi</p>
+            <span>Giuseppe Recco</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/content/7_Gallery_2.jpg" alt="">
+          <div class="image_description">
+            <p>Natura morta con pesci e molluschi</p>
+            <span>Giuseppe Recco</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/content/8_Gallery_2.jpg" alt="">
+          <div class="image_description">
+            <p>Natura morta con pesci e molluschi</p>
+            <span>Giuseppe Recco</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/content/9_Gallery_2.jpg" alt="">
           <div class="image_description">
             <p>Natura morta con pesci e molluschi</p>
             <span>Giuseppe Recco</span>
           </div>
         </div>
       </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
 
 
     <div class="section_text">
       <div class="col_image">
         <div class="image_container">
-          <img src="#" alt="">
+          <img class="modal_image"  src="./images/content/4_Scroll.png" alt="">
         </div>
         <div class="image_description">
           <p>La nuova sede museale di Intesa Sanpaolo</p>
@@ -338,14 +429,16 @@
             <h2>Restituzioni</h2>
             <div class="line_separator"></div>
           </div>
-          <p>La sede napoletana di Gallerie d’Italia ospita l’esposizione conclusiva della diciannovesima edizione di Restituzioni, programma biennale di salvaguardia e valorizzazione del patrimonio artistico nazionale che Intesa Sanpaolo conduce da oltre trent’anni in collaborazione con il ministero della Cultura. Visitabile fino al 25 settembre prossimo, l’esposizione presenta i restauri di 87 nuclei di opere per un totale di 231 manufatti, selezionati dal gruppo bancario insieme a una serie enti di tutela (soprintendenze, direzioni regionali musei e musei autonomi). Questa edizione di Restituzioni copre un arco cronologico di 26 secoli, spaziando dall’antichità al contemporaneo, fornendo così un ampio panorama del patrimonio artistico italiano. Tra le opere oggetto di restauro, un gruppo di specchi bronzei del quarto e del quinto secolo dal museo archeologico nazionale di Locri, il Larario in legno carbonizzato da Ercolano, i tre mosaici pavimentali paleocristiani dalle grandi terme di Aquileia e il Polittico di Giusto de’ Menabuoi dal Battistero di Padova.</p>
+          <p fade>La sede napoletana di Gallerie d’Italia ospita l’esposizione conclusiva della diciannovesima edizione di Restituzioni, programma biennale di salvaguardia e valorizzazione del patrimonio artistico nazionale che Intesa Sanpaolo conduce da oltre trent’anni in collaborazione con il ministero della Cultura. Visitabile fino al 25 settembre prossimo, l’esposizione presenta i restauri di 87 nuclei di opere per un totale di 231 manufatti, selezionati dal gruppo bancario insieme a una serie enti di tutela (soprintendenze, direzioni regionali musei e musei autonomi). Questa edizione di Restituzioni copre un arco cronologico di 26 secoli, spaziando dall’antichità al contemporaneo, fornendo così un ampio panorama del patrimonio artistico italiano. Tra le opere oggetto di restauro, un gruppo di specchi bronzei del quarto e del quinto secolo dal museo archeologico nazionale di Locri, il Larario in legno carbonizzato da Ercolano, i tre mosaici pavimentali paleocristiani dalle grandi terme di Aquileia e il Polittico di Giusto de’ Menabuoi dal Battistero di Padova.</p>
         </div>
       </div>
     </div>
 
     <div class="section_full">
       <div class="image_full_container">
-        <img src="#" alt="">
+        <div class="image-crop">
+          <img src="./images/content/full_image.jpg" alt="">
+        </div>
       </div>
     </div>
 
@@ -353,18 +446,20 @@
 
     <footer>
       <div class="footer_container">
-        <div class="footer_col">
-          <h5>IN COLLABORAZIONE CON</h5>
-          <div class="footer_col_content footer_logo_cont">
-            <a target="_blank" href="https://www.visitcopenhagen.it/">
-              <img src="./images/content/logo_cliente.png" alt="">
-            </a>
-          </div>
-        </div>
+
         <div class="footer_col">
           <h5>UNA PRODUZIONE</h5>
           <div class="footer_col_content">
             <a target="_blank" href="https://www.gedivisual.it/">GEDI VISUAL</a>
+          </div>
+        </div>
+
+        <div class="footer_col">
+          <h5>IN COLLABORAZIONE CON</h5>
+          <div class="footer_col_content footer_logo_cont">
+            <a target="_blank" href="https://www.visitcopenhagen.it/">
+              <img src="./images/content/logo_cliente.svg" alt="">
+            </a>
           </div>
         </div>
 
@@ -375,12 +470,10 @@
           </div>
         </div>
 
-        <div class="footer_bottom">
-          <div class="footer_bottom_container">
-            <div class="footer_bottom_content">
-              <esi:include src="https://lab.gedidigital.it/utils/includes/footer/content_hub.html" />
-            </div>
-          </div>
+      </div>
+      <div class="footer_bottom">
+          <div class="footer_bottom_content">
+            <esi:include src="https://lab.gedidigital.it/utils/includes/footer/content_hub.html" />
         </div>
       </div>
     </footer>
