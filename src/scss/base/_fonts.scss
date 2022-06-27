@@ -1,24 +1,8 @@
-$work: 'Work Sans', sans-serif;
-$mixta_s: "mixta-sharp", serif;
-$mixta_p: "mixta-pro", serif;
+$plex: 'IBM Plex Mono', monospace;
+$futura: "futura-pt",sans-serif;
 
-$size_text: 22px;
-$size_heading: 45px;
-$size_s: 16px;
-$size_xs: 13px;
-
-body{
-  font-family: $work;
-  font-size: $size_text;
-  line-height: 1.4;
-  background: $white;
-  color:$brown;
-}
-
-
-@mixin quote{
-  font-family: $mixta_s;
-  text-transform: uppercase;
-  position: relative;
-  color:$green;
-}
+$size_text: 20px;
+$size_hero: 5vw;
+$size_s: 18px;
+$size_xs: 12px;
+$size_head: 50px;
