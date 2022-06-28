@@ -235,12 +235,16 @@
 
 .info_one{
   display: flex;
-  border-top:$bo;
-  border-bottom: $bo;
+  flex-direction: column;
   position: relative;
+  width:$max;
+  max-width: 100%;
+  margin: 0 auto;
   .info_left{
-    width:50%;
+    width:80%;
+    margin: 0 auto;
     display: flex;
+    margin-bottom: $spacing*12;
     .info_left_space{
       width:$spacing*2;
       background: $yellow;
@@ -249,12 +253,11 @@
 
   .info_quote_container{position: relative;}
   .info_right{
-    width:50%;
-    border-left: $bo;
+    width:100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: $spacing*10 $spacing*6;
+    padding: $spacing;
     .drop{
       font-size: 200px;
       top:-135px;
@@ -277,10 +280,16 @@
   display: flex;
   flex-direction: column;
   width: calc(100% - 16px);
-  border-left: $bo;
   .numbers_grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    border:$bo;
+    .top_label{
+      bottom:-30px;
+      right:-2px;
+      top:unset;
+    }
   }
   .info_container{
     background: $green;
@@ -393,17 +402,18 @@
 
   .left_heading{
     font-size: $size_xs;
-    border: 1px solid $white;
-    background: $green;
-    text-transform: uppercase;
-    font-weight: 600;
-    position: absolute;
-    left: -60px;
+    width:$max;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 80px;
     top:0;
-    writing-mode: vertical-rl;
-    transform: rotate(180DEG);
     p{
-      padding: 16px 3px;
+      padding: 8px 25px;
+      border: 1px solid $white;
+      background: $green;
+      text-transform: uppercase;
+      font-weight: 600;
+      width: fit-content;
     }
   }
 }
@@ -510,6 +520,8 @@ footer{
   background: $yellow;
   border-radius: 10px;
   border:$bo;
+  max-width: 550px;
+  margin: 0 auto;
   &:after{
     content: "";
     display: block;
@@ -721,10 +733,11 @@ footer{
     border-top:0;
     border-bottom: 0;
     .info_left{
-      border:$bo;
       width:100%;
+      margin-bottom: 0;
       .top_label{
-        top:-28px;
+        right: unset;
+        left: -2px;
       }
       .info_left_space{display: none;}
       .info_left_container{
@@ -737,10 +750,8 @@ footer{
     }
     .info_right{
       width:100%;
-      padding: $spacing*4 $spacing;
+      padding: 0;
       padding-top: $spacing*10;
-      border-right: $bo;
-      border-bottom: $bo;
       position: relative;
       .top_label{
         left: -1px;
@@ -791,12 +802,12 @@ footer{
 
   .black_section{
     margin: 0;
-    padding-top: $spacing*15;
+    padding-top: $spacing*6;
     .left_heading{
-      left: $spacing*2;
       transform: none;
       writing-mode: unset;
-      top: -70px;
+      padding-left: $spacing*2;
+      margin-bottom: $spacing*8;
       p{
         padding: $spacing/2 $spacing*2;
       }
@@ -872,7 +883,15 @@ footer{
   .card_container:after{
     padding-bottom: 110%;
   }
+  .image_container{
+    top:-13%;
+    width:60%;
+    left: 20%;
+  }
 
+  .card_content h2{
+    max-width: 100%;
+  }
 
 
 }
