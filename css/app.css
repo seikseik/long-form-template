@@ -895,44 +895,42 @@ footer .footer_right .footer_bottom .scroll-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   position: relative;
   color: #332827;
 }
-.card_content svg {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  width: 60px;
-  height: 60px;
-}
 .card_content h2 {
   font-size: 30px;
-  margin-bottom: 16px;
   text-transform: uppercase;
   font-family: "mixta-sharp", serif;
   line-height: 1.1;
   max-width: 80%;
+  padding-bottom: 16px;
 }
 .card_content p {
   font-size: 16px;
   letter-spacing: 1px;
-  margin-bottom: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  white-space: nowrap;
+  position: relative;
+  bottom: -26px;
 }
 .card_content p .line {
-  width: 50px;
-  height: 1px;
+  height: 30px;
+  width: 1px;
   background: #332827;
-  margin-right: 8px;
+  margin-top: 8px;
 }
 
 @media (min-width: 980px) and (max-width: 1200px) {
@@ -1252,7 +1250,35 @@ footer .footer_right .footer_bottom .scroll-top {
     left: 20%;
   }
 
+  .card_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .card_content h2 {
     max-width: 100%;
+    padding: 0;
+    margin-bottom: 13px;
+  }
+  .card_content p {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    bottom: unset;
+    left: -16px;
+  }
+  .card_content p .line {
+    width: 30px;
+    height: 1px;
+    margin-right: 10px;
+    margin-top: 0;
   }
 }
