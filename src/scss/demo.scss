@@ -552,35 +552,31 @@ footer{
 
 .card_content{
   display: flex;
-  flex-direction: column;
   position: relative;
   color:$brown;
-  svg{
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    width:60px;
-    height: 60px;
-  }
   h2{
     font-size: 30px;
-    margin-bottom: $spacing*2;
     text-transform: uppercase;
     font-family: $mixta_s;
     line-height: 1.1;
     max-width: 80%;
+    padding-bottom: $spacing*2;
   }
   p{
     font-size: $size_s;
     letter-spacing: 1px;
-    margin-bottom: $spacing*2;
     display: flex;
     align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    white-space: nowrap;
+    position: relative;
+    bottom:-26px;
     .line{
-      width:50px;
-      height: 1px;
+      height: 30px;
+      width: 1px;
       background: $brown;
-      margin-right: $spacing;
+      margin-top: $spacing;
     }
   }
 }
@@ -888,9 +884,26 @@ footer{
     width:60%;
     left: 20%;
   }
-
-  .card_content h2{
-    max-width: 100%;
+  .card_content{
+    flex-direction: column;
+    h2{
+      max-width: 100%;
+      padding: 0;
+      margin-bottom: 13px;
+    }
+    p{
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      bottom:unset;
+      left: -16px;
+      .line{
+        width:30px;
+        height: 1px;
+        margin-right: 10px;
+        margin-top: 0;
+      }
+    }
   }
 
 
