@@ -14,22 +14,6 @@ Swiper.use([Navigation, Pagination]);
 
 
 
-// if(window.innerWidth < 768){
-//    initMobile();
-// }
-// if(window.innerWidth > 768){
-//    initDesktop();
-// }
-//
-// window.addEventListener("resize", function(){
-//   if(window.innerWidth < 768){
-//      initMobile();
-//   }
-//   if(window.innerWidth > 768){
-//      initDesktop();
-//   }
-// });
-
 
 // FUNCTION DESKTOP
 function initDesktop(){
@@ -38,16 +22,16 @@ function initDesktop(){
   const locoScroll = new LocomotiveScroll({
     el: scrollContainer,
     smooth: true,
-    inertia: 0.8,
+    inertia: 0.9,
     getDirection: true,
     smartphone: {
          smooth: false,
-         inertia: 0.2,
+         inertia: 0.9,
      },
      tablet: {
          smooth: true,
          breakpoint: 0,
-         inertia: 0.2,
+         inertia: 0.9,
      }
   });
 
