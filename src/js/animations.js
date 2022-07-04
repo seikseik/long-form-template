@@ -18,6 +18,7 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, SplitText);
 const swiper_chef = new Swiper('.swiper_fade', {
   slidesPerView: 1,
   spaceBetween: 0,
+  loop: true,
   autoplay: {
     delay: 3000,
   },
@@ -30,10 +31,42 @@ const swiper_chef = new Swiper('.swiper_fade', {
 });
 
 
+const swiper_gallerie = new Swiper('.swiper_gallerie', {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  effect: 'fade',
+  speed: 800,
+   fadeEffect: {
+     crossFade: true
+   },
+});
+
+const swiper_spazio = new Swiper('.swiper_spazio', {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  effect: 'fade',
+  speed: 800,
+   fadeEffect: {
+     crossFade: true
+   },
+});
+
+
+
 const swiper_half = new Swiper('.slide_half', {
-  slidesPerView: 2,
+  slidesPerView: "auto",
+  loop: true,
   spaceBetween: 16,
   pagination: false,
+  autoHeight: true,
   grabCursor: true,
   navigation: {
     nextEl: '.swiper-button-next',
@@ -43,9 +76,10 @@ const swiper_half = new Swiper('.slide_half', {
 
 
 const swiper_quarter = new Swiper('.slide_quarter', {
-  slidesPerView: 4,
+  slidesPerView: "auto",
   spaceBetween: 16,
   pagination: false,
+  loop: true,
   grabCursor: true,
   navigation: {
     nextEl: '.swiper-button-next',

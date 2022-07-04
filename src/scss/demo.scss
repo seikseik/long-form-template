@@ -85,6 +85,9 @@ body{
 
 .section_text{
   display: grid;
+  width:$max;
+  max-width: 100%;
+  margin: 0 auto;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: $spacing*2;
   margin-bottom: $spacing*2;
@@ -223,6 +226,11 @@ body{
     flex-direction: column;
     overflow: hidden;
     opacity: 0;
+    &:hover{
+      .num{
+        background: $green;
+      }
+    }
     .num{
       padding: $spacing*4 $spacing*2;
       @include center;
@@ -245,6 +253,14 @@ body{
   }
 }
 
+.swiper_gallerie{
+  border-radius: $radius;
+  .image_description{
+    z-index: 22;
+    border-bottom-left-radius: $radius;
+  }
+}
+
 .slide_half{
   margin-bottom: $spacing*2;
   background: $green;
@@ -252,12 +268,12 @@ body{
   .swiper-slide{
     position: relative;
     height: 500px;
-    border-radius: $radius;
+    width: auto !important;
     overflow: hidden;
+    border-radius: $radius;
     img{
-      min-height: 100%;
-      width:100%;
-      object-fit: cover;
+      width:auto;
+      height: 100%;
     }
   }
 }
@@ -266,10 +282,17 @@ body{
   margin-bottom: $spacing*2;
   background: $green;
   padding: $spacing*2;
+  height: 500px;
+  width: auto !important;
   .swiper-slide{
     position: relative;
     border-radius: $radius;
     overflow: hidden;
+    width:auto;
+    img{
+      width:auto;
+      height: 100%;
+    }
   }
 }
 
