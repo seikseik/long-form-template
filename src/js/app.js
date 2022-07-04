@@ -1,3 +1,4 @@
+import video from '../images/content/video.mp4';
 
 import './animations';
 
