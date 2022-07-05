@@ -696,6 +696,9 @@ body {
   border-radius: 10px;
   position: relative;
 }
+.section_hero .hero_left .logo img {
+  width: 200px;
+}
 .section_hero .hero_left .hero_text_container {
   margin-top: 48px;
 }
@@ -803,6 +806,7 @@ body {
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 16px;
+  height: 50%;
 }
 .col_image.doppia_card .card_bottom {
   background: #D1D1C1;
@@ -810,6 +814,7 @@ body {
   line-height: 1.25;
   border-radius: 10px;
   overflow: hidden;
+  height: 50%;
 }
 .col_image.doppia_card .card_bottom .card_quote {
   padding: 32px 16px;
@@ -818,6 +823,9 @@ body {
 .col_image.doppia_card .card_bottom .card_description {
   background: white;
   padding: 10px 16px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .col_image.doppia_card .card_bottom .card_description p {
   font-size: 18px;
@@ -895,7 +903,7 @@ body {
 }
 .col_text .title_chapter .line_separator {
   width: 40%;
-  height: 1px;
+  height: 2px;
   background: #D1D1C1;
   margin-bottom: 16px;
 }
@@ -969,10 +977,12 @@ body {
 
 .swiper_gallerie, .swiper_spazio {
   border-radius: 10px;
+  height: 100%;
 }
 .swiper_gallerie .image_description, .swiper_spazio .image_description {
   z-index: 22;
   border-bottom-left-radius: 10px;
+  width: 100%;
 }
 
 .slide_half {
@@ -1316,6 +1326,7 @@ footer .footer_bottom_content a {
   .col_image.doppia_card .card_bottom .card_quote {
     font-size: 25px;
     padding: 24px 8px;
+    margin-bottom: 80px;
   }
 
   .col_image.doppia_card .card_bottom .card_description {

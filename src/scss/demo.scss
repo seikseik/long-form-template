@@ -24,6 +24,11 @@ body{
     color: $white;
     border-radius: $radius;
     position: relative;
+    .logo{
+      img{
+        width:200px;
+      }
+    }
     .hero_text_container{
       margin-top: $spacing*6;
       h1{
@@ -117,6 +122,7 @@ body{
       border-radius: $radius;
       overflow: hidden;
       margin-bottom: $spacing*2;
+      height: 50%;
       .image_container{
       }
     }
@@ -126,6 +132,7 @@ body{
       line-height: 1.25;
       border-radius: $radius;
       overflow: hidden;
+      height: 50%;
       .card_quote{
         padding: $spacing*4 $spacing*2;
         font-family: $futura;
@@ -133,6 +140,9 @@ body{
       .card_description{
         background: white;
         padding:10px $spacing*2;
+        position: absolute;
+        bottom:0;
+        width:100%;
         p{
           font-size: $size_s;
           line-height: 1;
@@ -195,7 +205,7 @@ body{
     }
     .line_separator{
       width:40%;
-      height: 1px;
+      height: 2px;
       background: $grey;
       margin-bottom: $spacing*2;
     }
@@ -255,9 +265,11 @@ body{
 
 .swiper_gallerie, .swiper_spazio{
   border-radius: $radius;
+  height: 100%;
   .image_description{
     z-index: 22;
     border-bottom-left-radius: $radius;
+    width:100%;
   }
 }
 
@@ -548,6 +560,7 @@ footer{
 .col_image.doppia_card .card_bottom .card_quote{
   font-size: 25px;
   padding: $spacing*3 $spacing;
+  margin-bottom: 80px;
 }
 .col_image.doppia_card .card_bottom .card_description{
   padding: $spacing;
