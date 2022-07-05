@@ -150,14 +150,14 @@ body{
   bottom:0;
   background: rgba(0,0,0,0.7);
   padding:10px $spacing*2;
-  width:100%;
+  width:calc(100% - 16px);
   color:white;
   p{
-    font-size: $size_s;
+    font-size: 16px;
     font-weight: lighter;
   }
   span{
-    font-size: $size_xs;
+    font-size: 14px;
   }
 }
 
@@ -364,8 +364,9 @@ footer{
       }
       h5{
         margin-bottom: $spacing*2;
+        color: $grey;
       }
-      a{color:$black; font-family: $futura; font-size: 30px;}
+      a, .footer_col_content{color:$black; font-family: $futura; font-size: 30px;}
     }
   }
   .footer_bottom_content{
