@@ -832,15 +832,15 @@ body {
   bottom: 0;
   background: rgba(0, 0, 0, 0.7);
   padding: 10px 16px;
-  width: 100%;
+  width: calc(100% - 16px);
   color: white;
 }
 .image_description p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: lighter;
 }
 .image_description span {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .col_text {
@@ -1106,8 +1106,9 @@ footer .footer_container .footer_col:nth-child(3) {
 }
 footer .footer_container .footer_col h5 {
   margin-bottom: 16px;
+  color: #D1D1C1;
 }
-footer .footer_container .footer_col a {
+footer .footer_container .footer_col a, footer .footer_container .footer_col .footer_col_content {
   color: #141212;
   font-family: "futura-pt", sans-serif;
   font-size: 30px;
