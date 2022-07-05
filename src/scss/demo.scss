@@ -19,6 +19,7 @@ html.has-scroll-smooth, html.has-scroll-init  {
 strong{font-weight: 600;}
 .author{margin-top: $spacing*2;}
 
+.has-scroll-scrolling iframe{pointer-events: none;}
 
 .menu_full{
   position: fixed;
@@ -228,6 +229,9 @@ strong{font-weight: 600;}
 
 .section_video{
   padding: 0 $space*4;
+  width:$max;
+  max-width: 100%;
+  margin: 0 auto;
   .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -246,7 +250,8 @@ strong{font-weight: 600;}
 
 .section_text{
   padding: $space*3 $space*2;
-  max-width: 1300px;
+  width: $max;
+  max-width: 100%;
   margin: 0 auto;
   h2{
     @include heading;
@@ -277,6 +282,9 @@ strong{font-weight: 600;}
 
 .scroll_image_section{
   padding: $space $space*2;
+  width:$max;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .text_number{
@@ -334,6 +342,9 @@ strong{font-weight: 600;}
   }
 }
 .image_full{
+  width:$max;
+  max-width: 100%;
+  margin: 0 auto;
   position: relative;
   margin-bottom: $space*2;
   .dida{
@@ -416,6 +427,9 @@ strong{font-weight: 600;}
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  width:$max;
+  max-width: 100%;
+  margin: 0 auto;
   .img_card{
     display: flex;
     flex-direction: column;
@@ -539,7 +553,6 @@ strong{font-weight: 600;}
 
 
 
-
 footer{
   padding: $space*4 $space*2;
   .footer_top{
@@ -551,6 +564,12 @@ footer{
       letter-spacing: 2px;
       font-weight: 600;
       a{color:black;}
+      h5{
+        margin-bottom: $spacing*3;
+      }
+      img{
+        margin: 0 auto;
+      }
     }
   }
 }
@@ -860,6 +879,7 @@ footer{
         font-size: 12px;
         img{
           width:190px;
+          margin: 0 auto;
         }
       }
     }

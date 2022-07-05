@@ -106,7 +106,7 @@ pagination: {
 
 
 const swiper_chef = new Swiper('.swiper-chef', {
-  slidesPerView: 2,
+  slidesPerView: 3,
   spaceBetween: 20,
   freeMode: true,
 
@@ -125,6 +125,12 @@ const swiper_chef = new Swiper('.swiper-chef', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+    },
+    '1300': {
+      slidesPerView: 4
+    },
+    '1600': {
+      slidesPerView: 5
     }
   }
 });
