@@ -1,8 +1,8 @@
 <?php
 
     $pageUrl = strtok( (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) || isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", "?");
-    $pageTitle = "L’arte per la comunità";
-    $pageDescription = "Con le aperture di Napoli e Torino arrivano a quattro le “Gallerie d’Italia” di Intesa Sanpaolo, musei che valorizzano i patrimoni d’arte di proprietà, condividendoli con i territori";
+    $pageTitle = "L’abuso dei prodotti chimici per igienizzare gli ambienti ha impatti negativi non solo sull’ambiente, ma anche sulla nostra salute. La nuova frontiera fa leva sul ruolo dei batteri buoni, i probiotici.";
+
     $twitterString = "" . $pageUrl;
     $whatsappString = $pageTitle. " " . $pageUrl;
 ?>
@@ -11,20 +11,10 @@
 <html lang="it">
 
   <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <link rel="apple-touch-icon" sizes="57x57" href="//www.repstatic.it/cless/main/nazionale/2016-v1/img/common/favicon/apple-touch-icon-57.png">
-<link rel="apple-touch-icon" sizes="114x114" href="//www.repstatic.it/cless/main/nazionale/2016-v1/img/common/favicon/apple-touch-icon-114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="//www.repstatic.it/cless/main/nazionale/2016-v1/img/common/favicon/apple-touch-icon-120.png">
-<link rel="apple-touch-icon-precomposed" href="//www.repstatic.it/cless/main/nazionale/2016-v1/img/common/favicon/apple-touch-icon.png">
-<link rel="apple-touch-icon-precomposed" href="//www.repstatic.it/cless/main/nazionale/2016-v1/img/common/favicon/apple-touch-icon-precomposed.png">
-<link rel="shortcut icon" href="//www.repstatic.it/cless/main/nazionale/2016-v1/img/common/favicon/favicon.ico">
-
-
-
     <title><?php echo $pageTitle; ?></title>
     <meta name="description" content="<?php echo $pageDescription; ?>" />
     <link rel="canonical" href="<?php echo $pageUrl; ?>">
@@ -34,9 +24,9 @@
       var pageHref = '<?php echo $pageUrl; ?>';
       var pageType = 'dettaglio_content';
     </script>
-    <esi:include src='http://www.repstatic.it/cless/common/stable/js/script/tlh/traffic_light_handler.html' />
-    <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script>
-    <!-- CONFIGURAZIONE STATS
+    <!-- <esi:include src='http://www.repstatic.it/cless/common/stable/js/script/tlh/traffic_light_handler.html' />
+    <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script> -->
+    <!-- CONFIGURAZIONE STATS -->
 
     <!-- facebook -->
     <meta property="fb:app_id" content="182234715127717" />
@@ -49,539 +39,623 @@
     <meta property="article:published_time" content="2022-05-20T09:00">
     <!-- facebook -->
 
-    <!-- twitter --> 
+    <!-- twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="" />
     <meta name="twitter:title" content="<?php echo $pageTitle; ?>">
     <meta name="twitter:description" content="<?php echo $pageDescription; ?>">
-
     <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.png'); ?>">
-
     <meta name="twitter:url" content="<?php echo $pageUrl; ?>">
     <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://use.typekit.net/ctn5pmh.css">
-
-  <script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"><script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"></head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico"><script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"></head>
 
   <body>
-  <div class="main">
 
-
-    <div id="myModal" class="modal">
-      <span class="close">
-        <svg width="52" height="35" viewBox="0 0 52 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 34L51.2105 1.16607" stroke="white"/>
-        <path d="M1 1L51.2105 33.8339" stroke="white"/>
+  <div class="menu_full">
+    <div class="menu-container">
+      <div class="overlay"></div>
+      <img class="map_overlay" src="./images/content/map_full.svg" alt="">
+      <div class="close">
+        <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.879272 1.38757L47.6095 48.1178" stroke="white" stroke-width="2"/>
+          <path d="M0.879272 48.1178L47.6095 1.38757" stroke="white" stroke-width="2"/>
         </svg>
-        chiudi
-      </span>
-
-      <div class="modal-content">
-
-        <img id="img01">
       </div>
-      <div class="back_line">
-        <div class="v-line"></div>
-        <div class="v-line"></div>
-        <div class="v-line"></div>
-        <div class="v-line"></div>
-        <div class="v-line"></div>
-        <div class="v-line"></div>
-        <div class="v-line"></div>
-        <div class="v-line"></div>
-        <div class="v-line"></div>
+      <div class="menu_header">
+        <h2>Le strade <br> del <span>Gusto</span></h2>
+      </div>
+      <div class="menu_footer">
+        <a class="menu_col" href="#">
+          <h4>Introduzione</h4>
+        </a>
+        <a class="menu_col inactive " href="#">
+          <span>TAPPA 1</span>
+          <h4>Lago di Garda</h4>
+        </a>
+        <a class="menu_col inactive" href="#">
+          <span>TAPPA 2</span>
+          <h4>Firenze</h4>
+        </a>
+        <a class="menu_col inactive" href="#">
+          <span>TAPPA 3</span>
+          <h4>Puglia</h4>
+        </a>
+        <a class="menu_col inactive" href="#">
+          <span>TAPPA 4</span>
+          <h4>Roma</h4>
+        </a>
+        <a class="menu_col inactive" href="#">
+          <span>TAPPA 5</span>
+          <h4>Milano</h4>
+        </a>
+        <a class="menu_col inactive" href="#">
+          <span>TAPPA 6</span>
+          <h4>Langhe</h4>
+        </a>
+        <a class="menu_col inactive" href="#">
+          <h4>Conclusione</h4>
+        </a>
+      </div>
+      <div class="social-mobile mob">
+        <span>SHARE</span>
+        <div class="social_container">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"><img src="./images/content/fb.svg" alt=""></a>
+          <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"><img src="./images/content/tw.svg" alt=""></a>
+        </div>
       </div>
     </div>
+  </div>
 
-    <div class="section_hero">
-      <div class="section_hero_container">
-        <div class="hero_left">
-          <div class="logo">
-            <a href="https://www.repubblica.it/">
-              <img src="./images/content/logo.svg" alt="">
-            </a>
-          </div>
-          <div class="hero_text_container">
-            <h1>L’arte per <br> la comunità</h1>
-            <p>Con le aperture di Napoli e Torino arrivano a quattro le “Gallerie d’Italia” di Intesa Sanpaolo, musei che valorizzano i patrimoni d’arte di proprietà, condividendoli con i territori</p>
-            <span>▲ IN COLLABORAZIONE CON INTESA SAN PAOLO</span>
-          </div>
-          <div class="hero_footer">
-              <div class="social-list">
-                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"><img src="./images/content/fb.svg" alt=""></a>
-                <span class="line-divider"></span>
-                <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"><img src="./images/content/tw.svg" alt=""></a>
-              </div>
-              <div class="scroll">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 0L37.3205 10V30L20 40L2.67949 30V10L20 0Z" fill="#F0EEE6"/>
-                <path d="M20.835 13.4091V23.4574L24.6638 19.6158L25.8271 20.7663L20.004 26.5767L14.1936 20.7663L15.3314 19.6158L19.173 23.4574V13.4091H20.835Z" fill="#374F35"/>
-                </svg>
-              </div>
-          </div>
+  <div class="main" data-scroll-container>
+
+
+    <div data-scroll class="section_hero">
+      <div class="hero_container">
+        <div class="video_container">
+          <video class="video_back" autoplay muted loop playsinline id="myVideo">
+            <source src="sequence__.mp4" type="video/mp4">
+          </video>
+          <div class="overlay"></div>
         </div>
-        <div class="hero_right">
-          <div class="swiper swiper_fade">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./images/content/1_Landing.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/content/2_Landing.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/content/3_Landing.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/content/4_Landing.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/content/5_Landing.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/content/6_Landing.jpg" alt="">
-              </div>
+
+
+        <div data-scroll class="hero_header">
+          <div class="menu_btn">
+            MENU
+          </div>
+          <div class="logo_container">
+            <img src="./images/content/logo.svg" alt="">
+          </div>
+
+          <div class="social_container vis_none">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"><img src="./images/content/fb.svg" alt=""></a>
+            <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"><img src="./images/content/tw.svg" alt=""></a>
+          </div>
+
+        </div>
+
+          <div class="hero_content">
+            <h1>Le strade <br> del <span>Gusto</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac maximus massa. Aliquam tristique enim nec lacinia luctus.</p>
+            <div class="collab-cont">
+            <span>IN COLLABORAZIONE CON </span>
+              <img src="./images/content/logo_cliente_bianco.png" alt="">
             </div>
           </div>
+
+          <div class="scroll">
+            <span>scroll</span>
+            <div class="line"></div>
+          </div>
+      </div>
+    </div>
+
+
+    <div id="scrollto" data-scroll class="section_text left_text">
+      <div class="section_text_wrapper">
+        <div class="text_container">
+          <h2>Il progetto</h2>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor quam in libero dapibus sodales.</h3>
+          <p class="spacing-left">Fusce egestas diam ex, sed malesuada dui aliquam id. Sed orci lacus, imperdiet sed luctus eu, finibus id orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum efficitur nunc ac ornare hendrerit. Donec venenatis nulla eget sem lacinia laoreet. Morbi ullamcorper felis ut diam blandit, feugiat vestibulum orci fermentum. Quisque pretium posuere vulputate. Nunc pharetra ut dolor ut dapibus. Nunc ut lorem tincidunt, porttitor ligula ullamcorper, dictum augue. Fusce a eros commodo, posuere lectus vitae, lacinia urna. Pellentesque vel fermentum est. Vestibulum condimentum imperdiet bibendum. Sed faucibus augue iaculis fringilla dignissim. Morbi scelerisque ligula in condimentum posuere. Etiam tristique enim id ante imperdiet mollis.</p>
+        </div>
+      </div>
+    </div>
+
+    <div data-scroll class="section_text right_text">
+      <div class="section_text_wrapper">
+        <div class="text_container">
+          <p>Fusce egestas diam ex, sed malesuada dui aliquam id. Sed orci lacus, imperdiet sed luctus eu, finibus id orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum efficitur nunc ac ornare hendrerit. Donec venenatis nulla eget sem lacinia laoreet. Morbi ullamcorper felis ut diam blandit, feugiat vestibulum orci fermentum. Quisque pretium posuere vulputate. Nunc pharetra ut dolor ut dapibus. Nunc ut lorem tincidunt, porttitor ligula ullamcorper, dictum augue. Fusce a eros commodo, posuere lectus vitae, lacinia urna. Pellentesque vel fermentum est. Vestibulum condimentum imperdiet bibendum. Sed faucibus augue iaculis fringilla dignissim. Morbi scelerisque ligula in condimentum posuere. Etiam tristique enim id ante imperdiet mollis.</p>
         </div>
       </div>
     </div>
 
 
-    <div class="section_text reverse">
-      <div class="col_image">
-        <div class="image_container">
-          <img class="modal_image"  src="./images/content/1_Scroll.png" alt="">
+    <div data-scroll class="section_video desk-block">
+      <div class="videoWrapper">
+          <iframe src="https://video.greenandblue.it/embed/vivere-green/perche-i-probiotici-creano-un-ambiente-sano/3939/3954?adref=<?php echo $pageUrl; ?>" frameborder="0" allowfullscreen></iframe>
         </div>
-        <div class="image_description">
-          <p>La nuova sede museale di Intesa Sanpaolo</p>
-          <span>Napoli — via Toledo, 177</span>
-        </div>
-      </div>
-      <div class="col_text">
+    </div>
+
+    <div data-scroll class="section_text left_text">
+      <div class="section_text_wrapper">
         <div class="text_container">
-          <div class="author chip">
-            di Luigi dell’Olio
+          <p class="spacing-left">Fusce egestas diam ex, sed malesuada dui aliquam id. Sed orci lacus, imperdiet sed luctus eu, finibus id orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum efficitur nunc ac ornare hendrerit. Donec venenatis nulla eget sem lacinia laoreet. Morbi ullamcorper felis ut diam blandit, feugiat vestibulum orci fermentum. Quisque pretium posuere vulputate. Nunc pharetra ut dolor ut dapibus. Nunc ut lorem tincidunt, porttitor ligula ullamcorper, dictum augue. Fusce a eros commodo, posuere lectus vitae, lacinia urna. Pellentesque vel fermentum est. Vestibulum condimentum imperdiet bibendum. Sed faucibus augue iaculis fringilla dignissim. Morbi scelerisque ligula in condimentum posuere. Etiam tristique enim id ante imperdiet mollis.</p>
+
+          <div class="author spacing-left">
+            <strong>autore</strong>
           </div>
-          <p fade>L’arte come motore per lo sviluppo sostenibile dei territori, nonché strumento di progresso civile e di inclusione sociale. È l’approccio che orienta il “Progetto Cultura” inserito da Intesa Sanpaolo all’interno del suo piano d’impresa. Un programma pluriennale dedicato che da una parte punta a salvaguardare le opere architettoniche e artistiche del gruppo per poterle condividere con la comunità, dall’altro a tutelare e valorizzare il patrimonio storico-artistico nazionale grazie alle sinergie tra pubblico e privato. Un’azione condivisa con istituzioni culturali e museali in ambito nazionale – dal teatro alla musica, alla fotografia, al cinema, all’editoria – per contribuire alla crescita civile e culturale del Paese. In questa logica rientra “Restituzioni”, programma di restauro e valorizzazione delle opere d’arte appartenenti al patrimonio nazionale. Un ruolo fondamentale è svolto anche dall’archivio storico, che costituisce la memoria del gruppo bancario e al tempo stesso un bene culturale collettivo del Paese, che si occupa di tutelare le fonti documentarie ereditate.</p>
         </div>
       </div>
     </div>
 
 
-    <div class="section_text">
-      <div class="col_text">
-        <div class="text_container">
-          <div class="title_chapter">
-            <h2>Gallerie d’Italia</h2>
-            <div class="line_separator"></div>
+
+    <section data-scroll class="text black-bck">
+
+
+      <div data-scroll class="section_video mob-block">
+        <div class="videoWrapper">
+            <iframe src="https://video.greenandblue.it/embed/vivere-green/perche-i-probiotici-creano-un-ambiente-sano/3939/3954?adref=<?php echo $pageUrl; ?>" frameborder="0" allowfullscreen></iframe>
           </div>
-          <p fade>Palazzi, collezioni d’arte e archivi, ereditati dalle banche progressivamente entrate a far parte del gruppo costituiscono un vasto patrimonio da tutelare e condividere con il pubblico. Così sono nate nel 1999 e si sono alimentate negli anni le “Gallerie d’Italia”, una rete di quattro musei presenti nel territorio nazionale (Milano, Vicenza, Napoli e Torino), con una superficie espositiva che arriverà a 30mila mq entro il 2025, con lo scopo di far conoscere una selezione delle 35 mila opere d’arte, «nella consapevolezza che questo patrimonio, al di là della proprietà giuridica, appartiene alla ricchezza del Paese», spiega Giovanni Bazoli, presidente emerito del gruppo. «Per realizzare l’obiettivo abbiamo trasformato in musei, cioè a uso pubblico, pregevoli palazzi situati in luoghi simbolo delle città e precedentemente adibiti ai nostri uffici. Tutto questo è servito anche a rivitalizzare i centri storici delle città interessate», aggiunge. </p>
-        </div>
       </div>
 
-      <div class="col_image">
-        <div class="image_container">
-          <div class="swiper swiper_gallerie">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./images/content/1_Slideshow1.png" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/content/2_Slideshow1.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/content/3_Slideshow1.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/content/4_Slideshow1.jpg" alt="">
-              </div>
+
+      <div class="scroll_image_section">
+
+        <div data-scroll class="title_mobile mob">
+          <div class="line"></div>
+          <div class="title_container text_number">
+            <h2>6</h2>
+            <p>tappe italiane</p>
+          </div>
+          <div class="line"></div>
+        </div>
+
+        <div class="image_row one">
+          <div data-scroll class="col small_half">
+            <img src="./images/content/luogo_1.jpg" alt="">
+            <div class="dida">
+              <h4><strong>Trani</strong>, Puglia</h4>
             </div>
-            <div class="image_description">
-              <p>La nuova sede museale di Intesa Sanpaolo</p>
-              <span>Napoli — via Toledo, 177</span>
+          </div>
+          <div  data-scroll class="col small_half">
+            <img src="./images/content/luogo_2.jpg" alt="">
+            <div class="dida">
+              <h4><strong>Milano</strong>, Lombardia</h4>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="section_timeline">
-      <div class="card_time">
-        <div class="num">
-          4
-        </div>
-        <div class="info">
-          I musei che compongono le Gallerie d'Italia
-        </div>
-      </div>
-      <div class="card_time">
-        <div class="num">
-          1999
-        </div>
-        <div class="info">
-          Anno di inizio del progetto museali di Intesa Sanpaolo
-        </div>
-      </div>
-      <div class="card_time">
-        <div class="num">
-          30 <span>mila</span>
-        </div>
-        <div class="info">
-          I metri quadri occupati dei musei al 2025, contro i 14.200 di oggi
-        </div>
-      </div>
-      <div class="card_time">
-        <div class="num">
-          7 <span>mln</span>
-        </div>
-        <div class="info">
-          Le foto presenti nell'archivio Publifoto di Intesa Sanpaolo
-        </div>
-      </div>
-      <div class="card_time green">
-        <div class="num">
-          35 <span>mila</span>
-        </div>
-        <div class="info">
-          Le opere d'arte detenute dall’istituto di credito
-        </div>
-      </div>
-    </div>
-
-
-    <div class="section_text reverse">
-      <div class="col_image">
-        <div class="image_container">
-          <img class="modal_image" src="./images/content/2_Scroll.png" alt="">
-        </div>
-        <div class="image_description">
-          <p>Sansone e Dalila</p>
-          <span>Artemisia Gentileschi</span>
-        </div>
-      </div>
-      <div class="col_text">
-        <div class="text_container">
-          <div class="title_chapter">
-            <h2>La novità di Napoli</h2>
-            <div class="line_separator"></div>
-          </div>
-          <p fade>L’ apertura della nuova sede del museo risale a metà maggio a Napoli, all’interno del monumentale edificio storico dell’ex Banco di Napoli riqualificato dallo studio Michele De Lucchi–Amdl Circle. Le opere della collezione permanente sono distribuite lungo tre direttrici tematiche. Il museo ospita una selezione di dipinti e sculture di ambito napoletano e meridionale dagli inizi del Diciasettesimo ai primi decenni del Ventesimo secolo, a partire dal capolavoro del “Martirio di sant’Orsola” di Caravaggio, al primo piano, oltre a nuovi itinerari dedicati alle ceramiche attiche e magnogreche e all’arte moderna e contemporanea al secondo. Accanto alle collezioni permanenti, le Gallerie d’Italia organizzano anche mostre temporanee. Le “Gallerie d’Italia – Napoli” sono state concepite come un luogo per la cittadinanza e grazie al monumentale atrio d’ingresso che vive in simbiosi con la strada si stabilisce continuità e stretta connessione con lo spazio urbano. </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="section_slideshow slide_half swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="./images/content/1_Gallery_1.jpg" alt="">
-          <div class="image_description">
-            <p>Natura morta con pesci e molluschi</p>
-            <span>Giuseppe Recco</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/content/2_Gallery_1.jpg" alt="">
-          <div class="image_description">
-            <p>Natura morta con pane, biscotti e fiori</p>
-            <span>Giuseppe Recco</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/content/3_Gallery_1.jpg" alt="">
-          <div class="image_description">
-            <p>Martirio di sant'Orsola</p>
-            <span>Caravaggio</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/content/4_Gallery_1.jpg" alt="">
-          <div class="image_description">
-            <p>Giuditta decapita Oloferne</p>
-            <span>Louis Finson</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/content/5_Gallery_1.jpg" alt="">
-          <div class="image_description">
-            <p>Cristo e l’adultera con scala colori</p>
-            <span>Cavallino Bernardo</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/content/6_Gallery_1.jpg" alt="">
-          <div class="image_description">
-            <p>La terrazza</p>
-            <span>Domenico Morelli</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/content/7_Gallery_1.jpg" alt="">
-          <div class="image_description">
-            <p>Veduta di Napoli Largo di Palazzo</p>
-            <span>Van Witeel Gaspar</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/content/10_Gallery_1.jpg" alt="">
-          <div class="image_description">
-            <p>La mano nei capelli</p>
-            <span>Cesare Tacchi</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/content/11_Gallery_1.jpg" alt="">
-          <div class="image_description">
-            <p>La zingara</p>
-            <span>Vincenzo Gemito</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/content/8_Gallery_1.jpg" alt="">
-          <div class="image_description">
-            <p>Hydria (kalpis) attica a figure rosse</p>
-            <span>Pittore di Leningrado</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/content/9_Gallery_1.jpg" alt="">
-          <div class="image_description">
-            <p>Ragazza che cammina</p>
-            <span>Michelangelo Pistoletto</span>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-
-
-
-    <div class="section_text">
-      <div class="col_text">
-        <div class="text_container">
-          <div class="title_chapter">
-            <h2>Lo spazio di Torino</h2>
-            <div class="line_separator"></div>
-          </div>
-          <p fade>Pochi giorni prima era stata inaugurata le Gallerie d’Italia di Torino: diecimila metri quadri di percorso espositivo su cinque piani, di cui tre ipogei, dedicati alla fotografia e al Barocco in Piazza San Carlo a Palazzo Turinetti, sede legale della banca. In continuità, il progetto architettonico di Michele De Lucchi–Amdl Circle ha trasformato gli spazi dello storico palazzo in un luogo in cui fotografia e videoarte documentano immagini, avvenimenti, riflessioni per promuovere i temi legati all’evoluzione della sostenibilità Esg (acronimo che sta a indicare le azioni in direzione della tutela ambientale, dell’inclusione sociale e delle buone regole di governo aziendale). Il museo è anche la nuova sede dell’Archivio Publifoto Intesa Sanpaolo – con circa 7 milioni di scatti realizzati dagli anni Trenta agli anni Novanta da una delle principali agenzie di fotogiornalismo italiane – ed espongono una selezione di opere dalle collezioni del gruppo, tra cui il ciclo pittorico dell'antico Oratorio della Compagnia di San Paolo di proprietà della banca.</p>
-        </div>
-      </div>
-
-      <div class="col_image doppia_card">
-        <div class="card_top">
-          <div class="image_container">
-            <div class="swiper swiper_spazio">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./images/content/1_Slideshow_2.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/content/2_Slideshow_2.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/content/3_Slideshow_2.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="./images/content/4_Slideshow_2.jpg" alt="">
-                </div>
-              </div>
-              <div class="image_description">
-                <p>La nuova sede museale di Intesa Sanpaolo</p>
-                <span>Torino — Piazza San Carlo, 156</span>
-              </div>
+            <div id="title_1_1" data-scroll data-scroll-speed="1.5"  class="text_number top desk">
+              <h2>6</h2>
+              <p>tappe italiane</p>
             </div>
           </div>
         </div>
 
-        <div class="card_bottom">
-          <div class="card_quote">
-            <h2 fade>«All’arte, alla storia e alla cultura facciamo ricorso per attingere forza morale in questi drammatici momenti di guerra che hanno sconvolto l’Europa. Con il progetto delle Gallerie vogliamo favorire la vitalità dei territori, in una prospettiva sempre più europea e internazionale»</h2>
+        <div data-scroll class="title_mobile mob">
+          <div class="line"></div>
+          <div class="title_container text_number">
+            <h2>6</h2>
+            <p>podcast</p>
           </div>
-          <div class="card_description">
-            <p>Giovanni Bazoli</p>
-            <span>Presidente emerito Intesa Sanpaolo</span>
+          <div class="line"></div>
+        </div>
+
+        <div class="image_row two">
+          <div  data-scroll class="col wide">
+            <img src="./images/content/luogo_3.jpg" alt="">
+            <div class="dida">
+              <h4><strong>Firenze</strong>, Toscana</h4>
+            </div>
+          </div>
+          <div data-scroll data-scroll-speed="1.5"  id="title_1_2" class="text_number bottom desk">
+            <h2>6</h2>
+            <p>podcast</p>
+          </div>
+        </div>
+
+        <div class="image_row three space-between">
+          <div data-scroll class="col one-third">
+            <img src="./images/content/luogo_4.jpg" alt="">
+            <div class="dida">
+              <h4>Lago di Garda</h4>
+            </div>
+          </div>
+          <div data-scroll class="col one-third">
+            <img src="./images/content/luogo_5.jpg" alt="">
+            <div class="dida">
+              <h4><strong>Langhe</strong>, Piemonte</h4>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
 
-    <div class="section_slideshow slide_quarter swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="./images/content/1_Gallery_2.jpg" alt="">
-          <div class="image_description">
-            <p>San Pietro e San Paolo condotti al martirio</p>
-            <span>Giovanni Bartolomeo Caravoglia</span>
-          </div>
+      <div class="image_full">
+        <img src="./images/content/luogo_6.jpg" alt="">
+        <div class="dida">
+          <h4> <strong>Roma</strong>, Lazio</h4>
         </div>
-        <div class="swiper-slide">
-          <img src="./images/content/2_Gallery_2.jpg" alt="">
-          <div class="image_description">
-            <p>Veduta fantastica con architetture e figure</p>
-            <span>Frederik de Moucheron</span>
-          </div>
+
+        <div id="title_1_3" data-scroll data-scroll-speed="1.5"  class="text_number bottom desk">
+          <h2>6</h2>
+          <p>chef</p>
         </div>
-        <div class="swiper-slide">
-          <img src="./images/content/3_Gallery_2.jpg" alt="">
-          <div class="image_description">
-            <p>Santa Eulalia</p>
-            <span>Gandolfino da Roreto</span>
+
+      </div>
+
+      <div class="chef_row">
+
+        <div data-scroll class="title_mobile mob">
+          <div class="line"></div>
+          <div class="title_container text_number">
+            <h2>6</h2>
+            <p>chef</p>
           </div>
+          <div class="line"></div>
         </div>
-        <div class="swiper-slide">
-          <img src="./images/content/4_Gallery_2.jpg" alt="">
-          <div class="image_description">
-            <p>Allegoria dell'autunno</p>
-            <span>Rapous Vittorio Amadeo</span>
+
+        <div class="chef_row_container swiper-chef">
+          <div class="swiper-wrapper">
+            <div class="single_card  swiper-slide">
+              <img src="./images/content/chef_1.jpg" alt="">
+              <div class="dida_chef">
+                Casa <br> Sgarra
+              </div>
+            </div>
+
+            <div class="single_card  swiper-slide">
+              <img src="./images/content/chef_2.jpg" alt="">
+              <div class="dida_chef">
+                Lido 84
+              </div>
+            </div>
+
+            <div class="single_card  swiper-slide">
+              <img src="./images/content/chef_3.jpg" alt="">
+              <div class="dida_chef">
+                Anthony <br> Genovese
+              </div>
+            </div>
+
+            <div class="single_card  swiper-slide">
+              <img src="./images/content/chef_4.jpg" alt="">
+              <div class="dida_chef">
+                Enrico <br> Crippa
+              </div>
+            </div>
+
+            <div class="single_card  swiper-slide">
+              <img src="./images/content/chef_5.jpg" alt="">
+              <div class="dida_chef">
+                Osteria <br> Gucci
+              </div>
+            </div>
+
+            <div class="single_card  swiper-slide">
+              <img src="./images/content/chef_6.jpg" alt="">
+              <div class="dida_chef">
+                Altatto
+              </div>
+            </div>
           </div>
+          <div class="swiper-pagination">  </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <div class="swiper-slide">
-          <img src="./images/content/5_Gallery_2.jpg" alt="">
-          <div class="image_description">
-            <p>Cristo appare a San Paolo in carcere</p>
-            <span>Giovanni Francesco Sacchetti</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/content/6_Gallery_2.jpg" alt="">
-          <div class="image_description">
-            <p>Capriccio architettonico con monumenti dell’antica Roma</p>
-            <span>Giovanni Paolo Pannini</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/content/7_Gallery_2.jpg" alt="">
-          <div class="image_description">
-            <p>Conversione di San Paolo</p>
-            <span>Alessandro Ardente</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/content/8_Gallery_2.jpg" alt="">
-          <div class="image_description">
-            <p>Paesaggio ideale della campagna romana</p>
-            <span>Jan Frans van Bloemen</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/content/9_Gallery_2.jpg" alt="">
-          <div class="image_description">
-            <p>La battaglia di Guastalla</p>
-            <span>Jan Peeter Verdussen</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/content/10_Gallery_2.jpg" alt="">
-          <div class="image_description">
-            <p>Pino Musi</p>
-            <span>Archivio Publifoto</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/content/11_Gallery_2.jpg" alt="">
-          <div class="image_description">
-            <p>Alluvione</p>
-            <span>Archivio Publifoto</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/content/12_Gallery_2.jpg" alt="">
-          <div class="image_description">
-            <p>Veduta dell’abside di San Pietro a Roma</p>
-            <span>Van Lint</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/content/13_Gallery_2.jpg" alt="">
-          <div class="image_description">
-            <p>Scultura di Diana</p>
-            <span>Scultore attivo a Firenze</span>
+      </div>
+
+
+      <div class="section_text left_text black">
+        <div  class="section_text_wrapper">
+          <div class="text_container">
+            <div class="text_number_title desk">
+              <h1>6</h1>
+              <p>automobili </p>
+            </div>
+
+            <div class="title_mobile mob">
+              <div class="line"></div>
+              <div class="title_container text_number">
+                <h2>6</h2>
+                <p>automobili</p>
+              </div>
+              <div class="line"></div>
+            </div>
+
+            <!-- <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor quam in libero dapibus sodales.</h3> -->
           </div>
         </div>
       </div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
 
+      <!-- <div class="section_text right_text black">
+        <div class="section_text_wrapper">
+          <div class="text_container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor quam in libero dapibus sodales. Sed hendrerit porttitor lacus ac imperdiet. Fusce ut imperdiet leo. Vivamus nibh neque, suscipit id blandit vel, luctus id nulla.</p>
 
-    <div class="section_text">
-      <div class="col_image">
-        <div class="image_container">
-          <img class="modal_image"  src="./images/content/3_Scroll.png" alt="">
-        </div>
-        <div class="image_description">
-          <p>La nuova sede museale di Intesa Sanpaolo</p>
-          <span>Napoli — via Toledo, 177</span>
-        </div>
-      </div>
-      <div class="col_text brown_back">
-        <div class="text_container">
-          <div class="title_chapter">
-            <h2>Restituzioni</h2>
-            <div class="line_separator"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lorem libero, ultricies in mi ac, suscipit bibendum dolor. In tortor massa, condimentum pharetra turpis nec, vulputate convallis neque. Sed nec sem ultricies, sodales leo vel, pharetra ante. Pellentesque fringilla, metus facilisis mattis ultricies, urna metus egestas tortor, a sagittis felis erat ac tortor. Donec ullamcorper sollicitudin massa, eu tempor lacus commodo nec. Vivamus dapibus, augue vel dapibus finibus, urna erat interdum orci, et euismod turpis risus id mi. Mauris nec enim elit.</p>
           </div>
-          <p fade>La sede napoletana di Gallerie d’Italia ospita l’esposizione conclusiva della diciannovesima edizione di Restituzioni, programma biennale di salvaguardia e valorizzazione del patrimonio artistico nazionale che Intesa Sanpaolo conduce da oltre trent’anni in collaborazione con il ministero della Cultura. Visitabile fino al 25 settembre 2022, l’esposizione presenta i restauri di 87 nuclei di opere per un totale di 231 manufatti, selezionati dal gruppo bancario insieme a una serie enti di tutela (soprintendenze, direzioni regionali musei e musei autonomi). Questa edizione di Restituzioni copre un arco cronologico di 26 secoli, spaziando dall’antichità al contemporaneo, fornendo così un ampio panorama del patrimonio artistico italiano. Tra le opere oggetto di restauro, un gruppo di specchi bronzei del quarto e del quinto secolo dal museo archeologico nazionale di Locri, il Larario in legno carbonizzato da Ercolano, i tre mosaici pavimentali paleocristiani dalle grandi terme di Aquileia e il Polittico di Giusto de’ Menabuoi dal Battistero di Padova.</p>
         </div>
       </div>
-    </div>
 
-    <div class="section_full">
-      <div class="image_full_container">
-        <video class="video_back" autoplay muted loop playsinline id="myVideo">
-        <source src="video.mp4" type="video/mp4">
-      </video>
+      <div class="section_text left_text margin_left black">
+        <div class="section_text_wrapper">
+          <div class="text_container">
+            <p>Duis sed lacus semper lectus commodo dignissim. In ullamcorper ligula et mi accumsan, non suscipit nibh dapibus. Praesent rutrum libero quis congue vulputate. Phasellus vitae eros sit amet dolor egestas commodo. Nam in mauris vel lectus ullamcorper consequat. Aliquam interdum, dolor nec efficitur vestibulum, massa nibh vehicula magna, sed cursus diam ipsum non odio. Quisque commodo dictum tincidunt. Suspendisse porta velit id felis dictum, vel auctor sem laoreet. Quisque sed diam interdum, pulvinar augue vel, volutpat magna. Nulla consequat justo eget ullamcorper faucibus. Nam dui tortor, iaculis quis mi eget, hendrerit dictum dolor. Nulla porttitor dignissim velit, vitae lobortis orci accumsan nec. Nulla egestas enim erat, in vehicula enim posuere et.</p>
+
+            <p>Nam eu nulla est. Donec nec pulvinar lorem, in convallis massa. Donec quis lectus ac ante accumsan pulvinar. Nunc lacinia tellus nisi, accumsan dapibus arcu dapibus ac. Sed est.</p>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="section_image_gallery">
+        <div data-scroll data-scroll-speed="2.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_full padding">
+          <img src="./images/content/auto-1.jpg" alt="">
+          <div class="dida margin_left">
+            <h4>Levante</h4>
+          </div>
+        </div>
+
+        <div data-scroll data-scroll-speed="4.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_half right_image padding_left">
+          <img src="./images/content/auto-2.jpg" alt="">
+          <div class="dida margin_right">
+            <h4>Levante</h4>
+          </div>
+        </div>
+
+        <div data-scroll data-scroll-speed="0.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_half left_image padding_right">
+          <img src="./images/content/auto-3.jpg" alt="">
+          <div class="dida margin_left">
+            <h4>Levante</h4>
+          </div>
+        </div>
+
+        <div data-scroll data-scroll-speed="4.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_full padding">
+          <img src="./images/content/auto-4.jpg" alt="">
+          <div class="dida margin_left">
+            <h4>MC20</h4>
+          </div>
+        </div>
+
+        <div data-scroll data-scroll-speed="0.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_half right_image">
+          <img src="./images/content/auto-5.jpg" alt="">
+          <div class="dida margin_right">
+            <h4>MC20</h4>
+          </div>
+        </div>
+
+        <div data-scroll data-scroll-speed="4.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_full">
+          <img src="./images/content/auto-6.jpg" alt="">
+          <div class="dida margin_left">
+            <h4>Grecale</h4>
+          </div>
+        </div>
+
+        <div data-scroll data-scroll-speed="5.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_full padding">
+          <img src="./images/content/auto-7.jpg" alt="">
+          <div class="dida margin_left">
+            <h4>Grecale Trofeo</h4>
+          </div>
+        </div>
+
+        <div data-scroll data-scroll-speed="7.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_half left_image">
+          <img src="./images/content/auto-8.jpg" alt="">
+          <div class="dida margin_left">
+            <h4>Grecale Trofeo</h4>
+          </div>
+        </div>
+
+
+        <div data-scroll data-scroll-speed="2.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_half right_image">
+          <img src="./images/content/auto-9.jpg" alt="">
+          <div class="dida margin_left">
+            <h4>Grecale</h4>
+          </div>
+        </div>
+
+        <div data-scroll data-scroll-speed="5.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_half left_image">
+          <img src="./images/content/auto-10.jpg" alt="">
+          <div class="dida margin_left">
+            <h4>Grecale</h4>
+          </div>
+        </div>
+
+        <div data-scroll data-scroll-speed="6.5" data-scroll-class="appear" data-scroll-repeat="true" data-scroll data-scroll-speed="-0.5" class="img_card img_half right_image padding_left">
+          <img src="./images/content/auto-11.jpg" alt="">
+          <div class="dida margin_right">
+            <h4>Ghibli GT</h4>
+          </div>
+        </div>
+
+        <div data-scroll data-scroll-speed="3.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_full padding">
+          <img src="./images/content/auto-12.jpg" alt="">
+          <div class="dida margin_left">
+            <h4>Ghibli GT</h4>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <div id="horizontal_scroll" data-scroll class="section_slideshow_locations desk">
+      <div class="slide-container">
+        <div class="slide">
+          <img src="./images/content/tappa_1.jpg" alt="">
+          <div class="slide_content">
+            <div class="slide_header">
+              <h5>Prossimo Episodio</h5>
+            </div>
+            <div class="slide_title_container">
+              <h1>Lago di Garda</h1>
+              <p>Lorem ipsum dolor sit amet</p>
+              <a href="#">ESPLORA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="./images/content/tappa_2.jpg" alt="">
+          <div class="slide_content">
+            <div class="slide_header">
+              <h5>EPISODIO 2</h5>
+            </div>
+            <div class="slide_title_container">
+              <h1>Firenze</h1>
+              <p>Lorem ipsum dolor sit amet</p>
+              <a href="#">ESPLORA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="./images/content/tappa_3.jpg" alt="">
+          <div class="slide_content">
+            <div class="slide_header">
+              <h5>EPISODIO 3</h5>
+            </div>
+            <div class="slide_title_container">
+              <h1>Trani</h1>
+              <p>Lorem ipsum dolor sit amet</p>
+              <a href="#">ESPLORA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="./images/content/tappa_4.jpg" alt="">
+          <div class="slide_content">
+            <div class="slide_header">
+              <h5>EPISODIO 4</h5>
+            </div>
+            <div class="slide_title_container">
+              <h1>Roma</h1>
+              <p>Lorem ipsum dolor sit amet</p>
+              <a href="#">ESPLORA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="./images/content/tappa_5.jpg" alt="">
+          <div class="slide_content">
+            <div class="slide_header">
+              <h5>EPISODIO 5</h5>
+            </div>
+            <div class="slide_title_container">
+              <h1>Milano</h1>
+              <p>Lorem ipsum dolor sit amet</p>
+              <a href="#">ESPLORA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="./images/content/tappa_6.jpg" alt="">
+          <div class="slide_content">
+            <div class="slide_header">
+              <h5>EPISODIO 6</h5>
+            </div>
+            <div class="slide_title_container">
+              <h1>Langhe</h1>
+              <p>Lorem ipsum dolor sit amet</p>
+              <a href="#">ESPLORA</a>
+            </div>
+          </div>
+        </div>
 
       </div>
-    </div>
+  </div>
 
 
+  <div data-scroll class="section_slideshow_locations mob swiper">
 
-    <footer>
-      <div class="footer_container">
+      <div class="slide-container swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="./images/content/prova-scroll.jpg" alt="">
+          <div class="slide_content">
+            <div class="slide_header">
+              <h5>Prossimo Episodio</h5>
+            </div>
+            <div class="slide_title_container">
+              <h1>Lago di Garda</h1>
+              <p>Lorem ipsum dolor sit amet</p>
+              <a href="#">ESPLORA</a>
+            </div>
+          </div>
+        </div>
 
+        <div class="slide swiper-slide">
+          <img src="./images/content/prova-scroll.jpg" alt="">
+          <div class="slide_content">
+            <div class="slide_header">
+              <h5>EPISODIO 2</h5>
+            </div>
+            <div class="slide_title_container">
+              <h1>Firenze</h1>
+              <p>Lorem ipsum dolor sit amet</p>
+              <a href="#">ESPLORA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="./images/content/prova-scroll.jpg" alt="">
+          <div class="slide_content">
+            <div class="slide_header">
+              <h5>EPISODIO 3</h5>
+            </div>
+            <div class="slide_title_container">
+              <h1>Roma</h1>
+              <p>Lorem ipsum dolor sit amet</p>
+              <a href="#">ESPLORA</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+  </div>
+
+    <footer data-scroll>
+      <div class="footer_top">
         <div class="footer_col">
-          <h5>UNA PRODUZIONE</h5>
+          <h5>A CURA DI</h5>
           <div class="footer_col_content">
             <a target="_blank" href="https://www.gedivisual.it/">GEDI VISUAL</a>
           </div>
         </div>
-
         <div class="footer_col">
           <h5>IN COLLABORAZIONE CON</h5>
-          <div class="footer_col_content footer_logo_cont">
-            <a target="_blank" href="https://www.intesasanpaolo.com/">
-              <img src="./images/content/logo_cliente.svg" alt="">
+          <div class="footer_col_content">
+            <a target="_blank" href="">
+              <img src="./images/content/logo_maserati.png" alt="">
             </a>
           </div>
         </div>
-
         <div class="footer_col">
           <h5>GRAFICA E SVILUPPO</h5>
           <div class="footer_col_content">
             <a target="_blank" href="https://www.beamediacompany.com/">DALK + BEA</a> x GEDI
           </div>
         </div>
-
       </div>
+
       <div class="footer_bottom">
+        <div class="footer_bottom_container">
           <div class="footer_bottom_content">
-            <esi:include src="https://lab.gedidigital.it/utils/includes/footer/content_hub.html" />
+            <esi:include src="https://lab.gedidigital.it/utils/includes/footer/stampa_nazionale.html" />
+          </div>
         </div>
       </div>
+
     </footer>
 
   </div>
 
-    <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
-    <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
+    <!-- <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
+    <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' /> -->
 
   </body>
 
