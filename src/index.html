@@ -1,7 +1,7 @@
 <?php
 
     $pageUrl = strtok( (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) || isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", "?");
-    $pageTitle = "L’abuso dei prodotti chimici per igienizzare gli ambienti ha impatti negativi non solo sull’ambiente, ma anche sulla nostra salute. La nuova frontiera fa leva sul ruolo dei batteri buoni, i probiotici. ";
+    $pageTitle = "L’abuso dei prodotti chimici per igienizzare gli ambienti ha impatti negativi non solo sull’ambiente, ma anche sulla nostra salute. La nuova frontiera fa leva sul ruolo dei batteri buoni, i probiotici.";
 
     $twitterString = "" . $pageUrl;
     $whatsappString = $pageTitle. " " . $pageUrl;
