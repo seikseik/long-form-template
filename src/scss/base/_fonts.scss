@@ -1,28 +1,18 @@
 @font-face {
     font-family: 'Everett-Light';
-    src: url('./fonts/Everett-Light-web.eot');
-    src: url('./fonts/Everett-Light-web?#iefix') format('embedded-opentype'),
-         url('./fonts/Everett-Light-web.woff') format('woff'),
-         url('./fonts/Everett-Light-web.woff2') format('woff2'),
-         url('./fonts/Everett-Light-web.ttf') format('truetype'),
-         url('./fonts/Everett-Light-web.svg#Everett-Light-web') format('svg');
+    src: url('../fonts/Everett-Light-web.woff') format('woff'),
+         url('../fonts/Everett-Light-web.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
    }
 
-@font-face {
+ @font-face {
    font-family: 'Everett-Regular';
-   src: url('./fonts/Everett-Regular-web.eot');
-   src: url('./fonts/Everett-Regular-web?#iefix') format('embedded-opentype'),
-        url('./fonts/Everett-Regular-web.woff') format('woff'),
-        url('./fonts/Everett-Regular-web.woff2') format('woff2'),
-        url('./fonts/Everett-Regular-web.ttf') format('truetype'),
-        url('./fonts/Everett-Regular-web.svg#Everett-Regular-web') format('svg');
+   src: url('../fonts/Everett-Regular-web.woff') format('woff'),
+        url('../fonts/Everett-Regular-web.woff2') format('woff2');
    font-weight: normal;
    font-style: normal;
   }
-
-
 
 
 $size_text: 21px;
