@@ -423,6 +423,12 @@ strong{font-weight: 600;}
 }
 
 
+.disabled{
+  opacity: 0;
+  visibility: hidden;
+}
+
+
 .section_image_gallery{
   display: flex;
   flex-direction: column;
