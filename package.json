@@ -90,7 +90,7 @@
   },
   "target": "web",
   "dependencies": {
-    "gsap": "npm:@gsap/member@^3.10.4",
+    "gsap": "file:gsap-bonus.tgz",
     "locomotive-scroll": "^4.1.4",
     "marquee3000": "^1.1.1",
     "matter-js": "^0.18.0",

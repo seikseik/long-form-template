@@ -22,7 +22,7 @@ function initDesktop(){
   const locoScroll = new LocomotiveScroll({
     el: scrollContainer,
     smooth: true,
-    inertia: 0.9,
+    inertia: 0.6,
     getDirection: true,
     smartphone: {
          smooth: false,
