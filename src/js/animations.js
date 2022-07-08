@@ -121,16 +121,27 @@ const swiper_chef = new Swiper('.swiper-chef', {
       spaceBetween: 20,
       pagination: false,
       grabCursor: true,
+      clickable: true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
     },
     '1300': {
-      slidesPerView: 4
+      slidesPerView: 4,
+      clickable: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
     },
     '1600': {
-      slidesPerView: 5
+      slidesPerView: 5,
+      clickable: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     }
   }
 });
