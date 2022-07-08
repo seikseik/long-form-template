@@ -196,10 +196,21 @@ strong{font-weight: 600;}
   z-index: -1;
   top:0;
   overflow: hidden;
+  .video_wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width:100%;
+  }
   .video_back{
     min-width: 100%;
     min-height: 100%;
+    left: 0;
+    top:0;
     object-fit: cover;
+    object-position: center;
   }
   .overlay{
     position: absolute;
@@ -599,8 +610,11 @@ footer{
 
 @media screen and (max-width: 768px) {
 
+
+
   body{
     overflow-y: scroll;
+    min-height: -webkit-fill-available;
   }
 
   .mob{
@@ -786,14 +800,27 @@ footer{
     margin-bottom: $space;
     .chef_row_container{
       .swiper-pagination{
-        bottom: -50px !important;
+        bottom: -55px !important;
         opacity: 1 !important;
         visibility: visible;
       }
       .dida_chef{
-        display: none;
+        position: unset;
+        min-height: unset;
+        font-size: 16px;
+        width:100%;
+        padding: 0;
+        margin-top: 6px;
+        text-align: left;
+        background: 0;
+        border: none;
+        br{display: none;}
       }
     }
+
+    .single_card{flex-direction: column;}
+
+    .swiper-button-prev, .swiper-button-next{display: none !important;}
   }
 
 
@@ -834,6 +861,12 @@ footer{
 
 
   .section_slideshow_locations{
+    .slide{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
     .slide_content{
       .slide_header{
         width:100%;
@@ -853,7 +886,7 @@ footer{
         }
       }
       .slide_title_container{
-        margin-bottom: 15vh;
+        margin-bottom: 50px;
         h1{
           font-size: 35px;
         }
