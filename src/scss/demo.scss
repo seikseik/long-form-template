@@ -611,7 +611,6 @@ footer{
 @media screen and (max-width: 768px) {
 
 
-
   body{
     overflow-y: scroll;
     min-height: -webkit-fill-available;
@@ -676,7 +675,7 @@ footer{
     }
     .social-mobile{
       position: absolute;
-      bottom: $spacing*2;
+      bottom: 90px;
       right: $spacing*2;
       display: flex;
       flex-direction: column;
