@@ -1,0 +1,297 @@
+<?php
+
+    $pageUrl = strtok( (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) || isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", "?");
+    $pageTitle = "Africa e transizione energetica: sfide e opportunità";
+    $pageDescription = "La sfida del settore energetico al 2050. La strategia di Eni per un futuro a emissioni zero";
+    $twitterString = "" . $pageUrl;
+    $whatsappString = $pageTitle. " " . $pageUrl;
+?>
+
+<!DOCTYPE html>
+<html lang="it">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="shortcut icon" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/green_and_blue/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/green_and_blue/img/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/green_and_blue/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/green_and_blue/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/green_and_blue/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/green_and_blue/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/green_and_blue/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/green_and_blue/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/green_and_blue/apple-touch-icon-152x152.png" />
+
+
+    <title><?php echo $pageTitle; ?></title>
+    <meta name="description" content="<?php echo $pageDescription; ?>" />
+    <link rel="canonical" href="<?php echo $pageUrl; ?>">
+
+    <!-- CONFIGURAZIONE STATS -->
+    <script type="text/javascript">
+      var pageHref = '<?php echo $pageUrl; ?>';
+      var pageType = 'dettaglio_content';
+    </script>
+    <esi:include src='http://www.repstatic.it/cless/common/stable/js/script/tlh/traffic_light_handler.html' />
+    <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script>
+    <!-- CONFIGURAZIONE STATS
+
+    <!-- facebook -->
+    <meta property="fb:app_id" content="182234715127717" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="<?php echo $pageTitle; ?>">
+    <meta property="og:description" content="<?php echo $pageDescription; ?>">
+    <meta property="og:image" content="<?php echo $pageUrl; ?>meta-2.png?<?php echo filemtime('./meta-2.png'); ?>">
+    <meta property="og:url" content="<?php echo $pageUrl; ?>">
+    <meta property="article:published_time" content="2022-05-20T09:00">
+    <!-- facebook -->
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="<?php echo $pageTitle; ?>">
+    <meta name="twitter:description" content="<?php echo $pageDescription; ?>">
+
+    <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta-2.png?<?php echo filemtime('./meta-2.png'); ?>">
+
+    <meta name="twitter:url" content="<?php echo $pageUrl; ?>">
+    <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.typekit.net/ghj1glf.css">
+  <script defer src="../js/app.js"></script><link href="../css/app.css" rel="stylesheet"></head>
+
+  <body>
+  <div class="main">
+
+  <div class="section_hero">
+    <div class="hero_left">
+      <div class="hero_left_container">
+        <div class="logo">
+          <a href="https://www.greenandblue.it/">
+          <img src="./images/content/logo.svg" alt="">
+          </a>
+        </div>
+        <div class="hero_title">
+          <div class="social-list_container">
+            <div class="social-list">
+              <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"><img src="./images/content/fb.svg" alt=""></a>
+              <span class="line-divider"></span>
+              <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"><img src="./images/content/tw.svg" alt=""></a>
+            </div>
+          </div>
+          <h2>Energia pulita a tutti: la forza della transizione equa</h2>
+          <p>in collaborazione con <span>Eni</span></p>
+          <div class="hero_description">
+            <p>La sfida del settore energetico al 2050. La strategia di Eni per un futuro a emissioni zero</p>
+          </div>
+        </div>
+
+
+        <div class="scroll">
+          <img src="./images/content/arrow-hero.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="hero_right">
+      <img src="./images/content/hero_2.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="section_text">
+    <div class="text_container">
+      <div class="text_heading">
+        <div class="line"></div>
+        <div class="author-div">
+          <div class="circle"></div>
+          <div class="author_name"><span>di</span> VITO DE CEGLIA</div>
+        </div>
+      </div>
+
+      <p fade>
+        <span class="drop">
+          L
+        </span>
+        <strong>La sfida che il settore energetico si trova di fronte è duplice:</strong> soddisfare i fabbisogni energetici di una popolazione in crescita e, al contempo, ridurre le emissioni immesse in atmosfera per evitare danni irreversibili all’ambiente. A lanciare l’allarme è l’Agenzia Internazionale dell’Energia (Iea) nel nuovo rapporto “Global Energy Review: CO2 Emissions”: le emissioni di gas serra legate all’energia “hanno raggiunto i massimi storici nel 2021 per effetto della ripresa dell’economia mondiale post Covid-19”. “Lo scorso anno – rileva l’Agenzia - sono state emesse 36,3 miliardi di tonnellate di CO2 a livello globale che hanno generato un incremento annuale delle emissioni di anidride carbonica di oltre 2 miliardi di tonnellate (+6%). Tra i Paesi è la Cina che ha guidato il primato, con un aumento di emissioni di CO2 di 750 milioni di tonnellate tra il 2019 e il 2021. A seguire, gli studiosi indicano India e Usa.
+      </p>
+
+      <p fade>Il problema è che, oltre all’aumento delle emissioni in atmosfera, l’onda lunga del Covid-19 ha rallentato i progressi verso l’accesso universale all’energia. Lo dice l’ottavo rapporto “Tracking SDG 7: The Energy Progress”, realizzato da Banca mondiale, Agenzia internazionale per l’energia, Agenzia Internazionale per le Energie Rinnovabili, Nazioni Unite e Organizzazione Mondiale della Sanità.</p>
+
+    </div>
+  </div>
+
+
+  <div class="section_text">
+    <div class="section_quote">
+      <span class="drop">
+        <svg width="168" height="110" viewBox="0 0 168 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M55.16 54.88L87.64 109.76H35L0 54.88L35 0H87.64L55.16 54.88ZM135.24 54.88L167.72 109.76H115.08L80.08 54.88L115.08 0H167.72L135.24 54.88Z" fill="#F8D448"/>
+        </svg>
+      </span>
+      <h2 class="quote_animation">Gli impatti della crisi pandemica sull’energia sono peggiorati negli ultimi mesi a causa dell’invasione russa dell’Ucraina, che ha portato all’incertezza sui mercati globali del petrolio e del gas, facendo di fatto salire alle stelle i prezzi</h2>
+      <div class="quote_footer">
+        <span>Tracking SDG 7: The Energy Progress</span>
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section_text">
+    <div class="text_container">
+      <p fade>
+        Effetti immediati e scenari possibili? «A livello globale – scandisce il rapporto - 733 milioni di persone non hanno ancora accesso all'elettricità e 2,4 miliardi di persone cucinano ancora utilizzando combustibili dannosi per la loro salute e l’ambiente. Al ritmo attuale di progresso, 670 milioni di persone rimarranno senza elettricità entro il 2030, 10 milioni in più rispetto alle previsioni dell’anno scorso».
+      </p>
+
+      <p fade>Tuttavia, una via d’uscita c’è. A riaffermarla nel suo documento finale è stata a novembre la Cop26 di Glasgow, la Conferenza internazionale delle Nazioni Unite: «È necessario costruire un settore energetico globale più equo e con emissioni nette zero al 2050, ma questa sfida richiede una trasformazione senza precedenti del modo in cui l’energia viene prodotta, trasportata e utilizzata».</p>
+
+      <p fade>Una trasformazione epocale che vede giocoforza le grandi major dell’energia in prima linea, come certificano gli enormi investimenti stanziati nel corso degli ultimi anni per lo sviluppo di progetti e tecnologie sostenibili in grado di velocizzare il processo di transizione ecologica del comparto energetico. Al di là degli investimenti, è necessario però distinguere le azioni delle compagnie energetiche in base all’approccio che hanno adottato per l’abbattimento delle emissioni.</p>
+
+      <p fade>Il contributo di Eni è riportato nel 16° rapporto volontario annuale di sostenibilità, “Eni for 2021”, con il quale la società dell’energia racconta il suo percorso nell’affrontare queste sfide. Il documento è articolato secondo tre focus, che rappresentano le leve del suo modello di business integrato. Queste sono: Neutralità carbonica al 2050, Eccellenza operativa e Alleanze per lo sviluppo, il cui obiettivo è la creazione di valore di lungo termine per tutti gli stakeholder.</p>
+
+    </div>
+  </div>
+
+
+  <div class="section_info info_one second_long">
+      <img class="hide_mobile" src="./images/content/2-info.svg" alt="">
+      <img class="hide_desktop" src="./images/content/2-info_mobile.svg" alt="">
+
+  </div>
+
+
+  <div class="section_text">
+    <div class="text_container">
+      <p fade>
+        Eni ha tracciato una evoluzione delle attività di business, a partire dallo sviluppo delle rinnovabili e dalle iniziative di agribusiness. Quest’ultime prevedono la costruzione di una rete di agri-hub nei Paesi di interesse per alimentare il 35% delle bio-raffinerie al 2025.
+      </p>
+
+      <p fade>Nel frattempo, Eni ha messo a punto un nuovo piano strategico 2022-2025. Lo ha presentato Descalzi il 18 marzo scorso alla comunità finanziaria: il gruppo punta ad accelerare il suo percorso di riduzione delle emissioni, con obiettivi intermedi più ambiziosi già al 2025, per arrivare alle zero emissioni nette al 2050, in linea con le previsioni dell’Accordo di Parigi. In particolare, il piano prevede una riduzione del -35% delle emissioni nette scope 1, 2 e 3 entro il 2030 e del -80% entro il 2040 rispetto ai livelli del 2018 (e agli obiettivi di -25% e -65% del precedente piano). Per quanto riguarda le emissioni nette scope 1 e 2, Eni arriverà a -40% entro il 2025 (rispetto ai livelli del 2018) e raggiungerà le zero emissioni nette al 2035, in anticipo di 5 anni rispetto al precedente piano.</p>
+
+      <p fade>Per quanto riguarda, poi, le emissioni scope 1 e 2 relative all’upstream, prevede una riduzione del 65% al 2025 rispetto al 2018, in linea con l’obiettivo, confermato, delle zero emissioni nette al 2030. Per finanziare questa crescita, Eni aumenterà la quota dei propri investimenti dedicati alle nuove soluzioni energetiche ad almeno il 30% entro il 2025, raddoppiando al 60% entro il 2030 e fino all’80% al 2040.</p>
+
+    </div>
+  </div>
+
+
+
+  <div class="banner_container">
+    <img src="./images/content/banner_1.2.jpg" alt="">
+  </div>
+
+  <div class="section_text black_section">
+    <div class="left_heading">
+      <p>Neutralità carbonica</p>
+    </div>
+    <div class="text_container">
+      <span class="drop">
+        I
+      </span>
+      <p fade>
+        <strong>Il modello di business di Eni prevede un percorso di decarbonizzazione</strong> verso la neutralità carbonica al 2050. L’approccio scelto da Eni guarda alle emissioni generate lungo l’intero ciclo di vita dei prodotti energetici e si basa su un set di azioni che porteranno alla totale decarbonizzazione dei processi e dei prodotti entro il 2050. Questo percorso, conseguito perlopiù sulla base di tecnologie già esistenti, consentirà ad Eni di abbattere totalmente la propria impronta carbonica, sia in termini di emissioni nette sia in termini di intensità carbonica netta. Per riuscirci, la quota di spesa dedicata alle attività Oil & Gas sarà gradualmente ridotta, con il progressivo phase-out degli investimenti in attività o prodotti ad alta intensità carbonica. I principali progetti di investimento verranno selezionati in base al loro profilo emissivo e ai target prefissati di abbattimento delle emissioni. Per monitorare i progressi in termini di riduzione di emissioni GHG (Greenhouse Gases) dei suoi asset, a partire dal 2015 Eni utilizza indicatori specifici. A questi si sono aggiunti nel 2020 gli indicatori contabilizzati su base equity. La metodologia di contabilizzazione GHG considera tutti i prodotti energetici gestiti dai vari business Eni, inclusi gli acquisti da terzi, e tutte le emissioni che essi generano lungo l’intera filiera (Scope 1+2+3), secondo un approccio “well-to-wheel” (l’analisi che valuta le emissioni non solo sulla base del consumo del carburante, ma anche della sua produzione e del trasporto). Gli indicatori risultanti tracciano così il percorso di Eni verso la neutralità.</p>
+    </div>
+  </div>
+
+
+
+  <div class="banner_container">
+    <img src="./images/content/banner_2.2.jpg" alt="">
+  </div>
+
+  <div class="section_text black_section">
+    <div class="left_heading">
+      <p>Eccellenza Operativa</p>
+    </div>
+    <div class="text_container">
+      <span class="drop">
+        I
+      </span>
+      <p fade>
+        <strong>Il business di Eni, alla luce del percorso di profonda trasformazione</strong> delle sue attività, punta alla valorizzazione del capitale umano. Questa visione implica un’evoluzione delle competenze professionali necessarie per affrontare le nuove sfide, anche in ottica di transizione energetica. Per valorizzare le professionalità, sono entrati in gioco processi di valutazione delle performance che hanno orientato i dipendenti verso un aggiornamento delle proprie capacità. Il risultato è stato un impegno di tutti i dipendenti nello sviluppo dei comportamenti prioritari per la trasformazione. Nonostante la discontinuità del mercato dell’energia, Eni, nel 2021, ha continuato ad assumere personale, soprattutto in aree chiave come economia circolare, sostenibilità, HSE, rinnovabili, biotech, digital, ricerca e sviluppo in ambito new tech, produzione, manutenzione e asset integrity.</p>
+    </div>
+  </div>
+
+
+
+    <footer >
+
+      <div class="footer_left">
+        <div class="footer_left_container">
+            <div class="card_container">
+              <div class="image_container">
+                <img src="./images/content/card-2.jpg" alt="">
+              </div>
+              <div class="card-bottom">
+                <a href="#" class="card_content">
+                  <h2>Energia pulita a tutti: la forza della transizione EQUA</h2>
+                  <p> <span class="line v-line"></span> 07 / 07 / 2022</p>
+
+                </a>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="footer_right">
+
+        <div class="footer_col">
+          <h5>IN COLLABORAZIONE CON</h5>
+          <div class="footer_col_content footer_logo_cont">
+            <a target="_blank" href="https://www.eni.com/">
+              <img src="./images/content/logo_cliente.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="footer_col">
+          <h5>UNA PRODUZIONE</h5>
+          <div class="footer_col_content">
+            <a target="_blank" href="https://www.gedivisual.it/">GEDI VISUAL</a>
+          </div>
+        </div>
+
+        <div class="footer_col">
+          <h5>GRAFICA E SVILUPPO</h5>
+          <div class="footer_col_content">
+            <a target="_blank" href="https://www.beamediacompany.com/">DALK + BEA</a> x GEDI
+          </div>
+        </div>
+
+        <div class="footer_bottom">
+          <div class="footer_bottom_container">
+            <div class="footer_bottom_content">
+              <esi:include src="https://lab.gedidigital.it/utils/includes/footer/content_hub.html" />
+            </div>
+          </div>
+          <div class="scroll-top">
+            <svg width="42" height="31" viewBox="0 0 42 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_4603_1575)">
+              <path d="M13.45 0.999999L13.45 30L35.5 30L35.5 10M13.45 0.999999L23.5 11.05M13.45 0.999999L3.4 11.05" stroke="#332827" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_4603_1575">
+              <rect width="42" height="31" fill="white" transform="translate(42 31) rotate(-180)"/>
+              </clipPath>
+              </defs>
+              </svg>
+          </div>
+        </div>
+
+      </div>
+
+    </footer>
+
+  </div>
+
+    <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
+    <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
+
+  </body>
+
+</html>
