@@ -144,7 +144,13 @@ module.exports = {
       hash: false,
       filename: "index.html",
       template: path.resolve(environment.paths.source, "index.html"),
-    })
+    }),
+      new HTMLWebpackPlugin({
+      inject: true,
+      hash: false,
+      filename: "africa-e-transizione-energetica/index.html",
+      template: path.resolve(environment.paths.source, "africa-e-transizione-energetica/index.html"),
+    }),
   ],
   // .concat(htmlPluginEntries),
   target: 'web',

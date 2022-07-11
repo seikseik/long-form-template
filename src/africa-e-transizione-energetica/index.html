@@ -1,7 +1,7 @@
 <?php
 
     $pageUrl = strtok( (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) || isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", "?");
-    $pageTitle = "Energia pulita a tutti: la forza della transizione equa";
+    $pageTitle = "Africa e transizione energetica: sfide e opportunità";
     $pageDescription = "La sfida del settore energetico al 2050. La strategia di Eni per un futuro a emissioni zero";
     $twitterString = "" . $pageUrl;
     $whatsappString = $pageTitle. " " . $pageUrl;
@@ -46,7 +46,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="<?php echo $pageTitle; ?>">
     <meta property="og:description" content="<?php echo $pageDescription; ?>">
-    <meta property="og:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.png'); ?>">
+    <meta property="og:image" content="<?php echo $pageUrl; ?>meta-2.png?<?php echo filemtime('./meta-2.png'); ?>">
     <meta property="og:url" content="<?php echo $pageUrl; ?>">
     <meta property="article:published_time" content="2022-05-20T09:00">
     <!-- facebook -->
@@ -57,7 +57,7 @@
     <meta name="twitter:title" content="<?php echo $pageTitle; ?>">
     <meta name="twitter:description" content="<?php echo $pageDescription; ?>">
 
-    <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.png'); ?>">
+    <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta-2.png?<?php echo filemtime('./meta-2.png'); ?>">
 
     <meta name="twitter:url" content="<?php echo $pageUrl; ?>">
     <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
@@ -67,7 +67,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.typekit.net/ghj1glf.css">
-  <script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"></head>
+  </head>
 
   <body>
   <div class="main">
@@ -102,7 +102,7 @@
       </div>
     </div>
     <div class="hero_right">
-      <img src="./images/content/hero.jpg" alt="">
+      <img src="./images/content/hero_2.jpg" alt="">
     </div>
   </div>
 
@@ -161,97 +161,11 @@
   </div>
 
 
-  <div class="section_info info_one">
-    <div class="info_left">
+  <div class="section_info info_one second_long">
+      <img class="hide_mobile" src="./images/content/2-info.svg" alt="">
+      <img class="hide_desktop" src="./images/content/2-info_mobile.svg" alt="">
 
-
-      <div class="info_left_container">
-        <div class="numbers_grid">
-          <div class="col_num label_box">
-              <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect y="8" width="4" height="10" fill="#F3F2EF"/>
-                <rect x="6" width="4" height="18" fill="#F3F2EF"/>
-                <rect x="12" y="4" width="4" height="14" fill="#F3F2EF"/>
-              </svg>
-            <h4> Eni nel mondo <br> 2021</h4>
-          </div>
-
-          <div class="col_num">
-            <div class="num_box">
-              <h3>69</h3>
-            </div>
-            <div class="num_data">
-              <p>Paesi di presenza</p>
-              <span>2020: 68</span>
-            </div>
-          </div>
-          <div class="col_num">
-            <div class="num_box">
-              <h3>31.888</h3>
-            </div>
-            <div class="num_data">
-              <p>Persone</p>
-              <span>2020: 30.775</span>
-            </div>
-          </div>
-          <div class="col_num">
-            <div class="num_box">
-              <h3>65<span>mld di sm3</span></h3>
-            </div>
-            <div class="num_data">
-              <p>Gas venduto ai mercati domestici in 17 Paesi nel 2021</p>
-              <span>2020: 57 MLD di SM3</span>
-            </div>
-          </div>
-          <div class="col_num">
-            <div class="num_box">
-              <h3>91<span>%</span></h3>
-            </div>
-            <div class="num_data">
-              <p>Riutilizzo delle acque dolci</p>
-              <span>2020: 91%</span>
-            </div>
-          </div>
-          <div class="col_num">
-            <div class="num_box">
-              <h3><span>€</span>7<span>MLN</span></h3>
-            </div>
-            <div class="num_data">
-              <p>Su leadership tecnologica negli ultimi sei anni</p>
-            </div>
-          </div>
-          <div class="top_label">
-            <div class="icon">
-              <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.00203 5.64L7.83403 10.344H3.77803L0.778031 5.64L3.77803 0.935999H7.83403L5.00203 5.64ZM11.386 5.64L14.218 10.344H10.162L7.16203 5.64L10.162 0.935999H14.218L11.386 5.64Z" fill="#F3F2EF"/>
-              </svg>
-            </div>
-            <h4>  LA JUST TRANSITION ↓</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="info_right">
-
-      <div class="info_quote_container">
-        <span class="drop">
-          <svg width="168" height="111" viewBox="0 0 168 111" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M55.16 55.3506L87.64 110.421H35L0 55.3506L35 0.280273H87.64L55.16 55.3506ZM135.24 55.3506L167.72 110.421H115.08L80.08 55.3506L115.08 0.280273H167.72L135.24 55.3506Z" fill="#F8D448"/>
-            </svg>
-        </span>
-        <h2 class="quote_animation">
-            La nostra transizione energetica è ispirata ai principi della just transition, ovvero una transizione energetica che mette al centro le persone, che sia efficace, grazie a un approccio incisivo, che adotti le tecnologie a disposizione, e sia giusta, contemplando l’adozione di varie soluzioni, con diverse gradualità a seconda delle specificità dei molteplici contesti e dei vincoli interni
-        </h2>
-        <div class="quote_footer">
-          <span>Claudio Descalzi / Amministratore delegato di ENI</span>
-          <div class="line"></div>
-        </div>
-      </div>
-
-    </div>
   </div>
-
 
 
   <div class="section_text">
@@ -268,25 +182,9 @@
   </div>
 
 
-  <!-- <div class="section_info info_two">
-    <div class="top_label left_align">
-      <div class="icon">
-        <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect y="8" width="4" height="10" fill="#F3F2EF"/>
-        <rect x="6" width="4" height="18" fill="#F3F2EF"/>
-        <rect x="12" y="4" width="4" height="14" fill="#F3F2EF"/>
-        </svg>
-      </div>
-      <h4> PRINCIPALI TARGET DI BUSINESS ↓</h4>
-    </div>
-    <div class="info_two_container">
-      <img class="hide_mobile" src="./images/content/info_two.svg" alt="">
-      <img class="hide_desktop" src="./images/content/info_two_mobile.svg" alt="">
-    </div>
-  </div> -->
 
   <div class="banner_container">
-    <img src="./images/content/banner_1.jpg" alt="">
+    <img src="./images/content/banner_1.2.jpg" alt="">
   </div>
 
   <div class="section_text black_section">
@@ -303,29 +201,9 @@
   </div>
 
 
-  <!-- <div class="section_info info_three">
-    <div class="top_label left_align bottom_align">
-      <div class="icon">
-        <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect y="8" width="4" height="10" fill="#F3F2EF"/>
-        <rect x="6" width="4" height="18" fill="#F3F2EF"/>
-        <rect x="12" y="4" width="4" height="14" fill="#F3F2EF"/>
-        </svg>
-      </div>
-      <h4> Verso un energy business net zero ↓</h4>
-    </div>
-    <div class="info_three_container">
-      <div class="info_col_left"></div>
-      <div class="info_col_center">
-        <img class="hide_mobile" src="./images/content/info_three.svg" alt="">
-        <img class="hide_desktop" src="./images/content/info_three_mobile.svg" alt="">
-      </div>
-      <div class="info_col_right">  </div>
-    </div>
-  </div> -->
 
   <div class="banner_container">
-    <img src="./images/content/banner_2.jpg" alt="">
+    <img src="./images/content/banner_2.2.jpg" alt="">
   </div>
 
   <div class="section_text black_section">
@@ -341,69 +219,6 @@
     </div>
   </div>
 
-<!--
-  <div class="section_info info_three second">
-    <div class="top_label left_align bottom_align">
-      <div class="icon">
-        <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect y="8" width="4" height="10" fill="#F3F2EF"/>
-        <rect x="6" width="4" height="18" fill="#F3F2EF"/>
-        <rect x="12" y="4" width="4" height="14" fill="#F3F2EF"/>
-        </svg>
-      </div>
-      <h4> Domanda primaria di energia per combustibile ↓</h4>
-    </div>
-
-    <div class="top_label right_align bottom_align hide_mobile">
-      <div class="icon">
-        <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect y="8" width="4" height="10" fill="#F3F2EF"/>
-        <rect x="6" width="4" height="18" fill="#F3F2EF"/>
-        <rect x="12" y="4" width="4" height="14" fill="#F3F2EF"/>
-        </svg>
-      </div>
-      <h4> Emissioni di CO2 globali del settore energetico ↓</h4>
-    </div>
-
-    <div class="info_three_container">
-      <div class="info_col_left"></div>
-      <div class="info_col_center">
-        <img class="hide_mobile" src="./images/content/info_four.svg" alt="">
-        <img class="hide_desktop" src="./images/content/info_four_mobile_1.svg" alt="">
-        <div class="top_label hide_desktop">
-          <div class="icon">
-            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect y="8" width="4" height="10" fill="#F3F2EF"/>
-            <rect x="6" width="4" height="18" fill="#F3F2EF"/>
-            <rect x="12" y="4" width="4" height="14" fill="#F3F2EF"/>
-            </svg>
-          </div>
-          <h4> Emissioni di CO2 globali del settore energetico ↓</h4>
-        </div>
-          <img class="hide_desktop" src="./images/content/info_four_mobile_2.svg" alt="">
-      </div>
-      <div class="info_col_right">  </div>
-    </div>
-  </div> -->
-
-  <div class="banner_container">
-    <img src="./images/content/banner_3.jpg" alt="">
-  </div>
-
-  <div class="section_text black_section">
-    <div class="left_heading">
-      <p>Alleanze per lo sviluppo</p>
-    </div>
-    <div class="text_container">
-      <span class="drop">
-        L
-      </span>
-      <p fade>
-        <strong>Le Alleanze per lo sviluppo rappresentano l’impegno di Eni</strong>per una transizione equa al fine di raggiungere uno sviluppo umano globale. Questo richiede un cambiamento culturale, oltre che sociale, economico e tecnologico. Nei Paesi in cui opera, Eni promuove iniziative con una prospettiva a lungo termine per favorire l’accesso all’energia, la diversificazione economica, la formazione, la salute delle comunità, l’accesso all’acqua e ai servizi igienici e la tutela del territorio. Queste azioni, definite all’interno di Programmi di sviluppo locale (Local Development Programme - LDP) insieme ad attori impegnati sul territorio riconosciuti a livello globale, sono coerenti con le linee strategiche di sviluppo nazionali o regionali del Paese e con i Piani di sviluppo nazionale e l’Agenda 2030 delle Nazioni Unite. In pratica, Eni fonda la sua strategia di sviluppo locale su un’analisi del contesto sociale, politico ed economico dei Paesi di attività per meglio comprendere le realtà di interesse. Anche in relazione al grado di maturità della presenza nel Paese, Eni ha sviluppato diversi tipi di analisi, che, oltre a supportare l’impresa nelle diverse fasi del business, permettono di individuare e soddisfare il più possibile i reali bisogni delle comunità coinvolte. Sono queste analisi a costituire il punto di partenza per la definizione di progetti di sviluppo locale. In caso di ingresso in un nuovo Paese, esse hanno l’obiettivo sia di evidenziare le priorità in termini di sviluppo socioeconomico, sia di identificare in via preliminare il ruolo che Eni può svolgere.</p>
-    </div>
-  </div>
-
-
 
 
     <footer >
@@ -412,11 +227,11 @@
         <div class="footer_left_container">
             <div class="card_container">
               <div class="image_container">
-                <img src="./images/content/card.jpg" alt="">
+                <img src="./images/content/card-2.jpg" alt="">
               </div>
               <div class="card-bottom">
                 <a href="#" class="card_content">
-                  <h2>Il prossimo appuntamento</h2>
+                  <h2>Energia pulita a tutti: la forza della transizione EQUA</h2>
                   <p> <span class="line v-line"></span> 07 / 07 / 2022</p>
 
                 </a>
