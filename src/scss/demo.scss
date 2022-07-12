@@ -424,6 +424,22 @@
   }
 }
 
+.inline_link{
+  color:$brown;
+  position: relative;
+  display: inline-block;
+  &:after{
+    content: "";
+    height: 10px;
+    width:100%;
+    background: $yellow;
+    position: absolute;
+    left: 0;
+    bottom:3px;
+    z-index: -1;
+  }
+}
+
 
 .info_three{
   position: relative;

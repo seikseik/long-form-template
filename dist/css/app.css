@@ -710,6 +710,22 @@ body {
   min-width: 100%;
 }
 
+.inline_link {
+  color: #332827;
+  position: relative;
+  display: inline-block;
+}
+.inline_link:after {
+  content: "";
+  height: 10px;
+  width: 100%;
+  background: #F8D448;
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  z-index: -1;
+}
+
 .info_three {
   position: relative;
 }
