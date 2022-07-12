@@ -36,7 +36,7 @@ arrow_top.addEventListener("click", function(){
 
   const qc = gsap.utils.toArray(".quote_footer > span");
   qc.forEach((el, i) => {
-    const anim = gsap.fromTo(el, {autoAlpha: 0},{  duration: 0.3, autoAlpha: 1,ease: "ease",delay: 1.5});
+    const anim = gsap.fromTo(el, {autoAlpha: 0},{  duration: 0.3, autoAlpha: 1,ease: "ease",delay: 0.5});
     ScrollTrigger.create({
       trigger: el,
       animation: anim,

@@ -449,6 +449,20 @@
   }
 }
 
+.centered_image{
+  width: $max;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 $spacing*2;
+  img{
+    width:100%;
+    overflow: hidden;
+    border-radius: 10px;
+    border:1px solid $brown;
+    height: auto;
+  }
+}
+
 footer{
   display: flex;
   border-top: $bo;
@@ -648,6 +662,11 @@ footer{
 
     .info_one.second_long{
       padding: 0;
+    }
+
+
+    .quote_footer span{
+      white-space:normal;
     }
 
     body{

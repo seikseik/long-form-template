@@ -735,6 +735,20 @@ body {
   background: #357C70;
 }
 
+.centered_image {
+  width: 950px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.centered_image img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #332827;
+  height: auto;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1005,6 +1019,10 @@ footer .footer_right .footer_bottom .scroll-top {
 
   .info_one.second_long {
     padding: 0;
+  }
+
+  .quote_footer span {
+    white-space: normal;
   }
 
   body {
