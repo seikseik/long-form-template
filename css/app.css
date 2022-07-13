@@ -764,6 +764,10 @@ body {
   border: 1px solid #332827;
   height: auto;
 }
+.centered_image .dida {
+  margin-top: 8px;
+  color: #A6A5A3;
+}
 
 footer {
   display: -webkit-box;
@@ -1272,14 +1276,14 @@ footer .footer_right .footer_bottom .scroll-top {
     width: 100%;
     border-right: 0;
     border-bottom: 2px solid #332827;
-    padding: 15% 16px;
+    padding: 18% 16px;
   }
   footer .footer_right {
     width: 100%;
   }
 
   .card_container:after {
-    padding-bottom: 110%;
+    padding-bottom: 115%;
   }
 
   .image_container {
@@ -1289,15 +1293,23 @@ footer .footer_right .footer_bottom .scroll-top {
   }
 
   .card_content {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .card_content h2 {
-    max-width: 100%;
+    max-width: 80%;
     padding: 0;
     margin-bottom: 13px;
+    font-size: 23px;
+    padding-right: 5px;
   }
   .card_content p {
     -webkit-box-orient: horizontal;
@@ -1318,5 +1330,8 @@ footer .footer_right .footer_bottom .scroll-top {
     height: 1px;
     margin-right: 10px;
     margin-top: 0;
+  }
+  .card_content .card_button svg {
+    width: 50px;
   }
 }
