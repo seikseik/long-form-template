@@ -477,6 +477,10 @@
     border:1px solid $brown;
     height: auto;
   }
+  .dida{
+    margin-top: $spacing;
+    color:$grey;
+  }
 }
 
 footer{
@@ -908,14 +912,14 @@ footer{
       width:100%;
       border-right: 0;
       border-bottom: $bo;
-      padding: 15% $spacing*2;
+      padding: 18% $spacing*2;
     }
     .footer_right{
       width:100%;
     }
   }
   .card_container:after{
-    padding-bottom: 110%;
+    padding-bottom: 115%;
   }
   .image_container{
     top:-13%;
@@ -923,11 +927,16 @@ footer{
     left: 20%;
   }
   .card_content{
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-end;
     h2{
-      max-width: 100%;
+      max-width: 80%;
+
       padding: 0;
       margin-bottom: 13px;
+      font-size: 23px;
+      padding-right: 5px;
     }
     p{
       flex-direction: row;
@@ -941,6 +950,9 @@ footer{
         margin-right: 10px;
         margin-top: 0;
       }
+    }
+    .card_button svg{
+      width:50px;
     }
   }
 
