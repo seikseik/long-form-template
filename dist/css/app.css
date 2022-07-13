@@ -767,6 +767,8 @@ body {
 .centered_image .dida {
   margin-top: 8px;
   color: #A6A5A3;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 footer {
