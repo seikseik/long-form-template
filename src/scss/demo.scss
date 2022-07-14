@@ -264,10 +264,17 @@ strong{font-weight: 600;}
   width: $max;
   max-width: 100%;
   margin: 0 auto;
-  h2{
-    @include heading;
-    margin-bottom: $spacing*3;
+
+  p:not(:last-child){
+    margin-bottom: $spacing*4;
   }
+
+  h2{
+    margin-bottom: $spacing*3;
+    font-weight: bold;
+    margin-left: $space*2;
+  }
+
   h3{
     @include subtitle;
     margin-bottom: $spacing*3;
@@ -287,6 +294,8 @@ strong{font-weight: 600;}
     color: white;
   }
 }
+
+
 .spacing-left{
   margin-left: $space*2;
 }
@@ -696,7 +705,8 @@ footer{
       }
     }
     h2{
-      font-size: 32px;
+      font-size: 20px;
+      margin-left: 0;
     }
     h3{
       font-size: 21px;

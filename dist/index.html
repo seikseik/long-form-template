@@ -1,0 +1,700 @@
+<?php
+
+    $pageUrl = strtok( (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) || isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", "?");
+    $pageTitle = "L’abuso dei prodotti chimici per igienizzare gli ambienti ha impatti negativi non solo sull’ambiente, ma anche sulla nostra salute. La nuova frontiera fa leva sul ruolo dei batteri buoni, i probiotici. ";
+
+    $twitterString = "" . $pageUrl;
+    $whatsappString = $pageTitle. " " . $pageUrl;
+?>
+
+<!DOCTYPE html>
+<html lang="it">
+
+  <head>
+    <link rel="shortcut icon" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/il-gusto/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/il-gusto/img/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/il-gusto/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/il-gusto/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/il-gusto/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/il-gusto/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/il-gusto/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/il-gusto/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="//www.repstatic.it/cless/channel/content-hub/2020-v1/img/il-gusto/apple-touch-icon-152x152.png" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $pageTitle; ?></title>
+    <meta name="description" content="<?php echo $pageDescription; ?>" />
+    <link rel="canonical" href="<?php echo $pageUrl; ?>">
+
+    <!-- CONFIGURAZIONE STATS -->
+    <script type="text/javascript">
+      var pageHref = '<?php echo $pageUrl; ?>';
+      var pageType = 'dettaglio_content';
+    </script>
+    <!-- <esi:include src='http://www.repstatic.it/cless/common/stable/js/script/tlh/traffic_light_handler.html' />
+    <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script> -->
+    <!-- CONFIGURAZIONE STATS -->
+
+    <!-- facebook -->
+    <meta property="fb:app_id" content="182234715127717" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="<?php echo $pageTitle; ?>">
+    <meta property="og:description" content="<?php echo $pageDescription; ?>">
+    <meta property="og:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.png'); ?>">
+    <meta property="og:url" content="<?php echo $pageUrl; ?>">
+    <meta property="article:published_time" content="2022-05-20T09:00">
+    <!-- facebook -->
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="<?php echo $pageTitle; ?>">
+    <meta name="twitter:description" content="<?php echo $pageDescription; ?>">
+    <meta name="twitter:image" content="<?php echo $pageUrl; ?>meta.jpg?<?php echo filemtime('./meta.png'); ?>">
+    <meta name="twitter:url" content="<?php echo $pageUrl; ?>">
+    <esi:include src='https://lab.repubblica.it/common/includes/zephr-head-free.html' />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico"><script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"></head>
+
+  <body>
+
+  <div class="menu_full">
+    <div class="menu-container">
+      <div class="overlay"></div>
+      <img class="map_overlay" src="./images/content/map_full.svg" alt="">
+      <div class="close">
+        <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.879272 1.38757L47.6095 48.1178" stroke="white" stroke-width="2"/>
+          <path d="M0.879272 48.1178L47.6095 1.38757" stroke="white" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="menu_header">
+        <h2>Le strade <br> del <span>Gusto</span></h2>
+      </div>
+      <div class="menu_footer">
+        <a class="menu_col" href="#">
+          <h4>Introduzione</h4>
+        </a>
+        <a class="menu_col inactive " href="#">
+          <span>TAPPA 1</span>
+          <h4>Lago di Garda</h4>
+        </a>
+        <a class="menu_col inactive" href="#">
+          <span>TAPPA 2</span>
+          <h4>Firenze</h4>
+        </a>
+        <a class="menu_col inactive" href="#">
+          <span>TAPPA 3</span>
+          <h4>Puglia</h4>
+        </a>
+        <a class="menu_col inactive" href="#">
+          <span>TAPPA 4</span>
+          <h4>Roma</h4>
+        </a>
+        <a class="menu_col inactive" href="#">
+          <span>TAPPA 5</span>
+          <h4>Milano</h4>
+        </a>
+        <a class="menu_col inactive" href="#">
+          <span>TAPPA 6</span>
+          <h4>Langhe</h4>
+        </a>
+        <a class="menu_col inactive" href="#">
+          <h4>Conclusione</h4>
+        </a>
+      </div>
+      <div class="social-mobile mob">
+        <span>SHARE</span>
+        <div class="social_container">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"><img src="./images/content/fb.svg" alt=""></a>
+          <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"><img src="./images/content/tw.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main" data-scroll-container>
+
+
+    <div data-scroll class="section_hero">
+      <div class="hero_container">
+
+        <div class="video_container">
+          <div class="video_wrapper">
+            <video poster="./images/content/poster.jpg" class="video_back" autoplay muted loop playsinline id="myVideo">
+              <source src="videoloop.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="overlay"></div>
+        </div>
+
+
+        <div data-scroll class="hero_header">
+          <div class="menu_btn">
+            MENU
+          </div>
+          <div class="logo_container">
+            <a href="https://ilgusto.it/">
+              <img src="./images/content/logo.svg" alt="">
+            </a>
+          </div>
+
+          <div class="social_container vis_none">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageUrl; ?>"><img src="./images/content/fb.svg" alt=""></a>
+            <a href="https://twitter.com/intent/tweet?text=<?php echo $twitterString; ?>"><img src="./images/content/tw.svg" alt=""></a>
+          </div>
+
+        </div>
+
+          <div class="hero_content">
+            <h1>Le strade <br> del <span>Gusto</span></h1>
+            <div class="collab-cont">
+            <span>IN COLLABORAZIONE CON </span>
+              <a target="_blank" href="https://www.maserati.com/">
+                <img src="./images/content/logo_cliente_bianco.png" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="scroll">
+            <span>scroll</span>
+            <div class="line"></div>
+          </div>
+      </div>
+    </div>
+
+
+    <div id="scrollto" data-scroll class="section_text left_text">
+      <div class="section_text_wrapper">
+        <div class="text_container">
+          <h2 lass="spacing-left">Che cos’è il Made in Italy?</h2>
+          <p class="spacing-left">Un mix di audacia, coraggio, consapevolezza, capacità di andare oltre la tradizione senza mai dimenticarla e una grande spinta verso l'innovazione. Gli ingredienti sono sotto gli occhi di tutti in un capo di moda che sfila a Milano, in un'auto che sfreccia a Modena, in un piatto che esce fumante e perfetto da una cucina.</p>
+
+          <p class="spacing-left">Questo Made in Italy <strong>è fatto di persone</strong>, quelle che continuano a portarlo avanti con forza, passione, intensità. Ai fornelli, come in una fabbrica, in un atelier di moda come in un vigneto.</p>
+
+          <p class="spacing-left">Da tempo ilgusto.it e il gruppo Gedi progettavano un viaggio tra i protagonisti del Made in Italy a tavola. Volevamo che fosse trasversale, potente, dedicato a chi vuole sognare, ma pensa a sogni possibili anche se unici.
+          Da qui nasce il progetto <strong>“Le strade del gusto”</strong> un long-form fatto di emozioni e costruito in collaborazione con Maserati.</p>
+        </div>
+      </div>
+    </div>
+
+    <div data-scroll class="section_text right_text">
+      <div class="section_text_wrapper">
+        <div class="text_container">
+          <p>L'auto, uno splendido esempio dell’eccellenza del Made in Italy almeno quanto un piatto di Massimo Bottura, non è solo il vettore di questa avventura. Levante, Grecale, Ghibli, MC20 sono le ispirazioni, il soffio di vento potente e intenso che ha gonfiato le vele di questi viaggi.</p>
+
+          <p>Maserati, ilgusto, sei chef, tanti produttori di cibo, tantissimi panorami unici ed ecco una ricetta indimenticabile. Insieme passeremo dai tornanti della strada della Forra, l'affascinante via del Garda che ha stregato anche 007, alle cucine di Riccardo Camanini. Dai tornanti del Chianti alle cucine di Gucci Osteria dove ci guiderà Karime Lopez.</p>
+
+          <p>Dai rettilinei fuori dal tempo nelle strade segrete delle saline di Margherita di Savoia alle cucine di Felice Sgarra ad assaggiare il suo spaghetto all'assassina. E poi la Milano sconosciuta da svelare tra vetrai e mercati per perderci nell'avventura delle cuoche di Al Tatto. E la Roma notturna dove scivolare in auto perdendo lo sguardo fuori dal finestrino, una città magica che si sveglia con i profumi dei suoi mercati che ritroveremo nei piatti di Anthony Genovese. E poi le Langhe, dove l'auto scivola nell'alba e ci accompagna a cercare tartufi guidati da un cane e dalla conoscenza del territorio di un altro grande cuoco italiano: Enrico Crippa.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div data-scroll class="section_video desk-block">
+      <div class="videoWrapper">
+          <iframe src="https://video.greenandblue.it/embed/vivere-green/perche-i-probiotici-creano-un-ambiente-sano/3939/3954?adref=<?php echo $pageUrl; ?>" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div data-scroll class="section_text left_text">
+      <div class="section_text_wrapper">
+        <div class="text_container">
+          <p class="spacing-left">L'Italia svelata, raccontata, assaggiata dall’interno delle sue auto icona. Quando il mezzo diventa protagonista per bellezza, potenza, unicità e innovazione.
+
+          <p class="spacing-left">Una lezione per l'Italia del gusto, un potenziale a volte inespresso che trova nell'esempio di una vettura la velocità e la forza per andare oltre i suoi limiti.</p>
+
+          <p class="spacing-left">Maserati, ilgusto e l'Italia che ci piace di più uniti in un viaggio fatto per rompere gli schemi e per raccontare come servano testa e cuore per essere unici, ma è la passione che ci porta al successo. E queste sei storie, di successo, ve lo sveleranno.</p>
+
+          <div class="author spacing-left">
+            <strong>Luca Ferrua</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <section data-scroll class="text black-bck">
+
+
+      <div data-scroll class="section_video mob-block">
+        <div class="videoWrapper">
+            <iframe src="https://video.greenandblue.it/embed/vivere-green/perche-i-probiotici-creano-un-ambiente-sano/3939/3954?adref=<?php echo $pageUrl; ?>" frameborder="0" allowfullscreen></iframe>
+          </div>
+      </div>
+
+
+      <div class="scroll_image_section">
+
+        <div data-scroll class="title_mobile mob">
+          <div class="line"></div>
+          <div class="title_container text_number">
+            <h2>6</h2>
+            <p>tappe italiane</p>
+          </div>
+          <div class="line"></div>
+        </div>
+
+        <div class="image_row one">
+          <div data-scroll class="col small_half">
+            <img src="./images/content/luogo_1.jpg" alt="">
+            <div class="dida">
+              <h4><strong>Trani</strong>, Puglia</h4>
+            </div>
+          </div>
+          <div  data-scroll class="col small_half">
+            <img src="./images/content/luogo_2.jpg" alt="">
+            <div class="dida">
+              <h4><strong>Milano</strong>, Lombardia</h4>
+            </div>
+            <div id="title_1_1" data-scroll data-scroll-speed="1.5"  class="text_number top desk">
+              <h2>6</h2>
+              <p>tappe italiane</p>
+            </div>
+          </div>
+        </div>
+
+        <div data-scroll class="title_mobile mob">
+          <div class="line"></div>
+          <div class="title_container text_number">
+            <h2>6</h2>
+            <p>podcast</p>
+          </div>
+          <div class="line"></div>
+        </div>
+
+        <div class="image_row two">
+          <div  data-scroll class="col wide">
+            <img src="./images/content/luogo_3.jpg" alt="">
+            <div class="dida">
+              <h4><strong>Firenze</strong>, Toscana</h4>
+            </div>
+          </div>
+          <div data-scroll data-scroll-speed="1.5"  id="title_1_2" class="text_number bottom desk">
+            <h2>6</h2>
+            <p>podcast</p>
+          </div>
+        </div>
+
+        <div class="image_row three space-between">
+          <div data-scroll class="col one-third">
+            <img src="./images/content/luogo_4.jpg" alt="">
+            <div class="dida">
+              <h4>Lago di Garda</h4>
+            </div>
+          </div>
+          <div data-scroll class="col one-third">
+            <img src="./images/content/luogo_5.jpg" alt="">
+            <div class="dida">
+              <h4><strong>Langhe</strong>, Piemonte</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="image_full">
+        <img src="./images/content/luogo_6.jpg" alt="">
+        <div class="dida">
+          <h4> <strong>Roma</strong>, Lazio</h4>
+        </div>
+
+        <div id="title_1_3" data-scroll data-scroll-speed="1.5"  class="text_number bottom desk">
+          <h2>6</h2>
+          <p>chef</p>
+        </div>
+
+      </div>
+
+      <div class="chef_row">
+
+        <div data-scroll class="title_mobile mob">
+          <div class="line"></div>
+          <div class="title_container text_number">
+            <h2>6</h2>
+            <p>chef</p>
+          </div>
+          <div class="line"></div>
+        </div>
+
+        <div class="chef_row_container swiper-chef">
+          <div class="swiper-wrapper">
+            <div class="single_card  swiper-slide">
+              <img src="./images/content/chef_1.jpg" alt="">
+              <div class="dida_chef">
+                Felice <br> Sgarra
+              </div>
+            </div>
+
+            <div class="single_card  swiper-slide">
+              <img src="./images/content/chef_2.jpg" alt="">
+              <div class="dida_chef">
+                Riccardo <br>Camanini
+              </div>
+            </div>
+
+            <div class="single_card  swiper-slide">
+              <img src="./images/content/chef_3.jpg" alt="">
+              <div class="dida_chef">
+                Anthony <br> Genovese
+              </div>
+            </div>
+
+            <div class="single_card  swiper-slide">
+              <img src="./images/content/chef_4.jpg" alt="">
+              <div class="dida_chef">
+                Enrico <br> Crippa
+              </div>
+            </div>
+
+            <div class="single_card  swiper-slide">
+              <img src="./images/content/chef_5.jpg" alt="">
+              <div class="dida_chef">
+                Karime Lopez <br> & Takahiko Kondo
+              </div>
+            </div>
+
+            <div class="single_card  swiper-slide">
+              <img src="./images/content/chef_6.jpg" alt="">
+              <div class="dida_chef">
+                Sara Nicolosi <br> & Cinzia De Lauri
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination">  </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+
+      <div class="section_text left_text black">
+        <div  class="section_text_wrapper">
+          <div class="text_container">
+            <div class="text_number_title desk">
+              <h1>6</h1>
+              <p>automobili </p>
+            </div>
+
+            <div class="title_mobile mob">
+              <div class="line"></div>
+              <div class="title_container text_number">
+                <h2>6</h2>
+                <p>automobili</p>
+              </div>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="section_image_gallery">
+        <div data-scroll data-scroll-speed="2.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_full padding">
+          <img src="./images/content/auto-1.jpg" alt="">
+          <div class="dida margin_left">
+            <h4>Levante</h4>
+          </div>
+        </div>
+
+        <div data-scroll data-scroll-speed="2.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_half right_image padding_left">
+          <img src="./images/content/auto-2.jpg" alt="">
+          <div class="dida margin_right">
+            <h4>Levante</h4>
+          </div>
+        </div>
+
+        <div data-scroll data-scroll-speed="1.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_half left_image padding_right">
+          <img src="./images/content/auto-3.jpg" alt="">
+          <div class="dida margin_left">
+            <h4>Levante</h4>
+          </div>
+        </div>
+
+        <div data-scroll data-scroll-speed="2.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_full padding">
+          <img src="./images/content/auto-4.jpg" alt="">
+          <div class="dida margin_left">
+            <h4>MC20</h4>
+          </div>
+        </div>
+
+        <div data-scroll data-scroll-speed="1.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_half right_image">
+          <img src="./images/content/auto-5.jpg" alt="">
+          <div class="dida margin_right">
+            <h4>MC20</h4>
+          </div>
+        </div>
+
+        <div data-scroll data-scroll-speed="2.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_full">
+          <img src="./images/content/auto-6.jpg" alt="">
+          <div class="dida margin_left">
+            <h4>Grecale</h4>
+          </div>
+        </div>
+
+        <div data-scroll data-scroll-speed="1.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_full padding">
+          <img src="./images/content/auto-7.jpg" alt="">
+          <div class="dida margin_left">
+            <h4>Grecale Trofeo</h4>
+          </div>
+        </div>
+
+        <div data-scroll data-scroll-speed="2.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_half left_image">
+          <img src="./images/content/auto-8.jpg" alt="">
+          <div class="dida margin_left">
+            <h4>Grecale Trofeo</h4>
+          </div>
+        </div>
+
+
+        <div data-scroll data-scroll-speed="1.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_half right_image">
+          <img src="./images/content/auto-9.jpg" alt="">
+          <div class="dida margin_left">
+            <h4>Grecale</h4>
+          </div>
+        </div>
+
+        <div data-scroll data-scroll-speed="2.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_half left_image">
+          <img src="./images/content/auto-10.jpg" alt="">
+          <div class="dida margin_left">
+            <h4>Grecale</h4>
+          </div>
+        </div>
+
+        <div data-scroll data-scroll-speed="1.5" data-scroll-class="appear" data-scroll-repeat="true" data-scroll data-scroll-speed="-0.5" class="img_card img_half right_image padding_left">
+          <img src="./images/content/auto-11.jpg" alt="">
+          <div class="dida margin_right">
+            <h4>Ghibli GT</h4>
+          </div>
+        </div>
+
+        <div data-scroll data-scroll-speed="2.5" data-scroll-class="appear" data-scroll-repeat="true" class="img_card img_full padding">
+          <img src="./images/content/auto-12.jpg" alt="">
+          <div class="dida margin_left">
+            <h4>Ghibli GT</h4>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <div id="horizontal_scroll" data-scroll class="section_slideshow_locations desk">
+      <div class="slide-container">
+        <div class="slide">
+          <img src="./images/content/tappa_1.jpg" alt="">
+          <div class="slide_content">
+            <div class="slide_header">
+              <h5>Prossimo Episodio</h5>
+            </div>
+            <div class="slide_title_container">
+              <h1>Lago di Garda</h1>
+              <a class="disabled" href="#">ESPLORA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="./images/content/tappa_2.jpg" alt="">
+          <div class="slide_content">
+            <div class="slide_header">
+              <h5>EPISODIO 2</h5>
+            </div>
+            <div class="slide_title_container">
+              <h1>Firenze</h1>
+              <a class="disabled" href="#">ESPLORA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="./images/content/tappa_3.jpg" alt="">
+          <div class="slide_content">
+            <div class="slide_header">
+              <h5>EPISODIO 3</h5>
+            </div>
+            <div class="slide_title_container">
+              <h1>Trani</h1>
+              <a class="disabled" href="#">ESPLORA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="./images/content/tappa_4.jpg" alt="">
+          <div class="slide_content">
+            <div class="slide_header">
+              <h5>EPISODIO 4</h5>
+            </div>
+            <div class="slide_title_container">
+              <h1>Roma</h1>
+              <a class="disabled" href="#">ESPLORA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="./images/content/tappa_5.jpg" alt="">
+          <div class="slide_content">
+            <div class="slide_header">
+              <h5>EPISODIO 5</h5>
+            </div>
+            <div class="slide_title_container">
+              <h1>Milano</h1>
+              <a class="disabled" href="#">ESPLORA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="./images/content/tappa_6.jpg" alt="">
+          <div class="slide_content">
+            <div class="slide_header">
+              <h5>EPISODIO 6</h5>
+            </div>
+            <div class="slide_title_container">
+              <h1>Langhe</h1>
+              <a class="disabled" href="#">ESPLORA</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </div>
+
+
+  <div data-scroll class="section_slideshow_locations mob swiper">
+
+      <div class="slide-container swiper-wrapper">
+
+        <div class="slide swiper-slide">
+          <img src="./images/content/t_1.jpg" alt="">
+          <div class="slide_content">
+            <div class="slide_header">
+              <h5>Prossimo Episodio</h5>
+            </div>
+            <div class="slide_title_container">
+              <h1>Lago di Garda</h1>
+              <a class="disabled" href="#">ESPLORA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="./images/content/t_2.jpg" alt="">
+          <div class="slide_content">
+            <div class="slide_header">
+              <h5>EPISODIO 2</h5>
+            </div>
+            <div class="slide_title_container">
+              <h1>Firenze</h1>
+              <a class="disabled" href="#">ESPLORA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="./images/content/t_3.jpg" alt="">
+          <div class="slide_content">
+            <div class="slide_header">
+              <h5>EPISODIO 3</h5>
+            </div>
+            <div class="slide_title_container">
+              <h1>Trani</h1>
+              <a class="disabled" href="#">ESPLORA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="./images/content/t_4.jpg" alt="">
+          <div class="slide_content">
+            <div class="slide_header">
+              <h5>EPISODIO 4</h5>
+            </div>
+            <div class="slide_title_container">
+              <h1>Roma</h1>
+              <a class="disabled" href="#">ESPLORA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="./images/content/t_5.jpg" alt="">
+          <div class="slide_content">
+            <div class="slide_header">
+              <h5>EPISODIO 5</h5>
+            </div>
+            <div class="slide_title_container">
+              <h1>Milano</h1>
+              <a class="disabled" href="#">ESPLORA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="./images/content/t_6.jpg" alt="">
+          <div class="slide_content">
+            <div class="slide_header">
+              <h5>EPISODIO 6</h5>
+            </div>
+            <div class="slide_title_container">
+              <h1>Langhe</h1>
+              <a class="disabled" href="#">ESPLORA</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+  </div>
+
+    <footer data-scroll>
+      <div class="footer_top">
+        <div class="footer_col">
+          <h5>A CURA DI</h5>
+          <div class="footer_col_content">
+            <a target="_blank" href="https://www.gedivisual.it/">GEDI VISUAL</a>
+          </div>
+        </div>
+        <div class="footer_col">
+          <h5>IN COLLABORAZIONE CON</h5>
+          <div class="footer_col_content">
+            <a target="_blank" href="https://www.maserati.com/">
+              <img src="./images/content/logo_maserati.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="footer_col">
+          <h5>GRAFICA E SVILUPPO</h5>
+          <div class="footer_col_content">
+            <a target="_blank" href="https://www.beamediacompany.com/">DALK + BEA</a> x GEDI
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_bottom">
+        <div class="footer_bottom_container">
+          <div class="footer_bottom_content">
+            <esi:include src="https://lab.gedidigital.it/utils/includes/footer/stampa_nazionale.html" />
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+  </div>
+
+    <!-- <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
+    <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' /> -->
+
+  </body>
+
+</html>
