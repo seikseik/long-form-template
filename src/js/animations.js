@@ -58,10 +58,6 @@ function initDesktop(){
   ScrollTrigger.refresh();
 
 
-  imagesLoaded(scrollContainer, { background: true }, function () {
-    locoScroll.update();
-  });
-
   const target = document.querySelector('#scrollto');
   let scrollto = document.querySelector(".scroll");
   scrollto.addEventListener("click", function(){
@@ -89,6 +85,10 @@ function initDesktop(){
        x: () => `-${pinWrap.offsetWidth - window.innerWidth}`,
        ease: "none"
      });
+
+ imagesLoaded(scrollContainer, { background: true }, function () {
+   locoScroll.update();
+ });
 
 }
 
