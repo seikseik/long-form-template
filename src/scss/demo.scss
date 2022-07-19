@@ -189,7 +189,7 @@ strong{font-weight: 600;}
   }
   img{
     width:180px;
-    margin-top: 10px;
+    margin-top: 30px;
   }
 }
 
@@ -236,8 +236,8 @@ strong{font-weight: 600;}
     position: absolute;
     background: #282928;
     width:100%;
-    height: calc(100% - 100px);
-    top: 100px;
+    height: 100%;
+    top: 0;
     z-index: -1;
   }
 }
@@ -380,6 +380,9 @@ strong{font-weight: 600;}
       width:50%;
     }
   }
+  &.one{
+    align-items: flex-start;
+  }
 }
 .image_full{
   width:$max;
@@ -473,7 +476,7 @@ strong{font-weight: 600;}
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  width:$max;
+  width:1600px;
   max-width: 100%;
   margin: 0 auto;
   .img_card{
@@ -496,6 +499,11 @@ strong{font-weight: 600;}
       width:60%;
     }
   }
+  .img_two_third{
+    img{
+      width:75%;
+    }
+  }
   .img_third{
     img{
       width:40%;
@@ -510,6 +518,9 @@ strong{font-weight: 600;}
   .margin_right{
     margin-right: $space*2;
   }
+  .margin-top{
+    margin-top: $space*2;
+  }
   .margin_left{
     margin-left: $space*2;
   }
@@ -521,6 +532,32 @@ strong{font-weight: 600;}
   }
   .padding_right img{
     padding-right: $space*2;
+  }
+}
+
+.image-car-double{
+  display: flex;
+  justify-content: flex-start;
+  .double_image{
+    justify-content: flex-end;
+    &:first-child{
+      width:50%;
+    }
+    &:last-child{
+      width: 50%;
+      padding-left: $space*2;
+      margin-bottom: -$space*3;
+    }
+  }
+  &.second_double{
+    .double_image{
+      justify-content: flex-start;
+      &:first-child{
+      }
+      &:last-child{
+        margin-bottom: -$space*3;
+      }
+    }
   }
 }
 
@@ -847,6 +884,10 @@ footer{
   }
 
 
+  .image_row .col:not(:first-child){
+    margin-left: 0;
+  }
+
 
   .chef_row{
     padding: $space $spacing*2;
@@ -908,6 +949,33 @@ footer{
     .dida{
       &.margin_left{
         margin-left: 0;
+      }
+    }
+  }
+
+
+  .image-car-double{
+    display: flex;
+    justify-content: flex-start;
+    .double_image{
+      justify-content: flex-end;
+      &:first-child{
+        width:50%;
+      }
+      &:last-child{
+        width: 50%;
+        padding-left: $spacing;
+        margin-bottom: -$spacing;
+      }
+    }
+    &.second_double{
+      .double_image{
+        justify-content: flex-start;
+        &:first-child{
+        }
+        &:last-child{
+          margin-bottom: -$space;
+        }
       }
     }
   }

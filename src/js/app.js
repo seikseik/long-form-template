@@ -1,4 +1,4 @@
-import loop2 from '../images/content/videoloop.mp4';
+import loop_resized from '../images/content/videoloop_resized.mp4';
 
 import './animations';
 

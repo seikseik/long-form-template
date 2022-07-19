@@ -27,7 +27,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var gsap
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_content_videoloop_mp4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/content/videoloop.mp4 */ \"./src/images/content/videoloop.mp4\");\n/* harmony import */ var _animations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./animations */ \"./src/js/animations.js\");\n/* harmony import */ var _scss_app_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/app.scss */ \"./src/scss/app.scss\");\n\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvanMvYXBwLmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQTtBQUVBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vQHdlYXJlYXRobG9uL2Zyb250ZW5kLXdlYnBhY2stYm9pbGVycGxhdGUvLi9zcmMvanMvYXBwLmpzPzkwZTkiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IGxvb3AyIGZyb20gJy4uL2ltYWdlcy9jb250ZW50L3ZpZGVvbG9vcC5tcDQnO1xuXG5pbXBvcnQgJy4vYW5pbWF0aW9ucyc7XG5cbmltcG9ydCAnLi4vc2Nzcy9hcHAuc2Nzcyc7XG4iXSwibmFtZXMiOlsibG9vcDIiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/js/app.js\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_content_videoloop_resized_mp4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/content/videoloop_resized.mp4 */ \"./src/images/content/videoloop_resized.mp4\");\n/* harmony import */ var _animations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./animations */ \"./src/js/animations.js\");\n/* harmony import */ var _scss_app_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/app.scss */ \"./src/scss/app.scss\");\n\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvanMvYXBwLmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQTtBQUVBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vQHdlYXJlYXRobG9uL2Zyb250ZW5kLXdlYnBhY2stYm9pbGVycGxhdGUvLi9zcmMvanMvYXBwLmpzPzkwZTkiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IGxvb3BfcmVzaXplZCBmcm9tICcuLi9pbWFnZXMvY29udGVudC92aWRlb2xvb3BfcmVzaXplZC5tcDQnO1xuXG5pbXBvcnQgJy4vYW5pbWF0aW9ucyc7XG5cbmltcG9ydCAnLi4vc2Nzcy9hcHAuc2Nzcyc7XG4iXSwibmFtZXMiOlsibG9vcF9yZXNpemVkIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/js/app.js\n");
 
 /***/ }),
 
@@ -41,14 +41,14 @@ eval("/**\n * EvEmitter v2.1.1\n * Lil' event emitter\n * MIT License\n */\n\n( 
 
 /***/ }),
 
-/***/ "./src/images/content/videoloop.mp4":
-/*!******************************************!*\
-  !*** ./src/images/content/videoloop.mp4 ***!
-  \******************************************/
+/***/ "./src/images/content/videoloop_resized.mp4":
+/*!**************************************************!*\
+  !*** ./src/images/content/videoloop_resized.mp4 ***!
+  \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"videoloop.mp4\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW1hZ2VzL2NvbnRlbnQvdmlkZW9sb29wLm1wNC5qcyIsIm1hcHBpbmdzIjoiOzs7O0FBQUEsaUVBQWUscUJBQXVCLGtCQUFrQiIsInNvdXJjZXMiOlsid2VicGFjazovL0B3ZWFyZWF0aGxvbi9mcm9udGVuZC13ZWJwYWNrLWJvaWxlcnBsYXRlLy4vc3JjL2ltYWdlcy9jb250ZW50L3ZpZGVvbG9vcC5tcDQ/OWM3OCJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArIFwidmlkZW9sb29wLm1wNFwiOyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/images/content/videoloop.mp4\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"videoloop_resized.mp4\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW1hZ2VzL2NvbnRlbnQvdmlkZW9sb29wX3Jlc2l6ZWQubXA0LmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxpRUFBZSxxQkFBdUIsMEJBQTBCIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vQHdlYXJlYXRobG9uL2Zyb250ZW5kLXdlYnBhY2stYm9pbGVycGxhdGUvLi9zcmMvaW1hZ2VzL2NvbnRlbnQvdmlkZW9sb29wX3Jlc2l6ZWQubXA0PzAyZDQiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyBcInZpZGVvbG9vcF9yZXNpemVkLm1wNFwiOyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/images/content/videoloop_resized.mp4\n");
 
 /***/ }),
 
