@@ -1,8 +1,8 @@
 <?php
 
     $pageUrl = strtok( (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) || isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", "?");
-    $pageTitle = "L’abuso dei prodotti chimici per igienizzare gli ambienti ha impatti negativi non solo sull’ambiente, ma anche sulla nostra salute. La nuova frontiera fa leva sul ruolo dei batteri buoni, i probiotici. ";
-
+    $pageTitle = "Le strade del Gusto";
+    $pageDescription = "Dal Lago di Garda al Chianti, da Trani alle Langhe del Piemonte, da Roma fino a Milano: un viaggio in sei tappe alla scoperta di territori, chef visionari ed eccellenze italiane";
     $twitterString = "" . $pageUrl;
     $whatsappString = $pageTitle. " " . $pageUrl;
 ?>
@@ -32,8 +32,8 @@
       var pageHref = '<?php echo $pageUrl; ?>';
       var pageType = 'dettaglio_content';
     </script>
-    <!-- <esi:include src='http://www.repstatic.it/cless/common/stable/js/script/tlh/traffic_light_handler.html' />
-    <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script> -->
+    <esi:include src='http://www.repstatic.it/cless/common/stable/js/script/tlh/traffic_light_handler.html' />
+    <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script>
     <!-- CONFIGURAZIONE STATS -->
 
     <!-- facebook -->
@@ -718,8 +718,8 @@
 
   </div>
 
-    <!-- <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
-    <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' /> -->
+    <esi:include src='http://www.repstatic.it/cless/common/stable/include/wt/wt.html' />
+    <esi:include src='http://www.repstatic.it/cless/common/stable/include/nielsen/nielsen.html' />
 
   </body>
 
