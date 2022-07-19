@@ -538,13 +538,16 @@ strong{font-weight: 600;}
 .image-car-double{
   display: flex;
   justify-content: flex-start;
+  align-items: flex-start;
   .double_image{
     justify-content: flex-end;
+    align-items: flex-start;
+
     &:first-child{
-      width:50%;
+      width:40%;
     }
     &:last-child{
-      width: 50%;
+      width: 60%;
       padding-left: $space*2;
       margin-bottom: -$space*3;
     }
@@ -553,9 +556,24 @@ strong{font-weight: 600;}
     .double_image{
       justify-content: flex-start;
       &:first-child{
+        width:60%;
       }
       &:last-child{
         margin-bottom: -$space*3;
+        width:40%;
+      }
+    }
+  }
+  &.third_double{
+    margin-top: $space*5;
+    .double_image{
+      justify-content: flex-start;
+      &:first-child{
+        width:45%;
+      }
+      &:last-child{
+        margin-bottom: -$space*3;
+        width:55%;
       }
     }
   }
@@ -978,6 +996,13 @@ footer{
         }
       }
     }
+  }
+
+  .section_image_gallery .margin-top{
+    margin-top: $spacing*3;
+  }
+  .image-car-double.third_double{
+    margin-top: $space*2;
   }
 
 
