@@ -26,7 +26,7 @@ function initDesktop(){
     getDirection: true,
     smartphone: {
          smooth: false,
-         inertia: 0.9,
+         inertia: 0.7,
      },
      tablet: {
          smooth: true,
