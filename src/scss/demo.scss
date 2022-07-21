@@ -91,6 +91,13 @@ strong{font-weight: 600;}
   }
 }
 
+#map_1{
+  padding: 0 5vw;
+  padding-top: 5vw;
+  min-height: 100%;
+  opacity: 0.9;
+}
+
 .section_hero{
   height: 100vh;
   position: relative;
@@ -173,6 +180,34 @@ strong{font-weight: 600;}
     max-width: 50%;
     margin: 0 auto;
     font-weight: 400;
+  }
+}
+
+.hero_content_episodio{
+  h2{
+  color:white;
+  font-size: 35px;
+  line-height: 1;
+  margin-bottom: $space*2;
+    span{
+      font-family: $serif;
+      font-style: italic;
+    }
+  }
+  h1{
+    font-family: $serif;
+    margin-bottom: $space*2;
+  }
+  p{
+    @include small;
+    letter-spacing: 2px;
+    border-bottom: 1px solid white;
+    width:fit-content;
+    margin-bottom: $spacing*2;
+  }
+
+  .collab-cont{
+    margin-top: $space*4;
   }
 }
 
@@ -314,6 +349,42 @@ strong{font-weight: 600;}
     color: white;
   }
 }
+
+
+.section_text_black{
+  background: $black;
+  color: white;
+  margin-bottom: $space*3;
+  .section_text_wrapper{
+    padding: $space*3 $space*2;
+    width: $max;
+    max-width: 100%;
+    margin: 0 auto;
+
+    p:not(:last-child){
+      margin-bottom: $spacing*4;
+    }
+
+    h2{
+      margin-bottom: $spacing*3;
+      font-weight: bold;
+      margin-left: $space*2;
+    }
+
+    h3{
+      @include subtitle;
+      margin-bottom: $spacing*3;
+    }
+
+    .section_text_image{
+      width:50%;
+    }
+    .text_container{
+      width:50%;
+    }
+  }
+}
+
 
 
 .spacing-left{
@@ -788,6 +859,8 @@ footer{
   }
 
 
+
+
   .section_text{
     padding: $space $spacing*2;
     &.right_text .section_text_wrapper{
@@ -814,7 +887,12 @@ footer{
     p, .author{
       font-size: $size_small;
     }
+    &.black-bck{
+      background: $black;
+    }
   }
+
+
   .spacing-left{
     margin-left: 0;
   }
