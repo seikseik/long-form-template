@@ -884,6 +884,13 @@ strong {
   height: 100%;
 }
 
+#map_1 {
+  padding: 0 5vw;
+  padding-top: 5vw;
+  min-height: 100%;
+  opacity: 0.9;
+}
+
 .section_hero {
   height: 100vh;
   position: relative;
@@ -999,6 +1006,37 @@ strong {
   max-width: 50%;
   margin: 0 auto;
   font-weight: 400;
+}
+
+.hero_content_episodio h2 {
+  color: white;
+  font-size: 35px;
+  line-height: 1;
+  margin-bottom: 48px;
+}
+.hero_content_episodio h2 span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+.hero_content_episodio h1 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 48px;
+}
+.hero_content_episodio p {
+  font-family: "Everett-Light", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 1px solid white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 16px;
+}
+.hero_content_episodio .collab-cont {
+  margin-top: 96px;
 }
 
 .collab-cont {
@@ -1152,6 +1190,38 @@ strong {
 }
 .section_text.black {
   color: white;
+}
+
+.section_text_black {
+  background: #282928;
+  color: white;
+  margin-bottom: 72px;
+}
+.section_text_black .section_text_wrapper {
+  padding: 72px 48px;
+  width: 1350px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.section_text_black .section_text_wrapper p:not(:last-child) {
+  margin-bottom: 32px;
+}
+.section_text_black .section_text_wrapper h2 {
+  margin-bottom: 24px;
+  font-weight: bold;
+  margin-left: 48px;
+}
+.section_text_black .section_text_wrapper h3 {
+  font-family: "Everett-Light", sans-serif;
+  font-size: 32px;
+  font-weight: 100;
+  margin-bottom: 24px;
+}
+.section_text_black .section_text_wrapper .section_text_image {
+  width: 50%;
+}
+.section_text_black .section_text_wrapper .text_container {
+  width: 50%;
 }
 
 .spacing-left {
@@ -1782,6 +1852,9 @@ footer .footer_top .footer_col img {
   }
   .section_text p, .section_text .author {
     font-size: 16px;
+  }
+  .section_text.black-bck {
+    background: #282928;
   }
 
   .spacing-left {
