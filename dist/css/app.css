@@ -1889,6 +1889,16 @@ footer .footer_top .footer_col img {
     background: #282928;
   }
 
+  .section_text_black {
+    margin-bottom: 48px;
+  }
+  .section_text_black .section_text_wrapper {
+    padding: 48px 16px;
+  }
+  .section_text_black .section_text_wrapper p {
+    font-size: 16px;
+  }
+
   .spacing-left {
     margin-left: 0;
   }
@@ -1896,6 +1906,12 @@ footer .footer_top .footer_col img {
   .black-bck:after {
     top: 0;
     height: 100%;
+  }
+
+  .black-bck.overlow_top:after {
+    top: 0;
+    height: 100%;
+    margin-top: 0;
   }
 
   .scroll_image_section {
@@ -1953,6 +1969,13 @@ footer .footer_top .footer_col img {
     font-size: 14px;
   }
 
+  .hero_content_episodio h2 {
+    font-size: 25px;
+  }
+  .hero_content_episodio p {
+    padding: 0;
+  }
+
   .section_video {
     padding: 0 16px;
     padding-top: 24px;
@@ -2005,6 +2028,7 @@ footer .footer_top .footer_col img {
 
   .image_row .col:not(:first-child) {
     margin-left: 0;
+    margin-top: 0 !important;
   }
 
   .chef_row {
