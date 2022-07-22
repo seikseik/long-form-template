@@ -395,8 +395,10 @@ strong{font-weight: 600;}
     }
 
     h2{
-      margin-bottom: $spacing*3;
-      font-weight: bold;
+      margin-bottom: $spacing*5;
+      font-family: $serif;
+      font-size: 50px;
+      font-style: italic;
     }
 
     h3{
@@ -755,6 +757,71 @@ strong{font-weight: 600;}
 }
 
 
+.section_podcast{
+  margin-top: $space*2;
+  h2{
+    margin: 0 auto;
+    font-family: $serif;
+    font-size: 50px;
+    font-style: italic;
+    width: 1000px;
+    padding: 0 $spacing*6;
+    max-width: 100%;
+  }
+  .player_wrapper{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: $space*3 0;
+    padding-top: 30px;
+  }
+  .playerContainer {
+      margin: 0 auto;
+      padding: $spacing*2 0;
+      width: 700px;
+      max-width: 100%;
+    }
+
+    #playerAudio {
+      --gdwc-audio-player-background-color: $black;
+    --gdwc-audio-player-title-color: white;
+    --gdwc-audio-player-title-font: $sans;
+    --gdwc-audio-player-title-font-size: 20px;
+    --gdwc-audio-player-caption-color: white;
+    --gdwc-audio-player-caption-font-size: 16px;
+    --gdwc-audio-player-icons-color: white;
+    --gdwc-audio-player-grabber-background-bar-color: white;
+    --gdwc-audio-player-grabber-bar-color: white;
+    --gdwc-audio-player-grabber-bullet-color: white;
+    --gdwc-audio-player-grabber-caption-color: white;
+    --gdwc-audio-player-volume-background-bar-colo: white;
+    --gdwc-audio-player-volume-bar-color: white;
+    --gdwc-audio-player-volume-bullet-color: white;
+    --gdwc-audio-player-avatar-border-radius: 100px;
+    --gdwc-audio-trigger-background-color: $black;
+    --gdwc-audio-trigger-hover-background-color: $black;
+    --gdwc-audio-trigger-active-background-color: $black;
+    --gdwc-audio-trigger-border-color: $black;
+    --gdwc-audio-trigger-title-color: white;
+    --gdwc-audio-trigger-title-font-size: 14px;
+    --gdwc-audio-trigger-caption-color: white;
+    --gd-audio-trigger-avatar-border-radius: 100%;
+    --gdwc-audio-trigger-icons-color: white;
+    --gdwc-audio-trigger-hover-icons-color: white;
+    --gdwc-audio-trigger-equalizer-background: white;
+    --gdwc-audio-trigger-border-top-color: $black;
+    --gdwc-audio-trigger-border-right-color: $black;
+    --gdwc-audio-trigger-border-bottom-color: $black;
+    --gdwc-audio-trigger-border-left-color: $black;
+    --gdwc-audio-trigger-controls-border-left-color: white;
+    }
+}
+
+.item__info__image{
+  display: none !important;
+}
 
 footer{
   height: 300px;

@@ -1238,8 +1238,10 @@ strong {
   margin-bottom: 32px;
 }
 .section_text_black .section_text_wrapper h2 {
-  margin-bottom: 24px;
-  font-weight: bold;
+  margin-bottom: 40px;
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  font-style: italic;
 }
 .section_text_black .section_text_wrapper h3 {
   font-family: "Everett-Light", sans-serif;
@@ -1677,6 +1679,80 @@ strong {
 .section_slideshow_locations .slide_content .slide_title_container a:hover {
   background: white;
   color: black;
+}
+
+.section_podcast {
+  margin-top: 48px;
+}
+.section_podcast h2 {
+  margin: 0 auto;
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  font-style: italic;
+  width: 1000px;
+  padding: 0 48px;
+  max-width: 100%;
+}
+.section_podcast .player_wrapper {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 72px 0;
+  padding-top: 30px;
+}
+.section_podcast .playerContainer {
+  margin: 0 auto;
+  padding: 16px 0;
+  width: 700px;
+  max-width: 100%;
+}
+.section_podcast #playerAudio {
+  --gdwc-audio-player-background-color: $black;
+  --gdwc-audio-player-title-color: white;
+  --gdwc-audio-player-title-font: $sans;
+  --gdwc-audio-player-title-font-size: 20px;
+  --gdwc-audio-player-caption-color: white;
+  --gdwc-audio-player-caption-font-size: 16px;
+  --gdwc-audio-player-icons-color: white;
+  --gdwc-audio-player-grabber-background-bar-color: white;
+  --gdwc-audio-player-grabber-bar-color: white;
+  --gdwc-audio-player-grabber-bullet-color: white;
+  --gdwc-audio-player-grabber-caption-color: white;
+  --gdwc-audio-player-volume-background-bar-colo: white;
+  --gdwc-audio-player-volume-bar-color: white;
+  --gdwc-audio-player-volume-bullet-color: white;
+  --gdwc-audio-player-avatar-border-radius: 100px;
+  --gdwc-audio-trigger-background-color: $black;
+  --gdwc-audio-trigger-hover-background-color: $black;
+  --gdwc-audio-trigger-active-background-color: $black;
+  --gdwc-audio-trigger-border-color: $black;
+  --gdwc-audio-trigger-title-color: white;
+  --gdwc-audio-trigger-title-font-size: 14px;
+  --gdwc-audio-trigger-caption-color: white;
+  --gd-audio-trigger-avatar-border-radius: 100%;
+  --gdwc-audio-trigger-icons-color: white;
+  --gdwc-audio-trigger-hover-icons-color: white;
+  --gdwc-audio-trigger-equalizer-background: white;
+  --gdwc-audio-trigger-border-top-color: $black;
+  --gdwc-audio-trigger-border-right-color: $black;
+  --gdwc-audio-trigger-border-bottom-color: $black;
+  --gdwc-audio-trigger-border-left-color: $black;
+  --gdwc-audio-trigger-controls-border-left-color: white;
+}
+
+.item__info__image {
+  display: none !important;
 }
 
 footer {
