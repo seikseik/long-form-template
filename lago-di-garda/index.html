@@ -59,6 +59,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <script>
+      window.gdwc = window.gdwc || [];
+    </script>
+    <script defer src="https://webcomponent.gedidigital.it/gdwc-loader/js/gdwc-loader.js"></script>
+    <script>
+
+      gdwc.push({
+        name: "gdwc-audio-player",
+      });
+
+      var primoAudio = [
+        {
+          trtId: "deejay:podcast:329567",
+          title: "Il New York Times sul difficile rapporto con i vicini",
+          author: "Il Trio Medusa",
+          album: "Radio Deejay",
+          duration: "00:03:04",
+          image: "https://cdn.gelestatic.it/deejay/sites/2/2019/06/ITUNES3.jpg",
+          audio_url:
+            "https://media.deejay.it/2020/11/16/episodes/deejay_chiama_italia/hls-010000/hls-010000.m3u8",
+          wt: {
+            title: "titolo per webtrekk",
+            media_landing: "embed",
+            media_type: "live",
+            tree: {
+              videolivello1: "repubblica",
+              videolivello2: "repubblica - repubblicatv",
+              videolivello3: "repubblica - repubblicatv - audioseries",
+            },
+          },
+        },
+      ];
+    </script>
+
   <script defer src="../js/app.js"></script><link href="../css/app.css" rel="stylesheet"></head>
 
   <body>
@@ -225,7 +260,13 @@
 
 
       <div data-scroll class="section_podcast">
-
+        <h2>Podcast</h2>
+        <div class="player_wrapper">
+          <div class="playerContainer">
+            <gdwc-audio-player id="playerAudio" standalone data="primoAudio">
+            </gdwc-audio-player>
+          </div>
+        </div>
       </div>
 
   </section>
