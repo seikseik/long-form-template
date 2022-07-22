@@ -32,8 +32,9 @@
       var pageHref = '<?php echo $pageUrl; ?>';
       var pageType = 'dettaglio_content';
     </script>
-    <!-- <esi:include src='http://www.repstatic.it/cless/common/stable/js/script/tlh/traffic_light_handler.html' />
-    <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script> -->
+
+     <esi:include src='http://www.repstatic.it/cless/common/stable/js/script/tlh/traffic_light_handler.html' />
+    <script async="" onerror="try { asr_error() } catch(e) {}" onload="try { kw_tlh_ready(); } catch(e) {}" src="//oasjs.kataweb.it/adsetup.js"></script>
     <!-- CONFIGURAZIONE STATS -->
 
     <!-- facebook -->
@@ -159,8 +160,12 @@
     <div data-scroll class="section_hero">
       <div class="hero_container">
 
-        <div class="image_hero_container">
-          <img src="./images/content/hero_1.jpg" alt="">
+        <div class="video_container">
+          <div class="video_wrapper">
+            <video poster="./images/content/hero_1_poster.png" class="video_back" autoplay muted loop playsinline id="myVideo">
+              <source src="hero_1.mp4" type="video/mp4">
+            </video>
+          </div>
           <div class="overlay"></div>
         </div>
 
@@ -210,7 +215,7 @@
 
           <p>Come il lago sulle cui rive è cresciuto, la superficie cela intense correnti e attività vivace. Camanini, classe ’73, è allora un rivoluzionario calmo la cui energia, forte di formazione classica e idee avanguardiste, sorprende quasi senza che lui voglia farlo: tra le sue mani la crisalide dei sapori antichi del territorio si fa farfalla che si libra sulla tecnica, sempre al servizio di una componente emotiva, per uno slancio immaginifico della materia.</p>
 
-          <p>Ecco allora la sinfonia silvestre del Riso, aglio nero e frutti di bosco, la romanità transalpina, tra prosa e poesia, della Cacio e pepe en vessie e il profumo di zabaione che accompagna la sua Torta delle rose omaggio colto alla cucina regionale.</p>
+          <p>Ecco allora la sinfonia silvestre del <strong>Riso, aglio nero e frutti di bosco</strong>, la romanità transalpina, tra prosa e poesia, della Cacio e pepe en vessie e il profumo di zabaione che accompagna la sua <strong>Torta delle rose</strong> omaggio colto alla cucina regionale.</p>
 
           <p>E poi su tutto, l’amore sincero per l’ospitalità, in un luogo unico nel coniugare raffinatezza e sensazione di sentirsi tra amici.</p>
 
@@ -223,8 +228,12 @@
 
 
     <div data-scroll class="section_video margin_bottom">
-    <div class="videoWrapper">
-        <iframe src="https://video.greenandblue.it/embed/vivere-green/perche-i-probiotici-creano-un-ambiente-sano/3939/3954?adref=<?php echo $pageUrl; ?>" frameborder="0" allowfullscreen></iframe>
+      <div class="videoWrapper">
+        <!-- <iframe src="https://video.greenandblue.it/embed/vivere-green/perche-i-probiotici-creano-un-ambiente-sano/3939/3954?adref=<?php echo $pageUrl; ?>" frameborder="0" allowfullscreen></iframe> -->
+
+          <video poster="./images/content/hero_1_poster.png" class="video_full" autoplay muted loop playsinline id="myVideo">
+            <source src="prova_1.mp4" type="video/mp4">
+          </video>
       </div>
     </div>
 
@@ -259,7 +268,7 @@
       </div>
 
 
-      <div data-scroll class="section_podcast">
+      <div class="section_podcast">
         <h2>Podcast</h2>
         <div class="player_wrapper">
           <div class="playerContainer">
